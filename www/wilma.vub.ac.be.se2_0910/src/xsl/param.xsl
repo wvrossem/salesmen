@@ -40,5 +40,8 @@
   <xsl:param name="pages.search-box" select="1"/>
   <xsl:param name="pages.search.input-label" select="'Search This Site'"/>
   <xsl:param name="pages.search.submit-label" select="'Go'"/>
+  <xsl:param name="access.validator.url" select="''"/>
+  <xsl:param name="rdf.to.html.stylesheet.path" 
+	     select="'/~se2_0910/rdf-html.xsl'"/>
 
 </xsl:stylesheet>
