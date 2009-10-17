@@ -1,0 +1,99 @@
+<webpage id="team">
+  <config param="rcsdate" value="$Date: 2006/04/21 15:07:20 $"/>
+  <head>
+    <title>Team</title>
+    <summary>
+      Project team members.
+    </summary>
+    <keywords>People</keywords>
+  </head>
+<variablelist>
+  <varlistentry>
+    <term>Nick De Cooman</term>
+    <listitem>
+      <formalpara>
+	<title>Role</title>
+	<para>Project Leader</para>
+      </formalpara>
+      <formalpara>
+	<title>Backup</title>
+	<para>Design Manager</para>
+      </formalpara>
+    </listitem>
+  </varlistentry>
+  <varlistentry>
+    <term>Jonathan Jeurissen</term>
+    <listitem>
+      <formalpara>
+	<title>Backup</title>
+	<para>Requirements Manager</para>
+      </formalpara>
+    </listitem>
+  </varlistentry>
+  <varlistentry>
+    <term>Sina K. Heshmati</term>
+    <listitem>
+      <formalpara>
+	<title>Role</title>
+	<para>Implementation Manager, Webmaster</para>
+      </formalpara>
+      <formalpara>
+	<title>Backup</title>
+	<para>Configuration Manager</para>
+      </formalpara>
+    </listitem>
+  </varlistentry>
+  <varlistentry>
+    <term>Jorne Laton</term>
+    <listitem>
+      <formalpara>
+	<title>Role</title>
+	<para>Configuration Manager</para>
+      </formalpara>
+      <formalpara>
+	<title>Backup</title>
+	<para>Implementation Manager</para>
+      </formalpara>
+    </listitem>
+  </varlistentry>
+  <varlistentry>
+    <term>Bart Maes</term>
+    <listitem>
+      <formalpara>
+	<title>Role</title>
+	<para>Design Manager</para>
+      </formalpara>
+      <formalpara>
+	<title>Backup</title>
+	<para>Quality Assurance Manager</para>
+      </formalpara>
+    </listitem>
+  </varlistentry>
+  <varlistentry>
+    <term>Patrick Provinciael</term>
+    <listitem>
+      <formalpara>
+	<title>Role</title>
+	<para>Quality Assurance Manager</para>
+      </formalpara>
+      <formalpara>
+	<title>Backup</title>
+	<para>Project Leader</para>
+      </formalpara>
+    </listitem>
+  </varlistentry>
+  <varlistentry>
+    <term>Wouter Van Rossem</term>
+    <listitem>
+      <formalpara>
+	<title>Role</title>
+	<para>Requirements Manager</para>
+      </formalpara>
+      <formalpara>
+	<title>Backup</title>
+	<para>Webmaster</para>
+      </formalpara>
+    </listitem>
+  </varlistentry>
+</variablelist>
+</webpage>
