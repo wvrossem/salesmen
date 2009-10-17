@@ -138,3 +138,6 @@ form .invalid input { background-color: #ffcccc; }
 	font-size: 120%; 
 	margin: 1em 0; 
 }
+
+/*.feeds #maincontent table.feeds*/
+.feeds #maincontent .feed-description { display: none; }
