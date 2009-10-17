@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+  <layout>
+
+<config param="headlink" value="sitemap" altval="Site Map"/>
+<config param="headlink" value="search" altval="Search"/>
+<config param="footlink" value="feeds" altval="Content Feeds"/>
+
+<config param="title" value="SE Group 2 2009"/>
+
+<copyright role="about">
+  <year>2009</year>
+  <holder role="http://www.vub.ac.be/">Vrije Universiteit Brussel</holder>
+</copyright>
+
+<headlink rel="icon" href="/img/favicon.ico" type="image/x-icon"/>
+<style src="css/salesmen.css" type="text/css" media="screen"/>
+
+<toc page="index.xml" filename="index.html">
+  <tocentry page="about.xml" dir="about" filename="index.html">
+    <tocentry page="team.xml" dir="team" filename="index.html"/>
+  </tocentry>
+  <tocentry page="docs/index.xml" dir="docs" filename="index.html"/>
+  <tocentry page="feeds.xml" dir="feeds" filename="index.html"/>
+  <tocentry page="contact.xml" dir="contact" filename="index.php"/>
+</toc>
+
+<notoc page="sitemap.xml" filename="sitemap.html"/>
+<notoc page="search.xml" dir="search" filename="index.html"/>
+</layout>

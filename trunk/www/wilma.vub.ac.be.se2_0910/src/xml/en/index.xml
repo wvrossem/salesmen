@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<webpage id="home">
+  <config param="rcsdate" value="$Date: 2006/04/19 13:19:59 $"/>
+  <head>
+    <title>Salesmen</title>
+    <summary>Homepage of the Salesmen project</summary>
+    <keywords>
+      Free Software, Open Source, Auction, Webapp, Java, Jave EE, VUB, 
+      Vrije Universiteit Brussel, Computer Science, Belgium
+    </keywords>
+  </head>
+  <para>
+    As part of the Computer Science curriculum at the Vrije Universiteit 
+    Brussel, a group of <olink targetdoc="team">senior students</olink> 
+    are assigned to contribute the software implementation of an online 
+    auction website to the 
+    <ulink url="http://www.gnu.org/philosophy/free-sw.html">Free 
+    Software</ulink> community. This application will be written in the 
+    Java programming language.
+  </para>
+</webpage>
