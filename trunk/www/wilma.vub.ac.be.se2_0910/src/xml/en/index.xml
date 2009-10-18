@@ -1,6 +1,7 @@
 <?xml version="1.0"?>
 <webpage id="home">
   <config param="rcsdate" value="$Date$"/>
+  <config param="DOAP" value="about/salesmen.doap"/>
   <head>
     <title>SE Group 2 - 2009-2010</title>
     <summary>Homepage of the Software Engineering Group 2 in 2009-2010</summary>
@@ -24,7 +25,7 @@
       <listitem><para>
 	  <olink targetdoc='team'>Project Members</olink></para></listitem>
       <listitem><para>
-	  <ulink url="http://code.google.com/p/salesmen/">Home at Google 
+	  <ulink url="http://code.google.com/p/salesmen/">Salesmen at Google 
 	    Code</ulink></para></listitem>
     </itemizedlist>
   </sidebar>
