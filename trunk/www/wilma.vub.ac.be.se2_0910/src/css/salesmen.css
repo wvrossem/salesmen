@@ -26,28 +26,25 @@
 .site-search #sidebar #secnav, 
 .site-search #maincontent h1,
 .site-search #maincontent h2,
-/* no h1 for the following pages */
-.home h1, 
-.doc-phenix h1,
-        display: none; 
-	}
+.home h1,
+.about h1
+{
+   display: none; 
+}
 
 .sitemap #wrapper, 
 .feeds #wrapper, 
 .site-license #wrapper, 
-.home #wrapper,
 .site-feedback #wrapper, 
 .site-search #wrapper {
         width: 784px;
 	}
 
-.home #wrapper, 
 .sitemap #wrapper, 
 .site-search #wrapper {
 	background: #fff;
 	}
 
-.home #maincontent, 
 .sitemap #maincontent, 
 .site-search #maincontent {
 	width: 95%;
@@ -76,54 +73,46 @@
 /* sitemap */
 .sitemap #maincontent h1, 
 .sitemap #maincontent .notoc,
-.sitemap #maincontent .headitem.sitemap,
-.sitemap #maincontent p.dixite .hbar,
-.sitemap #maincontent p.news .hbar { 
+.sitemap #maincontent .headitem.sitemap
+{
 	display: none;
-	}
+}
 
-.sitemap #maincontent p.solutions a, 
-.sitemap #maincontent p.services a, 
+.sitemap #maincontent p.dev a, 
+.sitemap #maincontent p.about a, 
 .sitemap #maincontent p.docs a, 
-.sitemap #maincontent p.clients-and-references a,
-.sitemap #maincontent p.opensource a, 
-.sitemap #maincontent p.dixite a, 
-.sitemap #maincontent p.news a { 
+.sitemap #maincontent p.download a
+{
 	color: #E97E00; 
 	text-decoration: none;
-	}
+}
 
 .hbar { margin-left: 5px; }
 
 .sitemap #maincontent .summary { font-size: 88%; }
-.sitemap #maincontent p.solutions, 
-.sitemap #maincontent p.services, 
-.sitemap #maincontent p.clients-and-references, 
-.sitemap #maincontent p.opensource, 
-.sitemap #maincontent p.dixite, 
+.sitemap #maincontent p.about, 
 .sitemap #maincontent p.docs, 
-.sitemap #maincontent p.news { 
+.sitemap #maincontent p.download, 
+.sitemap #maincontent p.dev 
+{ 
 	border-bottom: 1px solid #ccc; 
 	font-size: 135%;
 	color: #000;
-	}
+}
 
-.sitemap #maincontent p.docs, 
-.sitemap #maincontent p.news { 
+.sitemap #maincontent p.download, 
+.sitemap #maincontent p.dev { 
 	border-bottom: 0px;
 	}
 
-.sitemap #maincontent li.solutions, 
-.sitemap #maincontent li.services, 
-.sitemap #maincontent li.solutions-and-services,
-.sitemap #maincontent li.clients-and-references,
 .sitemap #maincontent li.docs, 
-.sitemap #maincontent li.opensource, 
-.sitemap #maincontent li.dixite, 
-.sitemap #maincontent li.news { 
+.sitemap #maincontent li.download, 
+.sitemap #maincontent li.about, 
+.sitemap #maincontent li.dev 
+{ 
 	background-image: none; 
 	margin:0 0 2em 0; 
-	}
+}
 
 .sitemap #maincontent li.solutions-and-services { 
 	padding: 0; 
@@ -141,3 +130,4 @@ form .invalid input { background-color: #ffcccc; }
 
 /*.feeds #maincontent table.feeds*/
 .feeds #maincontent .feed-description { display: none; }
+.home #maincontent { padding-top: 2em; }

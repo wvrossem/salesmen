@@ -5,7 +5,7 @@
 <config param="headlink" value="search" altval="Search"/>
 <config param="footlink" value="feeds" altval="Content Feeds"/>
 
-<config param="title" value="SE Group 2 2009"/>
+<config param="title" value="SE Group 2 - 2009-2010"/>
 
 <copyright role="about">
   <year>2009</year>
@@ -16,14 +16,14 @@
 <style src="css/salesmen.css" type="text/css" media="screen"/>
 
 <toc page="index.xml" filename="index.html">
-  <tocentry page="about.xml" dir="about" filename="index.html">
-    <tocentry page="team.xml" dir="team" filename="index.html"/>
+  <tocentry page="about/index.xml" dir="about" filename="index.html">
+    <tocentry page="about/team.xml" dir="team" filename="index.html"/>
   </tocentry>
   <tocentry page="docs/index.xml" dir="docs" filename="index.html"/>
-  <tocentry page="feeds.xml" dir="feeds" filename="index.html"/>
-  <tocentry page="contact.xml" dir="contact" filename="index.php"/>
+  <tocentry page="download/index.xml" dir="download" filename="index.html"/>
+  <tocentry page="dev/index.xml" dir="dev" filename="index.html"/>
 </toc>
-
-<notoc page="sitemap.xml" filename="sitemap.html"/>
-<notoc page="search.xml" dir="search" filename="index.html"/>
+<notoc page="site/sitemap.xml" dir="sitemap" filename="index.html"/>
+<notoc page="site/search.xml" dir="search" filename="index.html"/>
+<notoc page="site/feeds.xml" dir="feeds" filename="index.html"/>
 </layout>
