@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<webpage id="dev">
+  <config param="rcsdate" value="$Date: 2006/04/19 13:19:59 $"/>
+  <head>
+    <title>Developers</title>
+    <summary>Want to take a look under the hook?</summary>
+    <keywords>
+      Free Software, Open Source, Auction, Webapp, Java, Jave EE, VUB, 
+      Vrije Universiteit Brussel, Computer Science, Belgium
+    </keywords>
+  </head>
+  <para>
+  </para>
+  <sidebar id='devtools'>
+    <title>Developer Tools</title>
+    <itemizedlist>
+      <listitem><para>
+	  <ulink url="http://code.google.com/p/salesmen/">Home at Google 
+	    Code</ulink></para></listitem>
+    </itemizedlist>
+  </sidebar>
+</webpage>
