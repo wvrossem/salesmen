@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<doap:Project 
+   xmlns:doap="http://usefulinc.com/ns/doap/#" 
+   xmlns:foaf="http://xmlns.com/foaf/0.1/"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+   xmlns:cc="http://web.resource.org/cc/"
+   xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <dc:date>2009-10-19T16:18:09-04:00</dc:date>
+  <doap:description>
+    Salesmen is the software behind an online auction website written in Java.
+  </doap:description>
+  <doap:license rdf:resource="http://www.gnu.org/licenses/gpl-3.0.html"/>
+  <doap:shortdesc>Salesmen, an auction webapp</doap:shortdesc>
+   <doap:name>Salesmen</doap:name>
+   <!--
+   <doap:release>
+      <doap:Version>
+         <doap:revision></doap:revision>
+         <doap:created>2009-</doap:created>
+         <doap:branch></doap:branch>
+      </doap:Version>
+   </doap:release>
+   -->
+   <doap:programming-language>Java</doap:programming-language>
+   <doap:os>any</doap:os>
+   <doap:shortname>salesmen</doap:shortname>
+   <doap:download-page rdf:resource="http://wilma.vub.ac.be/~se2_0910/download/"/>
+   <doap:homepage rdf:resource="http://wilma.vub.ac.be/~se2_0910/"/>
+   <doap:maintainer>
+     <foaf:Group>
+       <foaf:name>Software Engineering Group 2 - 2009-2010</foaf:name>
+     </foaf:Group>
+   </doap:maintainer>
+   <doap:bug-database rdf:resource="http://code.google.com/p/salesmen/issues/list"/>
+   <doap:repository>
+      <doap:CVSRepository>
+         <doap:browse rdf:resource="http://code.google.com/p/salesmen/source/browse/"/>
+         <doap:anon-root>http://salesmen.googlecode.com/svn</doap:anon-root>
+      </doap:CVSRepository>
+   </doap:repository>
+   <doap:created>2009-10-16</doap:created>
+</doap:Project>
