@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <webpage id="dev">
-  <config param="rcsdate" value="$Date: 2006/04/19 13:19:59 $"/>
+  <config param="rcsdate" value="$Date$"/>
   <head>
     <title>Developers</title>
     <summary>Want to take a look under the hook?</summary>

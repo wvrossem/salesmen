@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <webpage id="download">
-  <config param="rcsdate" value="$Date: 2006/04/19 13:19:59 $"/>
+  <config param="rcsdate" value="$Date$"/>
   <head>
     <title>Downloads</title>
     <summary>How to obtain our software</summary>
