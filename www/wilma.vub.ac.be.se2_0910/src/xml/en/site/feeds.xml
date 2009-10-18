@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <webpage id="feeds">
-  <config param="rcsdate" value="$Date: 2006/04/19 13:17:48 $"/>
+  <config param="rcsdate" value="$Date$"/>
   <head>
     <title>Content Feeds</title>
     <summary>Subscribe to content feeds related to Salesmen</summary>
@@ -11,10 +11,11 @@
     XML feeds can send news headlines on the specific topics you choose 
     directly to your desktop or online feed aggregator.
   </para>
-  <rss feed="http://code.google.com/feeds/p/salesmen/updates/basic"/>
+  <rss feed="http://feeds.delicious.com/v2/rss/salesmen"/>
   <rss feed="http://code.google.com/feeds/p/salesmen/downloads/basic"/>
- <rss feed="http://code.google.com/feeds/p/salesmen/issueupdates/basic"/>
- <rss feed="http://code.google.com/feeds/p/salesmen/svnchanges/basic"/>
+  <rss feed="http://code.google.com/feeds/p/salesmen/issueupdates/basic"/>
+  <rss feed="http://code.google.com/feeds/p/salesmen/svnchanges/basic"/>
+  <rss feed="http://code.google.com/feeds/p/salesmen/updates/basic"/>
   <sidebar id="needhelp">
     <title>Help</title>
     <para><ulink url="http://www.markupware.com/feeds/help/">Need Help with 

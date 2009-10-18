@@ -1,10 +1,10 @@
 <webpage id="team">
-  <config param="rcsdate" value="$Date: 2006/04/21 15:07:20 $"/>
+  <config param="rcsdate" value="$Date$"/>
   <head>
     <title>Team</title>
     <summary>
-      Project team members.
-    </summary>
+      Those who'll code day and night
+   </summary>
     <keywords>People</keywords>
   </head>
 <variablelist>
@@ -35,7 +35,7 @@
     <listitem>
       <formalpara>
 	<title>Role</title>
-	<para>Implementation Manager, Webmaster</para>
+	<para>Implementation Manager and Webmaster</para>
       </formalpara>
       <formalpara>
 	<title>Backup</title>
@@ -96,4 +96,11 @@
     </listitem>
   </varlistentry>
 </variablelist>
+<sidebar id='contact'>
+  <title>How to reach us?</title>
+  <para>We'd be glad to hear from you. Please 
+    email us at: se2#<footnote><para>Please 
+	replace <emphasis role='bold'>#</emphasis> with 
+	<emphasis role='bold'>@</emphasis></para></footnote>tinf.vub.ac.be</para>
+</sidebar>
 </webpage>

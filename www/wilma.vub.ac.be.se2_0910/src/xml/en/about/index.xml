@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<webpage id="about">
+  <config param="rcsdate" value="$Date$"/>
+  <head>
+    <title>About</title>
+    <summary>What's this all about?</summary>
+    <keywords>
+      Free Software, Open Source, Auction, Webapp, Java, Jave EE, VUB, 
+      Vrije Universiteit Brussel, Computer Science, Belgium
+    </keywords>
+  </head>
+  <section id='what'>
+    <title>What</title>
+    <para>
+      We're a group of <olink targetdoc='team'>seven students</olink> 
+      who are assigned to <emphasis>design</emphasis> and 
+      <emphasis>implement</emphasis> the software behind an 
+      <emphasis role='bold'>online auction website</emphasis> such as eBay.
+      We codenamed our project <emphasis role='bold'>Salesmen</emphasis>.
+    </para>
+    <para>
+      This project is embedded in the 
+      <ulink url="http://tinf2.vub.ac.be/~dvermeir/courses/software_engineering/">Software Engineering</ulink> course, which is
+      designed for senior students of Computer Science and Engineering at
+      the <ulink url="http://www.vub.ac.be/">Vrije Universiteit 
+	Brussel</ulink> so as to familiarize them with the software
+      development process and give them the opportunity to play in a team.
+    </para>
+  </section>
+  <section id='how'>
+    <title>How</title>
+    <para>
+      Our application will be written in the Java programming language
+      and we'll use Enterprise Edition of the Java platform to deploy and
+      run our code.
+    </para>
+    <para>
+      We'll release all of our deliverables including the source code
+      under a 
+      <ulink url="http://www.gnu.org/philosophy/free-sw.html">free</ulink>
+      license.
+    </para>
+  </section>
+</webpage>

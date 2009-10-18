@@ -21,9 +21,10 @@
     This XSLT stylesheet customizes the generation of a given Website.
   </dc:description>
   </rdf:Description>
-  <xsl:output indent="yes" method="xml" encoding="UTF-8"
+  <xsl:output indent="yes" method="xml" encoding="UTF-8"/>
+	  <!--
             doctype-public="-//W3C//DTD XHTML 1.0 Strict//EN"
-            doctype-system="http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"/>
+	    doctype-system="http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"/>-->
 
 <!-- ==================================================================== -->
 

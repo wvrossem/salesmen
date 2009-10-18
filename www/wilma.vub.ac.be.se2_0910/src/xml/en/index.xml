@@ -1,21 +1,31 @@
 <?xml version="1.0"?>
 <webpage id="home">
-  <config param="rcsdate" value="$Date: 2006/04/19 13:19:59 $"/>
+  <config param="rcsdate" value="$Date$"/>
   <head>
-    <title>Salesmen</title>
-    <summary>Homepage of the Salesmen project</summary>
+    <title>SE Group 2 - 2009-2010</title>
+    <summary>Homepage of the Software Engineering Group 2 in 2009-2010</summary>
     <keywords>
       Free Software, Open Source, Auction, Webapp, Java, Jave EE, VUB, 
       Vrije Universiteit Brussel, Computer Science, Belgium
     </keywords>
   </head>
   <para>
-    As part of the Computer Science curriculum at the Vrije Universiteit 
-    Brussel, a group of <olink targetdoc="team">senior students</olink> 
-    are assigned to contribute the software implementation of an online 
-    auction website to the 
-    <ulink url="http://www.gnu.org/philosophy/free-sw.html">Free 
-    Software</ulink> community. This application will be written in the 
-    Java programming language.
+    We're a group of <olink targetdoc='team'>seven students</olink> 
+    who are assigned to <emphasis>design</emphasis> and 
+    <emphasis>implement</emphasis> the software behind an 
+    <emphasis role='bold'>online auction website</emphasis> such as eBay.
+    We codenamed our project <emphasis role='bold'>Salesmen</emphasis>, 
+    which will be distributed under an Open Source license.
+    <olink targetdoc='about'>Learn more</olink>
   </para>
+  <sidebar id='spotlight'>
+    <title>Spotlight</title>
+    <itemizedlist>
+      <listitem><para>
+	  <olink targetdoc='team'>Project Members</olink></para></listitem>
+      <listitem><para>
+	  <ulink url="http://code.google.com/p/salesmen/">Home at Google 
+	    Code</ulink></para></listitem>
+    </itemizedlist>
+  </sidebar>
 </webpage>
