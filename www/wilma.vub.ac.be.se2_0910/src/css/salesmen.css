@@ -14,12 +14,32 @@
 
 @import url(phenix/main.css);
 
-#header div#title { background: url(../img/logo.png) top left no-repeat; }
+
+#header div#title a {
+	text-indent: 10px;
+	width: 280px;
+	color: #E97E00;
+	font-size: 130%;
+	padding: 30px 10px;
+	margin: -23px 15px;
+	height: 20px;
+}
+
+#header div#title 
+{
+	margin-top: 23px;
+}
+
+#subnav .sidebar li
+{
+	background-color: transparent;
+}
+
+/*#header div#title { background: url(../img/logo.png) top left no-repeat; }*/
 
 /* hidden references */
 #secnav li.sitemap,
 #secnav li.site-license,
-#secnav li.site-feedback,
 #secnav li.site-search,
 /* no sidebar for sitemap */
 .sitemap #sidebar,
@@ -35,7 +55,6 @@
 .sitemap #wrapper, 
 .feeds #wrapper, 
 .site-license #wrapper, 
-.site-feedback #wrapper, 
 .site-search #wrapper {
         width: 784px;
 	}
@@ -128,6 +147,5 @@ form .invalid input { background-color: #ffcccc; }
 	margin: 1em 0; 
 }
 
-/*.feeds #maincontent table.feeds*/
 .feeds #maincontent .feed-description { display: none; }
 .home #maincontent { padding-top: 2em; }
