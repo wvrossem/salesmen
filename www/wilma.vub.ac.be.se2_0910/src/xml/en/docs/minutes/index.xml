@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <webpage id="minutes">
-  <config param="rcsdate" value="$Date: 2009-10-19 00:02:55 +0200 (Mon, 19 Oct 2009) $"/>
+  <config param="rcsdate" value="$Date$"/>
   <config param="URFM" value="minutes.rdf"/>
   <head>
     <title>Minutes</title>
