@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<webpage id="minutes">
+  <config param="rcsdate" value="$Date: 2009-10-19 00:02:55 +0200 (Mon, 19 Oct 2009) $"/>
+  <config param="URFM" value="minutes.rdf"/>
+  <head>
+    <title>Minutes</title>
+    <summary>
+      Minutes of our meetings
+   </summary>
+    <keywords>People, Minutes, Developers' Meeging, Open Source, Free
+    Software, VUB</keywords>
+  </head>
+  <para>
+    This page contains the minutes of our meetings.
+  </para>
+</webpage>
