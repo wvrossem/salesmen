@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF xmlns="http://purl.org/urfm/"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:urfm="http://purl.org/urfm/"
+    xmlns:dc="http://purl.org/dc/elements/1.1/">
+  
+  <Channel rdf:about="http://wilma.vub.ac.be/~se2_0910/docs/minutes/minutes.rdf">
+    <title>SE2_0910 Minutes</title>
+    <link>http://wilma.vub.ac.be/~se2_0910/documents/</link>
+    <description>
+      Metadata to describe minutes files.
+    </description>
+    <dc:language>en-US</dc:language>
+    <dc:identifier>http://wilma.vub.ac.be/~se2_0910/docs/minutes/minutes.rdf</dc:identifier>
+    <dc:publisher rdf:resource="http://wilma.vub.ac.be/~se2_0910/"/>
+    <dc:rights>Copyright &#169; VUB</dc:rights>
+    
+    <packages rdf:parseType="Collection">
+      <Package rdf:about="http://wilma.vub.ac.be/~se2_0910/docs/minutes/">
+	<shortdesc>
+	  Meeting minutes of Software Engineering Group 2
+	</shortdesc>
+	<dc:identifier>minutes</dc:identifier>
+      </Package>
+    </packages>
+
+    <releases rdf:parseType="Collection">
+<!--
+<Release rdf:about="http://wilma.vub.ac.be/~se2_0910/docs/minutes/YYYYMMDD/">
+  <package rdf:resource="http://wilma.vub.ac.be/~se2_0910/docs/minutes/"/>
+  <revision>YYYYMMDD</revision>
+  <created>YYYY-MM-DD</created>
+</Release>
+-->
+<Release rdf:about="http://wilma.vub.ac.be/~se2_0910/docs/minutes/20091016/">
+  <package rdf:resource="http://wilma.vub.ac.be/~se2_0910/docs/minutes/"/>
+  <revision>20091016</revision>
+  <created>2009-10-18</created>
+</Release>
+    </releases>
+    
+    <files rdf:parseType="Collection">
+<File rdf:about="http://wilma.vub.ac.be/~se2_0910/docs/minutes/20070113/resume-20070113.html">
+  <release rdf:resource="http://wilma.vub.ac.be/~se2_0910/docs/minutes/20091016/"/>
+  <basename>minutes-20091016</basename>
+  <extension>.tex</extension>
+  <language>en</language>
+  <size rdf:parseType="Resource">
+    <unit rdf:resource="http://purl.org/urfm/Kilobyte"/>
+    <rdf:value>20</rdf:value>
+  </size> 
+  <link>http://wilma.vub.ac.be/~se2_0910/docs/minutes/20091016/resume-20091016.tex</link>
+  <format>application/x-latex</format>
+</File>
+
+    </files>
+  </Channel>
+</rdf:RDF>
