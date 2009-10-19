@@ -7,7 +7,7 @@
   
   <Channel rdf:about="http://wilma.vub.ac.be/~se2_0910/docs/minutes/minutes.rdf">
     <title>SE2_0910 Minutes</title>
-    <link>http://wilma.vub.ac.be/~se2_0910/documents/</link>
+    <link>http://wilma.vub.ac.be/~se2_0910/docs/minutes/</link>
     <description>
       This file contains metadata to describe minutes' files in various format using the URFM vocabulary.
     </description>
@@ -41,7 +41,7 @@
     </releases>
     
     <files rdf:parseType="Collection">
-<File rdf:about="http://wilma.vub.ac.be/~se2_0910/docs/minutes/20070113/resume-20091016.tex">
+<File rdf:about="http://wilma.vub.ac.be/~se2_0910/docs/minutes/20091016/minutes-20091016.tex">
   <release rdf:resource="http://wilma.vub.ac.be/~se2_0910/docs/minutes/20091016/"/>
   <basename>minutes-20091016</basename>
   <extension>.tex</extension>
@@ -54,7 +54,7 @@
   <format>application/x-latex</format>
 </File>
 
-<File rdf:about="http://wilma.vub.ac.be/~se2_0910/docs/minutes/20070113/resume-20091016.pdf">
+<File rdf:about="http://wilma.vub.ac.be/~se2_0910/docs/minutes/20091016/minutes-20091016.pdf">
   <release rdf:resource="http://wilma.vub.ac.be/~se2_0910/docs/minutes/20091016/"/>
   <basename>minutes-20091016</basename>
   <extension>.pdf</extension>
