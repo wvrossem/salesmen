@@ -21,6 +21,7 @@
   </tocentry>
   <tocentry page="docs/index.xml" dir="docs" filename="index.html">
     <tocentry page="docs/minutes/index.xml" dir="minutes" filename="index.html"/>
+    <tocentry page="docs/timesheets/index.xml" dir="timesheets" filename="index.html"/>
   </tocentry>
   <tocentry page="download/index.xml" dir="download" filename="index.html"/>
   <tocentry page="dev/index.xml" dir="dev" filename="index.html"/>
