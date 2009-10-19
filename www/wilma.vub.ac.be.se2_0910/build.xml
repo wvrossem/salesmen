@@ -9,11 +9,6 @@
 
 <project name="salesmen" default="preview">
 <property file="build.properties"/>
- <!--
-       ===================================================================
-       preview        		     
-       ===================================================================
-  -->
 <target name="preview"
    description="generates and installs a local copy for preview">
    <ant antfile="${silkpage.home.dir}/src/xml/build/tasks.xml"
@@ -21,37 +16,27 @@
      <property file="build.properties"/>
    </ant>
 </target>
- <!--
-       ===================================================================
-       publish        		     
-       ===================================================================
-  -->
+
 <target name="publish" depends="preview"
    description="publishes a copy of your website online">
   <copy toDir="${www.dir}" encoding="${default.encoding}">
     <fileset dir="${dist.dir}"/>
   </copy>
 </target>
-<!--
-<target name="publish" depends="metadata,preview"
-   description="publishes a copy of your website online">
-   <ant antfile="${silkpage.home.dir}/src/xml/build/tasks.xml"
-     dir="${silkpage.home.dir}" inheritAll="false" target="uploadWebsite">
-     <property file="build.properties"/>
-   </ant>
-</target>
--->
- <!--
-       ===================================================================
-       metadata
-       ===================================================================
-  -->
+
 <target name="metadata"
         description="generates RDF metadata for each XML source">
   <ant antfile="${silkpage.home.dir}/src/xml/build/tasks.xml"
        dir="${silkpage.home.dir}" inheritAll="false" target="websiteMetadata">
      <property file="build.properties"/>
    </ant>
+  <copy toDir="${www.dir}" encoding="${default.encoding}">
+    <fileset dir="${dist.dir}"/>
+  </copy>
+  <copy file="${silkpage.home.dir}/src/xsl/common/rdf-html.xsl" 
+	todir="${www.dir}"/>
 </target>
+
+<target name="puball" depends="metadata, publish"/>
 
 </project>
