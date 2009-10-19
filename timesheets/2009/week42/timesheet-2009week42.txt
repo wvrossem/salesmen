@@ -1,0 +1,60 @@
+Timesheet of Week 1
+11/10 - 19/10
+Nick De Cooman
+Duration	Description		Reference/description
+45 min		Meeting Friday 16/10	http://wilma.vub.ac.be/~se2_0910/docs/minutes/20091016/minutes-20091016.pdf
+60 min		Refresh LaTeX		http://users.fulladsl.be/spb10695/latex.html
+120 min		Writing meeting report	http://wilma.vub.ac.be/~se2_0910/docs/minutes/20091016/minutes-20091016.pdf
+60 min		Making timesheet	
+TOTAAL: 285 min		
+Jonathan Jeurissen	
+Duration	Description		Reference/description
+45 min		Meeting Friday 16/10	http://wilma.vub.ac.be/~se2_0910/docs/minutes/20091016/minutes-20091016.pdf
+TOTAAL: 45 min		
+Sina Khakbaz Heshmati
+Duration	Description			Reference/description
+45 min		Meeting Friday 16/10		http://wilma.vub.ac.be/~se2_0910/docs/minutes/20091016/minutes-20091016.pdf
+150 min		Website preparation		* Install SilkPage on Wilma.
+						* Creating the Team page.
+						* Call for project name proposals.
+210 min		Project Content Syndication	* Created a Delicious account for the project.
+						* Added project XML feeds to the website.
+						* Extended SilkPage stylesheets to provide support for RSS feeds
+390 min		Setup Project Infrastructure	* Register Salesmen on Google Code.
+						* Create Salesmen Group on Google Groups.
+						* Import website files to the Subversion repository.
+						* Configure the SVN server and the issue tracker to post activity notifications to the project dev list.
+						* Add other members to both the project and the group.
+330 min		Find an application for creating timesheets	
+						* Searched on the web to find a suitable piece of software for generating timesheets.
+						* Installed doProject and the TimeCard module but too complicated.
+						* Experimented with the live demos of a few other applications.
+480 min		Improving website’s content	* Improved the structure and content of the website.
+						* Added RDF/XML metadata for website pages.
+						* Added the project's DOAP file.
+						* Added a URFM for publishing minutes.
+						* Added minutes of the 2009/10/16 meeting.
+TOTAAL: 1605 min		
+Jorne Laton
+Duration	Description		Reference/description
+45 min		Meeting Friday 16/10	http://wilma.vub.ac.be/~se2_0910/docs/minutes/20091016/minutes-20091016.pdf
+TOTAAL: 45 min		
+Bart Maes
+Duration	Description		Reference/description
+45 min		Meeting Friday 16/10	http://wilma.vub.ac.be/~se2_0910/docs/minutes/20091016/minutes-20091016.pdf
+120 min		Studying Java		http://balusc.blogspot.com/2006/04/java-tutorial.html
+TOTAAL: 165 min		
+Patrick Provinciael
+Duration	Description		Reference/description
+45 min		Meeting Friday 16/10	http://wilma.vub.ac.be/~se2_0910/docs/minutes/20091016/minutes-20091016.pdf
+TOTAAL: 45 min		
+Wouter Van Rossem
+Duration	Description		Reference/description
+45 min		Meeting Friday 16/10	http://wilma.vub.ac.be/~se2_0910/docs/minutes/20091016/minutes-20091016.pdf
+20 min		HTML Refresh		http://www.w3schools.com/html/default.asp
+90 min		CSS and Javascript tutorial
+					http://www.w3schools.com/sitemap/sitemap_tutorials.asp
+150 min		Website preparation	* Install SilkPage on Wilma.
+					* Creating the Team page.
+					* Call for project name proposals.
+TOTAAL: 305 min		
