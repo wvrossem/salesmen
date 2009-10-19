@@ -33,7 +33,7 @@
   <created>YYYY-MM-DD</created>
 </Release>
 -->
-<Release rdf:about="http://wilma.vub.ac.be/~se2_0910/docs/minutes/20091016/">
+<Release rdf:about="http://wilma.vub.ac.be/~se2_0910/docs/minutes/2009/10/16/">
   <package rdf:resource="http://wilma.vub.ac.be/~se2_0910/docs/minutes/"/>
   <revision>20091016</revision>
   <created>2009-10-18</created>
@@ -41,8 +41,8 @@
     </releases>
     
     <files rdf:parseType="Collection">
-<File rdf:about="http://wilma.vub.ac.be/~se2_0910/docs/minutes/20091016/minutes-20091016.tex">
-  <release rdf:resource="http://wilma.vub.ac.be/~se2_0910/docs/minutes/20091016/"/>
+<File rdf:about="http://wilma.vub.ac.be/~se2_0910/docs/minutes/2009/10/16/minutes-20091016.tex">
+  <release rdf:resource="http://wilma.vub.ac.be/~se2_0910/docs/minutes/2009/10/16/"/>
   <basename>minutes-20091016</basename>
   <extension>.tex</extension>
   <language>en</language>
@@ -50,12 +50,12 @@
     <unit rdf:resource="http://purl.org/urfm/Kilobyte"/>
     <rdf:value>3.7</rdf:value>
   </size> 
-  <link>http://wilma.vub.ac.be/~se2_0910/docs/minutes/20091016/minutes-20091016.tex</link>
+  <link>http://wilma.vub.ac.be/~se2_0910/docs/minutes/2009/10/16/minutes-20091016.tex</link>
   <format>application/x-latex</format>
 </File>
 
-<File rdf:about="http://wilma.vub.ac.be/~se2_0910/docs/minutes/20091016/minutes-20091016.pdf">
-  <release rdf:resource="http://wilma.vub.ac.be/~se2_0910/docs/minutes/20091016/"/>
+<File rdf:about="http://wilma.vub.ac.be/~se2_0910/docs/minutes/2009/10/16/minutes-20091016.pdf">
+  <release rdf:resource="http://wilma.vub.ac.be/~se2_0910/docs/minutes/2009/10/16/"/>
   <basename>minutes-20091016</basename>
   <extension>.pdf</extension>
   <language>en</language>
@@ -63,7 +63,7 @@
     <unit rdf:resource="http://purl.org/urfm/Kilobyte"/>
     <rdf:value>37</rdf:value>
   </size> 
-  <link>http://wilma.vub.ac.be/~se2_0910/docs/minutes/20091016/minutes-20091016.pdf</link>
+  <link>http://wilma.vub.ac.be/~se2_0910/docs/minutes/2009/10/16/minutes-20091016.pdf</link>
   <format>application/pdf</format>
 </File>
 
