@@ -1,2 +1,2 @@
-#labels Risks,RiskAnalysis
+#labels RiskAnalysis
 =Risk Analysis=
