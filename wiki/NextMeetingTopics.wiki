@@ -5,5 +5,5 @@
 
 === Meeting 3: Friday 23 October 2009, 12:00===
 
-* Risk Analysis (Wouter)
-* Latex template for documents (Wouter)
+  * Risk Analysis (Wouter)
+  * Latex template for documents (Wouter)
