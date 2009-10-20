@@ -1,0 +1,178 @@
+
+    Software Engineering Group 2 - 2009-2010
+
+
+         Meeting Minutes - October 16, 2009
+                           Nick De Cooman
+
+
+
+                           October 18, 2009
+
+   Meeting started at 12h10 and ended at 12h55 (Duration: 45 minutes)
+1     Roll Call
+
+
+ Attendees                 Status
+
+ Nick De Cooman            Present
+
+ Jonathan Jeurissen        Present
+
+ Sina Khakbaz Heshmati     Present
+
+ Jorne Laton               Present
+
+ Bart Maes                 Present
+
+ Patrick Provinciael       Present
+
+ Wouter Van Rossem         Present
+
+
+2     Team Members
+
+____________________________________________________________________________
+ Name                      Studies
+____________________________________________________________________________
+ Nick De Cooman            Computer Science, 3rd Bachelor
+
+ Jonathan Jeurissen        Applied Science, 1st Master Electronics
+
+ Sina Khakbaz Heshmati     Computer Science, 3rd Bachelor
+
+ Jorne Laton               Applied Science, 3rd Bachelor Computer Science
+
+ Bart Maes                 Computer Science, 3rd Bachelor
+
+ Patrick Provinciael       Computer Science, 3rd Bachelor
+
+ Wouter Van Rossem         Computer Science, 3rd Bachelor
+____________________________________________________________________________
+
+                                     1
+
+
+3     Members' strengths
+
+
+    o Nick: CSS, HTML, Java, LATEX, SQL, XML
+
+
+    o Jonathan: HTML, Java, Javascript
+
+
+    o Sina: CSS, CVS, Docbook, HTML, Java, Javascript, LATEX, GNU/Linux,
+
+      Subversion, SQL, XML, XSLT, Ant
+
+
+    o Jorne: CSS, HTML, Java, Javascript, GNU/Linux
+
+
+    o Bart: CSS, HTML, Java, Javascript, GNU/Linux, SQL, XML
+
+
+    o Patrick: CSS, HTML, LATEX, SQL
+
+
+    o Wouter:  CSS, HTML, Java,  Javascript,  LATEX,  GNU/Linux,  SQL,
+
+      XML
+4     Job Assignments
+
+
+Although we came to an agreement, the following assignments are temporary.
+
+The definitive decision will be made during the next meeting.
+
+   ____________________________________________________
+    Role                          Effective  Backup
+   ____________________________________________________
+    Project Leader                Nick       Patrick
+
+    Configuration Manager         Jorne      Sina
+
+    Quality Assurance Manager     Patrick    Bart
+
+    Requirements Manager          Wouter     Jonathan
+
+    Design Manager                Bart       Nick
+
+    Implementation Manager        Sina       Jorne
+   ____________________________________________________
+
+5     Website
+
+
+The website needs to be online as quickly as possible.  As Sina has expe-
+
+rience building websites, he will be responsable for publishing the website
+
+using SilkPage. Wouter will be the backup webmaster.
+                                     2
+
+
+5.1    SilkPage
+
+
+SilkPage is an XML-based publishing tool that generates Web standards
+
+compliant websites. We chose this tool to maintain our project's website for
+
+the following reasons:
+
+
+    o Separation of concerns: We can focus on the website's content and use
+
+      semantic tags provided by the DocBook XML vocabulary; everything
+
+      else is taken care of by SilkPage.
+
+
+    o Native support for publishing external documents in various formats.
+
+      [1] [2]
+
+
+    o Customization layers:  SilkPage can easily be extended at CSS and
+
+      XSLT levels. [3]
+6     Next Meeting
+
+
+Next meeting will be held on October 20, 2009 at 17h00.
+6.1    Agenda
+
+
+    o Definitive decision about job assignments.
+
+
+    o Demonstration and evaluation of our website.
+
+
+    o Decide which language to use for publishing our reports.
+
+
+    o Software Project Management Plan (SPMP).
+
+
+    o Setup a project milestones (deadlines).
+
+
+    o Risk Analysis.
+
+
+    o Schedule the next meeting.
+References
+
+
+[1] http://javad.khakbaz.com/whoami/resume/
+
+
+[2] http://www.dixite.com/docs/
+
+
+[3] http://silkpage.markupware.com/docs/
+
+                                     3
