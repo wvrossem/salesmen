@@ -41,19 +41,6 @@
     </releases>
     
     <files rdf:parseType="Collection">
-<File rdf:about="http://wilma.vub.ac.be/~se2_0910/docs/minutes/2009/10/16/minutes-20091016.tex">
-  <release rdf:resource="http://wilma.vub.ac.be/~se2_0910/docs/minutes/2009/10/16/"/>
-  <basename>minutes-20091016</basename>
-  <extension>.tex</extension>
-  <language>en</language>
-  <size rdf:parseType="Resource">
-    <unit rdf:resource="http://purl.org/urfm/Kilobyte"/>
-    <rdf:value>3.7</rdf:value>
-  </size> 
-  <link>http://wilma.vub.ac.be/~se2_0910/docs/minutes/2009/10/16/minutes-20091016.tex</link>
-  <format>application/x-latex</format>
-</File>
-
 <File rdf:about="http://wilma.vub.ac.be/~se2_0910/docs/minutes/2009/10/16/minutes-20091016.pdf">
   <release rdf:resource="http://wilma.vub.ac.be/~se2_0910/docs/minutes/2009/10/16/"/>
   <basename>minutes-20091016</basename>
@@ -65,6 +52,32 @@
   </size> 
   <link>http://wilma.vub.ac.be/~se2_0910/docs/minutes/2009/10/16/minutes-20091016.pdf</link>
   <format>application/pdf</format>
+</File>
+
+<File rdf:about="http://wilma.vub.ac.be/~se2_0910/docs/minutes/2009/10/16/minutes-20091016.txt">
+  <release rdf:resource="http://wilma.vub.ac.be/~se2_0910/docs/minutes/2009/10/16/"/>
+  <basename>minutes-20091016</basename>
+  <extension>.txt</extension>
+  <language>en</language>
+  <size rdf:parseType="Resource">
+    <unit rdf:resource="http://purl.org/urfm/Kilobyte"/>
+    <rdf:value>3.9</rdf:value>
+  </size> 
+  <link>http://wilma.vub.ac.be/~se2_0910/docs/minutes/2009/10/16/minutes-20091016.txt</link>
+  <format>text/plain</format>
+</File>
+
+<File rdf:about="http://wilma.vub.ac.be/~se2_0910/docs/minutes/2009/10/16/minutes-20091016.tex">
+  <release rdf:resource="http://wilma.vub.ac.be/~se2_0910/docs/minutes/2009/10/16/"/>
+  <basename>minutes-20091016</basename>
+  <extension>.tex</extension>
+  <language>en</language>
+  <size rdf:parseType="Resource">
+    <unit rdf:resource="http://purl.org/urfm/Kilobyte"/>
+    <rdf:value>3.7</rdf:value>
+  </size> 
+  <link>http://wilma.vub.ac.be/~se2_0910/docs/minutes/2009/10/16/minutes-20091016.tex</link>
+  <format>application/x-latex</format>
 </File>
 
     </files>
