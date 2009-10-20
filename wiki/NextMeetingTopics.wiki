@@ -1,4 +1,4 @@
-#summary One-Topics to be treated at next meeting
+#summary Topics to be treated at next meeting
 #labels Meetings
 
 = Topics for next meeting =
