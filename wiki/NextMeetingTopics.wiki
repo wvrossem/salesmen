@@ -3,4 +3,7 @@
 
 = Topics for next meeting =
 
-=== Meeting 3: friday 23, 2009===
+=== Meeting 3: Friday 23 October 2009, 12:00===
+
+* Risk Analysis (Wouter)
+* Latex template for documents (Wouter)
