@@ -1,11 +1,11 @@
 #summary Questions for the requirements interview.
-#labels requirements
+#labels Requirements
 
 = Introduction =
 
 You can write questions here that you think will be interesting for the requirements interview. Please use this convention:
 
-  * question [Your name]
+  * question (Your name)
 
 There is also a section for links.
 
@@ -17,4 +17,4 @@ Questions for the requirements interview:
 = Links =
 
 Put interesting links here:
-  * http://www.guydavis.ca/seng/seng611/group/interview.shtml [Wouter]
+  * http://www.guydavis.ca/seng/seng611/group/interview.shtml (Wouter)
