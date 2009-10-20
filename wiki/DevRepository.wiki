@@ -1,0 +1,14 @@
+#summary One-sentence summary of this page.
+#labels Featured
+
+= Introduction =
+
+In this page, you'll be shown how to interact with the Subversion server to make changes to the source code.
+
+= Get a Working Copy =
+
+You first need to _checkout_ --store a local copy-- of the relevant part of the source code.
+
+$ svn co https://salesmen.googlecode.com/svn/trunk/ salesmen --username uname@gmail.com
+
+Please note that the above command will checkout the main development branch. Alternate development branches, meeting minutes, timesheets, etc. are not included.
