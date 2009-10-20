@@ -1,3 +1,15 @@
-#summary Possible risks and solutions
 #labels RiskAnalysis
-=Risk Analysis=
+=2009=
+
+==Week43==
+
+===Timesheet Integration===
+
+Publishing timesheets has been a challenge so far, in that it's tedious to do all the work by hand. Therefore, we decided to automate this process by introducing a simple XML vocabulary, which developers can use to submit their timesheets. The idea is to directly use the semantic data provided by developers to generate everything else that's necessary to publish high quality timesheets.
+
+The following actions should be taken in order to implement these requirements:
+  # Defining a simple XML grammar for internal use using RELAX NG.
+  # Writing an XSLT stylesheet to generate:
+    * HTML version of timesheets.
+    * Plain text version of timesheets.
+    * Metadata for publishing timesheets in various formats.
