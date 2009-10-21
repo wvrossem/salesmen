@@ -7,8 +7,28 @@ In this page, you'll be shown how to interact with the Subversion server to make
 
 = Get a Working Copy =
 
-You first need to _checkout_ --store a local copy-- of the relevant part of the source code.
+The _checkout_ command is used to pull an SVN tree such as https://salesmen.googlecode.com/svn/trunk/ from the server. You should only need to do this once. If the directory structure is changed (as is sometimes necessary), you may occasionally need to delete your local sand box and re-check it out.
+
+The command line for a checkout should look like this:
 
 $ svn co https://salesmen.googlecode.com/svn/trunk/ salesmen --username uname@gmail.com
 
 Please note that the above command will checkout the main development branch. Alternate development branches, meeting minutes, timesheets, etc. are not included.
+
+
+= Send Edited Working Copy =
+
+The _commit_ command sends your changes to the SVN server. It will commit changed files, added files, and deleted files. Note that you can commit a change to an individual file or changes to files in a specific directory path by adding the name of the file/directory to the end of the command. The -m option should always be used to pass a log message to the command.
+
+The command line:
+
+$ svn ci -m "Brief explanation of what you have changed"
+
+
+= Update your Local Working Copy =
+
+Of course you don't have to checkout to get the newest revision, you can easily _update_ your working copy. This will synchronize your local sand box with the server.
+
+Command:
+
+$ svn up
