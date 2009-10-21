@@ -22,7 +22,7 @@ The _commit_ command sends your changes to the SVN server. It will commit change
 
 The command line:
 
-$ svn ci -m "Brief explanation of what you have changed"
+$ svn ci -m "brief explanation of what you have changed"
 
 
 = Update your Local Working Copy =
