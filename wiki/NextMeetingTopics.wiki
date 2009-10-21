@@ -9,3 +9,4 @@
   * Latex template for documents (Wouter)
 
   * SPMP (Nick)
+  * Summary of tasks (Nick)
