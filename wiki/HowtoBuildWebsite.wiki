@@ -1,0 +1,12 @@
+#summary How to build the project's website
+#labels Configuration
+
+= Introduction =
+
+This page is intended to describe how to build the [http://wilma.vub.ac.be/~se2_0910/ Salemen project's website].
+
+== Using SSH ==
+
+  # Connect to `wilma.vub.ac.be` using SSH with `se2_0910` as the username.
+  # `$ cd ws/repo/salesmen/trunk/www/wilma.vub.ac.be.se2_0910`
+  # ant publish
