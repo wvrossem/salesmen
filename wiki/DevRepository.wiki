@@ -1,15 +1,15 @@
-#summary Short introduction to SVN commands
+#summary Short guide for command-line users of SVN
 #labels Configuration
 
 = Introduction =
 
-In this page, you'll be shown how to interact with the Subversion server to make changes to the source code.
+In this page, you'll be shown how to interact with the Subversion server to make changes to the source code. It is assumed that the command-line Subversion client is installed on your machine.
 
 = Get a Working Copy =
 
 The _checkout_ command is used to pull an SVN tree such as `https://salesmen.googlecode.com/svn/trunk/` from the server.
 
-The command line for a checkout should look like this:
+The command for a checkout should look like the following. Your password differs from your regular Google password. Your Google Code password can be found [http://code.google.com/hosting/settings here].
 
 $ svn co https://salesmen.googlecode.com/svn/trunk/ salesmen --username uname@gmail.com
 
@@ -23,8 +23,8 @@ The command following command will commit your changes to the specified file or 
 
 `$ svn ci -m "brief explanation of what you have changed" path/to/file/or/directory`
 
-= Update your Local Working Copy =
+= Update Your Working Copy =
 
-The following command is your friend. Use it all the time so as to make sure that your working copy is synchronized with the server at all times.
+The following command is your friend. Use it all the time so as to make sure that your working copy is synchronized with the server.
 
 `$ svn up`
