@@ -12,4 +12,5 @@
   * SVN (Nick)
   * Requirements (Nick)
   * Timesheets (Nick)
-  * Documenting the disadavantages of methodes that were not chosen(Jonathan)
+  * Documenting the disadavantages of methodes that were not chosen (Jonathan)
+  * Replying e-mails (Jonathan)
