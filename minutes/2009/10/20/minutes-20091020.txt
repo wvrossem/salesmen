@@ -1,0 +1,337 @@
+
+    Software Engineering Group 2 (2009-2010)
+
+
+                         Meeting Report
+                          Jonathan Jeurissen
+
+
+
+       Tuesday, October 20, 2009, 16H45-18H00 in D2.10
+     Attendees
+
+     Nick De Cooman           Present
+
+     Jonathan Jeurissen       Present
+
+     Sina Khakbaz Heshmati    Present
+
+     Jorne Laton              Present
+
+     Bart Maes                Present
+
+     Patrick Provinciael      Present
+
+     Wouter Van Rossem        Present
+
+
+1     Job Assignments
+
+
+There has been decided that "Backup" is not an appropriate term for the as-
+
+sistant of every function in this project. Also there is a new function "Project
+
+Secretary". The Secretary will e.g. write the reports of the meetings. These
+
+are the definitive roles that we have assigned on the meeting on Tuesday,
+
+October 20, 2009 :
+
+   _____________________________________________________
+    Role                          Effective  Assistant
+   _____________________________________________________
+    Project Leader                Nick       Patrick
+
+    Project Secretary             Jonathan   Wouter
+
+    Configuration Manager         Jorne      Sina
+
+    Quality Assurance Manager     Patrick    Bart
+
+    Requirements Manager          Wouter     Jonathan
+
+    Design Manager                Bart       Nick
+
+    Implementation Manager        Sina       Jorne
+
+    Webmaster                     Sina       Wouter
+   _____________________________________________________
+                                     1
+
+
+2     Website
+
+
+
+2.1    Lay-out
+
+
+    o Grouping of items
+
+      As an extra feature, documents on the website will be grouped per
+
+      meeting. At the moment there are only the different revisions available,
+
+      as one big list. This feature will improve usability and readabilty.
+
+
+    o Tutorial
+
+      A tutorial on writing/editing/updating documents and integrating these
+
+      documents on the server, will be written by the Configuration Manage-
+
+      ment Team.
+2.2    Issue Management
+
+
+From now on, issues will be posted on the website.  These issues require
+
+solutions to achieve a milestone.  In these issues, comments can be given
+
+by all the team members. In this way, we can achieve our milestones in an
+
+efficient manner.
+2.3    Responsibilities
+
+
+A Wiki page will be made, to clear up the responsibilities of everyone. This
+
+page shall be managed by the Project Leader.  He will clearly specify the
+
+tasks of every member.  These specifications will be revised by the team
+
+members themselves.
+3     Agreements
+
+
+
+3.1    Deadlines
+
+
+A few deadlines have been set:
+
+
+
+    o Timesheets
+
+      Everyone has to update his .XML code every Sunday before 20H00.
+
+
+    o SPMP
+
+      The first version of the SPMP (Software Project Manager Plan) will
+
+      be made by Monday, October 26, 2009 at 20H00.
+
+
+
+                                     2
+
+
+    o SRS Questions
+
+      A Wiki page will be made to post possible questions to ask our client.
+
+      Update: This Wiki page has already been created on Wednesday, Octo-
+
+      ber 21,2009 by Wouter[?]. The first version of the SRS will be finished
+
+      by Wednesday, October 28,2009.
+3.2    Timesheets
+
+
+The timesheet shall be filled out be every member in .XML coding. A tem-
+
+plate based .XML coding has been chosen to realise a straightforward solu-
+
+tion. There's no need for an extra program or function on our website. The
+
+Project Leader will put all the .XML codes together every Sunday. This com-
+
+plete .XML document, can be easily converted to the appropriate necessary
+
+file types. For extra information, one could look at [?].
+3.3    Language
+
+
+The language used in the code (and comments) will be English for the inter-
+
+nationality of the code. To be consistent in every aspect, all documents will
+
+be written in English.
+4     SPMP
+
+
+The spiral model with a few cycles will be used for this project, because it
+
+has a high amount of risk analysis, combined with the advantage that the
+
+software will be produced in an early stage of the project life cycle. This will
+
+improve the motivation of the team members.  Both waterfall method and
+
+extreme programming have been considered als alternatives, but they were
+
+discarded in favor of the spiral method.
+5     Tools
+
+
+    o Google Code
+
+      There has been chosen for Google Code because it has some handy
+
+      features:
+
+
+        1. Revision control system (Subversion, for extra information, see
+
+           below).
+
+        2. Issue tracker
+
+                                     3
+
+
+        3. Wiki (is sometimes handy e.g. for meeting agenda).
+
+        4. File download server (for our software and document releases).
+
+
+    o Subversion
+
+      This is a centralized version control system chosen for the following
+
+      reasons:
+
+
+         - It is easy to refactor the source code structure, while preserving
+
+           files' history.
+
+         - The whole repository has a single revision that is incremented
+
+           after each commit.
+
+
+    o Eclipse
+
+      Eclipse is a software development environment comprising an IDE and
+
+      a plug-in system to extend it.  It is used to develop applications in
+
+      Java.  [?] There has been decided to work with Eclipse because it's
+
+      very userfriendly interface and it's popularity. Also it's know by most
+
+      of the team members.
+
+
+    o LATEX
+
+      LATEX has been chosen to document this project because it's interna-
+
+      tionally known and commonly used. Also, a few members were inter-
+
+      ested in learning this language. Wouter, Sina and Jonathan have taken
+
+      a course on Tuesday, October 20,2009 to study LATEX, to be able to
+
+      write their reports.
+6     Risk Analysis
+
+
+New risks will be discussed at every meeting. A list of the current risks will
+
+be kept on the Wiki page.
+
+Current Risks:
+
+
+   1. What if Google goes down for a certain period?
+
+      Solution:
+
+      Backups of our files and documentation will be performed by Jorne and
+
+      possibly assisted by Sina.
+
+
+   2. What if somebody becomes ill?
+
+      Solution:
+
+      This risk has already been considered in the beginning of this project.
+
+      This is why there is an Assistant(formerly called Backup) for every
+                                     4
+
+
+      Management position.  If a leader or manager gets ill, the assistant
+
+      of that function should be able to fully understand his function and
+
+      replace that leader or manager, for a certain period of time.
+
+
+   3. What if somebody doesn't spend enough time on his job?
+
+      Solution:
+
+      At first this will be discussed at the next meeting and a suggested
+
+      action will be given. Thereafter a warning will be given. Possibly there
+
+      will be further actions.  If it's absolutely necessary, a member can be
+
+      dismissed. In this case, the solution to the risk stated above applies.
+7     Next Meeting
+
+
+Next meeting will be on Fiday 23, 2009 at 12H00, in E1.
+
+
+
+7.1    Agenda
+
+
+    o Risk Analysis
+
+
+    o Latex template for documents
+
+
+    o SPMP
+
+
+    o Summary of tasks
+
+
+    o SVN
+
+
+    o Requirements
+
+
+    o Timesheets
+
+
+    o Documenting methodes that were not chosen
+
+
+    o Replying e-mails
+References
+
+
+ [1] http://code.google.com/p/salesmen/wiki/RequirementsInterview
+
+
+ [2] http://code.google.com/p/salesmen/wiki/RiskAnalysis
+
+
+ [3] http://en.wikipedia.org/wiki/Eclipse_java
+
+
+                     Last revised on October 22, 2009.
+                                     5
