@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" targetNamespace="http://www.w3.org/XML/1998/namespace" xmlns:tt="http://purl.org/net/timetrack" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <xs:import namespace="http://purl.org/net/timetrack" schemaLocation="timetrack.xsd"/>
+  <xs:import namespace="http://www.w3.org/1999/xhtml" schemaLocation="xhtml.xsd"/>
+  <xs:import namespace="http://www.w3.org/2001/XInclude" schemaLocation="xi.xsd"/>
+  <xs:attribute name="base"/>
+  <xs:attribute name="lang" type="tt:timetrackLanguageTag"/>
+  <xs:attribute name="id" type="xs:ID"/>
+</xs:schema>

@@ -1,0 +1,17 @@
+<?xml version='1.0'?>
+<timesheets
+    xmlns="http://purl.org/net/timetrack"
+    xmlns:xi="http://www.w3.org/2001/XInclude"
+    from="2009-10-12" 
+    to="2009-10-19"
+    xml:id="week42-2009">
+  <title>A Collection of Timesheets for the 42nd Week of 2009</title>
+  <person>
+    <name>Homer Simpson</name>
+    <xi:include href="homer.xml"/>
+  </person>
+  <person>
+    <name>Bart Simpson</name>
+    <xi:include href="bart.xml"/>
+  </person>
+</timesheets>

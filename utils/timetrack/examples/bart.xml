@@ -1,0 +1,13 @@
+<?xml version='1.0'?>
+<timesheet xmlns="http://purl.org/net/timetrack">
+  <item duration="PT2H">
+    <desc>
+      Let Mrs. Krabappel chill out.
+    </desc>
+  </item>
+  <item duration="PT25H">
+    <desc type="text">
+      Playing video games with Milhouse.
+    </desc>
+  </item>
+</timesheet>

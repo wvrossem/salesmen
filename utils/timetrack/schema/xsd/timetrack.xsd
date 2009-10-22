@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  RELAX NG Grammar for TimeTrack XML Vocabulary
+  Copyright (c) 2009 Sina K. Heshmati
+-->
+<!-- Inspired by Atom and DocBook XML formats. -->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" targetNamespace="http://purl.org/net/timetrack" xmlns:tt="http://purl.org/net/timetrack" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <xs:import namespace="http://www.w3.org/1999/xhtml" schemaLocation="xhtml.xsd"/>
+  <xs:import namespace="http://www.w3.org/2001/XInclude" schemaLocation="xi.xsd"/>
+  <xs:import namespace="http://www.w3.org/XML/1998/namespace" schemaLocation="xml.xsd"/>
+  <xs:attributeGroup name="timetrackCommonAttributes">
+    <xs:attribute ref="xml:base"/>
+    <xs:attribute ref="xml:lang"/>
+  </xs:attributeGroup>
+  <xs:group name="timetrackPersonConstruct">
+    <xs:sequence>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element ref="tt:name"/>
+        <xs:element ref="tt:uri"/>
+        <xs:element ref="tt:email"/>
+      </xs:choice>
+    </xs:sequence>
+  </xs:group>
+  <xs:element name="name" type="xs:string"/>
+  <xs:element name="uri" type="xs:string"/>
+  <xs:element name="email" type="tt:timetrackEmailAddress"/>
+  <xs:attributeGroup name="timetrackPersonConstruct">
+    <xs:attributeGroup ref="tt:timetrackCommonAttributes"/>
+  </xs:attributeGroup>
+  <xs:simpleType name="timetrackDateConstruct">
+    <xs:restriction base="xs:date"/>
+  </xs:simpleType>
+  <xs:attributeGroup name="timetrackDateConstruct">
+    <xs:attributeGroup ref="tt:timetrackCommonAttributes"/>
+  </xs:attributeGroup>
+  <xs:attributeGroup name="timetrackIDAttribute">
+    <xs:attribute ref="xml:id" use="required"/>
+  </xs:attributeGroup>
+  <xs:attributeGroup name="timetrackTimesheetsAttributes">
+    <xs:attributeGroup ref="tt:timetrackIDAttribute"/>
+    <xs:attribute name="from" use="required" type="tt:timetrackDateConstruct"/>
+    <xs:attribute name="to" use="required" type="tt:timetrackDateConstruct"/>
+  </xs:attributeGroup>
+  <xs:element name="timesheets">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:choice minOccurs="0" maxOccurs="unbounded">
+          <xs:element ref="tt:author"/>
+          <xs:element ref="tt:generator"/>
+          <xs:element ref="tt:subtitle"/>
+          <xs:element ref="tt:rights"/>
+          <xs:element ref="tt:title"/>
+          <xs:element ref="tt:published"/>
+          <xs:element ref="tt:updated"/>
+        </xs:choice>
+        <xs:element maxOccurs="unbounded" ref="tt:person"/>
+      </xs:sequence>
+      <xs:attributeGroup ref="tt:timetrackCommonAttributes"/>
+      <xs:attributeGroup ref="tt:timetrackTimesheetsAttributes"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:attributeGroup name="timetrackItemAttributes">
+    <xs:attribute ref="xml:id"/>
+    <xs:attribute name="duration" use="required" type="xs:duration"/>
+  </xs:attributeGroup>
+  <xs:group name="timetrackXHTMLItemDescription">
+    <xs:sequence>
+      <xs:element name="desc">
+        <xs:complexType>
+          <xs:complexContent>
+            <xs:extension base="tt:xhtmlDiv">
+              <xs:attributeGroup ref="tt:timetrackCommonAttributes"/>
+              <xs:attribute name="type" use="required">
+                <xs:simpleType>
+                  <xs:restriction base="xs:token">
+                    <xs:enumeration value="xhtml"/>
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:attribute>
+            </xs:extension>
+          </xs:complexContent>
+        </xs:complexType>
+      </xs:element>
+    </xs:sequence>
+  </xs:group>
+  <xs:group name="timetrackTextItemDescription">
+    <xs:sequence>
+      <xs:element name="desc">
+        <xs:complexType mixed="true">
+          <xs:attributeGroup ref="tt:timetrackCommonAttributes"/>
+          <xs:attribute name="type">
+            <xs:simpleType>
+              <xs:restriction base="xs:token">
+                <xs:enumeration value="text"/>
+              </xs:restriction>
+            </xs:simpleType>
+          </xs:attribute>
+        </xs:complexType>
+      </xs:element>
+    </xs:sequence>
+  </xs:group>
+  <xs:group name="timetrackItemDescription">
+    <xs:choice>
+      <xs:group ref="tt:timetrackTextItemDescription"/>
+      <xs:group ref="tt:timetrackXHTMLItemDescription"/>
+    </xs:choice>
+  </xs:group>
+  <xs:element name="ref" type="xs:string"/>
+  <xs:element name="refs">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="unbounded" ref="tt:ref"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="item">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:group ref="tt:timetrackItemDescription"/>
+        <xs:element minOccurs="0" ref="tt:refs"/>
+      </xs:sequence>
+      <xs:attributeGroup ref="tt:timetrackCommonAttributes"/>
+      <xs:attributeGroup ref="tt:timetrackItemAttributes"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:attributeGroup name="timetrackTimesheetAttributes">
+    <xs:attribute ref="xml:id"/>
+  </xs:attributeGroup>
+  <xs:element name="timesheet">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="unbounded" ref="tt:item"/>
+      </xs:sequence>
+      <xs:attributeGroup ref="tt:timetrackCommonAttributes"/>
+      <xs:attributeGroup ref="tt:timetrackTimesheetAttributes"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="person">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:group minOccurs="0" ref="tt:timetrackPersonConstruct"/>
+        <xs:choice>
+          <xs:element ref="tt:timesheet"/>
+          <xs:element ref="xi:include"/>
+        </xs:choice>
+      </xs:sequence>
+      <xs:attributeGroup ref="tt:timetrackPersonConstruct"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:attributeGroup name="timetrackXIncludeAttributes">
+    <xs:attribute name="href" use="required" type="xs:anyURI"/>
+    <xs:attribute name="xpointer"/>
+    <xs:attribute name="encoding"/>
+    <xs:attribute name="accept"/>
+    <xs:attribute name="accept-language"/>
+  </xs:attributeGroup>
+  <xs:element name="generator">
+    <xs:complexType mixed="true">
+      <xs:attributeGroup ref="tt:timetrackCommonAttributes"/>
+      <xs:attribute name="uri"/>
+      <xs:attribute name="version"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="author">
+    <xs:complexType>
+      <xs:group ref="tt:timetrackPersonConstruct"/>
+      <xs:attributeGroup ref="tt:timetrackPersonConstruct"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="rights" type="tt:timetrackTextConstruct"/>
+  <xs:element name="subtitle" type="tt:timetrackTextConstruct"/>
+  <xs:element name="title" type="tt:timetrackTextConstruct"/>
+  <xs:element name="updated">
+    <xs:complexType>
+      <xs:simpleContent>
+        <xs:extension base="tt:timetrackDateConstruct">
+          <xs:attributeGroup ref="tt:timetrackDateConstruct"/>
+        </xs:extension>
+      </xs:simpleContent>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="published">
+    <xs:complexType>
+      <xs:simpleContent>
+        <xs:extension base="tt:timetrackDateConstruct">
+          <xs:attributeGroup ref="tt:timetrackDateConstruct"/>
+        </xs:extension>
+      </xs:simpleContent>
+    </xs:complexType>
+  </xs:element>
+  <xs:simpleType name="timetrackMediaType">
+    <xs:restriction base="xs:string">
+      <xs:pattern value=".+/.+"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <!-- As defined in RFC 3066 -->
+  <xs:simpleType name="timetrackLanguageTag">
+    <xs:restriction base="xs:string">
+      <xs:pattern value="[A-Za-z]{1,8}(-[A-Za-z0-9]{1,8})*"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="timetrackEmailAddress">
+    <xs:restriction base="xs:string">
+      <xs:pattern value=".+@.+"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:complexType name="anyElement">
+    <xs:sequence>
+      <xs:any processContents="skip"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:group name="anyXHTML">
+    <xs:sequence>
+      <xs:any namespace="http://www.w3.org/1999/xhtml" processContents="skip"/>
+    </xs:sequence>
+  </xs:group>
+  <xs:complexType name="xhtmlDiv">
+    <xs:sequence>
+      <xs:element ref="xhtml:div"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:attributeGroup name="timetrackPlainTextConstruct">
+    <xs:attributeGroup ref="tt:timetrackCommonAttributes"/>
+  </xs:attributeGroup>
+  <xs:group name="timetrackXHTMLTextConstruct">
+    <xs:sequence>
+      <xs:group ref="tt:anyXHTML"/>
+    </xs:sequence>
+  </xs:group>
+  <xs:attributeGroup name="timetrackXHTMLTextConstruct">
+    <xs:attributeGroup ref="tt:timetrackCommonAttributes"/>
+  </xs:attributeGroup>
+  <xs:complexType name="timetrackTextConstruct" mixed="true">
+    <xs:group minOccurs="0" ref="tt:timetrackXHTMLTextConstruct"/>
+    <xs:attributeGroup ref="tt:timetrackPlainTextConstruct"/>
+  </xs:complexType>
+</xs:schema>
+<!-- EOF -->
