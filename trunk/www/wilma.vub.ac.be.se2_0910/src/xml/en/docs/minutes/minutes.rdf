@@ -36,12 +36,12 @@
 <Release rdf:about="http://wilma.vub.ac.be/~se2_0910/docs/minutes/2009/10/20/">
   <package rdf:resource="http://wilma.vub.ac.be/~se2_0910/docs/minutes/"/>
   <revision>20091020</revision>
-  <created>2009-10-18</created>
+  <created>2009-10-22</created>
 </Release>
 <Release rdf:about="http://wilma.vub.ac.be/~se2_0910/docs/minutes/2009/10/16/">
   <package rdf:resource="http://wilma.vub.ac.be/~se2_0910/docs/minutes/"/>
   <revision>20091016</revision>
-  <created>2009-10-22</created>
+  <created>2009-10-18</created>
 </Release>
     </releases>
     
