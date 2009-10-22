@@ -12,3 +12,4 @@
   * SVN (Nick)
   * Requirements (Nick)
   * Timesheets (Nick)
+  * Documenting the disadavantages of methodes that were not chosen(Jonathan)
