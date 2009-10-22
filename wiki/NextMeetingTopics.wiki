@@ -9,5 +9,6 @@
   * SPMP (Nick)
   * Summary of tasks (Nick)
   * Risk Analysis (Wouter) -10 MIN-
+  * SVN (Nick)
   * Requirements (Nick)
   * Timesheets (Nick)
