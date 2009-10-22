@@ -33,6 +33,11 @@
   <created>YYYY-MM-DD</created>
 </Release>
 -->
+<Release rdf:about="http://wilma.vub.ac.be/~se2_0910/docs/minutes/2009/10/20/">
+  <package rdf:resource="http://wilma.vub.ac.be/~se2_0910/docs/minutes/"/>
+  <revision>20091020</revision>
+  <created>2009-10-18</created>
+</Release>
 <Release rdf:about="http://wilma.vub.ac.be/~se2_0910/docs/minutes/2009/10/16/">
   <package rdf:resource="http://wilma.vub.ac.be/~se2_0910/docs/minutes/"/>
   <revision>20091016</revision>
@@ -75,6 +80,45 @@
   <size rdf:parseType="Resource">
     <unit rdf:resource="http://purl.org/urfm/Kilobyte"/>
     <rdf:value>3.7</rdf:value>
+  </size> 
+  <link>http://wilma.vub.ac.be/~se2_0910/docs/minutes/2009/10/16/minutes-20091016.tex</link>
+  <format>application/x-latex</format>
+</File>
+
+<File rdf:about="http://wilma.vub.ac.be/~se2_0910/docs/minutes/2009/10/20/minutes-20091020.pdf">
+  <release rdf:resource="http://wilma.vub.ac.be/~se2_0910/docs/minutes/2009/10/20/"/>
+  <basename>minutes-20091020</basename>
+  <extension>.pdf</extension>
+  <language>en</language>
+  <size rdf:parseType="Resource">
+    <unit rdf:resource="http://purl.org/urfm/Kilobyte"/>
+    <rdf:value>74</rdf:value>
+  </size> 
+  <link>http://wilma.vub.ac.be/~se2_0910/docs/minutes/2009/10/20/minutes-20091020.pdf</link>
+  <format>application/pdf</format>
+</File>
+
+<File rdf:about="http://wilma.vub.ac.be/~se2_0910/docs/minutes/2009/10/20/minutes-20091020.txt">
+  <release rdf:resource="http://wilma.vub.ac.be/~se2_0910/docs/minutes/2009/10/20/"/>
+  <basename>minutes-20091020</basename>
+  <extension>.txt</extension>
+  <language>en</language>
+  <size rdf:parseType="Resource">
+    <unit rdf:resource="http://purl.org/urfm/Kilobyte"/>
+    <rdf:value>7.4</rdf:value>
+  </size> 
+  <link>http://wilma.vub.ac.be/~se2_0910/docs/minutes/2009/10/16/minutes-20091016.txt</link>
+  <format>text/plain</format>
+</File>
+
+<File rdf:about="http://wilma.vub.ac.be/~se2_0910/docs/minutes/2009/10/16/minutes-20091016.tex">
+  <release rdf:resource="http://wilma.vub.ac.be/~se2_0910/docs/minutes/2009/10/16/"/>
+  <basename>minutes-20091016</basename>
+  <extension>.tex</extension>
+  <language>en</language>
+  <size rdf:parseType="Resource">
+    <unit rdf:resource="http://purl.org/urfm/Kilobyte"/>
+    <rdf:value>7.4</rdf:value>
   </size> 
   <link>http://wilma.vub.ac.be/~se2_0910/docs/minutes/2009/10/16/minutes-20091016.tex</link>
   <format>application/x-latex</format>
