@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<locatingRules xmlns="http://thaiopensource.com/ns/locating-rules/1.0">
+  <uri resource="homer.xml" uri="../schema/rng/timetrack.rnc"/>
+  <uri resource="bart.xml" uri="../schema/rng/timetrack.rnc"/>
+  <uri resource="timesheets-xinclude.xml" uri="../schema/rng/timetrack.rnc"/>
+  <uri resource="timesheet-xhtml.xml" uri="../schema/rng/timetrack.rnc"/>
+</locatingRules>
