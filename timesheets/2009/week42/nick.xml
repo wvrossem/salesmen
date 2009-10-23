@@ -1,0 +1,27 @@
+<?xml version='1.0'?>
+<timesheet xmlns="http://purl.org/net/timetrack">
+  <item duration="PT45M">
+    <desc>Meeting on Friday 2009/10/16.</desc>
+    <refs>
+      <ref>http://wilma.vub.ac.be/~se2_0910/docs/minutes/2009/10/16/minutes-20091016.pdf</ref>
+    </refs>
+  </item>
+  <item duration="PT1H">
+    <desc>Refresh LaTeX</desc>
+    <refs>
+      <ref>http://users.fulladsl.be/spb10695/latex.html</ref>
+    </refs>
+  </item>
+  <item duration="PT2H">
+    <desc>Writing meeting report</desc>
+    <refs>
+      <ref>http://wilma.vub.ac.be/~se2_0910/docs/minutes/2009/10/16/minutes-20091016.pdf</ref>
+    </refs>
+  </item>
+  <item duration="PT1H">
+    <desc>Making timesheets for the 42nd week of 2009.</desc>
+    <refs>
+      <ref>http://wilma.vub.ac.be/~se2_0910/docs/timesheets/2009/#week42</ref>
+    </refs>
+  </item>
+</timesheet>

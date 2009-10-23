@@ -1,0 +1,38 @@
+<?xml version='1.0'?>
+<timesheet xmlns="http://purl.org/net/timetrack">
+  <item duration="PT45M">
+    <desc>
+      Meeting on Friday 2009/10/16.
+    </desc>
+    <refs>
+      <ref>http://wilma.vub.ac.be/~se2_0910/docs/minutes/2009/10/16/minutes-20091016.pdf</ref>
+    </refs>
+  </item>
+  <item duration="PT2H30M">
+    <desc type="xhtml">
+      <div xmlns="http://www.w3.org/1999/xhtml">
+	<ul>
+	  <li>Install SilkPage on Wilma.</li>
+	  <li>Creating the Team page.</li>
+	  <li>Call for project name proposals.</li>
+	</ul>
+      </div>
+    </desc>
+    <refs>
+      <ref>http://wilma.vub.ac.be/~se2_0910/</ref>
+      <ref>http://wilma.vub.ac.be/~se2_0910/about/team/</ref>
+    </refs>
+  </item>
+  <item duration="PT20M">
+    <desc>HTML Refresh</desc>
+    <refs>
+      <ref>http://www.w3schools.com/html/default.asp</ref>
+    </refs>
+  </item>
+  <item duration="PT1H30M">
+    <desc>CSS and Javascript tutorial</desc>
+    <refs>
+      <ref>http://www.w3schools.com/sitemap/sitemap_tutorials.asp</ref>
+    </refs>
+  </item>
+</timesheet>
