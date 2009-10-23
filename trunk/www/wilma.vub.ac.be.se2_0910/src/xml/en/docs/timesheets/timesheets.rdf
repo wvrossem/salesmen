@@ -36,36 +36,36 @@
 -->
 <Release rdf:about="http://wilma.vub.ac.be/~se2_0910/docs/timesheets/2009/week42/">
   <package rdf:resource="http://wilma.vub.ac.be/~se2_0910/docs/timesheets/"/>
-  <revision>2009week42</revision>
+  <revision>week42-2009</revision>
   <created>2009-10-19</created>
 </Release>
     </releases>
     
     <files rdf:parseType="Collection">
 
- <File rdf:about="http://wilma.vub.ac.be/~se2_0910/docs/timesheets/2009/week42/timesheet-2009week42.pdf">
+ <File rdf:about="http://wilma.vub.ac.be/~se2_0910/docs/timesheets/2009/week42/timesheet-week42-2009.pdf">
   <release rdf:resource="http://wilma.vub.ac.be/~se2_0910/docs/timesheets/2009/week42/"/>
-  <basename>timesheet-2009week42</basename>
+  <basename>timesheet-week42-2009</basename>
   <extension>.pdf</extension>
   <language>en</language>
   <size rdf:parseType="Resource">
     <unit rdf:resource="http://purl.org/urfm/Kilobyte"/>
     <rdf:value>48</rdf:value>
   </size> 
-  <link>http://wilma.vub.ac.be/~se2_0910/docs/timesheets/2009/week42/timesheet-2009week42.pdf</link>
+  <link>http://wilma.vub.ac.be/~se2_0910/docs/timesheets/2009/week42/timesheet-week42-2009.pdf</link>
   <format>application/pdf</format>
 </File>
 
- <File rdf:about="http://wilma.vub.ac.be/~se2_0910/docs/timesheets/2009/week42/timesheet-2009week42.txt">
+ <File rdf:about="http://wilma.vub.ac.be/~se2_0910/docs/timesheets/2009/week42/timesheet-week42-2009.txt">
   <release rdf:resource="http://wilma.vub.ac.be/~se2_0910/docs/timesheets/2009/week42/"/>
-  <basename>timesheet-2009week42</basename>
+  <basename>timesheet-week42-2009</basename>
   <extension>.txt</extension>
   <language>en</language>
   <size rdf:parseType="Resource">
     <unit rdf:resource="http://purl.org/urfm/Kilobyte"/>
     <rdf:value>3.1</rdf:value>
   </size> 
-  <link>http://wilma.vub.ac.be/~se2_0910/docs/timesheets/2009/week42/timesheet-2009week42.txt</link>
+  <link>http://wilma.vub.ac.be/~se2_0910/docs/timesheets/2009/week42/timesheet-week42-2009.txt</link>
   <format>text/plain</format>
 </File>
 
