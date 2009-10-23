@@ -50,7 +50,7 @@ In case your description is just one simple line, you can forget about XHTML.
 
 == Optional References ==
 
-the `<refs>` tag is optional but once you use it, it must contain at least one `<ref>` element. In case an item doesn't have any references, then just omit them.
+The `<refs>` tag is optional but once you use it, it must contain at least one `<ref>` element. In case an item doesn't have any references, then just omit them.
 
 {{{
 <item duration="PT10H">
