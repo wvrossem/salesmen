@@ -12,9 +12,47 @@ There is also a section for links.
 = Questions =
 
 Questions for the requirements interview:
-  * 
+
+== Users ==
+ * What should a guest be able to do? (Wouter)
+   # Browse through auctions?
+   # Request an acount?
+   # Contact seller/other users?
+ * What should registered users be able to do? (Wouter)
+   # Bid on auctions?
+   # Place an auction?
+   # Contact seller/other users?
+ * Who can create a new auction? (Wouter)
+   # Only registered users?
+   # Should there be a verification process for sellers? (anti-scammers)
+ * Should there be a rating system? (Wouter)
+
+== Interface ==
+ * Should there be a user hub? (Wouter)
+   # "Watch" item
+   # Favorite sellers
+ * How should a user search for items? (Wouter)
+   # Categories
+   # [http://en.wikipedia.org/wiki/Tag_cloud Tag Cloud]
+
+== Auctions ==
+ * What type of auctions should there be? (Wouter)
+   # Normal auctions with bidding? [http://en.wikipedia.org/wiki/English_auction English auction]
+   # Auctions with fixed price?
+   # Auctions with fixed price and best offer?
+   # [http://en.wikipedia.org/wiki/Dutch_auction Dutch auction]
+   
+ * What should be the time limit for an auction? (Wouter)
+ * Should auctions be categorised? (Wouter)
+ * Should auctions have a tag? (Wouter)
+   # Difference tag and category: an auction could be in the category "cars", but it could also have the tag "volvo" for example
+
+== Bidding ==
+ * Should there be different methods to bid on an item? E.g. with maximu bid. (Wouter)
+ * Should there be a minimum amount to bid? E.g. A buyer should not be able to outbid another buyer by 0.01€ (Wouter)
 
 = Links =
 
 Put interesting links here:
   * http://www.guydavis.ca/seng/seng611/group/interview.shtml (Wouter)
+  * http://en.wikipedia.org/wiki/Online_auction_business_model (Wouter)
