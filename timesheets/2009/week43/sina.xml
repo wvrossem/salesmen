@@ -1,0 +1,78 @@
+<?xml version='1.0'?>
+<timesheet xmlns="http://purl.org/net/timetrack">
+  <item duration="PT1H15M">
+    <desc>Meeting on Tuesday 2009/10/20.</desc>
+    <refs>
+      <ref>http://wilma.vub.ac.be/~se2_0910/docs/minutes/2009/10/20/minutes-20091020.pdf</ref>
+    </refs>
+  </item>
+  <item duration="PT3H">
+    <desc>LaTeX course with Prof. P. Cara.</desc>
+  </item>
+  <item duration="PT1H">
+    <desc>Meeting on Friday 2009/10/23.</desc>
+    <refs>
+      <ref>http://wilma.vub.ac.be/~se2_0910/docs/minutes/2009/10/23/minutes-20091023.pdf</ref>
+    </refs>
+  </item>
+  <item duration="PT1H">
+    <desc>
+      Together with Jorne, put together a short Subversion guide.
+    </desc>
+    <refs>
+      <ref>http://code.google.com/p/salesmen/source/detail?r=29</ref>
+      <ref>http://code.google.com/p/salesmen/source/detail?r=48</ref>
+    </refs>
+  </item>
+  <item duration="PT1H30M">
+    <desc>Synchronizing with Jorne regarding the Subversion server.</desc>
+  </item>
+  <item duration="PT1H">
+    <desc>
+      Designed an XML-based system for publishing the timesheets.
+    </desc>
+    <refs>
+      <ref>http://code.google.com/p/salesmen/source/detail?r=40</ref>
+      <ref>http://code.google.com/p/salesmen/source/detail?r=43</ref>
+    </refs>
+  </item>
+  <item duration="PT30M">
+    <desc>
+      Added the minutes for the meeting on Tuesday --2009/10/20.
+    </desc>
+    <refs>
+      <ref>http://code.google.com/p/salesmen/source/detail?r=56</ref>
+      <ref>http://code.google.com/p/salesmen/source/detail?r=57</ref>
+      <ref>http://wilma.vub.ac.be/~se2_0910/docs/minutes/2009/10/20/minutes-20091020.pdf</ref>
+    </refs>
+  </item>
+  <item duration="PT6H">
+    <desc>
+      Designed a simple XML vocabulary --codenamed TimeTrack-- for publishing 
+      timesheets. The grammar for the vocabulary is specified using the 
+      RELAX NG Compact Syntax. Alternate instances of the schema were 
+      also generated.
+    </desc>
+    <refs>
+      <ref>http://code.google.com/p/salesmen/source/detail?r=63</ref>
+    </refs>
+  </item>
+  <item duration="PT30M">
+    <desc>
+      Wrote a short introduction to TimeTrack --the XML vocabulary for 
+      publishing timesheets-- for Salesmen developers.
+    </desc>
+    <refs>
+      <ref>http://code.google.com/p/salesmen/wiki/HowtoSubmitTimesheet</ref>
+      <ref>http://code.google.com/p/salesmen/source/detail?r=64</ref>
+    </refs>
+  </item>
+  <item duration="PT45M">
+    <desc>
+      Ported devlopers' timesheets for the 42nd week to TimeTrack.
+    </desc>
+    <refs>
+      <ref>http://code.google.com/p/salesmen/source/detail?r=70</ref>
+    </refs>
+  </item>
+</timesheet>
