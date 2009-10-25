@@ -1,0 +1,25 @@
+<?xml version='1.0'?>
+<timesheet xmlns="http://purl.org/net/timetrack">
+	
+  <item duration="PT60M">
+    <desc>Meeting on Tuesday 2009/10/20</desc>
+    <refs>
+      <ref>http://wilma.vub.ac.be/~se2_0910/docs/minutes/2009/10/16/minutes-20091020.pdf</ref>
+    </refs>
+  </item>
+
+  <item duration="PT6H">
+    <desc>Writing SPMP</desc>
+    <refs>
+      <ref>Will be available on October 26, 8pm</ref>
+    </refs>
+  </item>
+
+  <item duration="PT60M">
+    <desc>Meeting on Friday 2009/10/23</desc>
+    <refs>
+      <ref>http://wilma.vub.ac.be/~se2_0910/docs/minutes/2009/10/16/minutes-20091023.pdf</ref>
+    </refs>
+  </item>
+
+</timesheet>
