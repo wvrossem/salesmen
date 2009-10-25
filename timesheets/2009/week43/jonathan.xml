@@ -1,0 +1,42 @@
+<?xml version='1.0'?>
+<timesheet xmlns="http://purl.org/net/timetrack">
+  <item duration="PT60M">
+    <desc>Meeting on Tuesday 2009/10/20.</desc>
+    <refs>
+      <ref>http://wilma.vub.ac.be/~se2_0910/docs/minutes/2009/10/20/minutes-20091020.pdf</ref>
+    </refs>
+  </item>
+  <item duration="PT180M">
+    <desc>Lesson for learning LaTeX, given by Philippe Cara (IG Lesson 3)</desc>
+  </item>
+  <item duration="PT60M">
+    <desc>Making extra LaTeX excersises</desc>
+  </item>
+  <item duration="PT150M">
+    <desc>Writing Minutes of Friday 2009/10/20.</desc>
+    <refs>
+      <ref>http://wilma.vub.ac.be/~se2_0910/docs/minutes/2009/10/20/minutes-20091020.pdf</ref>
+    </refs>
+  </item>
+  <item duration="PT35M">
+    <desc>Updating+Correcting Minutes of Friday 2009/10/20.</desc>
+    <refs>
+      <ref>http://wilma.vub.ac.be/~se2_0910/docs/minutes/2009/10/20/minutes-20091020.pdf</ref>
+    </refs>
+  </item>
+  <item duration="PT60M">
+    <desc>Meeting on Friday 2009/10/23.</desc>
+    <refs>
+      <ref>http://wilma.vub.ac.be/~se2_0910/docs/minutes/2009/10/23/minutes-20091023.pdf</ref>
+    </refs>
+  </item>
+ <item duration="PT175M">
+    <desc>Writing Minutes of Friday 2009/10/23.</desc>
+    <refs>
+      <ref>http://wilma.vub.ac.be/~se2_0910/docs/minutes/2009/10/23/minutes-20091023.pdf</ref>
+    </refs>
+  </item>
+  <item duration="PT10M">
+    <desc>Updated Timesheet for week 43.</desc>
+  </item>
+</timesheet>
