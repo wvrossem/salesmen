@@ -7,7 +7,7 @@
     <name>Nick De Cooman</name>
     <timesheet xmlns="http://purl.org/net/timetrack">
 	
-  <item duration="PT60M">
+  <item duration="PT1H15M">
     <desc>Meeting on Tuesday 2009/10/20</desc>
     <refs>
       <ref>http://wilma.vub.ac.be/~se2_0910/docs/minutes/2009/10/16/minutes-20091020.pdf</ref>
@@ -28,12 +28,19 @@
     </refs>
   </item>
 
+  <item duration="PT30M">
+    <desc>Checking Timesheets</desc>
+    <refs>
+      <ref>/</ref>
+    </refs>
+  </item>
+
 </timesheet>
   </person>
   <person>
     <name>Jonathan Jeurissen</name>
     <timesheet xmlns="http://purl.org/net/timetrack">
-  <item duration="PT60M">
+  <item duration="PT1H15M">
     <desc>Meeting on Tuesday 2009/10/20.</desc>
     <refs>
       <ref>http://wilma.vub.ac.be/~se2_0910/docs/minutes/2009/10/20/minutes-20091020.pdf</ref>
@@ -46,13 +53,13 @@
     <desc>Making extra LaTeX excersises</desc>
   </item>
   <item duration="PT150M">
-    <desc>Writing Minutes of Friday 2009/10/20.</desc>
+    <desc>Writing Minutes of Tuesday 2009/10/20.</desc>
     <refs>
       <ref>http://wilma.vub.ac.be/~se2_0910/docs/minutes/2009/10/20/minutes-20091020.pdf</ref>
     </refs>
   </item>
   <item duration="PT35M">
-    <desc>Updating+Correcting Minutes of Friday 2009/10/20.</desc>
+    <desc>Updating+Correcting Minutes of Tuesday 2009/10/20.</desc>
     <refs>
       <ref>http://wilma.vub.ac.be/~se2_0910/docs/minutes/2009/10/20/minutes-20091020.pdf</ref>
     </refs>
@@ -160,7 +167,7 @@
   <item duration="PT1H15M">
     <desc>Meeting on Tuesday 2009/10/20.</desc>
     <refs>
-      <ref>http://wilma.vub.ac.be/~se2_0910/docs/minutes/2009/10/16/minutes-20091016.pdf</ref>
+      <ref>http://wilma.vub.ac.be/~se2_0910/docs/minutes/2009/10/20/minutes-20091020.pdf</ref>
     </refs>
   </item>
   <item duration="PT3H">
@@ -180,12 +187,41 @@
   </person>
   <person>
     <name>Bart Maes</name>
-    <xi:include href="bart.xml"/>
+    <timesheet xmlns="http://purl.org/net/timetrack">
+<item duration="PT1H15M">
+    <desc>Meeting on Tuesday 2009/10/20</desc>
+    <refs>
+      <ref>http://wilma.vub.ac.be/~se2_0910/docs/minutes/2009/10/16/minutes-20091020.pdf</ref>
+    </refs>
+  </item>
+
+  <item duration="PT2H">
+    <desc>Refreshing Java</desc>
+    <refs>
+      <ref>ISBN 0072193662</ref>
+    </refs>
+  </item>
+
+  <item duration="PT4H">
+    <desc>Reading about design</desc>
+    <refs>
+      <ref>ISBN 0134897250</ref>
+    </refs>
+  </item>
+
+  <item duration="PT60M">
+    <desc>Meeting on Friday 2009/10/23</desc>
+    <refs>
+      <ref>http://wilma.vub.ac.be/~se2_0910/docs/minutes/2009/10/16/minutes-20091023.pdf</ref>
+    </refs>
+  </item>
+
+</timesheet>
   </person>
   <person>
     <name>Patrick Provinciael</name>
     <timesheet xmlns="http://purl.org/net/timetrack">
-  <item duration="PT60M">
+  <item duration="PT1H15M">
     <desc>Meeting on Tuesday 2009/10/20.</desc>
     <refs>
       <ref>http://wilma.vub.ac.be/~se2_0910/docs/minutes/2009/10/16/minutes-20091020.pdf</ref>

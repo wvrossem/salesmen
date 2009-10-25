@@ -34,6 +34,11 @@
   <created>YYYY-MM-DD</created>
 </Release>
 -->
+<Release rdf:about="http://wilma.vub.ac.be/~se2_0910/docs/timesheets/2009/week43/">
+  <package rdf:resource="http://wilma.vub.ac.be/~se2_0910/docs/timesheets/"/>
+  <revision>week43-2009</revision>
+  <created>2009-10-25</created>
+</Release>
 <Release rdf:about="http://wilma.vub.ac.be/~se2_0910/docs/timesheets/2009/week42/">
   <package rdf:resource="http://wilma.vub.ac.be/~se2_0910/docs/timesheets/"/>
   <revision>week42-2009</revision>
@@ -67,6 +72,32 @@
   </size> 
   <link>http://wilma.vub.ac.be/~se2_0910/docs/timesheets/2009/week42/timesheet-week42-2009.txt</link>
   <format>text/plain</format>
+</File>
+
+ <File rdf:about="http://wilma.vub.ac.be/~se2_0910/docs/timesheets/2009/week42/timesheet-week42-2009.xml">
+  <release rdf:resource="http://wilma.vub.ac.be/~se2_0910/docs/timesheets/2009/week42/"/>
+  <basename>timesheet-week42-2009</basename>
+  <extension>.xml</extension>
+  <language>en</language>
+  <size rdf:parseType="Resource">
+    <unit rdf:resource="http://purl.org/urfm/Kilobyte"/>
+    <rdf:value>0.9</rdf:value>
+  </size> 
+  <link>http://wilma.vub.ac.be/~se2_0910/docs/timesheets/2009/week42/timesheet-week42-2009.xml</link>
+  <format>application/xml</format>
+</File>
+
+ <File rdf:about="http://wilma.vub.ac.be/~se2_0910/docs/timesheets/2009/week43/timesheet-week43-2009.xml">
+  <release rdf:resource="http://wilma.vub.ac.be/~se2_0910/docs/timesheets/2009/week43/"/>
+  <basename>timesheet-week43-2009</basename>
+  <extension>.xml</extension>
+  <language>en</language>
+  <size rdf:parseType="Resource">
+    <unit rdf:resource="http://purl.org/urfm/Kilobyte"/>
+    <rdf:value>8.4</rdf:value>
+  </size> 
+  <link>http://wilma.vub.ac.be/~se2_0910/docs/timesheets/2009/week43/timesheet-week43-2009.xml</link>
+  <format>application/xml</format>
 </File>
 
     </files>
