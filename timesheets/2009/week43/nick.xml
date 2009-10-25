@@ -1,7 +1,7 @@
 <?xml version='1.0'?>
 <timesheet xmlns="http://purl.org/net/timetrack">
 	
-  <item duration="PT60M">
+  <item duration="PT1H15M">
     <desc>Meeting on Tuesday 2009/10/20</desc>
     <refs>
       <ref>http://wilma.vub.ac.be/~se2_0910/docs/minutes/2009/10/16/minutes-20091020.pdf</ref>
@@ -19,6 +19,13 @@
     <desc>Meeting on Friday 2009/10/23</desc>
     <refs>
       <ref>http://wilma.vub.ac.be/~se2_0910/docs/minutes/2009/10/16/minutes-20091023.pdf</ref>
+    </refs>
+  </item>
+
+  <item duration="PT30M">
+    <desc>Checking Timesheets</desc>
+    <refs>
+      <ref>/</ref>
     </refs>
   </item>
 
