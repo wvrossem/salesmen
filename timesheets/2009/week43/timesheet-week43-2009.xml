@@ -1,0 +1,243 @@
+<?xml version="1.0"?>
+<timesheets xmlns="http://purl.org/net/timetrack" xmlns:xi="http://www.w3.org/2001/XInclude" from="2009-10-19" to="2009-10-26" xml:id="week43-2009">
+  <title>SE2 Timesheets for the 43rd Week of 2009</title>
+  <published>2009-10-25</published>
+  <updated>2009-10-25</updated>
+  <person>
+    <name>Nick De Cooman</name>
+    <timesheet xmlns="http://purl.org/net/timetrack">
+	
+  <item duration="PT60M">
+    <desc>Meeting on Tuesday 2009/10/20</desc>
+    <refs>
+      <ref>http://wilma.vub.ac.be/~se2_0910/docs/minutes/2009/10/16/minutes-20091020.pdf</ref>
+    </refs>
+  </item>
+
+  <item duration="PT6H">
+    <desc>Writing SPMP</desc>
+    <refs>
+      <ref>Will be available on October 26, 8pm</ref>
+    </refs>
+  </item>
+
+  <item duration="PT60M">
+    <desc>Meeting on Friday 2009/10/23</desc>
+    <refs>
+      <ref>http://wilma.vub.ac.be/~se2_0910/docs/minutes/2009/10/16/minutes-20091023.pdf</ref>
+    </refs>
+  </item>
+
+</timesheet>
+  </person>
+  <person>
+    <name>Jonathan Jeurissen</name>
+    <timesheet xmlns="http://purl.org/net/timetrack">
+  <item duration="PT60M">
+    <desc>Meeting on Tuesday 2009/10/20.</desc>
+    <refs>
+      <ref>http://wilma.vub.ac.be/~se2_0910/docs/minutes/2009/10/20/minutes-20091020.pdf</ref>
+    </refs>
+  </item>
+  <item duration="PT180M">
+    <desc>Lesson for learning LaTeX, given by Philippe Cara (IG Lesson 3)</desc>
+  </item>
+  <item duration="PT60M">
+    <desc>Making extra LaTeX excersises</desc>
+  </item>
+  <item duration="PT150M">
+    <desc>Writing Minutes of Friday 2009/10/20.</desc>
+    <refs>
+      <ref>http://wilma.vub.ac.be/~se2_0910/docs/minutes/2009/10/20/minutes-20091020.pdf</ref>
+    </refs>
+  </item>
+  <item duration="PT35M">
+    <desc>Updating+Correcting Minutes of Friday 2009/10/20.</desc>
+    <refs>
+      <ref>http://wilma.vub.ac.be/~se2_0910/docs/minutes/2009/10/20/minutes-20091020.pdf</ref>
+    </refs>
+  </item>
+  <item duration="PT60M">
+    <desc>Meeting on Friday 2009/10/23.</desc>
+    <refs>
+      <ref>http://wilma.vub.ac.be/~se2_0910/docs/minutes/2009/10/23/minutes-20091023.pdf</ref>
+    </refs>
+  </item>
+ <item duration="PT175M">
+    <desc>Writing Minutes of Friday 2009/10/23.</desc>
+    <refs>
+      <ref>http://wilma.vub.ac.be/~se2_0910/docs/minutes/2009/10/23/minutes-20091023.pdf</ref>
+    </refs>
+  </item>
+  <item duration="PT10M">
+    <desc>Updated Timesheet for week 43.</desc>
+  </item>
+</timesheet>
+  </person>
+  <person>
+    <name>Sina Khakbaz Heshmati</name>
+    <timesheet xmlns="http://purl.org/net/timetrack">
+  <item duration="PT1H15M">
+    <desc>Meeting on Tuesday 2009/10/20.</desc>
+    <refs>
+      <ref>http://wilma.vub.ac.be/~se2_0910/docs/minutes/2009/10/20/minutes-20091020.pdf</ref>
+    </refs>
+  </item>
+  <item duration="PT3H">
+    <desc>LaTeX course with Prof. P. Cara.</desc>
+  </item>
+  <item duration="PT1H">
+    <desc>Meeting on Friday 2009/10/23.</desc>
+    <refs>
+      <ref>http://wilma.vub.ac.be/~se2_0910/docs/minutes/2009/10/23/minutes-20091023.pdf</ref>
+    </refs>
+  </item>
+  <item duration="PT1H">
+    <desc>
+      Together with Jorne, put together a short Subversion guide.
+    </desc>
+    <refs>
+      <ref>http://code.google.com/p/salesmen/source/detail?r=29</ref>
+      <ref>http://code.google.com/p/salesmen/source/detail?r=48</ref>
+    </refs>
+  </item>
+  <item duration="PT1H30M">
+    <desc>Synchronizing with Jorne regarding the Subversion server.</desc>
+  </item>
+  <item duration="PT1H">
+    <desc>
+      Designed an XML-based system for publishing the timesheets.
+    </desc>
+    <refs>
+      <ref>http://code.google.com/p/salesmen/source/detail?r=40</ref>
+      <ref>http://code.google.com/p/salesmen/source/detail?r=43</ref>
+    </refs>
+  </item>
+  <item duration="PT30M">
+    <desc>
+      Added the minutes for the meeting on Tuesday --2009/10/20.
+    </desc>
+    <refs>
+      <ref>http://code.google.com/p/salesmen/source/detail?r=56</ref>
+      <ref>http://code.google.com/p/salesmen/source/detail?r=57</ref>
+      <ref>http://wilma.vub.ac.be/~se2_0910/docs/minutes/2009/10/20/minutes-20091020.pdf</ref>
+    </refs>
+  </item>
+  <item duration="PT6H">
+    <desc>
+      Designed a simple XML vocabulary --codenamed TimeTrack-- for publishing 
+      timesheets. The grammar for the vocabulary is specified using the 
+      RELAX NG Compact Syntax. Alternate instances of the schema were 
+      also generated.
+    </desc>
+    <refs>
+      <ref>http://code.google.com/p/salesmen/source/detail?r=63</ref>
+    </refs>
+  </item>
+  <item duration="PT30M">
+    <desc>
+      Wrote a short introduction to TimeTrack --the XML vocabulary for 
+      publishing timesheets-- for Salesmen developers.
+    </desc>
+    <refs>
+      <ref>http://code.google.com/p/salesmen/wiki/HowtoSubmitTimesheet</ref>
+      <ref>http://code.google.com/p/salesmen/source/detail?r=64</ref>
+    </refs>
+  </item>
+  <item duration="PT45M">
+    <desc>
+      Ported devlopers' timesheets for the 42nd week to TimeTrack.
+    </desc>
+    <refs>
+      <ref>http://code.google.com/p/salesmen/source/detail?r=70</ref>
+    </refs>
+  </item>
+</timesheet>
+  </person>
+  <person>
+    <name>Jorne Laton</name>
+    <timesheet xmlns="http://purl.org/net/timetrack">
+  <item duration="PT1H15M">
+    <desc>Meeting on Tuesday 2009/10/20.</desc>
+    <refs>
+      <ref>http://wilma.vub.ac.be/~se2_0910/docs/minutes/2009/10/16/minutes-20091016.pdf</ref>
+    </refs>
+  </item>
+  <item duration="PT3H">
+    <desc>LaTeX course with professor Cara.</desc>
+  </item>
+  <item duration="PT1H30M">
+    <desc>SVN introduction by Sina.</desc>
+  </item>
+  <item duration="PT30M">
+    <desc>Writing short manual for SVN commandline.</desc>
+  </item>
+  <item duration="PT45M">
+    <desc>Meeting on Friday 2009/10/23.</desc>
+  </item>
+
+</timesheet>
+  </person>
+  <person>
+    <name>Bart Maes</name>
+    <xi:include href="bart.xml"/>
+  </person>
+  <person>
+    <name>Patrick Provinciael</name>
+    <timesheet xmlns="http://purl.org/net/timetrack">
+  <item duration="PT60M">
+    <desc>Meeting on Tuesday 2009/10/20.</desc>
+    <refs>
+      <ref>http://wilma.vub.ac.be/~se2_0910/docs/minutes/2009/10/16/minutes-20091020.pdf</ref>
+    </refs>
+  </item>
+  <item duration="PT30M">
+    <desc>Reviewed Minutes of Friday 2009/10/20 for Quality Assurance.</desc>
+    <refs>
+      <ref>http://wilma.vub.ac.be/~se2_0910/docs/minutes/2009/10/16/minutes-20091020.pdf</ref>
+    </refs>
+  </item>
+  <item duration="PT45M">
+    <desc>Reviewed SPMP for Quality Assurance.</desc>
+  </item>
+  <item duration="PT60M">
+    <desc>Meeting on Friday 2009/10/23.</desc>
+    <refs>
+      <ref>http://wilma.vub.ac.be/~se2_0910/docs/minutes/2009/10/16/minutes-20091023.pdf</ref>
+    </refs>
+  </item>
+  <item duration="PT10M">
+    <desc>Updated Timesheet for week 42.</desc>
+    <refs>
+      <ref>http://wilma.vub.ac.be/~se2_0910/docs/minutes/2009/10/16/minutes-20091016.pdf</ref>
+    </refs>
+  </item>
+</timesheet>
+  </person>
+  <person>
+    <name>Wouter Van Rossem</name>
+    <timesheet xmlns="http://purl.org/net/timetrack">
+  <item duration="PT1H15M">
+    <desc>Meeting on Tuesday 2009/10/20.</desc>
+    <refs>
+      <ref>http://wilma.vub.ac.be/~se2_0910/docs/minutes/2009/10/20/minutes-20091020.pdf</ref>
+    </refs>
+  </item>
+  <item duration="PT3H">
+    <desc>LaTeX course with professor Cara.</desc>
+  </item>
+  <item duration="PT1H">
+    <desc>Meeting on Friday 2009/10/23.</desc>
+    <refs>
+      <ref>http://wilma.vub.ac.be/~se2_0910/docs/minutes/2009/10/23/minutes-20091023.pdf</ref>
+    </refs>
+  </item>
+  <item duration="PT45M">
+    <desc>Research for requirements and initial set of questions for requirements interview</desc>
+    <refs>
+      <ref>http://code.google.com/p/salesmen/wiki/RequirementsInterview</ref>
+    </refs>
+  </item>
+</timesheet>
+  </person>
+</timesheets>
