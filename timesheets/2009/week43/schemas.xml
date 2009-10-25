@@ -1,5 +1,7 @@
 <?xml version="1.0"?>
 <locatingRules xmlns="http://thaiopensource.com/ns/locating-rules/1.0">
+  <uri resource="timesheet.xml" uri="../../../trunk/utils/timetrack/schema/rng/timetrack.rnc"/>
+  <uri resource="jonathan.xml" uri="../../../trunk/utils/timetrack/schema/rng/timetrack.rnc"/>
   <uri resource="sina.xml" uri="../../../trunk/utils/timetrack/schema/rng/timetrack.rnc"/>
   <uri resource="wouter.xml" uri="../../../trunk/utils/timetrack/schema/rng/timetrack.rnc"/>
   <uri resource="nick.xml" uri="../../../trunk/utils/timetrack/schema/rng/timetrack.rnc"/>
