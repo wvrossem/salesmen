@@ -26,6 +26,9 @@ Questions for the requirements interview:
    # Only registered users?
    # Should there be a verification process for sellers? (anti-scammers)
  * Should there be a rating system? (Wouter)
+   # Rating users?
+   # Rating products?
+   # Or both?
 
 == Interface ==
  * Should there be a user hub? (Wouter)
@@ -34,6 +37,7 @@ Questions for the requirements interview:
  * How should a user search for items? (Wouter)
    # Categories
    # [http://en.wikipedia.org/wiki/Tag_cloud Tag Cloud]
+ * To what extent should [http://en.wikipedia.org/wiki/Internationalization_and_localization i18n and L10n] be supported? (Sina)
 
 == Auctions ==
  * What type of auctions should there be? (Wouter)
@@ -43,7 +47,10 @@ Questions for the requirements interview:
    # [http://en.wikipedia.org/wiki/Dutch_auction Dutch auction]
    
  * What should be the time limit for an auction? (Wouter)
- * Should auctions be categorised? (Wouter)
+ * How are the auctions organized? (Wouter)
+   # Using categories (taxonomy)?
+   # Using tags (folksonomy)?
+   # Using both tags and categories?
  * Should auctions have a tag? (Wouter)
    # Difference tag and category: an auction could be in the category "cars", but it could also have the tag "volvo" for example
 
@@ -56,3 +63,4 @@ Questions for the requirements interview:
 Put interesting links here:
   * http://www.guydavis.ca/seng/seng611/group/interview.shtml (Wouter)
   * http://en.wikipedia.org/wiki/Online_auction_business_model (Wouter)
+  * http://en.wikipedia.org/wiki/Auction_software (Sina)
