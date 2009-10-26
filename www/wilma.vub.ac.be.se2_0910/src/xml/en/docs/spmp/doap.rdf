@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF 
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" 
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" 
+    xmlns:doap="http://usefulinc.com/ns/doap#" 
+    xmlns:foaf="http://xmlns.com/foaf/0.1/" 
+    xmlns:dc="http://purl.org/dc/elements/1.1/">
+  
+  <rdf:Description rdf:about="http://wilma.vub.ac.be/~se2_0910/docs/spmp/doap.rdf">
+    <dc:title>SPMP Document Description</dc:title>
+    <dc:description>
+      This RDF file describes the SPMP document.
+    </dc:description>
+    <dc:publisher rdf:resource="http://wilma.vub.ac.be/~se2_0910/"/>
+    <dc:rights>Copyright &#169; VUB</dc:rights>
+  </rdf:Description>
+
+  <doap:Project>
+    <doap:name>Software Project Management Plan</doap:name>
+    <doap:shortname>SPMP</doap:shortname>
+    <doap:homepage rdf:resource="http://wilma.vub.ac.be/~se2_0910/docs/spmp/"/>
+    <doap:license rdf:resource="http://usefulinc.com/doap/licenses/gfdl"/>
+    <doap:created>2009-10-21T14:10:08+02:00</doap:created>
+    <doap:shortdesc>
+      An overview of the project goals, planning, and milestones.
+    </doap:shortdesc>
+    <doap:description>
+      This document is intended to describe the project since its early
+      stages until the specified goals are accomplished. A detailed
+      overview of the project goals, planning, and milestones is also
+      specified by this document.
+    </doap:description>
+    <dc:identifier>http://wilma.vub.ac.be/~se2_0910/docs/spmp/</dc:identifier>
+    <rdf:type rdf:resource="http://xmlns.com/wordnet/1.6/Document"/>
+    <doap:download-page rdf:resource="http://wilma.vub.ac.be/~se2_0910/docs/spmp/urfm.rdf"/>
+  </doap:Project>
+
+</rdf:RDF>

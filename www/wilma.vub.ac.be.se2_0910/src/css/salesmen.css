@@ -47,7 +47,8 @@
 .site-search #maincontent h1,
 .site-search #maincontent h2,
 .home h1,
-.about h1
+.about h1,
+.spmp h1
 {
    display: none; 
 }
@@ -149,4 +150,5 @@ form .invalid input { background-color: #ffcccc; }
 
 .feeds #maincontent .feed-description { display: none; }
 .home #maincontent { padding-top: 2em; }
-.urfm .description { display: none; }
+.urfm .description,
+.rss p.desc { display: none; }

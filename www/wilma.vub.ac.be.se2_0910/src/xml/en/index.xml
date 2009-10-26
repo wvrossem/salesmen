@@ -4,7 +4,9 @@
   <config param="DOAP" value="about/salesmen.doap"/>
   <head>
     <title>SE Group 2 - 2009-2010</title>
-    <summary>Homepage of the Software Engineering Group 2 in 2009-2010</summary>
+    <summary>
+      Homepage of Software Engineering Group 2 project, codenamed Salesmen
+    </summary>
     <keywords>
       Free Software, Open Source, Auction, Webapp, Java, Jave EE, VUB, 
       Vrije Universiteit Brussel, Computer Science, Belgium
@@ -16,7 +18,8 @@
     <emphasis>implement</emphasis> the software behind an 
     <emphasis role='bold'>online auction website</emphasis> such as eBay.
     We codenamed our project <emphasis role='bold'>Salesmen</emphasis>, 
-    which will be distributed under an Open Source license.
+    which will be written in <emphasis role='bold'>Java</emphasis> and
+    distributed under an <emphasis>Open Source</emphasis> license.
     <olink targetdoc='about'>Learn more</olink>
   </para>
   <sidebar id='spotlight'>
