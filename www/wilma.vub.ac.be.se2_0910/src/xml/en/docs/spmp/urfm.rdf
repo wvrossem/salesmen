@@ -43,7 +43,7 @@
   <language>en</language>
   <size rdf:parseType="Resource">
     <unit rdf:resource="http://purl.org/urfm/Kilobyte"/>
-    <rdf:value>72</rdf:value>
+    <rdf:value>86</rdf:value>
   </size> 
   <link>http://wilma.vub.ac.be/~se2_0910/docs/spmp/archive/v0_1/spmp-v0_1.pdf</link>
   <format>application/pdf</format>
