@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (MiKTeX 2.8) (preloaded format=pdflatex 2009.10.24)  24 OCT 2009 13:42
+This is pdfTeX, Version 3.1415926-1.40.10 (MiKTeX 2.8) (preloaded format=pdflatex 2009.10.24)  26 OCT 2009 09:37
 entering extended mode
 **minutes-20091023.tex
 
@@ -308,17 +308,16 @@ File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 47.
  [2] [3] [4]
-[5]
 ("D:\Documents\Cursussen\1e Master\Software Engeneering\Workspace\salesmen\minu
 tes\2009\10\23\minutes-20091023.aux") ) 
 Here is how much of TeX's memory you used:
- 4748 strings out of 495285
- 70457 string characters out of 3179856
+ 4747 strings out of 495285
+ 70451 string characters out of 3179856
  139000 words of memory out of 3000000
  7857 multiletter control sequences out of 15000+200000
  9285 words of font info for 33 fonts, out of 3000000 for 9000
  14 hyphenation exceptions out of 8191
- 39i,7n,36p,494b,398s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 39i,7n,36p,493b,353s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Program Files (x86)/MiKTeX 2.8/fonts
 /type1/public/amsfonts/cm/cmbx10.pfb><C:/Program Files (x86)/MiKTeX 2.8/fonts/t
 ype1/public/amsfonts/cm/cmbx12.pfb><C:/Program Files (x86)/MiKTeX 2.8/fonts/typ
@@ -326,9 +325,9 @@ e1/public/amsfonts/cm/cmr12.pfb><C:/Program Files (x86)/MiKTeX 2.8/fonts/type1/
 public/amsfonts/cm/cmr17.pfb><C:/Program Files (x86)/MiKTeX 2.8/fonts/type1/pub
 lic/amsfonts/cm/cmsy10.pfb><C:/Program Files (x86)/MiKTeX 2.8/fonts/type1/publi
 c/amsfonts/cm/cmtt12.pfb>
-Output written on minutes-20091023.pdf (5 pages, 87896 bytes).
+Output written on minutes-20091023.pdf (4 pages, 87215 bytes).
 PDF statistics:
- 126 PDF objects out of 1000 (max. 8388607)
- 27 named destinations out of 1000 (max. 500000)
+ 122 PDF objects out of 1000 (max. 8388607)
+ 26 named destinations out of 1000 (max. 500000)
  105 words of extra memory for PDF output out of 10000 (max. 10000000)
 
