@@ -1,0 +1,24 @@
+<?xml version='1.0'?>
+<timesheet xmlns="http://purl.org/net/timetrack">
+  <item duration="PT45M">
+    <desc>
+      Worked out my timesheet for the 43rd week of 2009 and published
+      the global timesheet on the website.
+    </desc>
+    <refs>
+      <ref>http://code.google.com/p/salesmen/source/detail?r=85</ref>
+      <ref>http://code.google.com/p/salesmen/source/detail?r=87</ref>
+    </refs>
+  </item>
+  <item duration="PT1H30M">
+    <desc>
+      Published the first revision of the SPMP document. A DOAP metadata
+      file was added for describing this document. In addition a separaye
+      URFM file was added to describe different the current and future
+      releases of this document.
+    </desc>
+    <refs>
+      <ref>http://code.google.com/p/salesmen/source/detail?r=107</ref>
+    </refs>
+  </item>
+</timesheet>
