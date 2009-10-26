@@ -9,8 +9,10 @@
       Vrije Universiteit Brussel, Computer Science, Belgium
     </keywords>
   </head>
-  <para>
-  </para>
+  <section xml:id='guides'>
+    <title>Guides and HOWTOs</title>
+    <rss feed="http://feeds.delicious.com/v2/rss10/salesmen/salesmen+dev"/>
+  </section>
   <sidebar id='devtools'>
     <title>Developer Tools</title>
     <itemizedlist>
