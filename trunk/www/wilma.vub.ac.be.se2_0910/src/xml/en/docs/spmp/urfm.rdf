@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF xmlns="http://purl.org/urfm/"
+	 xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	 xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+	 xmlns:urfm="http://purl.org/urfm/"
+	 xmlns:dc="http://purl.org/dc/elements/1.1/">
+  
+  <Channel rdf:about="http://wilma.vub.ac.be/~se2_0910/docs/spmp/urfm.rdf">
+    <title>SE2_0910 SPMP</title>
+    <link>http://wilma.vub.ac.be/~se2_0910/docs/spmp/</link>
+    <description>
+      This file contains metadata to describe the publication
+      details of the Software Project Management Plan document.
+    </description>
+    <dc:language>en-US</dc:language>
+    <dc:identifier>http://wilma.vub.ac.be/~se2_0910/docs/spmp/urfm.rdf</dc:identifier>
+    <dc:publisher rdf:resource="http://wilma.vub.ac.be/~se2_0910/"/>
+    <dc:rights>Copyright &#169; VUB</dc:rights>
+    
+    <packages rdf:parseType="Collection">
+      <Package rdf:about="http://wilma.vub.ac.be/~se2_0910/docs/spmp/">
+	<shortdesc>
+	  Software Project Management Plan for SE2-0910.
+	</shortdesc>
+	<dc:identifier>spmp</dc:identifier>
+      </Package>
+    </packages>
+
+    <releases rdf:parseType="Collection">
+<Release rdf:about="http://wilma.vub.ac.be/~se2_0910/docs/spmp/archive/v0_1/">
+  <package rdf:resource="http://wilma.vub.ac.be/~se2_0910/docs/spmp/"/>
+  <revision>v0.1</revision>
+  <created>2009-10-26</created>
+</Release>
+    </releases>
+    
+    <files rdf:parseType="Collection">
+
+<File rdf:about="http://wilma.vub.ac.be/~se2_0910/docs/spmp/archive/v0_1/spmp-v0_1.pdf">
+  <release rdf:resource="http://wilma.vub.ac.be/~se2_0910/docs/spmp/archive/v0_1/"/>
+  <basename>spmp-v0_1</basename>
+  <extension>.pdf</extension>
+  <language>en</language>
+  <size rdf:parseType="Resource">
+    <unit rdf:resource="http://purl.org/urfm/Kilobyte"/>
+    <rdf:value>72</rdf:value>
+  </size> 
+  <link>http://wilma.vub.ac.be/~se2_0910/docs/spmp/archive/v0_1/spmp-v0_1.pdf</link>
+  <format>application/pdf</format>
+</File>
+
+<File rdf:about="http://wilma.vub.ac.be/~se2_0910/docs/spmp/archive/v0_1/spmp-v0_1.tex">
+  <release rdf:resource="http://wilma.vub.ac.be/~se2_0910/docs/spmp/archive/v0_1/"/>
+  <basename>spmp-v0_1</basename>
+  <extension>.tex</extension>
+  <language>en</language>
+  <size rdf:parseType="Resource">
+    <unit rdf:resource="http://purl.org/urfm/Kilobyte"/>
+    <rdf:value>15</rdf:value>
+  </size> 
+  <link>http://wilma.vub.ac.be/~se2_0910/docs/spmp/archive/v0_1/spmp-v0_1.tex</link>
+  <format>application/x-latex</format>
+</File>
+
+    </files>
+  </Channel>
+</rdf:RDF>
