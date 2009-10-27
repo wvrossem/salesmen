@@ -21,4 +21,13 @@
       <ref>http://code.google.com/p/salesmen/source/detail?r=107</ref>
     </refs>
   </item>
+  <item duration="PT40M">
+    <desc>
+      Published the 2009/10/23 meeting minutes on the website. In addition,
+      performed cleanups on the repository and third-party installations.
+    </desc>
+    <refs>
+      <ref>http://code.google.com/p/salesmen/source/detail?r=117</ref>
+    </refs>
+  </item>
 </timesheet>
