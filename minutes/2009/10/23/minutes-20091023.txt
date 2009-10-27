@@ -1,0 +1,276 @@
+
+    Software Engineering Group 2 (2009-2010)
+
+
+                         Meeting Report
+                          Jonathan Jeurissen
+
+
+
+        Tuesday, October 20, 2009, 12H00-13H00 in CSB
+
+                            Seminaryroom 1
+
+     Attendees
+
+     Nick De Cooman            Present
+
+     Jonathan Jeurissen        Present
+
+     Sina Khakbaz Heshmati     Present
+
+     Jorne Laton               Present
+
+     Bart Maes                 Present
+
+     Patrick Provinciael       Present
+
+     Wouter Van Rossem         Present
+
+
+1     Website
+
+
+
+1.1    LATEX template
+
+
+In terms of consistency, there is a need for a template file to make the
+
+LaTex documents. To be able to use the same style in every
+
+LaTeX document, a template specifically designed for Salesmen, will be cre-
+
+ated by Patrick. This template will incorporate a new Salesmen logo.
+1.2    Timesheet template
+
+
+A timesheet template is now available on the website[?].  How this code
+
+should be used is explained on the same webpage. Basically, every member
+
+of the team needs to add his own .XML code in a so called "TimeTrack" file
+
+to the correct place on the server. The collection of the .XML codes can be
+
+automatically put together and a .pdf can be extracted.
+
+
+                                     1
+
+
+1.3    SVN
+
+
+The SVN consists of 5 parts: Trunk (main development branch), Timesheets
+
+(summary of time spent by each member), Minutes (reports of meetings),
+
+Branches and Tags (snapshots of stable version). Only the first 3 need to be
+
+checked out, when a team member wants to update or add files. More infor-
+
+mation of the SVN can be found in the Wiki of the Salesmen Google Code
+
+website[?].  It is absolutely necessary that everyone uses and understands
+
+SVN. A tutorial on how to use SVN (on Linux and on Windows) will be
+
+prepared, so everybody can manage their own files, without Sina's personal
+
+help. To automate the uploading even more, there will be worked on a script
+
+that converts .tex files to .pdf and .txt.
+2     SPMP
+
+
+The current version of the SPMP has been presented to the team. Especially
+
+the deadlines and the summary of tasks(Organizational structure) were thor-
+
+oughly debated.
+2.1    Deadlines
+
+
+There were only a few minor changes in the deadlines:
+
+
+    o Minutes:
+
+      The deadline for the Minutes will be changed to 3 days after the meet-
+
+      ing. The first version of the Minutes should be finished 2 days after the
+
+      meeting and will then be inspected by the Quality Assurance Team.
+
+      The third day after the meetings, the final version of the Minutes need
+
+      to be online on the website.
+
+
+    o Timesheet:
+
+      Everyones personal timesheet should be filled out every Sunday by
+
+      00H00 (instead of the previous 20H00).  This decision has been made
+
+      because some members would like to work between 20H00 and 00H00
+
+      on a Sunday evening.
+
+
+    o SRS:
+
+      The first version of the SRS needs to be released on Monday, November
+
+      2, 2009.  The second version (to be seen as a pre-final version) needs
+
+      to be online on Monday, November 9, 2009.  As this project uses the
+
+      spiral model, there will possibly be made new versions of the SRS after
+
+      the first program cycle.
+
+
+
+                                     2
+
+
+2.2    Proces Model
+
+
+In the SPMP a schematic of the future work flows needs to be made.  At
+
+this moment, there was only an example available of the spiral model.  A
+
+schematic, specifically designed for Salesmen, will be made.
+
+
+
+2.3    Organizational structure
+
+
+There was a bit of incertitude about who should talk with the client and also
+
+about the specific task of the Design Manager concerning the website. These
+
+uncertainties should be clarified in the next version of the SPMP.
+3     Documenting methods
+
+
+There was a small disagreement about whether or not methods that were not
+
+chosen in this project should be documented.  An example of this problem
+
+can be found below. There has been decided to focus on the chosen methods.
+
+If there is a need to mention alternatives, they should be shortly noted or
+
+referred in a comparative way.
+
+Example of the problem       As the spiral model has been chosen, should the
+
+      disadvantages of the waterfall model be explained ?
+
+
+Solution   The waterfall model has been considered as an alternative, but it
+
+      was discarded in favor of the spiral method.
+4     Replying e-mails
+
+
+From now on, everybody needs use se2@tinf.vub.ac.be    for all mails (also
+
+when they are meant for a specific team member. However, there has been
+
+an agreement on subject syntax for those kinds of e-mails that are sent to
+
+specific team members of the group.  In this way, it will be clearer which
+
+mails are relevant for each team member and it will still be possible to read
+
+all mails, if desired. For a specific e-mail, one will then have to use:
+
+"[SpecificName(s)] Subject"
+
+When sending mails to the whole group, the names don't need to be specified.
+5     Risk Analysis
+
+
+A list of the current risks will be kept on the Wiki page. These are the new
+
+risks discussed at the last meeting:
+
+
+
+                                     3
+
+
+Current Risks:
+
+   1. What if the client can't make an appointment before the deadline?
+
+      Solution:
+
+      The client should be contacted as soon as possible. Update: The client
+
+      has been contacted on Friday, October 23, 2009 and an appointment
+
+      has been made on Monday, October 26, 2009.
+
+
+   2. What if the the wrong questions have been asked to the client?
+
+      Solution:
+
+      There should be at least two appointments with the client before the
+
+      first version of the SRS will be available.   Also,  a full list of the
+
+      questions[?] needs to be available at the website, so every team member
+
+      can add his own questions.
+
+
+   3. What if the requirements are misunderstood or misinterpreted?
+
+      Solution:
+
+      The interview with the client will be recorded and will be made avail-
+
+      able to all team members (if this is allowed).  This interview will be
+
+      relistened by the Quality Assurance manager to reduce misinterpreta-
+
+      tions. In order to avoid ambiguity, there will be a presentation of the
+
+      requirements in another appointment with the client.
+6     Next Meeting
+
+
+Next meeting will be on Fiday 30, 2009 at 12H00, in CSB Seminaryroom 1.
+
+
+
+6.1    Agenda
+
+
+As there is a deadline for the Minutes Report, the complete list of Agenda
+
+items cannot be included in this document, but are available on [?].
+References
+
+
+ [1] http://code.google.com/p/salesmen/wiki/HowtoSubmitTimesheet
+
+
+ [2] http://code.google.com/p/salesmen/wiki/HowtoSvnCommandline
+
+
+ [3] http://code.google.com/p/salesmen/wiki/RequirementsInterview
+
+
+ [4] http://code.google.com/p/salesmen/wiki/NextMeetingTopics
+
+                     Last revised on October 27, 2009.
+                                     4
