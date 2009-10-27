@@ -16,9 +16,15 @@
   <sidebar id='devtools'>
     <title>Developer Tools</title>
     <itemizedlist>
+      <listitem><para> 
+      <ulink url="http://code.google.com/p/salesmen/issues/list">Issue 
+      Tracker</ulink></para></listitem>
       <listitem><para>
-	  <ulink url="http://code.google.com/p/salesmen/">Home at Google 
-	    Code</ulink></para></listitem>
+      <ulink url="http://code.google.com/p/salesmen/source/browse">Source 
+      Code Browser</ulink></para></listitem>
+      <listitem><para>
+	<ulink url="http://code.google.com/p/salesmen/w/list">Wiki</ulink>
+      </para></listitem>
     </itemizedlist>
   </sidebar>
 </webpage>
