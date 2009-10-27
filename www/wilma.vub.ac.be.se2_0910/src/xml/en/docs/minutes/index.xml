@@ -4,13 +4,14 @@
   <config param="URFM" value="minutes.rdf"/>
   <head>
     <title>Minutes</title>
-    <summary>
-      Minutes of our meetings
-   </summary>
-    <keywords>People, Minutes, Developers' Meeging, Open Source, Free
-    Software, VUB</keywords>
+    <summary>Minutes of our meetings</summary>
+    <keywords>
+      Minutes, Developers' Meeting, Open Source, Free Software, VUB,
+      Vrije Universiteit Brussel, Computer Science, Software Engineering
+    </keywords>
   </head>
   <para>
-    In this page, you can download our meetings' minutes in various formats.
+    In this page, you can download the minutes of Salesmen developers'
+    meetings.
   </para>
 </webpage>
