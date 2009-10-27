@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <webpage id="spmp">
-  <config param="rcsdate" value="$Date: 2009-02-05 01:57:47 +0100 (Thu, 05 Feb 2009) $"/>
+  <config param="rcsdate" value="$Date$"/>
   <config param="DOAP" value="doap.rdf"/>
   <head>
     <title>SPMP</title>
