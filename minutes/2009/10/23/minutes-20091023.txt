@@ -45,7 +45,7 @@ ated by Patrick. This template will incorporate a new Salesmen logo.
 1.2    Timesheet template
 
 
-A timesheet template is now available on the website[?].  How this code
+A timesheet template is now available on the website[1].  How this code
 
 should be used is explained on the same webpage. Basically, every member
 
@@ -72,7 +72,7 @@ checked out, when a team member wants to update or add files. More infor-
 
 mation of the SVN can be found in the Wiki of the Salesmen Google Code
 
-website[?].  It is absolutely necessary that everyone uses and understands
+website[2].  It is absolutely necessary that everyone uses and understands
 
 SVN. A tutorial on how to use SVN (on Linux and on Windows) will be
 
@@ -227,7 +227,7 @@ Current Risks:
 
       first version of the SRS will be available.   Also,  a full list of the
 
-      questions[?] needs to be available at the website, so every team member
+      questions[3] needs to be available at the website, so every team member
 
       can add his own questions.
 
@@ -257,7 +257,7 @@ Next meeting will be on Fiday 30, 2009 at 12H00, in CSB Seminaryroom 1.
 
 As there is a deadline for the Minutes Report, the complete list of Agenda
 
-items cannot be included in this document, but are available on [?].
+items cannot be included in this document, but are available on [4].
 References
 
 
@@ -272,5 +272,5 @@ References
 
  [4] http://code.google.com/p/salesmen/wiki/NextMeetingTopics
 
-                     Last revised on October 27, 2009.
+                     Last revised on October 28, 2009.
                                      4
