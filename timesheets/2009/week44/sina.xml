@@ -30,4 +30,23 @@
       <ref>http://code.google.com/p/salesmen/source/detail?r=117</ref>
     </refs>
   </item>
+  <item duration="PT8H">
+    <desc>
+      Wrote an XSLT stylesheet to transform TimeTrack XML into HTML.
+    </desc>
+    <refs>
+      <ref>http://code.google.com/p/salesmen/source/detail?r=123</ref>
+    </refs>
+  </item>
+  <item duration="PT2H">
+    <desc>
+      Extended SilkPage to process TimeTrack XML. Also re-organized
+      the timesheets directory structure and added metadata for HTML
+      versions of previously published timesheets.
+    </desc>
+    <refs>
+      <ref>http://code.google.com/p/salesmen/source/detail?r=127</ref>
+      <ref>http://code.google.com/p/salesmen/source/detail?r=128</ref>
+    </refs>
+  </item>
 </timesheet>
