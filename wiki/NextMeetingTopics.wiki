@@ -3,6 +3,18 @@
 
 = Topics for next meeting =
 
+
+=== Meeting 4: Friday 30 October 2009, 12:00===
+
+  * SPMP
+  * SCMP
+  * Contribution Patrick
+  * Requirements! -- 30 MIN --
+  * Conferenties
+  * Template
+  * Risk Analysis
+
+
 === Meeting 3: Friday 23 October 2009, 12:00===
 
   * Latex template for documents (Wouter)
@@ -14,5 +26,3 @@
   * Timesheets (Nick)
   * Documenting the disadavantages of methodes that were not chosen (Jonathan)
   * Replying e-mails (Jonathan)
-
-=== Meeting 4: Friday 30 October 2009, 12:00===
