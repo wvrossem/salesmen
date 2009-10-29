@@ -34,7 +34,5 @@
 </toc>
 <notoc page="site/sitemap.xml" dir="sitemap" filename="index.html"/>
 <notoc page="site/search.xml" dir="search" filename="index.html"/>
-<!--
 <notoc page="site/feeds.xml" dir="feeds" filename="index.html"/>
--->
 </layout>
