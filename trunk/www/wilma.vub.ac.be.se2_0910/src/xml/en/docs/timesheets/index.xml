@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <webpage id="timesheets">
   <config param="rcsdate" value="$Date$"/>
-  <config param="URFM" value="timesheets.rdf"/>
   <head>
     <title>Timesheets</title>
     <summary>
@@ -13,4 +12,5 @@
     During the project development, we tend to publish our activity log of
     each week. Feel free to check them out.
   </para>
+  <webtoc/>
 </webpage>
