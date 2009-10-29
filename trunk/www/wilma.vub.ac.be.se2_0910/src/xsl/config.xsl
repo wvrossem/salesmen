@@ -4,11 +4,13 @@
 		xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" 
 		xmlns:dc="http://purl.org/dc/elements/1.1/" 
 		xmlns:cvs="http://www.markupware.com/rdf/cvs#" 
-		exclude-result-prefixes=" html rdf dc cvs " 
+		xmlns:tt="http://purl.org/net/timetrack"
+		exclude-result-prefixes=" html rdf dc cvs tt " 
 		version="1.0">
 
   <xsl:import href="http://silkpage.markupware.com/release/core/current/src/xsl/ala/chunk.xsl"/>
   <xsl:import href="param.xsl"/>
+  <xsl:import href="http://purl.org/net/timetrack/xsl/timetrack-to-html.xsl"/>
 
   <rdf:Description rdf:about="http://silkpage.markupware.com/release/core/current/src/xsl/common/custom.xsl">
     <rdf:type rdf:resource="http://www.markupware.com/metadata/taxonomy#XSL"/>
@@ -136,6 +138,39 @@
           <xsl:apply-templates mode="sidebar.mode"/>
         </span>
       </dd>
+    </xsl:otherwise>
+  </xsl:choose>
+</xsl:template>
+
+<xsl:template match="feed">
+  <xsl:if test="not(@href)">
+    <xsl:message terminate="no">
+      <xsl:text>Cannot process a feed without @href</xsl:text>
+    </xsl:message>
+  </xsl:if>
+  <xsl:variable name="feed" select="document(@href, /)"/>
+  <xsl:if test="not($feed)">
+    <xsl:message terminate="no">
+      <xsl:text>Cannot read the specified feed: [</xsl:text>
+      <xsl:value-of select="@href"/>
+      <xsl:text>]</xsl:text>
+    </xsl:message>
+  </xsl:if>
+  <xsl:call-template name="process-feed">
+    <xsl:with-param name="feed" select="$feed"/>
+  </xsl:call-template>
+</xsl:template>
+
+<xsl:template name="process-feed">
+  <xsl:param name="feed"/>
+  <xsl:choose>
+    <xsl:when test="$feed/tt:timesheets">
+      <xsl:apply-templates select="$feed/tt:timesheets[1]"/>
+    </xsl:when>
+    <xsl:otherwise>
+      <xsl:message terminate="no">
+	<xsl:text>Sorry, the specified feed is not supported</xsl:text>
+      </xsl:message>
     </xsl:otherwise>
   </xsl:choose>
 </xsl:template>
