@@ -73,7 +73,7 @@
       <p class="total">
 	<xsl:call-template name="key-value-pair">
 	  <xsl:with-param name="key" select="'Total Contribution'"/>
-	  <xsl:with-param name="val" select="$total"/>
+	  <xsl:with-param name="val" select="concat($total, ' ', 'Hours')"/>
 	</xsl:call-template>
       </p>
     </div>
@@ -92,7 +92,7 @@
       </durations>
     </xsl:variable>
     <xsl:value-of 
-	select="sum(exsl:node-set($mins)//*[name(.)='duration'])"/>
+      select="round(sum(exsl:node-set($mins)//*[name(.)='duration']) div 60)"/>
   </xsl:template>
 
   <xsl:template match="tt:person/tt:name">
