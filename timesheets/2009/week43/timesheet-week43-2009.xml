@@ -30,9 +30,6 @@
 
   <item duration="PT30M">
     <desc>Checking Timesheets</desc>
-    <refs>
-      <ref>/</ref>
-    </refs>
   </item>
 
 </timesheet>
