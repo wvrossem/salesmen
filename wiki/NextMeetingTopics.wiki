@@ -6,6 +6,7 @@
 
 === Meeting 4: Friday 30 October 2009, 12:00===
 
+--Nick:
   * SPMP
   * SCMP
   * Contribution Patrick
