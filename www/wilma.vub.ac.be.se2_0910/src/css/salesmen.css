@@ -151,5 +151,9 @@ form .invalid input { background-color: #ffcccc; }
 .feeds #maincontent .feed-description { display: none; }
 .home #maincontent { padding-top: 2em; }
 .urfm .description { display: none; }
-
 .timetrack .key { font-weight: bold; }
+
+.timesheet-week42-2009 h1,
+.timesheet-week43-2009 h1 { 
+  display: none; 
+}
