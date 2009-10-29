@@ -70,13 +70,29 @@
     </xsl:variable>
     <div class="{local-name(.)}">
       <xsl:apply-templates/>
-      <p class="total">
-	<xsl:call-template name="key-value-pair">
-	  <xsl:with-param name="key" select="'Total Contribution'"/>
-	  <xsl:with-param name="val" select="concat($total, ' ', 'Hours')"/>
-	</xsl:call-template>
-      </p>
-    </div>
+      <xsl:call-template name="total-contrib"/>
+    </div>    
+  </xsl:template>
+
+  <xsl:template name="total-contrib">
+    <xsl:choose>
+      <xsl:when test="function-available('exsl:node-set')">
+	<p class="total">
+	  <xsl:call-template name="key-value-pair">
+	    <xsl:with-param name="key" select="'Total Contribution'"/>
+	    <xsl:with-param name="val" select="concat($total, ' ', 'Hours')"/>
+	  </xsl:call-template>
+	</p>
+      </xsl:when>
+      <xsl:otherwise>
+	<xsl:message>
+	  <xsl:text>
+	    In order to compute the total number of contributed hours,
+	    your XSLT processor must support the exsl:node-set function.
+	  </xsl:text>
+	</xsl:message>
+      </xsl:otherwise>
+    </xsl:choose>
   </xsl:template>
 
   <xsl:template name="compute-total-contrib-in-hour">
