@@ -1,0 +1,12 @@
+<?xml version='1.0'?>
+<timesheet xmlns="http://purl.org/net/timetrack">
+  <item duration="1H">
+    <desc>Meeting on Friday 2009/10/30.</desc>
+  </item>
+  <item duration="1H">
+    <desc>Refreshing LaTeX</desc>
+  </item>
+  <item duration="1H">
+    <desc>Writing first version of SCMP (pending...)</desc>
+  </item>
+</timesheet>
