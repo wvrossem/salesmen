@@ -1,0 +1,26 @@
+<?xml version='1.0'?>
+<timesheet xmlns="http://purl.org/net/timetrack">
+  <item duration="PT15M">
+    <desc>Updating+Correcting Minutes of Friday 2009/10/23.</desc>
+    <refs>
+      <ref>http://code.google.com/p/salesmen/source/detail?r=121</ref>
+    </refs>
+  </item>
+  <item duration="PT1H00M">
+    <desc>Meeting on Friday 2009/10/30.</desc>
+    <refs>
+      <ref>http://wilma.vub.ac.be/~se2_0910/docs/minutes/2009/10/30/minutes-20091030.pdf</ref>
+    </refs>
+  </item>
+  <item duration="PT2H15M">
+    <desc>Writing Minutes of Friday 2009/10/30.</desc>
+    <refs>
+      <ref>http://wilma.vub.ac.be/~se2_0910/docs/minutes/2009/10/30/minutes-20091030.tex</ref>
+      <ref>http://wilma.vub.ac.be/~se2_0910/docs/minutes/2009/10/30/minutes-20091030.pdf</ref>
+      <ref>http://code.google.com/p/salesmen/source/detail?r=143</ref>
+    </refs>
+  </item>
+  <item duration="PT15M">
+    <desc>Updated Timesheet for week 44.</desc>
+  </item>
+</timesheet>
