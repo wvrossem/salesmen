@@ -153,7 +153,15 @@ form .invalid input { background-color: #ffcccc; }
 .urfm .description { display: none; }
 .timetrack .key { font-weight: bold; }
 
-.timesheet-week42-2009 h1,
-.timesheet-week43-2009 h1 { 
+.timesheet-week44-2009 h1,
+.timesheet-week43-2009 h1,
+.timesheet-week42-2009 h1 { 
   display: none; 
 }
+
+.sitemap #maincontent .timesheets ul .summary,
+.sitemap #maincontent .timesheets ul .hbar { display: none; }
+
+.sitemap #maincontent .minutes ul .summary,
+.sitemap #maincontent .minutes ul .hbar { display: none; }
+

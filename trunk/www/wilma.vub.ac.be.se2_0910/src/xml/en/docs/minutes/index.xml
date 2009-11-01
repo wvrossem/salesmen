@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <webpage id="minutes">
   <config param="rcsdate" value="$Date$"/>
-  <config param="URFM" value="minutes.rdf"/>
   <head>
     <title>Minutes</title>
     <summary>Minutes of our meetings</summary>
@@ -11,7 +10,9 @@
     </keywords>
   </head>
   <para>
-    In this page, you can download the minutes of Salesmen developers'
-    meetings.
+    In this section, you can download the minutes of Salesmen developers'
+    meetings. Please select a <emphasis>year</emphasis> to see a list of 
+    the meetings that were held in that year.
   </para>
+  <webtoc/>
 </webpage>
