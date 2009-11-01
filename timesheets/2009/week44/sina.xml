@@ -13,9 +13,9 @@
   <item duration="PT1H30M">
     <desc>
       Published the first revision of the SPMP document. A DOAP metadata
-      file was added for describing this document. In addition a separate
-      URFM file was added to describe different the current and future
-      releases of this document.
+      file was added for describing this document. In addition, a separate
+      URFM file was added to describe the current and future releases of 
+      this document.
     </desc>
     <refs>
       <ref>http://code.google.com/p/salesmen/source/detail?r=107</ref>
@@ -23,7 +23,7 @@
   </item>
   <item duration="PT30M">
     <desc>
-      Published the 2009/10/23 meeting minutes on the website. In addition,
+      Published the 2009/10/23 meeting minutes on the website. Also
       performed cleanups on the repository and third-party installations.
     </desc>
     <refs>
@@ -49,9 +49,17 @@
       <ref>http://code.google.com/p/salesmen/source/detail?r=128</ref>
     </refs>
   </item>
+  <item duration="PT1H">
+    <desc>
+      Meeting on Friday 2009/10/30.
+    </desc>
+    <refs>
+      <ref>http://wilma.vub.ac.be/~se2_0910/docs/minutes/2009/10/30/minutes-20091030.pdf</ref>
+    </refs>
+  </item>
   <item duration="PT10M">
     <desc>
-      Published the minutes for the 2009-10-30 meeting (due to Jonathan.)
+      Published the minutes for the 2009/10/30 meeting (due to Jonathan.)
     </desc>
     <refs>
       <ref>http://code.google.com/p/salesmen/source/detail?r=163</ref>
