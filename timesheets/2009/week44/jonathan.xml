@@ -1,6 +1,10 @@
 <?xml version='1.0'?>
 <timesheet xmlns="http://purl.org/net/timetrack">
 	
+	<item duration="PT20M">
+		<desc>Meeting with Joeri De Koster</desc>
+	</item>
+	
   <item duration="PT15M">
     <desc>Updating+Correcting Minutes of Friday 2009/10/23.</desc>
     <refs>
