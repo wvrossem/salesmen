@@ -8,7 +8,10 @@
 
   * Requirements
   * LaTeX Template+Revision History (Jonathan)
-  * 
+  * SCMP (Nick)
+  * Risk analysis (Nick)
+  * Projectplanning en Projectmonitoring (SCRUM principe) (Nick)
+
 
 === Meeting 4: Friday 30 October 2009, 12:00===
 
