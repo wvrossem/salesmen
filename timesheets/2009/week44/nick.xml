@@ -1,0 +1,21 @@
+<?xml version='1.0'?>
+<timesheet xmlns="http://purl.org/net/timetrack">
+	<item duration="PT1H">
+    <desc>Finishing first version of SPMP</desc>
+  </item>
+
+  <item duration="PT60M">
+    <desc>Meeting on Friday 2009/10/30</desc>
+    <refs>
+      <ref>http://wilma.vub.ac.be/~se2_0910/docs/minutes/2009/10/30/minutes-20091030.pdf</ref>
+    </refs>
+  </item>
+
+  <item duration="PT20M">
+    <desc>Checking timesheets</desc>
+    <refs>
+      <ref>http://code.google.com/p/salesmen/source/detail?r=172</ref>
+    </refs>
+  </item>
+
+</timesheet>
