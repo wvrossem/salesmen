@@ -65,9 +65,6 @@
   </xsl:template>
 
   <xsl:template match="tt:person">
-    <xsl:variable name="total">
-      <xsl:call-template name="compute-total-contrib-in-hour"/>
-    </xsl:variable>
     <div class="{local-name(.)}">
       <xsl:apply-templates/>
       <xsl:call-template name="total-contrib"/>
@@ -75,6 +72,9 @@
   </xsl:template>
 
   <xsl:template name="total-contrib">
+    <xsl:variable name="total">
+      <xsl:call-template name="compute-total-contrib-in-hour"/>
+    </xsl:variable>
     <xsl:choose>
       <xsl:when test="function-available('exsl:node-set')">
 	<p class="total">
