@@ -57,4 +57,13 @@
       <ref>http://code.google.com/p/salesmen/source/detail?r=163</ref>
     </refs>
   </item>
+  <item duration="PT30M">
+    <desc>
+      Separated the metadata for publishing meeting minutes based
+      on the year in which the meetings were held.
+    </desc>
+    <refs>
+      <ref>http://code.google.com/p/salesmen/source/detail?r=166</ref>
+    </refs>
+  </item>
 </timesheet>
