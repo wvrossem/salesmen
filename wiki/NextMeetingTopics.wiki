@@ -6,7 +6,9 @@
 
 === Meeting 5: Tuesday 3 November 2009, 15:00===
 
-  * Requirements 
+  * Requirements
+  * LaTeX Template+Revision History (Jonathan)
+  * 
 
 === Meeting 4: Friday 30 October 2009, 12:00===
 
