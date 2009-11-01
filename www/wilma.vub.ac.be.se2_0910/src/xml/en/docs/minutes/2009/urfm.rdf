@@ -5,23 +5,24 @@
     xmlns:urfm="http://purl.org/urfm/"
     xmlns:dc="http://purl.org/dc/elements/1.1/">
   
-  <Channel rdf:about="http://wilma.vub.ac.be/~se2_0910/docs/minutes/minutes.rdf">
-    <title>SE2_0910 Minutes</title>
-    <link>http://wilma.vub.ac.be/~se2_0910/docs/minutes/</link>
+  <Channel rdf:about="http://wilma.vub.ac.be/~se2_0910/docs/minutes/2009/urfm.rdf">
+    <title>SE2_0910 2009 Minutes</title>
+    <link>http://wilma.vub.ac.be/~se2_0910/docs/minutes/2009/</link>
     <description>
-      This file contains metadata to describe minutes' files in various format using the URFM vocabulary.
+      This file contains metadata to describe minutes' files in various 
+      format using the URFM vocabulary.
     </description>
     <dc:language>en-US</dc:language>
-    <dc:identifier>http://wilma.vub.ac.be/~se2_0910/docs/minutes/minutes.rdf</dc:identifier>
+    <dc:identifier>http://wilma.vub.ac.be/~se2_0910/docs/minutes/2009/urfm.rdf</dc:identifier>
     <dc:publisher rdf:resource="http://wilma.vub.ac.be/~se2_0910/"/>
     <dc:rights>Copyright &#169; VUB</dc:rights>
     
     <packages rdf:parseType="Collection">
       <Package rdf:about="http://wilma.vub.ac.be/~se2_0910/docs/minutes/">
 	<shortdesc>
-	  Meeting minutes of Software Engineering Group 2
+	  Meeting minutes of Software Engineering Group 2 (2009-2010)
 	</shortdesc>
-	<dc:identifier>minutes</dc:identifier>
+	<dc:identifier>minutes-2009</dc:identifier>
       </Package>
     </packages>
 
