@@ -1,0 +1,25 @@
+﻿<?xml version='1.0'?>
+<timesheet xmlns="http://purl.org/net/timetrack">
+	<item duration="PT1H">
+    <desc>Quality check of the SPMP (QA backup)</desc>
+  </item>
+
+	<item duration="PT20M">
+    <desc>Quality check of the meeting minutes (2009/10/23)</desc>
+  </item>
+
+  <item duration="PT60M">
+    <desc>Meeting on Friday 2009/10/30</desc>
+    <refs>
+      <ref>http://wilma.vub.ac.be/~se2_0910/docs/minutes/2009/10/30/minutes-20091030.pdf</ref>
+    </refs>
+  </item>
+
+  <item duration="PT3H30M">
+    <desc>Read about and experiment with jQuery</desc>
+    <refs>
+      <ref>http://docs.jquery.com/</ref>
+    </refs>
+  </item>
+
+</timesheet>
