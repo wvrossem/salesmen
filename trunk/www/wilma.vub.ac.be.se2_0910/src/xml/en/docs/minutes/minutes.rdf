@@ -26,13 +26,12 @@
     </packages>
 
     <releases rdf:parseType="Collection">
-<!--
-<Release rdf:about="http://wilma.vub.ac.be/~se2_0910/docs/minutes/YYYYMMDD/">
+
+<Release rdf:about="http://wilma.vub.ac.be/~se2_0910/docs/minutes/2009/10/30/">
   <package rdf:resource="http://wilma.vub.ac.be/~se2_0910/docs/minutes/"/>
-  <revision>YYYYMMDD</revision>
-  <created>YYYY-MM-DD</created>
+  <revision>20091030</revision>
+  <created>2009-11-01</created>
 </Release>
--->
 <Release rdf:about="http://wilma.vub.ac.be/~se2_0910/docs/minutes/2009/10/23/">
   <package rdf:resource="http://wilma.vub.ac.be/~se2_0910/docs/minutes/"/>
   <revision>20091023</revision>
@@ -52,7 +51,9 @@
     
     <files rdf:parseType="Collection">
 
-<!-- 20091016 -->
+<!-- *********************************************************************
+     20091016
+     ********************************************************************* -->
 <File rdf:about="http://wilma.vub.ac.be/~se2_0910/docs/minutes/2009/10/16/minutes-20091016.pdf">
   <release rdf:resource="http://wilma.vub.ac.be/~se2_0910/docs/minutes/2009/10/16/"/>
   <basename>minutes-20091016</basename>
@@ -92,7 +93,9 @@
   <format>application/x-latex</format>
 </File>
 
-<!-- 20091020 -->
+<!-- *********************************************************************
+     20091020 
+     ********************************************************************* -->
 <File rdf:about="http://wilma.vub.ac.be/~se2_0910/docs/minutes/2009/10/20/minutes-20091020.pdf">
   <release rdf:resource="http://wilma.vub.ac.be/~se2_0910/docs/minutes/2009/10/20/"/>
   <basename>minutes-20091020</basename>
@@ -132,7 +135,9 @@
   <format>application/x-latex</format>
 </File>
 
-<!-- 20091023 -->
+<!-- *********************************************************************
+     20091023
+     ********************************************************************* -->
 <File rdf:about="http://wilma.vub.ac.be/~se2_0910/docs/minutes/2009/10/23/minutes-20091023.pdf">
   <release rdf:resource="http://wilma.vub.ac.be/~se2_0910/docs/minutes/2009/10/23/"/>
   <basename>minutes-20091023</basename>
@@ -171,6 +176,49 @@
   <link>http://wilma.vub.ac.be/~se2_0910/docs/minutes/2009/10/23/minutes-20091023.tex</link>
   <format>application/x-latex</format>
 </File>
+
+<!-- *********************************************************************
+     20091030
+     ********************************************************************* -->
+<File rdf:about="http://wilma.vub.ac.be/~se2_0910/docs/minutes/2009/10/30/minutes-20091030.pdf">
+  <release rdf:resource="http://wilma.vub.ac.be/~se2_0910/docs/minutes/2009/10/30/"/>
+  <basename>minutes-20091030</basename>
+  <extension>.pdf</extension>
+  <language>en</language>
+  <size rdf:parseType="Resource">
+    <unit rdf:resource="http://purl.org/urfm/Kilobyte"/>
+    <rdf:value>86</rdf:value>
+  </size> 
+  <link>http://wilma.vub.ac.be/~se2_0910/docs/minutes/2009/10/30/minutes-20091030.pdf</link>
+  <format>application/pdf</format>
+</File>
+
+<File rdf:about="http://wilma.vub.ac.be/~se2_0910/docs/minutes/2009/10/30/minutes-20091030.txt">
+  <release rdf:resource="http://wilma.vub.ac.be/~se2_0910/docs/minutes/2009/10/30/"/>
+  <basename>minutes-20091030</basename>
+  <extension>.txt</extension>
+  <language>en</language>
+  <size rdf:parseType="Resource">
+    <unit rdf:resource="http://purl.org/urfm/Kilobyte"/>
+    <rdf:value>5</rdf:value>
+  </size> 
+  <link>http://wilma.vub.ac.be/~se2_0910/docs/minutes/2009/10/30/minutes-20091030.txt</link>
+  <format>text/plain</format>
+</File>
+
+<File rdf:about="http://wilma.vub.ac.be/~se2_0910/docs/minutes/2009/10/30/minutes-20091030.tex">
+  <release rdf:resource="http://wilma.vub.ac.be/~se2_0910/docs/minutes/2009/10/30/"/>
+  <basename>minutes-20091030</basename>
+  <extension>.tex</extension>
+  <language>en</language>
+  <size rdf:parseType="Resource">
+    <unit rdf:resource="http://purl.org/urfm/Kilobyte"/>
+    <rdf:value>6.2</rdf:value>
+  </size> 
+  <link>http://wilma.vub.ac.be/~se2_0910/docs/minutes/2009/10/30/minutes-20091030.tex</link>
+  <format>application/x-latex</format>
+</File>
+
 
     </files>
   </Channel>
