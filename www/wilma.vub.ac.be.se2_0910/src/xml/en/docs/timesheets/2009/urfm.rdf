@@ -18,7 +18,7 @@
     <dc:rights>Copyright &#169; VUB</dc:rights>
     
     <packages rdf:parseType="Collection">
-      <Package rdf:about="http://wilma.vub.ac.be/~se2_0910/docs/timesheets/2009/">
+      <Package rdf:about="http://wilma.vub.ac.be/~se2_0910/docs/timesheets/">
 	<shortdesc>
 	  Timesheets of the Software Engineering Group 2 in 2009
 	</shortdesc>
@@ -28,16 +28,20 @@
 
     <releases rdf:parseType="Collection">
 <Release 
+    rdf:about="http://wilma.vub.ac.be/~se2_0910/docs/timesheets/2009/week44/">
+  <package rdf:resource="http://wilma.vub.ac.be/~se2_0910/docs/timesheets/"/>
+  <revision>week44-2009</revision>
+  <created>2009-11-01</created>
+</Release>
+<Release 
     rdf:about="http://wilma.vub.ac.be/~se2_0910/docs/timesheets/2009/week43/">
-  <package 
-      rdf:resource="http://wilma.vub.ac.be/~se2_0910/docs/timesheets/2009/"/>
+  <package rdf:resource="http://wilma.vub.ac.be/~se2_0910/docs/timesheets/"/>
   <revision>week43-2009</revision>
   <created>2009-10-25</created>
 </Release>
 <Release 
     rdf:about="http://wilma.vub.ac.be/~se2_0910/docs/timesheets/2009/week42/">
-  <package 
-      rdf:resource="http://wilma.vub.ac.be/~se2_0910/docs/timesheets/2009/"/>
+  <package rdf:resource="http://wilma.vub.ac.be/~se2_0910/docs/timesheets/"/>
   <revision>week42-2009</revision>
   <created>2009-10-19</created>
 </Release>
@@ -126,6 +130,35 @@
     <rdf:value>20</rdf:value>
   </size> 
   <link>http://wilma.vub.ac.be/~se2_0910/docs/timesheets/2009/week43/timesheet-week43-2009.html</link>
+  <format>text/html</format>
+</File>
+
+<!-- **************************************************************
+     Week44-2009
+     ************************************************************** -->
+ <File rdf:about="http://wilma.vub.ac.be/~se2_0910/docs/timesheets/2009/week44/timesheet-week44-2009.xml">
+  <release rdf:resource="http://wilma.vub.ac.be/~se2_0910/docs/timesheets/2009/week44/"/>
+  <basename>timesheet-week44-2009</basename>
+  <extension>.xml</extension>
+  <language>en</language>
+  <size rdf:parseType="Resource">
+    <unit rdf:resource="http://purl.org/urfm/Kilobyte"/>
+    <rdf:value>7.5</rdf:value>
+  </size> 
+  <link>http://wilma.vub.ac.be/~se2_0910/docs/timesheets/2009/week44/timesheet-week44-2009.xml</link>
+  <format>application/xml</format>
+</File>
+
+<File rdf:about="http://wilma.vub.ac.be/~se2_0910/docs/timesheets/2009/week44/timesheet-week44-2009.html">
+  <release rdf:resource="http://wilma.vub.ac.be/~se2_0910/docs/timesheets/2009/week44/"/>
+  <basename>timesheet-week44-2009</basename>
+  <extension>.html</extension>
+  <language>en</language>
+  <size rdf:parseType="Resource">
+    <unit rdf:resource="http://purl.org/urfm/Kilobyte"/>
+    <rdf:value>20</rdf:value>
+  </size> 
+  <link>http://wilma.vub.ac.be/~se2_0910/docs/timesheets/2009/week44/timesheet-week44-2009.html</link>
   <format>text/html</format>
 </File>
 
