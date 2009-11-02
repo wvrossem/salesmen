@@ -1,0 +1,43 @@
+<?xml version='1.0'?>
+<timesheet xmlns="http://purl.org/net/timetrack">
+  <item duration="PT40M">
+    <desc>
+      Revamped the team page on the website to make it tabular.
+      Also, adapted role names based on Web search results.
+    </desc>
+    <refs>
+      <ref>http://code.google.com/p/salesmen/source/detail?r=189</ref>
+    </refs>
+  </item>
+  <item duration="PT35M">
+    <desc>
+      Published timesheets of the 44th week of 2009 on the website.
+    </desc>
+    <refs>
+      <ref>http://code.google.com/p/salesmen/source/detail?r=184</ref>
+      <ref>http://code.google.com/p/salesmen/source/detail?r=183</ref>
+      <ref>http://code.google.com/p/salesmen/source/detail?r=181</ref>
+      <ref>http://code.google.com/p/salesmen/source/detail?r=180</ref>
+    </refs>
+  </item>
+  <item duration="PT20M">
+    <desc>
+      Refactored the directory structure of SRS, SCMP, and the LaTeX template.
+    </desc>
+    <refs>
+      <ref>http://code.google.com/p/salesmen/source/detail?r=188</ref>
+      <ref>http://code.google.com/p/salesmen/source/detail?r=187</ref>
+      <ref>http://code.google.com/p/salesmen/source/detail?r=186</ref>
+      <ref>http://code.google.com/p/salesmen/source/detail?r=185</ref>
+    </refs>
+  </item>
+  <item duration="PT10M">
+    <desc>
+      Prepared the publication of the timesheets for the 45th week of 2009.
+    </desc>
+    <refs>
+      <ref>http://code.google.com/p/salesmen/source/detail?r=192</ref>
+      <ref>http://code.google.com/p/salesmen/source/detail?r=191</ref> 
+    </refs>
+  </item>
+</timesheet>
