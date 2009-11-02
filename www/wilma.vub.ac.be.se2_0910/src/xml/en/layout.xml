@@ -1,8 +1,28 @@
 <?xml version="1.0"?>
   <layout>
 
-<config param="headlink" value="sitemap" altval="Site Map"/>
-<config param="headlink" value="search" altval="Search"/>
+<config 
+    param="headlink" 
+    altval="SVN Browse"
+    value="http://code.google.com/p/salesmen/source/browse/"/>
+
+<config 
+    param="headlink" 
+    altval="SVN Revisions"
+    value="http://code.google.com/p/salesmen/source/list"/>
+
+<config 
+    param="headlink" 
+    altval="Wiki"
+    value="http://code.google.com/p/salesmen/w/list"/>
+
+<config 
+    param="headlink" 
+    altval="Issues"
+    value="http://code.google.com/p/salesmen/issues/list"/>
+
+<config param="footlink" value="sitemap" altval="Site Map"/>
+<config param="footlink" value="search" altval="Search"/>
 <config param="footlink" value="feeds" altval="Content Feeds"/>
 
 <config param="title" value="SE Group 2 - 2009-2010"/>
