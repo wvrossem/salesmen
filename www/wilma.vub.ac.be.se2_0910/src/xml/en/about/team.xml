@@ -29,7 +29,7 @@
 	</row>
 	<row id='jonathan'>
 	  <entry role='name'>Jonathan Jeurissen</entry>
-	  <entry role='role'>Secretary</entry>
+	  <entry role='role'>Project Secretary</entry>
 	  <entry role='backup'>Requirements Manager</entry>
 	</row>
 	<row id='sina'>
@@ -55,7 +55,7 @@
 	<row id='wouter'>
 	  <entry role='name'>Wouter Van Rossem</entry>
 	  <entry role='role'>Requirements Manager</entry>
-	  <entry role='backup'>Webmaster</entry>
+	  <entry role='backup'>Project Secretary and Webmaster</entry>
 	</row>
       </tbody>
     </tgroup>
