@@ -165,3 +165,13 @@ form .invalid input { background-color: #ffcccc; }
 .sitemap #maincontent .minutes ul .summary,
 .sitemap #maincontent .minutes ul .hbar { display: none; }
 
+.team table td.name { 
+  font-weight: bold; 
+  width: 35%;
+}
+
+.footnotes hr {
+  width: 30%;
+  text-align: left;
+  margin-left: 0px;
+}

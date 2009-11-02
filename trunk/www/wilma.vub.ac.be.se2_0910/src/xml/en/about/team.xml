@@ -4,104 +4,68 @@
   <head>
     <title>Team</title>
     <summary>
-      Those who'll code day and night
+      Faces behind Salesmen
    </summary>
-    <keywords>People</keywords>
+    <keywords>People, Salesmen, Salesmen Team</keywords>
   </head>
-<variablelist>
-  <varlistentry>
-    <term>Nick De Cooman</term>
-    <listitem>
-      <formalpara>
-	<title>Role</title>
-	<para>Project Leader</para>
-      </formalpara>
-      <formalpara>
-	<title>Backup</title>
-	<para>Design Manager</para>
-      </formalpara>
-    </listitem>
-  </varlistentry>
-  <varlistentry>
-    <term>Jonathan Jeurissen</term>
-    <listitem>
-      <formalpara>
-	<title>Backup</title>
-	<para>Requirements Manager</para>
-      </formalpara>
-    </listitem>
-  </varlistentry>
-  <varlistentry>
-    <term>Sina K. Heshmati</term>
-    <listitem>
-      <formalpara>
-	<title>Role</title>
-	<para>Implementation Manager and Webmaster</para>
-      </formalpara>
-      <formalpara>
-	<title>Backup</title>
-	<para>Configuration Manager</para>
-      </formalpara>
-    </listitem>
-  </varlistentry>
-  <varlistentry>
-    <term>Jorne Laton</term>
-    <listitem>
-      <formalpara>
-	<title>Role</title>
-	<para>Configuration Manager</para>
-      </formalpara>
-      <formalpara>
-	<title>Backup</title>
-	<para>Implementation Manager</para>
-      </formalpara>
-    </listitem>
-  </varlistentry>
-  <varlistentry>
-    <term>Bart Maes</term>
-    <listitem>
-      <formalpara>
-	<title>Role</title>
-	<para>Design Manager</para>
-      </formalpara>
-      <formalpara>
-	<title>Backup</title>
-	<para>Quality Assurance Manager</para>
-      </formalpara>
-    </listitem>
-  </varlistentry>
-  <varlistentry>
-    <term>Patrick Provinciael</term>
-    <listitem>
-      <formalpara>
-	<title>Role</title>
-	<para>Quality Assurance Manager</para>
-      </formalpara>
-      <formalpara>
-	<title>Backup</title>
-	<para>Project Leader</para>
-      </formalpara>
-    </listitem>
-  </varlistentry>
-  <varlistentry>
-    <term>Wouter Van Rossem</term>
-    <listitem>
-      <formalpara>
-	<title>Role</title>
-	<para>Requirements Manager</para>
-      </formalpara>
-      <formalpara>
-	<title>Backup</title>
-	<para>Webmaster</para>
-      </formalpara>
-    </listitem>
-  </varlistentry>
-</variablelist>
-<sidebar id='contact'>
-  <title>How to reach us?</title>
-  <para>We'd be glad to hear from you. Please 
-    email us at: se2#<footnote><para>Please 
-	replace <emphasis role='bold'>#</emphasis> with 
-	<emphasis role='bold'>@</emphasis></para></footnote>tinf.vub.ac.be</para>
-</sidebar>
+  <para>
+    Here we are with our roles. Please note that each role has an alternative
+    responsible.
+  </para>
+  <table id="name-role-table">
+    <tgroup cols="3">
+      <thead>
+	<row>
+	  <entry role='name'>Name</entry>
+	  <entry role='role'>Main Role</entry>
+	  <entry role='backup'>Alternative Role</entry>
+	</row>
+      </thead>
+      <tbody>
+	<row id='nick'>
+	  <entry role='name'>Nick De Cooman</entry>
+	  <entry role='role'>Project Leader</entry>
+	  <entry role='backup'>Design Lead</entry>
+	</row>
+	<row id='jonathan'>
+	  <entry role='name'>Jonathan Jeurissen</entry>
+	  <entry role='role'>Secretary</entry>
+	  <entry role='backup'>Requirements Manager</entry>
+	</row>
+	<row id='sina'>
+	  <entry role='name'>Sina Khakbaz Heshmati</entry>
+	  <entry role='role'>Implementation Lead and Webmaster</entry>
+	  <entry role='backup'>Configuration Manager</entry>
+	</row>
+	<row id='jorne'>
+	  <entry role='name'>Jorne Laton</entry>
+	  <entry role='role'>Configuration Manager</entry>
+	  <entry role='backup'>Implementation Lead</entry>
+	</row>
+	<row id='bart'>
+	  <entry role='name'>Bart Maes</entry>
+	  <entry role='role'>Design Lead</entry>
+	  <entry role='backup'>Quality Assurance Manager</entry>
+	</row>
+	<row id='patrick'>
+	  <entry role='name'>Patrick Provinciael</entry>
+	  <entry role='role'>Quality Assurance Manager</entry>
+	  <entry role='backup'>Project Leader</entry>
+	</row>
+	<row id='wouter'>
+	  <entry role='name'>Wouter Van Rossem</entry>
+	  <entry role='role'>Requirements Manager</entry>
+	  <entry role='backup'>Webmaster</entry>
+	</row>
+      </tbody>
+    </tgroup>
+  </table>
+  <sidebar id='contact'>
+    <title>How to reach us?</title>
+    <para>
+      We'd be glad to hear from you. Please email us at: 
+      se2#<footnote><para>Please replace <emphasis role='bold'>#</emphasis> 
+      with <emphasis role='bold'>@</emphasis></para>
+    </footnote>tinf.vub.ac.be</para>
+  </sidebar>
 </webpage>
