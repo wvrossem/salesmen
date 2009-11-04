@@ -10,7 +10,9 @@ This wiki page is dedicated to explain and document the LaTeX template softproj.
 == Declaring the class ==
 You declare the documentclass as follows.
 
+{{{
 \documentclass[optfilename, twosides, otheroptions]{softproj}
+}}}
 
 == Using the Class ==
 Within the document environment you must declare a new softproj environment.
