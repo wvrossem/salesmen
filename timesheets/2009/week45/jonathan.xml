@@ -15,9 +15,17 @@
     </refs>
   </item>
 
+  <item duration="PT5M">
+    <desc>Correcting Minutes of Friday 2009/11/03.</desc>
+    <refs>
+      <ref>http://code.google.com/p/salesmen/source/detail?r=208</ref>
+    </refs>
   </item>
 
-  <item duration="PT3M">
+
+  </item>
+
+  <item duration="PT5M">
     <desc>Updated Timesheet for week 45.</desc>
   </item>
 
