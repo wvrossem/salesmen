@@ -1,59 +1,132 @@
-\documentclass{article}
+\documentclass{report}
+
+\author{Jorne Laton, Sina Khakbaz Heshmati}
+\title{Software Configuration Management Plan}
+
 \begin{document}
 
+\chapter{Configuration Management Planning}
+\section{Abbreviations}
+In this document a number of abbreviations will be used, which are listed here:
+\begin{description}
+\item[SCMP]
+Software Configuration Management Plan
+\item[SCM]
+Software Configuration Management
+\item[CM]
+Configuration Manager
+\item[CMA]
+Configuration Manager Assistant
+\end{description}
+\section{Configuration Tree}
+This is the structure which will be used to store all source files, reports, webpages and timesheets during the project.
+Every team member must be capable of choosing the right directory to commit new files.
+If this would not be the case, the CM or the CMA can be contacted to decide where certain new files should be added.
+If necessary, this structure can be changed to store a new type of file, but only members of the SCM are authorized to do so, other members are obliged to contact a member of the SCM to request such changes.
+For further explanation, see Chapter 2, Change Management.
+\subsection{trunk}
+This directory contains three important directories.
+\begin{description}
+\item[docs]
+This is where all documentation about the project is stored.
+\item[utils]
+Utilities can be found here.
+To give an example, Timetrack is a utility which is able to convert .xml-format files to other formats, such as .txt and .html.
+This utility is used to convert the timesheets, written in .xml, to .html, so that these can be placed on the website in a readable layout.
+\item[salesmen]
+The project itself: all source files, website files and libraries must be stored here.
+\end{description}
+\subsection{branches}
+You can consider the project development as a timeline, in which the trunk is the main branch, but for each stable release, a new branch is added to the timeline.
+More information in Chapter 3, Version and Release.
+\subsection{tags}
+These are in fact 'snapshots' of the source code at a particular moment in time.
+When a stable version is achieved, it can be tagged, see it as a backup.
+In this way, when things go wrong implementing new features in a later stadium, not everything is lost, as the latest stable version will still be available.
+\subsection{timesheets}
+Each team member is responsible for his own timesheet, herefor everyone has to be able to write .xml-files, as the timesheets are to be committed in this format.
+The deadline for committing timesheets is set each Monday, at 00h00, thus {\it before} Monday.
+To put these timesheets on the website, they are converted into html-format, using Timetrack, see Utilities.
+An example of this directory structure is:\newline
+timesheets/2009/week43/\newline
+In this directory the timesheets of week 43 of all team members are stored, but only in .xml-format.
+\subsection{minutes}
+Of each meeting a report is kept by the secretary, this report is made in tex-format.
+This is saved in the appropriate directory, for each meeting a new directory is made.
+An example of this directory structure is:\newline
+minutes/2009/10/20/\newline
+Very self-explanatory: this directory contains all necessary formats (.tex, .txt and .pdf) of the report of the meeting that took place on 20 October 2009.
+This date is also included in the filename of the report.
+\subsection{wiki}
+As it suggests, this is where wikis are stored.
+Those wikis can be manuals, agendas or other important documents for team members.
+They can easily be edited by every team member, be it via SVN or via Google Code itself.
+For example, a Requirements wiki was created to add ideas for requirements.
+\section{Subversion}
+Subversion has been chosen to regulate checkouts, commits and updates of project files.
+The arguments for this choice are the following:
+\begin{description}
+\item[Flexibility]
+Misplaced adds or files with a badly chosen name, can be changed without problems, which is not the case in, for example, CVS, an older version based server system.
+\item[Revisions]
+In SVN, commits are saved as revisions.
+In this way, all changes made to files are monitored very precisely, because each commit causes an increment of the revision index, which is then given to the new version of the file.
+Hence, it is possible to compare revisions.
+\item[Centralized]
+SVN is created for use with centralized servers, which is ideal for project groups in which everyone knows and can contact everyone.
+No team member hosts the main directory, this is done by the central server.
+The opposite, {\it decentralized}, is used in (mostly open source, like Linux) environments with a lot of programmers, who do not know each other and who work independent.
+In a decentralized system the main software is hosted by the manager of the project.
+\end{description}
+\section{Management Control}
+Every team member can checkout and update his working copy of the main software.
+To send back changes made to a file of the working copy, one has to commit this file.
+When no large changes are made, this should work without problems.
+The SCM strongly recommends to work incrementally on files, in other words, committing large changes on different places in a file is not encouraged.
+This is to avoid conflicts when trying to merge files edited by different programmers. More about this in the next section, Merging.
+If one, for example, wants to implement a new feature, which will drastically change the source code, he has to contact the SCM. The latter will consider this request, but more about this in Chapter 2, Change Management.
+\section{Merging}
+Imagine two members editing the same file, then committing it to the server at the same time.
+This will not be a problem, considering they both worked incrementally on the file, thus not committing a large change at once.
+Merging is what regulates this, by recognizing the changes of both sides it can create a new file containing both versions.
+It has to be kept in mind that this tool cannot perform miracles.
+If two members have worked on the exact same paragraph of a document and then commit, a conflict will occur.
+Merging will not provide a solution, but last one who committed will be asked to clear out this conflict by comparing his version with the conflicting version.
+\section{Nightly Build}
+In the beginning this will not be dealt with, only once the source code is ready to be compiled and run.
+From then on, it will be a daily task to have runnable version of the code, which can be built at the end of the day.
+A day cannot be closed if the code is not compiled without errors, otherwise the next day would start with a non-runnable version which needs to be debugged first.
 
-\section{Introduction}
-	The purpose of this document is to give an explanation about the Software Configuration Management, which regulates the storage of all project files.
+\section{Website}
 
+\chapter{Change Management}
+\section{Issues}
+\subsection{Type}
+\subsection{Priority}
+\subsection{OpSys}
+\subsection{Milestone}
+\subsection{Component}
+\subsection{Security}
+\subsection{Performance}
+\subsection{Usability}
+\subsection{Maintainability}
 
-\section{Management}
-	\subsection{Organization}
-		Configuration Manager: Jorne Laton\n
-		Assistant Configuration Manager: Sina Khakbaz Heshmati
-	\subsection{Responsibilities}
-		\begin{itemize}
-			\item Organizing the Software Configuration Management
-			\item Writing and maintaining the SCMP
-			\item Installing and maintaining tools
-			\item Supporting users of these tools
-		\end{itemize}
+\chapter{Version and Release}
+\section{Milestones}
+\subsection{Roadmap}
+\subsection{Branches}
+\section{Releases}
+\subsection{Indexing}
 
-
-\section{Configuration}
-	\subsection{Configuration Tree}
-		\begin{description}
-			\item[trunk]
-				Main directory of the project
-				\begin{description}
-					\item[docs]
-						SPMP and SCMP.
-					\item[utils]
-						Utilities.
-					\item[www]
-						Images, source code, configuration files of the website.
-				\end{description}
-			\item[branches]
-				Previous stable versions of the project.
-			\item[minutes]
-				Reports of meetings.
-			\item[timesheets]
-				Each member's timesheet per week.
-			\end{description}
-	\subsection{Tools}
-		\begin{description}
-			\item[XML:]
-				Each project member writes his timesheet in XML-format. These files are then compiled to readable text to put on the website.
-			\item[\LaTeX{}:]
-				All documents are written in \LaTeX{}, SPMP, SCMP, Minutes, etc.
-			\item[Google Code]
-				Google Code has been chosen as the server for all our files.
-			\item[SVN]
-				Subversion has been chosen to checkout, commit or update files from or to the Google Code server.
-		\end{description}
-	\subsection{Control}
-	All team members can access items on the server, using the checkout or the update command, so that everyone is able to have a working copy of the original file on his computer.
-	Edits can only be made to the working copy and, when finished editing, then committed back to the server.
-	When this is done the server will save these changes in a new revision, incrementing the revision index.
-
+\chapter{System Build}
+\section{Apache Ant}
+\subsection{Compile}
+\subsection{Javadoc}
+\subsection{JUnit}
+\subsection{JAr}
+\subsection{Dist}
+\subsection{Deploy}
+\subsection{Run}
+\section{Build names convention}
 
 \end{document}
