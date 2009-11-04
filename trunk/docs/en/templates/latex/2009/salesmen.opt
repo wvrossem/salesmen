@@ -1,0 +1,6 @@
+\setprojectname{Salesmen}
+\setdocumentname{SQAP}
+\setmembers{\manager{Nick DeCooman}, Jonathan Jeurissen, Sina Khakbaz Heshmati, Jorne Laton, Bart Maes, Patrick Provinciael, Wouter Van Rossem}
+\setrevisioncurr{\today: Finished v1.0: Support for basic templates}
+\setlogoname{salesmenlogo}
+\setauthorname{Patrick Provinciael}
