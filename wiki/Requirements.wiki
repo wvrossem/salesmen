@@ -20,7 +20,7 @@ This information needs to be supplied when creating an account
  * E-mail address (+ confirmation)
  * Username
  * Password (+ confirmation)
- * Secret question + answer
+ * Secret question + answer (Bart: possible (end-user) security risk, I wouldn't use this for password recovery, instead, let the site generate a new PW and send it to the user's email)
 After the account is created, it needs to be confirmed through e-mail (Bart: after changes to email, a new confirmation is required)
  
 == Users/Members ==
@@ -61,12 +61,14 @@ Users are members of the site, i.e. they have an acount
 
 == Auctions == 
  * Auctions have
+   * (Bart) a name/title
+   * (Bart) transport-options (national/international delivery, pickup,..)
    * Minimum price
    * Duration
    * Auctionnumber
    * Information about the object being sold
    * Auction type
-   * Category
+   * Category (Bart: at least 1, possibly more than 1)
    * Tags
 
  * Auction types
