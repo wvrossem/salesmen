@@ -2,7 +2,18 @@
 
 = Introduction =
 
-This wiki page is dedicated to explain and document the LaTeX template softproj.cls. It will also contain a section where you can request future changes/additions.
+== Overview ==
+
+This wiki page is dedicated to explain and document the LaTeX template softproj.cls. It will contain sections on how to declare it and how to use it. The different options for the .opt file are also explained.
+
+There are also sections for Troubleshooting.
+
+It will also contain a section where you can request future changes/additions.
+
+== About the class ==
+This documentclass is created by Patrick Provinciael.
+
+It is created with portability to other projects in mind. For this reason a .opt file can be included to declare several project related details.
 
 
 = Details =
@@ -36,13 +47,16 @@ The .opt file currently has following settings:
  * _\setlogoname{name}_ : Sets the name of the logo. This should be a .jpg/.png/.gif file, but you must omit the extension. This is an optional command.
  * _\setauthorname{name}_ : Sets the name of the author on the title page.
 
+= Troubleshooting =
+
 == Additional Packages ==
 There are currently no additional packages included. You must still declare the use of additional packages in your tex file.
 
 == Titlepage? ==
 You must not make a titlepage within this file. This will be created depending on your .opt file settings.
 
-== Future Revisions ==
+= Future Revisions =
  * Addition of a full Version History via the .opt file. (Patrick Provinciael)
  * Additional possibilities, depending on the documentname. (Patrick Provinciael)
  * Declaration of several often used packages. (Patrick Provinciael)
+ * Some minor beauty mistakes fixes. (Patrick Provinciael)
