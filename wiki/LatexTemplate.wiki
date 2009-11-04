@@ -1,0 +1,46 @@
+#summary Brief explanation about the latex template softproj.cls
+
+= Introduction =
+
+This wiki page is dedicated to explain and document the LaTeX template softproj.cls. It will also contain a section where you can request future changes/additions.
+
+
+= Details =
+
+== Declaring the class ==
+You declare the documentclass as follows.
+
+\documentclass[optfilename, twosides, otheroptions]{softproj}
+
+== Using the Class ==
+Within the document environment you must declare a new softproj environment.
+Example:
+{{{
+\begin{document}
+\begin{softproj}
+Your text here
+\end{softproj}
+\end{document}
+}}}
+
+== .opt file ==
+When declaring the documentclass, you must add the name of a .opt file which resides in the same folder as the .tex file.
+
+The .opt file currently has following settings:
+ * _\setprojectname{name}_ : Sets the name of the project.
+ * _\setdocumentname{name}_ : Sets the name of the document.
+ * _\setmember{memberlist}_ : Sets the list of projectmembers. (Currently has no visual effect)
+ * _\setrevisioncurr{date: explanation}_ : Sets the most recent revision with Date and explanation. Watch out for using \today. Compiling on a new day results in loss of the old date.
+ * _\setlogoname{name}_ : Sets the name of the logo. This should be a .jpg/.png/.gif file, but you must omit the extension. This is an optional command.
+ * _\setauthorname{name}_ : Sets the name of the author on the title page.
+
+== Additional Packages ==
+There are currently no additional packages included. You must still declare the use of additional packages in your tex file.
+
+== Titlepage? ==
+You must not make a titlepage within this file. This will be created depending on your .opt file settings.
+
+== Future Revisions ==
+ * Addition of a full Version History via the .opt file. (Patrick Provinciael)
+ * Additional possibilities, depending on the documentname. (Patrick Provinciael)
+ * Declaration of several often used packages. (Patrick Provinciael)
