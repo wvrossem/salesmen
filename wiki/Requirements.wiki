@@ -43,6 +43,7 @@ Users are members of the site, i.e. they have an acount
    * Contact other users
    * Follow a user (rss feed of the auctions this user places) (Bart: very nice to have?)
    * Log out
+   * (Bart) Choose a language of their liking (default language: English)
    * (Bart) Account (virtual money)
  * User home has
    * Followed auctions
@@ -68,8 +69,8 @@ Users are members of the site, i.e. they have an acount
    * Auctionnumber
    * Information about the object being sold
    * Auction type
-   * Category (Bart: at least 1, possibly more than 1)
-   * Tags
+   * Category (Bart: at least 1, possibly more than 1, categories are created by site owner)
+   * Tags (Bart: tags are user defined)
 
  * Auction types
    * English auction
