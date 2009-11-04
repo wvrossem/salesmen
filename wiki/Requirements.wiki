@@ -71,6 +71,7 @@ Users are members of the site, i.e. they have an acount
    * Auction type
    * Category (Bart: at least 1, possibly more than 1, categories are created by site owner)
    * Tags (Bart: tags are user defined)
+   * (Bart) The auction-organiser has to pay a fee for the auction (fixed price/percentage ?)
 
  * Auction types
    * English auction
@@ -82,7 +83,7 @@ Users are members of the site, i.e. they have an acount
    * Send a question to the seller about the object (Bart: private/public?)
    * [Bart] Users can bid on auctions BUT (when using virtual money) can NEVER surpass 
 
-(Bart) == GENERAL == (~= webinterface)
+== GENERAL == (eg webinterface)
  * (Bart) Search-engine (basic (must have) vs extended (want/nice to have))
  * (Bart) Web 2.0 (nice to have) (eg facebook: no need to refresh page contents, updates done by DOM manipulation, AJAX get/post, ..)
 
