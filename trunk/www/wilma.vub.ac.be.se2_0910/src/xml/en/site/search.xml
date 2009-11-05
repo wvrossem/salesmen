@@ -7,5 +7,19 @@
     <summary>Search this site</summary>
     <keywords>SilkPage, Google, Search</keywords>
   </head>
-  <html:script src="http://www.gmodules.com/ig/ifr?url=http://www.google.com/cse/api/009007427696665646697/cse/qeccfw243ks/gadget&amp;synd=open&amp;w=320&amp;h=75&amp;title=Search+Salesmen+Project+Resources&amp;border=%23ffffff%7C0px%2C1px+solid+%2399BB66%7C0px%2C2px+solid+%23AACC66%7C0px%2C2px+solid+%23BBDD66&amp;output=js"></html:script>
+  <html:div id="cse" style="width: 95%;">Loading</html:div>
+  <html:script 
+      src="http://www.google.com/jsapi" type="text/javascript"></html:script>
+  <html:script type="text/javascript">
+    google.load('search', '1');
+    google.setOnLoadCallback(function(){
+    var customSearchControl = new google.search.CustomSearchControl('009007427696665646697:qeccfw243ks');
+    customSearchControl.setResultSetSize(google.search.Search.FILTERED_CSE_RESULTSET);
+    customSearchControl.draw('cse');
+    }, true);
+  </html:script>
+  <html:link 
+      rel="stylesheet" 
+      href="http://www.google.com/cse/style/look/default.css" 
+      type="text/css" />
 </webpage>

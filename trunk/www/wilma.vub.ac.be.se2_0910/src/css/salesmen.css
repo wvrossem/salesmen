@@ -14,28 +14,40 @@
 
 @import url(phenix/main.css);
 
-
+/*
 #header div#title a {
-	text-indent: 10px;
-	width: 280px;
-	color: #E97E00;
-	font-size: 130%;
-	padding: 30px 10px;
-	margin: -23px 15px;
+	width: 170px;
+	padding: 30px 20px;
 	height: 20px;
 }
 
 #header div#title 
 {
-	margin-top: 23px;
+	margin: 23px 0 0 30px;
+}
+
+#header div#title { background: url(../img/logo.png) top left no-repeat; }
+*/
+
+#header div#title a {
+        text-indent: 10px;
+        width: 280px;
+        color: #E97E00;
+        font-size: 130%;
+        padding: 30px 10px;
+        margin: -23px 15px;
+        height: 20px;
+}
+
+#header div#title 
+{
+        margin-top: 23px;
 }
 
 #subnav .sidebar li
 {
 	background-color: transparent;
 }
-
-/*#header div#title { background: url(../img/logo.png) top left no-repeat; }*/
 
 /* hidden references */
 #secnav li.sitemap,
