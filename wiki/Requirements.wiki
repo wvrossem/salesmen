@@ -52,12 +52,12 @@ Users are members of the site, i.e. they have an acount
    * Auctions currently bid on
    * Favorite sellers
      * Add seller
-	 * Delete seller
-	 * Contact seller
+     * Delete seller
+     * Contact seller
    * Messages (from other users or the system)
      * View message
-	 * Delete message
-	 * Reply to message 
+     * Delete message
+     * Reply to message 
    * Account information (view or change)
 
 == Auctions == 
