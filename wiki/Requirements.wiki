@@ -28,13 +28,13 @@ Users are members of the site, i.e. they have an acount
  * Users have:
    * Public
      * Username
-	 * Location
-	 * Objects they sell
+     * Location
+     * Objects they sell
    * Private
      * Name
-	 * Address
-	 * E-mail address
-	 * Phone number
+     * Address
+     * E-mail address
+     * Phone number
  * A user can
    * Browse through actions
    * Place an auction
