@@ -81,7 +81,7 @@ Users are members of the site, i.e. they have an acount
    * Bid on the object
    * Buy the auction (if it has a fixed price)
    * Send a question to the seller about the object (Bart: private/public?)
-   * (Bart) Users can bid on auctions BUT (when using virtual money) can NEVER surpass 
+   * (Bart) Users can bid on auctions BUT (when using virtual money) can NEVER surpass their accountlimit (<0EUR)
 
 == GENERAL ==
  * (Bart) Search-engine (basic (must have) vs extended (want/nice to have))
