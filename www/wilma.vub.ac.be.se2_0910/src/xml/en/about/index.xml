@@ -41,4 +41,43 @@
       license.
     </para>
   </section>
+  <sidebar id='facts'>
+    <title>Project Facts</title>
+    <formalpara>
+      <title>Raison d'&#234;tre</title>
+      <para>
+	For VUB CS students to <emphasis>collaborate</emphasis> and code
+      </para>
+    </formalpara>
+    <formalpara>
+      <title>Parent Course</title>
+      <para>
+	<ulink url="http://tinf2.vub.ac.be/~dvermeir/courses/software_engineering/">Software Engineering</ulink>
+      </para>
+    </formalpara>
+    <formalpara>
+      <title>Official Name</title>
+      <para>SE2-0910</para>
+    </formalpara>
+    <formalpara>
+      <title>Codename</title>
+      <para>Salesmen</para>
+    </formalpara>
+    <formalpara>
+      <title>Members</title>
+      <para>See <olink targetdoc='team'>Team</olink></para>
+    </formalpara>
+    <formalpara>
+      <title>Description</title>
+      <para>Building the software behind an online auction website</para>
+    </formalpara>
+    <formalpara>
+      <title>Platform</title>
+      <para>Java EE 5</para>
+    </formalpara>
+    <formalpara>
+      <title>License</title>
+      <para>GPLv3</para>
+    </formalpara>
+  </sidebar>
 </webpage>
