@@ -1,0 +1,22 @@
+<?xml version='1.0'?>
+<timesheet xmlns="http://purl.org/net/timetrack">
+	
+  <item duration="PT2H30M">
+    <desc>Meeting on Tuesday 2009/11/03.</desc>
+    <refs>
+      <ref>http://wilma.vub.ac.be/~se2_0910/docs/minutes/2009/11/03/minutes-20091103.pdf</ref>
+    </refs>
+  </item>
+
+  <item duration="PT30M">
+    <desc>Prepare meeting on Friday 2009/11/06</desc>
+    <refs>
+      <ref></ref>
+    </refs>
+  </item>
+
+  <item duration="PT5M">
+    <desc>Checking timesheets for week 45.</desc>
+  </item>
+
+</timesheet>
