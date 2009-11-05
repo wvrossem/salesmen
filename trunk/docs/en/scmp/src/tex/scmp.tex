@@ -4,7 +4,7 @@
 \title{Software Configuration Management Plan}
 
 \begin{document}
-
+\maketitle
 \chapter{Configuration Management Planning}
 \section{Abbreviations}
 In this document a number of abbreviations will be used, which are listed here:
@@ -33,7 +33,7 @@ This is where all documentation about the project is stored.
 Utilities can be found here.
 To give an example, Timetrack is a utility which is able to convert .xml-format files to other formats, such as .txt and .html.
 This utility is used to convert the timesheets, written in .xml, to .html, so that these can be placed on the website in a readable layout.
-\item[salesmen]
+\item[www]
 The project itself: all source files, website files and libraries must be stored here.
 \end{description}
 \subsection{branches}
@@ -41,24 +41,26 @@ You can consider the project development as a timeline, in which the trunk is th
 More information in Chapter 3, Version and Release.
 \subsection{tags}
 These are in fact 'snapshots' of the source code at a particular moment in time.
-When a stable version is achieved, it can be tagged, see it as a backup.
-In this way, when things go wrong implementing new features in a later stadium, not everything is lost, as the latest stable version will still be available.
+When a stable version is achieved, it can be tagged.
+This can be regarded as a possible backup.
+Things might go wrong when new features are implemented in a later stadium.
+This will not be a problem, as the latest stable version will still be available.
 \subsection{timesheets}
-Each team member is responsible for his own timesheet, herefor everyone has to be able to write .xml-files, as the timesheets are to be committed in this format.
-The deadline for committing timesheets is set each Monday, at 00h00, thus {\it before} Monday.
+Each team member is responsible for his own timesheet, therefor everyone has to be able to write .xml-files, as the timesheets are to be committed in this format.
+The deadline for committing timesheets is set each Sunday, 23h59.
 To put these timesheets on the website, they are converted into html-format, using Timetrack, see Utilities.
 An example of this directory structure is:\\
 timesheets/2009/week43/\\
 In this directory the timesheets of week 43 of all team members are stored, but only in .xml-format.
 \subsection{minutes}
-Of each meeting a report is kept by the secretary, this report is made in tex-format.
+Of each meeting a report is kept by the secretary, this report is made in LaTeX.
 This is saved in the appropriate directory, for each meeting a new directory is made.
 An example of this directory structure is:\\
 minutes/2009/10/20/\\
-Very self-explanatory: this directory contains all necessary formats (.tex, .txt and .pdf) of the report of the meeting that took place on 20 October 2009.
+This directory contains all necessary formats (.tex, .txt and .pdf) of the report of the meeting that took place on 20 October 2009.
 This date is also included in the filename of the report.
 \subsection{wiki}
-As it suggests, this is where wikis are stored.
+This is where wikis are stored.
 Those wikis can be manuals, agendas or other important documents for team members.
 They can easily be edited by every team member, be it via SVN or via Google Code itself.
 For example, a Requirements wiki was created to add ideas for requirements.
@@ -75,8 +77,7 @@ Hence, it is possible to compare revisions.
 \item[Centralized]
 SVN is created for use with centralized servers, which is ideal for project groups in which everyone knows and can contact everyone.
 No team member hosts the main directory, this is done by the central server.
-The opposite, {\it decentralized}, is used in (mostly open source, like Linux) environments with a lot of programmers, who do not know each other and who work independent.
-In a decentralized system the main software is hosted by the manager of the project.
+In a {\it decentralized} system the main software is hosted by the manager of the project.
 \end{description}
 \section{Management Control}
 Every team member can checkout and update his working copy of the main software.
@@ -84,14 +85,15 @@ To send back changes made to a file of the working copy, one has to commit this 
 When no large changes are made, this should work without problems.
 The SCM strongly recommends to work incrementally on files, in other words, committing large changes on different places in a file is not encouraged.
 This is to avoid conflicts when trying to merge files edited by different programmers. More about this in the next section, Merging.
-If one, for example, wants to implement a new feature, which will drastically change the source code, he has to contact the SCM. The latter will consider this request, but more about this in Chapter 2, Change Management.
+If one, for example, wants to implement a new feature, which will drastically change the directory structure, he has to contact the SCM.
+The latter will consider this request, but more about this in Chapter 2, Change Management.
 \section{Merging}
 Imagine two members editing the same file, then committing it to the server at the same time.
 This will not be a problem, considering they both worked incrementally on the file, thus not committing a large change at once.
 Merging is what regulates this, by recognizing the changes of both sides it can create a new file containing both versions.
 It has to be kept in mind that this tool cannot perform miracles.
 If two members have worked on the exact same paragraph of a document and then commit, a conflict will occur.
-Merging will not provide a solution, but last one who committed will be asked to clear out this conflict by comparing his version with the conflicting version.
+Merging will not provide a solution, but the last one who committed will be asked to clear out this conflict by comparing his version with the conflicting version.
 \section{Nightly Build}
 In the beginning this will not be dealt with, only once the source code is ready to be compiled and run.
 From then on, it will be a daily task to have runnable version of the code, which can be built at the end of the day.
@@ -107,21 +109,21 @@ An issue consists of two different sorts of variables: the status and the label(
 \subsection{Open}
 \begin{description}
 \item[New]
-An issue at this state has not yet received an initial review, it is pending, until the SCM puts it in another state.
+An issue at this state has not yet received an initial review, it is pending, until the responsible management puts it in another state.
 \item[Accepted]
-At this state, the issue has been acknowledged by the SCM, its need is then confirmed.
+At this state, the issue has been acknowledged by the responsible management, its need is then confirmed.
 \item[Started]
 Working on this issue has begun.
 \end{description}
 \subsection{Closed}
 \begin{description}
 \item[Fixed]
-A developer has made the required changes a source code file or a document.
+A developer has made the required changes to a source code file or a document.
 At this status it is up to the QA to check whether these changes really handled the problem.
 \item[Verified]
 The QA has checked the fix and has confirmed that it is working.
 \item[Invalid]
-This issue is rejected by the SCM, it will not be implemented (yet).
+This issue is rejected by the responsible management, it will not be implemented (yet).
 \item[Duplicate]
 This issue report is a copy of or very similar to an already existing issue, therefor it is rejected.
 \item[WontFix]
@@ -201,11 +203,51 @@ Hinders future changes.
 
 \chapter{Version and Release}
 \section{Milestones}
-\subsection{Roadmap}
-\subsection{Branches}
-\section{Releases}
+The concept {\it milestone} is used to indicate a goal which is wanted to be achieved within a specified time.
+Parallel with the milestones are the releases, see 3.2 Release, and the branches, see 3.3 Branches.
+\section{Release}
+\subsection{Releases}
+A {\it release} is in fact a runnable version of the project which includes all demands, according to the appropriate milestone.
+For each milestone, a release is built, this release is also a candidat to be the final working version, if no further releases are made.
+In this project there will be 2 to 3 milestones, hence also 2 or 3 releases will be made.
+The requirements are playing an important role in the release, especially the ordering of the requirements.
+The following milestones are set:
+\begin{description}
+\item[Milestone 1:]
+The first milestone wants the software to include all must-have requirements, in order to be able to build a first release, which can be considered a possible solution for the assignment.
+It has to be noted that this first version is not at all a final version, because it contains only the most important features, no extras.
+\item[Milestone 2:]
+In this stage all (or at least, most of) the want-to-have requirements have been implemented in the software.
+The corresponding release will be one which contains important extensions, so that the software has a much better usability.
+\item[Milestone 3:]
+This should be the final stage, in which the nice-to-have requirements are added to the software. This version has a very good stability and usability.
+\end{description}
 \subsection{Indexing}
+As said above, for each milestone, a release is created. These releases get specific indexes.
+\begin{description}
+\item[Release 0.1]
+This release corresponds with the first milestone, thus containing the must-haves.
+\item[Release 0.2]
+The second milestone, add of want-to-haves
+\item[Release 1.0]
+The final, stable version in which the nice-to-haves are included.
+\end{description}
+\section{Branches}
+A {\it branch} is a directory with the same composition of the trunk.
+At the moment all must-haves are implemented in the source code in the trunk, the latter is copied to a new branch.
+This branch will be named release0\_1.
+No further implementations will be made to this release, only fixing bugs will be done on this version.
+In the same way the second release will get its own branch, release0\_2, and so on.
 
-\input{build.tex}
+\chapter{System Build}
+\section{Apache Ant}
+\subsection{Compile}
+\subsection{Javadoc}
+\subsection{JUnit}
+\subsection{JAr}
+\subsection{Dist}
+\subsection{Deploy}
+\subsection{Run}
+\section{Build names convention}
 
 \end{document}
