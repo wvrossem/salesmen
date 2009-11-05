@@ -90,8 +90,9 @@ Users are members of the site, i.e. they have an acount
 == Security ==
  * Users need an acount to sell objects
  * Users need an acount to bid on objects
- * Users need to be verified to be able to place auctions [Bart: how?]
+ * Users need to be verified to be able to place auctions (Bart: how?)
  * Users need to log in before they can place auctions
  * Users need to log in before they can bid on objects
- * Users with multiple accounts are linked to one "super account" [Bart: ?]
+ * Users with multiple accounts are linked to one "super account" (Bart: ?)
  * (Bart: we need to specify a certain maximum amount of dangerous/bad/'dangerless' amount of 'bugs' per 'something')
+ * (Bart) communication of sensitive data (eg password) should be encrypted (eg, using https)
