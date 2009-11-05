@@ -1,0 +1,19 @@
+<?xml version='1.0'?>
+<timesheet xmlns="http://purl.org/net/timetrack">
+  <item duration="PT2H">
+    <desc>
+      Meeting on Tuesday 2009/11/03.
+    </desc>
+  </item>
+  <item duration="PT2H30M">
+    <desc>
+      Discussing SCMP with Sina.
+    </desc>
+  </item>
+  <item duration="PT3H">
+    <desc>
+      Writing Contents Table and Chapter 1 of SCMP.
+    </desc>
+  </item>
+
+</timesheet>
