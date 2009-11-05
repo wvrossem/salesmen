@@ -1,0 +1,288 @@
+
+                      Minutes Meeting 5
+                          Jonathan Jeurissen
+
+
+
+                           November 5, 2009
+
+
+1     Meeting Information
+
+
+Date: Tuesday, November 3, 2009
+
+Time: 15H00-17H30
+
+Place: D2.10
+
+
+1.1    Attendees
+
+
+Following member were present:
+
+
+    o Nick De Cooman
+
+
+    o Jonathan Jeurissen
+
+
+    o Sina Khakbaz Heshmati
+
+
+    o Jorne Laton
+
+
+    o Bart Maes
+
+
+    o Patrick Provinciael
+
+
+    o Wouter Van Rossem
+
+
+There were no members absent.
+1.2    Revision History
+
+
+_Rev._||_Date_____________||_Description____________
+
+   1.0   ||November 3, 2009 ||First draft created
+
+   1.1   ||November 4, 2009 ||Ready to be uploaded
+                                     1
+
+
+2     Requirements
+
+
+The first thing that needed to be discussed was the naming of the categories.
+
+Some members preferred Core, Extensions and Bloats over "Must have",
+
+"Want to have" and "Nice to have". There has been decided to use the lat-
+
+ter, because these were not only the client's own words but they are also the
+
+most simple description of the requirements.
+
+However, there has been a disagreement about whether or not to use the
+
+term "Core". By "Core" one means the truly basic functions (the absolute
+
+minimum) this project needs to be called an auction site.  e.g.  There is no
+
+need for a two browsing functions, as only one would be enough for a very
+
+basic auction site. After a long discussion, there has been decided not to use
+
+the term "Core", as it's more related to Implementation. Also, introducing
+
+"Core" caused ambiguity within the team members. For these reasons, this
+
+term will not been used in the futher development of the process. A solution
+
+has been found by reducing the "Must have" requirements to a minimum.
+
+Only those functions that are necessary to deliver a reasonably good auction
+
+site will be included in this type of requirements.
+
+
+
+The different requirements have been thoroughly discussed in this meeting
+
+and have been divided into one of the three chosen subcategories.
+
+Disclaimer:
+
+Following requirements are only a basic, incomplete and non-binding descrip-
+
+tion, as discussed in the meeting on Tuesday, November 3, 2009. For a full
+
+description of the requirements, one should look at the SRS of this project
+
+or for a pre-final version at the Wiki page of the Requirements[?].
+2.1    Must have
+
+
+These features will certainly be included in the project.
+
+
+    o User database
+
+
+    o Login (secure possibility to identification)
+
+
+    o Auctions
+
+
+    o Categories
+
+
+    o Search function
+
+
+    o One language
+
+                                     2
+
+
+    o Support for additional languages (i18n)
+
+
+    o Simple search engine
+
+
+    o Secure website
+2.2    Want to have
+
+
+There is a good probability that these features will be included.
+
+
+    o User ratings
+
+
+    o Tags
+
+
+    o Second language
+
+
+    o User home
+
+
+    o Basic e-mail notification
+
+
+    o Virtual money account
+
+
+    o Support for Paypal
+
+
+    o Private Messaging service between users
+2.3    Nice to have
+
+
+Under the condition that there is still time left, following features might be
+
+included in the project.
+
+
+    o Advanced e-mail notification
+
+
+    o Support for different currencies
+
+
+    o Currency converter
+3    ALTE X template
+
+
+There will be a new template available on the SVN Server on Wednesday,
+
+November 4 at 23H00.  This template will include a Salesmen Logo.  Also,
+
+there will be a possibility to use this template within the LATEX documents by
+
+using one command (instead of copy-pasting the code). This template will be
+
+used by all other documents written in LATEX. This includes the documents
+
+that already have been published onto the website.
+
+
+
+                                     3
+
+
+4     Risk Analysis
+
+
+A list of the current risks will be kept in the SPMP[?].  These are the new
+
+risks discussed at the last meeting:
+
+Current Risks:
+
+
+   1. What if a "Must have" requirement can't be achieved?
+
+      Solution:
+
+      Every team member will have to spent more time until all "Must have"
+
+      requirements are complete.
+
+
+   2. What if a team member does not know enough Java? What if a team
+
+      member has problems with the techniques used in this project?
+
+      Solution:
+
+      Team members will have to study - or at least look up - the syntax of
+
+      Java and Javascript, as well as principles and methods which we will
+
+      use in this project. New methods will also be discussed in the meetings.
+5     SCMP
+
+
+A first draft of the SCMP has been released on the SVN Server, but due to
+
+problems with LATEX, this draft has not been published on the website yet.
+
+However, it will be published as soon as possible.
+6     Project Planning
+
+
+Every team member will write down what he has done in the previous two
+
+weeks.  He will also say what he will do in the coming two weeks and his
+
+plans for the coming year. In this manner there will be a clear view over the
+
+work done and the work that needs to be done. These meetings allow teams
+
+to discuss their work, focusing especially on areas of overlap and integration.
+
+This is often called SCRUM.
+7     Next Meeting
+
+
+Date: Friday, November 6, 2009
+
+Time: 12H00-13H00
+
+Place: CSB Seminaryroom 1
+
+
+
+                                     4
+
+
+7.1    Agenda
+
+
+A complete list of Agenda items is available on [?].
+References
+
+
+ [1] http://code.google.com/p/salesmen/wiki/Requirements
+
+
+ [2] http://wilma.vub.ac.be/ se_20910/docs/spmp/index.html
+
+
+ [3] http://code.google.com/p/salesmen/wiki/NextMeetingTopics
+
+
+
+                                     5
