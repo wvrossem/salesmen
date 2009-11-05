@@ -4,7 +4,7 @@
 
 
 
-                           November 5, 2009
+                           November 4, 2009
 
 
 1     Meeting Information
@@ -105,7 +105,7 @@ tion, as discussed in the meeting on Tuesday, November 3, 2009. For a full
 
 description of the requirements, one should look at the SRS of this project
 
-or for a pre-final version at the Wiki page of the Requirements[?].
+or for a pre-final version at the Wiki page of the Requirements[1].
 2.1    Must have
 
 
@@ -205,7 +205,7 @@ that already have been published onto the website.
 4     Risk Analysis
 
 
-A list of the current risks will be kept in the SPMP[?].  These are the new
+A list of the current risks will be kept in the SPMP[2].  These are the new
 
 risks discussed at the last meeting:
 
@@ -271,7 +271,7 @@ Place: CSB Seminaryroom 1
 7.1    Agenda
 
 
-A complete list of Agenda items is available on [?].
+A complete list of Agenda items is available on [3].
 References
 
 
