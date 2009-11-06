@@ -4,6 +4,69 @@ The Salesmen website is built using SilkPage, which is an XML-based
 Web publishing framework that generates standards-compliant websites by
 transforming DocBook XML source files into HTML.
 
+\subsection{Website Layout}\label{WebsiteLayout}
+SilkPage requires the website structure and hierarchy to be defined in an
+XML file called ``layout.xml.'' Some fragments of this file is listed in
+figure (\ref{WebsiteLayoutFile}).
+
+\begin{figure}\caption{Portions of the ``layout.xml'' File}
+\label{WebsiteLayoutFile}
+\begin{lstlisting}[language=XML]
+<?xml version="1.0"?>
+<layout>
+  <config param="footlink" value="sitemap" altval="Site Map"/>
+  <config param="footlink" value="search" altval="Search"/>
+  <config param="footlink" value="feeds" altval="Content Feeds"/>
+  <copyright role="about">
+    <year>2009</year>
+    <holder role="http://www.vub.ac.be/">
+      Vrije Universiteit Brussel
+    </holder>
+  </copyright>
+  <config param="title" value="SE Group 2 - 2009-2010"/>
+...
+<toc page="index.xml" filename="index.html">
+  <tocentry page="about/index.xml" dir="about" ...>
+    <tocentry page="about/team.xml" dir="team" .../>
+  </tocentry>
+  <tocentry page="docs/index.xml" dir="docs" ...>
+  ...
+
+  <notoc page="site/feeds.xml" dir="feeds" .../>
+  <notoc page="site/sitemap.xml" dir="sitemap" .../>
+</toc>
+\end{lstlisting}
+\end{figure}
+
+\subsection{Publishing Weekly Timesheets}\label{WebsitePublishingTimesheets}
+
+In this section, we'll show the process of publishing developers' weekly
+timesheets by presenting a sequence of commands (figure \ref{WebsitePublishingTimesheetsCommands}) that can be run after 
+logging on the server using an SSH client in order to publish the timesheets
+for the 44th week of 2009.
+
+\begin{figure}[hb]
+\caption{The Sequence of Commands to Run to Publish Timesheets
+on the Web}
+\label{WebsitePublishingTimesheetsCommands}
+\begin{enumerate}
+\item \verb*#$ cd ws/repo/salesmen/timesheets/#
+\item \verb*#$ svn up#
+\item \verb*#$ cd ../trunk/www/wilma.vub.ac.be.se2_0910/#
+\item \verb*#$ vi src/xml/en/layout.xml#
+\item Add a tocentry for the target week
+\item \verb*#$ cd src/xml/en/docs/timesheets/2009/#
+\item \verb*#$ cp week43.xml week44.xml#
+\item \verb*#$ vi week44.xml #
+\item Slightly adapt the content
+\item \verb*#$ ln -s ../../../../../../../../../timesheets/2009/week44#
+\item \verb*#$ svn add week44 week44.xml#
+\item \verb*#$ cd -#
+\item \verb*#$ ant puball#
+\item \verb*#$ svn ci -m"Published the timesheets for the 44th week of 2009"#
+\end{enumerate}
+\end{figure}
+
 \subsection{Publishing Meeting Minutes}\label{WebsitePublishingMinutes}
 The exact sequence of commands that will publish the minutes of a
 meeting will be presented in this section. Please note that the following
@@ -93,70 +156,6 @@ minutes~--in this case, the minutes of the 2009-11-03 meeting.
 </rdf:RDF>
 \end{lstlisting}
 \end{figure}
-
-\subsection{Publishing Weekly Timesheets}\label{WebsitePublishingTimesheets}
-
-In this section, we'll show the process of publishing developers' weekly
-timesheets by presenting a sequence of commands that can be run after 
-logging on the server using an SSH client in order to publish the timesheets
-for the 44th week of 2009.
-
-\begin{figure}[hb]
-\caption{The Sequence of Commands to Run to Publish Timesheets
-on the Web}
-\label{WebsitePublishingTimesheetsCommands}
-\begin{enumerate}
-\item \verb*#$ cd ws/repo/salesmen/timesheets/#
-\item \verb*#$ svn up#
-\item \verb*#$ cd ../trunk/www/wilma.vub.ac.be.se2_0910/#
-\item \verb*#$ vi src/xml/en/layout.xml#
-\item Add a tocentry for the target week
-\item \verb*#$ cd src/xml/en/docs/timesheets/2009/#
-\item \verb*#$ cp week43.xml week44.xml#
-\item \verb*#$ vi week44.xml #
-\item Slightly adapt the content
-\item \verb*#$ ln -s ../../../../../../../../../timesheets/2009/week44#
-\item \verb*#$ svn add week44 week44.xml#
-\item \verb*#$ cd -#
-\item \verb*#$ ant puball#
-\item \verb*#$ svn ci -m"Published the timesheets for the 44th week of 2009"#
-\end{enumerate}
-\end{figure}
-
-\subsection{Website Layout}\label{WebsiteLayout}
-SilkPage requires the website structure and hierarchy to be defined in an
-XML file called ``layout.xml.'' Some fragments of this file is listed in
-figure (\ref{WebsiteLayoutFile}).
-
-\begin{figure}\caption{Portions of the ``layout.xml'' File}
-\label{WebsiteLayoutFile}
-\begin{lstlisting}[language=XML]
-<?xml version="1.0"?>
-<layout>
-  <config param="footlink" value="sitemap" altval="Site Map"/>
-  <config param="footlink" value="search" altval="Search"/>
-  <config param="footlink" value="feeds" altval="Content Feeds"/>
-  <copyright role="about">
-    <year>2009</year>
-    <holder role="http://www.vub.ac.be/">
-      Vrije Universiteit Brussel
-    </holder>
-  </copyright>
-  <config param="title" value="SE Group 2 - 2009-2010"/>
-...
-<toc page="index.xml" filename="index.html">
-  <tocentry page="about/index.xml" dir="about" ...>
-    <tocentry page="about/team.xml" dir="team" .../>
-  </tocentry>
-  <tocentry page="docs/index.xml" dir="docs" ...>
-  ...
-
-  <notoc page="site/feeds.xml" dir="feeds" .../>
-  <notoc page="site/sitemap.xml" dir="sitemap" .../>
-</toc>
-\end{lstlisting}
-\end{figure}
-
 
 \subsection{Website Directory Structure}\label{WebsiteDirectoryStructure}
 
