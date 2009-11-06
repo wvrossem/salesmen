@@ -1,10 +1,20 @@
 \documentclass{report}
 
+\usepackage{listings}
+\usepackage[usenames,dvipsnames]{color}
+
+\lstset{
+basicstyle=\footnotesize, 
+frame=single,
+numbers=left}
+
 \author{Jorne Laton, Sina Khakbaz Heshmati}
 \title{Software Configuration Management Plan}
 
 \begin{document}
 \maketitle
+\tableofcontents
+
 \chapter{Configuration Management Planning}
 \section{Abbreviations}
 In this document a number of abbreviations will be used, which are listed here:
@@ -98,7 +108,7 @@ In the beginning this will not be dealt with, only once the source code is ready
 From then on, it will be a daily task to have runnable version of the code, which can be built at the end of the day.
 A day cannot be closed if the code is not compiled without errors, otherwise the next day would start with a non-runnable version which needs to be debugged first.
 
-\section{Website}
+\input{website.tex}
 
 \chapter{Change Management}
 {\it Issues} is the keyword in the Change Management, requesting changes happens via issues.
@@ -238,15 +248,6 @@ This branch will be named release0\_1.
 No further implementations will be made to this release, only fixing bugs will be done on this version.
 In the same way the second release will get its own branch, release0\_2, and so on.
 
-\chapter{System Build}
-\section{Apache Ant}
-\subsection{Compile}
-\subsection{Javadoc}
-\subsection{JUnit}
-\subsection{JAr}
-\subsection{Dist}
-\subsection{Deploy}
-\subsection{Run}
-\section{Build names convention}
+\input{build.tex}
 
 \end{document}
