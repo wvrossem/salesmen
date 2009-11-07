@@ -1,0 +1,100 @@
+\chapter{Change Management}
+{\it Issues} is the keyword in the Change Management, requesting changes happens via issues.
+An issue consists of two different sorts of variables: the status and the label(s).
+
+\section{Issue Status Values}
+\subsection{Open}
+\begin{description}
+\item[New]
+An issue at this state has not yet received an initial review, it is pending, until the responsible management puts it in another state.
+\item[Accepted]
+At this state, the issue has been acknowledged by the responsible management, its need is then confirmed.
+\item[Started]
+Working on this issue has begun.
+\end{description}
+\subsection{Closed}
+\begin{description}
+\item[Fixed]
+A developer has made the required changes to a source code file or a document.
+At this status it is up to the QA to check whether these changes really handled the problem.
+\item[Verified]
+The QA has checked the fix and has confirmed that it is working.
+\item[Invalid]
+This issue is rejected by the responsible management, it will not be implemented (yet).
+\item[Duplicate]
+This issue report is a copy of or very similar to an already existing issue, therefor it is rejected.
+\item[WontFix]
+It has been decided not to take action on this issue.
+\item[Done]
+The requested task is completed.
+\end{description}
+
+\section{Issue Labels}
+
+\subsection{Type}
+\begin{description}
+\item[Defect]
+Reporting a bug in the software.
+\item[Enhancement]
+Proposing a specific enhancement on the software.
+\item[Task]
+Work item that does not change the source code or documents.
+\item[Review]
+Request for a source code review.
+\item[Other]
+An issue of a type that does not correspond to any of the above listed, will be given type-other.
+\end{description}
+\subsection{Priority}
+\begin{description}
+\item[Critical]
+Must be resolved in the specified milestone.
+\item[High]
+Want to be resolved in the specified milestone.
+\item[Medium]
+Normal priority.
+\item[Low]
+Does not necessarily need to be implemented in the current milestone, can slip in to later milestone.
+\end{description}
+\subsection{OpSys}
+\begin{description}
+\item[All]
+Affects all operating systems (Windows, Linux and Mac OS X).
+\item[Windows, Linux or OSX]
+Affects the respective operating system users.
+\item[Firefox, Internet Explorer, Safari]
+Affects the respective browser users.
+\end{description}
+\subsection{Milestone}
+\begin{description}
+\item[Release0.1]
+Must-have requirements are implemented.
+\item[Release0.2]
+Want-to-have requirements are implemented.
+\item[Release1.0]
+All essential functionality implemented, tested and working. This ought to be a very stable version.
+\end{description}
+\subsection{Component}
+\begin{description}
+\item[UI]
+Relates to program User Interface.
+\item[Logic]
+Relates to application logic.
+\item[Persistence]
+Relates to data storage components.
+\item[Utilities]
+Utility and installation scripts.
+\item[Docs]
+Relates to end-user documentation.
+\end{description}
+\subsection{Others}
+\begin{description}
+\item[Security]
+Security risk to users.
+\item[Performance]
+Program performance.
+\item[Usability]
+Affects program usability.
+\item[Maintainability]
+Hinders future changes.
+\end{description}
+
