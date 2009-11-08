@@ -48,6 +48,10 @@
 
   <item duration="PT10M">
     <desc>Updated Timesheet for week 45.</desc>
+    <refs>
+      <ref>http://code.google.com/p/salesmen/source/detail?r=253</ref>
+    </refs>
+
   </item>
 
 </timesheet>
