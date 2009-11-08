@@ -1,7 +1,7 @@
 <?xml version='1.0'?>
 <timesheet xmlns="http://purl.org/net/timetrack">
 	<item duration="PT1H">
-    <desc>Finishing first version of SPMP</desc>
+    <desc>Finished writing the first version of SPMP</desc>
   </item>
 
   <item duration="PT60M">

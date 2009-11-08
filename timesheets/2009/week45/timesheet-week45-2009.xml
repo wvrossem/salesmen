@@ -1,0 +1,266 @@
+<?xml version="1.0"?>
+<timesheets xmlns="http://purl.org/net/timetrack" xmlns:xi="http://www.w3.org/2001/XInclude" from="2009-11-02" to="2009-11-09" xml:id="week45-2009">
+  <title>VUB - SE2 Timesheets for the 45th Week of 2009</title>
+  <published>2009-11-02</published>
+  <updated>2009-11-02</updated>
+  <person>
+    <name>Nick De Cooman</name>
+    <timesheet xmlns="http://purl.org/net/timetrack">
+	
+  <item duration="PT2H30M">
+    <desc>Meeting on Tuesday 2009/11/03.</desc>
+    <refs>
+      <ref>http://wilma.vub.ac.be/~se2_0910/docs/minutes/2009/11/03/minutes-20091103.pdf</ref>
+    </refs>
+  </item>
+
+  <item duration="PT30M">
+    <desc>Prepare meeting on Friday 2009/11/06</desc>
+    <refs>
+      <ref/>
+    </refs>
+  </item>
+
+  <item duration="PT5M">
+    <desc>Checking timesheets for week 45.</desc>
+  </item>
+
+</timesheet>
+  </person>
+  <person>
+    <name>Jonathan Jeurissen</name>
+    <timesheet xmlns="http://purl.org/net/timetrack">
+	
+  <item duration="PT2H30M">
+    <desc>Meeting on Tuesday 2009/11/03.</desc>
+    <refs>
+      <ref>http://wilma.vub.ac.be/~se2_0910/docs/minutes/2009/11/03/minutes-20091103.pdf</ref>
+    </refs>
+  </item>
+
+  <item duration="PT2H00M">
+    <desc>Writing Minutes of Friday 2009/11/03.</desc>
+    <refs>
+      <ref>http://code.google.com/p/salesmen/source/detail?r=199</ref>
+    </refs>
+  </item>
+
+  <item duration="PT5M">
+    <desc>Correcting Minutes of Friday 2009/11/03.</desc>
+    <refs>
+      <ref>http://code.google.com/p/salesmen/source/detail?r=208</ref>
+    </refs>
+  </item>
+
+
+  <item duration="PT1H">
+    <desc>Meeting on Friday 2009/11/06.</desc>
+    <refs>
+      <ref>http://wilma.vub.ac.be/~se2_0910/docs/minutes/2009/11/06/minutes-20091106.pdf</ref>
+    </refs>
+  </item>
+
+  <item duration="PT1H40M">
+    <desc>Writing Minutes of Friday 2009/11/03.</desc>
+    <refs>
+      <ref>http://code.google.com/p/salesmen/source/detail?r=246</ref>
+    </refs>
+  </item>
+
+  <item duration="PT10M">
+    <desc>Correcting Minutes of Friday 2009/11/03.</desc>
+    <refs>
+      <ref>http://code.google.com/p/salesmen/source/detail?r=251</ref>
+    </refs>
+  </item>
+
+
+  <item duration="PT10M">
+    <desc>Updated Timesheet for week 45.</desc>
+    <refs>
+      <ref>http://code.google.com/p/salesmen/source/detail?r=253</ref>
+    </refs>
+
+  </item>
+
+</timesheet>
+  </person>
+  <person>
+    <name>Sina Khakbaz Heshmati</name>
+    <timesheet xmlns="http://purl.org/net/timetrack">
+  <item duration="PT40M">
+    <desc>
+      Revamped the team page on the website to make it tabular.
+      Also, adapted role names based on Web search results.
+    </desc>
+    <refs>
+      <ref>http://code.google.com/p/salesmen/source/detail?r=189</ref>
+    </refs>
+  </item>
+  <item duration="PT35M">
+    <desc>
+      Published timesheets of the 44th week of 2009 on the website.
+    </desc>
+    <refs>
+      <ref>http://code.google.com/p/salesmen/source/detail?r=184</ref>
+      <ref>http://code.google.com/p/salesmen/source/detail?r=183</ref>
+      <ref>http://code.google.com/p/salesmen/source/detail?r=181</ref>
+      <ref>http://code.google.com/p/salesmen/source/detail?r=180</ref>
+    </refs>
+  </item>
+  <item duration="PT20M">
+    <desc>
+      Refactored the directory structure of SRS, SCMP, and the LaTeX template.
+    </desc>
+    <refs>
+      <ref>http://code.google.com/p/salesmen/source/detail?r=188</ref>
+      <ref>http://code.google.com/p/salesmen/source/detail?r=187</ref>
+      <ref>http://code.google.com/p/salesmen/source/detail?r=186</ref>
+      <ref>http://code.google.com/p/salesmen/source/detail?r=185</ref>
+    </refs>
+  </item>
+  <item duration="PT10M">
+    <desc>
+      Prepared the publication of the timesheets for the 45th week of 2009.
+    </desc>
+    <refs>
+      <ref>http://code.google.com/p/salesmen/source/detail?r=192</ref>
+      <ref>http://code.google.com/p/salesmen/source/detail?r=191</ref> 
+    </refs>
+  </item>
+  <item duration="PT15M">
+    <desc>
+      Filled the Doodle entry to declare when I'd be available
+      for Software Engineering conferences throughout the year.
+    </desc>
+    <refs>
+      <ref>http://www.doodle.com/d7vqfmf5amddrpbv</ref>
+      <ref>http://www.doodle.com/qnhtf7qdxaxgmk55</ref>
+      <ref>http://www.doodle.com/gk3q7ayrn4528qbn</ref>
+    </refs>
+  </item>
+  <item duration="PT15M">
+    <desc>
+      Completed the People Details page on Google Code with project member
+      roles.
+    </desc>
+    <refs>
+      <ref>http://code.google.com/p/salesmen/people/list</ref>
+    </refs>
+  </item>
+  <item duration="PT2H30M">
+    <desc>
+      Meeting with Jorne regarding the writing of the SCMP document.
+    </desc>
+  </item>
+  <item duration="PT4H30M">
+    <desc>
+      Wrote the System Build chapter and the Project Website section
+      for the SCMP.
+    </desc>
+    <refs>
+      <ref>http://code.google.com/p/salesmen/source/detail?r=232</ref>
+      <ref>http://code.google.com/p/salesmen/source/detail?r=237</ref>
+    </refs>
+  </item>
+  <item duration="PT1H20M">
+    <desc>
+      Played with a few build tools, most notably Maven and Ant in order
+      to choose a build system for Salesmen.
+    </desc>
+    <refs>
+      <ref>http://ant.apache.org/</ref>
+      <ref>http://maven.apache.org/</ref>
+    </refs>
+  </item>
+   <item duration="PT2H30M">
+    <desc>Meeting on Tuesday 2009/11/03.</desc>
+    <refs>
+      <ref>http://wilma.vub.ac.be/~se2_0910/docs/minutes/2009/11/03/minutes-20091103.pdf</ref>
+    </refs>
+  </item>
+   <item duration="PT1H">
+    <desc>Meeting on Friday 2009/11/06.</desc>
+    <refs>
+      <ref>http://wilma.vub.ac.be/~se2_0910/docs/minutes/2009/11/06/minutes-20091106.pdf</ref>
+    </refs>
+  </item>
+</timesheet>
+  </person>
+  <person>
+    <name>Jorne Laton</name>
+    <timesheet xmlns="http://purl.org/net/timetrack">
+  <item duration="PT2H">
+    <desc>
+      Meeting on Tuesday 2009/11/03.
+    </desc>
+  </item>
+  <item duration="PT2H30M">
+    <desc>
+      Discussing SCMP with Sina.
+    </desc>
+  </item>
+  <item duration="PT3H">
+    <desc>
+      Writing Contents Table and Chapter 1 of SCMP.
+    </desc>
+  </item>
+  <item duration="PT1H30M">
+    <desc>
+      Writing Chapter 2 of SCMP.
+    </desc>
+  </item>
+  <item duration="PT2H">
+    <desc>
+      Writing Chapter 3 and submitting changes suggested by Patrick.
+    </desc>
+  </item>
+  <item duration="PT45M">
+    <desc>
+      Meeting on Friday 2009/11/06.
+    </desc>
+  </item>
+  <item duration="PT1H">
+    <desc>
+      Changing SCMP source structure and applying changes suggested on meeting.
+    </desc>
+  </item>
+
+</timesheet>
+  </person>
+  <person>
+    <name>Bart Maes</name>
+    <timesheet xmlns="http://purl.org/net/timetrack">
+	
+  <item duration="PT2H30M">
+    <desc>Meeting on Tuesday 2009/11/03.</desc>
+    <refs>
+      <ref>http://wilma.vub.ac.be/~se2_0910/docs/minutes/2009/11/03/minutes-20091103.pdf</ref>
+    </refs>
+  </item>
+
+  <item duration="PT40M">
+    <desc>(Re-)check, add &amp; update requirements wiki (4x 10min)</desc>
+    <refs>
+      <ref>http://code.google.com/p/salesmen/wiki/Requirements</ref>
+    </refs>
+  </item>
+
+  <item duration="PT1H">
+    <desc>Meeting on Friday 2009/11/06.</desc>
+    <refs>
+      <ref>http://wilma.vub.ac.be/~se2_0910/docs/minutes/2009/11/06/minutes-20091106.pdf</ref>
+    </refs>
+  </item>
+
+</timesheet>
+  </person>
+  <person>
+    <name>Patrick Provinciael</name>
+    <xi:include href="patrick.xml"/>
+  </person>
+  <person>
+    <name>Wouter Van Rossem</name>
+    <xi:include href="wouter.xml"/>
+  </person>
+</timesheets>

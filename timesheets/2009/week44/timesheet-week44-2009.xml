@@ -7,7 +7,7 @@
     <name>Nick De Cooman</name>
     <timesheet xmlns="http://purl.org/net/timetrack">
 	<item duration="PT1H">
-    <desc>Finishing first version of SPMP</desc>
+    <desc>Finished writing the first version of SPMP</desc>
   </item>
 
   <item duration="PT60M">
