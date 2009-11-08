@@ -40,4 +40,61 @@
       <ref>http://code.google.com/p/salesmen/source/detail?r=191</ref> 
     </refs>
   </item>
+  <item duration="PT15M">
+    <desc>
+      Filled the Doodle entry to declare when I'd be available
+      for Software Engineering conferences throughout the year.
+    </desc>
+    <refs>
+      <ref>http://www.doodle.com/d7vqfmf5amddrpbv</ref>
+      <ref>http://www.doodle.com/qnhtf7qdxaxgmk55</ref>
+      <ref>http://www.doodle.com/gk3q7ayrn4528qbn</ref>
+    </refs>
+  </item>
+  <item duration="PT15M">
+    <desc>
+      Completed the People Details page on Google Code with project member
+      roles.
+    </desc>
+    <refs>
+      <ref>http://code.google.com/p/salesmen/people/list</ref>
+    </refs>
+  </item>
+  <item duration="PT2H30M">
+    <desc>
+      Meeting with Jorne regarding the writing of the SCMP document.
+    </desc>
+  </item>
+  <item duration="PT4H30M">
+    <desc>
+      Wrote the System Build chapter and the Project Website section
+      for the SCMP.
+    </desc>
+    <refs>
+      <ref>http://code.google.com/p/salesmen/source/detail?r=232</ref>
+      <ref>http://code.google.com/p/salesmen/source/detail?r=237</ref>
+    </refs>
+  </item>
+  <item duration="PT1H20M">
+    <desc>
+      Played with a few build tools, most notably Maven and Ant in order
+      to choose a build system for Salesmen.
+    </desc>
+    <refs>
+      <ref>http://ant.apache.org/</ref>
+      <ref>http://maven.apache.org/</ref>
+    </refs>
+  </item>
+   <item duration="PT2H30M">
+    <desc>Meeting on Tuesday 2009/11/03.</desc>
+    <refs>
+      <ref>http://wilma.vub.ac.be/~se2_0910/docs/minutes/2009/11/03/minutes-20091103.pdf</ref>
+    </refs>
+  </item>
+   <item duration="PT1H">
+    <desc>Meeting on Friday 2009/11/06.</desc>
+    <refs>
+      <ref>http://wilma.vub.ac.be/~se2_0910/docs/minutes/2009/11/06/minutes-20091106.pdf</ref>
+    </refs>
+  </item>
 </timesheet>
