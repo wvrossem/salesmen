@@ -23,9 +23,30 @@
   </item>
 
 
+  <item duration="PT1H">
+    <desc>Meeting on Friday 2009/11/06.</desc>
+    <refs>
+      <ref>http://wilma.vub.ac.be/~se2_0910/docs/minutes/2009/11/06/minutes-20091106.pdf</ref>
+    </refs>
   </item>
 
-  <item duration="PT5M">
+  <item duration="PT1H40M">
+    <desc>Writing Minutes of Friday 2009/11/03.</desc>
+    <refs>
+      <ref>http://code.google.com/p/salesmen/source/detail?r=246</ref>
+    </refs>
+  </item>
+
+  <item duration="PT10M">
+    <desc>Correcting Minutes of Friday 2009/11/03.</desc>
+    <refs>
+      <ref>http://code.google.com/p/salesmen/source/detail?r=251</ref>
+    </refs>
+  </item>
+
+  </item>
+
+  <item duration="PT10M">
     <desc>Updated Timesheet for week 45.</desc>
   </item>
 
