@@ -179,7 +179,7 @@
   <language>en</language>
   <size rdf:parseType="Resource">
     <unit rdf:resource="http://purl.org/urfm/Kilobyte"/>
-    <rdf:value>7.5</rdf:value>
+    <rdf:value>8</rdf:value>
   </size>
   <link>http://wilma.vub.ac.be/~se2_0910/docs/timesheets/2009/week45/timesheet-week45-2009.xml</link>
   <format>application/xml</format>
