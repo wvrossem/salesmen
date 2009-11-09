@@ -4,36 +4,56 @@
     <desc>
       Meeting on Tuesday 2009/11/03.
     </desc>
+    <refs>
+      <ref>http://wilma.vub.ac.be/~se2_0910/docs/minutes/2009/11/03/minutes-20091103.pdf</ref>
+    </refs>
   </item>
   <item duration="PT2H30M">
     <desc>
       Discussing SCMP with Sina.
     </desc>
   </item>
+
   <item duration="PT3H">
     <desc>
       Writing Contents Table and Chapter 1 of SCMP.
     </desc>
+	<refs>
+		<ref>http://code.google.com/p/salesmen/source/detail?r=211</ref>
+	</refs>
   </item>
+
   <item duration="PT1H30M">
     <desc>
       Writing Chapter 2 of SCMP.
     </desc>
+	<refs>
+		<ref>http://code.google.com/p/salesmen/source/detail?r=229</ref>
+	</refs>
   </item>
   <item duration="PT2H">
     <desc>
       Writing Chapter 3 and submitting changes suggested by Patrick.
     </desc>
+	<refs>
+		<ref>http://code.google.com/p/salesmen/source/detail?r=233</ref>
+	</refs>
   </item>
   <item duration="PT45M">
     <desc>
       Meeting on Friday 2009/11/06.
     </desc>
+ <refs>
+      <ref>http://wilma.vub.ac.be/~se2_0910/docs/minutes/2009/11/06/minutes-20091106.pdf</ref>
+    </refs>
   </item>
   <item duration="PT1H">
     <desc>
       Changing SCMP source structure and applying changes suggested on meeting.
     </desc>
+	<refs>
+		<ref>http://code.google.com/p/salesmen/source/detail?r=247</ref>
+	</refs>
   </item>
 
 </timesheet>
