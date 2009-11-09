@@ -1,0 +1,467 @@
+\chapter{Specific Requirements}
+
+%\section{External Interface Requirements}
+\section{Functional Requirements} % Organized by user class
+% Template
+%\subsubsection{Remove an auction}
+%			\begin{description}
+%				\item[Priority]
+%				\item[Actor]
+%				\item[Preconditions]
+%				\item[Description]
+%				\item[Exceptions]
+%				\item[Result]
+%			\end{description}
+	\subsection{Guest}
+		\subsubsection{Create a new account} 
+			\begin{description}
+				\item[Requirement ID] G1
+				\item[Priority] Must have
+				\item[Actor] Guest
+				\item[Preconditions] User is not logged in
+				\item[Description]
+				A guest can create a new account so that he or she 
+				can use the full functionality of the site
+ 				\item[Path]
+ 					\begin{enumerate}
+						\item Guest selects \emph{register}
+						\item Guest fills in \emph{registration form}
+						\item Guest submits form
+						\item System checks form and if valid saves it
+						\item System send a confirmation mail 
+					\end{enumerate}
+				\item[Exceptions]
+					\begin{enumerate}
+						\item Username is already taken
+						\item Incorrect information in the registration form
+					\end{enumerate}
+				\item[Result] An account is created for the user
+			\end{description}
+		\subsubsection{Log in}
+			\begin{description}
+				\item[Requirement ID] G2
+				\item[Priority] Must have
+				\item[Actor] Guest
+				\item[Preconditions] The user is registered on the site.
+				User is not logged in.
+				\item[Description]
+				If a user is registered but not logged in, he or she can
+				log in to use the full functionality of the site.
+				\item[Path]
+ 					\begin{enumerate}
+						\item Guest fills in login form
+						\item Guest submits form
+						\item System checks if the form is valid and if so logs
+						the user in
+					\end{enumerate}
+				\item[Exceptions]
+					\begin{enumerate}
+						\item Incorrect username and or password
+					\end{enumerate}
+				\item[Result] The user is logged in
+			\end{description}
+	\subsection{Guest and User}
+		\subsubsection{Search for an auction}
+			\begin{description}
+				\item[Requirement ID] GU1
+				\item[Priority] Must have
+				\item[Actor] User or Guest
+				\item[Preconditions] User is at the home page
+				\item[Description] Guests and members can search for auctions
+				\item[Path]
+ 					\begin{enumerate}
+						\item Users enters a search term in the search field
+						\item User submits the search
+						\item System returns all found auctions that match this search
+						query
+					\end{enumerate}
+				\item[Exceptions] None
+				\item[Result] The found auctions for the search term
+			\end{description}
+	\subsection{User}
+		\subsubsection{Log out}
+			\begin{description}
+				\item[Requirement ID] U1
+				\item[Priority] Must have
+				\item[Actor] User
+				\item[Preconditions] User is logged in
+				\item[Description] Members who are logged in can log out
+				\item[Path]
+ 					\begin{enumerate}
+						\item User selects \emph{log out}
+						\item System logs the user out
+					\end{enumerate}
+				\item[Exceptions] None
+				\item[Result] The user is logged out
+			\end{description}
+		\subsubsection{Search a user}
+			\begin{description}
+				\item[Requirement ID] U2
+				\item[Priority] Want to have
+				\item[Actor] User
+				\item[Preconditions] User is at advanced search page
+				\item[Description] Members can search for other members 
+				\item[Path]
+ 					\begin{enumerate}
+						\item User enters search term in search user field
+						\item User submits search
+						\item System returns all users corresponding to that search 
+						query
+					\end{enumerate}
+				\item[Exceptions] None
+				\item[Result] The found members for the search term
+			\end{description}
+		\subsubsection{Place an auction}
+			\begin{description}
+				\item[Requirement ID] U3
+				\item[Priority] Must have
+				\item[Actor] User
+				\item[Preconditions] User is logged in. User is at home page or user home
+				\item[Description] Members of the site can create a new auction on which
+				other members can bid
+				\item[Path]
+ 					\begin{enumerate}
+						\item User selects \emph{place auction}
+						\item User fills in \emph{new auction form}
+						\item User submits the form
+						\item System checks the form and if valid creates the auction
+					\end{enumerate}
+				\item[Exceptions] Incorrect information in the form, incomplete form
+				\item[Result] Auction is placed
+			\end{description}
+		\subsubsection{View placed auctions}
+			\begin{description}
+				\item[Requirement ID] U18
+				\item[Priority] Want to have
+				\item[Actor] User
+				\item[Preconditions] User is logged in. User is at control panel
+				\item[Description] Users can view the auctions they have placed
+				\item[Path]
+ 					\begin{enumerate}
+						\item User selects \emph{placed auctions}
+						\item System redirects user to user's placed auctions page
+					\end{enumerate}
+				\item[Exceptions] None
+				\item[Result] The user can view the auctions he or she has placed
+			\end{description}
+		\subsubsection{Bid on auction}
+			\begin{description}
+				\item[Requirement ID] U4
+				\item[Priority] Must have
+				\item[Actor] User
+				\item[Preconditions] 
+ 					\begin{enumerate}
+						\item User is logged in
+						\item User is on an auction page
+						\item Auction is not of the user
+					\end{enumerate}
+				\item[Description] Members can bid on auctions of other members
+				\item[Path]
+ 					\begin{enumerate}
+						\item User select \emph{bid}
+						\item User fills in bidding form
+						\item User submits form
+						\item System checks form and if valid places the bid
+					\end{enumerate}
+				\item[Exceptions] Wrong bid value in the form, incomplete form
+				, not enough credit on salespal account
+				\item[Result] The bid is placed on the auction
+			\end{description}
+		\subsubsection{View active auctions}
+			\begin{description}
+				\item[Requirement ID] U17
+				\item[Priority] Want to have
+				\item[Actor] User
+				\item[Preconditions] User is logged in. User is at control panel
+				\item[Description] Users can view the auctions they have bid on
+				\item[Path]
+ 					\begin{enumerate}
+						\item User selects \emph{active auctions}
+						\item System redirects user to user's active auctions page
+					\end{enumerate}
+				\item[Exceptions] None
+				\item[Result] The user can view the auctions he or she had bid on
+			\end{description}
+		\subsubsection{Modify account information}
+			\begin{description}
+				\item[Requirement ID] U5
+				\item[Priority] Must have
+				\item[Actor] User
+				\item[Preconditions] User is logged in. User is at control panel
+				\item[Description] Members can modify their account information
+				\item[Path]
+ 					\begin{enumerate}
+						\item User selects \emph{modify account}
+						\item User changes account information form
+						\item User submits the form
+						\item System checks the form and if valid, makes the changes
+					\end{enumerate}
+				\item[Exceptions] Incorrect information, incomplete form
+				\item[Result] The account information of the user is changed
+			\end{description}
+		\subsubsection{Send a personal message to another user}
+			\begin{description}
+				\item[Requirement ID] U6
+				\item[Priority] Want to have
+				\item[Actor] User
+				\item[Preconditions] User is logged in. User is at user page
+				\item[Description] Users can send messages to other users
+				\item[Path]
+ 					\begin{enumerate}
+						\item User selects \emph{send message}
+						\item User fills in personal message form
+						\item User submits the form
+						\item System checks the form and if valid, sends the message
+					\end{enumerate}
+				\item[Exceptions] Incorrect information, incomplete form, users send message to him or herself
+				\item[Result] A message is sent to another user
+			\end{description}
+		\subsubsection{View personal messages}
+			\begin{description}
+				\item[Requirement ID] U19
+				\item[Priority] Want to have
+				\item[Actor] User
+				\item[Preconditions] User is logged in. User is at control panel
+				\item[Description] Users can view the personal messages
+				\item[Path]
+ 					\begin{enumerate}
+						\item User selects \emph{personal messages}
+						\item System redirects the user the user's personal messages page
+					\end{enumerate}
+				\item[Exceptions] None
+				\item[Result] The user will view a page with his or her personal messages
+			\end{description}
+		\subsubsection{Delete personal message}
+			\begin{description}
+				\item[Requirement ID] U20
+				\item[Priority] Want to have
+				\item[Actor] User
+				\item[Preconditions] User is logged in. User is at personal messages page
+				\item[Description] Users can delete personal messages they have received
+				\item[Path]
+ 					\begin{enumerate}
+						\item User selects a message
+						\item User selects \emph{delete message}
+						\item System deletes the message
+					\end{enumerate}
+				\item[Exceptions] None
+				\item[Result] A message is deleted from the user's inbox
+			\end{description}
+		\subsubsection{Follow an auction}
+			\begin{description}
+				\item[Requirement ID] U7
+				\item[Priority] Want to have
+				\item[Actor] User
+				\item[Preconditions] User is logged in. User is at auction page
+				\item[Description] Users can follow an auction, i.e. they put it in their following list
+				\item[Path]
+ 					\begin{enumerate}
+						\item User selects \emph{follow auction}
+						\item System adds auction to the users followed auctions list
+					\end{enumerate}
+				\item[Exceptions] None
+				\item[Result] An auction is added to the user's follow auctions list
+			\end{description}
+		\subsubsection{View followed auctions}
+			\begin{description}
+				\item[Requirement ID] U14
+				\item[Priority] Want to have
+				\item[Actor] User
+				\item[Preconditions] User is logged in. User is at control panel
+				\item[Description] Users can view the auctions they are following
+				\item[Path]
+ 					\begin{enumerate}
+						\item User selects \emph{followed auctions}
+						\item System redirects user to user's followed auctions page
+					\end{enumerate}
+				\item[Exceptions] None
+				\item[Result] The user can view the auctions he or she is following
+			\end{description}
+		\subsubsection{View Transaction}
+			\begin{description}
+				\item[Requirement ID] U8
+				\item[Priority] Must have
+				\item[Actor] User
+				\item[Preconditions] User is logged in. User is at auction page. User bought the item.
+				\item[Description] Users can view the transaction of an item they bought
+				\item[Path]
+ 					\begin{enumerate}
+						\item User selects \emph{view transaction}
+						\item System forwards user to transaction page of auction
+					\end{enumerate}
+				\item[Exceptions] None
+				\item[Result] The user views the transaction of the auction
+			\end{description}
+		\subsubsection{Pay transaction}
+			\begin{description}
+				\item[Requirement ID] U9
+				\item[Priority] Must have
+				\item[Actor] User
+				\item[Preconditions] User is logged in. User is at transaction page
+				\item[Description] Users can pay auctions on the transaction page of an auction
+				\item[Path]
+ 					\begin{enumerate}
+						\item User selects \emph{pay item}
+						\item User fills in transaction payment form
+						\item User submits the form
+						\item System checks the form and if valid, marks the transaction as paid
+					\end{enumerate}
+				\item[Exceptions] Incorrect information, incomplete form, user has insufficient funds on salespal account
+				\item[Result] The transaction is paid for
+			\end{description}
+		\subsubsection{Rate transaction}
+			\begin{description}
+				\item[Requirement ID] U10
+				\item[Priority] Must have
+				\item[Actor] User
+				\item[Preconditions] User is logged in. User is at transaction page, user paid transaction
+				\item[Description] Users can send rate a transaction after it is paid
+				\item[Path]
+ 					\begin{enumerate}
+						\item User selects \emph{rate transaction}
+						\item User fills in rate transaction form
+						\item User submits the form
+						\item System checks the form and if valid, rates the transaction
+						\item System updates the ratings of the user
+					\end{enumerate}
+				\item[Exceptions] Incorrect information, incomplete form
+				\item[Result] The transaction is rated
+			\end{description}
+		\subsubsection{Add seller to favourites}
+			\begin{description}
+				\item[Requirement ID] U11
+				\item[Priority] Want to have
+				\item[Actor] User
+				\item[Preconditions] User is logged in. User is at user page
+				\item[Description] Users can add a seller to their favourites so they can their auctions easily
+				\item[Path]
+ 					\begin{enumerate}
+						\item User selects \emph{add seller to favourites}
+						\item System adds the seller to the favourite seller list of the user
+					\end{enumerate}
+				\item[Exceptions] Seller is already in the favourite seller list
+				\item[Result] The seller is added to the favourite seller list of the user
+			\end{description}
+		\subsubsection{View favourite sellers}
+			\begin{description}
+				\item[Requirement ID] U15
+				\item[Priority] Want to have
+				\item[Actor] User
+				\item[Preconditions] User is logged in. User is at control panel
+				\item[Description] Users can view his or her favourite sellers
+				\item[Path]
+ 					\begin{enumerate}
+						\item User selects \emph{favourite sellers}
+						\item System redirects user to user's favourite sellers page
+					\end{enumerate}
+				\item[Exceptions] None
+				\item[Result] The user will view a page with his or her favourite sellers
+			\end{description}
+		\subsubsection{Delete favourite seller}
+			\begin{description}
+				\item[Requirement ID] U16
+				\item[Priority] Want to have
+				\item[Actor] User
+				\item[Preconditions] User is logged in. User is at control panel
+				\item[Description] Users can remove a seller from his or her favourite sellers list
+				\item[Path]
+ 					\begin{enumerate}
+						\item User selects a seller from the list
+						\item User selects \emph{delete seller} 
+						\item System removes the selected user from the list
+					\end{enumerate}
+				\item[Exceptions] None
+				\item[Result] A seller is removed from user's favourite sellers list
+			\end{description}
+		\subsubsection{View salespal}
+			\begin{description}
+				\item[Requirement ID] U12
+				\item[Priority] Want to have
+				\item[Actor] User
+				\item[Preconditions] User is logged in. User is at control panel
+				\item[Description] Users can view their own personal ``bank acount" on the site
+				\item[Path]
+ 					\begin{enumerate}
+						\item User selects \emph{view salespal}
+						\item System redirects the user to the user's salespal page
+					\end{enumerate}
+				\item[Exceptions] None
+				\item[Result] The user is on his or her salespal page
+			\end{description}
+		\subsubsection{Top up salespal}
+			\begin{description}
+				\item[Requirement ID] U13
+				\item[Priority] Want to have
+				\item[Actor] User
+				\item[Preconditions] User is logged in. User is at salespal page
+				\item[Description] Users can add more money on their salespal account
+				\item[Path]
+ 					\begin{enumerate}
+						\item User selects \emph{top up salespal}
+						\item Users fills in top up salespal form
+						\item System checks the form and if valid tops up the account
+					\end{enumerate}
+				\item[Exceptions] Incorrect or incomplete form
+				\item[Result] The user tops up his or her salespal account
+			\end{description}
+		\subsubsection{View recommended auctions}
+			\begin{description}
+				\item[Requirement ID] U21
+				\item[Priority] Nice to have
+				\item[Actor] User
+				\item[Preconditions] User is logged in. User is at control panel
+				\item[Description] Users can view recommended auctions for him or her. This list 
+					is generated through tags and categories the user frequently uses
+				\item[Path]
+ 					\begin{enumerate}
+						\item User selects \emph{view recommendations}
+						\item System redirects user to user's recommended auctions page
+					\end{enumerate}
+				\item[Exceptions] None
+				\item[Result] The user views a page with recommended auctions for the user
+			\end{description}
+	\subsection{Administrator}
+		\subsubsection{Remove a user}
+			\begin{description}
+				\item[Requirement ID] A1
+				\item[Priority] Must have
+				\item[Actor] Administrator
+				\item[Preconditions] User is at control panel
+				\item[Description] User selects \emph{manage users} and selects a user from the users list.
+				After the user is selected, \emph{remove user} is selected.
+				\item[Exceptions] None
+				\item[Result] A user is removed from the system
+			\end{description}	
+		\subsubsection{Remove an auction}
+			\begin{description}
+				\item[Requirement ID] A2
+				\item[Priority] Must have
+				\item[Actor] Administrator
+				\item[Preconditions] User is at control panel
+				\item[Description] User selects \emph{manage auctions} and selects an auction from the auctions 
+				list. After the auction is selected, \emph{manage auction} is selected.
+				\item[Exceptions] None
+				\item[Result] Auction is removed
+			\end{description}	
+%\section{Performance Requirements}
+\section{Database Requirements}
+	All data will be saved in the database. The database must always remain consistent. There will be many concurrent request 
+	for the database. A good database structure will be needed. 
+\section{Design Constraints}
+	\begin{enumerate}
+		\item The design must be object-oriented
+		\item Design diagrams must be made using UML
+	\end{enumerate}
+\section{Software system attributes}
+	\subsection{Reliability}
+		Errors in the code will be divided into 2 groups: \textit{small errors} and \textit{fundamental errors}. \\ 
+		Fundamental errors will be corrected within 48 hours after the detection of this error. Small errors (details) will be corrected within a week after the detection of these errors. 
+%	\subsection{Availability}
+	\subsection{Security}
+		\begin{itemize}
+			\item When a user want to recover his or her password, the site will generate a new password and send it to the user's e-mail.
+			\item Communication of sensitive data should be encrypted (e.g. using https)
+		\end{itemize}
+%	\subsection{Maintainability}
+%	\subsection{Portability}
+%\section{Other Requirements}
