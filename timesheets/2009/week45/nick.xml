@@ -22,11 +22,13 @@
     </refs>
   </item>
 
-  <item duration="PT20M">
+  <item duration="PT25M">
     <desc>Checking timesheets for week 45.</desc>
 <refs>
 	<ref>http://code.google.com/p/salesmen/source/detail?r=278</ref>
 	<ref>http://code.google.com/p/salesmen/source/detail?r=269</ref>
+	<ref>http://code.google.com/p/salesmen/source/detail?r=280</ref>
+	<ref>http://code.google.com/p/salesmen/source/detail?r=281</ref>
 </refs>
   </item>
 
