@@ -1,6 +1,6 @@
 <?xml version='1.0'?>
 <timesheet xmlns="http://purl.org/net/timetrack">
-  <item duration="PT2H">
+  <item duration="PT150M">
     <desc>
       Meeting on Tuesday 2009/11/03.
     </desc>
