@@ -3,6 +3,16 @@
 
 = Topics for next meeting =
 
+=== Meeting 7: Tuesday 10 November 2009, 15:00===
+ 
+ * Mentioning timesheet updates in timesheet
+ * SRS
+ * Agenda
+ * Communication with customer
+ * Template and logo
+
+
+=== Meeting 6: Friday 6 November 2009, 12:00===
 
 === Meeting 5: Tuesday 3 November 2009, 15:00===
 
