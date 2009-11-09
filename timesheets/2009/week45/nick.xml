@@ -24,6 +24,10 @@
 
   <item duration="PT20M">
     <desc>Checking timesheets for week 45.</desc>
+<refs>
+	<ref>http://code.google.com/p/salesmen/source/detail?r=278</ref>
+	<ref>http://code.google.com/p/salesmen/source/detail?r=269</ref>
+</refs>
   </item>
 
 </timesheet>
