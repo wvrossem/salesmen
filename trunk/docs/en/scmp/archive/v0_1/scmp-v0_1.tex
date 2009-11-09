@@ -1,0 +1,32 @@
+\documentclass{report}
+
+\usepackage{listings}
+\usepackage[usenames,dvipsnames]{color}
+
+\lstset{
+basicstyle=\footnotesize, 
+frame=single,
+numbers=left}
+
+\author{Jorne Laton, Sina Khakbaz Heshmati}
+\title{Software Configuration Management Plan}
+
+\begin{document}
+\maketitle
+\tableofcontents
+
+\begin{abstract}
+This document is intended to describe how the Salesmen project artifacts
+are stored, processed, and deployed.
+\end{abstract}
+
+\input{planning.tex}
+\input{website.tex}
+
+\input{change.tex}
+
+\input{version.tex}
+
+\input{build.tex}
+
+\end{document}
