@@ -1,0 +1,176 @@
+
+                      Minutes Meeting 6
+                          Jonathan Jeurissen
+
+
+
+                           November 8, 2009
+
+
+1     Meeting Information
+
+
+Date: Friday, November 6, 2009
+
+Time: 12H00-13H00
+
+Place: CSB Seminaryroom 1
+
+
+1.1    Attendees
+
+
+Following members were present:
+
+
+    o Nick De Cooman
+
+
+    o Jonathan Jeurissen
+
+
+    o Sina Khakbaz Heshmati
+
+
+    o Jorne Laton
+
+
+    o Bart Maes
+
+
+    o Wouter Van Rossem
+
+
+Following members were absent:
+
+
+    o Patrick Provinciael
+1.2    Revision History
+
+
+_Rev._||_Date_____________||_Description____________
+
+   1.0   ||November 6, 2009 ||First draft created
+
+   1.1   ||November 8, 2009 ||Ready to be uploaded
+                                     1
+
+
+2     Deadlines
+
+
+The SRS deadline will be changed:  the first draft needs to be available at
+
+Monday, November 9. The deadline of the final version (of the first program-
+
+ming cycle) will be set at Friday, November 13.
+
+
+
+The other deadlines will be changed accordingly. The design has to be fin-
+
+ished Friday, November 27 and the implementation plan needs to be online
+
+at Friday, December 4, 2009.  At the end of the first program cycle, there
+
+will be a testing phase, which will have to be finished on January 8, 2010.
+
+All these changes will be summarized in the next version of the SPMP.
+
+
+3     Requirements
+
+
+
+3.1    Reliability
+
+
+Errors in the code will be divided into 2 groups: small errors and fundamental
+
+errors.
+
+Fundamental errors will be corrected within 48 hours after the detection of
+
+this error.  Small errors (details) will be corrected within a week after the
+
+detection of these errors.
+3.2    Issues
+
+
+For every requirement an issue will be made on the Google Groups website[1].
+
+In this manner, the progress of this specific requirement can be followed.
+
+There will also be made issues for errors that have been detected. These issues
+
+will be created by the one that discovered the error.  The Implementation
+
+Manager will decide who needs to fix this error (mostly, but not necessarily,
+
+the author of this code).
+3.3    Layout
+
+
+The layout of Chapter 3 of the current version of the SRS will be changed.
+
+In the next version, there will be a clear distinction between the different
+
+requirements. The requirements will be numbered with a code, corresponding
+
+to their type.
+
+                                     2
+
+
+3.4    Want to have
+
+
+A new requirement that will be added to "Want to have" requirements is:
+
+Cookies. These cookies will allow users to save their data during session.
+4    ALTE X template
+
+
+There is a need for a new Salesmen logo, with less colors to obtain a more
+
+professional look.  Also, another implementation of the revision history in
+
+the LATEX documents can be useful.
+5     SCMP
+
+
+The SCMP has been thoroughly discussed and explained to the team mem-
+
+bers. It will be finished (and reviewed) by Monday, November 9, as planned.
+
+It is important that the team members understand and learn how to use
+
+the SCMP. This is applicable to all documents in general written about this
+
+project. The purpose of these documents is that team members use them for
+
+a better understanding of the project.
+6     Next Meeting
+
+
+Date: Tuesday, November 10, 2009
+
+Time: 15H00-17H00
+
+Place: D2.10
+
+
+6.1    Agenda
+
+
+A complete list of Agenda items is available on [2].
+References
+
+
+ [1] http://code.google.com/p/salesmen/issues/list
+
+
+ [2] http://code.google.com/p/salesmen/wiki/NextMeetingTopics
+
+
+                                     3
