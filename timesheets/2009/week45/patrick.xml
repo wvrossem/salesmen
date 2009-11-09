@@ -1,0 +1,39 @@
+<?xml version='1.0'?>
+<timesheet xmlns="http://purl.org/net/timetrack">
+  <item duration="PT10M">
+    <desc>Reviewed Minutes of Friday 2009/10/30 for Quality Assurance.</desc>
+    <refs>
+      <ref>http://wilma.vub.ac.be/~se2_0910/docs/minutes/2009/10/30/minutes-20091030.pdf</ref>
+    </refs>
+  </item>
+  <item duration="PT180M">
+    <desc>Meeting on Friday 2009/11/03.</desc>
+    <refs>
+      <ref>http://wilma.vub.ac.be/~se2_0910/docs/minutes/2009/11/03/minutes-20091103.pdf</ref>
+    </refs>
+  </item>
+  <item duration="PT60M">
+    <desc>Worked on LaTeX template.</desc>
+  </item>
+  <item  duration="PT10M">
+    <desc>Reviewed Minutes of Tuesday 2009/11/03 for Quality Assurance.</desc>
+    <refs>
+      <ref>http://wilma.vub.ac.be/~se2_0910/docs/minutes/2009/11/03/minutes-20091103.pdf</ref>
+    </refs>
+  </item>
+  <item duration="PT360M">
+    <desc>Worked on LaTeX template.</desc>
+    <refs>
+      <ref>http://code.google.com/p/salesmen/source/browse/#svn/trunk/docs/en/templates/latex/2009</ref>
+    </refs>
+  </item>
+  <item  duration="PT15M">
+    <desc>Reviewed Minutes of Friday 2009/11/06 for Quality Assurance.</desc>
+    <refs>
+      <ref>http://wilma.vub.ac.be/~se2_0910/docs/minutes/2009/11/06/minutes-20091106.pdf</ref>
+    </refs>
+  </item>
+  <item duration="PT10M">
+    <desc>Updated Timesheet for week 45.</desc>
+  </item>
+</timesheet>
