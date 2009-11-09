@@ -1,0 +1,9 @@
+<?xml version='1.0'?>
+<timesheet xmlns="http://purl.org/net/timetrack">
+  <item duration="PT2H">
+    <desc>Finished SRS draft</desc>
+    <refs>
+      <ref>hhttp://code.google.com/p/salesmen/source/browse/trunk/docs/en/srs/archive/v0_1/srs.pdf</ref>
+    </refs>
+  </item>
+</timesheet>
