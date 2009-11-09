@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<webpage id="scmp">
+  <config param="rcsdate" value="$Date: 2009-10-27 22:51:52 +0100 (Tue, 27 Oct 2009) $"/>
+  <config param="DOAP" value="doap.rdf"/>
+  <head>
+    <title>SCMP</title>
+    <summary>Software Configuration Management Plan</summary>
+    <keywords>
+      Software Engineering, Software Development Process, VUB,
+      Computer Science, SCMP, Project Management, Software
+      Configuration Management, SCM, SVN, Subversion,
+      Apache Maven, Hudson, Google Code, Issue Tracker
+    </keywords>
+  </head>
+</webpage>

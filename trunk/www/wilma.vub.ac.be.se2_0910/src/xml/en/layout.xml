@@ -43,6 +43,7 @@
     <tocentry page="docs/minutes/index.xml" dir="minutes" filename="index.html">
       <tocentry page="docs/minutes/2009/index.xml" dir="2009" filename="index.html"/>
     </tocentry>
+    <tocentry page="docs/scmp/index.xml" dir="scmp" filename="index.html"/>
     <tocentry page="docs/spmp/index.xml" dir="spmp" filename="index.html"/>
     <tocentry page="docs/timesheets/index.xml" dir="timesheets" filename="index.html">
       <tocentry page="docs/timesheets/2009/index.xml" dir="2009" filename="index.html">
