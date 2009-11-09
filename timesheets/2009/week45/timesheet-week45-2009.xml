@@ -28,8 +28,14 @@
     </refs>
   </item>
 
-  <item duration="PT20M">
+  <item duration="PT25M">
     <desc>Checking timesheets for week 45.</desc>
+<refs>
+	<ref>http://code.google.com/p/salesmen/source/detail?r=278</ref>
+	<ref>http://code.google.com/p/salesmen/source/detail?r=269</ref>
+	<ref>http://code.google.com/p/salesmen/source/detail?r=280</ref>
+	<ref>http://code.google.com/p/salesmen/source/detail?r=281</ref>
+</refs>
   </item>
 
 </timesheet>
@@ -186,40 +192,60 @@
   <person>
     <name>Jorne Laton</name>
     <timesheet xmlns="http://purl.org/net/timetrack">
-  <item duration="PT2H">
+  <item duration="PT150M">
     <desc>
       Meeting on Tuesday 2009/11/03.
     </desc>
+    <refs>
+      <ref>http://wilma.vub.ac.be/~se2_0910/docs/minutes/2009/11/03/minutes-20091103.pdf</ref>
+    </refs>
   </item>
   <item duration="PT2H30M">
     <desc>
       Discussing SCMP with Sina.
     </desc>
   </item>
+
   <item duration="PT3H">
     <desc>
       Writing Contents Table and Chapter 1 of SCMP.
     </desc>
+	<refs>
+		<ref>http://code.google.com/p/salesmen/source/detail?r=211</ref>
+	</refs>
   </item>
+
   <item duration="PT1H30M">
     <desc>
       Writing Chapter 2 of SCMP.
     </desc>
+	<refs>
+		<ref>http://code.google.com/p/salesmen/source/detail?r=229</ref>
+	</refs>
   </item>
   <item duration="PT2H">
     <desc>
       Writing Chapter 3 and submitting changes suggested by Patrick.
     </desc>
+	<refs>
+		<ref>http://code.google.com/p/salesmen/source/detail?r=233</ref>
+	</refs>
   </item>
   <item duration="PT45M">
     <desc>
       Meeting on Friday 2009/11/06.
     </desc>
+ <refs>
+      <ref>http://wilma.vub.ac.be/~se2_0910/docs/minutes/2009/11/06/minutes-20091106.pdf</ref>
+    </refs>
   </item>
   <item duration="PT1H">
     <desc>
       Changing SCMP source structure and applying changes suggested on meeting.
     </desc>
+	<refs>
+		<ref>http://code.google.com/p/salesmen/source/detail?r=247</ref>
+	</refs>
   </item>
 
 </timesheet>
@@ -253,32 +279,71 @@
   </person>
   <person>
     <name>Patrick Provinciael</name>
-    
-	<timesheet xmlns="http://purl.org/net/timetrack" xml:base="../default/timesheet.xml">
-  <item duration="PT0M">
-    <desc>
-      This is a fallback timesheet, meaning that the
-      developer has not submitted their timesheet yet.
-      Please check back later to see this developer's 
-      timesheet.
-    </desc>
+    <timesheet xmlns="http://purl.org/net/timetrack">
+  <item duration="PT10M">
+    <desc>Reviewed Minutes of Friday 2009/10/30 for Quality Assurance.</desc>
+    <refs>
+      <ref>http://wilma.vub.ac.be/~se2_0910/docs/minutes/2009/10/30/minutes-20091030.pdf</ref>
+    </refs>
+  </item>
+  <item duration="PT150M">
+    <desc>Meeting on Tuesday 2009/11/03.</desc>
+    <refs>
+      <ref>http://wilma.vub.ac.be/~se2_0910/docs/minutes/2009/11/03/minutes-20091103.pdf</ref>
+    </refs>
+  </item>
+  <item duration="PT60M">
+    <desc>Worked on LaTeX template.</desc>
+  </item>
+
+  <item duration="PT10M">
+    <desc>Reviewed Minutes of Tuesday 2009/11/03 for Quality Assurance.</desc>
+    <refs>
+      <ref>http://wilma.vub.ac.be/~se2_0910/docs/minutes/2009/11/03/minutes-20091103.pdf</ref>
+    </refs>
+  </item>
+
+  <item duration="PT360M">
+    <desc>Worked on LaTeX template.</desc>
+    <refs>
+ <ref>http://code.google.com/p/salesmen/source/browse/#svn/trunk/docs/en/templates/latex/2009</ref>
+    </refs>
+  </item>
+
+  <item duration="PT15M">
+    <desc>Reviewed Minutes of Friday 2009/11/06 for Quality Assurance.</desc>
+    <refs>
+      <ref>http://wilma.vub.ac.be/~se2_0910/docs/minutes/2009/11/06/minutes-20091106.pdf</ref>
+    </refs>
+  </item>
+  <item duration="PT10M">
+    <desc>Updated Timesheet for week 45.</desc>
   </item>
 </timesheet>
-      
   </person>
   <person>
     <name>Wouter Van Rossem</name>
-    
-	<timesheet xmlns="http://purl.org/net/timetrack" xml:base="../default/timesheet.xml">
-  <item duration="PT0M">
-    <desc>
-      This is a fallback timesheet, meaning that the
-      developer has not submitted their timesheet yet.
-      Please check back later to see this developer's 
-      timesheet.
-    </desc>
+    <timesheet xmlns="http://purl.org/net/timetrack">
+  <item duration="PT2H30M">
+    <desc>Meeting on Tuesday 2009/11/03.</desc>
+    <refs>
+      <ref>http://wilma.vub.ac.be/~se2_0910/docs/minutes/2009/11/03/minutes-20091103.pdf</ref>
+    </refs>
+  </item>
+
+  <item duration="PT3H">
+    <desc>First version of the SRS draft</desc>
+    <refs>
+      <ref>http://code.google.com/p/salesmen/source/browse/trunk/docs/en/srs/src/tex/srs.tex</ref>
+    </refs>
+  </item>
+
+  <item duration="PT1H">
+    <desc>Meeting on Friday 2009/11/06.</desc>
+    <refs>
+      <ref>http://wilma.vub.ac.be/~se2_0910/docs/minutes/2009/11/06/minutes-20091106.pdf</ref>
+    </refs>
   </item>
 </timesheet>
-      
   </person>
 </timesheets>
