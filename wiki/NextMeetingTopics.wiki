@@ -5,11 +5,12 @@
 
 === Meeting 7: Tuesday 10 November 2009, 15:00===
  
- * Mentioning timesheet updates in timesheet
+ * Timesheets
  * SRS
- * Agenda
+ * Agenda on website
  * Communication with customer
  * Template and logo
+ * Quality Assurance presentation by Patrick -- 15MIN--
 
 
 === Meeting 6: Friday 6 November 2009, 12:00===
