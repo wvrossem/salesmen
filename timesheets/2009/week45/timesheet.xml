@@ -10,30 +10,58 @@
   <updated>2009-11-02</updated>
   <person>
     <name>Nick De Cooman</name>
-    <xi:include href="nick.xml"/>
+    <xi:include href="nick.xml">
+      <xi:fallback>
+	<xi:include href="../default/timesheet.xml"/>
+      </xi:fallback>      
+    </xi:include>
   </person>
   <person>
     <name>Jonathan Jeurissen</name>
-    <xi:include href="jonathan.xml"/>
+    <xi:include href="jonathan.xml">
+      <xi:fallback>
+	<xi:include href="../default/timesheet.xml"/>
+      </xi:fallback>      
+    </xi:include>
   </person>
   <person>
     <name>Sina Khakbaz Heshmati</name>
-    <xi:include href="sina.xml"/>
+    <xi:include href="sina.xml">
+      <xi:fallback>
+	<xi:include href="../default/timesheet.xml"/>
+      </xi:fallback>      
+    </xi:include>
   </person>
   <person>
     <name>Jorne Laton</name>
-    <xi:include href="jorne.xml"/>
+    <xi:include href="jorne.xml">
+      <xi:fallback>
+	<xi:include href="../default/timesheet.xml"/>
+      </xi:fallback>      
+    </xi:include>
   </person>
   <person>
     <name>Bart Maes</name>
-    <xi:include href="bart.xml"/>
+    <xi:include href="bart.xml">
+      <xi:fallback>
+	<xi:include href="../default/timesheet.xml"/>
+      </xi:fallback>      
+    </xi:include>
   </person>
   <person>
     <name>Patrick Provinciael</name>
-    <xi:include href="patrick.xml"/>
+    <xi:include href="patrick.xml">
+      <xi:fallback>
+	<xi:include href="../default/timesheet.xml"/>
+      </xi:fallback>
+    </xi:include>
   </person>
   <person>
     <name>Wouter Van Rossem</name>
-    <xi:include href="wouter.xml"/>
+    <xi:include href="wouter.xml">
+      <xi:fallback>
+	<xi:include href="../default/timesheet.xml"/>
+      </xi:fallback>
+    </xi:include>
   </person>
 </timesheets>

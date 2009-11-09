@@ -21,7 +21,14 @@
     </refs>
   </item>
 
-  <item duration="PT5M">
+  <item duration="PT1H">
+    <desc>Meeting on Friday 2009/11/06.</desc>
+    <refs>
+      <ref>http://wilma.vub.ac.be/~se2_0910/docs/minutes/2009/11/06/minutes-20091106.pdf</ref>
+    </refs>
+  </item>
+
+  <item duration="PT20M">
     <desc>Checking timesheets for week 45.</desc>
   </item>
 
@@ -126,17 +133,6 @@
     <refs>
       <ref>http://code.google.com/p/salesmen/source/detail?r=192</ref>
       <ref>http://code.google.com/p/salesmen/source/detail?r=191</ref> 
-    </refs>
-  </item>
-  <item duration="PT15M">
-    <desc>
-      Filled the Doodle entry to declare when I'd be available
-      for Software Engineering conferences throughout the year.
-    </desc>
-    <refs>
-      <ref>http://www.doodle.com/d7vqfmf5amddrpbv</ref>
-      <ref>http://www.doodle.com/qnhtf7qdxaxgmk55</ref>
-      <ref>http://www.doodle.com/gk3q7ayrn4528qbn</ref>
     </refs>
   </item>
   <item duration="PT15M">
@@ -257,10 +253,32 @@
   </person>
   <person>
     <name>Patrick Provinciael</name>
-    <xi:include href="patrick.xml"/>
+    
+	<timesheet xmlns="http://purl.org/net/timetrack" xml:base="../default/timesheet.xml">
+  <item duration="PT0M">
+    <desc>
+      This is a fallback timesheet, meaning that the
+      developer has not submitted their timesheet yet.
+      Please check back later to see this developer's 
+      timesheet.
+    </desc>
+  </item>
+</timesheet>
+      
   </person>
   <person>
     <name>Wouter Van Rossem</name>
-    <xi:include href="wouter.xml"/>
+    
+	<timesheet xmlns="http://purl.org/net/timetrack" xml:base="../default/timesheet.xml">
+  <item duration="PT0M">
+    <desc>
+      This is a fallback timesheet, meaning that the
+      developer has not submitted their timesheet yet.
+      Please check back later to see this developer's 
+      timesheet.
+    </desc>
+  </item>
+</timesheet>
+      
   </person>
 </timesheets>
