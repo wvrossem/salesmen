@@ -188,3 +188,12 @@ form .invalid input { background-color: #ffcccc; }
   text-align: left;
   margin-left: 0px;
 }
+
+#maincontent table tbody td {
+  border-bottom: 0px;
+  border-right: 0px;
+}
+
+#maincontent table {
+  border: 1px solid #ccc;
+}
