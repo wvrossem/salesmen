@@ -15,7 +15,14 @@
     </refs>
   </item>
 
-  <item duration="PT5M">
+  <item duration="PT1H">
+    <desc>Meeting on Friday 2009/11/06.</desc>
+    <refs>
+      <ref>http://wilma.vub.ac.be/~se2_0910/docs/minutes/2009/11/06/minutes-20091106.pdf</ref>
+    </refs>
+  </item>
+
+  <item duration="PT20M">
     <desc>Checking timesheets for week 45.</desc>
   </item>
 
