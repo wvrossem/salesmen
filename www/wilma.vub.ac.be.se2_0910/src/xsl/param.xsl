@@ -43,5 +43,9 @@
   <xsl:param name="access.validator.url" select="''"/>
   <xsl:param name="rdf.to.html.stylesheet.path" 
 	     select="'/~se2_0910/rdf-html.xsl'"/>
+  <xsl:param name="table.borders.with.css" select="1"/>
+  <xsl:param name="table.frame.border.color" select="'#999999'"/>
+  <xsl:param name="table.frame.border.thickness" select="'1px'"/>
+  <xsl:param name="table.cell.border.thickness" select="'0px'"/>
 
 </xsl:stylesheet>

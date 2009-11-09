@@ -189,11 +189,11 @@ form .invalid input { background-color: #ffcccc; }
   margin-left: 0px;
 }
 
-#maincontent table tbody td {
+#maincontent table td {
   border-bottom: 0px;
   border-right: 0px;
 }
 
 #maincontent table {
-  border: 1px solid #ccc;
+  border: 1px solid #999;
 }
