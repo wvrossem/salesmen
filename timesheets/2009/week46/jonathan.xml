@@ -1,0 +1,26 @@
+<?xml version='1.0'?>
+<timesheet xmlns="http://purl.org/net/timetrack">
+	
+  <item duration="PT2H00M">
+    <desc>Meeting on Tuesday 2009/11/10.</desc>
+    <refs>
+      <ref>http://wilma.vub.ac.be/~se2_0910/docs/minutes/2009/11/10/minutes-20091110.pdf</ref>
+    </refs>
+  </item>
+
+  <item duration="PT2H45M">
+    <desc>Writing Minutes of Friday 2009/11/10.</desc>
+    <refs>
+      <ref>http://code.google.com/p/salesmen/source/detail?r=299</ref>
+    </refs>
+  </item>
+
+  <item duration="PT10M">
+    <desc>Administration and Communication</desc>
+    <refs>
+      <ref></ref>
+    </refs>
+
+  </item>
+
+</timesheet>
