@@ -3,6 +3,8 @@
 % 2009-Oct-30 Patrick Provinciael patrick.provinciael@gmail.com
 % Based upon the mins.cls, created by Jim Hefferon, http://www.tug.org/pracjourn/2005-4/hefferon/
 % The idea is to expand this, in such a way that the defined documentname will affect the documentstyle
+% 2009-Oct-30: First Version
+% 2009-Nov-11: Changed base Class to report
 
 % --- Class structure: identification part
 % ---
@@ -59,7 +61,7 @@
 %    \PassOptionsToClass{\CurrentOption}{article}}
 %\DeclareOption*{\PassOptionsToClass{\CurrentOption}{article}}
 \DeclareOption*{\InputIfFileExists{\CurrentOption.opt}{}{%
-    \PassOptionsToClass{\CurrentOption}{article}}}
+    \PassOptionsToClass{\CurrentOption}{report}}}
 
 % --- Class structure: execution of options part
 % ---
@@ -67,7 +69,7 @@
 
 % --- Class structure: declaration of options part
 % ---
-\LoadClass{article}
+\LoadClass{report}
 
 % --- Class structure: main code part
 % ---
