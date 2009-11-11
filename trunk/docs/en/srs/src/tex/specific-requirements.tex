@@ -1,5 +1,15 @@
 \chapter{Specific Requirements}
 
+\section{Requirements Control Plan}
+	This section describes how the different requirements will be described and how 
+	modifications to these requirements will be handled.
+	Each requirement will have a unique identifier which will be used for referencing 
+	in the source code, the design, ... Some requirements will only be described by
+	a short description, while others will be described by a use case.
+	Whenever a requirement changes, the change will be noted at the description of 
+	the requirement. If a requirement is retired, this will also be noted at the
+	requirement description, together with a reason why the requirement is retired.
+
 %\section{External Interface Requirements}
 \section{Functional Requirements} % Organized by user class
 % Template
@@ -15,7 +25,7 @@
 	\subsection{Guest}
 		\subsubsection{Create a new account} 
 			\begin{description}
-				\item[Requirement ID] G1
+				\item[Requirement ID] 1
 				\item[Priority] Must have
 				\item[Actor] Guest
 				\item[Preconditions] User is not logged in
@@ -39,7 +49,7 @@
 			\end{description}
 		\subsubsection{Log in}
 			\begin{description}
-				\item[Requirement ID] G2
+				\item[Requirement ID] 2
 				\item[Priority] Must have
 				\item[Actor] Guest
 				\item[Preconditions] The user is registered on the site.
@@ -63,7 +73,7 @@
 	\subsection{Guest and User}
 		\subsubsection{Search for an auction}
 			\begin{description}
-				\item[Requirement ID] GU1
+				\item[Requirement ID] 3
 				\item[Priority] Must have
 				\item[Actor] User or Guest
 				\item[Preconditions] User is at the home page
@@ -77,6 +87,42 @@
 					\end{enumerate}
 				\item[Exceptions] None
 				\item[Result] The found auctions for the search term
+			\end{description}
+		\subsubsection{View auctions of a certain category}
+			\begin{description}
+				\item[Requirement ID] 3
+				\item[Priority] Must have
+				\item[Actor] User or Guest
+				\item[Preconditions] User is at the home page
+				\item[Description] Guests and users can view all the auctions of a certain category
+				\item[Path]
+ 					\begin{enumerate}
+						\item Users select a category from the category list
+						\item System redirects the user to a page with all the auctions of the
+							selected category
+					\end{enumerate}
+				\item[Exceptions] None
+				\item[Result] A page displaying all the auctions of a certain category
+			\end{description}
+		\subsubsection{View auctions with a certain tag}
+			\begin{description}
+				\item[Requirement ID] 3
+				\item[Priority] Want to have
+				\item[Description] Guests and users can view all the auctions with a certain tag
+			\end{description}
+		\subsubsection{Change language}
+			\begin{description}
+				\item[Requirement ID] 3
+				\item[Priority] Must have
+				\item[Description] Guests and users can change the language of the website to one
+					of the available languages
+			\end{description}
+		\subsubsection{Change currency}
+			\begin{description}
+				\item[Requirement ID] 3
+				\item[Priority] Nice to have
+				\item[Description] Guests and users can change the currency in which auctions are
+					displayed
 			\end{description}
 	\subsection{User}
 		\subsubsection{Log out}
@@ -199,10 +245,10 @@
 				\item[Exceptions] Incorrect information, incomplete form
 				\item[Result] The account information of the user is changed
 			\end{description}
-		\subsubsection{Send a personal message to another user}
+		\subsubsection{Send a personal message}
 			\begin{description}
 				\item[Requirement ID] U6
-				\item[Priority] Want to have
+				\item[Priority] Nice to have
 				\item[Actor] User
 				\item[Preconditions] User is logged in. User is at user page
 				\item[Description] Users can send messages to other users
@@ -219,7 +265,7 @@
 		\subsubsection{View personal messages}
 			\begin{description}
 				\item[Requirement ID] U19
-				\item[Priority] Want to have
+				\item[Priority] Nice to have
 				\item[Actor] User
 				\item[Preconditions] User is logged in. User is at control panel
 				\item[Description] Users can view the personal messages
@@ -234,7 +280,7 @@
 		\subsubsection{Delete personal message}
 			\begin{description}
 				\item[Requirement ID] U20
-				\item[Priority] Want to have
+				\item[Priority] Nice to have
 				\item[Actor] User
 				\item[Preconditions] User is logged in. User is at personal messages page
 				\item[Description] Users can delete personal messages they have received
@@ -280,7 +326,7 @@
 		\subsubsection{View Transaction}
 			\begin{description}
 				\item[Requirement ID] U8
-				\item[Priority] Must have
+				\item[Priority] Want to have
 				\item[Actor] User
 				\item[Preconditions] User is logged in. User is at auction page. User bought the item.
 				\item[Description] Users can view the transaction of an item they bought
@@ -295,7 +341,7 @@
 		\subsubsection{Pay transaction}
 			\begin{description}
 				\item[Requirement ID] U9
-				\item[Priority] Must have
+				\item[Priority] Want to have
 				\item[Actor] User
 				\item[Preconditions] User is logged in. User is at transaction page
 				\item[Description] Users can pay auctions on the transaction page of an auction
@@ -312,7 +358,7 @@
 		\subsubsection{Rate transaction}
 			\begin{description}
 				\item[Requirement ID] U10
-				\item[Priority] Must have
+				\item[Priority] Want to have
 				\item[Actor] User
 				\item[Preconditions] User is logged in. User is at transaction page, user paid transaction
 				\item[Description] Users can send rate a transaction after it is paid
@@ -330,7 +376,7 @@
 		\subsubsection{Add seller to favourites}
 			\begin{description}
 				\item[Requirement ID] U11
-				\item[Priority] Want to have
+				\item[Priority] Nice to have
 				\item[Actor] User
 				\item[Preconditions] User is logged in. User is at user page
 				\item[Description] Users can add a seller to their favourites so they can their auctions easily
@@ -345,7 +391,7 @@
 		\subsubsection{View favourite sellers}
 			\begin{description}
 				\item[Requirement ID] U15
-				\item[Priority] Want to have
+				\item[Priority] Nice to have
 				\item[Actor] User
 				\item[Preconditions] User is logged in. User is at control panel
 				\item[Description] Users can view his or her favourite sellers
@@ -360,7 +406,7 @@
 		\subsubsection{Delete favourite seller}
 			\begin{description}
 				\item[Requirement ID] U16
-				\item[Priority] Want to have
+				\item[Priority] Nice to have
 				\item[Actor] User
 				\item[Preconditions] User is logged in. User is at control panel
 				\item[Description] Users can remove a seller from his or her favourite sellers list
@@ -420,6 +466,13 @@
 				\item[Exceptions] None
 				\item[Result] The user views a page with recommended auctions for the user
 			\end{description}
+		\subsubsection{View buyer's assistant}
+			\begin{description}
+				\item[Requirement ID] U21
+				\item[Priority] Want to have
+				\item[Description] A user can check the auctions the buyer's assistant has found
+					for his or her preferences
+			\end{description}
 	\subsection{Administrator}
 		\subsubsection{Remove a user}
 			\begin{description}
@@ -443,6 +496,21 @@
 				\item[Exceptions] None
 				\item[Result] Auction is removed
 			\end{description}	
+	\subsection{Other}
+		\subsubsection{Basic e-mail notification}
+			\begin{description}
+				\item[Requirement ID] A2
+				\item[Priority] Want to have
+				\item[Description] User can receive an e-mail when he or she has won an auction,
+					when the item is shipped, when an auction is paid for
+			\end{description}
+		\subsubsection{Advanced e-mail notification}
+			\begin{description}
+				\item[Requirement ID] A2
+				\item[Priority] Nice to have
+				\item[Description] User can receive an e-mail when he or she is overbid,
+					when an auction is almost done, with recommended auctions for the user
+			\end{description}
 %\section{Performance Requirements}
 \section{Database Requirements}
 	All data will be saved in the database. The database must always remain consistent. There will be many concurrent request 
@@ -461,7 +529,26 @@
 		\begin{itemize}
 			\item When a user want to recover his or her password, the site will generate a new password and send it to the user's e-mail.
 			\item Communication of sensitive data should be encrypted (e.g. using https)
+			\item Users should only be allowed to try to log in a limited number of times
+			\item When a guests registers for an account, he or she has to fill in a CAPTCHA
 		\end{itemize}
 %	\subsection{Maintainability}
 %	\subsection{Portability}
 %\section{Other Requirements}
+\section{Summary}
+	\begin{tabular}{|c|c|c|}	
+		\hline \textbf{Must have} & \textbf{Want to have} & \textbf{Nice to have} \\ 
+		\hline  Create new account & Search a user & View recommended auctions \\ 
+		\hline  Log in & View active auctions & Send a personal message \\ 
+		\hline  Search for an auction & View placed auctions & View personal messages \\
+		\hline  View auctions of a certain category & Follow an auction & Delete a personal message \\ 
+		\hline  Log out & View salespal & Add seller to favourites \\ 
+		\hline  Place an auction & Top up salespal & View favourite sellers \\ 
+		\hline  Bid on an auction & View buyer's assistant &  Delete a favourite seller\\ 
+		\hline  Modify account information & Comment on auction &  \\ 
+		\hline  Retrieve password & Change currency &  \\ 
+		\hline  Remove a user & View auctions with a certain tag &  \\ 
+		\hline  Remove an auction &  &  \\ 
+		\hline  Change language &  &  \\ 
+		\hline
+	\end{tabular} 
