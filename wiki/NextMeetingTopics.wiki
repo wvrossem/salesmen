@@ -3,6 +3,10 @@
 
 = Topics for next meeting =
 
+=== Meeting 8: Tuesday 17 November 2009, 15:00===
+ 
+ * Logo
+
 === Meeting 7: Tuesday 10 November 2009, 15:00===
  
  * Timesheets
