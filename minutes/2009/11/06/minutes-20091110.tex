@@ -1,0 +1,122 @@
+\documentclass[a4paper, 12pt]{article}
+\usepackage[english]{babel}
+\usepackage{graphicx, ctable, url}
+\usepackage{hyperref}
+\usepackage{listings} % source listings
+\lstloadlanguages{java}
+\lstset{keywordstyle=\ttfamily\bfseries}
+\lstset{flexiblecolumns=true}
+\lstset{commentstyle=\ttfamily\itshape}
+
+	\begin{document}
+
+\title{Minutes Meeting 7}
+\author{Jonathan Jeurissen}
+\date{\today}
+
+\maketitle	
+	\section{Meeting Information}
+		\textbf{Date:} Tuesday, November 10, 2009\\
+		\textbf{Time:} 15H00--17H00\\
+		\textbf{Place:} D2.10\\
+		\subsection{Attendees}
+Following members were present:
+			\begin{itemize}
+				\item Nick De Cooman
+				\item Jonathan Jeurissen
+				\item Sina Khakbaz Heshmati
+				\item Bart Maes
+				\item Patrick Provinciael
+				\item Wouter Van Rossem
+
+			\end{itemize}
+Following members were absent:
+			\begin{itemize}
+				\item Jorne Laton
+			\end{itemize}
+			
+		\subsection{Revision History}
+			\begin{tabular}{c | l | l }
+				\textbf{Rev.} & \textbf{Date} & \textbf{Description} \\
+				\hline
+				1.0 & November 11, 2009 & First draft created \\
+				%1.1 & November 11, 2009 & Ready to be uploaded \\
+			\end{tabular}		
+
+	\section{Timesheets}
+There has been a question whether or not to include in the timesheets the time spent creating them. Also, there was a need to reference certain e-mails or discussions, leading a to significant amount of time spent on the project. As a solution, there will be new category in the timesheets, called ``Administration and communication''. This should include the time spent creating the timesheet and an estimation of the time spent on sending e-mails. One should refer to e-mails only if they did cost more than 30 minutes to write and reply them.
+		\subsection{Referring to e-mails}
+In order to refer to emails, everyone should now use salesmen@googlegroups.com, which will automatically create a URL of every discussion. This will lead to a documentation of all the digital communication concerning this project. All discussion will be made public. However, one can still communicate in Dutch (or English if preferred). A Wiki page, which will describe how to use this e-mailing and referencing system, will be made by Sina.
+
+	\section{SRS}
+		\subsection{Layout}
+The numbers of the requirements will not contain letters in the next version of the SRS. These letters (e.g. `U' in `U15' for requirement nr. 15 of section Users) actually add unnecessary information. There is no need to know that a requirement is from the section User, Guest, etc. In fact, if a requirement changes (e.g. from User to Guest) than this will cause that all references to this requirement need to be changed. To avoid this problem, requirements will only consist the prefix `Req' followed by a number. There will be no information in this number whatsoever to avoid problems. The SRS should be structured, not the numbers.\\
+At the end of the SRS, there will be a table that summarizes all the requirements with their number, so referencing to a certain requirement becomes more useful.
+		\subsection{Mistakes}
+There were 2 requirements (\textit{Ratings} and \textit{User home}) classed under ``Must have'' that were actually ``Want to have'' requirements. This has been a typing error, but will be corrected in the next version.
+		\subsection{Adaptations}
+			\begin{itemize}
+				\item The requirement concerning the auction and the payement will be subdivided into two requirements: \textit{auction} (Must have) and \textit{trace of the payement} (Must have). \\
+				\item The requirement ´´Favourite sellers'' will be changed to a ``Nice to have'' requirement.\\
+			\end{itemize}
+		\subsection{New requirements}
+			\begin{itemize}
+				\item Shopping Assistant (Want to have)\\
+The shopping assistant will be able to tell the users that certain items he has been looking for are available at Salesmen. The users can add some terms for objects he is looking for (e.g. the name of a certain processor) and if this object is not available at that time on the website it will be added to a query. The shopping assistant will then periodically search the website and tell the user when this item is in fact being sold at Salesmen. This way the user himself doesn't have to search the website again and again.
+				\item Security \\
+The security of the website will be an important part of the project. It will be subdivided in a few requirements:
+					\begin{itemize}
+						\item Encryption (Must have)
+						\item Captcha (Must have)
+						\item 1 account per e-mail addresse (Want to have)
+						\item Limited number of logins when the wrong password is entered (Nice to have)
+					\end{itemize}
+				\item Rules (Want to have) \\
+There has to be a way to see if the users follow the Rules of Sales, which they have accepted when they created their account.\\
+e.g. The owner of an object that is being sold is not permitted to bid at his own sales.
+				\item Lost Password (Want to have) \\
+There will be an option to recover a user's password when he has forgotten it. This will be implemented in combination with the use of a Captcha.
+				\item Comments on auctions (Nice to have) \\
+Users can comment on items that are sold, but also on auctions that are still running. The administrator will be able to delete these comments if necessary. Comments will also use Captcha protection to avoid spamming.
+				\item Banned users (Must have) \\
+Users can be banned by the administrator when they misbehave. Banned users will form a separate type of user, with different rights.
+				\item Fake Salesmen site for banned users (Nice to have) \\
+A possibility to make the website of Salesmen functional for banned users, so they can still post their own items on their account, but no one will actually see them. For the banned users however, Salesmen still looks real and functional.
+			\end{itemize}
+
+
+
+	\section{\LaTeX{} template}
+There has been made a Wiki page on using the \LaTeX{} template by Patrick. However in the current version of the template, there are a few things that need to be added, such as the possibility to add chapters and an abstract of the document. The table of the revision history will be included in the Appendix at the end of every document. At the beginning of every page, one will also be able to set the date of the last revision of the document.
+		\subsection{Logo Salesmen}
+If desired, Team members will make there own Salesmen Logo and sent it to Patrick. These logo's will be discussed in the next meeting.
+
+	\section{SCMP}
+The SCMP is finished and will be updated regularly.
+	\section{SCRUM}
+There has been decided that there will be a SCRUM towards the client. In this way it's easy for the client to follow up the project. This SCRUM will be made by the Project Manager, on a Wiki page of the Salesmen' Google Groups website.
+
+	\section{Next Meeting}
+
+		\textbf{Date:} Tuesday, November 17, 2009\\
+		\textbf{Time:} 15H00--17H00\\
+		\textbf{Place:} D2.10\\
+	
+		\subsection{Agenda}
+A complete list of Agenda items is available on \cite{site3}.\\
+From now on there will be made an official document concerning the topics of the next meeting. This document, called ``Agenda'', will be made by the Project Manager and will be finished the evening before every meeting. It will also be put on the salesmen website.
+
+	
+	\begin{thebibliography}{99}
+	
+		
+		\bibitem{site3}
+		\href{http://code.google.com/p/salesmen/wiki/NextMeetingTopics}{http://code.google.com/p/salesmen/wiki/NextMeetingTopics}
+		
+
+		
+
+		
+	\end{thebibliography}	
+		
+\end{document}
