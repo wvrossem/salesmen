@@ -2,8 +2,8 @@
 
 \section{Product Perspective}
 	The project will make use of a database and a web server that can be 
-	accessed with any web browser. There are 3 types of users on the system:
-	guests, registered users and administrators. Before a user can make use
+	accessed with any web browser. There are 4 types of users on the system:
+	guests, registered users, administrators and banned users. Before a user can make use
 	of the full functionality of the site, the user has to register. The user
 	will have to enter some personal information in a form in order to do this.
 	Only users of at least 18 years old will be allowed due to legal reasons.\\
@@ -14,14 +14,22 @@
 	silent auctions\cite{silent}. When a user places an auction, he or she also has to specify
 	payment methods, transport methods, a minimum price, a duration for the auction
 	and other general information about the auction.\\
-	A user can follow an auction. Then when the user wants, he or she can bid on the auction.
-	This can be done with the user's salespal account. This a personal ``bank account" on
-	the site that each user has. \\
+	A user can follow an auction. The followed auctions list is a list of auctions that interest the user
+	but on which he or she may not have bid yet. Then when the user wants, he or she can bid on the auction.
+	A user can view all the auctions he or she has bid on in the active auctions list.\\
+	When a user has won an auction, he or she can pay for the item. This will be done through a 
+	transaction. The buyer can pay for the item by choosing on of the payment options the seller 
+	has specified. One of these methods is through salespal. This a personal ``bank account" on
+	the site that each user has. Buyers can pay for items with the money on this account and 
+	sellers can receive money on their salespal account. Users can top up their salespal account,
+	i.e. they transfer money to the account. When the transaction is done, buyers and sellers 
+	can rate the transaction. Each user will have a rating then which is based on the ratings
+	of their transactions. \\
 	Users can also contact other users through personal messages. Other sellers can also
 	be added to a favourite sellers list, so that a user can easily check if a 
 	seller they like has new auctions. \\
 	Administrators have some extra functionality, they can manage the users 
-	and auctions.
+	and auctions. Administrators can also retract a bid of a user.
 \section{User Characteristics}
 	The users of the system will be users with different levels of 
 	technical expertise. Any user with a basic understanding of the 
@@ -35,7 +43,7 @@
 		account and are logged in.
 		\item \textbf{Administrators}: These are special members of the 
 		site who manage the site.
-		\item \textbf{Banned users}: These are used that are removed by
+		\item \textbf{Banned users}: These are users that were removed by
 		an administrator
 	\end{itemize}
 \section{Interfaces}
@@ -109,12 +117,6 @@
 			\item Subject
 			\item Message 
 		\end{itemize}
-	\textbf{Transaction payment form}
-		\begin{itemize}
-			\item Shipping method (choose one)
-			\item Payment method (choose one)
-			\item Message to seller (optional) 
-		\end{itemize}
 	\textbf{Rate transaction form}
 		\begin{itemize}
 			\item Overall rating
@@ -137,8 +139,11 @@
 			\item Place auctions
 			\item Bid on auctions
 			\item Follow an auction
+			\item View a transaction
+			\item Pay for a transaction
+			\item Rate a transaction
 			\item View their placed, active and followed auctions
-			\item Access and change their account information
+			\item Access and modify their account information
 			\item Contact other users
 			\item Add a seller to their favourite sellers
 			\item View and top up their salespal account
@@ -148,6 +153,7 @@
 		\begin{itemize}
 			\item Manage the members
 			\item Manage the auctions
+			\item Retract bids from users
 		\end{itemize}
 \section{Constraints}
 \begin{itemize}

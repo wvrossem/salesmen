@@ -2,13 +2,13 @@
 
 \section{Requirements Control Plan}
 	This section describes how the different requirements will be described and how 
-	modifications to these requirements will be handled.
+	modifications to these requirements will be handled. \\
 	Each requirement will have a unique identifier which will be used for referencing 
 	in the source code, the design, ... Some requirements will only be described by
-	a short description, while others will be described by a use case.
+	a short description, while others will be described by a use case. \\
 	Whenever a requirement changes, the change will be noted at the description of 
 	the requirement. If a requirement is retired, this will also be noted at the
-	requirement description, together with a reason why the requirement is retired.
+	requirement description, together with a reason why the requirement was retired.
 
 %\section{External Interface Requirements}
 \section{Functional Requirements} % Organized by user class
@@ -38,12 +38,13 @@
 						\item Guest fills in \emph{registration form}
 						\item Guest submits form
 						\item System checks form and if valid saves it
-						\item System send a confirmation mail 
+						\item System sends a confirmation mail 
 					\end{enumerate}
 				\item[Exceptions]
 					\begin{enumerate}
 						\item Username is already taken
 						\item Incorrect information in the registration form
+						\item Incomplete form
 					\end{enumerate}
 				\item[Result] An account is created for the user
 			\end{description}
@@ -52,8 +53,8 @@
 				\item[Requirement ID] 2
 				\item[Priority] Must have
 				\item[Actor] Guest
-				\item[Preconditions] The user is registered on the site.
-				User is not logged in.
+				\item[Preconditions] The user is registered on the site,
+				user is not logged in
 				\item[Description]
 				If a user is registered but not logged in, he or she can
 				log in to use the full functionality of the site.
@@ -63,10 +64,13 @@
 						\item Guest submits form
 						\item System checks if the form is valid and if so logs
 						the user in
+						\item System redirect the user to the page he or she was on
+							before the log in
 					\end{enumerate}
 				\item[Exceptions]
 					\begin{enumerate}
 						\item Incorrect username and or password
+						\item Incomplete login form
 					\end{enumerate}
 				\item[Result] The user is logged in
 			\end{description}
@@ -82,15 +86,15 @@
  					\begin{enumerate}
 						\item Users enters a search term in the search field
 						\item User submits the search
-						\item System returns all found auctions that match this search
+						\item System redirects the user to a page with all found auctions that match this search
 						query
 					\end{enumerate}
-				\item[Exceptions] None
-				\item[Result] The found auctions for the search term
+				\item[Exceptions] Empty search field
+				\item[Result] A page with the found auctions for the search term
 			\end{description}
 		\subsubsection{View auctions of a certain category}
 			\begin{description}
-				\item[Requirement ID] 3
+				\item[Requirement ID] 4
 				\item[Priority] Must have
 				\item[Actor] User or Guest
 				\item[Preconditions] User is at the home page
@@ -106,20 +110,20 @@
 			\end{description}
 		\subsubsection{View auctions with a certain tag}
 			\begin{description}
-				\item[Requirement ID] 3
+				\item[Requirement ID] 5
 				\item[Priority] Want to have
 				\item[Description] Guests and users can view all the auctions with a certain tag
 			\end{description}
 		\subsubsection{Change language}
 			\begin{description}
-				\item[Requirement ID] 3
+				\item[Requirement ID] 6
 				\item[Priority] Must have
 				\item[Description] Guests and users can change the language of the website to one
 					of the available languages
 			\end{description}
 		\subsubsection{Change currency}
 			\begin{description}
-				\item[Requirement ID] 3
+				\item[Requirement ID] 7
 				\item[Priority] Nice to have
 				\item[Description] Guests and users can change the currency in which auctions are
 					displayed
@@ -127,7 +131,7 @@
 	\subsection{User}
 		\subsubsection{Log out}
 			\begin{description}
-				\item[Requirement ID] U1
+				\item[Requirement ID] 8
 				\item[Priority] Must have
 				\item[Actor] User
 				\item[Preconditions] User is logged in
@@ -136,13 +140,14 @@
  					\begin{enumerate}
 						\item User selects \emph{log out}
 						\item System logs the user out
+						\item System redirects the user to the site's homepage
 					\end{enumerate}
 				\item[Exceptions] None
 				\item[Result] The user is logged out
 			\end{description}
 		\subsubsection{Search a user}
 			\begin{description}
-				\item[Requirement ID] U2
+				\item[Requirement ID] 9
 				\item[Priority] Want to have
 				\item[Actor] User
 				\item[Preconditions] User is at advanced search page
@@ -151,15 +156,15 @@
  					\begin{enumerate}
 						\item User enters search term in search user field
 						\item User submits search
-						\item System returns all users corresponding to that search 
+						\item System redirects the user to page containing all users corresponding to that search 
 						query
 					\end{enumerate}
-				\item[Exceptions] None
-				\item[Result] The found members for the search term
+				\item[Exceptions] Incorrect or incomplete form
+				\item[Result] A page displaying the found members for the search term
 			\end{description}
 		\subsubsection{Place an auction}
 			\begin{description}
-				\item[Requirement ID] U3
+				\item[Requirement ID] 10
 				\item[Priority] Must have
 				\item[Actor] User
 				\item[Preconditions] User is logged in. User is at home page or user home
@@ -177,7 +182,7 @@
 			\end{description}
 		\subsubsection{View placed auctions}
 			\begin{description}
-				\item[Requirement ID] U18
+				\item[Requirement ID] 11
 				\item[Priority] Want to have
 				\item[Actor] User
 				\item[Preconditions] User is logged in. User is at control panel
@@ -188,11 +193,11 @@
 						\item System redirects user to user's placed auctions page
 					\end{enumerate}
 				\item[Exceptions] None
-				\item[Result] The user can view the auctions he or she has placed
+				\item[Result] The user views the auctions he or she has placed
 			\end{description}
 		\subsubsection{Bid on auction}
 			\begin{description}
-				\item[Requirement ID] U4
+				\item[Requirement ID] 12
 				\item[Priority] Must have
 				\item[Actor] User
 				\item[Preconditions] 
@@ -210,12 +215,11 @@
 						\item System checks form and if valid places the bid
 					\end{enumerate}
 				\item[Exceptions] Wrong bid value in the form, incomplete form
-				, not enough credit on salespal account
 				\item[Result] The bid is placed on the auction
 			\end{description}
 		\subsubsection{View active auctions}
 			\begin{description}
-				\item[Requirement ID] U17
+				\item[Requirement ID] 13
 				\item[Priority] Want to have
 				\item[Actor] User
 				\item[Preconditions] User is logged in. User is at control panel
@@ -230,7 +234,7 @@
 			\end{description}
 		\subsubsection{Modify account information}
 			\begin{description}
-				\item[Requirement ID] U5
+				\item[Requirement ID] 14
 				\item[Priority] Must have
 				\item[Actor] User
 				\item[Preconditions] User is logged in. User is at control panel
@@ -247,7 +251,7 @@
 			\end{description}
 		\subsubsection{Send a personal message}
 			\begin{description}
-				\item[Requirement ID] U6
+				\item[Requirement ID] 15
 				\item[Priority] Nice to have
 				\item[Actor] User
 				\item[Preconditions] User is logged in. User is at user page
@@ -264,7 +268,7 @@
 			\end{description}
 		\subsubsection{View personal messages}
 			\begin{description}
-				\item[Requirement ID] U19
+				\item[Requirement ID] 16
 				\item[Priority] Nice to have
 				\item[Actor] User
 				\item[Preconditions] User is logged in. User is at control panel
@@ -279,7 +283,7 @@
 			\end{description}
 		\subsubsection{Delete personal message}
 			\begin{description}
-				\item[Requirement ID] U20
+				\item[Requirement ID] 17
 				\item[Priority] Nice to have
 				\item[Actor] User
 				\item[Preconditions] User is logged in. User is at personal messages page
@@ -295,7 +299,7 @@
 			\end{description}
 		\subsubsection{Follow an auction}
 			\begin{description}
-				\item[Requirement ID] U7
+				\item[Requirement ID] 18
 				\item[Priority] Want to have
 				\item[Actor] User
 				\item[Preconditions] User is logged in. User is at auction page
@@ -310,7 +314,7 @@
 			\end{description}
 		\subsubsection{View followed auctions}
 			\begin{description}
-				\item[Requirement ID] U14
+				\item[Requirement ID] 19
 				\item[Priority] Want to have
 				\item[Actor] User
 				\item[Preconditions] User is logged in. User is at control panel
@@ -325,7 +329,7 @@
 			\end{description}
 		\subsubsection{View Transaction}
 			\begin{description}
-				\item[Requirement ID] U8
+				\item[Requirement ID] 20
 				\item[Priority] Want to have
 				\item[Actor] User
 				\item[Preconditions] User is logged in. User is at auction page. User bought the item.
@@ -340,7 +344,7 @@
 			\end{description}
 		\subsubsection{Pay transaction}
 			\begin{description}
-				\item[Requirement ID] U9
+				\item[Requirement ID] 21
 				\item[Priority] Want to have
 				\item[Actor] User
 				\item[Preconditions] User is logged in. User is at transaction page
@@ -348,16 +352,16 @@
 				\item[Path]
  					\begin{enumerate}
 						\item User selects \emph{pay item}
-						\item User fills in transaction payment form
-						\item User submits the form
-						\item System checks the form and if valid, marks the transaction as paid
+						\item User selects a payment method
+						\item User performs the payment
+						\item System notifies the seller that the auction is paid for
 					\end{enumerate}
-				\item[Exceptions] Incorrect information, incomplete form, user has insufficient funds on salespal account
+				\item[Exceptions] Incorrect information, incomplete form
 				\item[Result] The transaction is paid for
 			\end{description}
 		\subsubsection{Rate transaction}
 			\begin{description}
-				\item[Requirement ID] U10
+				\item[Requirement ID] 22
 				\item[Priority] Want to have
 				\item[Actor] User
 				\item[Preconditions] User is logged in. User is at transaction page, user paid transaction
@@ -375,7 +379,7 @@
 			\end{description}
 		\subsubsection{Add seller to favourites}
 			\begin{description}
-				\item[Requirement ID] U11
+				\item[Requirement ID] 23
 				\item[Priority] Nice to have
 				\item[Actor] User
 				\item[Preconditions] User is logged in. User is at user page
@@ -390,7 +394,7 @@
 			\end{description}
 		\subsubsection{View favourite sellers}
 			\begin{description}
-				\item[Requirement ID] U15
+				\item[Requirement ID] 24
 				\item[Priority] Nice to have
 				\item[Actor] User
 				\item[Preconditions] User is logged in. User is at control panel
@@ -405,7 +409,7 @@
 			\end{description}
 		\subsubsection{Delete favourite seller}
 			\begin{description}
-				\item[Requirement ID] U16
+				\item[Requirement ID] 25
 				\item[Priority] Nice to have
 				\item[Actor] User
 				\item[Preconditions] User is logged in. User is at control panel
@@ -421,7 +425,7 @@
 			\end{description}
 		\subsubsection{View salespal}
 			\begin{description}
-				\item[Requirement ID] U12
+				\item[Requirement ID] 26
 				\item[Priority] Want to have
 				\item[Actor] User
 				\item[Preconditions] User is logged in. User is at control panel
@@ -436,7 +440,7 @@
 			\end{description}
 		\subsubsection{Top up salespal}
 			\begin{description}
-				\item[Requirement ID] U13
+				\item[Requirement ID] 27
 				\item[Priority] Want to have
 				\item[Actor] User
 				\item[Preconditions] User is logged in. User is at salespal page
@@ -452,7 +456,7 @@
 			\end{description}
 		\subsubsection{View recommended auctions}
 			\begin{description}
-				\item[Requirement ID] U21
+				\item[Requirement ID] 28
 				\item[Priority] Nice to have
 				\item[Actor] User
 				\item[Preconditions] User is logged in. User is at control panel
@@ -468,7 +472,7 @@
 			\end{description}
 		\subsubsection{View buyer's assistant}
 			\begin{description}
-				\item[Requirement ID] U21
+				\item[Requirement ID] 29
 				\item[Priority] Want to have
 				\item[Description] A user can check the auctions the buyer's assistant has found
 					for his or her preferences
@@ -476,7 +480,7 @@
 	\subsection{Administrator}
 		\subsubsection{Remove a user}
 			\begin{description}
-				\item[Requirement ID] A1
+				\item[Requirement ID] 30
 				\item[Priority] Must have
 				\item[Actor] Administrator
 				\item[Preconditions] User is at control panel
@@ -487,7 +491,7 @@
 			\end{description}	
 		\subsubsection{Remove an auction}
 			\begin{description}
-				\item[Requirement ID] A2
+				\item[Requirement ID] 31
 				\item[Priority] Must have
 				\item[Actor] Administrator
 				\item[Preconditions] User is at control panel
@@ -495,18 +499,26 @@
 				list. After the auction is selected, \emph{manage auction} is selected.
 				\item[Exceptions] None
 				\item[Result] Auction is removed
-			\end{description}	
+			\end{description}
+		\subsubsection{Retract bid}
+			\begin{description}
+				\item[Requirement ID] 32
+				\item[Priority] Want to have
+				\item[Description] An administrator can retract a bid from a user when that user has e.g. 
+					made a high bid because of a typo
+			\end{description}
+	\subsection{}
 	\subsection{Other}
 		\subsubsection{Basic e-mail notification}
 			\begin{description}
-				\item[Requirement ID] A2
+				\item[Requirement ID] 33
 				\item[Priority] Want to have
 				\item[Description] User can receive an e-mail when he or she has won an auction,
 					when the item is shipped, when an auction is paid for
 			\end{description}
 		\subsubsection{Advanced e-mail notification}
 			\begin{description}
-				\item[Requirement ID] A2
+				\item[Requirement ID] 34
 				\item[Priority] Nice to have
 				\item[Description] User can receive an e-mail when he or she is overbid,
 					when an auction is almost done, with recommended auctions for the user
@@ -541,13 +553,13 @@
 		\hline  Create new account & Search a user & View recommended auctions \\ 
 		\hline  Log in & View active auctions & Send a personal message \\ 
 		\hline  Search for an auction & View placed auctions & View personal messages \\
-		\hline  View auctions of a certain category & Follow an auction & Delete a personal message \\ 
+		\hline  View auctions of a category & Follow an auction & Delete a personal message \\ 
 		\hline  Log out & View salespal & Add seller to favourites \\ 
 		\hline  Place an auction & Top up salespal & View favourite sellers \\ 
 		\hline  Bid on an auction & View buyer's assistant &  Delete a favourite seller\\ 
 		\hline  Modify account information & Comment on auction &  \\ 
 		\hline  Retrieve password & Change currency &  \\ 
-		\hline  Remove a user & View auctions with a certain tag &  \\ 
+		\hline  Remove a user & View auctions with a tag &  \\ 
 		\hline  Remove an auction &  &  \\ 
 		\hline  Change language &  &  \\ 
 		\hline
