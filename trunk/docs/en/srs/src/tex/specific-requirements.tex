@@ -477,6 +477,13 @@
 				\item[Description] A user can check the auctions the buyer's assistant has found
 					for his or her preferences
 			\end{description}
+		\subsubsection{Comment on auction}
+			\begin{description}
+				\item[Requirement ID] 38
+				\item[Priority] Want to have
+				\item[Description] A user can comment on an auction. This comment can be viewed by
+					anyone viewing the auction page
+			\end{description}
 	\subsection{Administrator}
 		\subsubsection{Remove a user}
 			\begin{description}
@@ -507,18 +514,51 @@
 				\item[Description] An administrator can retract a bid from a user when that user has e.g. 
 					made a high bid because of a typo
 			\end{description}
-	\subsection{}
+	\subsection{Security}
+		\subsubsection{Encrypted password}
+			\begin{description}
+				\item[Requirement ID] 33
+				\item[Priority] Must have
+				\item[Description] Password must be stored encrypted
+			\end{description}
+		\subsubsection{CAPTCHA}
+			\begin{description}
+				\item[Requirement ID] 34
+				\item[Priority] Must have
+				\item[Description] When a user registers, he or she has to fill in a CAPTCHA
+			\end{description}
+		\subsubsection{Limited login attempts}
+			\begin{description}
+				\item[Requirement ID] 35
+				\item[Priority] Must have
+				\item[Description] A guest may only try to try to log in with a wrong password 
+					a fixed number of times
+			\end{description}
+		\subsubsection{Extra site for banned users}
+			\begin{description}
+				\item[Requirement ID] 39
+				\item[Priority] Nice to have
+				\item[Description] When a banned user visits the site, he or she will view a special
+					site for banned users
+			\end{description}
+		\subsubsection{Cookies}
+			\begin{description}
+				\item[Requirement ID] 40
+				\item[Priority] Want to have
+				\item[Description] Cookies can be created for the user to let the user log in 
+					automatically
+			\end{description}
 	\subsection{Other}
 		\subsubsection{Basic e-mail notification}
 			\begin{description}
-				\item[Requirement ID] 33
+				\item[Requirement ID] 36
 				\item[Priority] Want to have
 				\item[Description] User can receive an e-mail when he or she has won an auction,
 					when the item is shipped, when an auction is paid for
 			\end{description}
 		\subsubsection{Advanced e-mail notification}
 			\begin{description}
-				\item[Requirement ID] 34
+				\item[Requirement ID] 37
 				\item[Priority] Nice to have
 				\item[Description] User can receive an e-mail when he or she is overbid,
 					when an auction is almost done, with recommended auctions for the user
@@ -557,10 +597,12 @@
 		\hline  Log out & View salespal & Add seller to favourites \\ 
 		\hline  Place an auction & Top up salespal & View favourite sellers \\ 
 		\hline  Bid on an auction & View buyer's assistant &  Delete a favourite seller\\ 
-		\hline  Modify account information & Comment on auction &  \\ 
+		\hline  Modify account information & Comment on auction & Extra site for banned users \\ 
 		\hline  Retrieve password & Change currency &  \\ 
 		\hline  Remove a user & View auctions with a tag &  \\ 
-		\hline  Remove an auction &  &  \\ 
+		\hline  Remove an auction & Cookies &  \\ 
 		\hline  Change language &  &  \\ 
+		\hline  CAPTCHA &  &  \\ 
+		\hline  Limited login attempts &  &  \\ 
 		\hline
 	\end{tabular} 
