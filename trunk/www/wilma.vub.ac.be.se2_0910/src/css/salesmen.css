@@ -61,7 +61,8 @@
 .home h1,
 .about h1,
 .scmp h1,
-.spmp h1
+.spmp h1,
+.srs h1
 {
    display: none; 
 }
