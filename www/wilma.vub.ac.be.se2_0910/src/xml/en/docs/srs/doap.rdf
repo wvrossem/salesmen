@@ -20,7 +20,7 @@
     <doap:shortname>SRS</doap:shortname>
     <doap:homepage rdf:resource="http://wilma.vub.ac.be/~se2_0910/docs/srs/"/>
     <doap:license rdf:resource="http://usefulinc.com/doap/licenses/gfdl"/>
-    <doap:created>2009-11-12T14:10:08+02:00</doap:created>
+    <doap:created>2009-11-09T14:10:08+02:00</doap:created>
     <doap:shortdesc>
       Details of functionalities expected by the client.
     </doap:shortdesc>
