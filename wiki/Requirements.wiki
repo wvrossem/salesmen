@@ -1,5 +1,4 @@
-#symmary A list of possible requirements
-#labels Requirements
+#summary A list of possible requirements
 
 = Requirements =
 
