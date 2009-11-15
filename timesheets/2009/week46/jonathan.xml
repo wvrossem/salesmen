@@ -15,6 +15,13 @@
     </refs>
   </item>
 
+  <item duration="PT0H5M">
+    <desc>Correcting Minutes of Friday 2009/11/10.</desc>
+    <refs>
+      <ref>http://code.google.com/p/salesmen/source/detail?r=307</ref>
+    </refs>
+  </item>
+
   <item duration="PT10M">
     <desc>Administration and Communication</desc>
     <refs>
