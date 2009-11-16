@@ -1,0 +1,229 @@
+<?xml version="1.0"?>
+<timesheets xmlns="http://purl.org/net/timetrack" xmlns:xi="http://www.w3.org/2001/XInclude" from="2009-11-09" to="2009-11-16" xml:id="week45-2009">
+  <title>VUB - SE2 Timesheets for the 46th Week of 2009</title>
+  <published>2009-11-16</published>
+  <updated>2009-11-16</updated>
+  <person>
+    <name>Nick De Cooman</name>
+    
+	<timesheet xmlns="http://purl.org/net/timetrack" xml:base="../default/timesheet.xml">
+  <item duration="PT0M">
+    <desc>
+      This is a fallback timesheet, meaning that the
+      developer has not submitted their timesheet yet.
+      Please check back later to see this developer's 
+      timesheet.
+    </desc>
+  </item>
+</timesheet>
+      
+  </person>
+  <person>
+    <name>Jonathan Jeurissen</name>
+    <timesheet xmlns="http://purl.org/net/timetrack">
+	
+  <item duration="PT2H00M">
+    <desc>Meeting on Tuesday 2009/11/10.</desc>
+    <refs>
+      <ref>http://wilma.vub.ac.be/~se2_0910/docs/minutes/2009/11/10/minutes-20091110.pdf</ref>
+    </refs>
+  </item>
+
+  <item duration="PT2H45M">
+    <desc>Writing Minutes of Friday 2009/11/10.</desc>
+    <refs>
+      <ref>http://code.google.com/p/salesmen/source/detail?r=299</ref>
+    </refs>
+  </item>
+
+  <item duration="PT0H5M">
+    <desc>Correcting Minutes of Friday 2009/11/10.</desc>
+    <refs>
+      <ref>http://code.google.com/p/salesmen/source/detail?r=307</ref>
+    </refs>
+  </item>
+
+  <item duration="PT10M">
+    <desc>Administration and Communication</desc>
+    <refs>
+      <ref/>
+    </refs>
+
+  </item>
+
+</timesheet>
+  </person>
+  <person>
+    <name>Sina Khakbaz Heshmati</name>
+    <timesheet xmlns="http://purl.org/net/timetrack">
+
+  <item duration="PT2H">
+    <desc>Meeting on Tuesday 2009/11/10.</desc>
+    <refs>
+      <ref>
+	http://wilma.vub.ac.be/~se2_0910/docs/minutes/2009/11/10/minutes-20091110.pdf
+      </ref>
+    </refs>
+  </item>
+
+  <item duration="PT15M">
+    <desc>Published the minutes of the 2009/11/10 meeting.</desc>
+    <refs>
+      <ref>http://code.google.com/p/salesmen/source/detail?r=318</ref>
+      <ref>http://code.google.com/p/salesmen/source/detail?r=311</ref>
+    </refs>
+  </item>
+
+  <item duration="PT15M">
+    <desc>Published the minutes of the 2009/11/06 meeting.</desc>
+    <refs>
+      <ref>http://code.google.com/p/salesmen/source/detail?r=262</ref>
+      <ref>http://code.google.com/p/salesmen/source/detail?r=287</ref>
+    </refs>
+  </item>
+  
+  <item duration="PT15M">
+    <desc>
+      Improved the configuration system by letting Emacs nXML-mode recognize
+      TimeTrack instance documents at the user level so as to avoid having
+      to define schemas.xml files in every directory.
+    </desc>
+    <refs>
+      <ref>http://code.google.com/p/salesmen/source/detail?r=272</ref>
+    </refs>
+  </item>
+
+  <item duration="PT20M">
+    <desc>
+      Published the developers' timesheets for the 45th week of 2009.
+    </desc>
+    <refs>
+      <ref>http://code.google.com/p/salesmen/source/detail?r=263</ref>
+    </refs>
+  </item>
+
+  <item duration="PT30M">
+    <desc>
+      Published the SCMP document, revision 0.1.
+    </desc>
+    <refs>
+      <ref>http://code.google.com/p/salesmen/source/detail?r=266</ref>
+      <ref>http://code.google.com/p/salesmen/source/detail?r=265</ref>
+    </refs>
+  </item>
+
+  <item duration="PT35M">
+    <desc>
+      Published the SRS document, revision 0.2.
+    </desc>
+    <refs>
+      <ref>http://code.google.com/p/salesmen/source/detail?r=319</ref>
+      <ref>http://code.google.com/p/salesmen/source/detail?r=317</ref>
+      <ref>http://code.google.com/p/salesmen/source/detail?r=316</ref>
+      <ref>http://code.google.com/p/salesmen/source/detail?r=315</ref>
+      <ref>http://code.google.com/p/salesmen/source/detail?r=314</ref>
+      <ref>http://code.google.com/p/salesmen/source/detail?r=313</ref>
+      <ref>http://code.google.com/p/salesmen/source/detail?r=312</ref>
+    </refs>
+  </item>
+
+  <item duration="PT20M">
+    <desc>
+      Improved the configuration system to gracefully handle delayed timesheet
+      submissions.
+    </desc>
+    <refs>
+      <ref>http://code.google.com/p/salesmen/source/detail?r=271</ref>
+    </refs>
+  </item>
+
+  <item duration="PT40M">
+    <desc>Team communication and paperwork.</desc>
+  </item>
+
+</timesheet>
+  </person>
+  <person>
+    <name>Jorne Laton</name>
+    <timesheet xmlns="http://purl.org/net/timetrack">
+	
+  <item duration="PT1H">
+    <desc>Updating myself by reading reports on last week.</desc>
+    <refs>
+      <ref>http://wilma.vub.ac.be/~se2_0910/docs/minutes/2009/11/10/minutes-20091110.pdf</ref>
+    </refs>
+  </item>
+  
+  <item duration="PT5M">
+	<desc>Administration and Communication.</desc>
+  </item>
+
+</timesheet>
+  </person>
+  <person>
+    <name>Bart Maes</name>
+    <timesheet xmlns="http://purl.org/net/timetrack">
+	
+  <item duration="PT2H00M">
+    <desc>Meeting on Tuesday 2009/11/10.</desc>
+    <refs>
+      <ref>http://wilma.vub.ac.be/~se2_0910/docs/minutes/2009/11/10/minutes-20091110.pdf</ref>
+    </refs>
+  </item>
+  
+  <item duration="PT20M">
+    <desc>Recheck/add/update requirements</desc>
+  </item>
+
+  <item duration="PT10M">
+    <desc>Administration and Communication</desc>
+  </item>
+
+</timesheet>
+  </person>
+  <person>
+    <name>Patrick Provinciael</name>
+    
+	<timesheet xmlns="http://purl.org/net/timetrack" xml:base="../default/timesheet.xml">
+  <item duration="PT0M">
+    <desc>
+      This is a fallback timesheet, meaning that the
+      developer has not submitted their timesheet yet.
+      Please check back later to see this developer's 
+      timesheet.
+    </desc>
+  </item>
+</timesheet>
+      
+  </person>
+  <person>
+    <name>Wouter Van Rossem</name>
+    <timesheet xmlns="http://purl.org/net/timetrack">
+  <item duration="PT2H">
+    <desc>Finished SRS draft</desc>
+    <refs>
+      <ref>http://code.google.com/p/salesmen/source/detail?r=294</ref>
+    </refs>
+  </item>
+  
+  <item duration="PT2H">
+    <desc>Meeting on Tuesday 2009/11/10.</desc>
+    <refs>
+      <ref>http://wilma.vub.ac.be/~se2_0910/docs/minutes/2009/11/10/minutes-20091110.pdf</ref>
+    </refs>
+  </item>
+  
+  <item duration="PT3H">
+    <desc>Finished first version of SRS</desc>
+    <refs>
+      <ref>http://code.google.com/p/salesmen/source/detail?r=310</ref>
+    </refs>
+  </item>
+  
+  <item duration="PT20M">
+    <desc>Administration and Communication</desc>
+  </item>
+  
+</timesheet>
+  </person>
+</timesheets>
