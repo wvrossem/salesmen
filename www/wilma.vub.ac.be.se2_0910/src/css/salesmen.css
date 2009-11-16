@@ -198,3 +198,21 @@ form .invalid input { background-color: #ffcccc; }
 #maincontent table {
   border: 1px solid #999;
 }
+
+#maincontent .timetrack table td {
+  padding-top: 3px;
+  border-bottom: 1px solid #999;
+  border-right: 1px solid #999;
+}
+
+#maincontent .timetrack table td.desc {
+  width: 80%;
+}
+
+#maincontent .timetrack table td.refs {
+  width: 10%;
+}
+
+#maincontent .timetrack table td.duration {
+  width: 10%;
+}
