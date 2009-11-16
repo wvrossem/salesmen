@@ -1,8 +1,8 @@
 <?xml version='1.0'?>
 <timesheet xmlns="http://purl.org/net/timetrack">
 	
-  <item duration="PT1H">
-    <desc>Updating myself by reading reports on last week.</desc>
+  <item duration="PT30M">
+    <desc>Reading report of last week.</desc>
     <refs>
       <ref>http://wilma.vub.ac.be/~se2_0910/docs/minutes/2009/11/10/minutes-20091110.pdf</ref>
     </refs>
