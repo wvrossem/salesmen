@@ -8,6 +8,7 @@
  * Logo
  * SRS
  * Design
+ * Conferentie 15/12
  * Quality Assurance presentation by Patrick -- 15MIN--
  * Discussion about tools
  * Risk Management
