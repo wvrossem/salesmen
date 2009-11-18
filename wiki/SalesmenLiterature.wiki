@@ -1,0 +1,34 @@
+#summary What does a certain term or acronym mean in the context of Salesmen development?
+#labels Dev
+
+= Introduction =
+
+Developing software is all about building abstractions, which is the act of separating an entity from all the other entities by giving it a name. This means that there are lots of names and acronyms to be dealt with.
+
+This page is intended to provide definitions for terms that are often used in the context of Salesmen development. Presenting our literature (a.k.a., Glossary) in a compact form will help developers be more productive as they can refer to this document during the meetings and in other documents.
+
+= Terms =
+
+== Application Server ==
+== Java ==
+== Jave EE ==
+== Web Container ==
+== Servlet ==
+== JSP ==
+== JVM ==
+== Scala ==
+== Groovy ==
+== Javascript ==
+== GWT ==
+== Spring ==
+== Hibernate ==
+== Persistence ==
+== Web Services ==
+== WSDL ==
+== SOAP ==
+== REST ==
+== XML ==
+== Maven ==
+== Ant ==
+== SilkPage ==
+== TimeTrack ==
