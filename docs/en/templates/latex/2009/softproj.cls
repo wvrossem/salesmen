@@ -3,8 +3,11 @@
 % 2009-Oct-30 Patrick Provinciael patrick.provinciael@gmail.com
 % Based upon the mins.cls, created by Jim Hefferon, http://www.tug.org/pracjourn/2005-4/hefferon/
 % The idea is to expand this, in such a way that the defined documentname will affect the documentstyle
-% 2009-Oct-30: First Version
-% 2009-Nov-11: Changed base Class to report
+%\vhEntry{0.5}{25-10-2009}{Patrick}{First Draft}
+%\vhEntry{1.0}{30-10-2009}{Patrick}{First Finished Version}
+%\vhEntry{1.1}{11-11-2009}{Patrick}{Changed base Class to report}
+%\vhEntry{1.3}{19-11-2009}{Patrick}{Addition of Revision History}
+
 
 % --- Class structure: identification part
 % ---
@@ -19,6 +22,14 @@
 \newcommand{\setprojectname}[1]{\def\@projectname{#1}}
 \newcommand{\show@projectname}{\@projectname}
 
+% Projectmembers? 
+\def\@members{None}
+\newcommand{\setmembers}[1]{\def\@members{#1}}
+\newcommand{\show@members}{\@members}
+% what role do they have (e.g., manager)?
+\newcommand{\role}[2]{#1~(#2)}
+\newcommand{\manager}[1]{\role{#1}{Manager}}
+
 % What kind of Document? 
 \def\@documentname{}
 \newcommand{\setdocumentname}[1]{\def\@documentname{#1}}
@@ -29,13 +40,10 @@
 \newcommand{\setauthorname}[1]{\def\@authorname{#1}}
 \newcommand{\show@authorname}{\@authorname}
 
-% Projectmembers? 
-\def\@members{None}
-\newcommand{\setmembers}[1]{\def\@members{#1}}
-\newcommand{\show@members}{\@members}
-% what role do they have (e.g., manager)?
-\newcommand{\role}[2]{#1~(#2)}
-\newcommand{\manager}[1]{\role{#1}{Manager}}
+% What is the document about?
+\def\@abstract{}
+\newcommand{\setabstract}[1]{\def\@abstract{#1}}
+\newcommand{\show@abstract}{\@abstract}
 
 % Which Revision is it? revisionhist currently not in use
 \def\@revisioncurr{\today, None}
@@ -84,9 +92,14 @@
   
   \vspace{10pt}
   \large\textit{\show@revisioncurr}
+  
+  \vspace{10pt}
+  \large\textbf{Abstract: }\normalsize\show@abstract
 \end{center}
 \newpage
 \setcounter{page}{1}
+\show@revisionhist
+\newpage
 \tableofcontents
 \newpage
 }{%
@@ -96,6 +109,7 @@
 % Page layout
 \RequirePackage[left=1.3in,right=1.3in,top=1.2in,bottom=1.3in]{geometry}
 \RequirePackage{graphicx}
+\RequirePackage{vHistory}
 
 \RequirePackage{fancyhdr}
 \fancypagestyle{firstpage}{%
