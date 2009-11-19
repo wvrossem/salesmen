@@ -1,6 +1,20 @@
+% Project Controls
 \setprojectname{Salesmen}
 \setdocumentname{SQAP}
 \setmembers{\manager{Nick DeCooman}, Jonathan Jeurissen, Sina Khakbaz Heshmati, Jorne Laton, Bart Maes, Patrick Provinciael, Wouter Van Rossem}
-\setrevisioncurr{\today: Finished v1.0: Support for basic templates}
 \setlogoname{salesmenlogo}
+
+% Title Controls
 \setauthorname{Patrick Provinciael}
+\setabstract{This document is an example of the softproj template. Over time it will be changed into a fully flexible file to create good looking reports for any software project.}
+
+% Revision History Controls
+\setrevisionhist{
+\begin{versionhistory}
+\vhEntry{0.5}{25-10-2009}{Patrick}{First Draft}
+\vhEntry{1.0}{30-10-2009}{Patrick}{First Finished Version}
+\vhEntry{1.1}{11-11-2009}{Patrick}{Changed base Class to report}
+\vhEntry{1.4}{19-11-2009}{Patrick}{Addition of Revision History and Abstract}
+\end{versionhistory}
+}
+\setrevisioncurr{19-11-2009: Addition of Revision History}
