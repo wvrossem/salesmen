@@ -6,7 +6,6 @@
 
                           November 20, 2009
 
-
 1     Meeting Information
 
 
@@ -45,16 +44,21 @@ Following members were present:
 
 
 There were no members absent.
+
+
+
 1.2    Revision History
 
 
-_Rev._||_Date_______________||Description_______________
+_Rev._||_Date_______________||Description____________________
 
    1.0   ||November 18, 2009 ||First draft created
 
    1.1   ||November 19, 2009 ||Revised by the QA Team
 
    1.2   ||November 19, 2009 ||Revision on HTTPS
+
+   1.3   ||November 20, 2009 ||Revision on website experience
 
 
 
@@ -109,15 +113,15 @@ the next version of the SRS.
       website.
 
 
-    o Limiting page changes
+    o Website experience
 
-      When surfing on Salesmen, a user will stay in the same page for as
+      The website will use the latest technologies in webdevelopment to im-
 
-      long as possible.  e.g.  He will not go to a new page when bidding on
+      prove and smoothen website experience. Part of this experience will be
 
-      an object. This would be a nice feature to improve ease of use of the
+      reached by limiting the number of page-jumps, smooth in/out-fading
 
-      website.
+      of website elements and more.
 
 
     o Disallowing users under 18 year
