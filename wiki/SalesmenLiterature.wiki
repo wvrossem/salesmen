@@ -10,12 +10,32 @@ This page is intended to provide definitions for terms that are often used in th
 = Terms =
 
 == Application Server ==
-== Java ==
+
+== API ==
+
+== Java Platform ==
+
+A Java platform consists of a JVM, and an API. There are three such platforms:
+  * *Java Standard Edition:* What is known to be the Java programming language.
+  * *Java Enterprise Edition:* Java SE + Enterprise-specific API; most notably transaction, and persistence.
+  * *Java Mobile Edition:* A lighter Java SE + API for mobile applications.
+
 == Jave EE ==
+
+A Java platform suited for developing distributed applications (e.g., Web applications.) The Java EE platform provides a rich set of APIs for developers of distributed applications to use, in order to make sure that their application is fault-tolerant, secure, scalable, multi-tiered.
+
 == Web Container ==
+
+In Java EE, applications are multi-tiered. One tier is the client (e.g., Web browser), another tier is the actual application that implements the business logic. These two tiers are connected using the Web tier, which is implemented by the Web container. A Web container connects other tiers by exchanging _discrete_ messages --transactions-- between them.
+
 == Servlet ==
+
 == JSP ==
+
 == JVM ==
+
+A Java Virtual Machine is a program that interprets Java bytecode, which is the result of compiling Java source code. This means that the Java programming language is both compiled and interpreted. A particular JVM only works on a particular platform as it generates machine code, which depends on a particular processor.
+
 == Scala ==
 == Groovy ==
 == Javascript ==
@@ -25,14 +45,25 @@ The Google Web Toolkit (GWT) makes it even easier to design an AJAX application 
 it makes reusing chunks of program easy. This greatly reduces the number of different technologies that you will need to master. If you know Java, then you can use your favorite IDE (we use Eclipse in this book) to write and debug an AJAX GWT application in Java. Yes, that means you can actually put breakpoints in your code and debug seamlessly from the client side to the server side. You can deploy your applications in any servlet container, create and run unit tests, and essentially develop GWT applications like any Java application.
 
 == Spring ==
+
 == Hibernate ==
+
 == Persistence ==
+
 == Web Services ==
+
 == WSDL ==
+
 == SOAP ==
+
 == REST ==
+
 == XML ==
+
 == Maven ==
+
 == Ant ==
+
 == SilkPage ==
+
 == TimeTrack ==
