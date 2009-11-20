@@ -70,5 +70,7 @@ You must not make a titlepage within this file. This will be created depending o
 This poll is to decide on chapters. If the answer is yes, the main sections will be created using _\chapter_. If, however, no is the answer, the main sections will be created using section. Current version uses chapters. The decision of the Project Manager will be decisive on a tie. Poll ends monday 23/11.
 
 *Yes: *
+
 *No: *
+
 *Neutral: *
