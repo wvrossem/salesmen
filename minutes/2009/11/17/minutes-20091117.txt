@@ -1,0 +1,308 @@
+
+                      Minutes Meeting 8
+                          Jonathan Jeurissen
+
+
+
+                          November 20, 2009
+
+
+1     Meeting Information
+
+
+Date: Tuesday, November 17, 2009
+
+Time: 15H00-17H00
+
+Place: D2.06
+
+
+1.1    Attendees
+
+
+Following members were present:
+
+
+    o Nick De Cooman
+
+
+    o Jonathan Jeurissen
+
+
+    o Sina Khakbaz Heshmati
+
+
+    o Bart Maes
+
+
+    o Jorne Laton
+
+
+    o Patrick Provinciael
+
+
+    o Wouter Van Rossem
+
+
+There were no members absent.
+1.2    Revision History
+
+
+_Rev._||_Date_______________||Description_______________
+
+   1.0   ||November 18, 2009 ||First draft created
+
+   1.1   ||November 19, 2009 ||Revised by the QA Team
+
+   1.2   ||November 19, 2009 ||Revision on HTTPS
+
+
+
+                                     1
+
+
+2     Logo
+
+
+A few logo's have been shown, but none of the current logo's were elected as
+
+the future Salesmen logo. There has been some discussion about the "men"
+
+in Salesmen, because it might be female unfriendly.  Perhaps a future logo
+
+that will suppress this undesirability will be made, but there has not been a
+
+verdict concerning this issue yet.
+
+New logo's can still be made by the team members and should be uploaded
+
+before Sunday, November 22 at 23H00.
+3     SRS
+
+
+There has not been any feedback from the client yet, so there cannot be a
+
+discussion about what the client desires just yet.
+3.1    Adaptations
+
+
+In a last review of the SRS, a few requirements were still missing.  These
+
+omissions will be shortly discussed in this paragraph and will be added to
+
+the next version of the SRS.
+
+
+    o Browser Compatibility
+
+      The Salesmen website will be compatible with the most significant mod-
+
+      ern browsers.  It will be compatible with Firefox 3.0(and higher), In-
+
+      ternet Explorer 7(and higher) and Safari 3.2(and higher).
+
+
+    o Returning after Login
+
+      A user will return to the page he was visiting after he logged on to the
+
+      website.
+
+
+    o Limiting page changes
+
+      When surfing on Salesmen, a user will stay in the same page for as
+
+      long as possible.  e.g.  He will not go to a new page when bidding on
+
+      an object. This would be a nice feature to improve ease of use of the
+
+      website.
+
+
+    o Disallowing users under 18 year
+
+      There has been decided that adding this kind of requirements (consist-
+
+      ing of rules that apply according to law) is the responsibility of the
+
+      client. The SRS is a contract. If the client wants to add these sort of
+
+      requirements, he will need to tell this. At this moment, it is not clear
+
+      if this kind of requirements need to be added to the SRS.
+
+
+
+                                     2
+
+
+4     Design
+
+
+
+4.1    Web Design
+
+
+    o Fixed width
+
+      The Salesmen website will be made with a fixed width to support most
+
+      of the monitors currently used. The width will thus be set at 950 pixels
+
+      to fit into monitors with a width of 1024 pixels. Even nettop computers
+
+      use this width.
+
+
+    o Advertising
+
+      The free space left and right of the Salesmen can be used for advertising
+
+      to earn extra money.
+
+
+    o HTTPS
+
+      As a possible measure to improve website security, the HTTPS proto-
+
+      col may be used.  However, one must take into account that this will
+
+      increase the load on the webserver.
+
+
+    o Layout
+
+      There will be a logo, a login field, a top navigation bar (My Sales-
+
+      men, Buy, Sell,etc.), a search field, sub-navigation (hierarchy), a bid
+
+      button, information about the seller, arrows for browsing through dif-
+
+      ferent items, etc.
+
+      Soon, there will be a prototype available of this design on the Google
+
+      Groups website.
+4.2    Implementation Design
+
+
+The initial class diagram for the project has been shown to the team members
+
+and shortly discussed.
+5     Conference on Tuesday, December 15
+
+
+In four weeks, there will be a conference about the progress of the project.
+
+As this is an important conference, there will be held a separate meeting
+
+on Friday, November 27, dedicated to the topics and presentation(s) on the
+
+conference. As a preparation for this meeting there will be a brainstorm on
+
+Tueday, November 24.
+
+                                     3
+
+
+6     Quality Assurance Presentation
+
+
+There has been a presentation about the different aspects of Quality As-
+
+suarance.  The topics about this presentation will be summarized in the
+
+SQAP.
+7     Tools and technologies
+
+
+At the moment, the different tools (e.g.  J2EE, Apache Tomcat, etc.)  that
+
+will be used are not well enough known by the team members.  In order
+
+to fix this issue, the Configuration Management team will provide the team
+
+members with sufficient information about these tools. This will be done by
+
+a presentation in the next meeting, as with a Wiki page that will be made
+
+concerning the available tools.  One should not rely on the expertise of an
+
+individual for using a certain tool. This is why the Wiki page will be made
+
+at least two days before the next meeting, so the team members can study
+
+and understand the terms that will be used to in the presentation.  Also,
+
+they will be able to discuss the choice of certain tools.
+8     Risk Management
+
+
+Most risks that were documented in this project are not valid risks.  Thus,
+
+the risks of this project will be reviewed.
+
+
+    o What if the Google Server does not work anymore or shuts down for a
+
+      certain period?
+
+      Solution:
+
+      Backups need to be made from all files on the SVN Server.  A script
+
+      will be made by Jorne to download all files once a day.
+
+
+    o What if there is a lack of knowledge concerning techniques or tools?
+
+      What if certain tools are difficult or completely new to team members?
+
+      Solution:
+
+      Tutorials will be made as Wiki pages. Ultimately presentations can be
+
+      given if a Wiki page is not a good option for a complete explanation.
+
+      However, a Wiki page is the first step to explaining new tools.
+
+
+    o How can the compatibility with different browsers be assured?
+
+      Solution:
+
+      There will have to be extensive testing after changes to the project.
+
+      There is however a risk that the compatibility for a certain browser
+
+
+
+                                     4
+
+
+      will be lost.  To minimize compatibility problems, standards will be
+
+      used.
+9     Next Meeting
+
+
+Date: Tuesday, November 24, 2009
+
+Time: 15H00-17H00
+
+Place: D2.10
+
+
+9.1    Agenda
+
+
+A complete list of Agenda items is available on [1].
+
+
+References
+
+
+ [1] http://code.google.com/p/salesmen/wiki/NextMeetingTopics
+
+                                     5
