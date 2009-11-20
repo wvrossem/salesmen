@@ -20,6 +20,10 @@ This page is intended to provide definitions for terms that are often used in th
 == Groovy ==
 == Javascript ==
 == GWT ==
+
+The Google Web Toolkit (GWT) makes it even easier to design an AJAX application using just the Java programming language. It is an open-source Java development framework and its best feature is that we don't have to worry too much about incompatibilities between web browsers and platforms. In GWT, we write the code in Java and then GWT converts it into browser-compliant JavaScript and HTML. This helps a lot, because we can stop worrying about modular programming. It provides a programming framework that is similar to that used by developers building Java applications using one of the GUI toolkits such as Swing, AWT, or SWT. GWT provides all the common user-interface widgets, listeners to react to events happening in the widgets, and ways to combine them into more complex widgets to do things that the GWT team may never have envisioned! Moreover,
+it makes reusing chunks of program easy. This greatly reduces the number of different technologies that you will need to master. If you know Java, then you can use your favorite IDE (we use Eclipse in this book) to write and debug an AJAX GWT application in Java. Yes, that means you can actually put breakpoints in your code and debug seamlessly from the client side to the server side. You can deploy your applications in any servlet container, create and run unit tests, and essentially develop GWT applications like any Java application.
+
 == Spring ==
 == Hibernate ==
 == Persistence ==
