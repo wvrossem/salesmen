@@ -38,6 +38,7 @@ There were no members absent.
 				\hline
 				1.0 & November 18, 2009 & First draft created \\
 				1.1 & November 19, 2009 & Revised by the QA Team \\
+				1.2 & November 19, 2009 & Revision on HTTPS \\
 			\end{tabular}		
 
 	\section{Logo}
@@ -48,12 +49,12 @@ There has not been any feedback from the client yet, so there cannot be a discus
 		\subsection{Adaptations}
 In a last review of the SRS, a few requirements were still missing. These omissions will be shortly discussed in this paragraph and will be added to the next version of the SRS.
 			\begin{itemize}
-				\item Browser Compatibility (Must have)\\
+				\item Browser Compatibility\\
 The Salesmen website will be compatible with the most significant modern browsers. It will be compatible with Firefox 3.0(and higher), Internet Explorer 7(and higher) and Safari 3.2(and higher). 
 %The support for one browser will be added as a \textit{Must have} requirement, while supporting several browsers will be a \textit{Want to have} requirement.
-				\item Returning after Login (Want to have) \\
+				\item Returning after Login \\
 A user will return to the page he was visiting after he logged on to the website. 
-				\item Limiting page changes (Nice to have) \\
+				\item Limiting page changes \\
 When surfing on Salesmen, a user will stay in the same page for as long as possible. e.g. He will not go to a new page when bidding on an object. This would be a nice feature to improve ease of use of the website.
 				\item Disallowing users under 18 year \\
 There has been decided that adding this kind of requirements (consisting of rules that apply according to law) is the responsibility of the client. The SRS is a contract. If the client wants to add these sort of requirements, he will need to tell this. At this moment, it is not clear if this kind of requirements need to be added to the SRS. 
@@ -67,7 +68,9 @@ The Salesmen website will be made with a fixed width to support most of the moni
 		\item Advertising \\
 The free space left and right of the Salesmen can be used for advertising to earn extra money.
 		\item HTTPS \\
-Every page of the website will be made using the HTTPS protocol. This will increase the load of the server, but it will also improve usability (e.g. support for staying on the same page after a login)
+		As a possible measure to improve website security, the HTTPS protocol
+		may be used. However, one must take into account that this will
+		increase the load on the webserver.
 		\item Layout \\
 There will be a logo, a login field, a top navigation bar (My Salesmen, Buy, Sell,etc.), a search field, sub-navigation (hierarchy), a bid button, information about the seller, arrows for browsing through different items, etc. \\
 Soon, there will be a prototype available of this design on the Google Groups website.
