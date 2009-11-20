@@ -1,0 +1,435 @@
+\documentclass[a4paper, 12pt]{report}
+\usepackage{ctable}
+\usepackage{url}
+\usepackage{graphicx}
+
+\title{Software Engineering Group 2 (2009-2010) \\Software Project Management Plan}
+\author{Nick De Cooman}
+\date {October 21, 2009}
+
+\begin{document}
+	
+	\maketitle
+	
+	\setcounter{tocdepth}{1}	
+	\tableofcontents
+	
+	\chapter{Introduction}
+	
+		\section{Project overview}
+		
+			The goal of this project is to design and implement the software 
+			behind an online auction website such as eBay. The codename of our project 
+			is {\emph Salesmen}. 
+
+			This project is embedded in the Software Engineering course, 
+			which is designed for senior students of Computer Science and Engineering 
+			at the Vrije Universiteit Brussel. It has a threefold purpose:
+			
+			\begin{enumerate}
+				\item Get familiar with the software development process and learn to work
+				in a team.
+				
+				\item Develop a system that supports the functionality of an auction website. 
+				This means that a user will be able to sell or buy items in an online auction. 
+				
+				\item Develop and maintain a general website on our project. Up to date 
+				versions of all documents such as minutes, timesheets and deliverables will be 
+				available at any time. This site will be hosted at
+				\url{http://wilma.vub.ac.be/~se2_0910/}.
+			\end{enumerate}	
+			
+			The software of the application will be written in Java and 
+			distributed under an Open Source license.
+			
+		\section{Definitions and acronyms}
+		
+			\begin{tabular}{l l}
+				
+				\textbf{SCMP} & Software Configuration Management Plan \\
+				\textbf{SDD} & Software Design Plan \\
+				\textbf{SPMP} & Software Project Management Plan \\
+				\textbf{SQAP} & Software Quality Assurance Plan \\
+				\textbf{SRS} & Software Requirements Specification \\
+				\textbf{STD} & Software Test Document \\
+				
+			\end{tabular}	
+		
+		\section{Project deliverables}
+		\label{deadlines}
+			\begin{tabular}{l l}
+				
+				\FL Deliverable & Available on
+				\ML Minutes & 3 days after meeting
+				\NN Timesheet & Every Monday before 12h00
+				\NN SPMP & Draft will be ready on October 26, 2009
+				\NN SCMP & Draft will be ready on November 2, 2009
+				\NN SRS & Draft will be ready on November 2, 2009
+				\NN SQAP & Draft will be ready on November 23, 2009
+				\NN SDD & Draft will be ready on November 16, 2009
+				\NN STD & Draft will be ready on November 30, 2009
+			\end{tabular}	
+		
+		\section{Reference materials}
+		
+			\begin{itemize}
+			
+				\item 
+					\url{http://tinf2.vub.ac.be/~dvermeir/courses/software_engineering/slides.pdf}
+			
+				\item Eric J. Braude, \emph{Software Engineering -
+				An Object-Oriented Perspective}, John Wiley \& Sons, 2001. ISBN 0-471-32208-3.
+			
+			\end{itemize}	
+		
+		\section{Revision history}
+		
+			\begin{tabular}{l l l l}
+				\\
+				\FL Version & Date & Name & Description
+				\ML 1 & 21/10/09 & Nick De Cooman & Initial draft
+				\\
+			\end{tabular}	
+		
+		
+		
+	\chapter{Project Organization}
+	
+		\section{Process model}
+		
+		The chosen proces model will be the spiral model, with 2 iterations. Unlike
+		the waterfall process, we will be able to show partial versions to the customer 
+		for feedback, reducing risks such as faulty requirements. 
+		
+		\begin{figure}[h]
+			\centering
+			\includegraphics[width=12cm]{proces}
+			\caption{A general example of the spiral model with 2 iterations.}
+		\end{figure}
+		
+		In our case, this will be defined as: \\
+		
+		\begin{tabular}{l l l}
+			\FL Workflow & Completion date & Deliverable to customer
+			\ML \textbf{Flow 1}
+			\NN Requirements & 09/11/09 & ??/11/09
+			\NN Design & 23/11/09
+			\NN Implementation & 07/12/09
+			\NN Testing & 16/12/09 & 2*/12/09
+			\NN
+			\NN \textbf{Flow 2}
+			\\ Will be defined later. \\
+		\end{tabular} 	
+		
+		\section{Organizational structure}
+		\label{sec:struc}
+		
+		The structure of our team will be organised as followed:
+		
+		\subsection{Project Manager}
+			\begin{itemize}
+				\item Head of the project team
+				\item Deliver the SPMP
+				\item Risk Analysis
+				\item Keep track of the project's progress
+				\item Manage timesheets
+				\item Prepare and chair meetings
+				\item Spokesman to organizational boundaries and interfaces
+				\item Motivate and improve internal collaboration
+			\end{itemize}
+			
+		\subsection{Project Secretary}
+			\begin{itemize}
+				\item Resume meetings
+				\item Deliver minutes
+			\end{itemize}
+			
+		\subsection{Configuration Manager}
+			\begin{itemize}
+				\item Deliver the SCMP
+				\item Manage revision control system
+				\item Install and maintain used tools
+				\item Make backups of all project documents
+			\end{itemize}
+			
+		\subsection{Quality Assurance Manager}
+			\begin{itemize}
+					\item Head of quality team
+					\item Deliver SQAP and STD
+					\item Design and implement test framework
+					\item Coordinate testing as defined in STD
+					\item Verify the general quality of the product
+					\item Verify the quality of documents
+			\end{itemize}
+			
+		\subsection{Requirements Manager}
+			\begin{itemize}
+				\item Deliver SRS
+				\item Check whether the requirements are implemented
+				\item Look for extra functional requirements
+				\item Interview customer related to the requirements
+				\item Present final requirements to the customer
+			\end{itemize}
+			
+		\subsection{Design Manager}	
+			\begin{itemize}
+				\item Head of design team
+				\item Deliver SDD based on the SRS
+				\item Manage design of the system
+				\item Check whether implementation is based on the SDD
+				\item Design and manage database according to SRS and SQAP
+				\item Present design to the customer
+			\end{itemize}	
+			
+		\subsection{Implementation Manager}
+			\begin{itemize}
+				\item Head of implementation management
+				\item Manage the integration of different parts of the code
+				\item Track errors
+				\item Define implementation proces based on the SDD	
+				\item Manage documentation of code
+			\end{itemize}
+			
+		\subsection{Webmaster}
+			\begin{itemize}
+				\item Develop and maintain project website
+				\item Upload documents, after approval of the project manager
+			\end{itemize}	
+		
+		\section{Organizational boundaries and interfaces}
+		
+		The external communication with the customer will only happen via the project
+		manager, the requirements manager and the design manager. The project manager reports
+		major problems, progress status and other organisatorial issues. 
+		The requirements manager discusses the functionality of the system and 
+		the design manager will present the design of the system to the
+		customer.  
+		
+		\section{Project responsibilities}
+		
+			The responsibilities, as defined in \ref{sec:struc}, will be 
+			associated to the following persons:
+		
+			\begin{tabular}{l l l}
+				\\
+				\FL Role & Effective & Assistant
+				\ML Project Manager & Nick & Patrick
+				\NN Project Secretary & Jonathan & Wouter
+				\NN Configuration Manager & Jorne & Sina
+				\NN Quality Assurance Manager & Patrick & Bart
+				\NN Requirements Manager & Wouter & Jonathan
+				\NN Design Manager & Bart & Nick
+				\NN Implementation Manager & Sina & Jorne
+				\NN Webmaster & Sina & Wouter \\
+				\\
+			\end{tabular}
+			\\
+			However, this does not mean that a person is only responsible
+			for his/her own function. Every team member can be asked for assistance in all 
+			processes in function to achieve the end goal.
+			
+			A person responsible for creating a deliverable also needs to be aware
+			of the fact that
+			
+			\begin{itemize}
+				
+				\item Documents will be writen in \LaTeX-format, using the provided template.
+				
+				\item Documents need to be ready in time (as defined in \ref{deadlines}), and
+				sent to the project manager for approval. 
+				
+				\item Documents needs to be up-to-date during the entire project. 
+				
+			\end{itemize}
+			
+	\chapter{Managerial process}
+		
+		\section{Objectives and priorities}
+			
+			During the development of the system, the following objectives should be kept
+			in mind:
+			
+			\begin{enumerate}
+				
+				\item The project should meet the requirements of the customer
+				\item Deadlines have to be respected
+				\item Reusability and extensibility of the software is very important
+				\item The system should be stable
+				
+			\end{enumerate}	
+			
+		\section{Assumptions, dependencies and constraints}
+			
+			\begin{itemize}
+				
+				\item No assumptions were made.
+				
+				\item Dependencies \\
+ 					  For the project to succeed, it will depend on
+					  the knowledge and the motivation of the team members	
+				
+				\item Constraints:
+				\begin{itemize}
+					\item Only open-source software is to be used
+					\item The product should run in a Linux environment
+					\item The product should run on the Wilma server
+				\end{itemize}
+				
+			\end{itemize}	
+			
+		\section{Risk Management}
+			
+			Developing software introduces a lot of risks. Every meeting these risks will
+			be discussed in order to reduce or eliminate them. 
+			
+			\subsection{Google goes down for a certain period}
+			\textbf{Criticality}: ++ \\
+			We need to make backups of our files and documentation. This will be 
+			performed by the configuration team.
+			
+			\subsection{Someone doesn't spend enough time on his job}
+			\textbf{Criticality}: ++++ \\
+			At first this will be discussed at the next meeting and a suggested action 
+			will be given. Thereafter a warning will be given. Possibly there will be 
+			further actions. If it’s absolutely necessary, a member can be dismissed.
+			
+			\subsection{Deadline will not be achieved}
+			\textbf{Criticality}: ++++ \\
+			Not achieving a deadline, can bring the timeschedule in danger. Because of
+			this a team member should report this to the project manager
+			who can reorganise the tasks, as soon as he/she perceives a delay.  
+			
+			\subsection{Somebody becomes ill}
+			\textbf{Criticality}: ++++ \\
+			This risk has already been considered in the beginning of this 
+			project. This is why there is an Assistant(formerly called Backup) for 
+			every Management position. If a leader or manager gets ill, the assistant 
+			of that function should be able to fully understand his 
+			function and replace that leader or manager, for a certain period of time.
+			
+			\subsection{The client can't make an appointment before the deadline}
+			\textbf{Criticality}: + \\
+			The client should be contacted as soon as possible. \emph{Update: The client has been
+			contacted on Friday, October 23, 2009 and an appointment has been made on Monday,
+			October 26, 2009.}
+			
+			\subsection{The wrong questions have been asked to the client}
+			\textbf{Criticality}: +++ \\
+			There should be at least two appointments with the client before the first version of
+			the SRS becomes available.
+			
+			\subsection{The requirements are misunderstood or misinterpreted}
+			\textbf{Criticality}: +++ \\
+			The interview with the client will be recorded and will be made available to all team
+			members. This interview will be relistened by the Quality Assurance manager to reduce
+		 	misinterpretations. In order to avoid ambiguity, there will be a presentation of the
+		 	requirements during another meeting with the client.			
+				
+		\section{Monitoring and controlling mechanisms}	
+			
+			\subsection{Meetings}
+			Meetings will be held every week. The topics to handle at the meeting will be defined
+			in an agenda and will be sent to every team member before the start of the
+			meeting. Minutes will summarize the meetings and will be available on the project 
+			website within 3 days after the meeting.
+			
+			Should one not be able to attend the meeting, he/she is requested to inform
+			the project manager within 3 hours before the start of the meeting.
+			
+			\subsection{Timesheets}
+			A global timesheet will be available every Monday before 12H00. Team 
+			members will need to submit their timesheet on Sunday before 23h59
+			for approval by the team manager.
+			
+	\chapter{Technical Process}
+	
+			\section{Methods, tools and techniques}
+			
+			\begin{itemize}
+				
+				\item Google Code \\
+				There has been chosen for Google Code because it has some 
+				handy features:
+				
+				\begin{itemize}
+			 		\item Revision control system: Subversion in our case, see below.
+					\item Issue tracker
+					\item Wiki (is sometimes handy e.g. for meeting agenda).
+					\item File download server (for our software and document releases).
+				\end{itemize}
+
+				\item Subversion \\
+				This is a centralized version control system chosen for the 
+				following reasons:
+				
+				\begin{itemize}
+					\item It is easy to refactor the source code structure, 
+					while preserving files' history.
+					\item The whole repository has a single revision that is 
+					incremented after each commit.
+				\end{itemize}
+
+				\item Eclipse \\
+				Eclipse is a software development environment comprising an IDE and 
+				a plug-in system to extend it. It is used to develop applications in 
+				Java. It was decided to work with Eclipse because 
+				it has a very userfriendly interface and because of its popularity. Also it's 
+				known by most of the team members.
+				
+				\item \LaTeX \\
+				 \LaTeX{} has been chosen to document this project because it's 
+				internationally known and commonly used. Also, a few members 
+				were interested in learning this language.
+				
+			\end{itemize}	
+			
+			More specific tools will be discussed later.
+			
+			\section{Software documentation}
+			
+			See the SQAP.
+			
+			\section{Project support functions}
+			
+			Throughout the entire project, Joeri De Koster and Dirk Vermeir will 
+			be available for any help. For Wilma related problems, Dirk Van Deun 
+			can be contacted.
+	
+	\chapter{Work packages, schedule and budget}
+	
+			\section {Work packages}
+			
+			All costs are expressed in man-hours. \\
+			
+			\begin{tabular}{l l l}
+				\FL Package & Deliverable & Total estimated time
+				\ML Organizational & Meetings (+/- 30) & 210 Hr
+				\NN & Timesheets & 25 Hr
+				\NN & SPMP & 30 Hr
+				\NN & SCMP & 20 Hr
+				\NN Analysis & SRS & 40 Hr
+				\NN Design & SDD & 50 Hr
+				\NN Implementation & Source code & 250 Hr
+				\NN Quality Assurance & SQAP & 100 Hr
+				\NN & STD & 150 Hr
+			\end {tabular}
+			
+			
+			Please note that the numbers above are just an estimation and will become more
+			precize after every stage in the project.
+			
+			\section {Dependencies}
+			
+			At this time, it is only possible to provide 1 general dependency :
+			
+			\begin{itemize}
+				
+				\item Iteration 2 depends on the completion of iteration 1.
+				
+			\end{itemize}	
+				
+			
+			
+			
+	
+\end{document}
