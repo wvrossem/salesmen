@@ -64,6 +64,7 @@ You must not make a titlepage within this file. This will be created depending o
  * Additional possibilities, depending on the documentname. (Patrick Provinciael)
  * Declaration of several often used packages. (Patrick Provinciael)
  * Making setrevisioncurr obsolete by filtering this out of the Revision History. (Patrick Provinciael)
+ * Addition of an easy and consistent referencing system. (Patrick Provinciael)
 
 = Polls =
 == Chapters: Yes or No ==
