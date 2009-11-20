@@ -5,18 +5,37 @@
   <updated>2009-11-16</updated>
   <person>
     <name>Nick De Cooman</name>
-    
-	<timesheet xmlns="http://purl.org/net/timetrack" xml:base="../default/timesheet.xml">
-  <item duration="PT0M">
-    <desc>
-      This is a fallback timesheet, meaning that the
-      developer has not submitted their timesheet yet.
-      Please check back later to see this developer's 
-      timesheet.
-    </desc>
+    <timesheet xmlns="http://purl.org/net/timetrack">
+	
+	<item duration="PT15M">
+    <desc>Prepare meeting on Tuesday 2009/11/10</desc>
   </item>
+	
+  <item duration="PT2H00M">
+    <desc>Meeting on Tuesday 2009/11/10.</desc>
+    <refs>
+      <ref>http://wilma.vub.ac.be/~se2_0910/docs/minutes/2009/11/10/minutes-20091110.pdf</ref>
+    </refs>
+  </item>
+  
+  <item duration="PT20M">
+    <desc>Check requirements</desc>
+  </item>
+
+  <item duration="PT20M">
+    <desc>Checking timesheets</desc>
+   <refs>
+      <ref>http://code.google.com/p/salesmen/source/detail?r=336</ref>
+	  <ref>http://code.google.com/p/salesmen/source/detail?r=337</ref>
+	  <ref>http://code.google.com/p/salesmen/source/detail?r=338</ref>
+    </refs>
+  </item>
+
+  <item duration="PT15M">
+    <desc>Administration and Communication</desc>
+  </item>
+
 </timesheet>
-      
   </person>
   <person>
     <name>Jonathan Jeurissen</name>
@@ -135,7 +154,7 @@
     </refs>
   </item>
 
-  <item duration="PT40M">
+  <item duration="PT30M">
     <desc>Team communication and paperwork.</desc>
   </item>
 
@@ -145,8 +164,8 @@
     <name>Jorne Laton</name>
     <timesheet xmlns="http://purl.org/net/timetrack">
 	
-  <item duration="PT1H">
-    <desc>Updating myself by reading reports on last week.</desc>
+  <item duration="PT30M">
+    <desc>Reading report of last week.</desc>
     <refs>
       <ref>http://wilma.vub.ac.be/~se2_0910/docs/minutes/2009/11/10/minutes-20091110.pdf</ref>
     </refs>
@@ -181,18 +200,44 @@
   </person>
   <person>
     <name>Patrick Provinciael</name>
-    
-	<timesheet xmlns="http://purl.org/net/timetrack" xml:base="../default/timesheet.xml">
-  <item duration="PT0M">
-    <desc>
-      This is a fallback timesheet, meaning that the
-      developer has not submitted their timesheet yet.
-      Please check back later to see this developer's 
-      timesheet.
-    </desc>
+    <timesheet xmlns="http://purl.org/net/timetrack">
+  <item duration="PT25M">
+    <desc>Reviewed SCMP for Quality assurance.</desc>
+    <refs>
+      <ref>http://code.google.com/p/salesmen/source/browse/trunk/docs/en/scmp/src/tex/scmp.tex</ref>
+    </refs>
+  </item>
+  <item duration="PT30M">
+    <desc>Prepared a small presentation regarding QA.</desc>
+  </item>
+  <item duration="PT2H">
+    <desc>Meeting on Tuesday 2009/11/10.</desc>
+    <refs>
+      <ref>http://wilma.vub.ac.be/~se2_0910/docs/minutes/2009/11/10/minutes-20091110.pdf</ref>
+    </refs>
+  </item>
+  <item duration="PT10M">
+    <desc>Reviewed Minutes of Tuesday 2009/11/10 for Quality Assurance.</desc>
+    <refs>
+      <ref>http://wilma.vub.ac.be/~se2_0910/docs/minutes/2009/11/10/minutes-20091110.pdf</ref>
+    </refs>
+  </item>
+  <item duration="PT15M">
+    <desc>Worked on LaTeX template.</desc>
+    <refs>
+      <ref>http://code.google.com/p/salesmen/source/browse/#svn/trunk/docs/en/templates/latex/2009</ref>
+    </refs>
+  </item>
+  <item duration="PT25M">
+    <desc>Reviewed SRS for Quality assurance.</desc>
+    <refs>
+      <ref>http://code.google.com/p/salesmen/source/browse/#svn/trunk/docs/en/SRS/src/SRS.pdf</ref>
+    </refs>
+  </item>
+  <item duration="PT30M">
+    <desc>Administration and Communication.</desc>
   </item>
 </timesheet>
-      
   </person>
   <person>
     <name>Wouter Van Rossem</name>
