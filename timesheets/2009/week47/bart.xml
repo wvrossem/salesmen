@@ -1,0 +1,26 @@
+<?xml version='1.0'?>
+<timesheet xmlns="http://purl.org/net/timetrack">
+	
+  <item duration="PT2H">
+    <desc>Meeting on Tuesday 2009/11/17.</desc>
+    <refs>
+      <ref>http://wilma.vub.ac.be/~se2_0910/docs/minutes/2009/11/17/minutes-20091117.pdf</ref>
+    </refs>
+  </item>
+  
+  <item duration="PT1H45M">
+    <desc>Think about/create & edit logo proposals</desc>
+    <refs>
+      <ref>http://code.google.com/p/salesmen/source/browse/#svn/attic/2009/11/logo</ref>
+    </refs>
+  </item>
+    
+  <item duration="PT3H">
+    <desc>Create draft class-diagram (+DB table diagram) + website prototype</desc>
+  </item>
+  
+   <item duration="PT30M">
+    <desc>Administration and Communication</desc>
+  </item>
+
+</timesheet>
