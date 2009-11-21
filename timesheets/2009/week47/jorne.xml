@@ -1,7 +1,7 @@
 <?xml version='1.0'?>
 <timesheet xmlns="http://purl.org/net/timetrack">
 	
-  <item duration="PT2H00M">
+  <item duration="PT2H">
     <desc>Meeting on Tuesday 2009/11/17.</desc>
     <refs>
       <ref>http://wilma.vub.ac.be/~se2_0910/docs/minutes/2009/11/17/minutes-20091117.pdf</ref>
@@ -9,7 +9,7 @@
   </item>
   
   <item duration="PT2H">
-	<desc>Researching and testing ways to backup remote svn repository.</desc>
+  	<desc>Researching ways to create and synchronize local backup with remote svn repository.</desc>
 	<refs>
 		<ref>http://svnbook.red-bean.com</ref>
 		<ref>http://wiki.archlinux.org/index.php/Subversion_backup_and_restore</ref>
@@ -17,7 +17,7 @@
 	</refs>
   </item>	
 
-  <item duration="PT10M">
+  <item duration="PT15M">
     <desc>Administration and Communication</desc>
   </item>
 
