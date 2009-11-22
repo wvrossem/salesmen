@@ -5,14 +5,15 @@
 
 === Meeting 9: Tuesday 23 November 2009, 15:00===
  
- * Logo
- * Template
+ * Discussing tools
+ * Logo & template
  * Design
- * SPMP
- * SRS
- * SCMP
- * SQAP
  * Brainstorming about conference
+ * SPMP: new deadlines
+ * SRS: specify new and existing requirements 
+ * SCMP
+ * SQAP: conventions
+
 
 === Meeting 8: Tuesday 17 November 2009, 15:00===
  
