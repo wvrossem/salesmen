@@ -563,6 +563,19 @@
 				\item[Description] User can receive an e-mail when he or she is overbid,
 					when an auction is almost done, with recommended auctions for the user
 			\end{description}
+\section{Non-functional Requirements}
+	\subsection{Browser compatibility}
+		\begin{description}
+			\item[Requirement ID] 39
+			\item[Priority] Must have
+			\item[Description] The site should be fully compatible with the three most popular browsers. At the time of writing these are: Internet Explorer (version 7 or higher), Firefox (version 3 or higher) and Safari (version 4 or higher)\cite{browsers}.
+		\end{description}
+	\subsection{Secure connection}
+		\begin{description}
+			\item[Requirement ID] 40
+			\item[Priority] Must have
+			\item[Description] Whenever sensitive transactions are made, the HTTPS protocol should be used.
+		\end{description}
 %\section{Performance Requirements}
 \section{Database Requirements}
 	All data will be saved in the database. The database must always remain consistent. There will be many concurrent request 
@@ -605,7 +618,7 @@
 		\hline  CAPTCHA & View transaction &  \\ 
 		\hline  Limited login attempts & Pay transaction  &  \\ 
 		\hline  Encrypted password & Rate transaction  &  \\
-		\hline   & Retract bid  &  \\
-		\hline   & Basic e-mail notification &  \\
+		\hline  Browser compatibility & Retract bid  &  \\
+		\hline  Secure connection & Basic e-mail notification &  \\
 		\hline
 	\end{tabular} 
