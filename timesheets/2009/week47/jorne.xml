@@ -9,22 +9,21 @@
   </item>
   
   <item duration="PT2H">
-  <desc>Researching ways to create and synchronize local backup with remote svn repository.</desc>
-  <refs>
-  <ref>http://svnbook.red-bean.com</ref>
-  <ref>http://wiki.archlinux.org/index.php/Subversion_backup_and_restore</ref>
-  <ref>http://aquariusoft.org/page/linux/svnsync</ref>
-  </refs>
+	<desc>Researching ways to create and synchronize local backup with remote svn repository.</desc>
+	<refs>
+		<ref>http://svnbook.red-bean.com</ref>
+		<ref>http://wiki.archlinux.org/index.php/Subversion_backup_and_restore</ref>
+		<ref>http://aquariusoft.org/page/linux/svnsync</ref>
+	</refs>
   </item>
 
   <item duration="PT2H">
-  <desc>Reading and comparing SCMPs of other groups, writing report.</desc>
-  <refs>
-  <ref>http://wilma.vub.ac.be/~se1_0910/verslagenrepo/SCMP/scmp.pdf</ref>
-  <ref>http://wilma.vub.ac.be/~se3_0910/files/SCMP/SCMP.pdf</ref>
-  </refs>
+	<desc>Reading and comparing SCMPs of other groups, writing report.</desc>
+	<refs>
+		<ref>http://wilma.vub.ac.be/~se1_0910/verslagenrepo/SCMP/scmp.pdf</ref>
+		<ref>http://wilma.vub.ac.be/~se3_0910/files/SCMP/SCMP.pdf</ref>
+	</refs>
   </item>
-
 
   <item duration="PT20M">
     <desc>Administration and Communication</desc>
