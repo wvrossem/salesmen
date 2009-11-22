@@ -3,6 +3,7 @@
 \usepackage{url}
 \usepackage{graphicx}
 \usepackage{amsmath}
+\usepackage{eurosym}
 
 \title{Software Engineering Group 2 (2009-2010) \\Software Project Management Plan}
 \author{Nick De Cooman}
@@ -54,7 +55,7 @@
 			
 		\end{itemize}	
 		
-		All of those documents will be available written in English on our website.
+		All of those documents will be available in English on our website.
 	
 		
 		\section{Reference materials}
@@ -89,9 +90,11 @@
 				\\
 				\FL Version & Date & Name & Description
 				\ML 0.1 & 21/10/09 & Nick De Cooman & Initial draft
-				\NN 0.2 & 22/10/09 & Nick De Cooman & Revision after quality control
-				\NN 1.0 & 12/11/09 & Nick De Cooman & Revision including customer's comments
-				\NN 1.1 & 20/11/09 & Nick De Cooman & Adding estimation of costs
+				\NN 0.11 & 22/10/09 & Nick De Cooman & Revision after quality control
+				\NN 0.2 & 12/11/09 & Nick De Cooman & Revision including customer's comments
+				\NN 0.21 & 20/11/09 & Nick De Cooman & Adding estimation of costs
+				\NN 0.22 & 22/11/09 & Nick De Cooman & 	- Revision on process model 
+				\NN & & &								- Adding real costs
 				\\
 			\end{tabular}	
 		
@@ -105,27 +108,11 @@
 		the waterfall process, we will be able to show partial versions to the customer 
 		for feedback, reducing risks such as faulty requirements. 
 		
-		\begin{figure}[h]
-			\centering
-			\includegraphics[width=12cm]{proces}
-			\caption{A general example of the spiral model with 2 iterations.}
-		\end{figure}
+		After the first iteration the application will consists of some basic functionality.
+		More advanced features will be implemented during the second iteration. 
 		
-		In our case, this will be defined as: \\
-		
-		\begin{tabular}{l l l}
-			\FL Workflow & Completion date & Deliverable to customer
-			\ML \textbf{Flow 1}
-			\NN Requirements & 09/11/09 & ??/11/09
-			\NN Design & 23/11/09
-			\NN Implementation & 07/12/09
-			\NN Testing & 16/12/09 & 2*/12/09
-			\NN
-			\NN \textbf{Flow 2}
-			\\ Will be defined later. \\
-		\end{tabular} 
-		
-		A more specific planning will be described in section XXXX	
+		A detailed planning of this process can be found in section \ref{planning}.
+			
 		
 		\section{Organizational structure}
 		\label{sec:struc}
@@ -420,7 +407,34 @@
 			
 			\section{Costs}
 			
-			\subsection{Estimation}
+			\subsection{Real costs}
+			
+			Using timesheets enables us to track the real costs of this project. Off course,
+			this is only a measure and it does not cover some hidden costs that can occur during
+			the development.
+			
+			Assume 15\euro will be charged per hour for each team member. In that case, the total
+		 	cost of this project up to now can be seen in table \ref{realcosts}.
+			
+			
+			\begin{table}
+				\begin{center}
+			\begin{tabular}{l l l}
+				\FL Week & Total hours & Total Cost
+				\ML Week 42 & 43 hours & 645\euro 
+				\NN Week 43 & 63 hours & 945\euro 
+				\NN Week 44 & 36 hours & 540\euro 
+				\NN Week 45 & 60 hours & 900\euro 
+				\NN Week 46 & 28 hours & 420\euro 
+				\ML \textbf{TOTAL} & \textbf{230 hours} & \textbf{3450\euro} 
+				\LL
+			\end{tabular}
+				\end{center}
+				\caption{Real costs up to now based on timesheets}
+				\label{realcosts}
+			\end{table}
+			
+			\subsection{Estimation of effort}
 			
 			To calculate an estimation of costs, the COCOMO algorithm developed by Barry Boehm
 			will be used. Depending on the number of lines of code, the costs and efforts of this
@@ -480,10 +494,7 @@
 				\[ E = 7 \textrm{ people} \times \frac{27 \textrm{ weeks}}{4,3 \textrm{ weeks/months}} \approx 43,95 \textrm{ man-months} \] 
 			
 			This means that we have more time to realise the project than needed
-			according to the estimation. 
-			
-			\subsection{Real costs}
-			
+			according to the estimation.
 			
 			
 			\section {Dependencies}
@@ -498,7 +509,7 @@
 			
 			
 			\section{Planning}	
-				
+				\label{planning}
 			
 			
 			
