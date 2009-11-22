@@ -95,6 +95,7 @@
 				\NN 0.21 & 20/11/09 & Nick De Cooman & Adding estimation of costs
 				\NN 0.22 & 22/11/09 & Nick De Cooman & 	- Revision on process model 
 				\NN & & &								- Adding real costs
+				\NN 0.23 & 23/11/09 & Nick De Cooman & 	Adding Gannt chart 
 				\\
 			\end{tabular}	
 		
@@ -278,16 +279,16 @@
 			
 			\subsection{Google goes down for a certain period}
 			\textbf{Criticality}: + \\
-			We need to make backups of our files and documentation. This will be 
+			We need to make daily backups of our files and documentation. This will be 
 			performed by the configuration team.
 			
 			
 			\subsection{Lack of knowledge of certain tools or mechanisms}
 			\textbf{Criticality}: ++++ \\
 			Some tools and mechanisms will be completely new to some team members which can
-			results in a lack of knowledge and inefficiency. Initially, tutorials will be made
-		    as Wiki-pages. Ultimately presentations can be given if the subject is too complex or
-		 	if it demands a complete explanation. 
+			results in a lack of knowledge and inefficiency. To prevent this, tutorials will be
+			made as Wiki-pages. Moreover, presentations can be given if the subject is 
+			too complex or if it demands a complete explanation. 
 			
 			\subsection{Somebody becomes ill}
 			\textbf{Criticality}: +++ \\
@@ -302,7 +303,7 @@
 			impact on the project, the cost of disposal and the priority of it. 
 			This last one will be calculated as follows :
 			\begin{center}
-			$ priority = (11 - change) . (11 - effect) . disposal $
+			$ priority = (11 - change) \cdot (11 - effect) \cdot disposal $
 			\end{center}
 			The lower the priority, the most impact it has on the project. 
 			
@@ -413,7 +414,7 @@
 			this is only a measure and it does not cover some hidden costs that can occur during
 			the development.
 			
-			Assume 15\euro will be charged per hour for each team member. In that case, the total
+			Assume \euro15 will be charged per hour for each team member. In that case, the total
 		 	cost of this project up to now can be seen in table \ref{realcosts}.
 			
 			
@@ -489,7 +490,7 @@
 			realise our project in 9,06 months. 
 			
 			In our case however, we can rely on 7 people. Assuming we will have 27 weeks in order
-			to achieve our goals, and a month accounts 4,3 weeks, the total development time
+			to achieve our goals, and a month accounts 4.3 weeks, the total development time
 			can be calculated as:
 				\[ E = 7 \textrm{ people} \times \frac{27 \textrm{ weeks}}{4,3 \textrm{ weeks/months}} \approx 43,95 \textrm{ man-months} \] 
 			
@@ -510,6 +511,8 @@
 			
 			\section{Planning}	
 				\label{planning}
+				
+				\includegraphics[angle=90, height=20cm]{Gannt.jpg}
 			
 			
 			
