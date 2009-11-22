@@ -1,0 +1,19 @@
+% Project Controls
+\setprojectname{Salesmen}
+\setdocumentname{SQAP}
+\setmembers{\manager{Nick DeCooman}, Jonathan Jeurissen, Sina Khakbaz Heshmati, Jorne Laton, Bart Maes, Patrick Provinciael, Wouter Van Rossem}
+%\setlogoname{salesmenlogo}
+
+% Title Controls
+\setauthorname{Patrick Provinciael}
+\setabstract{This document details the Software Quality Assurance Plan for the Salesmen Project. This project is done in function of group 2 of the course Software Engineering at the Vrije Universiteit Brussel.}
+
+% Revision History Controls
+\setrevisionhist{
+\begin{versionhistory}
+\vhEntry{0.5}{18-11-2009}{Patrick}{First Draft}
+\vhEntry{0.7}{19-11-2009}{Patrick}{Minor Additions}
+\vhEntry{0.8}{21-11-2009}{Patrick}{Remarks by Nick De Cooman}
+\end{versionhistory}
+}
+\setrevisioncurr{18-11-2009: First Draft}
