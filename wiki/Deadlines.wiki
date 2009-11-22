@@ -1,5 +1,5 @@
+#summary Deadlines of documents and planning
 #labels deadlines,planning
-# Deadlines of documents and planning
 
 =Deadlines and Planning=
 
