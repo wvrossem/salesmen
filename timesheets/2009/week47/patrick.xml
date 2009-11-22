@@ -1,0 +1,27 @@
+<?xml version='1.0'?>
+<timesheet xmlns="http://purl.org/net/timetrack">
+  <item duration="PT2H">
+    <desc>Meeting on Tuesday 2009/11/17.</desc>
+    <refs>
+      <ref>http://wilma.vub.ac.be/~se2_0910/docs/minutes/2009/11/17/minutes-20091117.pdf</ref>
+    </refs>
+  </item>
+  <item  duration="PT10M">
+    <desc>Reviewed Minutes of Tuesday 2009/11/17 for Quality Assurance.</desc>
+    <refs>
+      <ref>http://wilma.vub.ac.be/~se2_0910/docs/minutes/2009/11/17/minutes-20091117.pdf</ref>
+    </refs>
+  </item>
+  <item duration="PT30M">
+    <desc>Worked on LaTeX template.</desc>
+    <refs>
+      <ref>http://code.google.com/p/salesmen/source/browse/#svn/trunk/docs/en/templates/latex/2009</ref>
+    </refs>
+  </item>
+  <item duration="PT10H">
+    <desc>Written the SQAP.</desc>
+  </item>
+  <item duration="PT30M">
+    <desc>Administration and Communication.</desc>
+  </item>
+</timesheet>
