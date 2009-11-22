@@ -17,7 +17,7 @@ This page is intended to provide definitions for terms that are often used in th
 
 A Java platform consists of a JVM, and an API. There are three such platforms:
   * *Java Standard Edition:* What is known to be the Java programming language.
-  * *Java Enterprise Edition:* Java SE + Enterprise-specific API; most notably transaction, and persistence.
+  * *Java Enterprise Edition (= Java EE) :* Java SE + Enterprise-specific API; most notably transaction, and persistence.
   * *Java Mobile Edition:* A lighter Java SE + API for mobile applications.
 
 == Jave EE ==
