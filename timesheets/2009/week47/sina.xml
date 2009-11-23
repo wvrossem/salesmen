@@ -1,0 +1,56 @@
+<?xml version='1.0'?>
+<timesheet xmlns="http://purl.org/net/timetrack">
+
+  <item duration="PT2H">
+    <desc>Meeting on Tuesday 2009/11/17.</desc>
+    <refs>
+      <ref>http://wilma.vub.ac.be/~se2_0910/docs/minutes/2009/11/17/minutes-20091117.pdf</ref>
+    </refs>
+  </item>
+
+  <item duration="PT15M">
+    <desc>Published the minutes of the 2009/11/17 meeting.</desc>
+    <refs>
+      <ref>http://code.google.com/p/salesmen/source/detail?r=367</ref>
+      <ref>http://code.google.com/p/salesmen/source/detail?r=366</ref>
+    </refs>
+  </item>
+
+  <item duration="PT40M">
+    <desc>Started the Salesmen Literature document.</desc>
+    <refs>
+      <ref>http://code.google.com/p/salesmen/source/detail?r=364</ref>
+      <ref>http://code.google.com/p/salesmen/source/detail?r=346</ref>
+    </refs>
+  </item>
+
+  <item duration="PT30M">
+    <desc>
+      Published the developers' timesheets for the 46th week of 2009.
+    </desc>
+    <refs>      
+      <ref>http://code.google.com/p/salesmen/source/detail?r=329</ref>
+      <ref>http://code.google.com/p/salesmen/source/detail?r=331</ref>
+    </refs>
+  </item>
+
+  <item duration="PT4H30M">
+    <desc>
+      Installed and configured Java EE 6, NetBeans 6.7, and Glassfish v3.
+    </desc>
+  </item>
+
+  <item duration="PT3H">
+    <desc>
+      Drank my first cup of Java EE.
+    </desc>
+    <refs>
+      <ref>http://docs.sun.com/app/docs/doc/820-7759</ref>
+    </refs>
+  </item>
+
+  <item duration="PT30M">
+    <desc>Administration and Communication</desc>
+  </item>
+
+</timesheet>
