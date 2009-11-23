@@ -1,0 +1,238 @@
+<?xml version="1.0"?>
+<timesheets xmlns="http://purl.org/net/timetrack" xmlns:xi="http://www.w3.org/2001/XInclude" from="2009-11-16" to="2009-11-23" xml:id="week47-2009">
+  <title>VUB - SE2 Timesheets for the 47th Week of 2009</title>
+  <published>2009-11-22</published>
+  <updated>2009-11-22</updated>
+  <person>
+    <name>Nick De Cooman</name>
+    
+	<timesheet xmlns="http://purl.org/net/timetrack" xml:base="../default/timesheet.xml">
+  <item duration="PT0M">
+    <desc>
+      This is a fallback timesheet, meaning that the
+      developer has not submitted their timesheet yet.
+      Please check back later to see this developer's 
+      timesheet.
+    </desc>
+  </item>
+</timesheet>
+      
+  </person>
+  <person>
+    <name>Jonathan Jeurissen</name>
+    <timesheet xmlns="http://purl.org/net/timetrack">
+	
+  <item duration="PT2H00M">
+    <desc>Meeting on Tuesday 2009/11/17.</desc>
+    <refs>
+      <ref>http://wilma.vub.ac.be/~se2_0910/docs/minutes/2009/11/17/minutes-20091117.pdf</ref>
+    </refs>
+  </item>
+
+  <item duration="PT2H25M">
+    <desc>Writing Minutes of Tuesday 2009/11/17.</desc>
+    <refs>
+      <ref>http://code.google.com/p/salesmen/source/detail?r=350</ref>
+    </refs>
+  </item>
+
+  <item duration="PT0H10M">
+    <desc>Correcting Minutes of Tuesday 2009/11/17.</desc>
+    <refs>
+      <ref>http://code.google.com/p/salesmen/source/detail?r=354</ref>
+    </refs>
+  </item>
+
+  <item duration="PT20M">
+    <desc>Administration and Communication</desc>
+    <refs>
+      <ref/>
+    </refs>
+
+  </item>
+
+</timesheet>
+  </person>
+  <person>
+    <name>Sina Khakbaz Heshmati</name>
+    <timesheet xmlns="http://purl.org/net/timetrack">
+
+  <item duration="PT2H">
+    <desc>Meeting on Tuesday 2009/11/17.</desc>
+    <refs>
+      <ref>http://wilma.vub.ac.be/~se2_0910/docs/minutes/2009/11/17/minutes-20091117.pdf</ref>
+    </refs>
+  </item>
+
+  <item duration="PT15M">
+    <desc>Published the minutes of the 2009/11/17 meeting.</desc>
+    <refs>
+      <ref>http://code.google.com/p/salesmen/source/detail?r=367</ref>
+      <ref>http://code.google.com/p/salesmen/source/detail?r=366</ref>
+    </refs>
+  </item>
+
+  <item duration="PT40M">
+    <desc>Started the Salesmen Literature document.</desc>
+    <refs>
+      <ref>http://code.google.com/p/salesmen/source/detail?r=364</ref>
+      <ref>http://code.google.com/p/salesmen/source/detail?r=346</ref>
+    </refs>
+  </item>
+
+  <item duration="PT30M">
+    <desc>
+      Published the developers' timesheets for the 46th week of 2009.
+    </desc>
+    <refs>      
+      <ref>http://code.google.com/p/salesmen/source/detail?r=329</ref>
+      <ref>http://code.google.com/p/salesmen/source/detail?r=331</ref>
+    </refs>
+  </item>
+
+  <item duration="PT4H30M">
+    <desc>
+      Installed and configured Java EE 6, NetBeans 6.7, and Glassfish v3.
+    </desc>
+  </item>
+
+  <item duration="PT3H">
+    <desc>
+      Drank my first cup of Java EE.
+    </desc>
+    <refs>
+      <ref>http://docs.sun.com/app/docs/doc/820-7759</ref>
+    </refs>
+  </item>
+
+  <item duration="PT30M">
+    <desc>Administration and Communication</desc>
+  </item>
+
+</timesheet>
+  </person>
+  <person>
+    <name>Jorne Laton</name>
+    <timesheet xmlns="http://purl.org/net/timetrack">
+	
+  <item duration="PT2H">
+    <desc>Meeting on Tuesday 2009/11/17.</desc>
+    <refs>
+      <ref>http://wilma.vub.ac.be/~se2_0910/docs/minutes/2009/11/17/minutes-20091117.pdf</ref>
+    </refs>
+  </item>
+  
+  <item duration="PT2H">
+	<desc>Researching ways to create and synchronize local backup with remote svn repository.</desc>
+	<refs>
+		<ref>http://svnbook.red-bean.com</ref>
+		<ref>http://wiki.archlinux.org/index.php/Subversion_backup_and_restore</ref>
+		<ref>http://aquariusoft.org/page/linux/svnsync</ref>
+	</refs>
+  </item>
+
+  <item duration="PT2H">
+	<desc>Reading and comparing SCMPs of other groups, writing report.</desc>
+	<refs>
+		<ref>http://wilma.vub.ac.be/~se1_0910/verslagenrepo/SCMP/scmp.pdf</ref>
+		<ref>http://wilma.vub.ac.be/~se3_0910/files/SCMP/SCMP.pdf</ref>
+	</refs>
+  </item>
+
+  <item duration="PT20M">
+    <desc>Administration and Communication</desc>
+  </item>
+
+</timesheet>
+  </person>
+  <person>
+    <name>Bart Maes</name>
+    <timesheet xmlns="http://purl.org/net/timetrack">
+	
+  <item duration="PT2H">
+    <desc>Meeting on Tuesday 2009/11/17.</desc>
+    <refs>
+      <ref>http://wilma.vub.ac.be/~se2_0910/docs/minutes/2009/11/17/minutes-20091117.pdf</ref>
+    </refs>
+  </item>
+  
+  <item duration="PT1H30M">
+    <desc>Think about/create &amp; edit logo proposals</desc>
+    <refs>
+      <ref>http://code.google.com/p/salesmen/source/browse/#svn/attic/2009/11/logo</ref>
+    </refs>
+  </item>
+    
+  <item duration="PT3H">
+    <desc>Create draft class-diagram (+DB table diagram) + website prototype</desc>
+  </item>
+  
+   <item duration="PT30M">
+    <desc>Administration and Communication</desc>
+  </item>
+
+</timesheet>
+  </person>
+  <person>
+    <name>Patrick Provinciael</name>
+    <timesheet xmlns="http://purl.org/net/timetrack">
+  <item duration="PT2H">
+    <desc>Meeting on Tuesday 2009/11/17.</desc>
+    <refs>
+      <ref>http://wilma.vub.ac.be/~se2_0910/docs/minutes/2009/11/17/minutes-20091117.pdf</ref>
+    </refs>
+  </item>
+
+  <item duration="PT10M">
+    <desc>Reviewed Minutes of Tuesday 2009/11/17 for Quality Assurance.</desc>
+    <refs>
+      <ref>http://wilma.vub.ac.be/~se2_0910/docs/minutes/2009/11/17/minutes-20091117.pdf</ref>
+    </refs>
+  </item>
+
+  <item duration="PT30M">
+    <desc>Worked on LaTeX template.</desc>
+    <refs>
+	<ref>http://code.google.com/p/salesmen/source/detail?r=356</ref>
+     <ref>http://code.google.com/p/salesmen/source/detail?r=369</ref>
+<ref>http://code.google.com/p/salesmen/source/detail?r=370</ref>
+<ref>http://code.google.com/p/salesmen/source/detail?r=371</ref>
+    </refs>
+  </item>
+
+  <item duration="PT10H">
+    <desc>Written the SQAP.</desc>
+    <refs>   	
+		<ref>http://code.google.com/p/salesmen/source/detail?r=395</ref>
+    </refs>
+  </item>
+
+  <item duration="PT30M">
+    <desc>Administration and Communication.</desc>
+  </item>
+</timesheet>
+  </person>
+  <person>
+    <name>Wouter Van Rossem</name>
+    <timesheet xmlns="http://purl.org/net/timetrack">
+  <item duration="PT2H">
+    <desc>Meeting on Tuesday 2009/11/17.</desc>
+    <refs>
+      <ref>http://wilma.vub.ac.be/~se2_0910/docs/minutes/2009/11/17/minutes-20091117.pdf</ref>
+    </refs>
+  </item>
+  
+  <item duration="PT15M">
+    <desc>Some small changes to the SRS</desc>
+	<refs>
+      <ref>http://code.google.com/p/salesmen/source/detail?r=391</ref>
+    </refs>
+  </item>
+  
+  <item duration="PT10M">
+    <desc>Administration and Communication</desc>
+  </item>
+  
+</timesheet>
+  </person>
+</timesheets>
