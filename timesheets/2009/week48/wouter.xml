@@ -1,0 +1,11 @@
+<?xml version='1.0'?>
+<timesheet xmlns="http://purl.org/net/timetrack">
+  <item duration="PT2H">
+    <desc>Read SRS documents of other groups and take notes</desc>
+    <refs>
+      <ref>http://wilma.vub.ac.be/~se1_0910/verslagenrepo/SRS/SRS.pdf</ref>
+	  <ref>http://wilma.vub.ac.be/~se3_0910/files/SRS/SRS.pdf</ref>
+    </refs>
+  </item>
+  
+</timesheet>
