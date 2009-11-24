@@ -1,0 +1,10 @@
+<?xml version='1.0'?>
+<timesheet xmlns="http://purl.org/net/timetrack">
+  <item duration="PT2H30M">
+    <desc>Meeting on Tuesday 2009/11/24.</desc>
+  </item>
+  
+  <item duration="PT1H30M">
+  	<desc>Installing JBoss on Wilma server together with Sina.</desc>
+  </item>
+</timesheet>
