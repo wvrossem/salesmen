@@ -8,5 +8,12 @@ Team members can put suggestions for new requirements here. These will be discus
 
 = Suggestions =
 
+*Nick:*
+ * Elke pagina heeft minstens 10% aan ruimte voor advertising.
+ * 5% van elke transactie gaat naar Salesmen
+ * Overzicht van totaal opbrengsten voor administrators
+ * Mogelijkheid tot het laten betalen van de klant voor het posten van een veiling
+
+
 
 = Declined =
