@@ -1,0 +1,12 @@
+#summary A list of suggested requirements
+#labels requirements
+
+= Introduction =
+
+Team members can put suggestions for new requirements here. These will be discussed in a meeting or through e-mail. If suggestion is accepted it will become a real requirement. If it is declined, it will come in the declined list.
+
+
+= Suggestions =
+
+
+= Declined =
