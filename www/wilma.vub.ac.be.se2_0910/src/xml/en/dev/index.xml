@@ -10,8 +10,19 @@
     </keywords>
   </head>
   <section xml:id='guides'>
+    <title>Background Knowledge</title>
+    <rss 
+     feed="http://feeds.delicious.com/v2/rss10/salesmen/salesmen+dev+prereq"/>
+  </section>
+  <section xml:id='guides'>
     <title>Guides and HOWTOs</title>
-    <rss feed="http://feeds.delicious.com/v2/rss10/salesmen/salesmen+dev"/>
+    <rss 
+     feed="http://feeds.delicious.com/v2/rss10/salesmen/salesmen+dev+guide"/>
+  </section>
+  <section xml:id='resources'>
+    <title>Resources</title>
+    <rss 
+     feed="http://feeds.delicious.com/v2/rss10/salesmen/salesmen+dev+resource"/>
   </section>
   <sidebar id='devtools'>
     <title>Developer Tools</title>
