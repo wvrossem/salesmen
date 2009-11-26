@@ -1,0 +1,12 @@
+10 QA punten (in geen specifieke volgorde)
+
+1. Consistentie
+2. According to Requirements (niet minder, maar ook niet meer)
+3. Solvability (Als er iets fout loopt, moet de gebruiker gemakkelijk het probleem kunnen identificeren)
+4. Complete (voorzien op alle problemen en uitbreidingen)
+5. Usability (geen oscure mogelijkheden, alles perfect gedocumenteerd, geen procedure om het ff gemakkelijk te maken)
+6. Tested (via een voorzien unit testing systeem)
+7. Extendible (Elk bouwblokje moet ergens anders (in een ander product) gebruikt kunnen worden en er moeten nieuwe blokken zonder problemen kunnen toegevoegd worden)
+8. Punctual (Deadlines MOETEN gerespecteerd worden) Opmerking dat ook ik daarin faal.
+9. CONSISTENTIE!
+10. Finished! (Enige regel die alle andere regels overtreft)
