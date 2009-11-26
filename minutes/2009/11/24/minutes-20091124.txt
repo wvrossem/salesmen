@@ -1,0 +1,393 @@
+
+                      Minutes Meeting 9
+                          Jonathan Jeurissen
+
+
+
+                          November 26, 2009
+
+
+1     Meeting Information
+
+
+Date: Tuesday, November 24, 2009
+
+Time: 15H00-17H00
+
+Place: D2.06
+
+
+1.1    Attendees
+
+
+Following members were present:
+
+
+    o Nick De Cooman
+
+
+    o Jonathan Jeurissen
+
+
+    o Sina Khakbaz Heshmati
+
+
+    o Bart Maes
+
+
+    o Jorne Laton
+
+
+    o Patrick Provinciael
+
+
+    o Wouter Van Rossem
+
+
+There were no members absent.
+                                     1
+
+
+1.2    Revision History
+
+
+_Rev._||_Date_______________||Description___________________
+
+   1.0   ||November 25, 2009 ||First draft created
+
+   1.1   ||November 26, 2009 ||Revised by QA Manager
+
+   1.2   ||November 26, 2009 ||Revised by Project Manager
+
+   1.3   ||November 26, 2009 ||Revised by Project Secretary
+
+   1.4   ||November 26, 2009 ||Ready to be uploaded
+2     Tools
+
+
+Sina explained the different tools and terms which will be used in this project
+
+in a short presentation. Terms like "Multitiered application", "Servlet", "Ap-
+
+plication server","JVM", "API", Web Container","EJB" and so on, where
+
+explained. A comprehensive list of the terms and tools can be found at the
+
+Wiki page SalesmenLiterature [1].
+2.1    Editor
+
+
+Most team members have already had experience with using Eclipse, for code
+
+editing. This is the main reason why Eclipse will be used as the Code editor
+
+of this project.
+2.2    Application server
+
+
+The choice of the application server has been thoroughly discussed by the
+
+team.  Tomcat, Glassfish and JBoss where a few of the candidates, each
+
+with there own advantages.  Some applications are more compatible with
+
+certain editors, than others. JBoss is very known and very stable. It provides
+
+an official plugin for Eclipse, which was the most important argument for
+
+choosing JBoss. As an extra, JBoss supports a hibernate function.
+2.3    Database
+
+
+MySQL has been chosen for the Salesmen's database because it's free (open),
+
+good, stable, fast and commonly used.  Also, a few members already have
+
+experience with MySQL.
+                                     2
+
+
+2.4    Programming Language
+
+
+Java EE will be used for the programming language of this project.  Scale
+
+and Groovy are two other options, there has been decided that this project
+
+will program in the the standard way.
+2.5    Google Web Toolkit
+
+
+Google Web Toolkit (GWT) translates Java to HTML and can be very handy
+
+for this project.  There has been a lot of discussing and explaining about
+
+GWT and whether or not to use it. The bottom line is, that nobody really
+
+knows the functions of GWT very well.  This is why this choice has been
+
+delayed till the next meeting.  Javascript gets information asynchronously
+
+from a server. At the moment it is not clear if GWT support search engine
+
+optimisation, using Ajax. Actual content of the website has to be returned
+
+by the server, not by Javascript.
+3     Logo and template
+
+
+
+3.1    Logo
+
+
+A few logo's have been proposed. Bart's logo [2] will be chosen if it will have
+
+nicer colors and if it would be two separate logo's: one containing only the
+
+word "Salesmen" and one containing only the short logo (with the letter S).
+3.2    template
+
+
+The template is almost finished. There will be made a new front page with
+
+a more professional look, including the logo of Salesmen and the logo of the
+
+VUB.
+4     Design
+
+
+
+4.1    Web Design
+
+
+There is a prototype available of this design on the SVN Server. [3]
+4.2    Implementation Design
+
+
+A fairly complete class diagram for Salesmen has been shown and shortly
+
+discussed. There were no important changes necessary at the moment. The
+
+
+
+                                     3
+
+
+SDD will be put online by Monday, November 30.
+5     Brainstorm about Conference I
+
+
+Following topics might be discussed at the conference:
+
+
+    o Website prototypes
+
+
+    o Logo
+
+
+    o Statistics about planning, cost and working hours
+
+
+    o Innovative ideas
+
+      This will be a very important topic for the client. This will show how
+
+      Salesmen is different from the other projects, so there will be a lot of
+
+      time spent on this topic.
+
+      e.g.  Several ways to earn money with this project.  e.g.  The search
+
+      assistant of Salesmen.
+
+
+    o The look and feel of the website
+
+
+    o Choices made in this project (tools etc.)
+
+
+    o Summary of the plans
+
+
+    o SRS: general description of a few interesting requirements
+
+
+    o Configuration Management and SVN
+
+
+    o Optimization
+
+      This is an interesting topic, but it might be that important for the
+
+      client, so it will be omitted at the conference.
+
+
+This is only a short description of what will be presented at the conference.
+
+In the next meeting, all topics will be thoroughly discussed. Moreover, there
+
+is a good possibility that there will be duo-presentations or dialogs to make
+
+the presentation a bit more special.
+6     Blog
+
+
+There is a possibility to start a blog about the Salesmen project, in which
+
+changes can be publiced. This blog can act as a notebook of the experiences
+
+of the team members.. It is possible to use Ohloh for this blog, but the choice
+
+of making a blog is not yet definitive.
+
+
+
+                                     4
+
+
+7     SPMP
+
+
+A Risk table has been added and the current cost of the project has been
+
+calculated.  At the moment the team members did work 283 hours on the
+
+project, which means it equals about e4.245 (at e15/hour). The total hours
+
+of the team members will be put in statistics. Also, there has been decided
+
+to use Ohloh to clear up
+8     SRS
+
+
+There will be made a new Wiki page to post new requirements.  If these
+
+requirements have been discussed and approved in the upcoming meeting,
+
+they will be added to the SRS and deleted from this Wiki page.  This will
+
+make it more clear for the team which requirements will be added.
+8.1    Adaptations
+
+
+    o Earning money
+
+      There will have to be more requirements that clear up how the client
+
+      can earn money with the site. Requirements such as advertising, Google
+
+      AdWords, etc. will be added to the new version of the SRS.
+
+
+    o Unactivated Users
+
+      A new type of user will be added: unactivated users. These are users
+
+      who have just registered on Salesmen, but who did not activate their
+
+      account yet.
+
+
+    o Costs There has to be requirements that specifies all the costs for plac-
+
+      ing an object and for selling an object (e.g. 5% of the selling price)
+
+
+
+Moreover, the SRS has been compared to that of the other groups. For a full
+
+list, one can look at the difference report of the SRS which will be available
+
+on the project website soon.
+9     SCMP
+
+
+The SCMP of Salesmen has also been compared to that of the other groups.
+
+There were a few difference such as:
+
+
+    o Another layout
+
+                                     5
+
+
+    o Configuration items
+
+
+    o Locking files
+
+      The possibility to lock a certain file, to be able to work on it, without
+
+      anyone changing it.
+
+
+    o Control of changes
+
+      In the other groups there is a difference between small and little change*
+ *s.
+
+      Eeach change has it's own consequences and needs to be approved by
+
+      the Implementation Manager. This will not be used in our project.
+
+
+    o Weekly backups instead of daily backups
+
+
+    o Status report of the repository (History)
+
+      There is a good possibility that this change will be used in our project
+
+      in the future.
+
+
+In general, the SCMP of Salesmen is more complete than that of the other
+
+groups.  For a full list, one can have a look at the difference report of the
+
+SCMP which will be available on the project website soon.
+10      SQAP
+
+
+There are tools available in Eclipse to ease the use of coding conventions.
+
+The Quality Assurance Manager will propose some coding conventions at
+
+the meeting on Tuesday, December 1.
+11      Next Meeting
+
+
+Date: Friday, November 27, 2009
+
+Time: 12H00-13H00
+
+Place: CSB Seminaryroom 1
+
+
+11.1     Agenda
+
+
+A complete list of Agenda items is available on [4].
+                                     6
+
+
+References
+
+
+ [1] http://code.google.com/p/salesmen/wiki/SalesmenLiterature
+
+
+ [2] http://code.google.com/p/salesmen/source/browse/svn/attic/2009/11/logo/bar*
+ *t-3.png
+
+
+ [3] http://code.google.com/p/salesmen/source/browse/svn/attic/2009/11/website-*
+ *prototype
+
+
+ [4] http://code.google.com/p/salesmen/wiki/NextMeetingTopics
+
+                                     7
