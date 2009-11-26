@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF 
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" 
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" 
+    xmlns:doap="http://usefulinc.com/ns/doap#" 
+    xmlns:foaf="http://xmlns.com/foaf/0.1/" 
+    xmlns:dc="http://purl.org/dc/elements/1.1/">
+  
+  <rdf:Description rdf:about="http://wilma.vub.ac.be/~se2_0910/docs/sqap/doap.rdf">
+    <dc:title>SQAP Document Description</dc:title>
+    <dc:description>
+      This RDF file describes the SQAP document.
+    </dc:description>
+    <dc:publisher rdf:resource="http://wilma.vub.ac.be/~se2_0910/"/>
+    <dc:rights>Copyright &#169; VUB</dc:rights>
+  </rdf:Description>
+
+  <doap:Project>
+    <doap:name>Software Requirements Specification</doap:name>
+    <doap:shortname>SQAP</doap:shortname>
+    <doap:homepage rdf:resource="http://wilma.vub.ac.be/~se2_0910/docs/sqap/"/>
+    <doap:license rdf:resource="http://usefulinc.com/doap/licenses/gfdl"/>
+    <doap:created>2009-11-22T14:10:08+02:00</doap:created>
+    <doap:shortdesc>
+      The Software Quality Assurance Plan for the Salesmen project.
+    </doap:shortdesc>
+    <doap:description>
+      This document details the Software Quality Assurance Plan for the 
+      Salesmen Project.
+      The purpose of this document is to define the various control 
+      mechanisms to assure the quality of the delivered project is high 
+      enough. It will also explain the various conventions used to assure 
+      the quality of the software we produce.
+    </doap:description>
+    <dc:identifier>http://wilma.vub.ac.be/~se2_0910/docs/sqap/</dc:identifier>
+    <rdf:type rdf:resource="http://xmlns.com/wordnet/1.6/Document"/>
+    <doap:download-page rdf:resource="http://wilma.vub.ac.be/~se2_0910/docs/sqap/urfm.rdf"/>
+  </doap:Project>
+
+</rdf:RDF>
