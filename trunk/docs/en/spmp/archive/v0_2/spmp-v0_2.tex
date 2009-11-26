@@ -92,10 +92,11 @@
 				\ML 0.1 & 21/10/09 & Nick De Cooman & Initial draft
 				\NN 0.11 & 22/10/09 & Nick De Cooman & Revision after quality control
 				\NN 0.2 & 12/11/09 & Nick De Cooman & Revision including customer's comments
-				\NN 0.21 & 20/11/09 & Nick De Cooman & Adding estimation of costs
+				\NN 0.21 & 20/11/09 & Nick De Cooman & Adding estimation of effort
 				\NN 0.22 & 22/11/09 & Nick De Cooman & 	- Revision on process model 
 				\NN & & &								- Adding real costs
 				\NN 0.23 & 23/11/09 & Nick De Cooman & 	Adding Gannt chart 
+				\NN 0.24 & 26/11/09 & Nick De Cooman & 	Adding estimation of costs
 				\\
 			\end{tabular}	
 		
@@ -107,11 +108,10 @@
 		
 		The chosen proces model will be the spiral model, with 2 iterations. Unlike
 		the waterfall process, we will be able to show partial versions to the customer 
-		for feedback, reducing risks such as faulty requirements. 
-		
-		After the first iteration the application will consists of some basic functionality.
-		More advanced features will be implemented during the second iteration. 
-		
+		for feedback, reducing risks such as faulty requirements. The application will 
+		consists of some basic functionality after the first iteration and more advanced features will be implemented 
+		during the second one. \\
+		\\
 		A detailed planning of this process can be found in section \ref{planning}.
 			
 		
@@ -394,7 +394,7 @@
 					\NN SCMP & November 9, 2009
 					\NN SRS & November 13, 2009
 					\NN SQAP & November 23, 2009
-					\NN SDD & November 27, 2009
+					\NN SDD & November 30, 2009
 					\NN STD & December 07, 2009
 				\end{tabular}
 			
@@ -408,32 +408,50 @@
 			
 			\section{Costs}
 			
-			\subsection{Real costs}
+			\subsection{Man-costs up to now}
 			
 			Using timesheets enables us to track the real costs of this project. Off course,
-			this is only a measure and it does not cover some hidden costs that can occur during
+			this only includes man-costs and it does not cover some hidden costs that can occur during
 			the development.
 			
-			Assume \euro15 will be charged per hour for each team member. In that case, the total
-		 	cost of this project up to now can be seen in table \ref{realcosts}.
+			Assume \euro20 will be charged per hour for each team member. In that case, the total
+		 	cost of this project up to now is given in table \ref{realcosts}.
 			
 			
 			\begin{table}
 				\begin{center}
 			\begin{tabular}{l l l}
 				\FL Week & Total hours & Total Cost
-				\ML Week 42 & 43 hours & 645\euro 
-				\NN Week 43 & 63 hours & 945\euro 
-				\NN Week 44 & 36 hours & 540\euro 
-				\NN Week 45 & 60 hours & 900\euro 
-				\NN Week 46 & 28 hours & 420\euro 
-				\ML \textbf{TOTAL} & \textbf{230 hours} & \textbf{3450\euro} 
+				\ML Week 42 & 43 hours & 860\euro 
+				\NN Week 43 & 63 hours & 1260\euro 
+				\NN Week 44 & 36 hours & 720\euro 
+				\NN Week 45 & 60 hours & 1200\euro 
+				\NN Week 46 & 28 hours & 560\euro 
+				\NN Week 47 & 53 hours & 1060\euro 
+				\ML \textbf{TOTAL} & \textbf{283 hours} & \textbf{5660\euro} 
 				\LL
 			\end{tabular}
 				\end{center}
 				\caption{Real costs up to now based on timesheets}
 				\label{realcosts}
 			\end{table}
+			
+			\subsection{Estimation of total man-costs}
+			
+			Based on the information in table \ref{realcosts}, we can estimate the total cost of this project
+			by calculating the average number of hours so far. For the first 6 weeks, the average number of worked hours is
+			
+			\[ \frac{43 + 63 + 36 + 60 + 28 + 53 \textrm{ hours}}{6 \textrm{ weeks}} \approx 47,16 \textrm{ hours/week} \]
+			
+			Assuming 27 weeks will be needed to accomplish this project, the total number of man-hours can be estimated as:
+			\[ 47,16 \textrm{ hours/week} \cdot  27 \textrm{ week} \approx 1237 \textrm{ man-hours} \]
+			
+			Thus, the total man-cost results in:
+			\[ 1237 \textrm{ man-hours} \cdot  20 \textrm{ euro/hour} = \textrm{\euro} 24.740 \]
+
+			Note that this is just an estimation, and propably amount to \euro 35.000. 
+			
+			
 			
 			\subsection{Estimation of effort}
 			
@@ -489,15 +507,6 @@
 			Using the COCOMO algorithm, we can thus conclude that 4,37 people are needed to
 			realise our project in 9,06 months. 
 			
-			In our case however, we can rely on 7 people. Assuming we will have 27 weeks in order
-			to achieve our goals, and a month accounts 4.3 weeks, the total development time
-			can be calculated as:
-				\[ E = 7 \textrm{ people} \times \frac{27 \textrm{ weeks}}{4,3 \textrm{ weeks/months}} \approx 43,95 \textrm{ man-months} \] 
-			
-			This means that we have more time to realise the project than needed
-			according to the estimation.
-			
-			
 			\section {Dependencies}
 			
 			At this time, it is only possible to provide 1 general dependency :
@@ -511,9 +520,10 @@
 			
 			\section{Planning}	
 				\label{planning}
-				
+			\begin{figure}
 				\includegraphics[angle=90, height=20cm]{Gannt.jpg}
-			
+				\caption{Current schedule of planning in form of Gannt-chart}
+			\end{figure}
 			
 			
 	
