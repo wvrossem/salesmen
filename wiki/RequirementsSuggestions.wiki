@@ -18,6 +18,7 @@ Team members can put suggestions for new requirements here. These will be discus
  * Op publieke pagina's worden inhoud-relevante reclameblokken voorzien.
  * Members kunnen een 'abonnement' op de site nemen (voor een bepaald vast bedrag, jaarlijks te betalen) waardoor deze reclameblokken verdwijnen (en eventueel andere opties beschikbaar worden).
  * 1% van het transactiebedrag gaat naar salesman (op items van 100EUR is dat toch al 1EUR)
+   * Opmerking: het is niet aan ons om hier een getal op te plakken, wij zouden moeten spreken in termen van "de sideowner will be able to grab a choosen percentage of the transaction amount". Maw: Joeri kan hier een getal op plakken, wij voorzien de mogelijkheid om dit te berekenen. But anyway: een voorstel (in een voorbeeld) van 1% lijkt me realistischer :)
  * Verder moet 'exposure' van veiligen gemaximaliseerd worden:
    * Door goede SEO (Search Engine Optimalisation), waardoor bezoekers via searchengines op salesmen terecht komen
    * Door (de reeds geopperde) recommended auctions & buyers assistant
