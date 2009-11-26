@@ -45,6 +45,7 @@
     </tocentry>
     <tocentry page="docs/scmp/index.xml" dir="scmp" filename="index.html"/>
     <tocentry page="docs/spmp/index.xml" dir="spmp" filename="index.html"/>
+    <tocentry page="docs/sqap/index.xml" dir="sqap" filename="index.html"/>
     <tocentry page="docs/srs/index.xml" dir="srs" filename="index.html"/>
     <tocentry page="docs/timesheets/index.xml" dir="timesheets" filename="index.html">
       <tocentry page="docs/timesheets/2009/index.xml" dir="2009" filename="index.html">
@@ -53,6 +54,7 @@
 	<tocentry page="docs/timesheets/2009/week44.xml" dir="week44" filename="timesheet-week44-2009.html"/>
 	<tocentry page="docs/timesheets/2009/week45.xml" dir="week45" filename="timesheet-week45-2009.html"/>
 	<tocentry page="docs/timesheets/2009/week46.xml" dir="week46" filename="timesheet-week46-2009.html"/>
+	<tocentry page="docs/timesheets/2009/week47.xml" dir="week47" filename="timesheet-week47-2009.html"/>
       </tocentry>
     </tocentry>
   </tocentry>

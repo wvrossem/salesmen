@@ -62,7 +62,8 @@
 .about h1,
 .scmp h1,
 .spmp h1,
-.srs h1
+.srs h1,
+.sqap h1
 {
    display: none; 
 }
@@ -216,3 +217,5 @@ form .invalid input { background-color: #ffcccc; }
 #maincontent .timetrack table td.duration {
   width: 10%;
 }
+
+.dev .rss .date { display: none; }
