@@ -3,6 +3,18 @@
 
 = Topics for next meeting =
 
+=== Meeting 10: Tuesday 1 December 2009, 15:00===
+ 
+ * Logo & template
+ * SDD
+ * Competitor analysis
+ * Prepare conference 1
+ * Highlights of November
+ * SCRUM
+ * Define conventions
+ * Risk management
+
+
 === Meeting 9: Tuesday 23 November 2009, 15:00===
  
  * Discussing tools
