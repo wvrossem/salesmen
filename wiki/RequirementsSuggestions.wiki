@@ -26,8 +26,10 @@ Team members can put suggestions for new requirements here. These will be discus
   * Promoten van salespal (en promoten om geld op de account te laten staan):
     * gebruikers krijgen 1% 'interest' op hun account (waar salesmen een veel hoger rendement haalt, en dus in feite goedkoop geld 'leent' van de members)
     * gebruikers krijgen 5% korting op hun transacties bij gebruik van salespal
+    * Mits betaling van een 'promotion fee' wordt een auction op de hoofdpagina van de website vermeld (in een 'check out now' gedeelte bvb)
  * Various
   * 'Clean URI' (~> een SEO), resulteert in 'leesbare URLs'. Vb: "http://www.salesmen.com/action/1523-VW_Golf3_1996" ipv "http://www.salesmen.com/actiondetail.jsp?actuin_id=1523"
 (PS: is 'makkelijk' op te lossen dmv .htaccess entries)
+  * 'hot deals' (die bvb op hoofdpagina van website verschijnen): auctions die bovengemiddeld veel aandacht krijgen (bvb #bekijkers, #biedingen - enkel bij goede, gekende verkopers?). Wel opletten voor cheaters (die bvb #bekijkers omhoogschroeven door zelf te F5'en :-)) Admins moeten auctions uit de 'hot deal' lijst kunnen halen (bestrijden misbruik).
 
 = Declined =
