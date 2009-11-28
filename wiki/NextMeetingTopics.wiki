@@ -10,6 +10,7 @@
  * Competitor analysis
  * Prepare conference 1
  * Highlights of November
+ * Requirements
  * SCRUM
  * Define conventions
  * Risk management
