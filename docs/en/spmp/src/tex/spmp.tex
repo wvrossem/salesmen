@@ -2,6 +2,8 @@
 \usepackage{ctable}
 \usepackage{url}
 \usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{eurosym}
 
 \title{Software Engineering Group 2 (2009-2010) \\Software Project Management Plan}
 \author{Nick De Cooman}
@@ -40,35 +42,21 @@
 			\end{enumerate}	
 			
 			The software of the application will be written in Java and 
-			distributed under an Open Source license.
-			
-		\section{Definitions and acronyms}
-		
-			\begin{tabular}{l l}
-				
-				\textbf{SCMP} & Software Configuration Management Plan \\
-				\textbf{SDD} & Software Design Plan \\
-				\textbf{SPMP} & Software Project Management Plan \\
-				\textbf{SQAP} & Software Quality Assurance Plan \\
-				\textbf{SRS} & Software Requirements Specification \\
-				\textbf{STD} & Software Test Document \\
-				
-			\end{tabular}	
+			distributed under an Open Source license.	
 		
 		\section{Project deliverables}
-		\label{deadlines}
-			\begin{tabular}{l l}
-				
-				\FL Deliverable & Available on
-				\ML Minutes & 3 days after meeting
-				\NN Timesheet & Every Monday before 12h00
-				\NN SPMP & Draft will be ready on October 26, 2009
-				\NN SCMP & Draft will be ready on November 2, 2009
-				\NN SRS & Draft will be ready on November 2, 2009
-				\NN SQAP & Draft will be ready on November 23, 2009
-				\NN SDD & Draft will be ready on November 16, 2009
-				\NN STD & Draft will be ready on November 30, 2009
-			\end{tabular}	
+		
+		\begin{itemize}
+			
+			\item Software documentation (see \ref{deadlines})
+			\item Minutes: 3 days after meeting
+			\item Timesheets: every Monday before 12H00
+			\item Source code
+			
+		\end{itemize}	
+		
+		All of those documents will be available in English on our website.
+	
 		
 		\section{Reference materials}
 		
@@ -80,14 +68,35 @@
 				\item Eric J. Braude, \emph{Software Engineering -
 				An Object-Oriented Perspective}, John Wiley \& Sons, 2001. ISBN 0-471-32208-3.
 			
-			\end{itemize}	
+			\end{itemize}
+			
+		\section{Definitions and acronyms}
+
+			\begin{tabular}{l l}
+
+				\textbf{SCMP} & Software Configuration Management Plan \\
+				\textbf{SDD} & Software Design Plan \\
+				\textbf{SPMP} & Software Project Management Plan \\
+				\textbf{SQAP} & Software Quality Assurance Plan \\
+				\textbf{SRS} & Software Requirements Specification \\
+				\textbf{STD} & Software Test Document \\
+				\textbf{COCOMO} & Constructive Cost Model
+
+			\end{tabular}				
 		
 		\section{Revision history}
 		
 			\begin{tabular}{l l l l}
 				\\
 				\FL Version & Date & Name & Description
-				\ML 1 & 21/10/09 & Nick De Cooman & Initial draft
+				\ML 0.1 & 21/10/09 & Nick De Cooman & Initial draft
+				\NN 0.11 & 22/10/09 & Nick De Cooman & Revision after quality control
+				\NN 0.2 & 12/11/09 & Nick De Cooman & Revision including customer's comments
+				\NN 0.21 & 20/11/09 & Nick De Cooman & Adding estimation of effort
+				\NN 0.22 & 22/11/09 & Nick De Cooman & 	- Revision on process model 
+				\NN & & &								- Adding real costs
+				\NN 0.23 & 23/11/09 & Nick De Cooman & 	Adding Gannt chart 
+				\NN 0.24 & 26/11/09 & Nick De Cooman & 	Adding estimation of costs
 				\\
 			\end{tabular}	
 		
@@ -99,27 +108,12 @@
 		
 		The chosen proces model will be the spiral model, with 2 iterations. Unlike
 		the waterfall process, we will be able to show partial versions to the customer 
-		for feedback, reducing risks such as faulty requirements. 
-		
-		\begin{figure}[h]
-			\centering
-			\includegraphics[width=12cm]{proces}
-			\caption{A general example of the spiral model with 2 iterations.}
-		\end{figure}
-		
-		In our case, this will be defined as: \\
-		
-		\begin{tabular}{l l l}
-			\FL Workflow & Completion date & Deliverable to customer
-			\ML \textbf{Flow 1}
-			\NN Requirements & 09/11/09 & ??/11/09
-			\NN Design & 23/11/09
-			\NN Implementation & 07/12/09
-			\NN Testing & 16/12/09 & 2*/12/09
-			\NN
-			\NN \textbf{Flow 2}
-			\\ Will be defined later. \\
-		\end{tabular} 	
+		for feedback, reducing risks such as faulty requirements. The application will 
+		consists of some basic functionality after the first iteration and more advanced features will be implemented 
+		during the second one. \\
+		\\
+		A detailed planning of this process can be found in section \ref{planning}.
+			
 		
 		\section{Organizational structure}
 		\label{sec:struc}
@@ -262,7 +256,7 @@
 			
 			\begin{itemize}
 				
-				\item No assumptions were made.
+				\item No assumptions will be made.
 				
 				\item Dependencies \\
  					  For the project to succeed, it will depend on
@@ -279,52 +273,55 @@
 			
 		\section{Risk Management}
 			
-			Developing software introduces a lot of risks. Every meeting these risks will
-			be discussed in order to reduce or eliminate them. 
+			Developing software introduces a lot of risks. At regular times these risks will
+			be discussed in order to reduce or eliminate them. Each member is encouraged to report
+			possible risk to the project leader.
 			
 			\subsection{Google goes down for a certain period}
-			\textbf{Criticality}: ++ \\
-			We need to make backups of our files and documentation. This will be 
+			\textbf{Criticality}: + \\
+			We need to make daily backups of our files and documentation. This will be 
 			performed by the configuration team.
 			
-			\subsection{Someone doesn't spend enough time on his job}
-			\textbf{Criticality}: ++++ \\
-			At first this will be discussed at the next meeting and a suggested action 
-			will be given. Thereafter a warning will be given. Possibly there will be 
-			further actions. If it’s absolutely necessary, a member can be dismissed.
 			
-			\subsection{Deadline will not be achieved}
+			\subsection{Lack of knowledge of certain tools or mechanisms}
 			\textbf{Criticality}: ++++ \\
-			Not achieving a deadline, can bring the timeschedule in danger. Because of
-			this a team member should report this to the project manager
-			who can reorganise the tasks, as soon as he/she perceives a delay.  
+			Some tools and mechanisms will be completely new to some team members which can
+			results in a lack of knowledge and inefficiency. To prevent this, tutorials will be
+			made as Wiki-pages. Moreover, presentations can be given if the subject is 
+			too complex or if it demands a complete explanation. 
 			
 			\subsection{Somebody becomes ill}
-			\textbf{Criticality}: ++++ \\
+			\textbf{Criticality}: +++ \\
 			This risk has already been considered in the beginning of this 
 			project. This is why there is an Assistant(formerly called Backup) for 
 			every Management position. If a leader or manager gets ill, the assistant 
 			of that function should be able to fully understand his 
 			function and replace that leader or manager, for a certain period of time.
 			
-			\subsection{The client can't make an appointment before the deadline}
-			\textbf{Criticality}: + \\
-			The client should be contacted as soon as possible. \emph{Update: The client has been
-			contacted on Friday, October 23, 2009 and an appointment has been made on Monday,
-			October 26, 2009.}
+			\subsection{Risk Table}
+			The above risks can be ranked in a table based on the likelihood of the risks, the
+			impact on the project, the cost of disposal and the priority of it. 
+			This last one will be calculated as follows :
+			\begin{center}
+			$ priority = (11 - change) \cdot (11 - effect) \cdot disposal $
+			\end{center}
+			The lower the priority, the most impact it has on the project. 
 			
-			\subsection{The wrong questions have been asked to the client}
-			\textbf{Criticality}: +++ \\
-			There should be at least two appointments with the client before the first version of
-			the SRS becomes available.
+			\begin{table}
+				\begin{center}
+			\begin{tabular}{l c c c c}
+				\\
+				\FL Risk & Change & Effect & Disposal & \textbf{Priority}
+				\ML Google down  & 2 & 8 & 8 & \textbf{216}
+				\NN Lack of knowledge & 6 & 8 & 6 & \textbf{90}
+				\NN Illness & 6 & 4 & 3 & \textbf{105}
+			\end{tabular}
+			\end{center}
+			\caption{Risk table}
+			\end{table}
+			  
 			
-			\subsection{The requirements are misunderstood or misinterpreted}
-			\textbf{Criticality}: +++ \\
-			The interview with the client will be recorded and will be made available to all team
-			members. This interview will be relistened by the Quality Assurance manager to reduce
-		 	misinterpretations. In order to avoid ambiguity, there will be a presentation of the
-		 	requirements during another meeting with the client.			
-				
+
 		\section{Monitoring and controlling mechanisms}	
 			
 			\subsection{Meetings}
@@ -387,7 +384,19 @@
 			
 			\section{Software documentation}
 			
-			See the SQAP.
+			Several documents will be publised during the execution of this project. \\
+			
+			\label{deadlines}
+				\begin{tabular}{l l}
+
+					\FL Document & First version available on
+					\ML SPMP & October 26, 2009
+					\NN SCMP & November 9, 2009
+					\NN SRS & November 13, 2009
+					\NN SQAP & November 23, 2009
+					\NN SDD & November 30, 2009
+					\NN STD & December 07, 2009
+				\end{tabular}
 			
 			\section{Project support functions}
 			
@@ -396,27 +405,112 @@
 			can be contacted.
 	
 	\chapter{Work packages, schedule and budget}
-	
-			\section {Work packages}
 			
-			All costs are expressed in man-hours. \\
+			\section{Costs}
 			
+			\subsection{Man-costs up to now}
+			
+			Using timesheets enables us to track the real costs of this project. Off course,
+			this only includes man-costs and it does not cover some hidden problems that can occur during
+			the development.
+			
+			Considering the starter wage of a computer scientist is approximately \euro 2200 gross, we can calculate a 
+			realistic earning per hour. Assume one should perform an average of 38 hours per week, 
+			and a month consists of 4 weeks. This results in:
+			\[ \textrm{Wage/hour} = \frac{\textrm{\euro} 2200 \textrm{ wage/month}}{38 \textrm{ hours/week} \cdot 4 \textrm{ weeks/month}} \approx \textrm{\euro} 14,50 \]
+			 
+			
+			In that case, the total cost of this project so far is given in table \ref{realcosts}.
+			
+			
+			\begin{table}
+				\begin{center}
 			\begin{tabular}{l l l}
-				\FL Package & Deliverable & Total estimated time
-				\ML Organizational & Meetings (+/- 30) & 210 Hr
-				\NN & Timesheets & 25 Hr
-				\NN & SPMP & 30 Hr
-				\NN & SCMP & 20 Hr
-				\NN Analysis & SRS & 40 Hr
-				\NN Design & SDD & 50 Hr
-				\NN Implementation & Source code & 250 Hr
-				\NN Quality Assurance & SQAP & 100 Hr
-				\NN & STD & 150 Hr
-			\end {tabular}
+				\FL Week & Total hours & Total Cost
+				\ML Week 42 & 43 hours & \euro623,50 
+				\NN Week 43 & 63 hours & \euro913,50
+				\NN Week 44 & 36 hours & \euro522,00
+				\NN Week 45 & 60 hours & \euro870,00
+				\NN Week 46 & 28 hours & \euro406,00 
+				\NN Week 47 & 53 hours & \euro768,50 
+				\ML \textbf{TOTAL} & \textbf{283 hours} & \textbf{\euro4103,50} 
+				\LL
+			\end{tabular}
+				\end{center}
+				\caption{Real costs up to now based on timesheets}
+				\label{realcosts}
+			\end{table}
+			
+			\subsection{Estimation of total man-costs}
+			
+			Based on the information in table \ref{realcosts}, we can estimate the total cost of this project
+			by calculating the average number of hours up to now. For the first 6 weeks, the average number of worked hours is
+			
+			\[ \frac{43 + 63 + 36 + 60 + 28 + 53 \textrm{ hours}}{6 \textrm{ weeks}} \approx 47,16 \textrm{ hours/week} \]
+			
+			Assuming 27 weeks will be needed to accomplish this project, the total number of man-hours can be estimated as:
+			\[ 47,16 \textrm{ hours/week} \cdot  27 \textrm{ week} \approx 1237 \textrm{ man-hours} \]
+			
+			Thus, the total man-cost results in:
+			\[ 1237 \textrm{ man-hours} \cdot  14,50 \textrm{ euro/hour} = \textrm{\euro} 17,936 \]
+
+			Note that this is just an estimation, and propably amount to \euro 25.000. 
 			
 			
-			Please note that the numbers above are just an estimation and will become more
-			precize after every stage in the project.
+			
+			\subsection{Estimation of effort}
+			
+			To calculate an estimation of costs, the COCOMO algorithm developed by Barry Boehm
+			will be used. Depending on the number of lines of code, the costs and efforts of this
+			project can be computed. Off course, this is just an estimation and will differ from
+			reality. The algorithm provides next formulas in order to calculate the effort and
+			cost:
+			
+			\begin{center}
+			Effort Applied: $ E = a \cdot (KLOC)^{b} $ \\
+			Development Time: $ D = c \cdot E^{d} $ \\
+			People required: $ P = \frac{E}{D} $ \\
+			\end{center}
+			
+			KLOC is the estimation of the code length expressed in thousands of lines of code.
+			Our project can be classified as a semi-detached project which means that our team of
+			a medium size has a mixed experience working with a mix of rigid and less than rigid
+			requirements. Therefore, the parameters a, b, c, d are defined as in table \ref{par}. 		
+			
+			
+			\begin{table}
+				\begin{center}
+			\begin{tabular}{l l}
+				\FL Parameter & Value
+				\ML a & 3.0
+				\NN b & 1.12
+				\NN c & 2.5
+				\NN d & 0.35
+			\end{tabular}
+				\end{center}
+				\caption{COCOMO Parameters for a semi-detached project}
+				\label{par}
+			\end{table}	
+			
+			By analyzing simular projects, we estimate to write 10KLOC. This brings the total
+			effort to:
+			
+			\begin{center}
+				$ E = 3.0 \cdot 10^{1.12} \approx 39,55 $ man-months
+			\end{center}
+			
+			The total development time thus becomes:
+			
+			\begin{center}
+				$ D = 2,5 \cdot 39,55^{0,35} \approx 9,06 $ months
+			\end{center}
+			
+			This results in a total staff estimation of
+			
+				\[ P = \frac{39,55 \textrm{ man-months}}{9,06 \textrm{ months}} \approx 4,37 \textrm{ people} \]
+			
+			Using the COCOMO algorithm, we can thus conclude that 4,37 people are needed to
+			realise our project in 9,06 months. 
 			
 			\section {Dependencies}
 			
@@ -426,9 +520,15 @@
 				
 				\item Iteration 2 depends on the completion of iteration 1.
 				
-			\end{itemize}	
-				
+			\end{itemize}
 			
+			
+			\section{Planning}	
+				\label{planning}
+			\begin{figure}
+				\includegraphics[angle=90, height=20cm]{../../img/gannt-v0_2.jpg}
+				\caption{Current schedule of planning in form of Gannt-chart}
+			\end{figure}
 			
 			
 	
