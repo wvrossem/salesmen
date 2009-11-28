@@ -15,6 +15,7 @@ Team members can put suggestions for new requirements here. These will be discus
  * Mogelijkheid tot het laten betalen van de klant voor het posten van een veiling
 
 *Bart:*
+* income-related
  * Op publieke pagina's worden inhoud-relevante reclameblokken voorzien.
  * Members kunnen een 'abonnement' op de site nemen (voor een bepaald vast bedrag, jaarlijks te betalen) waardoor deze reclameblokken verdwijnen (en eventueel andere opties beschikbaar worden).
  * 1% van het transactiebedrag gaat naar salesman (op items van 100EUR is dat toch al 1EUR)
@@ -25,7 +26,8 @@ Team members can put suggestions for new requirements here. These will be discus
  * Promoten van salespal (en promoten om geld op de account te laten staan):
    * gebruikers krijgen 1% 'interest' op hun account (waar salesmen een veel hoger rendement haalt, en dus in feite goedkoop geld 'leent' van de members)
    * gebruikers krijgen 5% korting op hun transacties bij gebruik van salespal
-
-
+* Various
+ * 'Clean URI' (~> een SEO), resulteert in 'leesbare URLs'. Vb: "http://www.salesmen.com/action/1523-VW_Golf3_1996" ipv "http://www.salesmen.com/actiondetail.jsp?actuin_id=1523"
+(PS: is 'makkelijk' op te lossen dmv .htaccess entries)
 
 = Declined =
