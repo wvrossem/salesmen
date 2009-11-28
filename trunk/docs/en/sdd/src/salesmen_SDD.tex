@@ -9,18 +9,7 @@
 
 \makeindex
 
-%this piece of code generates the header
-\pagestyle{fancy}
-\renewcommand{\sectionmark}[1]{\markright{\thesection\ #1}}
-\fancyhf{}
-\fancyhf[HL]{\nouppercase{\textit{\rightmark}}}
-\fancyhf[HR]{\thepage}
-\setlength{\headwidth}{17cm}
-%and this is the end of the header-code
 
-\date{25 November 2009}
-\author{Bart Maes}
-\title{Software Engineering Group 2 (2009-2010)\\Software Design Description}
 
 \begin{document}
 
@@ -93,21 +82,24 @@ Typically, the user interface runs on a desktop PC or workstation and uses a sta
 
 Three-tier architecture has the following three tiers:
 \begin {itemize}
-\item Presentation tier
+\item \textbf{Presentation tier}
 This is the topmost level of the application. The presentation tier displays information related to such services as browsing merchandise, purchasing, and shopping cart contents. It communicates with other tiers by outputting results to the browser/client tier and all other tiers in the network.
-\item Application tier (Business Logic/Logic Tier)
+\item \textbf{Application tier (Business Logic/Logic Tier)}
 The logic tier is pulled out from the presentation tier and, as its own layer, it controls an application’s functionality by performing detailed processing.
-\item Data tier
+\item \textbf{Data tier}
 This tier consists of Database Servers. Here information is stored and retrieved. This tier keeps data neutral and independent from application servers or business logic. Giving data its own tier also improves scalability and performance. 
 \end {itemize}
 Benefits of using this architectural style include increased performance, flexibility, maintainability, reusability, and scalability.
 \subsection{Discussion of Alternative Designs}
+\textbf{MVC}
+At first glance, the three tiers may seem similar to the MVC (Model View Controller) concept; however, topologically they are different. A fundamental rule in a three-tier architecture is the client tier never communicates directly with the data tier; in a three-tier model all communication must pass through the middleware tier. Conceptually the three-tier architecture is linear. However, the MVC architecture is triangular: the View sends updates to the Controller, the Controller updates the Model, and the View gets updated directly from the Model.
+
+From a historical perspective the three-tier architecture concept emerged in the 1990s from observations of distributed systems (e.g., web applications) where the client, middleware and data tiers ran on physically separate platforms. Whereas MVC comes from the previous decade and is based on observations of applications that ran on a single graphical workstation; MVC was applied to distributed applications much later in its history.
+
+
 \subsection{Survey of Technologies Used}
 \subsubsection{Presentation Layer}
-\begin {itemize}
-\item JSP
 Java Server Pages (JSP) is a technology from Sun that allows easy development of GUIs using webbrowser clients. JSP helps in making a clear distinction of layout and code concepts, so that a developer and graphical designer can independently work on the same webpages with little interference.
-\end {itemize}
 
 \subsubsection{Business Layer}
 JBoss Application Server (or JBoss AS) is a free software/open-source Java EE-based application server. Because it is Java-based, the JBoss application server operates cross-platform: usable on any operating system that Java supports. 
@@ -115,13 +107,11 @@ As part of the jBoss software, the Apache Tomcat servlet container will allow us
 
 
 \subsubsection{Data Layer}
-\begin{itemize}
-\item 
 Two database platforms were considered: MySQL and PostgresSQL.
 
 Our programmers will not need to write SQL statements themselves, as these are generated with the use of the EJB3 standard and Java annotations. 
 Based on Hibernate concepts, EJB3 allows for persintant objects without the need for platform dependant SQL statements and other 'dirty' constructs.
-\end{itemize}
+
 
 \subsection{Physical Configuration}
 The software is to be installed on the Wilma server at the VUB datacenter. Wilma is accessible over the internet through web browsers and command line clients. The software relies on the availability of an SMTP server on the local LAN of the VUB, so that we do not have to include MDA (Mail Delivery Agent) functionality in the software.
@@ -130,7 +120,7 @@ The software is to be installed on the Wilma server at the VUB datacenter. Wilma
 \end{figure}
 
 \subsection{System Interface Description}
-?
+The web-interface is the only interface available to users of the Salesmen software. However, depending of the access-rights provided to a given user, more options may become available. Website administrators, for example, can close auctions or ban other members while 'normal' members cannot access these facilities. A more detailed description of the access-rights provided to each group of users will be provided in the SRS.
 \pagebreak
 \section{Component Design \label{Component Design}}
 ?
