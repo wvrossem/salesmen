@@ -3,18 +3,18 @@
 
 = Topics for next meeting =
 
-=== Meeting 10: Tuesday 1 December 2009, 15:00===
+=== Meeting 10: Tuesday 1 December 2009, 15:00 - !!17:00!!===
  
  * Logo & template
+ * Mysql vs PostgreSQL
  * SDD
  * Competitor analysis
  * Prepare conference 1
+ * Risk management
  * Highlights of November
  * Requirements
  * SCRUM
  * Define conventions
- * Risk management
-
 
 === Meeting 9: Tuesday 23 November 2009, 15:00===
  
