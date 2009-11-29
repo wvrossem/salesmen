@@ -1,11 +1,43 @@
 <?xml version='1.0'?>
 <timesheet xmlns="http://purl.org/net/timetrack">
   <item duration="PT2H">
-    <desc>Read SRS documents of other groups and take notes</desc>
+   <desc>Read SRS documents of other groups and take notes</desc>
     <refs>
       <ref>http://wilma.vub.ac.be/~se1_0910/verslagenrepo/SRS/SRS.pdf</ref>
 	  <ref>http://wilma.vub.ac.be/~se3_0910/files/SRS/SRS.pdf</ref>
     </refs>
+  </item>
+  
+  <item duration="PT2H30M">
+   <desc>Meeting on Tuesday 2009/11/24</desc>
+   <refs>
+      <ref>http://wilma.vub.ac.be/~se2_0910/docs/minutes/2009/11/24/minutes-20091124.pdf</ref>
+    </refs>
+  </item>
+  
+  <item duration="PT1H">
+   <desc>Meeting on Friday 2009/11/27</desc>
+   <refs>
+      <ref>http://wilma.vub.ac.be/~se2_0910/docs/minutes/2009/11/27/minutes-20091127.pdf</ref>
+    </refs>
+  </item>
+  
+  <item duration="PT20M">
+   <desc>Write SRS comparison report</desc>
+   <refs>
+      <ref>http://code.google.com/p/salesmen/source/detail?r=462</ref>
+    </refs>
+  </item>
+  
+  <item duration="PT30M">
+   <desc>Updated the SRS document</desc>
+   <refs>
+      <ref>http://code.google.com/p/salesmen/source/detail?r=483</ref>
+    </refs>
+  </item>
+  
+  <item duration="PT10M">
+    <desc>Administration and Communication</desc>
   </item>
   
 </timesheet>
