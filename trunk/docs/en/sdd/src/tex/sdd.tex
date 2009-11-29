@@ -1,11 +1,13 @@
-\documentclass[a4paper]{article}
-\usepackage[margin=2cm]{geometry}
-\usepackage[latin1]{inputenc}
+\documentclass[a4paper, 12pt]{report}
+
 \usepackage{url}
-\usepackage{hyperref}
-\usepackage{fancyhdr}
-\usepackage{array}
-\usepackage{makeidx}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{eurosym}
+
+\title{Software Engineering Group 2 (2009-2010) \\Software Design Document}
+\author{Bart Maes}
+\date {November 27, 2009}
 
 \makeindex
 
@@ -69,8 +71,9 @@ This SDD document mainly follows the standards of the IEEE 1016-1998 standard.
 \section{System Architecture}
 \subsection{Overview}
 
-\begin{figure}[h!]
-\includegraphics[scale=0.40]{sdd/components}
+\begin{figure}
+\includegraphics[scale=0.8]{../../img/archi1.png}
+\caption{Salesmen Architecture}
 \end{figure}
 
 \subsection{Three-Tier Architecture}
@@ -115,9 +118,12 @@ Based on Hibernate concepts, EJB3 allows for persintant objects without the need
 
 \subsection{Physical Configuration}
 The software is to be installed on the Wilma server at the VUB datacenter. Wilma is accessible over the internet through web browsers and command line clients. The software relies on the availability of an SMTP server on the local LAN of the VUB, so that we do not have to include MDA (Mail Delivery Agent) functionality in the software.
-\begin{figure}[h]
-\includegraphics[scale=0.35]{sdd/infrastructure}
+
+\begin{figure}
+\includegraphics[scale=0.8]{../../img/infra1.png}
+\caption{Salesmen infrastructure}
 \end{figure}
+
 
 \subsection{System Interface Description}
 The web-interface is the only interface available to users of the Salesmen software. However, depending of the access-rights provided to a given user, more options may become available. Website administrators, for example, can close auctions or ban other members while 'normal' members cannot access these facilities. A more detailed description of the access-rights provided to each group of users will be provided in the SRS.
@@ -140,10 +146,8 @@ The web-interface is the only interface available to users of the Salesmen softw
 \section{User Interface Design \label{UI Design}}
 \subsection{Web pages tree}
 \subsubsection{Overview}
-Figure met page-tree
-\begin{figure}[h!]
-\includegraphics[scale=0.5]{sdd/pagetree}
-\end{figure}
+(pagetree image)
+
 \subsubsection{Page Description}
 \begin{itemize}
 \item index.jsp: welcome page of the website, invites guests to register, shows advertising, features auctions,..
@@ -155,14 +159,37 @@ Figure met page-tree
 \item profile.jsp: features the user control panel, to allow a member to change his personal information. It also allows a member to manage favorite sellers, the buyers assistant and followed auctions.
 \item search.jsp: provides powerful search-options using keywords, tags and (multiple) categories.
 \end{itemize}
-
+\pagebreak
 \subsection{User Interface}
-(screenshots van de belangrijkste pagina's.)
+\begin{figure}
+\includegraphics[width=15cm]{../../img/SM_auction_list.png}
+\caption{auctionlist.jsp}
+\end{figure}
+\begin{figure}
+\includegraphics[width=15cm]{../../img/SM_auction_detail.png}
+\caption{auctiondetail.jsp}
+\end{figure}
+\begin{figure}
+\includegraphics[width=15cm]{../../img/SM_mySM_auctions.png}
+\caption{profile.jsp - auctions}
+\end{figure}
+\begin{figure}
+\includegraphics[width=15cm]{../../img/SM_mySM_buy_assistant.png}
+\caption{profile.jsp - buyers assistant}
+\end{figure}
+\begin{figure}
+\includegraphics[width=15cm]{../../img/SM_mySM_personal.png}
+\caption{profile.jsp - personal information}
+\end{figure}
+\begin{figure}
+\includegraphics[width=15cm]{../../img/SM_mySM_profile.png}
+\caption{profile.jsp - website information}
+\end{figure}
 
 \section{Database Design}
-(Figure ERD)
-\begin{figure}[h!]
-\includegraphics[scale=0.35]{sdd/erd}
+\begin{figure}
+\includegraphics[scale=0.5,angle=90]{../../img/erd1.jpg}
+\caption{Salesmen database layout}
 \end{figure}
 
 \section{Additional Material \label{Additional}}
