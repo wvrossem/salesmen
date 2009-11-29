@@ -32,19 +32,36 @@
 				\item[Description]
 				A guest can create a new account so that he or she 
 				can use the full functionality of the site
- 				\item[Path]
+ 				\item[Main path]
  					\begin{enumerate}
 						\item Guest selects \emph{register}
-						\item Guest fills in \emph{registration form}
+						\item \label{1a} Guest fills in \emph{registration form}
 						\item Guest submits form
 						\item System checks form and if valid saves it
 						\item System sends a confirmation mail 
 					\end{enumerate}
-				\item[Exceptions]
+				\item[Exceptional paths]
 					\begin{enumerate}
-						\item Username is already taken
-						\item Incorrect information in the registration form
-						\item Incomplete form
+						\item[4a] Username is already in use
+							\begin{itemize}
+								\item[4a1] System informs the user that the username is already taken 
+								\item[4a2] User returns to step \ref{1a}, with the correct information still entered in the form field
+							\end{itemize}
+						\item[4b] E-mail address is already in use
+							\begin{itemize}
+								\item[4b1] System informs the user that the e-mail address is already in use and asks if the user is sure he or she wants to use this e-mail address
+								\item[4b2] The account is created or the user returns to step \ref{1a}, with the correct information still entered in the form field
+							\end{itemize}
+						\item[4c] Incorrect information in the registration form
+							\begin{itemize}
+								\item[4c1] System informs the user that there is some incorrect information in the form 
+								\item[4c2] User returns to step \ref{1a}, with the correct information still entered in the form field
+							\end{itemize}
+						\item[4d] Incomplete form
+							\begin{itemize}
+								\item[4d1] System informs the user that there are some fields in the form that are not filled in
+								\item[4d2] User returns to step \ref{1a}, with the correct information still entered in the form field
+							\end{itemize}			
 					\end{enumerate}
 				\item[Result] An account is created for the user
 			\end{description}
@@ -58,21 +75,62 @@
 				\item[Description]
 				If a user is registered but not logged in, he or she can
 				log in to use the full functionality of the site.
-				\item[Path]
+				\item[Main path]
  					\begin{enumerate}
-						\item Guest fills in login form
+						\item \label{2a} Guest fills in login form
 						\item Guest submits form
 						\item System checks if the form is valid and if so logs
 						the user in
 						\item System redirect the user to the page he or she was on
 							before the log in
 					\end{enumerate}
-				\item[Exceptions]
+				\item[Exceptional paths]
 					\begin{enumerate}
-						\item Incorrect username and or password
-						\item Incomplete login form
+						\item[3a] Incorrect username and/or password
+							\begin{itemize}
+								\item[4a1] System informs the user that the he or she has entered an incorrect information
+								\item[4a2] User returns to step \ref{2a}
+							\end{itemize}
+						\item[3b] Incomplete login form
+							\begin{itemize}
+								\item[4a1] System informs the user that some information is missing
+								\item[4a2] User returns to step \ref{2a}
+							\end{itemize}
 					\end{enumerate}
 				\item[Result] The user is logged in
+			\end{description}
+	\subsection{Unconfirmed user}
+		\subsubsection{Confirm account}
+			\begin{description}
+				\item[Requirement ID] 41
+				\item[Priority] Want to have
+				\item[Actor] Unconfirmed user
+				\item[Preconditions] User is at confirmation page
+				\item[Description] Unconfirmed users can confirm their account so they become regular users
+				\item[Main path]
+ 					\begin{enumerate}
+						\item Users follows link in the confirmation mail he or she has received
+						\item User selects confirm account on the confirmation page
+						\item 
+					\end{enumerate}
+				\item[Exceptions] None
+				\item[Result] The user becomes a regular user and can make use of all the functionality of the site
+			\end{description}
+		\subsubsection{Request new confirmation mail}
+			\begin{description}
+				\item[Requirement ID] 42
+				\item[Priority] Want to have
+				\item[Actor] Unconfirmed user
+				\item[Preconditions] User is at control panel
+				\item[Description] Unconfirmed users can request a new confirmation mail
+				\item[Main path]
+ 					\begin{enumerate}
+						\item Users selects "send new confirmation mail"
+						\item System send a new confirmation mail to the user's e-mail address
+						\item 
+					\end{enumerate}
+				\item[Exceptions] None
+				\item[Result] The user receives a new confirmation mail
 			\end{description}
 	\subsection{Guest and User}
 		\subsubsection{Search for an auction}
@@ -82,7 +140,7 @@
 				\item[Actor] User or Guest
 				\item[Preconditions] User is at the home page
 				\item[Description] Guests and members can search for auctions
-				\item[Path]
+				\item[Main path]
  					\begin{enumerate}
 						\item Users enters a search term in the search field
 						\item User submits the search
@@ -99,7 +157,7 @@
 				\item[Actor] User or Guest
 				\item[Preconditions] User is at the home page
 				\item[Description] Guests and users can view all the auctions of a certain category
-				\item[Path]
+				\item[Main path]
  					\begin{enumerate}
 						\item Users select a category from the category list
 						\item System redirects the user to a page with all the auctions of the
@@ -136,7 +194,7 @@
 				\item[Actor] User
 				\item[Preconditions] User is logged in
 				\item[Description] Members who are logged in can log out
-				\item[Path]
+				\item[Main path]
  					\begin{enumerate}
 						\item User selects \emph{log out}
 						\item System logs the user out
@@ -152,7 +210,7 @@
 				\item[Actor] User
 				\item[Preconditions] User is at advanced search page
 				\item[Description] Members can search for other members 
-				\item[Path]
+				\item[Main path]
  					\begin{enumerate}
 						\item User enters search term in search user field
 						\item User submits search
@@ -170,7 +228,7 @@
 				\item[Preconditions] User is logged in. User is at home page or user home
 				\item[Description] Members of the site can create a new auction on which
 				other members can bid
-				\item[Path]
+				\item[Main path]
  					\begin{enumerate}
 						\item User selects \emph{place auction}
 						\item User fills in \emph{new auction form}
@@ -187,7 +245,7 @@
 				\item[Actor] User
 				\item[Preconditions] User is logged in. User is at control panel
 				\item[Description] Users can view the auctions they have placed
-				\item[Path]
+				\item[Main path]
  					\begin{enumerate}
 						\item User selects \emph{placed auctions}
 						\item System redirects user to user's placed auctions page
@@ -207,7 +265,7 @@
 						\item Auction is not of the user
 					\end{enumerate}
 				\item[Description] Members can bid on auctions of other members
-				\item[Path]
+				\item[Main path]
  					\begin{enumerate}
 						\item User select \emph{bid}
 						\item User fills in bidding form
@@ -224,7 +282,7 @@
 				\item[Actor] User
 				\item[Preconditions] User is logged in. User is at control panel
 				\item[Description] Users can view the auctions they have bid on
-				\item[Path]
+				\item[Main path]
  					\begin{enumerate}
 						\item User selects \emph{active auctions}
 						\item System redirects user to user's active auctions page
@@ -239,7 +297,7 @@
 				\item[Actor] User
 				\item[Preconditions] User is logged in. User is at control panel
 				\item[Description] Members can modify their account information
-				\item[Path]
+				\item[Main path]
  					\begin{enumerate}
 						\item User selects \emph{modify account}
 						\item User changes account information form
@@ -256,7 +314,7 @@
 				\item[Actor] User
 				\item[Preconditions] User is logged in. User is at user page
 				\item[Description] Users can send messages to other users
-				\item[Path]
+				\item[Main path]
  					\begin{enumerate}
 						\item User selects \emph{send message}
 						\item User fills in personal message form
@@ -273,7 +331,7 @@
 				\item[Actor] User
 				\item[Preconditions] User is logged in. User is at control panel
 				\item[Description] Users can view the personal messages
-				\item[Path]
+				\item[Main path]
  					\begin{enumerate}
 						\item User selects \emph{personal messages}
 						\item System redirects the user the user's personal messages page
@@ -288,7 +346,7 @@
 				\item[Actor] User
 				\item[Preconditions] User is logged in. User is at personal messages page
 				\item[Description] Users can delete personal messages they have received
-				\item[Path]
+				\item[Main path]
  					\begin{enumerate}
 						\item User selects a message
 						\item User selects \emph{delete message}
@@ -304,7 +362,7 @@
 				\item[Actor] User
 				\item[Preconditions] User is logged in. User is at auction page
 				\item[Description] Users can follow an auction, i.e. they put it in their following list
-				\item[Path]
+				\item[Main path]
  					\begin{enumerate}
 						\item User selects \emph{follow auction}
 						\item System adds auction to the users followed auctions list
@@ -319,7 +377,7 @@
 				\item[Actor] User
 				\item[Preconditions] User is logged in. User is at control panel
 				\item[Description] Users can view the auctions they are following
-				\item[Path]
+				\item[Main path]
  					\begin{enumerate}
 						\item User selects \emph{followed auctions}
 						\item System redirects user to user's followed auctions page
@@ -334,7 +392,7 @@
 				\item[Actor] User
 				\item[Preconditions] User is logged in. User is at auction page. User bought the item.
 				\item[Description] Users can view the transaction of an item they bought
-				\item[Path]
+				\item[Main path]
  					\begin{enumerate}
 						\item User selects \emph{view transaction}
 						\item System forwards user to transaction page of auction
@@ -349,7 +407,7 @@
 				\item[Actor] User
 				\item[Preconditions] User is logged in. User is at transaction page
 				\item[Description] Users can pay auctions on the transaction page of an auction
-				\item[Path]
+				\item[Main path]
  					\begin{enumerate}
 						\item User selects \emph{pay item}
 						\item User selects a payment method
@@ -366,7 +424,7 @@
 				\item[Actor] User
 				\item[Preconditions] User is logged in. User is at transaction page, user paid transaction
 				\item[Description] Users can send rate a transaction after it is paid
-				\item[Path]
+				\item[Main path]
  					\begin{enumerate}
 						\item User selects \emph{rate transaction}
 						\item User fills in rate transaction form
@@ -384,7 +442,7 @@
 				\item[Actor] User
 				\item[Preconditions] User is logged in. User is at user page
 				\item[Description] Users can add a seller to their favourites so they can their auctions easily
-				\item[Path]
+				\item[Main path]
  					\begin{enumerate}
 						\item User selects \emph{add seller to favourites}
 						\item System adds the seller to the favourite seller list of the user
@@ -399,7 +457,7 @@
 				\item[Actor] User
 				\item[Preconditions] User is logged in. User is at control panel
 				\item[Description] Users can view his or her favourite sellers
-				\item[Path]
+				\item[Main path]
  					\begin{enumerate}
 						\item User selects \emph{favourite sellers}
 						\item System redirects user to user's favourite sellers page
@@ -414,7 +472,7 @@
 				\item[Actor] User
 				\item[Preconditions] User is logged in. User is at control panel
 				\item[Description] Users can remove a seller from his or her favourite sellers list
-				\item[Path]
+				\item[Main path]
  					\begin{enumerate}
 						\item User selects a seller from the list
 						\item User selects \emph{delete seller} 
@@ -430,7 +488,7 @@
 				\item[Actor] User
 				\item[Preconditions] User is logged in. User is at control panel
 				\item[Description] Users can view their own personal ``bank acount" on the site
-				\item[Path]
+				\item[Main path]
  					\begin{enumerate}
 						\item User selects \emph{view salespal}
 						\item System redirects the user to the user's salespal page
@@ -445,7 +503,7 @@
 				\item[Actor] User
 				\item[Preconditions] User is logged in. User is at salespal page
 				\item[Description] Users can add more money on their salespal account
-				\item[Path]
+				\item[Main path]
  					\begin{enumerate}
 						\item User selects \emph{top up salespal}
 						\item Users fills in top up salespal form
@@ -462,7 +520,7 @@
 				\item[Preconditions] User is logged in. User is at control panel
 				\item[Description] Users can view recommended auctions for him or her. This list 
 					is generated through tags and categories the user frequently uses
-				\item[Path]
+				\item[Main path]
  					\begin{enumerate}
 						\item User selects \emph{view recommendations}
 						\item System redirects user to user's recommended auctions page
@@ -576,6 +634,18 @@
 			\item[Priority] Must have
 			\item[Description] Whenever sensitive transactions are made, the HTTPS protocol should be used.
 		\end{description}
+	\subsection{Advertisments through Google AdWords}
+		\begin{description}
+			\item[Requirement ID] 43
+			\item[Priority] Want to have
+			\item[Description] There should be space for advertisements from Google AdWords
+		\end{description}
+	\subsection{Advertisments through Google AdWords}
+		\begin{description}
+			\item[Requirement ID] 43
+			\item[Priority] Want to have
+			\item[Description] There should be space for advertisements from Google AdWords
+		\end{description}
 %\section{Performance Requirements}
 \section{Database Requirements}
 	All data will be saved in the database. The database must always remain consistent. There will be many concurrent request 
@@ -620,5 +690,7 @@
 		\hline  Encrypted password & Rate transaction  &  \\
 		\hline  Browser compatibility & Retract bid  &  \\
 		\hline  Secure connection & Basic e-mail notification &  \\
+		\hline  & Confirm account &  \\
+		\hline  & Request new confirmation mail &  \\
 		\hline
 	\end{tabular} 
