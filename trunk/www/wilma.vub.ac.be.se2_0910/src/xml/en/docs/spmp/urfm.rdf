@@ -27,6 +27,11 @@
     </packages>
 
     <releases rdf:parseType="Collection">
+<Release rdf:about="http://wilma.vub.ac.be/~se2_0910/docs/spmp/archive/v0_2/">
+  <package rdf:resource="http://wilma.vub.ac.be/~se2_0910/docs/spmp/"/>
+  <revision>v0.2</revision>
+  <created>2009-11-27</created>
+</Release>
 <Release rdf:about="http://wilma.vub.ac.be/~se2_0910/docs/spmp/archive/v0_1/">
   <package rdf:resource="http://wilma.vub.ac.be/~se2_0910/docs/spmp/"/>
   <revision>v0.1</revision>
@@ -36,6 +41,9 @@
     
     <files rdf:parseType="Collection">
 
+<!-- **************************************************************
+     SPMP v0.1 
+     ************************************************************** -->
 <File rdf:about="http://wilma.vub.ac.be/~se2_0910/docs/spmp/archive/v0_1/spmp-v0_1.pdf">
   <release rdf:resource="http://wilma.vub.ac.be/~se2_0910/docs/spmp/archive/v0_1/"/>
   <basename>spmp-v0_1</basename>
@@ -60,6 +68,35 @@
   </size> 
   <link>http://wilma.vub.ac.be/~se2_0910/docs/spmp/archive/v0_1/spmp-v0_1.tex</link>
   <format>application/x-latex</format>
+</File>
+
+<!-- **************************************************************
+     SPMP v0.2 
+     ************************************************************** -->
+<File rdf:about="http://wilma.vub.ac.be/~se2_0910/docs/spmp/archive/v0_2/spmp-v0_2.pdf">
+  <release rdf:resource="http://wilma.vub.ac.be/~se2_0910/docs/spmp/archive/v0_2/"/>
+  <basename>spmp-v0_2</basename>
+  <extension>.pdf</extension>
+  <language>en</language>
+  <size rdf:parseType="Resource">
+    <unit rdf:resource="http://purl.org/urfm/Kilobyte"/>
+    <rdf:value>138</rdf:value>
+  </size> 
+  <link>http://wilma.vub.ac.be/~se2_0910/docs/spmp/archive/v0_2/spmp-v0_2.pdf</link>
+  <format>application/pdf</format>
+</File>
+
+<File rdf:about="http://wilma.vub.ac.be/~se2_0910/docs/spmp/archive/v0_2/spmp-v0_2-src.zip">
+  <release rdf:resource="http://wilma.vub.ac.be/~se2_0910/docs/spmp/archive/v0_2/"/>
+  <basename>spmp-v0_2-src</basename>
+  <extension>.zip</extension>
+  <language>en</language>
+  <size rdf:parseType="Resource">
+    <unit rdf:resource="http://purl.org/urfm/Kilobyte"/>
+    <rdf:value>155</rdf:value>
+  </size> 
+  <link>http://wilma.vub.ac.be/~se2_0910/docs/spmp/archive/v0_2/spmp-v0_2-src.zip</link>
+  <format>application/zip</format>
 </File>
 
     </files>
