@@ -1,26 +1,28 @@
 <?xml version='1.0'?>
 <timesheet xmlns="http://purl.org/net/timetrack">
-  <item duration="PT3H">
+	
+  <item duration="PT2H">
     <desc>Meeting on Tuesday 2009/11/24.</desc>
     <refs>
       <ref>http://wilma.vub.ac.be/~se2_0910/docs/minutes/2009/11/24/minutes-20091124.pdf</ref>
     </refs>
   </item>
+
   <item  duration="PT10M">
     <desc>Reviewed Minutes of Tuesday 2009/11/24 for Quality Assurance.</desc>
     <refs>
       <ref>http://wilma.vub.ac.be/~se2_0910/docs/minutes/2009/11/17/minutes-20091117.pdf</ref>
     </refs>
   </item>
+
   <item duration="PT1H">
     <desc>Meeting on Friday 2009/11/27.</desc>
-    <refs>
-      <ref>http://wilma.vub.ac.be/~se2_0910/docs/minutes/2009/11/27/minutes-20091127.pdf</ref>
-    </refs>
   </item>
+
   <item duration="PT3H">
     <desc>Studied the various tools at our disposal.</desc>
   </item>
+
   <item duration="PT30M">
     <desc>Administration and Communication.</desc>
   </item>
