@@ -1,0 +1,5 @@
+Een simpele link naar meerdere links:
+
+http://www.ontko.com/java/java_coding_standards.html
+
+Voor de geïnteresseerden, lees de verschillende coderingen daar eens door.
