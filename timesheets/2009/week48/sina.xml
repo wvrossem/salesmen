@@ -1,0 +1,87 @@
+<?xml version='1.0'?>
+<timesheet xmlns="http://purl.org/net/timetrack">
+
+  <item duration="PT2H">
+    <desc>Meeting on Tuesday 2009/11/24.</desc>
+    <refs>
+      <ref>http://wilma.vub.ac.be/~se2_0910/docs/minutes/2009/11/24/minutes-20091124.pdf</ref>
+    </refs>
+  </item>
+
+  <item duration="PT30M">
+    <desc>
+      Published the minutes of the 2009/11/24 meeting.
+      Also published meeting agenda's for previous meetings.
+    </desc>
+    <refs>
+      <ref>http://code.google.com/p/salesmen/source/detail?r=443</ref>
+      <ref>http://code.google.com/p/salesmen/source/detail?r=441</ref>
+    </refs>
+  </item>
+
+  <item duration="PT20M">
+    <desc>
+      Published the developers' timesheets for the 47th week of 2009.
+    </desc>
+    <refs>      
+      <ref>http://code.google.com/p/salesmen/source/detail?r=435</ref>
+      <ref>http://code.google.com/p/salesmen/source/detail?r=436</ref>
+    </refs>
+  </item>
+
+  <item duration="PT20M">
+    <desc>Worked on the Salesmen Literature document.</desc>
+    <refs>
+      <ref>http://code.google.com/p/salesmen/source/detail?r=412</ref>
+    </refs>
+  </item>
+
+  <item duration="PT2H30M">
+    <desc>
+      Installed JBoss on Wilma with Jorne. Prior to that, we installed 
+      JBoss locally.
+    </desc>
+    <refs>
+      <ref>http://groups.google.com/group/salesmen/msg/a90c3b99096c26ae</ref>
+    </refs>
+  </item>
+
+  <item duration="PT25M">
+    <desc>
+      Published SQAP v0.1.
+    </desc>
+    <refs>
+      <ref>http://code.google.com/p/salesmen/source/detail?r=438</ref>
+      <ref>http://code.google.com/p/salesmen/source/detail?r=433</ref>
+      <ref>http://code.google.com/p/salesmen/source/detail?r=434</ref>
+    </refs>
+  </item>
+
+  <item duration="PT35M">
+    <desc>
+      Published SPMP v0.2.
+    </desc>
+    <refs>
+      <ref>http://code.google.com/p/salesmen/source/detail?r=482</ref>
+      <ref>http://code.google.com/p/salesmen/source/detail?r=447</ref>
+      <ref>http://code.google.com/p/salesmen/source/detail?r=476</ref>
+      <ref>http://code.google.com/p/salesmen/source/detail?r=475</ref>
+      <ref>http://code.google.com/p/salesmen/source/detail?r=474</ref>
+      <ref>http://groups.google.com/group/salesmen/msg/182f6bfd4cf9861b</ref>
+    </refs>
+  </item>
+
+  <item duration="PT5H">
+    <desc>
+      Reading the first two chapters of JBoss in Action.
+    </desc>
+    <refs>
+      <ref>http://www.amazon.com/JBoss-Action-Configuring-Application-Server/dp/1933988029</ref>
+    </refs>
+  </item>
+
+  <item duration="PT30M">
+    <desc>Administration and communication.</desc>
+  </item>
+
+</timesheet>
