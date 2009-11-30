@@ -21,8 +21,26 @@
 
   <item duration="PT3H">
     <desc>Studied the various tools at our disposal.</desc>
+    <refs>
+      <ref>http://code.google.com/p/salesmen/wiki/SalesmenLiterature</ref>
+      <ref>http://en.wikipedia.org/wiki/Java_Enterprise_Edition</ref>
+      <ref>http://en.wikipedia.org/wiki/EJB_Container</ref>
+      <ref>http://en.wikipedia.org/wiki/Application_Server</ref>
+      <ref>http://en.wikipedia.org/wiki/JavaServer_Pages</ref>
+      <ref>http://en.wikipedia.org/wiki/JVM</ref>
+      <ref>http://en.wikipedia.org/wiki/Google_Web_Toolkit</ref>
+      <ref>http://en.wikipedia.org/wiki/Hibernate_%28Java%29</ref>
+      <ref>http://en.wikipedia.org/wiki/Persistence_%28computer_science%29</ref>
+      <ref>http://en.wikipedia.org/wiki/Jboss</ref>
+      <ref>http://en.wikipedia.org/wiki/Jquery</ref>
+      <ref>http://en.wikipedia.org/wiki/SOAP</ref>
+      <ref>http://docs.sun.com/app/docs/doc/820-7759</ref>
+      <ref>http://jquery.com/</ref>
+      <ref>http://en.wikipedia.org/wiki/Scala_%28programming_language%29</ref>
+      <ref>http://en.wikipedia.org/wiki/Groovy_%28programming_language%29</ref>
+    </refs>
   </item>
-
+  
   <item duration="PT30M">
     <desc>Administration and Communication.</desc>
   </item>
