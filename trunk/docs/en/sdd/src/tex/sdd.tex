@@ -34,6 +34,7 @@ version & date & author & description \\
 \hline
 v1 & 27 Nov 2009 & Bart Maes & Draft initialization \\
 v2 & 29 Nov 2009 & Bart Maes & Added Appendix A, added Technical Design\\
+v3 & 29 Nov 2009 & Bart Maes & Added Appendix B, initial QA check\\
 \end{tabular}
 \end{center}
 
@@ -41,23 +42,23 @@ v2 & 29 Nov 2009 & Bart Maes & Added Appendix A, added Technical Design\\
 \tableofcontents
 \newpage
 
-\section{Introduction}
+\chapter{Introduction}
 
-\subsection{Purpose}
+\section{Purpose}
    This document specifies the entire software architecture and design for the Salesmen software. These design decisions directly relate to the functionalities, performances, constraints, attributes and interfaces of the system.
 
-\subsection{Scope}
+\section{Scope}
     This document describes the software architecture and design for the initial release of the Salesmen software, version 1.0. The intended audience of this document exclusively includes the designers, the developers and the testers of the software.
 
 This SDD document mainly follows the standards of the IEEE 1016-1998 standard.
 
-\subsection{Reference materials}
+\section{Reference materials}
 \begin{itemize}
 \item IEEE Std. 1016-1998 - Software Design Descriptions
 \item \url{http://tinf2.vub.ac.be/~dvermeir/courses/software_engineering/slides.pdf} [1 Nov 2009].
 \end{itemize}
 
-\subsection{Definitions and acronyms (listed alphabetically) \label{acronyms}}
+\section{Definitions and acronyms \label{acronyms}}
 \begin{tabular}{ll}
 \textbf{CSS}   & Cascading Style Sheets \\
 \textbf{HTML}   & HyperText Markup Language \\
@@ -67,6 +68,7 @@ This SDD document mainly follows the standards of the IEEE 1016-1998 standard.
 \textbf{JSP}   & Java Server Pages \\
 \textbf{RDBMS}    & Relational DataBase Management System \\
 \textbf{Servlet}   & (Java) program that runs in a J2EE webcontainer  \\
+\textbf{SCMP}   & Software Configuration Management Plan \\
 \textbf{SDD}    & Software Design Document \\
 \textbf{SMTP}   & Single Mail Transfer Protocol \\
 \textbf{SRS}    & Software Requirements Specification \\
@@ -74,11 +76,11 @@ This SDD document mainly follows the standards of the IEEE 1016-1998 standard.
 \end{tabular}
 
 \pagebreak
-\section{System Architecture}
-\subsection{Overview}
-See Appendix A.
+\chapter{System Architecture}
+\section{Overview}
+System architecture diagram: see Appendix A, \ref{fig_architecture}
 
-\subsection{Three-Tier Architecture}
+\section{Three-Tier Architecture}
 Three-tier is a client-server architecture in which the user interface, functional process logic, computer data storage and data access are developed and maintained as independent modules, most often on separate platforms.
 
 Apart from the usual advantages of modular software with well defined interfaces, the three-tier architecture is intended to allow any of the three tiers to be upgraded or replaced independently as requirements or technology change. For example, a change of operating system in the presentation tier would only affect the user interface code.
@@ -86,49 +88,52 @@ Apart from the usual advantages of modular software with well defined interfaces
 Typically, the user interface runs on a desktop PC or workstation and uses a standard graphical user interface, functional process logic may consist of one or more separate modules running on a workstation or application server, and an RDBMS on a database server or mainframe contains the computer data storage logic.
 
 Three-tier architecture has the following three tiers:
-\begin {itemize}
+\begin{itemize}
 \item \textbf{Presentation tier}
 This is the topmost level of the application. The presentation tier displays information related to such services as browsing merchandise, purchasing, and shopping cart contents. It communicates with other tiers by outputting results to the browser/client tier and all other tiers in the network.
 \item \textbf{Application tier (Business Logic/Logic Tier)}
 The logic tier is pulled out from the presentation tier and, as its own layer, it controls an application’s functionality by performing detailed processing.
 \item \textbf{Data tier}
 This tier consists of Database Servers. Here information is stored and retrieved. This tier keeps data neutral and independent from application servers or business logic. Giving data its own tier also improves scalability and performance. 
-\end {itemize}
+\end{itemize}
+
 Benefits of using this architectural style include increased performance, flexibility, maintainability, reusability, and scalability.
-\subsection{Discussion of Alternative Designs}
+\section{Discussion of Alternative Designs}
 \textbf{MVC}
 At first glance, the three tiers may seem similar to the MVC (Model View Controller) concept; however, topologically they are different. A fundamental rule in a three-tier architecture is the client tier never communicates directly with the data tier; in a three-tier model all communication must pass through the middleware tier. Conceptually the three-tier architecture is linear. However, the MVC architecture is triangular: the View sends updates to the Controller, the Controller updates the Model, and the View gets updated directly from the Model.
 
 From a historical perspective the three-tier architecture concept emerged in the 1990s from observations of distributed systems (e.g., web applications) where the client, middleware and data tiers ran on physically separate platforms. Whereas MVC comes from the previous decade and is based on observations of applications that ran on a single graphical workstation; MVC was applied to distributed applications much later in its history.
 
 
-\subsection{Survey of Technologies Used}
-\subsubsection{Presentation Layer}
+\section{Survey of Technologies Used}
+\subsection{Introduction}
+This section describes briefly what software and technologies will be used to implement the Salesmen software. For more information about these technologies, the reader is kindly referred to the SCMP.
+\subsection{Presentation Layer}
 Java Server Pages (JSP) is a technology from Sun that allows easy development of GUIs using webbrowser clients. JSP helps in making a clear distinction of layout and code concepts, so that a developer and graphical designer can independently work on the same webpages with little interference.
 
-\subsubsection{Business Layer}
+\subsection{Business Layer}
 JBoss Application Server (or JBoss AS) is a free software/open-source Java EE-based application server. Because it is Java-based, the JBoss application server operates cross-platform: usable on any operating system that Java supports. 
 As part of the jBoss software, the Apache Tomcat servlet container will allow us to serve dynamically parsed webpages (JSP). 
 
-
-\subsubsection{Data Layer}
+\subsection{Data Layer}
 Two database platforms were considered: MySQL and PostgresSQL.
 
 Our programmers will not need to write SQL statements themselves, as these are generated with the use of the EJB3 standard and Java annotations. 
 Based on Hibernate concepts, EJB3 allows for persintant objects without the need for platform dependant SQL statements and other 'dirty' constructs.
 
 
-\subsection{Physical Configuration}
+\section{Physical Configuration}
 The software is to be installed on the Wilma server at the VUB datacenter. Wilma is accessible over the internet through web browsers and command line clients. The software relies on the availability of an SMTP server on the local LAN of the VUB, so that we do not have to include MDA (Mail Delivery Agent) functionality in the software.
-Infrastructure: see Appendix A.
+
+System infrastructure diagram: see Appendix A, \ref{fig_infrastructure}
 
 
-\subsection{System Interface Description}
+\section{System Interface Description}
 The web-interface is the only interface available to users of the Salesmen software. However, depending of the access-rights provided to a given user, more options may become available. Website administrators, for example, can close auctions or ban other members while 'normal' members cannot access these facilities. A more detailed description of the access-rights provided to each group of users will be provided in the SRS.
-Prototypes of the webinterface can be found in Appendix A.
+Prototypes of the webinterface can be found in Appendix B.
 \pagebreak
-\section{Technical Design \label{Technical Design}}
-\subsection{Presentation layer}
+\chapter{Technical Design \label{Technical Design}}
+\section{Presentation layer}
 The presentation merely consists of static (x)HTML files that contain calls to Java Servlets to obtain dynamicly changing information. These (x)HTML files will use CSS to seperate the static information from the actual presentation of the website. Javascript will be used to provide the user with a friendly and smooth interface.
 This facilitates the following goals:
 \begin{itemize}
@@ -136,41 +141,41 @@ This facilitates the following goals:
 \item Support for multiple languages (1 set of html templates per language), as required in the SRS
 \item 'Smooth' interface ith a minimum of required page refreshes, as required in the SRS
 \end{itemize}
+Prototypes of the webinterface can be found in Appendix B.
 
-\subsection{Business layer}
+\section{Business layer}
 The business layer consists of the Java Servlets that will be able to receive and process requests, and return proper responses.
 From the class diagram it becomes clear that two classes will play a central role in our application: User and Auction.
 
-Class-diagram: see Appendix A
+Class diagram, see Appendix A, \ref{fig_class}
 
-\subsection{Data layer}
+\section{Data layer}
 The data layer consists of the database and the EJB3 standard for persistant objects. EJB3 allows, through the use of annotations in the class, to abstract away from SQL-statements as EJB3 will generate these.
 An alternative for the use of EJB3 would be Hibernate. Hibernate however, is not a standard, in contrary to EJB3. Futhermore, EJB3 is newer technology based on the concepts of Hibernate and is now seamlessly supported by the jBoss AS. Because of these reasons, Hibernate was discarded.
 
 The database design supports all current requirements and is designed with expansion in mind.
-Entity-Relationship diagram: see Appendix A.
+
+Entity-Relationship diagram: see Appendix A, \ref{fig_database}
 
 \pagebreak
-\section{Software Features}
-\subsection{Use cases}
-
+\chapter{Software Features}
 
 % ------------------------------------------------------------------------
 % Begin Use Cases
 % ------------------------------------------------------------------------
-%\input{../../../srs/src/tex/specific-requirements.tex}
-
+\input{../../../srs/src/tex/functional-requirements.tex}
+\input{../../../srs/src/tex/nonfunctional-requirements.tex}
 % ------------------------------------------------------------------------
 % End of Use Cases
 % ------------------------------------------------------------------------
 
 \pagebreak
-\section{User Interface Design \label{UI Design}}
-\subsection{Web pages tree}
-\subsubsection{Overview}
+\chapter{User Interface Design \label{UI Design}}
+\section{Web pages tree}
+\subsection{Overview}
 (pagetree image)
 
-\subsubsection{Page Description}
+\subsection{Page Description}
 \begin{itemize}
 \item index.jsp: welcome page of the website, invites guests to register, shows advertising, features auctions,..
 \item login.jsp: allows a guest to log in. Every page will feature a login-form, login.jsp will handle the business logic (check password etc)
@@ -182,55 +187,78 @@ Entity-Relationship diagram: see Appendix A.
 \item search.jsp: provides powerful search-options using keywords, tags and (multiple) categories.
 \end{itemize}
 \pagebreak
-\subsection{User Interface}
-See appendix A
+\section{User Interface}
+Prototypes of the webinterface can be found in Appendix B.
 
 
-\section{Additional Material \label{Additional}}
-\section{Requirements Traceability Matrix}
+\chapter{Additional Material \label{Additional}}
+\chapter{Requirements Traceability Matrix}
 
-\section{Appendix A}
+\chapter{Appendix A}
+
+
 \begin{figure}
+\section{Architecture}
+\label{fig_architecture}
 \includegraphics[scale=0.8]{../../img/archi1.png}
 \caption{Salesmen Architecture}
 \end{figure}
 
 \begin{figure}
+\section{Infrastructure}
+\label{fig_infrastructure}
 \includegraphics[scale=0.8]{../../img/infra1.png}
 \caption{Salesmen infrastructure}
 \end{figure}
 
 \begin{figure}
+\section{Class Diagram}
+\label{fig_class}
 \includegraphics[scale=0.4,angle=90]{../../img/class1.jpg}
 \caption{Salesmen class diagram}
 \end{figure}
 
 \begin{figure}
+\section{Database diagram}
+\label{fig_database}
 \includegraphics[scale=0.5,angle=90]{../../img/erd1.jpg}
 \caption{Salesmen database layout}
 \end{figure}
 
+\chapter{Appendix B}
 \begin{figure}
+\section{Auction list}
+\label{fig_prototype_auctionlist}
 \includegraphics[width=15cm]{../../img/SM_auction_list.png}
 \caption{auctionlist.jsp}
 \end{figure}
 \begin{figure}
+\section{Auction detail}
+\label{fig_prototype_auctiondetail}
 \includegraphics[width=15cm]{../../img/SM_auction_detail.png}
 \caption{auctiondetail.jsp}
 \end{figure}
 \begin{figure}
+\section{Profile - Auctions}
+\label{fig_prototype_profile_auctions}
 \includegraphics[width=15cm]{../../img/SM_mySM_auctions.png}
 \caption{profile.jsp - auctions}
 \end{figure}
 \begin{figure}
+\section{Profile - Buyers assistant}
+\label{fig_prototype_buyer_assistant}
 \includegraphics[width=15cm]{../../img/SM_mySM_buy_assistant.png}
 \caption{profile.jsp - buyers assistant}
 \end{figure}
 \begin{figure}
+\section{Profile - Personal information}
+\label{fig_prototype_personal_info}
 \includegraphics[width=15cm]{../../img/SM_mySM_personal.png}
 \caption{profile.jsp - personal information}
 \end{figure}
 \begin{figure}
+\section{Profile - Account information}
+\label{fig_prototype_account_info}
 \includegraphics[width=15cm]{../../img/SM_mySM_profile.png}
 \caption{profile.jsp - website information}
 \end{figure}
