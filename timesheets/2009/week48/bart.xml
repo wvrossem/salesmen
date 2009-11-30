@@ -1,0 +1,85 @@
+<?xml version='1.0'?>
+<timesheet xmlns="http://purl.org/net/timetrack">
+
+  <item duration="PT2H30M">
+    <desc>Meeting on Tuesday 2009/11/24.</desc>
+    <refs>
+      <ref>http://wilma.vub.ac.be/~se2_0910/docs/minutes/2009/11/24/minutes-20091124.pdf</ref>
+    </refs>
+  </item>
+
+  <item duration="PT1H">
+    <desc>Meeting on Friday 2009/11/27.</desc>
+  </item>
+
+  
+  <item duration="PT1H30M">
+    <desc>
+      Gather information/learn about Hibernate & EJB3 + jBoss
+    </desc>
+    <refs>
+      <ref>ISBN 0-13-047676-5</ref>
+    </refs>
+  </item>
+
+  <item duration="PT1H30M">
+    <desc>
+      Learn about servlets (and check out examples)
+    </desc>
+    <refs>
+		<ref>http://java.sun.com/developer/onlineTraining/Programming/BasicJava1/servlet.html</ref>
+		<ref>http://www.servlets.com/jservlet2/examples/</ref>
+		<ref>http://developer.apple.com/internet/java/examples/helloworld2_source.html</ref>
+		<ref>http://www.jsptube.com/servlet-tutorials/simple-servlet-example.html</ref>
+    </refs>
+  </item>
+
+  <item duration="PT1H10M">
+    <desc>
+      Gather information and start discussion about MySQL vs PostgreSQL
+    </desc>
+    <refs>
+		<ref>http://wiki.postgresql.org/wiki/Why_PostgreSQL_Instead_of_MySQL:_Comparing_Reliability_and_Speed_in_2007</ref>
+		<ref>http://www.xaprb.com/blog/2008/05/18/why-is-mysql-more-popular-than-postgresql/</ref>
+		<ref>http://www.randombugs.com/linux/mysql-postgresql-benchmarks.html </ref>
+      <ref>http://groups.google.com/group/salesmen/browse_thread/thread/beed4cc3c1953887?hl=en#</ref>
+    </refs>
+  </item>
+
+  <item duration="PT1H40M">
+    <desc>
+      Gather information and start discussion about GWT
+    </desc>
+    <refs>
+		<ref>http://code.google.com/webtoolkit/</ref>
+		<ref>http://googlewebtoolkit.blogspot.com/</ref>
+		<ref>http://www.slideshare.net/MomentumDesignLab/gwt-google-web-toolkit-presentation</ref>
+		<ref>http://groups.google.com/group/google-web-toolkit/msg/85f0c48800ef6592</ref>
+		<ref>http://www.seroundtable.com/archives/012451.html</ref>
+		<ref>http://www.bloggingaboutjava.org/2006/05/javaone2006-to-gwt-or-to-jsf/</ref>
+		<ref>http://google.wikia.com/wiki/Google_Web_Toolkit</ref>
+		<ref>http://groups.google.com/group/salesmen/browse_thread/thread/056ae92d85687b83?hl=en</ref>
+    </refs>
+  </item>
+
+  <item duration="PT5H">
+    <desc>
+      Reading the first two chapters of 'J2EE and JAX, developing web applications and web services'
+    </desc>
+    <refs>
+      <ref>ISBN 0-13-047676-5</ref>
+    </refs>
+  </item>
+  
+   <item duration="PT8H">
+    <desc>Write initial version of SDD (+ drawing of diagrams)</desc>
+	<refs>
+      <ref>http://code.google.com/p/salesmen/source/browse/#svn/trunk/docs/en/sdd/src/tex</ref>
+    </refs>
+  </item>
+
+  <item duration="PT30M">
+    <desc>Administration and communication.</desc>
+  </item>
+
+</timesheet>
