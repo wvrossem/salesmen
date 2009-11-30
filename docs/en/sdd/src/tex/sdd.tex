@@ -5,6 +5,8 @@
 \usepackage{amsmath}
 \usepackage{eurosym}
 
+
+
 \title{Software Engineering Group 2 (2009-2010) \\Software Design Document}
 \author{Bart Maes}
 \date {November 27, 2009}
@@ -31,6 +33,7 @@ This document, the Software Design Description lays down the architecture and de
 version & date & author & description \\
 \hline
 v1 & 27 Nov 2009 & Bart Maes & Draft initialization \\
+v2 & 29 Nov 2009 & Bart Maes & Added Appendix A, added Technical Design\\
 \end{tabular}
 \end{center}
 
@@ -56,25 +59,24 @@ This SDD document mainly follows the standards of the IEEE 1016-1998 standard.
 
 \subsection{Definitions and acronyms (listed alphabetically) \label{acronyms}}
 \begin{tabular}{ll}
-\textbf{SCMP}   & Software Configuration Management Plan \\
+\textbf{CSS}   & Cascading Style Sheets \\
+\textbf{HTML}   & HyperText Markup Language \\
+\textbf{EJB3}   & Enterprise JavaBeans v3 \\
+\textbf{J2EE}   & Java 2 Platform, Enterprise Edition \\
+\textbf{jBoss}   & An application server \\
+\textbf{JSP}   & Java Server Pages \\
+\textbf{RDBMS}    & Relational DataBase Management System \\
+\textbf{Servlet}   & (Java) program that runs in a J2EE webcontainer  \\
 \textbf{SDD}    & Software Design Document \\
 \textbf{SMTP}   & Single Mail Transfer Protocol \\
-\textbf{SPMP}   & Software Project Management Plan \\
-\textbf{SQAP}   & Software Quality Assurance Plan \\
 \textbf{SRS}    & Software Requirements Specification \\
-\textbf{STD}    & Software Test Document\\
-\textbf{SVN}    & Subversion, a version control system\\
-\textbf{QA}     & Quality Assurance\\
+\textbf{SQL}   & Structured Query Language \\
 \end{tabular}
 
 \pagebreak
 \section{System Architecture}
 \subsection{Overview}
-
-\begin{figure}
-\includegraphics[scale=0.8]{../../img/archi1.png}
-\caption{Salesmen Architecture}
-\end{figure}
+See Appendix A.
 
 \subsection{Three-Tier Architecture}
 Three-tier is a client-server architecture in which the user interface, functional process logic, computer data storage and data access are developed and maintained as independent modules, most often on separate platforms.
@@ -118,25 +120,45 @@ Based on Hibernate concepts, EJB3 allows for persintant objects without the need
 
 \subsection{Physical Configuration}
 The software is to be installed on the Wilma server at the VUB datacenter. Wilma is accessible over the internet through web browsers and command line clients. The software relies on the availability of an SMTP server on the local LAN of the VUB, so that we do not have to include MDA (Mail Delivery Agent) functionality in the software.
-
-\begin{figure}
-\includegraphics[scale=0.8]{../../img/infra1.png}
-\caption{Salesmen infrastructure}
-\end{figure}
+Infrastructure: see Appendix A.
 
 
 \subsection{System Interface Description}
 The web-interface is the only interface available to users of the Salesmen software. However, depending of the access-rights provided to a given user, more options may become available. Website administrators, for example, can close auctions or ban other members while 'normal' members cannot access these facilities. A more detailed description of the access-rights provided to each group of users will be provided in the SRS.
+Prototypes of the webinterface can be found in Appendix A.
 \pagebreak
-\section{Component Design \label{Component Design}}
-?
+\section{Technical Design \label{Technical Design}}
+\subsection{Presentation layer}
+The presentation merely consists of static (x)HTML files that contain calls to Java Servlets to obtain dynamicly changing information. These (x)HTML files will use CSS to seperate the static information from the actual presentation of the website. Javascript will be used to provide the user with a friendly and smooth interface.
+This facilitates the following goals:
+\begin{itemize}
+\item Presentation is abstracted from (dynamicly changing) information, coming from the business layer
+\item Support for multiple languages (1 set of html templates per language), as required in the SRS
+\item 'Smooth' interface ith a minimum of required page refreshes, as required in the SRS
+\end{itemize}
+
+\subsection{Business layer}
+The business layer consists of the Java Servlets that will be able to receive and process requests, and return proper responses.
+From the class diagram it becomes clear that two classes will play a central role in our application: User and Auction.
+
+Class-diagram: see Appendix A
+
+\subsection{Data layer}
+The data layer consists of the database and the EJB3 standard for persistant objects. EJB3 allows, through the use of annotations in the class, to abstract away from SQL-statements as EJB3 will generate these.
+An alternative for the use of EJB3 would be Hibernate. Hibernate however, is not a standard, in contrary to EJB3. Futhermore, EJB3 is newer technology based on the concepts of Hibernate and is now seamlessly supported by the jBoss AS. Because of these reasons, Hibernate was discarded.
+
+The database design supports all current requirements and is designed with expansion in mind.
+Entity-Relationship diagram: see Appendix A.
+
+\pagebreak
 \section{Software Features}
-[[[Hier all use cases toevoegen...]]]
+\subsection{Use cases}
+
 
 % ------------------------------------------------------------------------
 % Begin Use Cases
 % ------------------------------------------------------------------------
-
+%\input{../../../srs/src/tex/specific-requirements.tex}
 
 % ------------------------------------------------------------------------
 % End of Use Cases
@@ -161,6 +183,33 @@ The web-interface is the only interface available to users of the Salesmen softw
 \end{itemize}
 \pagebreak
 \subsection{User Interface}
+See appendix A
+
+
+\section{Additional Material \label{Additional}}
+\section{Requirements Traceability Matrix}
+
+\section{Appendix A}
+\begin{figure}
+\includegraphics[scale=0.8]{../../img/archi1.png}
+\caption{Salesmen Architecture}
+\end{figure}
+
+\begin{figure}
+\includegraphics[scale=0.8]{../../img/infra1.png}
+\caption{Salesmen infrastructure}
+\end{figure}
+
+\begin{figure}
+\includegraphics[scale=0.4,angle=90]{../../img/class1.jpg}
+\caption{Salesmen class diagram}
+\end{figure}
+
+\begin{figure}
+\includegraphics[scale=0.4]{../../img/erd1.jpg}
+\caption{Salesmen database layout}
+\end{figure}
+
 \begin{figure}
 \includegraphics[width=15cm]{../../img/SM_auction_list.png}
 \caption{auctionlist.jsp}
@@ -185,14 +234,5 @@ The web-interface is the only interface available to users of the Salesmen softw
 \includegraphics[width=15cm]{../../img/SM_mySM_profile.png}
 \caption{profile.jsp - website information}
 \end{figure}
-
-\section{Database Design}
-\begin{figure}
-\includegraphics[scale=0.5,angle=90]{../../img/erd1.jpg}
-\caption{Salesmen database layout}
-\end{figure}
-
-\section{Additional Material \label{Additional}}
-\section{Requirements Traceability Matrix}
 
 \end{document}
