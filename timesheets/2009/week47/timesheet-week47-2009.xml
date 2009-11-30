@@ -5,18 +5,74 @@
   <updated>2009-11-22</updated>
   <person>
     <name>Nick De Cooman</name>
-    
-	<timesheet xmlns="http://purl.org/net/timetrack" xml:base="../default/timesheet.xml">
-  <item duration="PT0M">
-    <desc>
-      This is a fallback timesheet, meaning that the
-      developer has not submitted their timesheet yet.
-      Please check back later to see this developer's 
-      timesheet.
-    </desc>
+    <timesheet xmlns="http://purl.org/net/timetrack">
+	
+	<item duration="PT30M">
+    <desc>Prepare meeting on Tuesday 2009/11/17</desc>
+	<refs>
+	  <ref>http://code.google.com/p/salesmen/source/detail?r=340</ref>
+	</refs>
   </item>
+  
+  <item duration="PT15M">
+    <desc>Uploading agenda of previous meetings</desc>
+	<refs>
+	<ref>http://code.google.com/p/salesmen/source/detail?r=343</ref>
+	  <ref>http://code.google.com/p/salesmen/source/detail?r=342</ref>
+	</refs>
+  </item>
+
+  <item duration="PT120M">
+    <desc>Meeting on Tuesday 2009/11/17</desc>
+	<refs>
+		<ref>http://wilma.vub.ac.be/~se2_0910/docs/minutes/2009/11/17/minutes-20091117.pdf</ref>
+	</refs>
+  </item>
+
+  <item duration="PT15M">
+    <desc>Create logo's</desc>
+	<refs>
+	<ref>http://code.google.com/p/salesmen/source/detail?r=349</ref>
+	</refs>
+  </item>
+
+  <item duration="PT270M">
+    <desc>Updating SPMP</desc>
+	<refs>
+	<ref>http://code.google.com/p/salesmen/source/detail?r=361</ref>
+	<ref>http://code.google.com/p/salesmen/source/detail?r=383</ref>
+	<ref>http://code.google.com/p/salesmen/source/detail?r=399</ref>
+	</refs>
+  </item>
+
+  <item duration="PT15M">
+    <desc>Revision of minutes 2009/11/17</desc>
+	<refs>
+	<ref>http://code.google.com/p/salesmen/source/detail?r=362</ref>
+	<ref>http://code.google.com/p/salesmen/source/detail?r=368</ref>
+	</refs>
+  </item>
+
+  <item duration="PT15M">
+    <desc>Review deadlines and publish them in wiki-page</desc>
+	<refs>
+	<ref>http://code.google.com/p/salesmen/source/detail?r=396</ref>
+	</refs>
+  </item>
+
+  <item duration="PT20M">
+    <desc>Checking timesheets</desc>
+   <refs>
+	<ref>http://code.google.com/p/salesmen/source/detail?r=400</ref>
+	<ref>http://code.google.com/p/salesmen/source/detail?r=401</ref>
+    </refs>
+  </item>
+
+  <item duration="PT30M">
+    <desc>Administration and Communication</desc>
+  </item>
+
 </timesheet>
-      
   </person>
   <person>
     <name>Jonathan Jeurissen</name>
@@ -36,14 +92,14 @@
     </refs>
   </item>
 
-  <item duration="PT0H10M">
+  <item duration="PT1H00M">
     <desc>Correcting Minutes of Tuesday 2009/11/17.</desc>
     <refs>
       <ref>http://code.google.com/p/salesmen/source/detail?r=354</ref>
     </refs>
   </item>
 
-  <item duration="PT20M">
+  <item duration="PT35M">
     <desc>Administration and Communication</desc>
     <refs>
       <ref/>
