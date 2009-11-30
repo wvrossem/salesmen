@@ -1,7 +1,7 @@
 <?xml version='1.0'?>
 <timesheet xmlns="http://purl.org/net/timetrack">
 
-  <item duration="PT2H30M">
+  <item duration="PT2H">
     <desc>Meeting on Tuesday 2009/11/24.</desc>
     <refs>
       <ref>http://wilma.vub.ac.be/~se2_0910/docs/minutes/2009/11/24/minutes-20091124.pdf</ref>
@@ -11,11 +11,10 @@
   <item duration="PT1H">
     <desc>Meeting on Friday 2009/11/27.</desc>
   </item>
-
   
   <item duration="PT1H30M">
     <desc>
-      Gather information/learn about Hibernate & EJB3 + jBoss
+      Gather information/learn about Hibernate and EJB3 + jBoss
     </desc>
     <refs>
       <ref>ISBN 0-13-047676-5</ref>
