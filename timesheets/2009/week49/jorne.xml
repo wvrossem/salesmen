@@ -1,18 +1,25 @@
 <?xml version='1.0'?>
 <timesheet xmlns="http://purl.org/net/timetrack">
 
-  <item duration="PT25M">
-    <desc>Reading SDD v0_1.</desc>
-    <refs>
-      <ref></ref>
-    </refs>
-  </item>
+	<item duration="PT25M">
+		<desc>Reading SDD v0_1.</desc>
+		<refs>
+		<ref></ref>
+		</refs>
+	</item>
+	
+	<item duration="PT25M">
+		<desc>Creating Dropbox account and writing wiki.</desc>
+		<refs>
+		<ref>http://code.google.com/p/salesmen/source/detail?r=523</ref>
+		</refs>
+	</item>
 
-	<item duration="PT15M">
+	<item duration="PT25M">
 		<desc>Administration and Communication</desc>
 		<refs>
-      <ref></ref>
-    </refs>
+		<ref></ref>
+		</refs>
 	</item>
 
 </timesheet>
