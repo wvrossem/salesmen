@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF 
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" 
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" 
+    xmlns:doap="http://usefulinc.com/ns/doap#" 
+    xmlns:foaf="http://xmlns.com/foaf/0.1/" 
+    xmlns:dc="http://purl.org/dc/elements/1.1/">
+  
+  <rdf:Description rdf:about="http://wilma.vub.ac.be/~se2_0910/docs/sdd/doap.rdf">
+    <dc:title>SDD Document Description</dc:title>
+    <dc:description>
+      This RDF file describes the SDD document.
+    </dc:description>
+    <dc:publisher rdf:resource="http://wilma.vub.ac.be/~se2_0910/"/>
+    <dc:rights>Copyright &#169; VUB</dc:rights>
+  </rdf:Description>
+
+  <doap:Project>
+    <doap:name>Software Design Document</doap:name>
+    <doap:shortname>SDD</doap:shortname>
+    <doap:homepage rdf:resource="http://wilma.vub.ac.be/~se2_0910/docs/sdd/"/>
+    <doap:license rdf:resource="http://usefulinc.com/doap/licenses/gfdl"/>
+    <doap:created>2009-11-30T14:10:08+02:00</doap:created>
+    <doap:shortdesc>
+      Architecture of the Salesmen Software
+    </doap:shortdesc>
+    <doap:description>
+      The Software Design Document specifies the entire software 
+      architecture and design for the Salesmen project. The design decisions
+      directly relate to the functionalities, performances, constraints,
+      attributes, and interfaces of the system.
+    </doap:description>
+    <dc:identifier>http://wilma.vub.ac.be/~se2_0910/docs/sdd/</dc:identifier>
+    <rdf:type rdf:resource="http://xmlns.com/wordnet/1.6/Document"/>
+    <doap:download-page rdf:resource="http://wilma.vub.ac.be/~se2_0910/docs/sdd/urfm.rdf"/>
+  </doap:Project>
+
+</rdf:RDF>
