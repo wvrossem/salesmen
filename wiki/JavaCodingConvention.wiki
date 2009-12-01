@@ -1,5 +1,5 @@
-Een simpele link naar meerdere links:
+#labels Dev
+Please feel free to glance over the following Java coding conventions:
 
-http://www.ontko.com/java/java_coding_standards.html
-
-Voor de geïnteresseerden, lees de verschillende coderingen daar eens door.
+  * [http://www.ontko.com/java/java_coding_standards.html A collection of links to Java Coding Standards]
+  * [http://www.bejug.org/confluenceBeJUG/display/JJGuidelines/Home Java Coding Conventions by Stephan Janssen]
