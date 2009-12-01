@@ -5,88 +5,165 @@
   <updated>2009-11-29</updated>
   <person>
     <name>Nick De Cooman</name>
-    
-	<timesheet xmlns="http://purl.org/net/timetrack" xml:base="../default/timesheet.xml">
-  <item duration="PT0M">
-    <desc>
-      This is a fallback timesheet, meaning that the
-      developer has not submitted their timesheet yet.
-      Please check back later to see this developer's 
-      timesheet.
-    </desc>
+    <timesheet xmlns="http://purl.org/net/timetrack">
+	
+  <item duration="PT30M">
+   <desc>Prepare meeting on Tuesday 2009/11/24</desc>
+    <refs>
+      <ref>http://code.google.com/p/salesmen/source/detail?r=411</ref>
+	  <ref>http://code.google.com/p/salesmen/source/detail?r=410</ref>
+    </refs>
   </item>
+  
+  <item duration="PT2H">
+   <desc>Meeting on Tuesday 2009/11/24</desc>
+   <refs>
+      <ref>http://wilma.vub.ac.be/~se2_0910/docs/minutes/2009/11/24/minutes-20091124.pdf</ref>
+    </refs>
+  </item>
+
+  <item duration="PT10M">
+   <desc>Suggesting new requirements on Wiki-page</desc>
+    <refs>
+      <ref>http://code.google.com/p/salesmen/source/detail?r=420</ref>
+    </refs>
+  </item>
+
+  <item duration="PT30M">
+   <desc>Finalizing and correcting minutes of meeting 24/11</desc>
+    <refs>
+      <ref>http://code.google.com/p/salesmen/source/detail?r=439</ref>
+    </refs>
+  </item>
+
+  <item duration="PT2H">
+   <desc>Updating SPMP to version 0.2</desc>
+    <refs>
+      <ref>http://code.google.com/p/salesmen/source/detail?r=442</ref>
+	  <ref>http://code.google.com/p/salesmen/source/detail?r=448</ref>
+	  <ref>http://code.google.com/p/salesmen/source/detail?r=450</ref>	
+	  <ref>http://code.google.com/p/salesmen/source/detail?r=473</ref>	
+    </refs>
+  </item>
+  
+  <item duration="PT1H">
+   <desc>Meeting on Friday 2009/11/27</desc>
+  </item>
+  
+  <item duration="PT20M">
+    <desc>Checking timesheets</desc>
+   <refs>
+	<ref>http://code.google.com/p/salesmen/source/detail?r=488</ref>
+	<ref>http://code.google.com/p/salesmen/source/detail?r=490</ref>
+	<ref>http://code.google.com/p/salesmen/source/detail?r=492</ref>
+	<ref>http://code.google.com/p/salesmen/source/detail?r=493</ref>
+    </refs>
+  </item>
+
+  
+  <item duration="PT30M">
+    <desc>Administration and Communication</desc>
+  </item>
+  
 </timesheet>
-      
   </person>
   <person>
     <name>Jonathan Jeurissen</name>
-    
-	<timesheet xmlns="http://purl.org/net/timetrack" xml:base="../default/timesheet.xml">
-  <item duration="PT0M">
-    <desc>
-      This is a fallback timesheet, meaning that the
-      developer has not submitted their timesheet yet.
-      Please check back later to see this developer's 
-      timesheet.
-    </desc>
-  </item>
+    <timesheet xmlns="http://purl.org/net/timetrack">
+	
+	
+	
 </timesheet>
-      
   </person>
   <person>
     <name>Sina Khakbaz Heshmati</name>
     <timesheet xmlns="http://purl.org/net/timetrack">
 
   <item duration="PT2H">
-    <desc>Meeting on Tuesday 2009/11/17.</desc>
+    <desc>Meeting on Tuesday 2009/11/24.</desc>
     <refs>
-      <ref>http://wilma.vub.ac.be/~se2_0910/docs/minutes/2009/11/17/minutes-20091117.pdf</ref>
+      <ref>http://wilma.vub.ac.be/~se2_0910/docs/minutes/2009/11/24/minutes-20091124.pdf</ref>
     </refs>
   </item>
 
-  <item duration="PT15M">
-    <desc>Published the minutes of the 2009/11/17 meeting.</desc>
-    <refs>
-      <ref>http://code.google.com/p/salesmen/source/detail?r=367</ref>
-      <ref>http://code.google.com/p/salesmen/source/detail?r=366</ref>
-    </refs>
-  </item>
-
-  <item duration="PT40M">
-    <desc>Started the Salesmen Literature document.</desc>
-    <refs>
-      <ref>http://code.google.com/p/salesmen/source/detail?r=364</ref>
-      <ref>http://code.google.com/p/salesmen/source/detail?r=346</ref>
-    </refs>
+  <item duration="PT1H">
+    <desc>Meeting on Friday 2009/11/27.</desc>
   </item>
 
   <item duration="PT30M">
     <desc>
-      Published the developers' timesheets for the 46th week of 2009.
+      Published the minutes of the 2009/11/24 meeting.
+      Also published meeting agenda's for previous meetings.
+    </desc>
+    <refs>
+      <ref>http://code.google.com/p/salesmen/source/detail?r=443</ref>
+      <ref>http://code.google.com/p/salesmen/source/detail?r=441</ref>
+    </refs>
+  </item>
+
+  <item duration="PT20M">
+    <desc>
+      Published the developers' timesheets for the 47th week of 2009.
     </desc>
     <refs>      
-      <ref>http://code.google.com/p/salesmen/source/detail?r=329</ref>
-      <ref>http://code.google.com/p/salesmen/source/detail?r=331</ref>
+      <ref>http://code.google.com/p/salesmen/source/detail?r=435</ref>
+      <ref>http://code.google.com/p/salesmen/source/detail?r=436</ref>
     </refs>
   </item>
 
-  <item duration="PT4H30M">
-    <desc>
-      Installed and configured Java EE 6, NetBeans 6.7, and Glassfish v3.
-    </desc>
+  <item duration="PT20M">
+    <desc>Worked on the Salesmen Literature document.</desc>
+    <refs>
+      <ref>http://code.google.com/p/salesmen/source/detail?r=412</ref>
+    </refs>
   </item>
 
-  <item duration="PT3H">
+  <item duration="PT2H30M">
     <desc>
-      Drank my first cup of Java EE.
+      Installed JBoss on Wilma with Jorne. Prior to that, we installed 
+      JBoss locally.
     </desc>
     <refs>
-      <ref>http://docs.sun.com/app/docs/doc/820-7759</ref>
+      <ref>http://groups.google.com/group/salesmen/msg/a90c3b99096c26ae</ref>
+    </refs>
+  </item>
+
+  <item duration="PT25M">
+    <desc>
+      Published SQAP v0.1.
+    </desc>
+    <refs>
+      <ref>http://code.google.com/p/salesmen/source/detail?r=438</ref>
+      <ref>http://code.google.com/p/salesmen/source/detail?r=433</ref>
+      <ref>http://code.google.com/p/salesmen/source/detail?r=434</ref>
+    </refs>
+  </item>
+
+  <item duration="PT35M">
+    <desc>
+      Published SPMP v0.2.
+    </desc>
+    <refs>
+      <ref>http://code.google.com/p/salesmen/source/detail?r=482</ref>
+      <ref>http://code.google.com/p/salesmen/source/detail?r=447</ref>
+      <ref>http://code.google.com/p/salesmen/source/detail?r=476</ref>
+      <ref>http://code.google.com/p/salesmen/source/detail?r=475</ref>
+      <ref>http://code.google.com/p/salesmen/source/detail?r=474</ref>
+      <ref>http://groups.google.com/group/salesmen/msg/182f6bfd4cf9861b</ref>
+    </refs>
+  </item>
+
+  <item duration="PT5H">
+    <desc>
+      Reading the first two chapters of JBoss in Action.
+    </desc>
+    <refs>
+      <ref>http://www.amazon.com/JBoss-Action-Configuring-Application-Server/dp/1933988029</ref>
     </refs>
   </item>
 
   <item duration="PT30M">
-    <desc>Administration and Communication</desc>
+    <desc>Administration and communication.</desc>
   </item>
 
 </timesheet>
@@ -94,54 +171,200 @@
   <person>
     <name>Jorne Laton</name>
     <timesheet xmlns="http://purl.org/net/timetrack">
-  <item duration="PT2H30M">
+
+  <item duration="PT2H">
     <desc>Meeting on Tuesday 2009/11/24.</desc>
+    <refs>
+      <ref>http://wilma.vub.ac.be/~se2_0910/docs/minutes/2009/11/24/minutes-20091124.pdf</ref>
+    </refs>
   </item>
-  
+
   <item duration="PT1H30M">
   	<desc>Installing JBoss on Wilma server together with Sina.</desc>
+    <refs>
+      <ref>http://groups.google.com/group/salesmen/msg/a90c3b99096c26ae</ref>
+    </refs>
   </item>
+
+  <item duration="PT1H">
+    <desc>Meeting on Friday 2009/11/27.</desc>
+  </item>
+
 </timesheet>
   </person>
   <person>
     <name>Bart Maes</name>
-    
-	<timesheet xmlns="http://purl.org/net/timetrack" xml:base="../default/timesheet.xml">
-  <item duration="PT0M">
-    <desc>
-      This is a fallback timesheet, meaning that the
-      developer has not submitted their timesheet yet.
-      Please check back later to see this developer's 
-      timesheet.
-    </desc>
+    <timesheet xmlns="http://purl.org/net/timetrack">
+
+  <item duration="PT2H">
+    <desc>Meeting on Tuesday 2009/11/24.</desc>
+    <refs>
+      <ref>http://wilma.vub.ac.be/~se2_0910/docs/minutes/2009/11/24/minutes-20091124.pdf</ref>
+    </refs>
   </item>
+
+  <item duration="PT1H">
+    <desc>Meeting on Friday 2009/11/27.</desc>
+  </item>
+  
+  <item duration="PT1H30M">
+    <desc>
+      Gather information/learn about Hibernate and EJB3 + jBoss
+    </desc>
+    <refs>
+      <ref>ISBN 0-13-047676-5</ref>
+    </refs>
+  </item>
+
+  <item duration="PT1H30M">
+    <desc>
+      Learn about servlets (and check out examples)
+    </desc>
+    <refs>
+		<ref>http://java.sun.com/developer/onlineTraining/Programming/BasicJava1/servlet.html</ref>
+		<ref>http://www.servlets.com/jservlet2/examples/</ref>
+		<ref>http://developer.apple.com/internet/java/examples/helloworld2_source.html</ref>
+		<ref>http://www.jsptube.com/servlet-tutorials/simple-servlet-example.html</ref>
+    </refs>
+  </item>
+
+  <item duration="PT1H10M">
+    <desc>
+      Gather information and start discussion about MySQL vs PostgreSQL
+    </desc>
+    <refs>
+		<ref>http://wiki.postgresql.org/wiki/Why_PostgreSQL_Instead_of_MySQL:_Comparing_Reliability_and_Speed_in_2007</ref>
+		<ref>http://www.xaprb.com/blog/2008/05/18/why-is-mysql-more-popular-than-postgresql/</ref>
+		<ref>http://www.randombugs.com/linux/mysql-postgresql-benchmarks.html </ref>
+      <ref>http://groups.google.com/group/salesmen/browse_thread/thread/beed4cc3c1953887?hl=en#</ref>
+    </refs>
+  </item>
+
+  <item duration="PT1H40M">
+    <desc>
+      Gather information and start discussion about GWT
+    </desc>
+    <refs>
+		<ref>http://code.google.com/webtoolkit/</ref>
+		<ref>http://googlewebtoolkit.blogspot.com/</ref>
+		<ref>http://www.slideshare.net/MomentumDesignLab/gwt-google-web-toolkit-presentation</ref>
+		<ref>http://groups.google.com/group/google-web-toolkit/msg/85f0c48800ef6592</ref>
+		<ref>http://www.seroundtable.com/archives/012451.html</ref>
+		<ref>http://www.bloggingaboutjava.org/2006/05/javaone2006-to-gwt-or-to-jsf/</ref>
+		<ref>http://google.wikia.com/wiki/Google_Web_Toolkit</ref>
+		<ref>http://groups.google.com/group/salesmen/browse_thread/thread/056ae92d85687b83?hl=en</ref>
+    </refs>
+  </item>
+
+  <item duration="PT5H">
+    <desc>
+      Reading the first two chapters of 'J2EE and JAX, developing web applications and web services'
+    </desc>
+    <refs>
+      <ref>ISBN 0-13-047676-5</ref>
+    </refs>
+  </item>
+  
+   <item duration="PT8H">
+    <desc>Write initial version of SDD (+ drawing of diagrams)</desc>
+	<refs>
+      <ref>http://code.google.com/p/salesmen/source/browse/#svn/trunk/docs/en/sdd/src/tex</ref>
+    </refs>
+  </item>
+
+  <item duration="PT30M">
+    <desc>Administration and communication.</desc>
+  </item>
+
 </timesheet>
-      
   </person>
   <person>
     <name>Patrick Provinciael</name>
-    
-	<timesheet xmlns="http://purl.org/net/timetrack" xml:base="../default/timesheet.xml">
-  <item duration="PT0M">
-    <desc>
-      This is a fallback timesheet, meaning that the
-      developer has not submitted their timesheet yet.
-      Please check back later to see this developer's 
-      timesheet.
-    </desc>
+    <timesheet xmlns="http://purl.org/net/timetrack">
+	
+  <item duration="PT2H">
+    <desc>Meeting on Tuesday 2009/11/24.</desc>
+    <refs>
+      <ref>http://wilma.vub.ac.be/~se2_0910/docs/minutes/2009/11/24/minutes-20091124.pdf</ref>
+    </refs>
+  </item>
+
+  <item duration="PT10M">
+    <desc>Reviewed Minutes of Tuesday 2009/11/24 for Quality Assurance.</desc>
+    <refs>
+      <ref>http://wilma.vub.ac.be/~se2_0910/docs/minutes/2009/11/17/minutes-20091117.pdf</ref>
+    </refs>
+  </item>
+
+  <item duration="PT1H">
+    <desc>Meeting on Friday 2009/11/27.</desc>
+  </item>
+
+  <item duration="PT3H">
+    <desc>Studied the various tools at our disposal.</desc>
+    <refs>
+      <ref>http://code.google.com/p/salesmen/wiki/SalesmenLiterature</ref>
+      <ref>http://en.wikipedia.org/wiki/Java_Enterprise_Edition</ref>
+      <ref>http://en.wikipedia.org/wiki/EJB_Container</ref>
+      <ref>http://en.wikipedia.org/wiki/Application_Server</ref>
+      <ref>http://en.wikipedia.org/wiki/JavaServer_Pages</ref>
+      <ref>http://en.wikipedia.org/wiki/JVM</ref>
+      <ref>http://en.wikipedia.org/wiki/Google_Web_Toolkit</ref>
+      <ref>http://en.wikipedia.org/wiki/Hibernate_%28Java%29</ref>
+      <ref>http://en.wikipedia.org/wiki/Persistence_%28computer_science%29</ref>
+      <ref>http://en.wikipedia.org/wiki/Jboss</ref>
+      <ref>http://en.wikipedia.org/wiki/Jquery</ref>
+      <ref>http://en.wikipedia.org/wiki/SOAP</ref>
+      <ref>http://docs.sun.com/app/docs/doc/820-7759</ref>
+      <ref>http://jquery.com/</ref>
+      <ref>http://en.wikipedia.org/wiki/Scala_%28programming_language%29</ref>
+      <ref>http://en.wikipedia.org/wiki/Groovy_%28programming_language%29</ref>
+    </refs>
+  </item>
+  
+  <item duration="PT30M">
+    <desc>Administration and Communication.</desc>
   </item>
 </timesheet>
-      
   </person>
   <person>
     <name>Wouter Van Rossem</name>
     <timesheet xmlns="http://purl.org/net/timetrack">
   <item duration="PT2H">
-    <desc>Read SRS documents of other groups and take notes</desc>
+   <desc>Read SRS documents of other groups and take notes</desc>
     <refs>
       <ref>http://wilma.vub.ac.be/~se1_0910/verslagenrepo/SRS/SRS.pdf</ref>
 	  <ref>http://wilma.vub.ac.be/~se3_0910/files/SRS/SRS.pdf</ref>
     </refs>
+  </item>
+  
+  <item duration="PT2H">
+   <desc>Meeting on Tuesday 2009/11/24</desc>
+   <refs>
+      <ref>http://wilma.vub.ac.be/~se2_0910/docs/minutes/2009/11/24/minutes-20091124.pdf</ref>
+    </refs>
+  </item>
+  
+  <item duration="PT1H">
+   <desc>Meeting on Friday 2009/11/27</desc>
+  </item>
+  
+  <item duration="PT20M">
+   <desc>Write SRS comparison report</desc>
+   <refs>
+      <ref>http://code.google.com/p/salesmen/source/detail?r=462</ref>
+    </refs>
+  </item>
+  
+  <item duration="PT30M">
+   <desc>Updated the SRS document</desc>
+   <refs>
+      <ref>http://code.google.com/p/salesmen/source/detail?r=483</ref>
+    </refs>
+  </item>
+  
+  <item duration="PT10M">
+    <desc>Administration and Communication</desc>
   </item>
   
 </timesheet>
