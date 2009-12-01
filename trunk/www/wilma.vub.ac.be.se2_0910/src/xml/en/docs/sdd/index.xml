@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<webpage id="sdd">
+  <config param="rcsdate" value="$Date: 2009-10-27 22:51:52 +0100 (Tue, 27 Oct 2009) $"/>
+  <config param="DOAP" value="doap.rdf"/>
+  <head>
+    <title>SDD</title>
+    <summary>Software Design Document</summary>
+    <keywords>
+      Software Engineering, Software Development Process, VUB,
+      Computer Science, SDD, Software Architecture, Multi-tiered,
+      Enterprise Software, Distributed Software, Web Application,
+      JBoss, Web standards
+    </keywords>
+  </head>
+</webpage>
