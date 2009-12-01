@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<webpage id="highlights-2009">
+  <config param="rcsdate" value="$Date: 2009-11-01 21:27:12 +0100 (Sun, 01 Nov 2009) $"/>
+  <config param="URFM" value="urfm.rdf"/>
+  <head>
+    <title>2009</title>
+    <summary>Salesmen highlights in 2009</summary>
+    <keywords>
+      Open Source, Free Software, VUB, Auction, Enterprise Software, Belgium
+      Vrije Universiteit Brussel, Computer Science, Software Engineering,
+      Brussels, 2009
+    </keywords>
+  </head>
+  <para>
+    Please feel free to click on a <emphasis role='bold'>specific 
+    month</emphasis> in order to view the Salesmen project's highlights 
+    during that month.
+  </para>
+</webpage>

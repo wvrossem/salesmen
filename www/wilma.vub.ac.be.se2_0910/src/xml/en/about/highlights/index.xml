@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<webpage id="highlights">
+  <config param="rcsdate" value="$Date: 2009-11-01 21:27:12 +0100 (Sun, 01 Nov 2009) $"/>
+  <head>
+    <title>Highlights</title>
+    <summary>Monthly project highlights</summary>
+    <keywords>
+      Open Source, Free Software, VUB, Auction, Enterprise Software, Belgium
+      Vrije Universiteit Brussel, Computer Science, Software Engineering,
+      Brussels
+    </keywords>
+  </head>
+  <para>
+    In case you're looking for a <emphasis role='bold'>brief report</emphasis>
+    of what we've been doing during a specific 
+    <emphasis role='bold'>month</emphasis>, you're at the right place.
+  </para>
+  <para>
+    Please browse the highlights chronologically by choosing 
+    a <emphasis>year</emphasis> from the following list.
+  </para>
+  <webtoc/>
+</webpage>
