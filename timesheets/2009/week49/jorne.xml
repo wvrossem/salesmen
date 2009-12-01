@@ -1,0 +1,18 @@
+<?xml version='1.0'?>
+<timesheet xmlns="http://purl.org/net/timetrack">
+
+  <item duration="PT25M">
+    <desc>Reading SDD v0_1.</desc>
+    <refs>
+      <ref></ref>
+    </refs>
+  </item>
+
+	<item duration="PT15M">
+		<desc>Administration and Communication</desc>
+		<refs>
+      <ref></ref>
+    </refs>
+	</item>
+
+</timesheet>
