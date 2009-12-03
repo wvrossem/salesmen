@@ -1,8 +1,9 @@
 % Project Controls
-\setprojectname{Salesmen}
-\setdocumentname{SQAP}
+\setprojectname{Software Engineer group 2: Salesmen}
+\setdocumentname{Documentation Template Example}
 \setmembers{\manager{Nick DeCooman}, Jonathan Jeurissen, Sina Khakbaz Heshmati, Jorne Laton, Bart Maes, Patrick Provinciael, Wouter Van Rossem}
-\setlogoname{salesmenlogo}
+\setprojectlogo{salesmenlogo}
+\setcompanylogo{vub}
 
 % Title Controls
 \setauthorname{Patrick Provinciael}

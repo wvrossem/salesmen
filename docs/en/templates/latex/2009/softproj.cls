@@ -54,10 +54,16 @@
 \newcommand{\show@revisioncurr}{\@revisioncurr}
 
 % The name of the logo of the project, if any?
-\global\let\@logoname\@empty
-\newcommand{\setlogoname}[1]{\def\@logoname{#1}}
-\let\logoname\setlogoname %
-\newcommand{\show@logoname}{\@logoname}
+\global\let\@projectlogo\@empty
+\newcommand{\setprojectlogo}[1]{\def\@projectlogo{#1}}
+\let\logoname\setprojectlogo %
+\newcommand{\show@projectlogo}{\@projectlogo}
+
+% The name of the logo of the company, if any?
+\global\let\@companylogo\@empty
+\newcommand{\setcompanylogo}[1]{\def\@companylogo{#1}}
+\let\logoname\setcompanylogo %
+\newcommand{\show@companylogo}{\@companylogo}
 
 
 % --- Class structure: declaration of options part
@@ -82,19 +88,43 @@
 % --- Class structure: main code part
 % ---
 
+\RequirePackage{graphicx}
+\RequirePackage{vhistory}
+
 % basic definition of the project environment. Will be expanded later in regards to the type of document.
 \newenvironment{projdoc}{%
 \begin{center}
-  {\huge\textbf{\show@documentname, \show@projectname}}
+  \ifx\@logoname\@empty
+    \relax
+  \else
+    \includegraphics[height=2in]{\show@projectlogo}
+    \vspace{-2in}
+  \fi %
   
-  \vspace{20pt}
-  \large\show@authorname
+  \addvspace{70mm}
+  \Large{\show@projectname}\\
+  \rule{148mm}{1pt}\\
+  \vspace{6pt}
+  \huge\textbf{\show@documentname}\\
+  \rule{148mm}{1pt}
+    
+  \addvspace{5mm}
+  \large{\textit{author:} \show@authorname}
   
-  \vspace{10pt}
-  \large\textit{\show@revisioncurr}
+  \vspace{10mm}
+  \ifx\@logoname\@empty
+    \relax
+  \else
+    \includegraphics[height=1.5in]{\show@companylogo}
+    \vspace{-1.5in}
+  \fi %
   
-  \vspace{10pt}
+  \addvspace{60mm}
   \large\textbf{Abstract: }\normalsize\show@abstract
+  
+
+  \addvspace{15mm}
+  \large\textit{\show@revisioncurr}
 \end{center}
 \newpage
 \setcounter{page}{1}
@@ -105,22 +135,12 @@
 }{%
 }
 
-
 % Page layout
 \RequirePackage[left=1.3in,right=1.3in,top=1.2in,bottom=1.3in]{geometry}
-\RequirePackage{graphicx}
-\RequirePackage{vHistory}
 
 \RequirePackage{fancyhdr}
 \fancypagestyle{firstpage}{%
-  \headheight=76pt % This means that the logo can not be larger than 76pt (or 1inch)
-  \headsep=150pt
   \fancyhf{} % clear all six fields
-  \ifx\@logoname\@empty
-    \relax
-  \else
-    \fancyhead[LE, LO]{\includegraphics[height=1in]{\show@logoname}}
-  \fi %
   \renewcommand{\headrulewidth}{0pt}
   \renewcommand{\footrulewidth}{0pt}
 }
