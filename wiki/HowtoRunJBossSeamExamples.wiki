@@ -25,6 +25,6 @@
   # Then go to `jboss-seam/examples/booking` or any other example provided by JBoss Seam.
   # Run `ant deploy`
   # Wait until JBoss deploys the example application.
-  # See the result in [http://localhost:8080/seam-booking/]
+  # See the running example application here: [http://localhost:8080/seam-booking/]
 
 Please feel free to adapt this howto document should you think it's necessary.
