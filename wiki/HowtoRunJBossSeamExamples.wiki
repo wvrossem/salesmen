@@ -1,0 +1,27 @@
+#summary Howto install JBoss, the Seam Framework and run Seam examples
+
+  # Make sure you have *JDK 6* and *Apache Ant* are installed on your machine.
+  # [http://sourceforge.net/projects/jboss/files/JBoss/JBoss-5.1.0.GA/ Download JBoss AS 5]. For instance, pick the pre-compiled `jboss-5.1.0.GA-jdk6.zip` as we work with JDK 6.
+  # [http://sourceforge.net/projects/jboss/files/JBoss%20Seam/2.2.0.GA Download JBoss Seam 2.2].
+  # Create a directory where to install JBoss AS and JBoss Seam.
+    * `/opt/salesmen/` for GNU/Linux, or
+    * `C:\Salesmen` for windows.
+  # Unpack the downloaded archives in the newly created directory.
+  # Rename unpacked directories or create symbolic links for hiding package versions.
+    * For instance, `ln -s jboss-5.X.X.GA jboss` for JBoss AS, and
+    * `ln -s jboss-seam-2.X.X.GA jboss-seam`
+  # Set the `$JBOSS_HOME` environment variable:
+    * `export JBOSS_HOME=/opt/salesmen/jboss` in GNU/Linux, and
+    * In Windows, go to `Control Panel -> System -> Advanced -> Environment Variables` to create a new environment variable called `JBOSS_HOME` with e.g. `C:\Salesmen\jboss` as value.
+  # Put `$JBOSS_HOME/bin` in the `$PATH` environment variable:
+    * `export PATH=$PATH:$JBOSS_HOME/bin` in GNU/Linux, and
+    * Modify the `PATH` environment variable and extend it with a "`;`" followed by `%JBOSS_HOME%/bin` in Windoes.
+  # Run an instance of the JBoss AS:
+    * `run.sh` in GNU/Linux, and
+    * `run` in Windows.
+  # Wait until JBoss is up and running. Check here: [http://localhost:8888/]
+  # Go to the directory where JBoss Seam is installed.
+  # Then go to `examples/booking` or any other example.
+  # Run `ant deploy`
+  # Wait until JBoss deploys the application.
+  # See the result in [http://localhost:8888/seam-booking]
