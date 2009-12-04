@@ -11,11 +11,12 @@
     XML feeds can send news headlines on the specific topics you choose 
     directly to your desktop or online feed aggregator.
   </para>
-  <rss feed="http://feeds.delicious.com/v2/rss/salesmen/salesmen"/>
+  <rss feed="http://salesmen-dev.blogspot.com/feeds/posts/default"/>
   <rss feed="http://code.google.com/feeds/p/salesmen/downloads/basic"/>
   <rss feed="http://code.google.com/feeds/p/salesmen/issueupdates/basic"/>
   <rss feed="http://code.google.com/feeds/p/salesmen/svnchanges/basic"/>
   <rss feed="http://code.google.com/feeds/p/salesmen/updates/basic"/>
+  <rss feed="http://feeds.delicious.com/v2/rss/salesmen/salesmen"/>
   <sidebar id="needhelp">
     <title>Help</title>
     <para><ulink url="http://www.markupware.com/feeds/help/">Need Help with 

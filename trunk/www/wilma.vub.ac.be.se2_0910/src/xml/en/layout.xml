@@ -64,7 +64,9 @@
     </tocentry>
   </tocentry>
   <tocentry page="download/index.xml" dir="download" filename="index.html"/>
-  <tocentry page="dev/index.xml" dir="dev" filename="index.html"/>
+  <tocentry page="dev/index.xml" dir="dev" filename="index.html">
+    <tocentry page="dev/blog.xml" dir="blog" filename="index.html"/>
+  </tocentry>
 </toc>
 <notoc page="site/sitemap.xml" dir="sitemap" filename="index.html"/>
 <notoc page="site/search.xml" dir="search" filename="index.html"/>
