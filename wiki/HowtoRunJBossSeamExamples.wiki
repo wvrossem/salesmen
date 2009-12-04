@@ -1,5 +1,5 @@
 #summary Howto install JBoss, the Seam Framework and run Seam examples
-#labels Dev,AppServer
+#labels Dev,Seam,JBoss
 
   # Make sure you have *JDK 6* and *Apache Ant* are installed on your machine.
   # [http://sourceforge.net/projects/jboss/files/JBoss/JBoss-5.1.0.GA/ Download JBoss AS 5]. For instance, pick the pre-compiled `jboss-5.1.0.GA-jdk6.zip` as we work with JDK 6.
@@ -17,11 +17,14 @@
   # Run an instance of the JBoss AS:
     * `cd $JBOSS_HOME/bin` and `./run.sh` in GNU/Linux, and
     * `cd %JBOSS_HOME%\bin` and `run.bat` in Windows.
-  # Wait until JBoss is up and running. Check here: [http://localhost:8080/]
   # Go to the directory where JBoss Seam is installed.
-  # Then go to `examples/booking` or any other example.
+  # Edit `build.properties` and add a new binding for `jboss.home`:
+    * `jboss.home=/opt/salesmen/jboss` for GNU/Linux, and
+    * `jboss.home=C:\\Salesmen\\jboss` for Windows.
+  # Make sure JBoss AS is up-and-running. Check here: [http://localhost:8080/]
+  # Then go to `jboss-seam/examples/booking` or any other example provided by JBoss Seam.
   # Run `ant deploy`
-  # Wait until JBoss deploys the application.
+  # Wait until JBoss deploys the example application.
   # See the result in [http://localhost:8080/seam-booking/]
 
 Please feel free to adapt this howto document should you think it's necessary.
