@@ -28,6 +28,12 @@
 
     <releases rdf:parseType="Collection">
 
+<Release rdf:about="http://wilma.vub.ac.be/~se2_0910/docs/minutes/2009/12/01/">
+  <package rdf:resource="http://wilma.vub.ac.be/~se2_0910/docs/minutes/"/>
+  <revision>20091201</revision>
+  <created>2009-12-03</created>
+  <notes rdf:resource="http://wilma.vub.ac.be/~se2_0910/docs/minutes/2009/12/01/agenda-20091201.pdf"/>
+</Release>
 <Release rdf:about="http://wilma.vub.ac.be/~se2_0910/docs/minutes/2009/11/24/">
   <package rdf:resource="http://wilma.vub.ac.be/~se2_0910/docs/minutes/"/>
   <revision>20091124</revision>
@@ -523,6 +529,61 @@
     <rdf:value>9</rdf:value>
   </size> 
   <link>http://wilma.vub.ac.be/~se2_0910/docs/minutes/2009/11/24/minutes-20091124.tex</link>
+  <format>application/x-latex</format>
+</File>
+
+<!-- *********************************************************************
+     20091201
+     ********************************************************************* -->
+<File rdf:about="http://wilma.vub.ac.be/~se2_0910/docs/minutes/2009/12/01/agenda-20091201.pdf">
+  <release rdf:resource="http://wilma.vub.ac.be/~se2_0910/docs/minutes/2009/12/01/"/>
+  <basename>agenda-20091201</basename>
+  <extension>.pdf</extension>
+  <language>en</language>
+  <size rdf:parseType="Resource">
+    <unit rdf:resource="http://purl.org/urfm/Kilobyte"/>
+    <rdf:value>24</rdf:value>
+  </size> 
+  <link>http://wilma.vub.ac.be/~se2_0910/docs/minutes/2009/12/01/agenda-20091201.pdf</link>
+  <format>application/pdf</format>
+</File>
+
+<File rdf:about="http://wilma.vub.ac.be/~se2_0910/docs/minutes/2009/12/01/minutes-20091201.pdf">
+  <release rdf:resource="http://wilma.vub.ac.be/~se2_0910/docs/minutes/2009/12/01/"/>
+  <basename>minutes-20091201</basename>
+  <extension>.pdf</extension>
+  <language>en</language>
+  <size rdf:parseType="Resource">
+    <unit rdf:resource="http://purl.org/urfm/Kilobyte"/>
+    <rdf:value>97</rdf:value>
+  </size> 
+  <link>http://wilma.vub.ac.be/~se2_0910/docs/minutes/2009/12/01/minutes-20091201.pdf</link>
+  <format>application/pdf</format>
+</File>
+
+<File rdf:about="http://wilma.vub.ac.be/~se2_0910/docs/minutes/2009/12/01/minutes-20091201.txt">
+  <release rdf:resource="http://wilma.vub.ac.be/~se2_0910/docs/minutes/2009/12/01/"/>
+  <basename>minutes-20091201</basename>
+  <extension>.txt</extension>
+  <language>en</language>
+  <size rdf:parseType="Resource">
+    <unit rdf:resource="http://purl.org/urfm/Kilobyte"/>
+    <rdf:value>8</rdf:value>
+  </size> 
+  <link>http://wilma.vub.ac.be/~se2_0910/docs/minutes/2009/12/01/minutes-20091201.txt</link>
+  <format>text/plain</format>
+</File>
+
+<File rdf:about="http://wilma.vub.ac.be/~se2_0910/docs/minutes/2009/12/01/minutes-20091201.tex">
+  <release rdf:resource="http://wilma.vub.ac.be/~se2_0910/docs/minutes/2009/12/01/"/>
+  <basename>minutes-20091201</basename>
+  <extension>.tex</extension>
+  <language>en</language>
+  <size rdf:parseType="Resource">
+    <unit rdf:resource="http://purl.org/urfm/Kilobyte"/>
+    <rdf:value>9</rdf:value>
+  </size> 
+  <link>http://wilma.vub.ac.be/~se2_0910/docs/minutes/2009/12/01/minutes-20091201.tex</link>
   <format>application/x-latex</format>
 </File>
     </files>
