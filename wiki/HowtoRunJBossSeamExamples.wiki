@@ -17,11 +17,11 @@
   # Run an instance of the JBoss AS:
     * `cd $JBOSS_HOME/bin` and `./run.sh` in GNU/Linux, and
     * `cd %JBOSS_HOME%\bin` and `run.bat` in Windows.
-  # Wait until JBoss is up and running. Check here: [http://localhost:8888/]
+  # Wait until JBoss is up and running. Check here: [http://localhost:8080/]
   # Go to the directory where JBoss Seam is installed.
   # Then go to `examples/booking` or any other example.
   # Run `ant deploy`
   # Wait until JBoss deploys the application.
-  # See the result in [http://localhost:8888/seam-booking/]
+  # See the result in [http://localhost:8080/seam-booking/]
 
 Please feel free to adapt this howto document should you think it's necessary.
