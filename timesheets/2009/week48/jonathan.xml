@@ -1,9 +1,4 @@
 <timesheet xmlns="http://purl.org/net/timetrack">
-	
-	
-	
-
-</timesheet>
 <item duration="PT2H00M">
     <desc>Reviewing SDD.</desc>
     <refs>
@@ -37,7 +32,5 @@
     <refs>
       <ref></ref>
     </refs>
-
   </item>
-
 </timesheet>
