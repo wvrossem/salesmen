@@ -1,0 +1,131 @@
+<?xml version="1.0"?>
+<timesheets xmlns="http://purl.org/net/timetrack" xmlns:xi="http://www.w3.org/2001/XInclude" from="2009-11-30" to="2009-12-07" xml:id="week49-2009">
+  <title>VUB - SE2 Timesheets for the 49th Week of 2009</title>
+  <published>2009-12-06</published>
+  <updated>2009-12-06</updated>
+  <person>
+    <name>Nick De Cooman</name>
+    
+	<timesheet xmlns="http://purl.org/net/timetrack" xml:base="../default/timesheet.xml">
+  <item duration="PT0M">
+    <desc>
+      This is a fallback timesheet, meaning that the
+      developer has not submitted their timesheet yet.
+      Please check back later to see this developer's 
+      timesheet.
+    </desc>
+  </item>
+</timesheet>
+      
+  </person>
+  <person>
+    <name>Jonathan Jeurissen</name>
+    
+	<timesheet xmlns="http://purl.org/net/timetrack" xml:base="../default/timesheet.xml">
+  <item duration="PT0M">
+    <desc>
+      This is a fallback timesheet, meaning that the
+      developer has not submitted their timesheet yet.
+      Please check back later to see this developer's 
+      timesheet.
+    </desc>
+  </item>
+</timesheet>
+      
+  </person>
+  <person>
+    <name>Sina Khakbaz Heshmati</name>
+    
+	<timesheet xmlns="http://purl.org/net/timetrack" xml:base="../default/timesheet.xml">
+  <item duration="PT0M">
+    <desc>
+      This is a fallback timesheet, meaning that the
+      developer has not submitted their timesheet yet.
+      Please check back later to see this developer's 
+      timesheet.
+    </desc>
+  </item>
+</timesheet>
+      
+  </person>
+  <person>
+    <name>Jorne Laton</name>
+    <timesheet xmlns="http://purl.org/net/timetrack">
+
+	<item duration="PT30M">
+		<desc>Reading SDD v0_1.</desc>
+		<refs>
+		<ref/>
+		</refs>
+	</item>
+	
+	<item duration="PT30M">
+		<desc>Dropbox: created account, wiki and shared folder. Invited team members to folder.</desc>
+		<refs>
+		<ref>http://code.google.com/p/salesmen/source/detail?r=523</ref>
+		</refs>
+	</item>
+	
+	<item duration="PT2H15M">
+		<desc>Meeting on Tuesday 2009/12/01.</desc>
+		<refs>
+		<ref>http://wilma.vub.ac.be/~se2_0910/docs/minutes/2009/12/01/minutes-20091201.pdf</ref>
+		</refs>
+	</item>
+	
+	<item duration="PT30M">
+		<desc>Making slides for conference.</desc>
+	</item>
+
+	<item duration="PT40M">
+		<desc>Administration and Communication</desc>
+	</item>
+
+</timesheet>
+  </person>
+  <person>
+    <name>Bart Maes</name>
+    
+	<timesheet xmlns="http://purl.org/net/timetrack" xml:base="../default/timesheet.xml">
+  <item duration="PT0M">
+    <desc>
+      This is a fallback timesheet, meaning that the
+      developer has not submitted their timesheet yet.
+      Please check back later to see this developer's 
+      timesheet.
+    </desc>
+  </item>
+</timesheet>
+      
+  </person>
+  <person>
+    <name>Patrick Provinciael</name>
+    
+	<timesheet xmlns="http://purl.org/net/timetrack" xml:base="../default/timesheet.xml">
+  <item duration="PT0M">
+    <desc>
+      This is a fallback timesheet, meaning that the
+      developer has not submitted their timesheet yet.
+      Please check back later to see this developer's 
+      timesheet.
+    </desc>
+  </item>
+</timesheet>
+      
+  </person>
+  <person>
+    <name>Wouter Van Rossem</name>
+    
+	<timesheet xmlns="http://purl.org/net/timetrack" xml:base="../default/timesheet.xml">
+  <item duration="PT0M">
+    <desc>
+      This is a fallback timesheet, meaning that the
+      developer has not submitted their timesheet yet.
+      Please check back later to see this developer's 
+      timesheet.
+    </desc>
+  </item>
+</timesheet>
+      
+  </person>
+</timesheets>
