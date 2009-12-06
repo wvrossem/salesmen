@@ -1,0 +1,19 @@
+% Project Controls
+\setprojectname{Software Engineer group 2: Salesmen}
+\setdocumentname{Software Test Document}
+\setmembers{\manager{Nick DeCooman}, Jonathan Jeurissen, Sina Khakbaz Heshmati, Jorne Laton, Bart Maes, Patrick Provinciael, Wouter Van Rossem}
+\setprojectlogo{salesmenlogo}
+\setcompanylogo{vub}
+
+% Title Controls
+\setauthorname{Patrick Provinciael}
+\setabstract{This document will outline the various tests and testing procedures required for the Salesmen Project.}
+
+% Revision History Controls
+\setrevisionhist{
+\begin{versionhistory}
+\vhEntry{0.1}{29-11-2009}{Patrick}{First Draft}
+\vhEntry{0.8}{06-12-2009}{Patrick}{Draft before QA}
+\end{versionhistory}
+}
+\setrevisioncurr{06-12-2009: Draft before QA}
