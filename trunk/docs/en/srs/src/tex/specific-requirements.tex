@@ -1,11 +1,14 @@
 \chapter{Specific Requirements}
 
 \section{Requirements Control Plan}
-	This section describes how the different requirements will be described and how 
-	modifications to these requirements will be handled. \\
+
+	This section describes how the different requirements will be defined and how 
+	modifications to these requirements will be handled.
+	
 	Each requirement will have a unique identifier which will be used for referencing 
 	in the source code, the design, ... Some requirements will only be described by
-	a short description, while others will be described by a use case. \\
+	a short description, while others will be described by a use case.
+	
 	Whenever a requirement changes, the change will be noted at the description of 
 	the requirement. If a requirement is retired, this will also be noted at the
 	requirement description, together with a reason why the requirement was retired.
@@ -41,26 +44,93 @@
 %	\subsection{Portability}
 %\section{Other Requirements}
 \section{Summary}
-	\begin{tabular}{|c|c|c|}	
-		\hline \textbf{Must have} & \textbf{Want to have} & \textbf{Nice to have} \\ 
-		\hline  Create new account & Search a user & View recommended auctions \\ 
-		\hline  Log in & View active auctions & Send a personal message \\ 
-		\hline  Search for an auction & View placed auctions & View personal messages \\
-		\hline  View auctions of a category & Follow an auction & Delete a personal message \\ 
-		\hline  Log out & View salespal & Add seller to favourites \\ 
-		\hline  Place an auction & Top up salespal & View favourite sellers \\ 
-		\hline  Bid on an auction & View buyer's assistant &  Delete a favourite seller\\ 
-		\hline  Modify account information & Comment on an auction & Extra site for banned users \\ 
-		\hline  Retrieve password & Change currency & Advanced e-mail notification \\ 
-		\hline  Remove a user & View auctions with a tag &  \\ 
-		\hline  Remove an auction & Cookies &  \\ 
-		\hline  Change language & View followed auctions &  \\ 
-		\hline  CAPTCHA & View transaction &  \\ 
-		\hline  Limited login attempts & Pay transaction  &  \\ 
-		\hline  Encrypted password & Rate transaction  &  \\
-		\hline  Browser compatibility & Retract bid  &  \\
-		\hline  Secure connection & Basic e-mail notification &  \\
-		\hline  & Confirm account &  \\
-		\hline  & Request new confirmation mail &  \\
-		\hline
+	\subsection{Functional requirements}
+	\subsubsection{Must have}
+	
+	\begin{tabular}{l|c c}
+	  Name & ID & Category \\ 
+	  \hline
+	  Create a new account & 1 & Guest \\ 
+	  Log in & 2 & Guest \\	  
+	  Search for an auction (basic) & 5 & Guest, user \\
+	  View auctions of a certain category & 7 & Guest, user \\
+	  Change language & 9 & Guest, user \\
+	  Log out & 11 & User \\
+	  Place an auction & 13 & User \\
+	  Place an English auction & 14 & User \\
+	  Bid on an auction & 17 & User \\
+	  Modify account information & 20 & User \\
+	  Remove a user & 42 & Moderator \\
+	  Remove an auction & 43 & Moderator \\
+	  Modify default fees & 45 & Administrator \\
+	  Encrypted password & 47 & Security \\
+	  CAPTCHA & 48 & Security \\
+	  Limited login attempts & 49 & Security \\  	  
 	\end{tabular} 
+	
+	\subsubsection{Want to have}
+	
+	\begin{tabular}{l|c c}
+	  Name & ID & Category \\ 
+	  \hline
+	  Confirm account & 3 & Unconfirmed user \\
+	  Request new confirmation mail & 4 & Unconfirmed user \\
+	  Search for an auction (advanced) & 6 & Guest, user \\
+	  View auctions with a certain tag & 8 & Guest, user \\
+	  Search a user & 12 & User \\
+	  Place a silent auction & 15 & User \\
+	  View placed auctions & 16 & User \\
+	  View active auctions & 18 & User \\
+	  View won auctions & 19 & User \\
+	  Follow an auction & 24 & User \\
+	  View followed auctions & 25 & User \\
+	  View transaction & 26 & User \\
+	  Pay transaction & 27 & User \\
+	  Mark as sent & 28 & User \\
+	  Mark as received & 29 & User \\
+	  Rate transaction & 30 & User \\
+	  View salespal & 34 & User \\
+	  Top up salespal & 35 & User \\
+	  View buyer's assistant & 37 & User \\
+	  Add buyer's assistant entry & 38 & User \\
+	  Comment on an auction & 39 & User \\
+	  View hot deals & 40 & User \\
+	  Sign up for salesmen pro & 41 & User \\
+	  Retract bid & 44 & Moderator \\
+	  Cookies & 51 & Security \\	  
+	  Basic e-mail notification & 52 & Other \\	  
+	\end{tabular} 
+	
+	\subsubsection{Nice to have}
+	
+	\begin{tabular}{l|c c}
+	  Name & ID & Category \\ 
+	  \hline
+	  Change currency & 10 & User, guest \\
+	  Send a personal message & 21 & User \\
+	  View personal messages & 22 & User \\
+	  Delete a personal message & 23 & User \\
+	  Add seller to favourites  & 31 & User \\
+	  View favourite sellers & 32 & User \\
+	  Delete a favourite seller & 33 & User \\
+	  View recommended auctions & 36 & User \\
+	  Modify default fees through GUI & 46 & Administrator \\
+	  Extra site for banned users & 50 & Security \\
+	  Advanced e-mail notification & 53 & Other \\
+	\end{tabular}
+	
+	\subsection{Non-functional requirements}
+	
+	\begin{tabular}{l|c c}
+	  Priority & Name & ID \\ 
+	  \hline
+	  Must have & Browser Compatibility & 54 \\
+	  & Secure connection & 55 \\
+	  & Advertisments through Google AdWords & 56 \\
+	  \hline
+	  Want to have & Clean URLs & 57 \\
+	  & Search engine optimization & 58 \\
+	\end{tabular}
+	
+	  
+	
