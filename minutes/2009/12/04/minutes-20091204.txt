@@ -1,0 +1,212 @@
+
+                      Minutes Meeting 11
+                          Jonathan Jeurissen
+
+
+
+                           December 5, 2009
+
+
+1     Meeting Information
+
+
+Date: Friday, December 04, 2009
+
+Time: 12H00-13H00
+
+Place: CSB Seminaryroom 2
+
+
+1.1    Attendees
+
+
+Following members were present:
+
+
+    o Nick De Cooman
+
+
+    o Jonathan Jeurissen
+
+
+    o Sina Khakbaz Heshmati
+
+
+    o Bart Maes
+
+
+    o Jorne Laton
+
+
+    o Patrick Provinciael
+
+
+    o Wouter Van Rossem
+
+
+There were no members absent.
+1.2    Revision History
+
+
+_Rev._||_Date_____________||_Description______________
+
+   1.0   ||December 5, 2009 ||First draft created
+
+   1.1   ||December 6, 2009 ||Revised by QA Manager
+
+   1.2   ||December 6, 2009 ||Ready to be uploaded
+
+
+
+                                     1
+
+
+2     Logo
+
+
+The logo is now finished and has a more professional look. It can be found
+
+on the SVN at [1].
+3     Next Meetings
+
+
+_Date_Meeting____________||___Description_______________________
+
+ Tuesday, December 8, 2009 || Preparation conference
+
+ Friday, December 11, 2009  ||Weekly meeting
+
+ Tuesday, December 8, 2009 || Conference I
+
+ Friday, December 11, 2009  ||Weekly meeting
+
+ Friday, January 29, 2010    ||Last meeting of the first iteration
+4     Analysis statistics
+
+
+The several statistics of the workings hours for every team member have been
+
+walked through. Clearly Sina has done too much work in comparison to the
+
+other team members. All the other team members work approximately the
+
+same per week (around 6 hours/week).
+
+At the first week, there was a high peak for all team members to start up
+
+the project.  For every team member, there was a peak in the week of the
+
+deadline of his report (SRS,SDD, SPMP,etc.).  For the other weeks, every
+
+team member worked approximately 6 hours/week (except for Sina).
+
+Averaged over all weeks and all members, every member works approximately
+
+7 hours/week.
+5     Prepare Conference I
+
+
+The initial, incomplete slides for Conference I have been shown and the design
+
+was discussed.  The rest of the slides need to be supplied, without design,
+
+by the members and sent to the Project Manager by Saturday, December 5.
+
+Nick will then put all the slides together, using the same layout throughout
+
+the presentation.
+6     SQAP
+
+
+A 2nd repository will be added on the SVN, in which only the QA team will
+
+commit code. The purpose of this repository is to clearly show which code
+
+
+
+                                     2
+
+
+is Quality Assured.  If there would not be a 2nd repository, then Quality
+
+Assured code would have to be set as a comment in the code, which will not
+
+be very efficient when the code should be changed. If the code is changed, it
+
+would not be clear which code is Quality Assured and which is not. That is
+
+why a 2nd repository will be a perfect solution.
+7     Implementation
+
+
+JBoss Seam will be used as a framework.  This has as advantage that the
+
+implementation will be separate from the logic. So xHTML will be separate
+
+from the logic. It will also use very clean code. A programmer will only have
+
+to make logic and for example not use the Java Search Pages.
+
+
+
+The classes of the SDD will represent the data.  There will also be a class
+
+that will consist of auctions that can be performed on other classes.
+
+
+
+Everyone has to install JBoss 5 and JDK 6. A Wiki page will be created that
+
+will explain how this should be installed and how examples of JBoss Seam
+
+can be ran.[2].
+
+
+
+Sina will provide a list of tasks that can be done by the team by next meeting.
+8     Requirements:  support several languages
+
+
+This project will support different languages.  These languages will be sup-
+
+ported, by using an extra String table, which will be used to import Strings
+
+that have to be displayed on the website. The description of the items itself
+
+can be translated by using Google Translate.  It's important to understand
+
+that the first version of Salesmen will only be in English, but it will be
+
+possible to add a new language, just using a different String table.
+9     Next Meeting
+
+
+Date: Tuesday, December 4, 2009
+
+Time: 15H00-17H00
+
+Place: D2.10
+
+
+                                     3
+
+
+9.1    Agenda
+
+
+A complete list of Agenda items is available on [3].
+
+
+References
+
+
+ [1] http://code.google.com/p/salesmen/source/browse/attic/2009/11/logo/final/b*
+ *art-3.png
+
+
+ [2] http://code.google.com/p/salesmen/wiki/HowtoRunJBossSeamExamples
+
+
+ [3] http://code.google.com/p/salesmen/wiki/NextMeetingTopics
+
+                                     4
