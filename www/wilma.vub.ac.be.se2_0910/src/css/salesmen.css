@@ -180,6 +180,7 @@ form .invalid input { background-color: #ffcccc; }
 
 .sitemap #maincontent .minutes ul .summary,
 .sitemap #maincontent .minutes ul .hbar { display: none; }
+.sitemap #maincontent .timesheets-2009 ul { display: none; }
 
 .team table td.name { 
   font-weight: bold; 
