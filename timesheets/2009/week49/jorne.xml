@@ -15,7 +15,7 @@
 		</refs>
 	</item>
 	
-	<item duration="PT2H15M">
+	<item duration="PT2H20M">
 		<desc>Meeting on Tuesday 2009/12/01.</desc>
 		<refs>
 		<ref>http://wilma.vub.ac.be/~se2_0910/docs/minutes/2009/12/01/minutes-20091201.pdf</ref>
@@ -24,6 +24,13 @@
 	
 	<item duration="PT30M">
 		<desc>Making slides for conference.</desc>
+	</item>
+	
+	<item duration="PT30M">
+		<desc>Meeting on Friday 2009/12/04.</desc>
+		<refs>
+		<ref>http://wilma.vub.ac.be/~se2_0910/docs/minutes/2009/12/04/minutes-20091204.pdf</ref>
+		</refs>
 	</item>
 
 	<item duration="PT40M">
