@@ -7,18 +7,26 @@
 \begin{projdoc}
 \chapter{Introduction}
 \section{Scope}
-The purpose of thise document is to describe the Software Test Plan(STD) for the Salesmen Project[1]. It will outline the various testing mechanisms and the responsibilities of these testing mechanisms. 
+The purpose of thise document is to describe the Software Test Plan(STD) for the Salesmen Project (1). It will outline the various testing mechanisms and the responsibilities of these testing mechanisms. 
 
 Chapter 2 outlines the testing plan, while chapter 3 details the the integration tests. The results of the various integration tests will be included in this document.
 
 
 \section{References}
-[1] Salesmen Project, http://wilma.vub.ac.be/~se2_0910 \\
-[2] SOftware Design Document
-[3] Software Requirements Specification
-[4] Software Quality Assurance Plan
-[5] JUnit Testing Framework
-[6] Google Code Repository
+\begin{itemize}
+\item
+Salesmen Project, \url{http://wilma.vub.ac.be/~se2_0910}
+\item
+Software Design Document 
+\item
+Software Requirements Specification 
+\item
+Software Quality Assurance Plan 
+\item
+JUnit Testing Framework 
+\item
+Google Code Repository 
+\end{itemize}
 
 \section{Definitions and acronyms}
 \begin{itemize}
@@ -40,11 +48,11 @@ The purpose of this chapter is to outline the various testing mechanisms and the
 The following items must be tested.
 \begin{itemize}
 \item
-All methods and classes as outlined in the SDD[2]
+All methods and classes as outlined in the SDD (2)
 \item
-All requirements of the system as detailed in the SRS[3]
+All requirements of the system as detailed in the SRS 3)
 \item
-The quality requirements as detailed in the the SQAP[4]
+The quality requirements as detailed in the the SQAP (4)
 \item
 Every piece of code, part of the completed system.
 \end{itemize}
@@ -62,7 +70,7 @@ Several methods will be used to test the various features.
 \subsection{Unit tests}
 The QAM will foresee the possibility of writing Unit tests. Each programmer is responsible for writing these tests.
 
-These unit tests will be created to run with the JUnit testing framework[5]. 
+These unit tests will be created to run with the JUnit testing framework (5). 
 
 Whenever changes are made, the QAM will run all Unit Tests. The programmers are encouraged to run the full Unit Testing suite as well.
 
@@ -81,6 +89,7 @@ The interfaces will be developed with userfriendliness in mind.
 The interfaces will be tested by the other projectmembers. Each will evaluate if the interface was userfriendly enough. If necessary, the interface will then be adjusted and a new round of Interface testing will start.
 \item
 When all projectmembers deem the interface userfriendly, the User Interface will be tested by one or more external parties. These persons must all have different backgrounds of the targetted audience. This to ensure that every person will find his needs in the system.
+\end{itemize}
 
 \section{Item pass/fail criteria}
 For every test, the pass criteria is the lack of errors or other problems.
@@ -89,7 +98,7 @@ For every test, the pass criteria is the lack of errors or other problems.
 Testphases can be suspended in the following cases.
 \begin{itemize}
 \item
-When a unit test fails. If the error appeared in code that was recently written by the tester, he is encouraged to track down the error and fix this. When the error appears in code not written by the test, an issue must be made on the Google Code Repository website[6].
+When a unit test fails. If the error appeared in code that was recently written by the tester, he is encouraged to track down the error and fix this. When the error appears in code not written by the test, an issue must be made on the Google Code Repository website (6).
 \item
 When an integration test fails. In this case, an issue has to be made on the Google Code Repository Website. The integration test must start over again when the issue is resolved.
 \end{itemize}
@@ -116,6 +125,6 @@ Whenever anything new is added to the system, there must be tests.
 
 \chapter{Overview of the integration tests}
 \section{Scope}
-The purpose of this chapter is to document the various integration tests required. These tests will be conform with the SRS[3] and thus, they will each contain a reference to the correspondent SRS Requirement. Every Requirement will be tested for a possible negative and positive result.
+The purpose of this chapter is to document the various integration tests required. These tests will be conform with the SRS (3) and thus, they will each contain a reference to the correspondent SRS Requirement. Every Requirement will be tested for a possible negative and positive result.
 \end{projdoc}
 \end{document}
