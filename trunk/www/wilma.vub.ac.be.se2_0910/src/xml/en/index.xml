@@ -43,7 +43,7 @@
     <title>Spotlight</title>
     <itemizedlist>
       <listitem><para><olink targetdoc='minutes-2009'>Minutes -
-      Dec. 01 2009</olink></para></listitem>
+      Dec. 04 2009</olink></para></listitem>
       <listitem><para><olink targetdoc='highlights-2009'>Highlights in 
       November</olink></para></listitem>
       <listitem><para><olink targetdoc='scmp'>
@@ -62,8 +62,17 @@
   </sidebar>
   <sidebar id='dev'>
     <title>Development</title>
-    <para>
-      <ulink url="http://code.google.com/p/salesmen/">Google Code</ulink>
-    </para>
+    <itemizedlist>
+      <listitem>
+	<para>
+	  <ulink url="http://code.google.com/p/salesmen/">Google Code</ulink>
+	</para>	
+      </listitem>
+      <listitem>
+	<para>
+	  <ulink url="http://salesmen-dev.blogspot.com/">Dev Blog</ulink>
+	</para>	
+      </listitem>
+    </itemizedlist>
   </sidebar>
 </webpage>
