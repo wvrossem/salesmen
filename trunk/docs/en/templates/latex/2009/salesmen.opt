@@ -16,6 +16,7 @@
 \vhEntry{1.0}{30-10-2009}{Patrick}{First Finished Version}
 \vhEntry{1.1}{11-11-2009}{Patrick}{Changed base Class to report}
 \vhEntry{1.4}{19-11-2009}{Patrick}{Addition of Revision History and Abstract}
+\vhEntry{1.6}{03-12-2009}{Patrick}{Redone the front page}
 \end{versionhistory}
 }
-\setrevisioncurr{19-11-2009: Addition of Revision History}
+\setrevisioncurr{03-12-2009: Redone the front page}

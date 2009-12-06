@@ -1,0 +1,121 @@
+\documentclass[salesmen, twoside]{softproj}
+\usepackage[english]{babel} % For a load of tiny changes in the text
+\usepackage{graphicx, ctable, url, hyperref} % graphics, tables, urls and cross-referencing
+\usepackage{verbatim} % For multiline comments
+
+\begin{document}
+\begin{projdoc}
+\chapter{Introduction}
+\section{Scope}
+The purpose of thise document is to describe the Software Test Plan(STD) for the Salesmen Project[1]. It will outline the various testing mechanisms and the responsibilities of these testing mechanisms. 
+
+Chapter 2 outlines the testing plan, while chapter 3 details the the integration tests. The results of the various integration tests will be included in this document.
+
+
+\section{References}
+[1] Salesmen Project, http://wilma.vub.ac.be/~se2_0910 \\
+[2] SOftware Design Document
+[3] Software Requirements Specification
+[4] Software Quality Assurance Plan
+[5] JUnit Testing Framework
+[6] Google Code Repository
+
+\section{Definitions and acronyms}
+\begin{itemize}
+\item QAM: Quality Assurance Manager
+\item SQAP: Software Quality Assurance Plan
+\item SCMP: Software Configuration Management Plan 
+\item SPMP: Software Project Management Plan
+\item SDD: Software Design Document
+\item SRS: Software Requirements Specification
+\item STD: Software Test Document
+\item JUnit: Java Unit testing Framework
+\end{itemize}
+
+\chapter{Test plan}
+\section{Introduction}
+The purpose of this chapter is to outline the various testing mechanisms and the responsibilities of these mechanisms.
+
+\section{Test items}
+The following items must be tested.
+\begin{itemize}
+\item
+All methods and classes as outlined in the SDD[2]
+\item
+All requirements of the system as detailed in the SRS[3]
+\item
+The quality requirements as detailed in the the SQAP[4]
+\item
+Every piece of code, part of the completed system.
+\end{itemize}
+
+
+\section{Features to be tested}
+Every feature implemented in the final completed system must be tested. These must be tested as soon as possible and whenever changes are made.
+
+\section{Features not to be tested}
+Every feature which is not (yet) implemented.
+
+\section{Approach}
+Several methods will be used to test the various features.
+
+\subsection{Unit tests}
+The QAM will foresee the possibility of writing Unit tests. Each programmer is responsible for writing these tests.
+
+These unit tests will be created to run with the JUnit testing framework[5]. 
+
+Whenever changes are made, the QAM will run all Unit Tests. The programmers are encouraged to run the full Unit Testing suite as well.
+
+\subsection{Integration tests}
+Integration tests will be run whenever a new stable version of the system is released. The purpose of the integration tests is to ensure that the system works as a whole. Integration tests are focused on testing whether the requirements, as outlined in the SRS, are incorporated. More details regarding integration tests can be found in chapter 3.
+
+\subsection{Regression tests}
+Whenever a new iteration is about to start, there will first be a round of regression tests. This means that all functionality added in the previous iteration is tested to ensure that nothing was broken in the previous iteration.
+
+\subsection{Interface tests}
+It is important to assure that the User Interface is userfriendly. To ensure this fact, the following methods will be used.
+\begin{itemize}
+\item
+The interfaces will be developed with userfriendliness in mind.
+\item
+The interfaces will be tested by the other projectmembers. Each will evaluate if the interface was userfriendly enough. If necessary, the interface will then be adjusted and a new round of Interface testing will start.
+\item
+When all projectmembers deem the interface userfriendly, the User Interface will be tested by one or more external parties. These persons must all have different backgrounds of the targetted audience. This to ensure that every person will find his needs in the system.
+
+\section{Item pass/fail criteria}
+For every test, the pass criteria is the lack of errors or other problems.
+
+\section{Suspension criteria and resumption requirements}
+Testphases can be suspended in the following cases.
+\begin{itemize}
+\item
+When a unit test fails. If the error appeared in code that was recently written by the tester, he is encouraged to track down the error and fix this. When the error appears in code not written by the test, an issue must be made on the Google Code Repository website[6].
+\item
+When an integration test fails. In this case, an issue has to be made on the Google Code Repository Website. The integration test must start over again when the issue is resolved.
+\end{itemize}
+
+\section{Test deliverables}
+For every code file, there must be a test file. This test file must detail every test applicable on this code. Whenever the code is changed, the test file must be reviewed to ensure all functionality is still tested.
+
+Every other test result will be included in an appendix of this document.
+
+\section{Test tasks}
+The unit tests are the responsibilities of the developers. It is the responsibility of the QAM to assure that these tests are complete. Integration tests will be mainly completed by the QAM, but individual projectmembers are encouraged to run their own integration tests.
+
+\section{Environmental needs}
+Every person is required to have the JUnit plugin for Eclipse, in order to perform the various unit tests.
+
+\section{Responsibilities}
+The unit tests are the responsibilities of the developers. It is the responsibility of the QAM to assure that these tests are complete. It is also the responsibility of the QAM to assure that everything else is tested.
+
+\section{4.2.13 Stafﬁng and training needs}
+When needed, the QAM will explain the creation and use of the JUnit testing framework to the individual members.
+
+\section{Schedule}
+Whenever anything new is added to the system, there must be tests.
+
+\chapter{Overview of the integration tests}
+\section{Scope}
+The purpose of this chapter is to document the various integration tests required. These tests will be conform with the SRS[3] and thus, they will each contain a reference to the correspondent SRS Requirement. Every Requirement will be tested for a possible negative and positive result.
+\end{projdoc}
+\end{document}
