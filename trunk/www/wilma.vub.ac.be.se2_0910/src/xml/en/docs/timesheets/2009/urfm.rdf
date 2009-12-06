@@ -28,6 +28,12 @@
 
     <releases rdf:parseType="Collection">
 <Release
+    rdf:about="http://wilma.vub.ac.be/~se2_0910/docs/timesheets/2009/week49/">
+  <package rdf:resource="http://wilma.vub.ac.be/~se2_0910/docs/timesheets/"/>
+  <revision>week49-2009</revision>
+  <created>2009-12-06</created>
+</Release>
+<Release
     rdf:about="http://wilma.vub.ac.be/~se2_0910/docs/timesheets/2009/week48/">
   <package rdf:resource="http://wilma.vub.ac.be/~se2_0910/docs/timesheets/"/>
   <revision>week48-2009</revision>
@@ -301,6 +307,35 @@
     <rdf:value>20</rdf:value>
   </size>
   <link>http://wilma.vub.ac.be/~se2_0910/docs/timesheets/2009/week48/timesheet-week48-2009.html</link>
+  <format>text/html</format>
+</File>
+
+<!-- **************************************************************
+     Week49-2009
+     ************************************************************** -->
+ <File rdf:about="http://wilma.vub.ac.be/~se2_0910/docs/timesheets/2009/week49/timesheet-week49-2009.xml">
+  <release rdf:resource="http://wilma.vub.ac.be/~se2_0910/docs/timesheets/2009/week49/"/>
+  <basename>timesheet-week49-2009</basename>
+  <extension>.xml</extension>
+  <language>en</language>
+  <size rdf:parseType="Resource">
+    <unit rdf:resource="http://purl.org/urfm/Kilobyte"/>
+    <rdf:value>8</rdf:value>
+  </size>
+  <link>http://wilma.vub.ac.be/~se2_0910/docs/timesheets/2009/week49/timesheet-week49-2009.xml</link>
+  <format>application/xml</format>
+ </File>
+
+<File rdf:about="http://wilma.vub.ac.be/~se2_0910/docs/timesheets/2009/week49/timesheet-week49-2009.html">
+  <release rdf:resource="http://wilma.vub.ac.be/~se2_0910/docs/timesheets/2009/week49/"/>
+  <basename>timesheet-week49-2009</basename>
+  <extension>.html</extension>
+  <language>en</language>
+  <size rdf:parseType="Resource">
+    <unit rdf:resource="http://purl.org/urfm/Kilobyte"/>
+    <rdf:value>20</rdf:value>
+  </size>
+  <link>http://wilma.vub.ac.be/~se2_0910/docs/timesheets/2009/week49/timesheet-week49-2009.html</link>
   <format>text/html</format>
 </File>
 
