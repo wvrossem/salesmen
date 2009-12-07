@@ -621,7 +621,6 @@
   <link>http://wilma.vub.ac.be/~se2_0910/docs/minutes/2009/12/04/minutes-20091204.pdf</link>
   <format>application/pdf</format>
 </File>
-<!--
 <File rdf:about="http://wilma.vub.ac.be/~se2_0910/docs/minutes/2009/12/04/minutes-20091204.txt">
   <release rdf:resource="http://wilma.vub.ac.be/~se2_0910/docs/minutes/2009/12/04/"/>
   <basename>minutes-20091204</basename>
@@ -629,12 +628,11 @@
   <language>en</language>
   <size rdf:parseType="Resource">
     <unit rdf:resource="http://purl.org/urfm/Kilobyte"/>
-    <rdf:value>8</rdf:value>
+    <rdf:value>4</rdf:value>
   </size> 
   <link>http://wilma.vub.ac.be/~se2_0910/docs/minutes/2009/12/04/minutes-20091204.txt</link>
   <format>text/plain</format>
 </File>
--->
 <File rdf:about="http://wilma.vub.ac.be/~se2_0910/docs/minutes/2009/12/04/minutes-20091204.tex">
   <release rdf:resource="http://wilma.vub.ac.be/~se2_0910/docs/minutes/2009/12/04/"/>
   <basename>minutes-20091204</basename>

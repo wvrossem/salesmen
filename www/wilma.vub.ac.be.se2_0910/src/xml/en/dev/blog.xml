@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <webpage id="blog">
-  <config param="rcsdate" value="$Date: 2009-11-26 20:40:01 +0100 (Thu, 26 Nov 2009) $"/>
+  <config param="rcsdate" value="$Date$"/>
   <head>
     <title>Blog</title>
     <summary>Small talk about Salesmen</summary>
