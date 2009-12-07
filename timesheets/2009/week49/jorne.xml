@@ -1,10 +1,10 @@
 <?xml version='1.0'?>
 <timesheet xmlns="http://purl.org/net/timetrack">
 
-	<item duration="PT30M">
+	<item duration="PT20M">
 		<desc>Reading SDD v0_1.</desc>
 		<refs>
-		<ref></ref>
+			<ref>http://wilma.vub.ac.be/~se2_0910/docs/sdd/</ref>
 		</refs>
 	</item>
 	
@@ -33,7 +33,7 @@
 		</refs>
 	</item>
 
-	<item duration="PT40M">
+	<item duration="PT20M">
 		<desc>Administration and Communication</desc>
 	</item>
 
