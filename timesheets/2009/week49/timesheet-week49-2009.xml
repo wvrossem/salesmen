@@ -2,7 +2,7 @@
 <timesheets xmlns="http://purl.org/net/timetrack" xmlns:xi="http://www.w3.org/2001/XInclude" from="2009-11-30" to="2009-12-07" xml:id="week49-2009">
   <title>VUB - SE2 Timesheets for the 49th Week of 2009</title>
   <published>2009-12-06</published>
-  <updated>2009-12-06</updated>
+  <updated>2009-12-07</updated>
   <person>
     <name>Nick De Cooman</name>
     <timesheet xmlns="http://purl.org/net/timetrack">
@@ -83,6 +83,8 @@
    <refs>
 	<ref>http://code.google.com/p/salesmen/source/detail?r=558</ref>
 	<ref>http://code.google.com/p/salesmen/source/detail?r=559</ref>
+	<ref>http://groups.google.com/group/salesmen/browse_thread/thread/26ba6018408ba13c</ref>
+	<ref>http://code.google.com/p/salesmen/source/detail?r=582</ref>
     </refs>
   </item>
 
@@ -97,7 +99,7 @@
     <timesheet xmlns="http://purl.org/net/timetrack">
 
 
-<item duration="PT1H00M">
+<item duration="PT45M">
     
 <desc>Reviewing SDD.</desc>
     
@@ -111,7 +113,7 @@
 
 
 
-<item duration="PT2H00M">
+<item duration="PT2H20M">
     
 <desc>Meeting on Tuesday 2009/12/01.</desc>
     
@@ -125,7 +127,7 @@
 
   
 
-<item duration="PT3H00M">
+<item duration="PT2H30M">
     
 <desc>Writing Minutes of Tuesday 2009/12/01.</desc>
     
@@ -154,7 +156,7 @@
   
 
 
-<item duration="PT45M">
+<item duration="PT1H">
     
 <desc>Meeting on Friday 2009/12/04.</desc>
     
@@ -168,7 +170,7 @@
 
   
 
-<item duration="PT1H45M">
+<item duration="PT1H30M">
     
 <desc>Writing Minutes of Tuesday 2009/12/04.</desc>
     
@@ -376,7 +378,7 @@
   <item duration="PT30M">
     <desc>Analyze input of team members about SDD, update SDD accordingly</desc>
     <refs>
-      <ref>http://groups.google.com/group/salesmen/browse_thread/thread/fe3a576b6b929e3e/0a6abf0dac41f479?hl=en&amp;lnk=gst&amp;q=sdd#0a6abf0dac41f479</ref>
+      <ref>http://groups.google.com/group/salesmen/browse_thread/thread/fe3a576b6b929e3e</ref>
     </refs>
   </item>
   
@@ -400,7 +402,7 @@
   </item>
   
   <item duration="PT2H">
-    <desc>Meeting with Sina about SDD &amp; implementation details</desc>
+    <desc>Meeting with Sina about SDD and implementation details</desc>
   </item>
   
   <item duration="PT25M">
@@ -412,7 +414,7 @@
   <person>
     <name>Patrick Provinciael</name>
     <timesheet xmlns="http://purl.org/net/timetrack">
-  <item duration="PT3H">
+  <item duration="PT2H20M">
     <desc>Meeting on Tuesday 2009/12/01.</desc>
     <refs>
       <ref>http://wilma.vub.ac.be/~se2_0910/docs/minutes/2009/12/01/minutes-20091201.pdf</ref>
@@ -430,19 +432,19 @@
       <ref>http://wilma.vub.ac.be/~se2_0910/docs/minutes/2009/12/04/minutes-20091204.pdf</ref>
     </refs>
   </item>
-  <item duration="PT13H">
+  <item duration="PT5H">
     <desc>Wrote the first draft of the STD.</desc>
     <refs>
       <ref>http://code.google.com/p/salesmen/source/browse/trunk/docs/en/std/src/tex/std.pdf</ref>
     </refs>
   </item>
-  <item duration="PT2H">
+  <item duration="PT1H">
     <desc>Updated the Template.</desc>
     <refs>      
       <ref>http://code.google.com/p/salesmen/source/detail?r=529</ref>
     </refs>
   </item>
-  <item duration="PT2H">
+  <item duration="PT1H">
     <desc>Discussed a new possible addition in the SQAP with several assistants.</desc>
   </item>
   <item duration="PT30M">

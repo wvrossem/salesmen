@@ -70,40 +70,82 @@
   <person>
     <name>Jonathan Jeurissen</name>
     <timesheet xmlns="http://purl.org/net/timetrack">
-<item duration="PT2H00M">
-    <desc>Reviewing SDD.</desc>
-    <refs>
-      <ref>http://groups.google.com/group/salesmen/browse_thread/thread/fe3a576b6b929e3e/f0ee552e03dbfaed</ref>
-    </refs>
-  </item>
+
+
 
 <item duration="PT2H00M">
-    <desc>Meeting on Tuesday 2009/12/01.</desc>
-    <refs>
-      <ref>http://wilma.vub.ac.be/~se2_0910/docs/minutes/2009/12/01/minutes-20091201.pdf</ref>
-    </refs>
-  </item>
+    
+<desc>Meeting on Tuesday 2009/11/24.</desc>
+    
+<refs>
+      
+<ref>http://wilma.vub.ac.be/~se2_0910/docs/minutes/2009/11/24/minutes-20091124.pdf</ref>
+    
+</refs>
 
-  <item duration="PT0H00M">
-    <desc>Writing Minutes of Tuesday 2009/12/01.</desc>
-    <refs>
-      <ref>http://code.google.com/p/salesmen/source/detail?r=xxx</ref>
-    </refs>
-  </item>
+</item>
 
-  <item duration="PT0H00M">
-    <desc>Correcting Minutes of Tuesday 2009/12/01.</desc>
-    <refs>
-      <ref>http://code.google.com/p/salesmen/source/detail?r=xxx</ref>
-    </refs>
-  </item>
+  
 
-  <item duration="PT10M">
-    <desc>Administration and Communication</desc>
-    <refs>
-      <ref/>
-    </refs>
-  </item>
+<item duration="PT2H45M">
+    
+<desc>Writing Minutes of Tuesday 2009/11/24.</desc>
+    
+<refs>
+      
+<ref>http://code.google.com/p/salesmen/source/detail?r=422</ref>
+    
+</refs>
+  
+</item>
+
+  
+
+<item duration="PT0H45M">
+    
+<desc>Correcting Minutes of Tuesday 2009/11/24.</desc>
+    
+<refs>
+
+<ref>http://code.google.com/p/salesmen/source/detail?r=425</ref>
+ 
+<ref>http://code.google.com/p/salesmen/source/detail?r=427</ref>
+      
+<ref>http://code.google.com/p/salesmen/source/detail?r=432</ref>
+
+</refs>
+  
+</item>
+
+  
+
+<item duration="PT1H00M">
+    
+<desc>Meeting on Friday 2009/11/27.</desc>
+    
+<refs>
+      
+<ref>http://wilma.vub.ac.be/~se2_0910/docs/minutes/2009/11/27/minutes-20091127.pdf</ref>
+    
+</refs>
+
+</item>
+
+  
+
+<item duration="PT15M">
+    
+<desc>Administration and Communication</desc>
+    
+<refs>
+      
+<ref/>
+    
+</refs>
+  
+</item>
+
+
 </timesheet>
   </person>
   <person>
