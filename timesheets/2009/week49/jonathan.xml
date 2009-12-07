@@ -1,7 +1,7 @@
 <timesheet xmlns="http://purl.org/net/timetrack">
 
 
-<item duration="PT1H00M">
+<item duration="PT45M">
     
 <desc>Reviewing SDD.</desc>
     
@@ -15,7 +15,7 @@
 
 
 
-<item duration="PT2H00M">
+<item duration="PT2H20M">
     
 <desc>Meeting on Tuesday 2009/12/01.</desc>
     
@@ -29,7 +29,7 @@
 
   
 
-<item duration="PT3H00M">
+<item duration="PT2H30M">
     
 <desc>Writing Minutes of Tuesday 2009/12/01.</desc>
     
@@ -58,7 +58,7 @@
   
 
 
-<item duration="PT45M">
+<item duration="PT1H">
     
 <desc>Meeting on Friday 2009/12/04.</desc>
     
@@ -72,7 +72,7 @@
 
   
 
-<item duration="PT1H45M">
+<item duration="PT1H30M">
     
 <desc>Writing Minutes of Tuesday 2009/12/04.</desc>
     
