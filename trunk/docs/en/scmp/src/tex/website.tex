@@ -9,7 +9,15 @@ SilkPage requires the website structure and hierarchy to be defined in an
 XML file called ``layout.xml.'' Some fragments of this file is listed in
 figure (\ref{WebsiteLayoutFile}).
 
-\begin{figure}\caption{Portions of the ``layout.xml'' File}
+\subsection{Publishing Weekly Timesheets}\label{WebsitePublishingTimesheets}
+
+In this section, we'll show the process of publishing developers' weekly
+timesheets by presenting a sequence of commands (figure \ref{WebsitePublishingTimesheetsCommands}) that can be run after 
+logging on the server using an SSH client in order to publish the timesheets
+for the 44th week of 2009.
+
+\begin{figure}[th]
+\caption{Portions of the ``layout.xml'' File}
 \label{WebsiteLayoutFile}
 \begin{lstlisting}[language=XML]
 <?xml version="1.0"?>
@@ -38,53 +46,10 @@ figure (\ref{WebsiteLayoutFile}).
 \end{lstlisting}
 \end{figure}
 
-\subsection{Publishing Weekly Timesheets}\label{WebsitePublishingTimesheets}
-
-In this section, we'll show the process of publishing developers' weekly
-timesheets by presenting a sequence of commands (figure \ref{WebsitePublishingTimesheetsCommands}) that can be run after 
-logging on the server using an SSH client in order to publish the timesheets
-for the 44th week of 2009.
-
-\begin{figure}[hb]
-\caption{The Sequence of Commands to Run to Publish Timesheets
-on the Web}
-\label{WebsitePublishingTimesheetsCommands}
-\begin{enumerate}
-\item \verb*#$ cd ws/repo/salesmen/timesheets/#
-\item \verb*#$ svn up#
-\item \verb*#$ cd ../trunk/www/wilma.vub.ac.be.se2_0910/#
-\item \verb*#$ vi src/xml/en/layout.xml#
-\item Add a tocentry for the target week
-\item \verb*#$ cd src/xml/en/docs/timesheets/2009/#
-\item \verb*#$ cp week43.xml week44.xml#
-\item \verb*#$ vi week44.xml #
-\item Slightly adapt the content
-\item \verb*#$ ln -s ../../../../../../../../../timesheets/2009/week44#
-\item \verb*#$ svn add week44 week44.xml#
-\item \verb*#$ cd -#
-\item \verb*#$ ant puball#
-\item \verb*#$ svn ci -m"Published the timesheets for the 44th week of 2009"#
-\end{enumerate}
-\end{figure}
-
 \subsection{Publishing Meeting Minutes}\label{WebsitePublishingMinutes}
 The exact sequence of commands that will publish the minutes of a
 meeting will be presented in this section. Please note that the following
 commands should be run after logging on the server using an SSH client.
-
-\begin{figure}[hb]
-\caption{The Sequence of Commands to Run to Publish Meeting Minutes on the Website}
-\label{WebsitePublishingMinutesCommands}
-\begin{enumerate}
-\item \verb*#$ cd ws/repo/salesmen/minutes/#
-\item \verb*#$ svn up#
-\item \verb*#$ cd ../trunk/www/wilma.vub.ac.be.se2_0910/#
-\item \verb*#$ emacs src/xml/en/docs/minutes/2009/urfm.rdf#
-\item Adapt the file by adding the required metadata (see figure \ref{WebsitePublishingMinutesMetadataURFM}).
-\item \verb*#$ ant publish#
-\item \verb*#$ svn ci -m"Published the minutes of the 2009-11-03 meeting"#
-\end{enumerate}
-\end{figure}
 
 \subsubsection{Adding Metadata for Meeting Minutes Files}\label{WebsitePublishingMinutesMetadata}
 
@@ -93,69 +58,6 @@ are described using the URFM RDF/XML format.
 The figure \ref{WebsitePublishingMinutesMetadataURFM} shows all the 
 metadata that should be defined in order to publish a particular meeting
 minutes~--in this case, the minutes of the 2009-11-03 meeting.
-
-\begin{figure}\caption{Portions of the ``docs/minutes/2009/urfm.rdf'' File}
-\label{WebsitePublishingMinutesMetadataURFM}
-\begin{lstlisting}[language=XML]
-<?xml version="1.0" encoding="UTF-8"?>
-<rdf:RDF xmlns="http://purl.org/urfm/"
-    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-...
-<Channel rdf:about="http://.../docs/minutes/2009/urfm.rdf">
-
-<Release rdf:about="http://.../docs/minutes/2009/11/03/">
-  <package rdf:resource="http://.../docs/minutes/"/>
-  <revision>20091103</revision>
-  <created>2009-11-04</created>
-</Release>
-...
-<!-- *********************************************************
-     20091103                                                 
-     ********************************************************* -->
-<File rdf:about="http://.../minutes/2009/11/03/minutes-20091103.pdf">
-  <release rdf:resource="http://.../docs/minutes/2009/11/03/"/>
-  <basename>minutes-20091103</basename>
-  <extension>.pdf</extension>
-  <language>en</language>
-  <size rdf:parseType="Resource">
-    <unit rdf:resource="http://purl.org/urfm/Kilobyte"/>
-    <rdf:value>90</rdf:value>
-  </size>
-  <link>http://.../minutes/2009/11/03/minutes-20091103.pdf</link>
-  <format>application/pdf</format>
-</File>
-
-<File rdf:about="http://.../minutes/2009/11/03/minutes-20091103.txt">
-  <release rdf:resource="http://.../minutes/2009/11/03/"/>
-  <basename>minutes-20091103</basename>
-  <extension>.txt</extension>
-  <language>en</language>
-  <size rdf:parseType="Resource">
-    <unit rdf:resource="http://purl.org/urfm/Kilobyte"/>
-    <rdf:value>5</rdf:value>
-  </size>
-  <link>http://.../minutes/2009/11/03/minutes-20091103.txt</link>
-  <format>text/plain</format>
-</File>
-
-<File rdf:about="http://.../minutes/2009/11/03/minutes-20091103.tex">
-  <release rdf:resource="http://.../minutes/2009/11/03/"/>
-  <basename>minutes-20091103</basename>
-  <extension>.tex</extension>
-  <language>en</language>
-  <size rdf:parseType="Resource">
-    <unit rdf:resource="http://purl.org/urfm/Kilobyte"/>
-    <rdf:value>6</rdf:value>
-  </size>
-  <link>http://.../minutes/2009/11/03/minutes-20091103.tex</link>
-  <format>application/x-latex</format>
-</File>
-
-    </files>
-  </Channel>
-</rdf:RDF>
-\end{lstlisting}
-\end{figure}
 
 \subsection{Website Directory Structure}\label{WebsiteDirectoryStructure}
 
@@ -227,3 +129,103 @@ minutes~--in this case, the minutes of the 2009-11-03 meeting.
 \item[build.properties]
 \item[build.xml]
 \end{description}
+
+\begin{figure}[th]
+\caption{The Sequence of Commands to Run to Publish Timesheets
+on the Web}
+\label{WebsitePublishingTimesheetsCommands}
+\begin{enumerate}
+\item \verb*#$ cd ws/repo/salesmen/timesheets/#
+\item \verb*#$ svn up#
+\item \verb*#$ cd ../trunk/www/wilma.vub.ac.be.se2_0910/#
+\item \verb*#$ vi src/xml/en/layout.xml#
+\item Add a tocentry for the target week
+\item \verb*#$ cd src/xml/en/docs/timesheets/2009/#
+\item \verb*#$ cp week43.xml week44.xml#
+\item \verb*#$ vi week44.xml #
+\item Slightly adapt the content
+\item \verb*#$ ln -s ../../../../../../../../../timesheets/2009/week44#
+\item \verb*#$ svn add week44 week44.xml#
+\item \verb*#$ cd -#
+\item \verb*#$ ant puball#
+\item \verb*#$ svn ci -m"Published the timesheets for the 44th week of 2009"#
+\end{enumerate}
+\end{figure}
+
+\begin{figure}[hb]
+\caption{The Sequence of Commands to Run to Publish Meeting Minutes on the Website}
+\label{WebsitePublishingMinutesCommands}
+\begin{enumerate}
+\item \verb*#$ cd ws/repo/salesmen/minutes/#
+\item \verb*#$ svn up#
+\item \verb*#$ cd ../trunk/www/wilma.vub.ac.be.se2_0910/#
+\item \verb*#$ emacs src/xml/en/docs/minutes/2009/urfm.rdf#
+\item Adapt the file by adding the required metadata (see figure \ref{WebsitePublishingMinutesMetadataURFM}).
+\item \verb*#$ ant publish#
+\item \verb*#$ svn ci -m"Published the minutes of the 2009-11-03 meeting"#
+\end{enumerate}
+\end{figure}
+
+\begin{figure}[ht]
+\caption{Portions of the ``docs/minutes/2009/urfm.rdf'' File}
+\label{WebsitePublishingMinutesMetadataURFM}
+\begin{lstlisting}[language=XML]
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF xmlns="http://purl.org/urfm/"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+...
+<Channel rdf:about="http://.../docs/minutes/2009/urfm.rdf">
+
+<Release rdf:about="http://.../docs/minutes/2009/11/03/">
+  <package rdf:resource="http://.../docs/minutes/"/>
+  <revision>20091103</revision>
+  <created>2009-11-04</created>
+</Release>
+...
+<!-- *********************************************************
+     20091103                                                 
+     ********************************************************* -->
+<File rdf:about="http://.../minutes/2009/11/03/minutes-20091103.pdf">
+  <release rdf:resource="http://.../docs/minutes/2009/11/03/"/>
+  <basename>minutes-20091103</basename>
+  <extension>.pdf</extension>
+  <language>en</language>
+  <size rdf:parseType="Resource">
+    <unit rdf:resource="http://purl.org/urfm/Kilobyte"/>
+    <rdf:value>90</rdf:value>
+  </size>
+  <link>http://.../minutes/2009/11/03/minutes-20091103.pdf</link>
+  <format>application/pdf</format>
+</File>
+
+<File rdf:about="http://.../minutes/2009/11/03/minutes-20091103.txt">
+  <release rdf:resource="http://.../minutes/2009/11/03/"/>
+  <basename>minutes-20091103</basename>
+  <extension>.txt</extension>
+  <language>en</language>
+  <size rdf:parseType="Resource">
+    <unit rdf:resource="http://purl.org/urfm/Kilobyte"/>
+    <rdf:value>5</rdf:value>
+  </size>
+  <link>http://.../minutes/2009/11/03/minutes-20091103.txt</link>
+  <format>text/plain</format>
+</File>
+
+<File rdf:about="http://.../minutes/2009/11/03/minutes-20091103.tex">
+  <release rdf:resource="http://.../minutes/2009/11/03/"/>
+  <basename>minutes-20091103</basename>
+  <extension>.tex</extension>
+  <language>en</language>
+  <size rdf:parseType="Resource">
+    <unit rdf:resource="http://purl.org/urfm/Kilobyte"/>
+    <rdf:value>6</rdf:value>
+  </size>
+  <link>http://.../minutes/2009/11/03/minutes-20091103.tex</link>
+  <format>application/x-latex</format>
+</File>
+
+    </files>
+  </Channel>
+</rdf:RDF>
+\end{lstlisting}
+\end{figure}
