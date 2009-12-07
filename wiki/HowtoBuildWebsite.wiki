@@ -9,4 +9,4 @@ This page is intended to describe how to build the [http://wilma.vub.ac.be/~se2_
 
   # Connect to `wilma.vub.ac.be` using SSH with `se2_0910` as the username.
   # `$ cd ws/repo/salesmen/trunk/www/wilma.vub.ac.be.se2_0910`
-  # ant publish
+  # `ant publish`
