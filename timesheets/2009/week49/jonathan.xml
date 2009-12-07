@@ -1,11 +1,116 @@
-<?xml version='1.0'?>
 <timesheet xmlns="http://purl.org/net/timetrack">
-	
-	<item duration="PT0M">
-		<desc>Timesheet not uploaded on time</desc>
-		<refs>
-			<ref>http://groups.google.com/group/salesmen/msg/2707377c3313a412</ref>
-		</refs>
-	</item>
-	
-</timesheet>	
+
+
+<item duration="PT1H00M">
+    
+<desc>Reviewing SDD.</desc>
+    
+<refs>
+      
+<ref>http://groups.google.com/group/salesmen/browse_thread/thread/fe3a576b6b929e3e/f0ee552e03dbfaed</ref>
+
+</refs>
+  
+</item>
+
+
+
+<item duration="PT2H00M">
+    
+<desc>Meeting on Tuesday 2009/12/01.</desc>
+    
+<refs>
+      
+<ref>http://wilma.vub.ac.be/~se2_0910/docs/minutes/2009/12/01/minutes-20091201.pdf</ref>
+    
+</refs>
+
+</item>
+
+  
+
+<item duration="PT3H00M">
+    
+<desc>Writing Minutes of Tuesday 2009/12/01.</desc>
+    
+<refs>
+      
+<ref>http://code.google.com/p/salesmen/source/detail?r=422</ref>
+    
+</refs>
+  
+</item>
+
+  
+
+<item duration="PT0H35M">
+    
+<desc>Correcting Minutes of Tuesday 2009/12/01.</desc>
+    
+<refs>
+      
+<ref>http://code.google.com/p/salesmen/source/detail?r=525</ref>
+
+</refs>
+  
+</item>
+
+  
+
+
+<item duration="PT0H45M">
+    
+<desc>Meeting on Friday 2009/12/04.</desc>
+    
+<refs>
+      
+<ref>http://wilma.vub.ac.be/~se2_0910/docs/minutes/2009/12/04/minutes-20091204.pdf</ref>
+    
+</refs>
+
+</item>
+
+  
+
+<item duration="PT1H45M">
+    
+<desc>Writing Minutes of Tuesday 2009/12/04.</desc>
+    
+<refs>
+      
+<ref>http://code.google.com/p/salesmen/source/detail?r=540</ref>
+    
+</refs>
+  
+</item>
+
+  
+
+<item duration="PT0H10M">
+    
+<desc>Correcting Minutes of Tuesday 2009/12/04.</desc>
+    
+<refs>
+      
+<ref>http://code.google.com/p/salesmen/source/detail?r=544</ref>
+
+</refs>
+  
+</item>
+
+  
+
+<item duration="PT25M">
+    
+<desc>Administration and Communication</desc>
+    
+<refs>
+      
+<ref></ref>
+    
+</refs>
+  
+</item>
+
+
+</timesheet>
