@@ -1,0 +1,87 @@
+<?xml version='1.0'?>
+<timesheet xmlns="http://purl.org/net/timetrack">
+	
+  <item duration="PT1H30M">
+   <desc>Writing highlights report of November</desc>
+    <refs>
+      <ref>http://code.google.com/p/salesmen/source/detail?r=507</ref>
+    </refs>
+  </item>
+	
+  <item duration="PT30M">
+   <desc>Prepare meeting on Tuesday 2009/12/01</desc>
+    <refs>
+      <ref>http://code.google.com/p/salesmen/source/detail?r=511</ref>
+	  <ref>http://code.google.com/p/salesmen/source/detail?r=478</ref>
+	  <ref>http://code.google.com/p/salesmen/source/detail?r=472</ref>
+   	  <ref>http://code.google.com/p/salesmen/source/detail?r=451</ref>
+    </refs>
+  </item>
+
+  <item duration="PT1H30M">
+   <desc>Writing minutes of conference meeting 27/11</desc>
+    <refs>
+      <ref>http://code.google.com/p/salesmen/source/detail?r=506</ref>
+    </refs>
+  </item>
+
+  <item duration="PT0H30M">
+   <desc>Preparing personal presentation on conference</desc>
+  </item>
+  
+  <item duration="PT2H">
+   <desc>Meeting on Tuesday 2009/12/01</desc>
+   <refs>
+ <ref>http://wilma.vub.ac.be/~se2_0910/docs/minutes/2009/12/01/minutes-20091201.pdf</ref>
+    </refs>
+  </item>
+
+  <item duration="PT2H">
+   <desc>Making slides for presentation on conference 1</desc>
+  </item>
+
+  <item duration="PT3H">
+   <desc>Making Statistics and Costs report</desc>
+  </item>
+
+  <item duration="PT15M">
+   <desc>Scheduling next meetings</desc>
+   <refs>
+ <ref>http://groups.google.com/group/salesmen/msg/cd3b29530f5ead9c</ref>
+    </refs>
+  </item>
+
+  <item duration="PT20M">
+   <desc>Prepare meeting on Friday 2009/12/04</desc>
+   <refs>
+ 	<ref>http://code.google.com/p/salesmen/source/detail?r=528</ref>
+   </refs>
+  </item>
+
+  <item duration="PT1H">
+   <desc>Meeting on Friday 2009/12/04</desc>
+ <refs>
+ <ref>http://wilma.vub.ac.be/~se2_0910/docs/minutes/2009/12/04/minutes-20091204.pdf</ref>
+    </refs>
+  </item>
+
+  <item duration="PT1H">
+   <desc>Installing and exploring jBoss and Seam</desc>
+ <refs>
+ <ref>http://groups.google.com/group/salesmen/msg/f486c6e6eb4ddde5</ref>
+    </refs>
+  </item>
+
+  <item duration="PT20M">
+    <desc>Checking timesheets</desc>
+   <refs>
+	<ref>http://code.google.com/p/salesmen/source/detail?r=558</ref>
+	<ref>http://code.google.com/p/salesmen/source/detail?r=559</ref>
+    </refs>
+  </item>
+
+  <item duration="PT25M">
+    <desc>Administration and Communication</desc>
+  </item>
+  
+</timesheet>
