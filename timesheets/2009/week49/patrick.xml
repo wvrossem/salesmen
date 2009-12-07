@@ -1,11 +1,35 @@
 <?xml version='1.0'?>
 <timesheet xmlns="http://purl.org/net/timetrack">
-	
-	<item duration="PT0M">
-		<desc>Timesheet not uploaded on time</desc>
-		<refs>
-			<ref>http://groups.google.com/group/salesmen/msg/2707377c3313a412</ref>
-		</refs>
-	</item>
-	
-</timesheet>	
+  <item duration="PT3H">
+    <desc>Meeting on Tuesday 2009/12/01.</desc>
+    <refs>
+      <ref>http://wilma.vub.ac.be/~se2_0910/docs/minutes/2009/12/01/minutes-20091201.pdf</ref>
+    </refs>
+  </item>
+  <item  duration="PT10M">
+    <desc>Reviewed Minutes of Tuesday 2009/12/01 for Quality Assurance.</desc>
+    <refs>
+      <ref>http://wilma.vub.ac.be/~se2_0910/docs/minutes/2009/12/01/minutes-20091201.pdf</ref>
+    </refs>
+  </item>
+  <item duration="PT1H">
+    <desc>Meeting on Friday 2009/12/04.</desc>
+    <refs>
+      <ref>http://wilma.vub.ac.be/~se2_0910/docs/minutes/2009/12/04/minutes-20091204.pdf</ref>
+    </refs>
+  </item>
+  <item duration="PT13H">
+    <desc>Wrote the first draft of the STD.</desc>
+      <ref>http://code.google.com/p/salesmen/source/browse/trunk/docs/en/std/src/tex/std.pdf</ref>
+  </item>
+  <item duration="PT2H>
+    <desc>Updated the Template.</desc>
+      <ref>http://code.google.com/p/salesmen/source/detail?r=529</ref>
+  </item>
+  <item duration="PT2H>
+    <desc>Discussed a new possible addition in the SQAP with several assistants.</desc>
+  </item>
+  <item duration="PT30M">
+    <desc>Administration and Communication.</desc>
+  </item>
+</timesheet>
