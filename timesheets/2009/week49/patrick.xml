@@ -20,13 +20,17 @@
   </item>
   <item duration="PT13H">
     <desc>Wrote the first draft of the STD.</desc>
+    <refs>
       <ref>http://code.google.com/p/salesmen/source/browse/trunk/docs/en/std/src/tex/std.pdf</ref>
+    </refs>
   </item>
-  <item duration="PT2H>
+  <item duration="PT2H">
     <desc>Updated the Template.</desc>
+    <refs>      
       <ref>http://code.google.com/p/salesmen/source/detail?r=529</ref>
+    </refs>
   </item>
-  <item duration="PT2H>
+  <item duration="PT2H">
     <desc>Discussed a new possible addition in the SQAP with several assistants.</desc>
   </item>
   <item duration="PT30M">

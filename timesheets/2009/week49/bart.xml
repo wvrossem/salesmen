@@ -1,44 +1,44 @@
-<?xml version='1.0'?>
+<?xml version="1.0" encoding="utf-8"?>
 <timesheet xmlns="http://purl.org/net/timetrack">
-	<item duration="PT2H20M">
-		<desc>Meeting on Tuesday 2009/12/01.</desc>
-		<refs>
-			<ref>http://wilma.vub.ac.be/~se2_0910/docs/minutes/2009/12/01/minutes-20091201.pdf</ref>
-		</refs>
-	</item>
+  <item duration="PT2H20M">
+    <desc>Meeting on Tuesday 2009/12/01.</desc>
+    <refs>
+      <ref>http://wilma.vub.ac.be/~se2_0910/docs/minutes/2009/12/01/minutes-20091201.pdf</ref>
+    </refs>
+  </item>
 	
-	<item duration="PT30M">
-		<desc>Analyze input of team members about SDD, update SDD accordingly</desc>
-		<refs>
-			<ref>http://groups.google.com/group/salesmen/browse_thread/thread/fe3a576b6b929e3e/0a6abf0dac41f479?hl=en&lnk=gst&q=sdd#0a6abf0dac41f479</ref>
-		</refs>
-	</item>
-	
-	<item duration="PT5M">
-		<desc>Create slides for conference</desc>
-	</item>
-	
-	<item duration="PT1H">
-		<desc>Meeting on Friday 2009/12/04.</desc>
-		<refs>
-			<ref>http://wilma.vub.ac.be/~se2_0910/docs/minutes/2009/12/04/minutes-20091204.pdf</ref>
-		</refs>
-	</item>
-	
-	
-	<item duration="PT2H">
-		<desc>Read up on the Seam framework (to prepare meeting with Sina)</desc>
-		<refs>
-			<ref>Seam in Action - ISBN 1933988401</ref>
-		</refs>
-	</item>
-	
-	<item duration="PT2H">
-		<desc>Meeting with Sina about SDD & implementation details</desc>
-	</item>
-	
-	<item duration="PT25M">
-		<desc>Administration and Communication</desc>
-	</item>
-	
+  <item duration="PT30M">
+    <desc>Analyze input of team members about SDD, update SDD accordingly</desc>
+    <refs>
+      <ref>http://groups.google.com/group/salesmen/browse_thread/thread/fe3a576b6b929e3e/0a6abf0dac41f479?hl=en&amp;lnk=gst&amp;q=sdd#0a6abf0dac41f479</ref>
+    </refs>
+  </item>
+  
+  <item duration="PT5M">
+    <desc>Create slides for conference</desc>
+  </item>
+  
+  <item duration="PT1H">
+    <desc>Meeting on Friday 2009/12/04.</desc>
+    <refs>
+      <ref>http://wilma.vub.ac.be/~se2_0910/docs/minutes/2009/12/04/minutes-20091204.pdf</ref>
+    </refs>
+  </item>
+  
+  
+  <item duration="PT2H">
+    <desc>Read up on the Seam framework (to prepare meeting with Sina)</desc>
+    <refs>
+      <ref>Seam in Action - ISBN 1933988401</ref>
+    </refs>
+  </item>
+  
+  <item duration="PT2H">
+    <desc>Meeting with Sina about SDD &amp; implementation details</desc>
+  </item>
+  
+  <item duration="PT25M">
+    <desc>Administration and Communication</desc>
+  </item>
+  
 </timesheet>
