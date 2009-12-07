@@ -60,19 +60,4 @@
       Week 8</olink></para></listitem>
     </itemizedlist>
   </sidebar>
-  <sidebar id='dev'>
-    <title>Development</title>
-    <itemizedlist>
-      <listitem>
-	<para>
-	  <ulink url="http://code.google.com/p/salesmen/">Google Code</ulink>
-	</para>	
-      </listitem>
-      <listitem>
-	<para>
-	  <ulink url="http://salesmen-dev.blogspot.com/">Dev Blog</ulink>
-	</para>	
-      </listitem>
-    </itemizedlist>
-  </sidebar>
 </webpage>
