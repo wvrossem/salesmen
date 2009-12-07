@@ -27,12 +27,14 @@
     </packages>
 
     <releases rdf:parseType="Collection">
+<!--
 <Release
     rdf:about="http://wilma.vub.ac.be/~se2_0910/docs/timesheets/2009/week49/">
   <package rdf:resource="http://wilma.vub.ac.be/~se2_0910/docs/timesheets/"/>
   <revision>week49-2009</revision>
-  <created>2009-12-06</created>
+  <created>2009-12-07</created>
 </Release>
+-->
 <Release
     rdf:about="http://wilma.vub.ac.be/~se2_0910/docs/timesheets/2009/week48/">
   <package rdf:resource="http://wilma.vub.ac.be/~se2_0910/docs/timesheets/"/>
