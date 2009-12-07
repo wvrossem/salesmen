@@ -35,7 +35,8 @@
 <config param="footlink" value="search" altval="Search"/>
 <config param="footlink" value="feeds" altval="Content Feeds"/>
 
-<config param="title" value="SE Group 2 - 2009-2010"/>
+<config param="title" value="Salesmen"/>
+<config param="titletag" value="VUB Software Engineering Group 2 - 2009-2010"/>
 
 <copyright role="about">
   <year>2009</year>
