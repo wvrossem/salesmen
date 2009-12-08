@@ -1,4 +1,57 @@
 #labels Dev
+#Java Coding Standards and Conventions
+
+= Introduction =
+
+These are the coding conventions of the Salesmen Project. Please follow these conventions. When you do not follow these conventions, add the reason why in comments with the code.
+
+== Usage ==
+First and Second denote the first and second word in a multiword variable.
+All other words (or letters) must be used as shown in that particular convention.
+
+
+= Details =
+
+== Naming Conventions ==
+
+=== Variables/Parameters ===
+ * variable name: firstSecond
+ * Variable getter: getFirstSecond()
+ * Variable setter: setFirstSecond()
+ * Boolean getter: isFirstSecond()
+ * loop counters: i, j, k, l, counterFirstSecond. No other letters/words allowed.
+
+=== Classes ===
+ * Classname: FirstSecond
+ * Constructors: same name as classname
+ * Destructors: finalize()
+
+=== Functions, methods, procedures ===
+ * name: firstSecond()
+
+=== Constants ===
+ * name: FIRST_SECOND
+
+== Usage Conventions ==
+
+=== Closures ===
+ * Opening "{" always at the start of a new line on the old indentation.
+ * Closing "}" always at the start of a new line on the old indentation.
+ * Code in between must be on a new (deeper) indentation.
+Example:
+{{{
+firstSecond(params)
+{
+  Some Code
+}
+}}}
+
+== Files ==
+
+== Documentation and comments ==
+To be completed...
+
+== Coding Convention Websites ==
 Please feel free to glance over the following Java coding conventions:
 
   * [http://www.ontko.com/java/java_coding_standards.html A collection of links to Java Coding Standards]
