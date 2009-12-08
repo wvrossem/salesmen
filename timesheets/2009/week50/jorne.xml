@@ -8,7 +8,14 @@
 		</refs>
 	</item>
 
-	<item duration="PT10M">
+	<item duration="PT1H">
+		<desc>Rehearsed slides for presentation.</desc>
+		<refs>
+		<ref></ref>
+		<refs>
+	</item>
+	
+	<item duration="PT15M">
 		<desc>Administration and Communication</desc>
 	</item>
 
