@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<webpage id="std">
+  <config param="rcsdate" value="$Date: 2009-12-07 14:36:09 +0100 (Mon, 07 Dec 2009) $"/>
+  <config param="DOAP" value="doap.rdf"/>
+  <head>
+    <title>STD</title>
+    <summary>Software Test Document</summary>
+    <keywords>
+      Software Engineering, Software Development Process, VUB,
+      Computer Science, STD, Software Architecture, Multi-tiered,
+      Enterprise Software, Distributed Software, Web Application,
+      JBoss, Web standards, Software Testing, Unit-testing, 
+      Integration testing, TestNG, JUnit
+    </keywords>
+  </head>
+</webpage>

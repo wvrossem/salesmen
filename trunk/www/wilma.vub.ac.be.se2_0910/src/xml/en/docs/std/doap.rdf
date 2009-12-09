@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF 
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" 
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" 
+    xmlns:doap="http://usefulinc.com/ns/doap#" 
+    xmlns:foaf="http://xmlns.com/foaf/0.1/" 
+    xmlns:dc="http://purl.org/dc/elements/1.1/">
+  
+  <rdf:Description rdf:about="http://wilma.vub.ac.be/~se2_0910/docs/std/doap.rdf">
+    <dc:title>STD Document Description</dc:title>
+    <dc:description>
+      This RDF file describes the STD document.
+    </dc:description>
+    <dc:publisher rdf:resource="http://wilma.vub.ac.be/~se2_0910/"/>
+    <dc:rights>Copyright &#169; VUB</dc:rights>
+  </rdf:Description>
+
+  <doap:Project>
+    <doap:name>Software Test Document</doap:name>
+    <doap:shortname>STD</doap:shortname>
+    <doap:homepage rdf:resource="http://wilma.vub.ac.be/~se2_0910/docs/std/"/>
+    <doap:license rdf:resource="http://usefulinc.com/doap/licenses/gfdl"/>
+    <doap:created>2009-12-06T14:10:08+02:00</doap:created>
+    <doap:shortdesc>
+      Our approach to testing Salesmen.
+    </doap:shortdesc>
+    <doap:description>
+      This document is intended to outline the various tests and testing 
+      procedures required for the Salesmen project.
+    </doap:description>
+    <dc:identifier>http://wilma.vub.ac.be/~se2_0910/docs/std/</dc:identifier>
+    <rdf:type rdf:resource="http://xmlns.com/wordnet/1.6/Document"/>
+    <doap:download-page rdf:resource="http://wilma.vub.ac.be/~se2_0910/docs/std/urfm.rdf"/>
+  </doap:Project>
+
+</rdf:RDF>
