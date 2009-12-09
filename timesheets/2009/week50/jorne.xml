@@ -8,11 +8,25 @@
 		</refs>
 	</item>
 
-	<item duration="PT1H">
-		<desc>Rehearsed slides for presentation.</desc>
+	<item duration="PT2H">
+		<desc>First impression of presentation on Tuesday 2009/12/08.</desc>
 		<refs>
 		<ref></ref>
 		<refs>
+	</item>
+	
+	<item duration="PT4H">
+		<desc>Integrating and testing JBoss in Eclipse, in collaboration with Sina</desc>
+		<refs>
+		<ref></ref>
+		<refs>
+	</item>
+	
+	<item duration="PT1H">
+		<desc>Writing wiki on installation and setup of Eclipse with JBoss integrated.</desc>
+		<refs>
+		<ref></ref>
+		</refs>
 	</item>
 	
 	<item duration="PT15M">
