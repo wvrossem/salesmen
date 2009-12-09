@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <webpage id="std">
-  <config param="rcsdate" value="$Date: 2009-12-07 14:36:09 +0100 (Mon, 07 Dec 2009) $"/>
+  <config param="rcsdate" value="$Date$"/>
   <config param="DOAP" value="doap.rdf"/>
   <head>
     <title>STD</title>
