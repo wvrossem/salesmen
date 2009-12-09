@@ -4,3 +4,46 @@
 = Introduction =
 
 This page focuses on showing you how to setup your Salesmen development environment in Eclipse.
+
+= Eclipse =
+
+If you have not yet installed Eclipse, here is where you can find [http://www.eclipse.org/downloads/ Eclipse downloads].
+
+Immediate download links for different operating systems below:
+
+    [http://www.eclipse.org/downloads/download.php?file=/eclipse/downloads/drops/R-3.5.1-200909170800/eclipse-SDK-3.5.1-linux-gtk.tar.gz&url=http://eclipse.mirror.kangaroot.net/eclipse/downloads/drops/R-3.5.1-200909170800/eclipse-SDK-3.5.1-linux-gtk.tar.gz&mirror_id=468 Linux 32bit]
+
+    [http://www.eclipse.org/downloads/download.php?file=/eclipse/downloads/drops/R-3.5.1-200909170800/eclipse-SDK-3.5.1-win32.zip&url=http://eclipse.mirror.kangaroot.net/eclipse/downloads/drops/R-3.5.1-200909170800/eclipse-SDK-3.5.1-win32.zip&mirror_id=468 Windows]
+
+    [http://www.eclipse.org/downloads/download.php?file=/eclipse/downloads/drops/R-3.5.1-200909170800/eclipse-SDK-3.5.1-macosx-carbon.tar.gz&url=http://eclipse.mirror.kangaroot.net/eclipse/downloads/drops/R-3.5.1-200909170800/eclipse-SDK-3.5.1-macosx-carbon.tar.gz&mirror_id=468 Mac OS X Carbon 32bit]
+
+Once downloaded, extract this archive.
+To be able to use the eclipse command anywhere, you just need to export /eclipse/bin/
+
+Before running Eclipse, make sure you have JDK6 installed.
+
+Run Eclipse using this command: eclipse -vm $JAVA_HOME/bin/java/
+
+Choose a folder for Eclipse to use as workspace.
+
+= Setup JBoss =
+
+Arrived in Eclipse, choose Help, Install New Software.
+Choose Add..., and type the following:
+  Name: JBoss Tools Dev
+
+  Location: http://download.jboss.org/jbosstools/updates/JBossTools-3.1.0.M4
+
+Again, but now:
+  Name: BIRT 2.5
+
+  Location: http://download.eclipse.org/birt/update-site/2.5/
+
+And again:
+  Name: m2eclipse
+
+  Location: http://m2eclipse.sonatype.org/update-dev/
+
+Now, choose JBoss Tools Dev, check everything, choose Next, Finish.
+
+This may take some time...
