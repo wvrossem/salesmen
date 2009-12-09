@@ -1,0 +1,6 @@
+#summary How to use JBoss, Seam, TestNG, etc. in Eclipse
+#labels Dev,Eclipse,Seam,JBoss
+
+= Introduction =
+
+This page focuses on showing you how to setup your Salesmen development environment in Eclipse.
