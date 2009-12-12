@@ -59,3 +59,9 @@ To install TestNG, add the following.
 Now, choose TestNG, check everything, choose Next, Finish.
 
 This may take some time, but less than in the previous chapter...
+
+= Usage =
+
+To create a Seam project, go to File, New, Other, choose a Seam project.
+
+To view special Seam options, go to Window, Open Perspective, Other, Seam.
