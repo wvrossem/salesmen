@@ -18,28 +18,28 @@ Immediate download links for different operating systems below:
     [http://www.eclipse.org/downloads/download.php?file=/eclipse/downloads/drops/R-3.5.1-200909170800/eclipse-SDK-3.5.1-macosx-carbon.tar.gz&url=http://eclipse.mirror.kangaroot.net/eclipse/downloads/drops/R-3.5.1-200909170800/eclipse-SDK-3.5.1-macosx-carbon.tar.gz&mirror_id=468 Mac OS X Carbon 32bit]
 
 Once downloaded, extract this archive.
-To be able to use the eclipse command anywhere, you just need to export /eclipse/bin/
 
-Before running Eclipse, make sure you have JDK6 installed.
+Optional:
 
-Run Eclipse using this command: eclipse -vm $JAVA_HOME/bin/java/
+  To use a different version of Java than Eclipse's default, download the version you want and run Eclipse using this command:
 
-Choose a folder for Eclipse to use as workspace.
+  eclipse -vm /folderof/alternatejavaversion/bin/java/
+
+Choose a folder as workspace for Eclipse.
 
 = Setup JBoss =
 
 Arrived in Eclipse, choose Help, Install New Software.
-Choose Add..., and type the following:
+Choose Add..., these are the 3 plugins to add:
+
   Name: JBoss Tools Dev
 
   Location: http://download.jboss.org/jbosstools/updates/JBossTools-3.1.0.M4
 
-Again, but now:
   Name: BIRT 2.5
 
   Location: http://download.eclipse.org/birt/update-site/2.5/
 
-And again:
   Name: m2eclipse
 
   Location: http://m2eclipse.sonatype.org/update-dev/
@@ -47,3 +47,15 @@ And again:
 Now, choose JBoss Tools Dev, check everything, choose Next, Finish.
 
 This may take some time...
+
+= Setup TestNG =
+
+To install TestNG, add the following.
+
+  Name: TestNG
+
+  Location: http://beust.com/eclipse
+
+Now, choose TestNG, check everything, choose Next, Finish.
+
+This may take some time, but less than in the previous chapter...
