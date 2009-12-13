@@ -1,0 +1,44 @@
+<?xml version='1.0'?>
+<timesheet xmlns="http://purl.org/net/timetrack">
+
+	<item duration="PT2H">
+		<desc>First rehearsal of presentations on Tuesday 2009/12/08.</desc>
+		<refs>
+		<ref>This reference will be put here after the conference</ref>
+		</refs>
+	</item>
+	
+	<item duration="PT1H">
+		<desc>Prepare presentation with Bart on .</desc>
+	</item>
+	
+	<item duration="PT1H30M">
+		<desc>Second rehearsal of presentations on Thursday 2009/12/10.</desc>
+		<refs>
+		<ref>This reference will be put here after the conference</ref>
+		</refs>
+	</item>
+	
+	<item duration="PT1H">
+		<desc>Meeting on Friday 2009/12/11.</desc>
+		<refs>
+			<ref>http://wilma.vub.ac.be/~se2_0910/docs/minutes/2009/12/11/minutes-20091211.pdf</ref>
+		</refs>
+	</item>
+	
+	<item duration="PT20M">
+		<desc>Write minutes for meeting of Friday 2009/12/11.</desc>
+		<refs>
+			<ref>http://wilma.vub.ac.be/~se2_0910/docs/minutes/2009/12/11/minutes-20091211.pdf</ref>
+		</refs>
+	</item>
+	
+	<item duration="PT1H">
+		<desc>Set up eclipse and seam + try the tutorial given by Sina.</desc>
+	</item>
+		
+	<item duration="PT10M">
+		<desc>Administration and Communication</desc>
+	</item>
+
+</timesheet>
