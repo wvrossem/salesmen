@@ -1,0 +1,51 @@
+<timesheet xmlns="http://purl.org/net/timetrack">
+
+
+<item duration="PT2H">
+
+<desc>First impression of presentation for conference 1 on Tuesday 2009/12/08.</desc>
+<refs>
+	<ref>Minutes after conference</ref>
+<refs>
+</item>
+	
+
+
+<item duration="PT5M">
+<desc>Prepare slides for conference 1</desc>
+	<refs>
+	<ref>Slides follow after conference</ref>
+	<refs>
+</item>
+
+<item duration="PT40M">
+<desc>Update slides & create prototpyes for conference 1</desc>
+	<refs>
+	<ref>Slides follow after conference</ref>
+	<refs>
+</item>
+
+<item duration="PT2H">
+<desc>Meet with Sina to discuss design & Seam</desc>
+</item>
+
+<item duration="PT2H45M">
+<desc>Installing and exploring JBOSS, Seam and Eclipse on laptop</desc>
+</item>
+
+<item duration="PT2H">
+<desc>Rehursing presentation for conference 1 on Thursday 2009/12/10.</desc>
+	<refs>
+	<ref>Minutes after conference</ref>
+	<refs>
+</item>
+
+<item duration="PT45M">
+<desc>Create new design with Seam in mind, send email to Sina for input</desc>
+</item>
+
+<item duration="PT25M">
+<desc>Administration and Communication</desc>
+</item>
+
+</timesheet>
