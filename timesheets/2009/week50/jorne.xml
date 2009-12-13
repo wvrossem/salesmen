@@ -22,8 +22,8 @@
 		<refs>
 	</item>
 	
-	<item duration="PT1H">
-		<desc>Wrote wiki on installation and setup of Eclipse with JBoss integrated.</desc>
+	<item duration="PT1H30M">
+		<desc>Wrote wiki on setup of Eclipse with JBoss and TestNG integrated.</desc>
 		<refs>
 		<ref></ref>
 		</refs>
@@ -43,7 +43,7 @@
 		</refs>
 	</item>
 	
-	<item duration="PT15M">
+	<item duration="PT30M">
 		<desc>Administration and Communication</desc>
 	</item>
 
