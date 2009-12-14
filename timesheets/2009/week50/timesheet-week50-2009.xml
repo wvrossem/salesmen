@@ -1,0 +1,181 @@
+<?xml version="1.0"?>
+<timesheets xmlns="http://purl.org/net/timetrack" xmlns:xi="http://www.w3.org/2001/XInclude" from="2009-11-07" to="2009-12-14" xml:id="week50-2009">
+  <title>VUB - SE2 Timesheets for the 50th Week of 2009</title>
+  <published>2009-12-14</published>
+  <updated>2009-12-14</updated>
+  <person>
+    <name>Nick De Cooman</name>
+    
+	<timesheet xmlns="http://purl.org/net/timetrack" xml:base="../default/timesheet.xml">
+  <item duration="PT0M">
+    <desc>
+      This is a fallback timesheet, meaning that the
+      developer has not submitted their timesheet yet.
+      Please check back later to see this developer's 
+      timesheet.
+    </desc>
+  </item>
+</timesheet>
+      
+  </person>
+  <person>
+    <name>Jonathan Jeurissen</name>
+    
+	<timesheet xmlns="http://purl.org/net/timetrack" xml:base="../default/timesheet.xml">
+  <item duration="PT0M">
+    <desc>
+      This is a fallback timesheet, meaning that the
+      developer has not submitted their timesheet yet.
+      Please check back later to see this developer's 
+      timesheet.
+    </desc>
+  </item>
+</timesheet>
+      
+  </person>
+  <person>
+    <name>Sina Khakbaz Heshmati</name>
+    
+	<timesheet xmlns="http://purl.org/net/timetrack" xml:base="../default/timesheet.xml">
+  <item duration="PT0M">
+    <desc>
+      This is a fallback timesheet, meaning that the
+      developer has not submitted their timesheet yet.
+      Please check back later to see this developer's 
+      timesheet.
+    </desc>
+  </item>
+</timesheet>
+      
+  </person>
+  <person>
+    <name>Jorne Laton</name>
+    
+	<timesheet xmlns="http://purl.org/net/timetrack" xml:base="../default/timesheet.xml">
+  <item duration="PT0M">
+    <desc>
+      This is a fallback timesheet, meaning that the
+      developer has not submitted their timesheet yet.
+      Please check back later to see this developer's 
+      timesheet.
+    </desc>
+  </item>
+</timesheet>
+      
+  </person>
+  <person>
+    <name>Bart Maes</name>
+    <timesheet xmlns="http://purl.org/net/timetrack">
+
+
+<item duration="PT2H">
+
+<desc>First impression of presentation for conference 1 on Tuesday 2009/12/08.</desc>
+<refs>
+	<ref>Minutes after conference</ref>
+</refs>
+</item>
+	
+
+
+<item duration="PT5M">
+<desc>Prepare slides for conference 1</desc>
+	<refs>
+	<ref>Slides follow after conference</ref>
+	</refs>
+</item>
+
+<item duration="PT40M">
+<desc>Update slides &amp; create prototpyes for conference 1</desc>
+	<refs>
+	<ref>Slides follow after conference</ref>
+	</refs>
+</item>
+
+<item duration="PT2H30M">
+<desc>Meet with Sina to discuss design &amp; Seam</desc>
+</item>
+
+<item duration="PT2H45M">
+<desc>Installing and exploring JBOSS, Seam and Eclipse on laptop</desc>
+</item>
+
+<item duration="PT2H">
+<desc>Rehursing presentation for conference 1 on Thursday 2009/12/10.</desc>
+	<refs>
+	<ref>Minutes after conference</ref>
+	</refs>
+</item>
+
+<item duration="PT45M">
+<desc>Create new design with Seam in mind, send email to Sina for input</desc>
+</item>
+
+<item duration="PT25M">
+<desc>Administration and Communication</desc>
+</item>
+
+</timesheet>
+  </person>
+  <person>
+    <name>Patrick Provinciael</name>
+    
+	<timesheet xmlns="http://purl.org/net/timetrack" xml:base="../default/timesheet.xml">
+  <item duration="PT0M">
+    <desc>
+      This is a fallback timesheet, meaning that the
+      developer has not submitted their timesheet yet.
+      Please check back later to see this developer's 
+      timesheet.
+    </desc>
+  </item>
+</timesheet>
+      
+  </person>
+  <person>
+    <name>Wouter Van Rossem</name>
+    <timesheet xmlns="http://purl.org/net/timetrack">
+
+	<item duration="PT2H">
+		<desc>First rehearsal of presentations on Tuesday 2009/12/08.</desc>
+		<refs>
+		<ref>This reference will be put here after the conference</ref>
+		</refs>
+	</item>
+	
+	<item duration="PT1H">
+		<desc>Prepare presentation with Bart on .</desc>
+	</item>
+	
+	<item duration="PT1H30M">
+		<desc>Second rehearsal of presentations on Thursday 2009/12/10.</desc>
+		<refs>
+		<ref>This reference will be put here after the conference</ref>
+		</refs>
+	</item>
+	
+	<item duration="PT1H">
+		<desc>Meeting on Friday 2009/12/11.</desc>
+		<refs>
+			<ref>http://wilma.vub.ac.be/~se2_0910/docs/minutes/2009/12/11/minutes-20091211.pdf</ref>
+		</refs>
+	</item>
+	
+	<item duration="PT20M">
+		<desc>Write minutes for meeting of Friday 2009/12/11.</desc>
+		<refs>
+			<ref>http://wilma.vub.ac.be/~se2_0910/docs/minutes/2009/12/11/minutes-20091211.pdf</ref>
+		</refs>
+	</item>
+	
+	<item duration="PT1H">
+		<desc>Set up eclipse and seam + try the tutorial given by Sina.</desc>
+	</item>
+		
+	<item duration="PT10M">
+		<desc>Administration and Communication</desc>
+	</item>
+
+</timesheet>
+  </person>
+</timesheets>
