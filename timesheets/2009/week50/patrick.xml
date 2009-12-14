@@ -30,14 +30,16 @@
 
   <item duration="PT15M">
     <desc>QA of SPMP V0.3</desc>
-<ref>
+<refs>
 	<ref>http://wilma.vub.ac.be/~se2_0910/docs/spmp/index.html</ref>
-</ref>
+</refs>
   </item>
 
   <item duration="PT2H">
     <desc>Java Coding Conventions</desc>
+<refs>
       <ref>http://code.google.com/p/salesmen/wiki/JavaCodingConvention</ref>
+</refs>
   </item>
 
   <item duration="PT20M">
