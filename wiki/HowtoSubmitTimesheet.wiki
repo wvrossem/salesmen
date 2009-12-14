@@ -84,3 +84,5 @@ Emacs users can benefit from a rich set of features provided by the [http://www.
 
   * Instant XML validation against the RELAX NG schema.
   * A powerful element suggestion mechanism.
+
+Please refer to HowtoSetupEmacs in order to install and use nXML-mode.
