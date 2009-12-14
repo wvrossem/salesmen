@@ -6,7 +6,7 @@
 <desc>First impression of presentation for conference 1 on Tuesday 2009/12/08.</desc>
 <refs>
 	<ref>Minutes after conference</ref>
-<refs>
+</refs>
 </item>
 	
 
@@ -15,18 +15,18 @@
 <desc>Prepare slides for conference 1</desc>
 	<refs>
 	<ref>Slides follow after conference</ref>
-	<refs>
+	</refs>
 </item>
 
 <item duration="PT40M">
-<desc>Update slides & create prototpyes for conference 1</desc>
+<desc>Update slides &amp; create prototpyes for conference 1</desc>
 	<refs>
 	<ref>Slides follow after conference</ref>
-	<refs>
+	</refs>
 </item>
 
 <item duration="PT2H30M">
-<desc>Meet with Sina to discuss design & Seam</desc>
+<desc>Meet with Sina to discuss design &amp; Seam</desc>
 </item>
 
 <item duration="PT2H45M">
@@ -37,7 +37,7 @@
 <desc>Rehursing presentation for conference 1 on Thursday 2009/12/10.</desc>
 	<refs>
 	<ref>Minutes after conference</ref>
-	<refs>
+	</refs>
 </item>
 
 <item duration="PT45M">
