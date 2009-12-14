@@ -158,8 +158,19 @@
 						\item System redirects the user to a page with all found auctions that match this search
 						query
 					\end{enumerate}
-					
-				\paragraph \noindent \textbf{Exceptions} Empty search field
+				
+				\paragraph \noindent \textbf{Exceptional paths}
+					\begin{enumerate}
+						\item[2a] Incomplete search form
+							\begin{itemize}
+								\item[2a1] System informs the user that the search form is incomplete
+								\item[2a1] System returns the user to the form with the previously filled in fields still in place and a notification next to the field that needs to be filled in
+							\end{itemize}
+						\item[3a] No auctions found
+							\begin{itemize}
+								\item[3a1] System informs the user that no auctions were found for the search query
+							\end{itemize}
+					\end{enumerate}
 				
 				\paragraph \noindent \textbf{Result} A page with the found auctions for the search term
 				
@@ -184,7 +195,18 @@
 						query
 					\end{enumerate}
 					
-				\paragraph \noindent \textbf{Exceptions} Empty search form
+				\paragraph \noindent \textbf{Exceptional paths}
+					\begin{enumerate}
+						\item[2a] Incomplete search form
+							\begin{itemize}
+								\item[2a1] System informs the user that the search form is incomplete
+								\item[2a1] System returns the user to the form with the previously filled in fields still in place and a notification next to the field that needs to be filled in
+							\end{itemize}
+						\item[3a] No auctions found
+							\begin{itemize}
+								\item[3a1] System informs the user that no auctions were found for the search query
+							\end{itemize}
+					\end{enumerate}
 				
 				\paragraph \noindent \textbf{Result} A page with the found auctions for the search query
 				
@@ -217,7 +239,27 @@
 				
 				\paragraph \noindent \textbf{Priority} Want to have
 				
+				\paragraph \noindent \textbf{Actor} User or Guest
+				
+				\paragraph \noindent \textbf{Preconditions} User is at the home page
+				
 				\paragraph \noindent \textbf{Description} Guests and users can view all the auctions with a certain tag
+				
+				\paragraph \noindent \textbf{Main path}
+ 					\begin{enumerate}
+						\item Users fills in \textit{view auctions with tag}
+						\item System redirects the user to a page with all the auctions with that tag
+					\end{enumerate}
+					
+				\paragraph \noindent \textbf{Exceptional paths}
+					\begin{enumerate}
+						\item[3a] No auctions found
+							\begin{itemize}
+								\item[3a1] System informs the user that no auctions were found with that tag
+							\end{itemize}
+					\end{enumerate}
+				
+				\paragraph \noindent \textbf{Result} A page displaying all the auctions with a certain tag
 
 		\subsubsection{Change language}
 
@@ -225,8 +267,29 @@
 				
 				\paragraph \noindent \textbf{Priority} Must have
 				
+				\paragraph \noindent \textbf{Actor} User or Guest
+				
+				\paragraph \noindent \textbf{Preconditions} User is at any page of the site
+				
 				\paragraph \noindent \textbf{Description} Guests and users can change the language of the website to one
 					of the available languages
+					
+				\paragraph \noindent \textbf{Main path}
+ 					\begin{enumerate}
+						\item Users opens \textit{change language}
+						\item Users selects one of the available languages
+						\item System changes the language of the site to the chosen language
+					\end{enumerate}
+					
+				\paragraph \noindent \textbf{Exceptional paths}
+					\begin{enumerate}
+						\item[3a] User selects the same language
+							\begin{itemize}
+								\item[3a1] System does nothing
+							\end{itemize}
+					\end{enumerate}
+				
+				\paragraph \noindent \textbf{Result} The language of the site is changed
 
 		\subsubsection{Change currency}
 
@@ -234,8 +297,29 @@
 				
 				\paragraph \noindent \textbf{Priority} Nice to have
 				
+				\paragraph \noindent \textbf{Actor} User or Guest
+				
+				\paragraph \noindent \textbf{Preconditions} User on an auction page
+				
 				\paragraph \noindent \textbf{Description} Guests and users can change the currency in which auctions are
 					displayed
+					
+				\paragraph \noindent \textbf{Main path}
+ 					\begin{enumerate}
+						\item Users opens \textit{change currency}
+						\item Users selects one of the available currencies
+						\item System changes the currency of the auction to the chosen currency
+					\end{enumerate}
+					
+				\paragraph \noindent \textbf{Exceptional paths}
+					\begin{enumerate}
+						\item[3a] User selects the same currency
+							\begin{itemize}
+								\item[3a1] System does nothing
+							\end{itemize}
+					\end{enumerate}
+				
+				\paragraph \noindent \textbf{Result} The currency for the auction is changed
 
 	\subsection{User}
 		\subsubsection{Log out}
@@ -271,7 +355,7 @@
 				
 				\paragraph \noindent \textbf{Preconditions} User is at advanced search page
 				
-				\paragraph \noindent \textbf{Description} Members can search for other members 
+				\paragraph \noindent \textbf{Description} Users can search for other users 
 				
 				\paragraph \noindent \textbf{Main path}
  					\begin{enumerate}
@@ -280,8 +364,19 @@
 						\item System redirects the user to page containing all users corresponding to that search 
 						query
 					\end{enumerate}
-					
-				\paragraph \noindent \textbf{Exceptions} Incorrect or incomplete form
+				
+				\paragraph \noindent \textbf{Exceptional paths}
+					\begin{enumerate}
+						\item[2a] Incomplete search form
+							\begin{itemize}
+								\item[2a1] System informs the user that the search form is incomplete
+								\item[2a1] System returns the user to the form with the previously filled in fields still in place and a notification next to the field that needs to be filled in
+							\end{itemize}
+						\item[3a] No users found
+							\begin{itemize}
+								\item[3a1] System informs the user that no users were found for the search query
+							\end{itemize}						
+					\end{enumerate}
 				
 				\paragraph \noindent \textbf{Result} A page displaying the found members for the search term
 
@@ -305,8 +400,15 @@
 						\item User submits the form
 						\item System checks the form and if valid creates the auction
 					\end{enumerate}
-					
-				\paragraph \noindent \textbf{Exceptions} Incorrect information in the form, incomplete form
+				
+				\paragraph \noindent \textbf{Exceptional paths}
+					\begin{enumerate}
+						\item[4a] Incomplete form
+							\begin{itemize}
+								\item[4a1] System informs the user that the form is incomplete
+								\item[4a1] System returns the user to the form with the previously filled in fields still in place and a notification next to the field that needs to be filled in
+							\end{itemize}						
+					\end{enumerate}
 				
 				\paragraph \noindent \textbf{Result} Auction is placed
 
@@ -346,7 +448,13 @@
 						\item System redirects user to user's placed auctions page
 					\end{enumerate}
 					
-				\paragraph \noindent \textbf{Exceptions} None
+				\paragraph \noindent \textbf{Exceptional paths}
+					\begin{enumerate}
+						\item[2a] User has no placed auctions
+							\begin{itemize}
+								\item[2a1] System displays a page to the user that says that the user has not placed any auctions 
+							\end{itemize}
+					\end{enumerate}
 				
 				\paragraph \noindent \textbf{Result} The user views the auctions he or she has placed
 
@@ -377,6 +485,20 @@
 					
 				\paragraph \noindent \textbf{Exceptions} Wrong bid value in the form, incomplete form
 				
+				\paragraph \noindent \textbf{Exceptional paths}
+					\begin{enumerate}
+						\item[4a] Incomplete form
+							\begin{itemize}
+								\item[4a1] System informs the user that the form is incomplete
+								\item[4a1] System returns the user to the form with the previously filled in fields still in place and a notification next to the field that needs to be filled in
+							\end{itemize}
+						\item[4b] Incorrect form
+							\begin{itemize}
+								\item[4b1] System informs the user that the form is incorrect
+								\item[4b1] System returns the user to the form with the previously filled in fields still in place and a notification next to the incorrect fields
+							\end{itemize}					
+					\end{enumerate}
+				
 				\paragraph \noindent \textbf{Result} The bid is placed on the auction
 
 		\subsubsection{View active auctions}
@@ -397,7 +519,13 @@
 						\item System redirects user to user's active auctions page
 					\end{enumerate}
 					
-				\paragraph \noindent \textbf{Exceptions} None
+				\paragraph \noindent \textbf{Exceptional paths}
+					\begin{enumerate}
+						\item[2a] User has no active auctions
+							\begin{itemize}
+								\item[2a1] System displays a page to the user that says that the user has no active auctions
+							\end{itemize}
+					\end{enumerate}
 				
 				\paragraph \noindent \textbf{Result} The user can view the auctions he or she had bid on
 				
@@ -419,7 +547,13 @@
 						\item System redirects user to user's won auctions page
 					\end{enumerate}
 					
-				\paragraph \noindent \textbf{Exceptions} None
+				\paragraph \noindent \textbf{Exceptional paths}
+					\begin{enumerate}
+						\item[2a] User has no won auctions
+							\begin{itemize}
+								\item[2a1] System displays a page to the user that says that the user has no auctions that he or she has won
+							\end{itemize}
+					\end{enumerate}
 				
 				\paragraph \noindent \textbf{Result} The user can view the auctions he or she has won
 
@@ -443,7 +577,19 @@
 						\item System checks the form and if valid, makes the changes
 					\end{enumerate}
 					
-				\paragraph \noindent \textbf{Exceptions} Incorrect information, incomplete form
+				\paragraph \noindent \textbf{Exceptional paths}
+					\begin{enumerate}
+						\item[4a] Incomplete form
+							\begin{itemize}
+								\item[4a1] System informs the user that the form is incomplete
+								\item[4a1] System returns the user to the form with the previously filled in fields still in place and a notification next to the field that needs to be filled in
+							\end{itemize}
+						\item[4b] Incorrect form
+							\begin{itemize}
+								\item[4b1] System informs the user that the form is incorrect
+								\item[4b1] System returns the user to the form with the previously filled in fields still in place and a notification next to the incorrect fields
+							\end{itemize}					
+					\end{enumerate}
 				
 				\paragraph \noindent \textbf{Result} The account information of the user is changed
 
@@ -468,6 +614,25 @@
 					\end{enumerate}
 					
 				\paragraph \noindent \textbf{Exceptions} Incorrect information, incomplete form, users send message to him or herself
+				
+				\paragraph \noindent \textbf{Exceptional paths}
+					\begin{enumerate}
+						\item[4a] Incomplete form
+							\begin{itemize}
+								\item[4a1] System informs the user that the form is incomplete
+								\item[4a1] System returns the user to the form with the previously filled in fields still in place and a notification next to the field that needs to be filled in
+							\end{itemize}
+						\item[4b] Incorrect form
+							\begin{itemize}
+								\item[4b1] System informs the user that the form is incorrect
+								\item[4b1] System returns the user to the form with the previously filled in fields still in place and a notification next to the incorrect fields
+							\end{itemize}
+						\item[4c] User send a message to him or herself
+							\begin{itemize}
+								\item[4c1] System informs the user that receiver is the same as the sender 
+								\item[4c2] System asks the user if he or she wants to send this message
+							\end{itemize}
+					\end{enumerate}
 				
 				\paragraph \noindent \textbf{Result} A message is sent to another user
 
@@ -556,7 +721,13 @@
 						\item System redirects user to user's followed auctions page
 					\end{enumerate}
 					
-				\paragraph \noindent \textbf{Exceptions} None
+				\paragraph \noindent \textbf{Exceptional paths}
+					\begin{enumerate}
+						\item[2a] User has no followed auctions
+							\begin{itemize}
+								\item[2a1] System displays a page to the user that says that the user is not following any auctions at the moment
+							\end{itemize}
+					\end{enumerate}
 				
 				\paragraph \noindent \textbf{Result} The user can view the auctions he or she is following
 
@@ -601,8 +772,20 @@
 						\item User performs the payment
 						\item System notifies the seller that the auction is paid for
 					\end{enumerate}
-					
-				\paragraph \noindent \textbf{Exceptions} Incorrect information, incomplete form
+				
+				\paragraph \noindent \textbf{Exceptional paths}
+					\begin{enumerate}
+						\item[4a] Incomplete form
+							\begin{itemize}
+								\item[4a1] System informs the user that the form is incomplete
+								\item[4a1] System returns the user to the form with the previously filled in fields still in place and a notification next to the field that needs to be filled in
+							\end{itemize}
+						\item[4b] Incorrect form
+							\begin{itemize}
+								\item[4b1] System informs the user that the form is incorrect
+								\item[4b1] System returns the user to the form with the previously filled in fields still in place and a notification next to the incorrect fields
+							\end{itemize}
+						\end{enumerate}
 				
 				\paragraph \noindent \textbf{Result} The transaction is paid for
 				
@@ -612,7 +795,21 @@
 				
 				\paragraph \noindent \textbf{Priority} Want to have
 				
+				\paragraph \noindent \textbf{Actor} User
+				
+				\paragraph \noindent \textbf{Preconditions} User is logged in. User is at transaction page
+				
 				\paragraph \noindent \textbf{Description} A seller can mark an item as sent. This is done on the transaction page of the auction.
+				
+				\paragraph \noindent \textbf{Main path}
+ 					\begin{enumerate}
+						\item User selects \emph{mark as sent}
+						\item System saves the information and notifies the buyer
+					\end{enumerate}
+					
+				\paragraph \noindent \textbf{Exceptions} None
+				
+				\paragraph \noindent \textbf{Result} The item of the transaction is marked as sent
 				
 		\subsubsection{Mark as received}
 			
@@ -620,7 +817,20 @@
 				
 				\paragraph \noindent \textbf{Priority} Want to have
 				
+				\paragraph \noindent \textbf{Actor} User
+				
+				\paragraph \noindent \textbf{Preconditions} User is logged in. User is at transaction page
+				
 				\paragraph \noindent \textbf{Description} A buyer can mark an item as received. This is done on the transaction page of the auction.
+				\paragraph \noindent \textbf{Main path}
+ 					\begin{enumerate}
+						\item User selects \emph{mark as receives}
+						\item System saves the information and notifies the seller
+					\end{enumerate}
+					
+				\paragraph \noindent \textbf{Exceptions} None
+				
+				\paragraph \noindent \textbf{Result} The item of the transaction is marked as received
 			
 		\subsubsection{Rate transaction}
 
@@ -643,7 +853,19 @@
 						\item System updates the ratings of the user
 					\end{enumerate}
 					
-				\paragraph \noindent \textbf{Exceptions} Incorrect information, incomplete form
+				\paragraph \noindent \textbf{Exceptional paths}
+					\begin{enumerate}
+						\item[4a] Incomplete form
+							\begin{itemize}
+								\item[4a1] System informs the user that the form is incomplete
+								\item[4a1] System returns the user to the form with the previously filled in fields still in place and a notification next to the field that needs to be filled in
+							\end{itemize}
+						\item[4b] Incorrect form
+							\begin{itemize}
+								\item[4b1] System informs the user that the form is incorrect
+								\item[4b1] System returns the user to the form with the previously filled in fields still in place and a notification next to the incorrect fields
+							\end{itemize}
+						\end{enumerate}
 				
 				\paragraph \noindent \textbf{Result} The transaction is rated
 
@@ -666,7 +888,13 @@
 						\item System adds the seller to the favourite seller list of the user
 					\end{enumerate}
 					
-				\paragraph \noindent \textbf{Exceptions} Seller is already in the favourite seller list
+				\paragraph \noindent \textbf{Exceptional paths}
+					\begin{enumerate}
+						\item[2a] Seller is already in the user's favourite sellers list
+							\begin{itemize}
+								\item[2a1] System does nothing
+							\end{itemize}
+						\end{enumerate}
 				
 				\paragraph \noindent \textbf{Result} The seller is added to the favourite seller list of the user
 
@@ -688,7 +916,13 @@
 						\item System redirects user to user's favourite sellers page
 					\end{enumerate}
 					
-				\paragraph \noindent \textbf{Exceptions} None
+				\paragraph \noindent \textbf{Exceptional paths}
+					\begin{enumerate}
+						\item[2a] User has no favourite sellers
+							\begin{itemize}
+								\item[2a1] System displays a page to the user that says that the user has no favourite sellers
+							\end{itemize}
+					\end{enumerate}
 				
 				\paragraph \noindent \textbf{Result} The user will view a page with his or her favourite sellers
 			
@@ -756,7 +990,19 @@
 						\item System checks the form and if valid tops up the account
 					\end{enumerate}
 					
-				\paragraph \noindent \textbf{Exceptions} Incorrect or incomplete form
+				\paragraph \noindent \textbf{Exceptional paths}
+					\begin{enumerate}
+						\item[4a] Incomplete form
+							\begin{itemize}
+								\item[4a1] System informs the user that the form is incomplete
+								\item[4a1] System returns the user to the form with the previously filled in fields still in place and a notification next to the field that needs to be filled in
+							\end{itemize}
+						\item[4b] Incorrect form
+							\begin{itemize}
+								\item[4b1] System informs the user that the form is incorrect
+								\item[4b1] System returns the user to the form with the previously filled in fields still in place and a notification next to the incorrect fields
+							\end{itemize}
+						\end{enumerate}
 				
 				\paragraph \noindent \textbf{Result} The user tops up his or her salespal account
 
@@ -790,6 +1036,10 @@
 				
 				\paragraph \noindent \textbf{Priority} Want to have
 				
+				\paragraph \noindent \textbf{Actor} User
+				
+				\paragraph \noindent \textbf{Preconditions} User is logged in. User is buyer's assistant home
+				
 				\paragraph \noindent \textbf{Description} A user can check the auctions the buyer's assistant has found
 					for his or her preferences
 					
@@ -799,7 +1049,30 @@
 				
 				\paragraph \noindent \textbf{Priority} Want to have
 				
+				\paragraph \noindent \textbf{Actor} User
+				
+				\paragraph \noindent \textbf{Preconditions} User is logged in. User is buyer's assistant home
+				
 				\paragraph \noindent \textbf{Description} Add a new entry to the buyer's assistant so that the assistant can suggest auctions for the user corresponding to this entry.
+				
+				\paragraph \noindent \textbf{Main path}
+ 					\begin{enumerate}
+						\item User selects \emph{add entry}
+						\item User fills in \emph{buyer's assistant entry} form
+						\item User submits the form
+						\item System checks the form and if valid adds a new entry to the buyer's assistant
+					\end{enumerate}
+				
+				\paragraph \noindent \textbf{Exceptional paths}
+					\begin{enumerate}
+						\item[4a] Incomplete form
+							\begin{itemize}
+								\item[4a1] System informs the user that the form is incomplete
+								\item[4a1] System returns the user to the form with the previously filled in fields still in place and a notification next to the field that needs to be filled in
+							\end{itemize}						
+					\end{enumerate}
+				
+				\paragraph \noindent \textbf{Result} An entry is added to the buyer's assistant
 
 		\subsubsection{Comment on an auction}
 
@@ -807,8 +1080,31 @@
 				
 				\paragraph \noindent \textbf{Priority} Want to have
 				
+				\paragraph \noindent \textbf{Actor} User
+				
+				\paragraph \noindent \textbf{Preconditions} User is logged in. User is at auction page
+				
 				\paragraph \noindent \textbf{Description} A user can comment on an auction. This comment can be viewed by
 					anyone viewing the auction page
+					
+				\paragraph \noindent \textbf{Main path}
+ 					\begin{enumerate}
+						\item User selects \emph{comment}
+						\item User fills in \emph{auction comment} form
+						\item User submits the form
+						\item System checks the form and if valid adds a comment to the auction
+					\end{enumerate}
+				
+				\paragraph \noindent \textbf{Exceptional paths}
+					\begin{enumerate}
+						\item[4a] Incomplete form
+							\begin{itemize}
+								\item[4a1] System informs the user that the form is incomplete
+								\item[4a1] System returns the user to the form with the previously filled in fields still in place and a notification next to the field that needs to be filled in
+							\end{itemize}						
+					\end{enumerate}
+				
+				\paragraph \noindent \textbf{Result} A comment is added to the auction comments
 					
 		\subsubsection{View hot deals}
 			
