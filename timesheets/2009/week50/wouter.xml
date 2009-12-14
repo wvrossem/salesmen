@@ -1,47 +1,47 @@
 <?xml version='1.0'?>
 <timesheet xmlns="http://purl.org/net/timetrack">
 
-	<item duration="PT2H">
-		<desc>First impression of presentation for conference 1 on Tuesday 2009/12/08</desc>
-		<refs>
-		<ref>Minutes available after conference</ref>
-		</refs>
-	</item>
-	
-	<item duration="PT1H">
-		<desc>Prepare presentation with Bart.</desc>
-		<refs>
-		<ref>Slides available after conference</ref>
-		</refs>
-	</item>
-	
-	<item duration="PT1H30M">
-		<desc>Rehursing presentation for conference 1 on Thursday 2009/12/10.</desc>
-		<refs>
-			<ref>Minutes available after conference</ref>
-		</refs>
-	</item>
-	
-	<item duration="PT1H">
-		<desc>Meeting on Friday 2009/12/11.</desc>
-		<refs>
-	<ref>http://wilma.vub.ac.be/~se2_0910/docs/minutes/2009/12/11/minutes-20091211.pdf</ref>
-		</refs>
-	</item>
-	
-	<item duration="PT20M">
-		<desc>Write minutes for meeting of Friday 2009/12/11.</desc>
-		<refs>
-			<ref>http://code.google.com/p/salesmen/source/detail?r=613</ref>
-		</refs>
-	</item>
-	
-	<item duration="PT1H">
-		<desc>Set up eclipse and seam + try the tutorial given by Sina.</desc>
-	</item>
-		
-	<item duration="PT10M">
-		<desc>Administration and Communication</desc>
-	</item>
-
+  <item duration="PT2H">
+    <desc>First impression of presentation for conference 1 on Tuesday 2009/12/08</desc>
+    <refs>
+      <ref>Minutes available after conference</ref>
+    </refs>
+  </item>
+  
+  <item duration="PT1H">
+    <desc>Prepare presentation with Bart.</desc>
+    <refs>
+      <ref>Slides available after conference</ref>
+    </refs>
+  </item>
+  
+  <item duration="PT1H30M">
+    <desc>Rehursing presentation for conference 1 on Thursday 2009/12/10.</desc>
+    <refs>
+      <ref>Minutes available after conference</ref>
+    </refs>
+  </item>
+  
+  <item duration="PT1H">
+    <desc>Meeting on Friday 2009/12/11.</desc>
+    <refs>
+      <ref>http://wilma.vub.ac.be/~se2_0910/docs/minutes/2009/12/11/minutes-20091211.pdf</ref>
+    </refs>
+  </item>
+  
+  <item duration="PT20M">
+    <desc>Write minutes for meeting of Friday 2009/12/11.</desc>
+    <refs>
+      <ref>http://code.google.com/p/salesmen/source/detail?r=613</ref>
+    </refs>
+  </item>
+  
+  <item duration="PT1H">
+    <desc>Set up eclipse and seam + try the tutorial given by Sina.</desc>
+  </item>
+  
+  <item duration="PT10M">
+    <desc>Administration and Communication</desc>
+  </item>
+  
 </timesheet>

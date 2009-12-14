@@ -20,67 +20,67 @@
 	<ref>Agenda published after conference</ref>
     </refs>
   </item>
-
+  
   <item duration="PT1H">
-   <desc>Preparing personal presentation on conference</desc>
-<refs>
-<ref>Slides available after conference</ref>
-</refs>
-  </item>
-
-  <item duration="PT2H">
-   <desc>First impression of presentation for conference 1 on Tuesday 2009/12/08.</desc>
-   <refs>
- 	<ref>Minutes available conference</ref>
+    <desc>Preparing personal presentation on conference</desc>
+    <refs>
+      <ref>Slides available after conference</ref>
     </refs>
   </item>
-
+  
   <item duration="PT2H">
-   <desc>Updating slides for conference</desc>
-<refs>
-<ref>Slides available after conference</ref>
-</refs>
+    <desc>First impression of presentation for conference 1 on Tuesday 2009/12/08.</desc>
+    <refs>
+      <ref>Minutes available conference</ref>
+    </refs>
   </item>
-
+  
+  <item duration="PT2H">
+    <desc>Updating slides for conference</desc>
+    <refs>
+      <ref>Slides available after conference</ref>
+    </refs>
+  </item>
+  
   <item duration="PT1H">
-   <desc>Rehursing presentation for conference 1 on Thursday 2009/12/10.</desc>
-   	<refs>
-		<ref>Minutes available after conference</ref>
-	</refs>
+    <desc>Rehursing presentation for conference 1 on Thursday 2009/12/10.</desc>
+    <refs>
+      <ref>Minutes available after conference</ref>
+    </refs>
   </item>
-
+  
   <item duration="PT15M">
-   <desc>Prepare meeting on Friday 2009/12/11</desc>
-   <refs>
- 	<ref>http://code.google.com/p/salesmen/source/detail?r=599</ref>
-   </refs>
+    <desc>Prepare meeting on Friday 2009/12/11</desc>
+    <refs>
+      <ref>http://code.google.com/p/salesmen/source/detail?r=599</ref>
+    </refs>
   </item>
-
+  
   <item duration="PT1H">
-   <desc>Writing minutes of conference meeting 2009/12/08</desc>
-   <refs>
- 	<ref>Minutes available after conference</ref>
+    <desc>Writing minutes of conference meeting 2009/12/08</desc>
+    <refs>
+      <ref>Minutes available after conference</ref>
     </refs>
   </item>
-
+  
   <item duration="PT1H">
-   <desc>Meeting on Friday 2009/11/27</desc>
- <refs>
- <ref>http://wilma.vub.ac.be/~se2_0910/docs/minutes/2009/12/04/minutes-20091204.pdf</ref>
+    <desc>Meeting on Friday 2009/11/27</desc>
+    <refs>
+      <ref>http://wilma.vub.ac.be/~se2_0910/docs/minutes/2009/12/04/minutes-20091204.pdf</ref>
     </refs>
   </item>
-
- <item duration="PT30M">
-   <desc>Writing minutes of conference meeting 2009/12/10</desc>
-   <refs>
- 	<ref>Minutes available after conference</ref>
+  
+  <item duration="PT30M">
+    <desc>Writing minutes of conference meeting 2009/12/10</desc>
+    <refs>
+      <ref>Minutes available after conference</ref>
     </refs>
   </item>
-
+  
   <item duration="PT20M">
     <desc>Checking timesheets</desc>
-   <refs>
-	<ref>http://code.google.com/p/salesmen/source/detail?r=625</ref>
+    <refs>
+      <ref>http://code.google.com/p/salesmen/source/detail?r=625</ref>
     </refs>
   </item>
   

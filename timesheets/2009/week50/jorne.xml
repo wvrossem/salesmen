@@ -1,43 +1,45 @@
 <?xml version='1.0'?>
 <timesheet xmlns="http://purl.org/net/timetrack">
 
-	<item duration="PT1H45M">
-		<desc>Added section "Tools" to SCMP, changed lay-out.</desc>
-		<refs>
-		<ref>http://code.google.com/p/salesmen/source/detail?r=576</ref>
-		</refs>
-	</item>
+  <item duration="PT1H45M">
+    <desc>Added section "Tools" to SCMP, changed lay-out.</desc>
+    <refs>
+      <ref>http://code.google.com/p/salesmen/source/detail?r=576</ref>
+    </refs>
+  </item>
 
-	<item duration="PT2H">
-		<desc>First impression of presentation on Tuesday 2009/12/08.</desc>
-		<refs>
-		<ref>Minutes available after conference</ref>
-		<refs>
-	</item>
+  <item duration="PT2H">
+    <desc>First impression of presentation on Tuesday 2009/12/08.</desc>
+    <refs>
+      <ref>Minutes available after conference</ref>
+    </refs>
+  </item>
 	
-	<item duration="PT1H30M">
-		<desc>Wrote wiki on setup of Eclipse with JBoss and TestNG integrated.</desc>
-		<refs>
-		<ref>http://code.google.com/p/salesmen/wiki/HowtoSetupEclipse</ref>
-		</refs>
-	</item>
+  <item duration="PT1H30M">
+    <desc>
+      Wrote wiki on setup of Eclipse with JBoss and TestNG integrated.
+    </desc>
+    <refs>
+      <ref>http://code.google.com/p/salesmen/wiki/HowtoSetupEclipse</ref>
+    </refs>
+  </item>
 	
-	<item duration="PT2H">
-		<desc>Edited en extended existing slides and created new slides, in collaboration with Sina.</desc>
-		<refs>
-		<ref>Slides available after conference</ref>
-		</ref>
-	</item>
-	
-	<item duration="PT1H30M">
-		<desc>Second rehearsal for presentation on Thursday 2009/12/12.</desc>
-		<refs>
-		<ref>Minutes available after conference</ref>
-		</refs>
-	</item>
-	
-	<item duration="PT15M">
-		<desc>Administration and Communication</desc>
-	</item>
-
+  <item duration="PT2H">
+    <desc>Edited en extended existing slides and created new slides, in collaboration with Sina.</desc>
+    <refs>
+      <ref>Slides available after conference</ref>
+    </refs>
+  </item>
+  
+  <item duration="PT1H30M">
+    <desc>Second rehearsal for presentation on Thursday 2009/12/12.</desc>
+    <refs>
+      <ref>Minutes available after conference</ref>
+    </refs>
+  </item>
+  
+  <item duration="PT15M">
+    <desc>Administration and Communication</desc>
+  </item>
+  
 </timesheet>
