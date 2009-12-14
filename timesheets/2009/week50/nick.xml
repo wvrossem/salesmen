@@ -2,22 +2,20 @@
 <timesheet xmlns="http://purl.org/net/timetrack">
 	
   <item duration="PT2H30M">
-   <desc>Finishing slides for conference 1</desc>
+    <desc>Finishing slides for conference 1</desc>
     <refs>
-	<ref>Slides available after conference</ref>
+      <ref>Slides available after conference</ref>
     </refs>
   </item>
 
   <item duration="PT10M">
-   <desc>Updating statistics of timesheets</desc>
-    <refs>
-    </refs>
+    <desc>Updating statistics of timesheets</desc>
   </item>
 	
   <item duration="PT20M">
-   <desc>Writing agenda of presentation conference 1</desc>
+    <desc>Writing agenda of presentation conference 1</desc>
     <refs>
-	<ref>Agenda published after conference</ref>
+      <ref>Agenda published after conference</ref>
     </refs>
   </item>
   

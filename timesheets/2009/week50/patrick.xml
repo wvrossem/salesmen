@@ -1,7 +1,7 @@
 <?xml version='1.0'?>
 <timesheet xmlns="http://purl.org/net/timetrack">
   
-  <item duration="2H">
+  <item duration="PT2H">
     <desc>First impression of presentation for conference 1 on Tuesday 2009/12/08.</desc>
     <refs>
       <ref>Minutes available after conference</ref>
