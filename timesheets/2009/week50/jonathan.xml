@@ -1,3 +1,4 @@
+<?xml version='1.0'?>
 <timesheet xmlns="http://purl.org/net/timetrack">
 
 
@@ -8,7 +9,6 @@
 	</refs>
 	</item>
 	
-
 
 <item duration="PT1H">
 
@@ -29,9 +29,7 @@
 	
 
 <item duration="PT20M">
-    
 <desc>Administration and Communication</desc>
-  
 </item>
 
 
