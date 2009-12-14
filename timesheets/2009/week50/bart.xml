@@ -1,27 +1,25 @@
 <timesheet xmlns="http://purl.org/net/timetrack">
 
-
 <item duration="PT2H">
 
 <desc>First impression of presentation for conference 1 on Tuesday 2009/12/08.</desc>
 <refs>
-	<ref>Minutes after conference</ref>
+	<ref>Minutes available after conference</ref>
 </refs>
 </item>
-	
 
 
 <item duration="PT5M">
 <desc>Prepare slides for conference 1</desc>
 	<refs>
-	<ref>Slides follow after conference</ref>
+	<ref>Slides available after conference</ref>
 	</refs>
 </item>
 
 <item duration="PT40M">
 <desc>Update slides &amp; create prototpyes for conference 1</desc>
 	<refs>
-	<ref>Slides follow after conference</ref>
+	<ref>Slides available after conference</ref>
 	</refs>
 </item>
 
@@ -33,10 +31,17 @@
 <desc>Installing and exploring JBOSS, Seam and Eclipse on laptop</desc>
 </item>
 
-<item duration="PT2H">
+<item duration="PT1H30">
 <desc>Rehursing presentation for conference 1 on Thursday 2009/12/10.</desc>
 	<refs>
-	<ref>Minutes after conference</ref>
+	<ref>Minutes available after conference</ref>
+	</refs>
+</item>
+
+<item duration="PT1H">
+	<desc>Meeting on Friday 2009/12/11.</desc>
+	<refs>
+<ref>http://wilma.vub.ac.be/~se2_0910/docs/minutes/2009/12/11/minutes-20091211.pdf</ref>
 	</refs>
 </item>
 
