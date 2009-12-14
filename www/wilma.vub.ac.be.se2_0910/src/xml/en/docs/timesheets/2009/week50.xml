@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<webpage id="timesheet-week50-2009">
+  <config param="rcsdate" value="$Date: 2009-12-07 14:36:09 +0100 (Mon, 07 Dec 2009) $"/>
+  <head>
+    <title>Week 50</title>
+    <summary>
+      Timesheets of Salesmen developers for the 50th week of 2009
+    </summary>
+    <keywords>People, Timesheets, Time Tracking, 2009, Week 50</keywords>
+  </head>
+  <feed href="week50/timesheet-week50-2009.xml"/>
+</webpage>
