@@ -1,8 +1,89 @@
 <?xml version='1.0'?>
 <timesheet xmlns="http://purl.org/net/timetrack">
-  
-  <item duration="PT0M">
-    <desc>Timesheet not uploaded on time.</desc>
+  <item duration="PT30M">
+    <desc>
+      Published developers' timesheet for the 49th week of 2009.
+    </desc>
+    <refs>
+      <ref>http://code.google.com/p/salesmen/source/detail?r=550</ref>
+	  <ref>http://code.google.com/p/salesmen/source/detail?r=551</ref>
+	  <ref>http://code.google.com/p/salesmen/source/detail?r=575</ref>
+    </refs>
+  </item>  
+  <item duration="PT30M">
+    <desc>
+      Improved the look-and-feel of the website.
+    </desc>
+    <refs>
+      <ref>http://code.google.com/p/salesmen/source/detail?r=572</ref>
+      <ref>http://code.google.com/p/salesmen/source/detail?r=573</ref>
+    </refs>
   </item>
-  
+  <item duration="PT30M">
+    <desc>
+      Published STD v0.1 on the website.
+    </desc>
+    <refs>
+      <ref>http://code.google.com/p/salesmen/source/detail?r=592</ref>
+      <ref>http://code.google.com/p/salesmen/source/detail?r=593</ref>
+    </refs>
+  </item>
+  <item duration="PT4H">
+    <desc>
+      Checked details of a few Seam examples
+    </desc>
+    <refs>
+      <ref>http://docs.jboss.org/seam/2.2.0.GA/reference/en-US/html/tutorial.html</ref>
+    </refs>
+  </item>
+  <item duration="PT45M">
+	<desc>First conference presentation rehearsal on Tuesday 2009/12/08.</desc>
+	<refs>
+	  <ref>Minutes will be available soon.</ref>
+	</refs>
+  </item>
+  <item duration="PT2H">
+    <desc>Hand-on experience with Seam in Eclipse.</desc>
+  </item>
+  <item duration="PT1H30M">
+    <desc>Conference presentation rehearsal on Thursday 2009/12/10.</desc>
+    <refs>
+      <ref>Minutes will be available soon</ref>
+    </refs>
+  </item>
+  <item duration="PT2H">
+    <desc>Worked on our presentation slides with Jorne.</desc>
+    <refs>
+      <ref>Minutes will be available soon.</ref>
+    </ref>
+  </item>
+  <item duration="PT2H">
+    <desc>Meeting on Friday 2009/12/11.</desc>
+    <refs>
+      <ref>http://wilma.vub.ac.be/~se2_0910/docs/minutes/2009/12/11/minutes-20091211.pdf</ref>
+    </refs>
+  </item>
+  <item duration="PT2H30M">
+    <desc>
+      Meeting with Bart regarding Salesmen design and implementation.
+    </desc>
+  </item>
+  <item duration="PT5H">
+    <desc>Played with the combination of seam-gen, Eclipse, MySQL, Subversion, 
+	and JBoss Tools. Encountered a problem after refactoring a session bean.</desc>
+	<refs>
+	  <ref>http://docs.jboss.org/seam/2.2.0.GA/reference/en-US/html/gettingstarted.html</ref>
+	</refs>
+  </item>
+  <item duration="PT2H">
+    <desc>Created the Salesmen project skeleton and imported under SVN.</desc>
+	<refs>
+	  <ref>http://code.google.com/p/salesmen/source/detail?r=617</ref>
+	</refs>
+  </item>
+  <item duration="PT30M">
+    <desc>
+      Administration and Communication
+    </desc>
+  </item>
 </timesheet>
