@@ -32,9 +32,10 @@ This document, the Software Design Description lays down the architecture and de
 \begin{tabular}{llll}
 version & date & author & description \\
 \hline
-v1 & 27 Nov 2009 & Bart Maes & Draft initialization \\
-v2 & 29 Nov 2009 & Bart Maes & Added Appendix A, added Technical Design\\
-v3 & 29 Nov 2009 & Bart Maes & Added Appendix B, initial QA check\\
+v0.1 & 27 Nov 2009 & Bart Maes & Draft initialization \\
+v0.2 & 29 Nov 2009 & Bart Maes & Added Appendix A, added Technical Design\\
+v0.3 & 29 Nov 2009 & Bart Maes & Added Appendix B, initial QA check\\
+v0.4 & 14 Dec 2009 & Bart Maes & Updated (integration JBoss Seam)\\
 \end{tabular}
 \end{center}
 
@@ -61,11 +62,11 @@ This SDD document mainly follows the standards of the IEEE 1016-1998 standard.
 \section{Definitions and acronyms \label{acronyms}}
 \begin{tabular}{ll}
 \textbf{CSS}   & Cascading Style Sheets \\
-\textbf{HTML}   & HyperText Markup Language \\
 \textbf{EJB3}   & Enterprise JavaBeans v3 \\
+\textbf{HTML}   & HyperText Markup Language \\
+\textbf{HQL}   & Hibernate Query Language \\
 \textbf{J2EE}   & Java 2 Platform, Enterprise Edition \\
-\textbf{jBoss}   & An application server \\
-\textbf{JSP}   & Java Server Pages \\
+\textbf{JBoss}   & An application server \\
 \textbf{RDBMS}    & Relational DataBase Management System \\
 \textbf{Servlet}   & (Java) program that runs in a J2EE webcontainer  \\
 \textbf{SCMP}   & Software Configuration Management Plan \\
@@ -108,18 +109,27 @@ From a historical perspective the three-tier architecture concept emerged in the
 \section{Survey of Technologies Used}
 \subsection{Introduction}
 This section describes briefly what software and technologies will be used to implement the Salesmen software. For more information about these technologies, the reader is kindly referred to the SCMP.
-\subsection{Presentation Layer}
-Java Server Pages (JSP) is a technology from Sun that allows easy development of GUIs using webbrowser clients. JSP helps in making a clear distinction of layout and code concepts, so that a developer and graphical designer can independently work on the same webpages with little interference.
 
-\subsection{Business Layer}
+\subsection{JBoss Seam}
+Seam is a powerful open source development platform for building rich Internet applications in Java. Seam integrates technologies such as Asynchronous JavaScript and XML (AJAX), JavaServer Faces (JSF), Java Persistence (JPA), Enterprise Java Beans (EJB 3.0) and Business Process Management (BPM) into a unified full-stack solution, complete with sophisticated tooling.
+
+Seam has been designed from the ground up to eliminate complexity at both architecture and API levels. It enables developers to assemble complex web applications using simple annotated Java classes, a rich set of UI components, and very little XML. Seam's unique support for conversations and declarative state management can introduce a more sophisticated user experience while at the same time eliminating common bugs found in traditional web applications.
+
+As a framework, it covers the 3 layers of the three tier architecture.
+
+\subsubsection{Presentation Layer}
+XHTML and CSS files will cover the view of our project. The Seam framework allows the view to communicate with the business logic though Seam components.
+
+\subsubsection{Business Layer}
 JBoss Application Server (or JBoss AS) is a free software/open-source Java EE-based application server. Because it is Java-based, the JBoss application server operates cross-platform: usable on any operating system that Java supports. 
-As part of the jBoss software, the Apache Tomcat servlet container will allow us to serve dynamically parsed webpages (JSP). 
+As part of the JBoss software, the Apache Tomcat servlet container will allow us to serve dynamically parsed webpages.
+JBoss Seam allows us to implement the required Java Beans and Seam Entities in a fast and easy way, ensuring security and reliability.
 
-\subsection{Data Layer}
+\subsubsection{Data Layer}
 Two database platforms were considered: MySQL and PostgresSQL.
+After thourough investigation, it was decided to go with PostgreSQL.
 
-Our programmers will not need to write SQL statements themselves, as these are generated with the use of the EJB3 standard and Java annotations. 
-Based on Hibernate concepts, EJB3 allows for persintant objects without the need for platform dependant SQL statements and other 'dirty' constructs.
+As Seam has built-in support for Hibernate, HQL statements will be used to communicate with the databases. 
 
 
 \section{Physical Configuration}
@@ -134,12 +144,12 @@ Prototypes of the webinterface can be found in Appendix B.
 \pagebreak
 \chapter{Technical Design \label{Technical Design}}
 \section{Presentation layer}
-The presentation merely consists of static (x)HTML files that contain calls to Java Servlets to obtain dynamicly changing information. These (x)HTML files will use CSS to seperate the static information from the actual presentation of the website. Javascript will be used to provide the user with a friendly and smooth interface.
+The presentation merely consists of static XHTML files that contain calls to Java Servlets to obtain dynamicly changing information. These XHTML files will use CSS to seperate the static information from the actual presentation of the website. Javascript will be used to provide the user with a friendly and smooth interface.
 This facilitates the following goals:
 \begin{itemize}
 \item Presentation is abstracted from (dynamicly changing) information, coming from the business layer
 \item Support for multiple languages (1 set of html templates per language), as required in the SRS
-\item 'Smooth' interface ith a minimum of required page refreshes, as required in the SRS
+\item 'Smooth' interface with a minimum of required page refreshes, as required in the SRS
 \end{itemize}
 Prototypes of the webinterface can be found in Appendix B.
 
@@ -150,8 +160,7 @@ From the class diagram it becomes clear that two classes will play a central rol
 Class diagram, see Appendix A, \ref{fig_class}
 
 \section{Data layer}
-The data layer consists of the database and the EJB3 standard for persistant objects. EJB3 allows, through the use of annotations in the class, to abstract away from SQL-statements as EJB3 will generate these.
-An alternative for the use of EJB3 would be Hibernate. Hibernate however, is not a standard, in contrary to EJB3. Futhermore, EJB3 is newer technology based on the concepts of Hibernate and is now seamlessly supported by the jBoss AS. Because of these reasons, Hibernate was discarded.
+The data layer consists of the database and the EJB3 standard for persistent objects. EJB3 allows, through the use of annotations in the class, to abstract away from SQL-statements as EJB3 will generate these.
 
 The database design supports all current requirements and is designed with expansion in mind.
 
@@ -176,16 +185,7 @@ Entity-Relationship diagram: see Appendix A, \ref{fig_database}
 (pagetree image)
 
 \subsection{Page Description}
-\begin{itemize}
-\item index.jsp: welcome page of the website, invites guests to register, shows advertising, features auctions,..
-\item login.jsp: allows a guest to log in. Every page will feature a login-form, login.jsp will handle the business logic (check password etc)
-\item logout.jsp: destroys the current session, logs the member out
-\item auctionlist.jsp: shows both an overview of subcategories and a list of auctions within this category. It features a 'filter' form that allows to shrink the current auctionlist according to provided keywords (~ search within current list). When no category is specified, the top-level category is shown.
-\item auctiondetail.jsp: shows details of the given auction. When no (or an illegal) auction is specified, an error is shown. It also features bidding-facilities, show a history of bids, an interface to view pictures of the items sold and comments added by the sellers of potential buyers.
-\item newauction.jsp: allows a member to add a new auction to the website. The provided form will request vital information like the auctionname, the duration of the auction, a description of the items sold, the required minimum amount for which the item will be sold and facilities to upload pictures of the given item.
-\item profile.jsp: features the user control panel, to allow a member to change his personal information. It also allows a member to manage favorite sellers, the buyers assistant and followed auctions.
-\item search.jsp: provides powerful search-options using keywords, tags and (multiple) categories.
-\end{itemize}
+
 \pagebreak
 \section{User Interface}
 Prototypes of the webinterface can be found in Appendix B.
