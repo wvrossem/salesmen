@@ -19,9 +19,6 @@ This is a short guide for Salesmen developers to setup the Emacs editor on their
 
   # [http://www.thaiopensource.com/download/ Download] the latest distribution of nXML-mode. E.g. `nxml-mode-20041004.tar.gz`.
   # Extract it in a suitable directory e.g. `C:\apps\nxml-mode` or `/opt/nxml-mode`.
-  # Open your `.emacs` file.
-    * In GNU/Linux: edit `~/.emacs`
-    * In order to find out where Emacs reads your `.emacs` in Windows, change one of the options in Emacs menu, then go to: `Options > Save Options`. Check immediately the  `*Messages*` buffer --the footbar-- to see where it saves your `.emacs`.
   # Create a file called `schemas.xml` with the following XML content. Please note that, this step will help you author and validate your TimeTrack timesheets.
 {{{
 <?xml version="1.0"?>
@@ -31,6 +28,9 @@ This is a short guide for Salesmen developers to setup the Emacs editor on their
       uri="/path/to/salesmen/trunk/utils/timetrack/schema/rng/timetrack.rnc"/>
 </locatingRules>
 }}}
+  # Open your `.emacs` file.
+    * In GNU/Linux: edit `~/.emacs`
+    * In order to find out where Emacs reads your `.emacs` in Windows, change one of the options in Emacs menu, then go to: `Options > Save Options`. Check immediately the  `*Messages*` buffer --the footbar-- to see where it saves your `.emacs`.
   # Add the following Lisp commands to your `.emacs`
 {{{
 (load "/path/to/your/extracted/nxml-mode/dist/rng-auto.el")
