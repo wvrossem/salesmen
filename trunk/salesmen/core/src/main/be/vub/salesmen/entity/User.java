@@ -10,14 +10,10 @@ import org.hibernate.validator.Length;
 @Entity
 public class User implements Serializable
 {
-    // seam-gen attributes (you should probably edit these)
-    private Long id;
+	private static final long serialVersionUID = -869703357161935694L;
+	private Long id;
     private Integer version;
     private String name;
-
-    // add additional entity attributes
-
-    // seam-gen attribute getters/setters with annotations (you probably should edit)
 
     @Id @GeneratedValue
     public Long getId() {
