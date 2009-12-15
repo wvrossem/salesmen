@@ -23,7 +23,7 @@ Software Requirements Specification
 \item
 Software Quality Assurance Plan 
 \item
-JUnit Testing Framework 
+JUnit Testing Framework, \url{http://junit.org/}
 \item
 Google Code Repository 
 \end{itemize}
@@ -66,6 +66,17 @@ Every feature which is not (yet) implemented.
 
 \section{Approach}
 Several methods will be used to test the various features.
+
+\subsection{Kind of tests}
+The following tests will be run.
+\begin{itemize}
+\item
+Unit testing of all bussiness logic with JUnit.
+\item
+internal testing of the various tools used. This will be done with the testing tools provided by these tools. When no testing facilities are provided, testing of these tools will be done within the integration tests.
+\item
+Integration tests.
+\end{itemize}
 
 \subsection{Unit tests}
 The QAM will foresee the possibility of writing Unit tests. Each programmer is responsible for writing these tests.

@@ -11,7 +11,7 @@ This document details the Software Quality Assurance Plan for the Salesmen Proje
 
 The purpose of this document is to define the various control mechanisms to assure the quality of the delivered project is high enough. It will also explain the various conventions used to assure the quality.
 
-Quality Assurance team is not meant to create the quality. It's sole purpose is to assure that at the end of the project, all members have followed the decided standards and mechanisms. This will be a continuous job. This way, early errors will have little impact on the rest of the project.
+The Quality Assurance team is not meant to create the quality. It's sole purpose is to assure that at the end of the project, all members have followed the decided standards and mechanisms. This will be a continuous job. This way, early errors will have little impact on the rest of the project.
 
 \section{Definitions and acronyms}
 \begin{itemize}
@@ -89,7 +89,7 @@ Standards must still be detailed.
 Coding conventions must still be detailed.
 
 \section{Documentation Standard}
-All documents must be written in LaTeX. The source code of the latest revision of a document must be available at all times on the SVN server of the project. Documentation of code must exist in a seperate document, as well as commented within the code itself.
+All documents must be written in LaTeX. The source code of the latest revision of a document must be available at all times on the SVN server of the project. Documentation of code must exist in a separate document, as well as commented within the code itself.
 
 All non-code documentation must follow a given template. This template will be decided by the QAM. This is done to assure the consistence of the documents.
 
@@ -140,68 +140,7 @@ In addition to this, the code must contain a good error handling system. Wheneve
 \section{Overview}
 The purpose of the reviews and audits is to ensure that the project members focus on the quality of the application. Every document will be inspected to assure the quality. This way we can assure that these documents are complete and consistent.
 
-More details will be available in a new version of the SQAP
-
-Currently we foresee the following reviews and audits:
-\begin{itemize}
-\item
-SRS Review
-\item
-Preliminary Design Review
-\item
-Critical Design Review
-\item
-Functionele Audit
-\item
-Fysieke Audit
-\item
-In-Process Audits
-\item
-SCMP Review
-\item
-Post Mortem Review
-\item
-User Documentation Review
-\end{itemize}
-
-\begin{comment}
-\section{Minimale requirements}
-In deze sectie behandelen we de minimale eisen voor het opstellen en afhandelen van de verschillende documenten en reviews. Het SPMP[1] bevat de datums waarop deze reviews plaatsvinden.
-
-\subsection{Software Requirements Review}
-Alle requirements zullen overlopen worden in het bijzijn van het hele team. De Requirements Manager zal deze review leiden. Het is de bedoeling dat elk lid het SRS-document leest en dat eventuele commentaren opgesteld worden in een apart bestand. Het is dan de beurt aan de auteur om deze commentaren te verwerken en een aangepast SRS-document te publiceren.
-
-\subsection{Preliminary Design Review}
-De verschillende mogelijkheden qua architectuur zullen overlopen worden door het hele team. De Design Manager zal deze vergadering leiden. De review staat gepland wanneer de eerste versie beschikbaar is van het Software Design Document. Het hele team zal eventuele commentaar bundelen, zodat de Design Manager een finale versie van het SDD kan maken.
-
-\subsection{Critical Design Review}
-Het doel van de Critical Design Review is om na te kijken of de gekozen architectuur in het SDD voldoet aan de gegeven requirements in de SRS. Het is zeer belangrijk dat we eventuele inconsistenties zo spoedig mogelijk vinden. Het is dan eens zo goedkoop om deze problemen op te lossen.
-
-\subsection{Functionele Audit}
-Deze audit wordt gehouden vooraleer het software project wordt afgeleverd. Het heeft als doel ingediende documenten na te kijken of ze nog steeds voldoen aan de eisen die opgesteld werden in de SRS. De Project Manager is verantwoordelijk voor deze audit.
-
-\subsection{Fysieke Audit}
-Evenals de functionele audit, wordt deze vergadering gehouden vooraleer het software project ingediend wordt. Het doel van deze fysieke audit bestaat eruit om alle kwaliteitseisen van het product na te kijken. In het bijzonder de code en de documentatie. De QA Manager is verantwoordelijk voor deze audit.
-
-\subsection{In-Process Audits}
-In-process audits over delen en het gehele product worden op willekeurige tijdstippen behandeld. De verschillende onderdelen die in het oog worden gehouden, betreffen :
-\begin{itemize}
-\item Is de publieke website nog consistent met de staat van het project?
-\item Zijn de design documenten nog consistent met de SRS?
-\item Is de code nog consistent met de design documenten?
-\item Zijn de software testen nog consistent met de SRS?
-\end{itemize}
-
-\subsection{SCMP Review}
-Alle leden horen de status van het version control bij te houden zodat de adequaatheid en de compleetheid van de software configuratie gegarandeerd blijft, zoals opgesteld in het SCMP[2].
-
-\subsection{Post Mortem Review}
-Een Post-mortem Review zal gehouden worden na elke iteratie. Op deze manier wordt de iteratie overlopen en worden er suggesties aangebracht voor toekomstige iteraties en projecten.  De vooropgestelde doelen worden overlopen en ge\"evalueerd, evenals de functionaliteit van het project tot nog toe. Deze review zal voorgedragen worden door de Quality Assurance Manager.
-
-\subsection{User Documentation Review}
-Deze review evalueert de compleetheid, duidelijkheid, correctheid en
-gebruiksvriendelijkheid van het SUD. De Quality Assurance Manager is verantwoordelijk voor deze review.
-\end{comment}
+There must be a review with the release of every document. There must also be a review of a previous and coming cycle at the start of each new cycle.
 
 \chapter{Testing}
 \section{Unit-testing}
@@ -245,11 +184,16 @@ Major errors must be reported to both the QAM and the person responsible for the
 \chapter{Tools, technieken en methodologie\"en}
 Richtlijnen betreffende de gebruikte codeerconventie[6] zijn beschikbaar via de projectwebsite[5].  Version control wordt mogelijk gemaakt door Subversion (SVN).
 
-\section{Broncode controle}
+\section{Sourcecode control}
 The QAM will assure that all code follows the chosen standards and conventions. The Configuration manager will make sure that there is always a working copy on the SVN server.
 
-\section{Media controle}
-The Configuration Manager will assure that the following takss are completed by individual members:
+\subsection{Quality assured code}
+To make a clear distinction between assured code and non-assured code, the QAM will add a copy of the assured code to a separate branch of the repository. Each time code is assured for quality, this process must be repeated.
+
+To ensure that a stable version of the code is quality assured, all stable versions must be made with the quality assured branch. This ensures that every piece of code is quality assured by the QAM. This will result in quality assured software.
+
+\section{Media control}
+The Configuration Manager will assure that the following tasks are completed by individual members:
 \begin{itemize}
 \item
 Every Project member must have a personal copy of the Salesmen repository on his hard drive.
