@@ -14,6 +14,8 @@
 \begin{versionhistory}
 \vhEntry{0.1}{29-11-2009}{Patrick}{First Draft}
 \vhEntry{0.8}{06-12-2009}{Patrick}{Draft before QA}
+\vhEntry{1.0}{07-12-2009}{Patrick}{QAed version}
+\vhEntry{1.2}{11-12-2009}{Patrick}{Addition of JUnit}
 \end{versionhistory}
 }
-\setrevisioncurr{06-12-2009: Draft before QA}
+\setrevisioncurr{11-12-2009: Addition of JUnit}
