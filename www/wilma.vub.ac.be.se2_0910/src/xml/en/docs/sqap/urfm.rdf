@@ -27,15 +27,22 @@
     </packages>
 
     <releases rdf:parseType="Collection">
+<Release rdf:about="http://wilma.vub.ac.be/~se2_0910/docs/sqap/archive/v0_2/">
+  <package rdf:resource="http://wilma.vub.ac.be/~se2_0910/docs/sqap/"/>
+  <revision>0.2</revision>
+  <created>2009-12-12</created>
+</Release>
 <Release rdf:about="http://wilma.vub.ac.be/~se2_0910/docs/sqap/archive/v0_1/">
   <package rdf:resource="http://wilma.vub.ac.be/~se2_0910/docs/sqap/"/>
-  <revision>v0.1</revision>
+  <revision>0.1</revision>
   <created>2009-11-22</created>
 </Release>
     </releases>
     
     <files rdf:parseType="Collection">
-
+<!-- ********************************************************************
+     SQAP v0.1
+     ******************************************************************** -->
 <File rdf:about="http://wilma.vub.ac.be/~se2_0910/docs/sqap/archive/v0_1/sqap-v0_1.pdf">
   <release rdf:resource="http://wilma.vub.ac.be/~se2_0910/docs/sqap/archive/v0_1/"/>
   <basename>sqap-v0_1</basename>
@@ -59,6 +66,34 @@
     <rdf:value>75</rdf:value>
   </size> 
   <link>http://wilma.vub.ac.be/~se2_0910/docs/sqap/archive/v0_1/sqap-v0_1-src.zip</link>
+  <format>application/zip</format>
+</File>
+<!-- ********************************************************************
+     SQAP v0.2
+     ******************************************************************** -->
+<File rdf:about="http://wilma.vub.ac.be/~se2_0910/docs/sqap/archive/v0_2/sqap-v0_2.pdf">
+  <release rdf:resource="http://wilma.vub.ac.be/~se2_0910/docs/sqap/archive/v0_2/"/>
+  <basename>sqap-v0_2</basename>
+  <extension>.pdf</extension>
+  <language>en</language>
+  <size rdf:parseType="Resource">
+    <unit rdf:resource="http://purl.org/urfm/Kilobyte"/>
+    <rdf:value>140</rdf:value>
+  </size> 
+  <link>http://wilma.vub.ac.be/~se2_0910/docs/sqap/archive/v0_2/sqap-v0_2.pdf</link>
+  <format>application/pdf</format>
+</File>
+
+<File rdf:about="http://wilma.vub.ac.be/~se2_0910/docs/sqap/archive/v0_2/sqap-v0_2-src.zip">
+  <release rdf:resource="http://wilma.vub.ac.be/~se2_0910/docs/sqap/archive/v0_2/"/>
+  <basename>sqap-v0_2-src</basename>
+  <extension>.zip</extension>
+  <language>en</language>
+  <size rdf:parseType="Resource">
+    <unit rdf:resource="http://purl.org/urfm/Kilobyte"/>
+    <rdf:value>160</rdf:value>
+  </size> 
+  <link>http://wilma.vub.ac.be/~se2_0910/docs/sqap/archive/v0_2/sqap-v0_2-src.zip</link>
   <format>application/zip</format>
 </File>
 
