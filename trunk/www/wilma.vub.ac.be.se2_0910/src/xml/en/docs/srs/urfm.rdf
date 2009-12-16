@@ -27,15 +27,22 @@
     </packages>
 
     <releases rdf:parseType="Collection">
+<Release rdf:about="http://wilma.vub.ac.be/~se2_0910/docs/srs/archive/v0_3/">
+  <package rdf:resource="http://wilma.vub.ac.be/~se2_0910/docs/srs/"/>
+  <revision>0.3</revision>
+  <created>2009-12-15</created>
+</Release>
 <Release rdf:about="http://wilma.vub.ac.be/~se2_0910/docs/srs/archive/v0_2/">
   <package rdf:resource="http://wilma.vub.ac.be/~se2_0910/docs/srs/"/>
-  <revision>v0.2</revision>
+  <revision>0.2</revision>
   <created>2009-11-12</created>
 </Release>
     </releases>
     
     <files rdf:parseType="Collection">
-
+<!-- *********************************************************************
+     SRS v0.2
+     ********************************************************************* -->
 <File rdf:about="http://wilma.vub.ac.be/~se2_0910/docs/srs/archive/v0_2/srs-v0_2.pdf">
   <release rdf:resource="http://wilma.vub.ac.be/~se2_0910/docs/srs/archive/v0_2/"/>
   <basename>srs-v0_2</basename>
@@ -59,6 +66,35 @@
     <rdf:value>9</rdf:value>
   </size> 
   <link>http://wilma.vub.ac.be/~se2_0910/docs/srs/archive/v0_2/srs-v0_2-src.zip</link>
+  <format>application/zip</format>
+</File>
+
+<!-- *********************************************************************
+     SRS v0.3
+     ********************************************************************* -->
+<File rdf:about="http://wilma.vub.ac.be/~se2_0910/docs/srs/archive/v0_3/srs-v0_3.pdf">
+  <release rdf:resource="http://wilma.vub.ac.be/~se2_0910/docs/srs/archive/v0_3/"/>
+  <basename>srs-v0_3</basename>
+  <extension>.pdf</extension>
+  <language>en</language>
+  <size rdf:parseType="Resource">
+    <unit rdf:resource="http://purl.org/urfm/Kilobyte"/>
+    <rdf:value>187</rdf:value>
+  </size> 
+  <link>http://wilma.vub.ac.be/~se2_0910/docs/srs/archive/v0_3/srs-v0_3.pdf</link>
+  <format>application/pdf</format>
+</File>
+
+<File rdf:about="http://wilma.vub.ac.be/~se2_0910/docs/srs/archive/v0_3/srs-v0_3-src.zip">
+  <release rdf:resource="http://wilma.vub.ac.be/~se2_0910/docs/srs/archive/v0_3/"/>
+  <basename>srs-v0_3-src</basename>
+  <extension>.zip</extension>
+  <language>en</language>
+  <size rdf:parseType="Resource">
+    <unit rdf:resource="http://purl.org/urfm/Kilobyte"/>
+    <rdf:value>180</rdf:value>
+  </size> 
+  <link>http://wilma.vub.ac.be/~se2_0910/docs/srs/archive/v0_3/srs-v0_3-src.zip</link>
   <format>application/zip</format>
 </File>
 
