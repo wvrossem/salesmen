@@ -3,6 +3,13 @@
 
 = Topics for next meeting =
 
+=== Meeting: Friday 18 December 2009, 12:00 - 13:00===
+
+ * Evaluation conference
+ * Implementation: work schedules
+ * SCRUM
+
+
 === Meeting 10: Tuesday 1 December 2009, 15:00 - !!17:00!!===
  
  * Logo & template
