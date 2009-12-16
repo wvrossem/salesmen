@@ -30,7 +30,7 @@
 <Release rdf:about="http://wilma.vub.ac.be/~se2_0910/docs/srs/archive/v0_3/">
   <package rdf:resource="http://wilma.vub.ac.be/~se2_0910/docs/srs/"/>
   <revision>0.3</revision>
-  <created>2009-12-16</created>
+  <created>2009-12-14</created>
 </Release>
 <Release rdf:about="http://wilma.vub.ac.be/~se2_0910/docs/srs/archive/v0_2/">
   <package rdf:resource="http://wilma.vub.ac.be/~se2_0910/docs/srs/"/>
