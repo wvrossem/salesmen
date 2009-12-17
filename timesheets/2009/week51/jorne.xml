@@ -1,0 +1,29 @@
+<?xml version='1.0'?>
+<timesheet xmlns="http://purl.org/net/timetrack">
+
+  <item duration="PT1H30M">
+	<desc>Rehearsed dialog for conference presentation.</desc>
+	<refs>
+	<ref></ref>
+	</refs>
+  </item>
+  
+  <item duration="PT15M">
+	<desc>Added Silkpage to section Tools in SCMP.</desc>
+	<refs>
+	<ref>http://code.google.com/p/salesmen/source/detail?r=675</ref>
+	</refs>
+  </item>
+
+  <item duration="PT3H">
+	<desc>Conference on Tuesday 2009/12/15.</desc>
+	<refs>
+	<ref></ref>
+	</refs>
+  </item>
+  
+  <item duration="PT15M">
+    <desc>Administration and Communication</desc>
+  </item>
+  
+</timesheet>
