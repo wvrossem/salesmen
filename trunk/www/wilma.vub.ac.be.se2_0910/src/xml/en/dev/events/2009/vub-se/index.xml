@@ -13,35 +13,35 @@
     </keywords>
   </head>
   <para>
-    The development teams of the three VUB Software Engineering projects 
-    gathered to present their achievements since the inception of their
-    development.
+    Development teams of this year's three VUB Software Engineering projects 
+    gathered to present their achievements.
   </para>
   <section id='presentation'>
     <title>Presentation</title>
     <para>
-      Salesmen developers crafted and presented a set of slides during the 
-      conference day. Feel free to view
+      Salesmen folks crafted and presented a set of slides during the 
+      conference day. Feel free to view 
       <footnote><para>In case you can't see an interactive box presenting our
       slides, it might imply that your browser doesn't support Adobe Flash.
       Please feel free to download the PDF version of slides and view them
-      locally.
-      </para></footnote>
+      locally.</para></footnote>
       and/or download both the slides and 
       the presentation agenda in <acronym>PDF</acronym> format.
     </para>
-    <h:div style="width:425px;text-align:left" id="__ss_2732447">
-      <h:object style="margin:0px" width="425" height="355">
-	<h:param name="movie" 
-		 value="http://static.slidesharecdn.com/swf/ssplayer2.swf?doc=salesmen-slides-20091215-091216135619-phpapp01&amp;stripped_title=salesmen-at-vub-software-engineering-2009-conference" />
-	<h:param name="allowFullScreen" value="true"/>
-	<h:param name="allowScriptAccess" value="always"/>
-	<h:embed 
-	    src="http://static.slidesharecdn.com/swf/ssplayer2.swf?doc=salesmen-slides-20091215-091216135619-phpapp01&amp;stripped_title=salesmen-at-vub-software-engineering-2009-conference" 
-	    type="application/x-shockwave-flash" allowscriptaccess="always" 
-	    allowfullscreen="true" width="425" height="355">
-	</h:embed>
-      </h:object>
+    <h:div id='embedded-slides'>
+      <h:div style="width:425px;text-align:left" id="__ss_2732447">
+	<h:object style="margin:0px" width="425" height="355">
+	  <h:param name="movie" 
+		   value="http://static.slidesharecdn.com/swf/ssplayer2.swf?doc=salesmen-slides-20091215-091216135619-phpapp01&amp;stripped_title=salesmen-at-vub-software-engineering-2009-conference" />
+	  <h:param name="allowFullScreen" value="true"/>
+	  <h:param name="allowScriptAccess" value="always"/>
+	  <h:embed 
+	      src="http://static.slidesharecdn.com/swf/ssplayer2.swf?doc=salesmen-slides-20091215-091216135619-phpapp01&amp;stripped_title=salesmen-at-vub-software-engineering-2009-conference" 
+	      type="application/x-shockwave-flash" allowscriptaccess="always" 
+	      allowfullscreen="true" width="425" height="355">
+	  </h:embed>
+	</h:object>
+      </h:div>
     </h:div>
     <section id='download'>
       <title>Download Related Resources</title>
@@ -63,7 +63,7 @@
 	      <entry role='size'>5.6 MB</entry>
 	    </row>
 	    <row id='download-agenda'>
-	      <entry role='name'>Conference Agenda</entry>
+	      <entry role='name'>Agenda</entry>
 	      <entry role='format'>
 	      <ulink url="http://wilma.vub.ac.be/~se2_0910/dev/events/2009/vub-se/resources/agenda/agenda-20091215.pdf">PDF</ulink>
 	      </entry>
@@ -77,12 +77,11 @@
   <section id='preparation'>
     <title>Preparation</title>
     <para>
-      We strived not to bore our audience by planning and rehearsing our
-      presentation. To that end, we organized a number of
-      meeting sessions specifically targeted at improving the
+      We strived not to bore our audience. To that end, we organized a number 
+      of meetings specifically targeted at improving the 
       <emphasis role='bold'>audience experience</emphasis>.
-      The minutes of our conference-related meetings are publicly made 
-      available. Please feel free to download them.
+      The minutes of our conference-related meetings are made
+      available for the public to download.
     </para>
     <table id='download-minutes-20091227'>
       <tgroup cols="3">

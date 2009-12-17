@@ -219,3 +219,7 @@ form .invalid input { background-color: #ffcccc; }
 }
 
 .dev .rss .date { display: none; }
+
+.events-2009-vub-se #embedded-slides {
+  padding-left: 11%;
+}
