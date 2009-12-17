@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<webpage id="events">
+  <config param="rcsdate" value="$Date: 2009-12-07 17:00:28 +0100 (Mon, 07 Dec 2009) $"/>
+  <head>
+    <title>Events</title>
+    <summary>Conferences we participate among any other events</summary>
+    <keywords>
+      Free Software, Open Source, Auction, Webapp, Java, Jave EE, VUB, 
+      Vrije Universiteit Brussel, Computer Science, Belgium, Conference,
+      Software Engineering
+    </keywords>
+  </head>
+  <webtoc/>
+</webpage>
