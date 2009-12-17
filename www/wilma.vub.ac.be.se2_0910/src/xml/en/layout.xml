@@ -80,6 +80,13 @@
   <tocentry page="download/index.xml" dir="download" filename="index.html"/>
   <tocentry page="dev/index.xml" dir="dev" filename="index.html">
     <tocentry page="dev/blog.xml" dir="blog" filename="index.html"/>
+    <tocentry page="dev/events/index.xml" dir="events" filename="index.html">
+      <tocentry page="dev/events/2009/index.xml" 
+		dir="2009" filename="index.html">
+	<tocentry page="dev/events/2009/vub-se/index.xml" 
+		  dir="vub-se" filename="index.html"/>
+      </tocentry>
+    </tocentry>
   </tocentry>
 </toc>
 <notoc page="site/sitemap.xml" dir="sitemap" filename="index.html"/>
