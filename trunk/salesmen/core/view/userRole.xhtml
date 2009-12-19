@@ -10,15 +10,15 @@
 
 <ui:define name="body">
 
-    <h:form id="userForm">
+    <h:form id="userRoleForm">
 
         <rich:panel>
-            <f:facet name="header">user</f:facet>
+            <f:facet name="header">userRole</f:facet>
 
             <s:decorate id="nameField" template="layout/edit.xhtml">
                 <ui:define name="label">Name</ui:define>
                 <h:inputText id="name" required="true"
-                             value="#{userHome.instance.username}"/>
+                             value="#{userRoleHome.instance.name}"/>
             </s:decorate>
 
             <div style="clear:both"/>
@@ -28,21 +28,21 @@
         <div class="actionButtons">
             <h:commandButton id="save"
                           value="Save"
-                         action="#{userHome.persist}"
-                       rendered="#{!userHome.managed}"/>
+                         action="#{userRoleHome.persist}"
+                       rendered="#{!userRoleHome.managed}"/>
             <h:commandButton id="update"
                           value="Save"
-                         action="#{userHome.update}"
-                       rendered="#{userHome.managed}"/>
+                         action="#{userRoleHome.update}"
+                       rendered="#{userRoleHome.managed}"/>
             <h:commandButton id="delete"
                           value="Delete"
-                         action="#{userHome.remove}"
+                         action="#{userRoleHome.remove}"
                       immediate="true"
-                       rendered="#{userHome.managed}"/>
+                       rendered="#{userRoleHome.managed}"/>
             <s:button propagation="end"
                                id="cancel"
                             value="Cancel"
-                             view="/userList.xhtml"/>
+                             view="/userRoleList.xhtml"/>
         </div>
 
     </h:form>
