@@ -21,7 +21,7 @@
   <item duration="PT1H30M">
    <desc>Writing minutes of conference meeting 27/11</desc>
     <refs>
-      <ref>http://code.google.com/p/salesmen/source/detail?r=506</ref>
+      <ref>http://code.google.com/p/salesmen/source/detail?r=506</ref> <ref>http://wilma.vub.ac.be/~se2_0910/dev/events/2009/vub-se/resources/minutes/20091127/minutes-20091127.pdf</ref>
     </refs>
   </item>
 
@@ -38,6 +38,9 @@
 
   <item duration="PT2H">
    <desc>Making slides for presentation on conference 1</desc>
+    <refs>
+ <ref>http://wilma.vub.ac.be/~se2_0910/dev/events/2009/vub-se/resources/slides/slides-20091215.pdf</ref>
+    </refs>
   </item>
 
   <item duration="PT3H">
