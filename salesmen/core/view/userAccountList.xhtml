@@ -11,28 +11,28 @@
 <ui:define name="body">
 
     <rich:panel>
-        <f:facet name="header">userList</f:facet>
+        <f:facet name="header">userAccountList</f:facet>
 
         <div class="results">
 
-            <h:outputText value="No user exists"
-                       rendered="#{empty userList.resultList}"/>
+            <h:outputText value="No userAccount exists"
+                       rendered="#{empty userAccountList.resultList}"/>
 
-            <h:dataTable id="userList" var="user"
-                      value="#{userList.resultList}"
-                   rendered="#{not empty userList.resultList}">
+            <h:dataTable id="userAccountList" var="userAccount"
+                      value="#{userAccountList.resultList}"
+                   rendered="#{not empty userAccountList.resultList}">
                 <h:column>
                     <f:facet name="header">Id</f:facet>
-                    #{user.userId}
+                    #{userAccount.accountId}
                 </h:column>
                 <h:column>
-                    <f:facet name="header">Username</f:facet>
-                    <s:link id="user"
-                         value="#{user.username}"
-                   		propagation="none"
-                         view="/user.xhtml">
-                        <f:param name="userId"
-                                value="#{user.userId}"/>
+                    <f:facet name="header">Name</f:facet>
+                    <s:link id="userAccount"
+                         value="#{userAccount.username}"
+                   propagation="none"
+                         view="/userAccount.xhtml">
+                        <f:param name="userAccountId"
+                                value="#{userAccount.accountId}"/>
                     </s:link>
                 </h:column>
             </h:dataTable>
@@ -43,8 +43,8 @@
 
     <div class="actionButtons">
         <s:button id="done"
-               value="Create user"
-                view="/user.xhtml"/>
+               value="Create userAccount"
+                view="/userAccount.xhtml"/>
     </div>
 
 </ui:define>
