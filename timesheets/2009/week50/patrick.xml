@@ -4,28 +4,21 @@
   <item duration="PT2H">
     <desc>First impression of presentation for conference 1 on Tuesday 2009/12/08.</desc>
     <refs>
-      <ref>Minutes available after conference</ref>
-    </refs>
-  </item>
-  
-  <item duration="PT10M">
-    <desc>Reviewed Minutes of Tuesday 2009/12/01 for Quality Assurance.</desc>
-    <refs>
-      <ref>Minutes available after conference</ref>
+      <ref>http://wilma.vub.ac.be/~se2_0910/dev/events/2009/vub-se/resources/minutes/20091208/minutes-20091208.pdf</ref>
     </refs>
   </item>
 
   <item duration="PT1H">
     <desc>Rewrote the STD.</desc>
     <refs>
-      <ref>To be uploaded</ref>
+      <ref>http://code.google.com/p/salesmen/source/detail?r=652</ref>
     </refs>
     
   </item>
   
   <item duration="PT2H">
     <desc>Rewrote the SQAP.</desc>
-    <refs><ref>To be uploaded</ref></refs>
+    <refs><ref>http://code.google.com/p/salesmen/source/detail?r=652</ref></refs>
   </item>
   
   <item duration="PT15M">
