@@ -27,41 +27,41 @@ Optional:
 
 Choose a folder as workspace for Eclipse.
 
-= Setup JBoss =
+= Install Plugins =
 
 Arrived in Eclipse, choose Help, Install New Software.
 Choose Add..., these are the 3 plugins to add:
 
   Name: JBoss Tools Dev
-
   Location: http://download.jboss.org/jbosstools/updates/JBossTools-3.1.0.M4
 
   Name: BIRT 2.5
-
   Location: http://download.eclipse.org/birt/update-site/2.5/
 
   Name: m2eclipse
-
   Location: http://m2eclipse.sonatype.org/update-dev/
 
-Now, choose JBoss Tools Dev, check everything, choose Next, Finish.
-
-This may take some time...
-
-= Setup TestNG =
-
-To install TestNG, add the following.
-
   Name: TestNG
-
   Location: http://beust.com/eclipse
 
-Now, choose TestNG, check everything, choose Next, Finish.
+  Name: Subclipse 1.6 Updates
+  Location: http://subclipse.tigris.org/update_1.6.x/
 
-This may take some time, but less than in the previous chapter...
+Now, choose JBoss Tools Dev, TestNG, Subclipse, check everything, choose Next, Finish.
+
+This will take several minutes to complete...
 
 = Usage =
 
-To create a Seam project, go to File, New, Other, choose a Seam project.
+== Import Salesmen ==
 
-To view special Seam options, go to Window, Open Perspective, Other, Seam.
+Go to `File -> New -> Project -> SVN -> Checkout Projects from SVN`
+
+Checkout the Salesmen source code using the following URL (make sure to use https):
+http://salesmen.googlecode.com/svn/trunk/salesmen/core/
+
+Edit `$SALESMEN_CORE/build.properties` and adapt the value of the `jboss.home` property.
+
+You may need to add a JBoss 5.1 Server to your Eclipse installation. This is done by going to `File -> New -> Other -> Server -> Server`.
+
+Please feel free to post to the MailingList for troubleshooting.
