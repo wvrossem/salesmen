@@ -1,0 +1,101 @@
+<timesheet xmlns="http://purl.org/net/timetrack">
+
+
+<item duration="PT35M">
+    
+<desc>Rehearsed pitch for conference presentation</desc>
+    
+<refs>
+      
+<ref></ref>
+
+</refs>
+  
+</item>
+
+
+
+<item duration="PT3H">
+    
+<desc>Conference on Tuesday 2009/12/15.</desc>
+    
+<refs>
+      
+<ref>http://wilma.vub.ac.be/~se2_0910/dev/events/2009/vub-se/index.html</ref>
+    
+</refs>
+
+</item>
+
+
+<item duration="PT1H">
+    
+<desc>Meeting on Friday 2009/12/18.</desc>
+    
+<refs>
+      
+<ref>http://wilma.vub.ac.be/~se2_0910/docs/minutes/2009/12/18/minutes-20091218.pdf</ref>
+    
+</refs>
+
+</item>
+
+ 
+<item duration="PT05M">
+     
+<desc>Reviewing Minutes of Tuesday 2009/12/11.</desc>
+     
+<refs>
+       
+<ref>http://code.google.com/p/salesmen/source/detail?r=690</ref>
+     
+</refs>
+   
+</item>
+
+
+<item duration="PT1H30M">
+    
+<desc>Writing Minutes of Tuesday 2009/12/18.</desc>
+    
+<refs>
+      
+<ref>http://code.google.com/p/salesmen/source/detail?r=691</ref>
+    
+</refs>
+  
+</item>
+
+  
+
+<item duration="PT10M">
+    
+<desc>Correcting Minutes of Tuesday 2009/12/18.</desc>
+    
+<refs>
+      
+<ref>http://code.google.com/p/salesmen/source/detail?r=692</ref>
+<ref>http://code.google.com/p/salesmen/source/detail?r=xxx</ref>
+
+</refs>
+  
+</item>
+
+
+
+  
+
+<item duration="PT35M">
+    
+<desc>Administration and Communication</desc>
+    
+<refs>
+      
+<ref></ref>
+    
+</refs>
+  
+</item>
+
+
+</timesheet>
