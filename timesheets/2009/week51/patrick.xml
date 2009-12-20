@@ -1,0 +1,46 @@
+<?xml version='1.0'?>
+<timesheet xmlns="http://purl.org/net/timetrack">
+
+  <item duration=PT90M">
+    <desc>Full QA of SDD, SCMP and SRS in function of conference 1.</desc>
+    <refs>
+      <ref>http://wilma.vub.ac.be/~se2_0910/docs/scmp/index.html</ref>
+      <ref>http://wilma.vub.ac.be/~se2_0910/docs/sdd/index.html</ref>
+      <ref>http://wilma.vub.ac.be/~se2_0910/docs/srs/index.html</ref>
+    </refs>
+  </item>
+
+  <item duration="PT1H">
+    <desc>Repetition for conference 1 on Tuesday 2009/15/08.</desc>
+    <refs>
+      <ref>http://wilma.vub.ac.be/~se2_0910/dev/events/2009/vub-se/index.html</ref>
+    </refs>
+  </item>
+  
+  <item duration="PT3H">
+    <desc>Conference 1 on Tuesday 2009/12/15.</desc>
+    <refs>
+      <ref>http://wilma.vub.ac.be/~se2_0910/dev/events/2009/vub-se/index.html</ref>
+    </refs>
+  </item>
+
+  <item duration="PT1H">
+    <desc>Meeting on Friday 2009/12/18</desc>
+    <refs>
+      <ref>http://code.google.com/p/salesmen/source/browse/#svn/minutes/2009/12/18</ref>
+    </refs>
+  </item>
+
+
+  <item duration="PT1H">
+    <desc>Prepared for the Implementation fase. Including: Ensuring that jaa environment is set-up. Read and prepared the task assigned to me.</desc>
+    <refs>
+      <ref>http://code.google.com/p/salesmen/wiki/DevelopmentRoles</ref>
+      <ref>http://wilma.vub.ac.be/~se2_0910/docs/srs/index.html</ref>
+    </refs>
+  </item>
+  
+  <item duration="PT30M">
+    <desc>Administration and Communication.</desc>
+  </item>
+</timesheet>
