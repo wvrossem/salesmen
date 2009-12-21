@@ -2,8 +2,7 @@
 
 <item duration="PT2H">
 	<desc>Read chapter 15 of the JBOSS Seam guide.</desc>
-	<refs>
-		<ref>http://docs.jboss.org/seam/2.2.0.GA/reference/en-US/html/security.html</ref>
+	<refs>	<ref>http://docs.jboss.org/seam/2.2.0.GA/reference/en-US/html/security.html</ref>
 	</refs>
 </item>
 
@@ -17,7 +16,7 @@
 <item duration="PT2H">
 	<desc>Update SDD (v0.4)</desc>
 	<refs>
-		<ref></ref>
+		<ref>http://code.google.com/p/salesmen/source/detail?r=645</ref>
 	</refs>
 </item>
 
@@ -46,7 +45,7 @@
 <item duration="PT2H">
 <desc>Read the Seam guide</desc>
 <refs>
-<ref>http://groups.google.com/group/salesmen/browse_thread/thread/b7ff2044567a1caa/aa02c507c5840e9b?hl=en&lnk=gst&q=guide#aa02c507c5840e9b</ref>
+<ref>http://groups.google.com/group/salesmen/browse_thread/thread/b7ff2044567a1caa/aa02c507c5840e9b</ref>
 </refs>
 </item>
 
@@ -58,7 +57,7 @@
 </refs>
 </item>
 
-<item duration="PT35M">
+<item duration="PT30M">
 <desc>Administration and Communication</desc>
 </item>
 
