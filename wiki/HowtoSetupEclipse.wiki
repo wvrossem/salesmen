@@ -5,6 +5,10 @@
 
 This page focuses on showing you how to setup your Salesmen development environment in Eclipse.
 
+== Prerequisites ==
+
+You should know how to [HowtoRunJBossSeamExamples install JBoss].
+
 = Eclipse =
 
 If you have not yet installed Eclipse, here is where you can find [http://www.eclipse.org/downloads/ Eclipse downloads].
