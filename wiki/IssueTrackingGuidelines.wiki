@@ -27,5 +27,4 @@ An issue tracking system can tremendously help software projects. In this docume
     * If the discussion turns out to be useful, we can always *refer to it in relevant issues*.
 
   * Can I use Dutch to comment or describe issues?
-
     * You can even write in Latin if you want to but no language other than English is recommended.
