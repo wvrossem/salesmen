@@ -1,0 +1,422 @@
+<?xml version="1.0"?>
+<timesheets xmlns="http://purl.org/net/timetrack" xmlns:xi="http://www.w3.org/2001/XInclude" from="2009-11-07" to="2009-12-14" xml:id="week50-2009">
+  <title>VUB - SE2 Timesheets for the 50th Week of 2009</title>
+  <published>2009-12-14</published>
+  <updated>2009-12-14</updated>
+  <person>
+    <name>Nick De Cooman</name>
+    <timesheet xmlns="http://purl.org/net/timetrack">
+	
+  <item duration="PT2H30M">
+    <desc>Finishing slides for conference 1</desc>
+    <refs>
+      <ref>Slides available after conference</ref>
+    </refs>
+  </item>
+
+  <item duration="PT10M">
+    <desc>Updating statistics of timesheets</desc>
+  </item>
+	
+  <item duration="PT20M">
+    <desc>Writing agenda of presentation conference 1</desc>
+    <refs>
+      <ref>Agenda published after conference</ref>
+    </refs>
+  </item>
+  
+  <item duration="PT1H">
+    <desc>Preparing personal presentation on conference</desc>
+    <refs>
+      <ref>Slides available after conference</ref>
+    </refs>
+  </item>
+  
+  <item duration="PT2H">
+    <desc>First impression of presentation for conference 1 on Tuesday 2009/12/08.</desc>
+    <refs>
+      <ref>Minutes available conference</ref>
+    </refs>
+  </item>
+  
+  <item duration="PT2H">
+    <desc>Updating slides for conference</desc>
+    <refs>
+      <ref>Slides available after conference</ref>
+    </refs>
+  </item>
+  
+  <item duration="PT1H">
+    <desc>Rehursing presentation for conference 1 on Thursday 2009/12/10.</desc>
+    <refs>
+      <ref>Minutes available after conference</ref>
+    </refs>
+  </item>
+  
+  <item duration="PT15M">
+    <desc>Prepare meeting on Friday 2009/12/11</desc>
+    <refs>
+      <ref>http://code.google.com/p/salesmen/source/detail?r=599</ref>
+    </refs>
+  </item>
+  
+  <item duration="PT1H">
+    <desc>Writing minutes of conference meeting 2009/12/08</desc>
+    <refs>
+      <ref>Minutes available after conference</ref>
+    </refs>
+  </item>
+  
+  <item duration="PT1H">
+    <desc>Meeting on Friday 2009/11/27</desc>
+    <refs>
+      <ref>http://wilma.vub.ac.be/~se2_0910/docs/minutes/2009/12/04/minutes-20091204.pdf</ref>
+    </refs>
+  </item>
+  
+  <item duration="PT30M">
+    <desc>Writing minutes of conference meeting 2009/12/10</desc>
+    <refs>
+      <ref>Minutes available after conference</ref>
+    </refs>
+  </item>
+  
+  <item duration="PT20M">
+    <desc>Checking timesheets</desc>
+    <refs>
+      <ref>http://code.google.com/p/salesmen/source/detail?r=625</ref>
+    </refs>
+  </item>
+  
+  <item duration="PT30M">
+    <desc>Administration and Communication</desc>
+  </item>
+  
+</timesheet>
+  </person>
+  <person>
+    <name>Jonathan Jeurissen</name>
+    <timesheet xmlns="http://purl.org/net/timetrack">
+  <item duration="PT2H">
+    <desc>
+    First impression of presentation for conference 1 on Tuesday 2009/12/08.
+    </desc>
+    <refs>
+      <ref>Minutes available after conference</ref>
+    </refs>
+  </item>
+  <item duration="PT1H">
+    <desc>Writing pitch (Why choose Salesmen) for conference 1</desc>
+    <refs>
+      <ref>Slides available after conference</ref>
+    </refs>
+  </item>
+  <item duration="PT1H30M">
+    <desc>Rehursing presentation for conference 1 on Thursday 2009/12/10.</desc>
+    <refs>
+      <ref>Minutes available after conference</ref>
+    </refs>
+  </item>
+  <item duration="PT20M">
+    <desc>Administration and Communication</desc>
+  </item>
+
+</timesheet>
+  </person>
+  <person>
+    <name>Sina Khakbaz Heshmati</name>
+    <timesheet xmlns="http://purl.org/net/timetrack">
+  <item duration="PT30M">
+    <desc>
+      Published developers' timesheet for the 49th week of 2009.
+    </desc>
+    <refs>
+      <ref>http://code.google.com/p/salesmen/source/detail?r=550</ref>
+	  <ref>http://code.google.com/p/salesmen/source/detail?r=551</ref>
+	  <ref>http://code.google.com/p/salesmen/source/detail?r=575</ref>
+    </refs>
+  </item>  
+  <item duration="PT30M">
+    <desc>
+      Improved the look-and-feel of the website.
+    </desc>
+    <refs>
+      <ref>http://code.google.com/p/salesmen/source/detail?r=572</ref>
+      <ref>http://code.google.com/p/salesmen/source/detail?r=573</ref>
+    </refs>
+  </item>
+  <item duration="PT30M">
+    <desc>
+      Published STD v0.1 on the website.
+    </desc>
+    <refs>
+      <ref>http://code.google.com/p/salesmen/source/detail?r=592</ref>
+      <ref>http://code.google.com/p/salesmen/source/detail?r=593</ref>
+    </refs>
+  </item>
+  <item duration="PT4H">
+    <desc>
+      Checked details of a few Seam examples
+    </desc>
+    <refs>
+      <ref>http://docs.jboss.org/seam/2.2.0.GA/reference/en-US/html/tutorial.html</ref>
+    </refs>
+  </item>
+  <item duration="PT45M">
+	<desc>First conference presentation rehearsal on Tuesday 2009/12/08.</desc>
+	<refs>
+	  <ref>Minutes available after conference.</ref>
+	</refs>
+  </item>
+  <item duration="PT2H">
+    <desc>Hand-on experience with Seam in Eclipse.</desc>
+  </item>
+  <item duration="PT1H30M">
+    <desc>Conference presentation rehearsal on Thursday 2009/12/10.</desc>
+    <refs>
+      <ref>Minutes available after conference.</ref>
+    </refs>
+  </item>
+  <item duration="PT2H">
+    <desc>Worked on our presentation slides with Jorne.</desc>
+    <refs>
+      <ref>Slides available after conference.</ref>
+    </refs>
+  </item>
+  <item duration="PT1H">
+    <desc>Meeting on Friday 2009/12/11.</desc>
+    <refs>
+ <ref>http://wilma.vub.ac.be/~se2_0910/docs/minutes/2009/12/11/minutes-20091211.pdf</ref>
+    </refs>
+  </item>
+  <item duration="PT2H30M">
+    <desc>
+      Meeting with Bart regarding Salesmen design and implementation.
+    </desc>
+  </item>
+  <item duration="PT5H">
+    <desc>Played with the combination of seam-gen, Eclipse, MySQL, Subversion, 
+	and JBoss Tools. Encountered a problem after refactoring a session bean.</desc>
+	<refs>
+	  <ref>http://docs.jboss.org/seam/2.2.0.GA/reference/en-US/html/gettingstarted.html</ref>
+	</refs>
+  </item>
+  <item duration="PT2H">
+    <desc>Created the Salesmen project skeleton and imported under SVN.</desc>
+	<refs>
+	  <ref>http://code.google.com/p/salesmen/source/detail?r=617</ref>
+	</refs>
+  </item>
+  <item duration="PT30M">
+    <desc>
+      Administration and Communication
+    </desc>
+  </item>
+</timesheet>
+  </person>
+  <person>
+    <name>Jorne Laton</name>
+    <timesheet xmlns="http://purl.org/net/timetrack">
+
+  <item duration="PT1H45M">
+    <desc>Added section "Tools" to SCMP, changed lay-out.</desc>
+    <refs>
+      <ref>http://code.google.com/p/salesmen/source/detail?r=576</ref>
+    </refs>
+  </item>
+
+  <item duration="PT2H">
+    <desc>First impression of presentation on Tuesday 2009/12/08.</desc>
+    <refs>
+      <ref>Minutes available after conference</ref>
+    </refs>
+  </item>
+	
+  <item duration="PT1H30M">
+    <desc>
+      Wrote wiki on setup of Eclipse with JBoss and TestNG integrated.
+    </desc>
+    <refs>
+      <ref>http://code.google.com/p/salesmen/wiki/HowtoSetupEclipse</ref>
+    </refs>
+  </item>
+	
+  <item duration="PT2H">
+    <desc>Edited en extended existing slides and created new slides, in collaboration with Sina.</desc>
+    <refs>
+      <ref>Slides available after conference</ref>
+    </refs>
+  </item>
+  
+  <item duration="PT1H30M">
+    <desc>Second rehearsal for presentation on Thursday 2009/12/12.</desc>
+    <refs>
+      <ref>Minutes available after conference</ref>
+    </refs>
+  </item>
+  
+  <item duration="PT15M">
+    <desc>Administration and Communication</desc>
+  </item>
+  
+</timesheet>
+  </person>
+  <person>
+    <name>Bart Maes</name>
+    <timesheet xmlns="http://purl.org/net/timetrack">
+
+<item duration="PT2H">
+  <desc>
+    First impression of presentation for conference 1 on Tuesday 2009/12/08.
+  </desc>
+  <refs>
+    <ref>Minutes available after conference</ref>
+  </refs>
+</item>
+
+<item duration="PT5M">
+  <desc>Prepare slides for conference 1</desc>
+  <refs>
+    <ref>Slides available after conference</ref>
+  </refs>
+</item>
+
+<item duration="PT40M">
+  <desc>Update slides &amp; create prototpyes for conference 1</desc>
+  <refs>
+    <ref>Slides available after conference</ref>
+  </refs>
+</item>
+
+<item duration="PT2H30M">
+  <desc>Meet with Sina to discuss design &amp; Seam</desc>
+</item>
+
+<item duration="PT2H45M">
+  <desc>Installing and exploring JBOSS, Seam and Eclipse on laptop</desc>
+</item>
+
+<item duration="PT1H30M">
+  <desc>Rehursing presentation for conference 1 on Thursday 2009/12/10.</desc>
+  <refs>
+    <ref>Minutes available after conference</ref>
+  </refs>
+</item>
+
+<item duration="PT1H">
+  <desc>Meeting on Friday 2009/12/11.</desc>
+  <refs>
+    <ref>http://wilma.vub.ac.be/~se2_0910/docs/minutes/2009/12/11/minutes-20091211.pdf</ref>
+  </refs>
+</item>
+
+<item duration="PT45M">
+  <desc>Create new design with Seam in mind, send email to Sina for input</desc>
+</item>
+
+<item duration="PT25M">
+  <desc>Administration and Communication</desc>
+</item>
+
+</timesheet>
+  </person>
+  <person>
+    <name>Patrick Provinciael</name>
+    <timesheet xmlns="http://purl.org/net/timetrack">
+  
+  <item duration="PT2H">
+    <desc>First impression of presentation for conference 1 on Tuesday 2009/12/08.</desc>
+    <refs>
+      <ref>Minutes available after conference</ref>
+    </refs>
+  </item>
+  
+  <item duration="PT10M">
+    <desc>Reviewed Minutes of Tuesday 2009/12/01 for Quality Assurance.</desc>
+    <refs>
+      <ref>Minutes available after conference</ref>
+    </refs>
+  </item>
+
+  <item duration="PT1H">
+    <desc>Rewrote the STD.</desc>
+    <refs>
+      <ref>To be uploaded</ref>
+    </refs>
+    
+  </item>
+  
+  <item duration="PT2H">
+    <desc>Rewrote the SQAP.</desc>
+    <refs><ref>To be uploaded</ref></refs>
+  </item>
+  
+  <item duration="PT15M">
+    <desc>QA of SPMP V0.3</desc>
+    <refs>
+      <ref>http://wilma.vub.ac.be/~se2_0910/docs/spmp/index.html</ref>
+    </refs>
+  </item>
+  
+  <item duration="PT2H">
+    <desc>Java Coding Conventions</desc>
+    <refs>
+      <ref>http://code.google.com/p/salesmen/wiki/JavaCodingConvention</ref>
+    </refs>
+  </item>
+  
+  <item duration="PT20M">
+    <desc>Administration and Communication.</desc>
+  </item>
+</timesheet>
+  </person>
+  <person>
+    <name>Wouter Van Rossem</name>
+    <timesheet xmlns="http://purl.org/net/timetrack">
+
+  <item duration="PT2H">
+    <desc>First impression of presentation for conference 1 on Tuesday 2009/12/08</desc>
+    <refs>
+      <ref>Minutes available after conference</ref>
+    </refs>
+  </item>
+  
+  <item duration="PT1H">
+    <desc>Prepare presentation with Bart.</desc>
+    <refs>
+      <ref>Slides available after conference</ref>
+    </refs>
+  </item>
+  
+  <item duration="PT1H30M">
+    <desc>Rehursing presentation for conference 1 on Thursday 2009/12/10.</desc>
+    <refs>
+      <ref>Minutes available after conference</ref>
+    </refs>
+  </item>
+  
+  <item duration="PT1H">
+    <desc>Meeting on Friday 2009/12/11.</desc>
+    <refs>
+      <ref>http://wilma.vub.ac.be/~se2_0910/docs/minutes/2009/12/11/minutes-20091211.pdf</ref>
+    </refs>
+  </item>
+  
+  <item duration="PT20M">
+    <desc>Write minutes for meeting of Friday 2009/12/11.</desc>
+    <refs>
+      <ref>http://code.google.com/p/salesmen/source/detail?r=613</ref>
+    </refs>
+  </item>
+  
+  <item duration="PT1H">
+    <desc>Set up eclipse and seam + try the tutorial given by Sina.</desc>
+  </item>
+  
+  <item duration="PT10M">
+    <desc>Administration and Communication</desc>
+  </item>
+  
+</timesheet>
+  </person>
+</timesheets>
