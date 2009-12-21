@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<project name="salesmen" default="deploy" basedir=".">
+<project name="salesmen" default="explode" basedir=".">
 
     <!-- Give user a chance to override without editing this file or typing -D -->
     <property file="${basedir}/build.properties"/>
