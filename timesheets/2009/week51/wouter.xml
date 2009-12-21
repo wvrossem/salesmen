@@ -1,0 +1,43 @@
+<?xml version='1.0'?>
+<timesheet xmlns="http://purl.org/net/timetrack">
+
+	<item duration="PT1H30M">
+		<desc>Update SRS (v0.3)</desc>
+		<refs>
+			<ref>http://code.google.com/p/salesmen/source/detail?r=647</ref>
+		</refs>
+	</item>
+
+  <item duration="PT1H">
+    <desc>Prepare conference 1 on Tuesday 2009/12/15.</desc>
+    <refs>
+      <ref>http://wilma.vub.ac.be/~se2_0910/dev/events/2009/vub-se/index.html</ref>
+    </refs>
+  </item>
+  
+  <item duration="PT3H">
+    <desc>Conference 1 on Tuesday 2009/12/15.</desc>
+    <refs>
+      <ref>http://wilma.vub.ac.be/~se2_0910/dev/events/2009/vub-se/index.html</ref>
+    </refs>
+  </item>
+
+  <item duration="PT1H">
+    <desc>Meeting on Friday 2009/12/18</desc>
+    <refs>
+      <ref>http://code.google.com/p/salesmen/source/browse/#svn/minutes/2009/12/18</ref>
+    </refs>
+  </item>
+  
+  <item duration="PT2H">
+    <desc>Read "Introduction to JBoss Seam"</desc>
+    <refs>
+      <ref>hhttp://www.infoq.com/articles/jboss-seam</ref>
+    </refs>
+  </item>
+  
+  <item duration="PT20M">
+    <desc>Administration and Communication.</desc>
+  </item>
+  
+</timesheet>
