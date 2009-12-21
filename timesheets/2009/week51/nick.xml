@@ -1,0 +1,99 @@
+<?xml version='1.0'?>
+<timesheet xmlns="http://purl.org/net/timetrack">
+
+  <item duration="PT10M">
+   <desc>Updating statistics of timesheets</desc>
+  </item>
+	
+  <item duration="PT20M">
+   <desc>Compare SPMP of other teams</desc>
+  </item>
+
+  <item duration="PT20M">
+   <desc>Analyze timesheets of other groups</desc>
+  </item>
+
+  <item duration="PT1H30M">
+    <desc>Prepare conference 1 on Tuesday 2009/12/15.</desc>
+    <refs>
+     <ref>http://wilma.vub.ac.be/~se2_0910/dev/events/2009/vub-se/index.html</ref>
+    </refs>
+  </item>
+
+<item duration="PT3H">
+<desc>Conference on Tuesday 2009/12/15.</desc>
+<refs>
+<ref>http://wilma.vub.ac.be/~se2_0910/dev/events/2009/vub-se/index.html</ref>
+</refs>
+</item>
+
+  <item duration="PT15M">
+   <desc>Uploading all conference related documents</desc>
+	<refs>
+		<ref>http://code.google.com/p/salesmen/source/detail?r=658</ref>
+		<ref>http://code.google.com/p/salesmen/source/detail?r=659</ref>
+		<ref>http://code.google.com/p/salesmen/source/detail?r=660</ref>
+		<ref>http://code.google.com/p/salesmen/source/detail?r=661</ref>
+		<ref>http://code.google.com/p/salesmen/source/detail?r=664</ref>
+	</refs>
+  </item>
+
+  <item duration="PT1H30M">
+   <desc>Learn how to work with Eclipse, JBoss and Seam</desc>
+   <refs>
+ 	<ref>http://www.infoq.com/articles/jboss-seam</ref>
+	<ref>http://docs.jboss.org/seam/2.2.0.GA/reference/en-US/html/</ref>
+   </refs>
+  </item>
+
+  <item duration="PT20M">
+   <desc>Prepare meeting on Friday 2009/12/18</desc>
+   <refs>
+ 	<ref>http://code.google.com/p/salesmen/source/detail?r=657</ref>
+   </refs>
+  </item>
+
+  <item duration="PT1H">
+   <desc>Meeting on Friday 2009/11/27</desc>
+ 	<refs>
+	<ref>http://wilma.vub.ac.be/~se2_0910/docs/minutes/2009/12/18/minutes-20091218.pdf</ref>
+    </refs>
+  </item>
+
+  <item duration="PT30M">
+   <desc>Try to install PostgreSQL on Wilma</desc>
+  </item>
+
+  <item duration="PT45M">
+   <desc>Adding references to conference related items on previous timesheets</desc>
+ 	<refs>
+ 		<ref>http://code.google.com/p/salesmen/source/detail?r=687</ref>
+<ref>http://code.google.com/p/salesmen/source/detail?r=689</ref>
+<ref>http://code.google.com/p/salesmen/source/detail?r=688</ref>
+    </refs>
+  </item>
+
+  <item duration="PT1H">
+   <desc>Studying seam registration example</desc>
+   <refs>	
+	<ref>
+	http://docs.jboss.com/seam/latest/reference/en-US/html/tutorial.html#registration-example
+	</ref>
+   </refs>
+  </item>
+
+  <item duration="PT30M">
+    <desc>Check and upload timesheets</desc>
+   <refs>
+	<ref>http://code.google.com/p/salesmen/source/detail?r=705</ref>
+	<ref>http://code.google.com/p/salesmen/source/detail?r=706</ref>
+	<ref>http://code.google.com/p/salesmen/source/detail?r=707</ref>
+	<ref>http://code.google.com/p/salesmen/source/detail?r=708</ref>
+    </refs>
+  </item>
+  
+  <item duration="PT30M">
+    <desc>Administration and Communication</desc>
+  </item>
+  
+</timesheet>
