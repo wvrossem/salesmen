@@ -25,3 +25,7 @@ An issue tracking system can tremendously help software projects. In this docume
     * You're absolutely encouraged to *share any concern* or detail so there's a solution to this very issue.
     * An email is sent to the mailing-list upon every change recorded by the issue tracking system. Reply to those emails in order to *open a discussion* or brainstorming regarding an issue *on the mailing-list*.
     * If the discussion turns out to be useful, we can always *refer to it in relevant issues*.
+
+  * Can I use Dutch to comment or describe issues?
+
+    * You can even write in Latin if you want to but no language other than English is recommended.
