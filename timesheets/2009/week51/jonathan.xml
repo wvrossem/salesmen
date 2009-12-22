@@ -68,15 +68,15 @@
 
   
 
-<item duration="PT10M">
+<item duration="PT15M">
     
 <desc>Correcting Minutes of Tuesday 2009/12/18.</desc>
     
 <refs>
       
 <ref>http://code.google.com/p/salesmen/source/detail?r=692</ref>
-<ref>http://code.google.com/p/salesmen/source/detail?r=694</ref>
 <ref>http://code.google.com/p/salesmen/source/detail?r=695</ref>
+<ref>http://code.google.com/p/salesmen/source/detail?r=720</ref>
 
 </refs>
   
