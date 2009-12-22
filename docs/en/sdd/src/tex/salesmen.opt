@@ -1,0 +1,23 @@
+% Project Controls
+\setprojectname{Salesmen (Group2 SE)}
+\setdocumentname{Software Design Document}
+\setmembers{\manager{Nick De Cooman}, Jonathan Jeurissen, Sina Khakbaz Heshmati, Jorne Laton, Bart Maes, Patrick Provinciael, Wouter Van Rossem}
+\setprojectlogo{salesmenlogo}
+\setcompanylogo{vub}
+
+
+% Title Controls
+\setauthorname{Bart Maes}
+\setabstract{This document lays down the architecture and detailed design of the Salesmen project. This project is created by group 2 of the course Software Engineering in the 2009-2010 study year at the Vrije Universiteit Brussel.}
+
+% Revision History Controls
+\setrevisionhist{
+\begin{versionhistory}
+\vhEntry{v0.0.1}{27-11-2009}{B. Maes}{Draft initialization}
+\vhEntry{v0.0.2}{29-11-2009}{B. Maes}{Added Appendix A, added Technical Design}
+\vhEntry{v0.0.3}{29-11-2009}{B. Maes}{Added Appendix B, initial QA check}
+\vhEntry{v0.1.0}{14-12-2009}{B. Maes}{Updated (integration JBoss Seam)}
+\vhEntry{v0.2.0}{21-12-2009}{P. Provinciael}{Made the document consistent with the other documents}
+\end{versionhistory}
+}
+\setrevisioncurr{21-12-2009}

@@ -1,0 +1,20 @@
+% Project Controls
+\setprojectname{Salesmen (Group2 SE)}
+\setdocumentname{Software Configuration Management Plan}
+\setmembers{\manager{Nick De Cooman}, Jonathan Jeurissen, Sina Khakbaz Heshmati, Jorne Laton, Bart Maes, Patrick Provinciael, Wouter Van Rossem}
+\setprojectlogo{salesmenlogo}
+\setcompanylogo{vub}
+
+
+% Title Controls
+\setauthorname{Jorne Laton, Sina Khakbaz Heshmati}
+\setabstract{This document is intended to describe how the Salesmen project artifacts
+are stored, processed, and deployed. This project is created by group 2 of the course Software Engineering in the 2009-2010 study year at the Vrije Universiteit Brussel.}
+
+% Revision History Controls
+\setrevisionhist{
+\begin{versionhistory}
+\vhEntry{v0.0.0}{21-12-2009}{P. Provinciael}{Made the document consistent with the other documents}
+\end{versionhistory}
+}
+\setrevisioncurr{21-12-2009}
