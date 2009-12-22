@@ -1,0 +1,127 @@
+<?xml version='1.0'?>
+<timesheet xmlns="http://purl.org/net/timetrack">
+  <item duration="PT2H">
+    <desc>
+      Published STD v0.2, SQAP v0.2, and SRS v0.3
+    </desc>
+    <refs>
+      <ref>http://code.google.com/p/salesmen/source/detail?r=656</ref>
+      <ref>http://code.google.com/p/salesmen/source/detail?r=665</ref>
+      <ref>http://code.google.com/p/salesmen/source/detail?r=667</ref>
+      <ref>http://code.google.com/p/salesmen/source/detail?r=668</ref>
+      <ref>http://code.google.com/p/salesmen/source/detail?r=669</ref>
+      <ref>http://code.google.com/p/salesmen/source/detail?r=670</ref>
+      <ref>http://code.google.com/p/salesmen/source/detail?r=671</ref>
+      <ref>http://code.google.com/p/salesmen/source/detail?r=672</ref>
+      <ref>http://code.google.com/p/salesmen/source/detail?r=673</ref>
+      <ref>http://code.google.com/p/salesmen/source/detail?r=674</ref>
+    </refs>
+  </item>
+  <item duration="PT45M">
+    <desc>
+      Publish the developers' timesheets for the 50th week of 2009.
+    </desc>
+    <refs>
+      <ref>http://code.google.com/p/salesmen/source/detail?r=622</ref>
+      <ref>http://code.google.com/p/salesmen/source/detail?r=623</ref>
+      <ref>http://code.google.com/p/salesmen/source/detail?r=624</ref>
+      <ref>http://code.google.com/p/salesmen/source/detail?r=642</ref>
+      <ref>http://code.google.com/p/salesmen/source/detail?r=643</ref>
+      <ref>http://code.google.com/p/salesmen/source/detail?r=644</ref>
+      <ref>http://code.google.com/p/salesmen/source/detail?r=648</ref>
+    </refs>
+  </item>
+  <item duration="PT20M">
+    <desc>
+      Released and published SPMP v0.3.
+    </desc>
+    <refs>
+      <ref>http://code.google.com/p/salesmen/source/detail?r=618</ref>
+      <ref>http://code.google.com/p/salesmen/source/detail?r=619</ref>
+      <ref>http://code.google.com/p/salesmen/source/detail?r=620</ref>
+      <ref>http://code.google.com/p/salesmen/source/detail?r=621</ref>
+    </refs>
+  </item>
+  <item duration="PT40M">
+    <desc>
+      Wrote a guide for developers to use Emacs and the nXML-mode for editing
+      XML files.
+    </desc>
+    <refs>
+      <ref>http://code.google.com/p/salesmen/source/detail?r=639</ref>
+      <ref>http://code.google.com/p/salesmen/source/detail?r=641</ref>
+    </refs>
+  </item>
+  <item duration="PT15M">
+    <desc>
+      Published the minutes of the 2009-12-11 meeting.
+    </desc>
+    <refs>
+      <ref>http://code.google.com/p/salesmen/source/detail?r=651</ref>
+    </refs>
+  </item>
+  <item duration="PT3H">
+    <desc>
+      Research on Seam security and i18n.
+    </desc>
+    <refs>
+      <ref>http://docs.jboss.org/seam/2.2.0.GA/reference/en-US/html/</ref>
+    </refs>
+  </item>
+  <item duration="PT2H">
+    <desc>
+      Published the 2009-12-15 VUB SE conference coverage.
+    </desc>
+    <refs>
+      <ref>http://code.google.com/p/salesmen/source/detail?r=677</ref>
+      <ref>http://code.google.com/p/salesmen/source/detail?r=678</ref>
+      <ref>http://code.google.com/p/salesmen/source/detail?r=679</ref>
+    </refs>
+  </item>
+  <item duration="PT5H">
+    <desc>
+      Added the User, UserAccount, and UserRole entity beans. Spent two hours
+      debugging a runtime bug caused by table joins and another one caused by
+      an inappropriate whitespace in one of the JSF templates.
+    </desc>
+    <refs>
+      <ref>http://code.google.com/p/salesmen/source/detail?r=685</ref>
+    </refs>
+  </item>
+  <item duration="PT1H30M">
+    <desc>
+      Distributed implementation tasks.
+    </desc>
+    <refs>
+      <ref>http://code.google.com/p/salesmen/source/detail?r=686</ref>
+      <ref>http://groups.google.com/group/salesmen/browse_thread/thread/4f538a032616dde5</ref>
+      <ref>http://code.google.com/p/salesmen/issues/detail?id=7</ref>
+      <ref>http://code.google.com/p/salesmen/issues/detail?id=9</ref>
+      <ref>http://code.google.com/p/salesmen/issues/detail?id=10</ref>
+      <ref>http://code.google.com/p/salesmen/issues/detail?id=11</ref>
+      <ref>http://code.google.com/p/salesmen/issues/detail?id=12</ref>
+    </refs>
+  </item>
+  <item duration="PT30M">
+    <desc>
+      Wrote a Fake FAQ to explain a few concepts regarding the issue tracking
+      system to Salesmen developers.
+    </desc>
+    <refs>
+      <ref>http://code.google.com/p/salesmen/source/detail?r=696</ref>
+      <ref>http://code.google.com/p/salesmen/source/detail?r=702</ref>
+    </refs>
+  </item>
+  <item duration="PT30M">
+    <desc>
+      Improved documentation for developers on the Wiki.
+    </desc>
+    <refs>
+      <ref>http://code.google.com/p/salesmen/source/detail?r=699</ref>
+      <ref>http://code.google.com/p/salesmen/source/detail?r=700</ref>
+    </refs>
+  </item>
+  <item duration="PT30M">
+    <desc>Administration and Communication</desc>
+  </item>
+</timesheet>
