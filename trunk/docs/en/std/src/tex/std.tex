@@ -7,26 +7,13 @@
 \begin{projdoc}
 \chapter{Introduction}
 \section{Scope}
-The purpose of thise document is to describe the Software Test Plan(STD) for the Salesmen Project (1). It will outline the various testing mechanisms and the responsibilities of these testing mechanisms. 
+The purpose of this document is to describe the Software Test Plan(STD) for the Salesmen Project (1). It will outline the various testing mechanisms and the responsibilities of these testing mechanisms. 
 
 Chapter 2 outlines the testing plan, while chapter 3 details the the integration tests. The results of the various integration tests will be included in this document.
 
 
 \section{References}
-\begin{itemize}
-\item
-Salesmen Project, \url{http://wilma.vub.ac.be/~se2_0910}
-\item
-Software Design Document 
-\item
-Software Requirements Specification 
-\item
-Software Quality Assurance Plan 
-\item
-JUnit Testing Framework, \url{http://junit.org/}
-\item
-Google Code Repository 
-\end{itemize}
+See Appendix A.
 
 \section{Definitions and acronyms}
 \begin{itemize}
@@ -137,5 +124,32 @@ Whenever anything new is added to the system, there must be tests.
 \chapter{Overview of the integration tests}
 \section{Scope}
 The purpose of this chapter is to document the various integration tests required. These tests will be conform with the SRS (3) and thus, they will each contain a reference to the correspondent SRS Requirement. Every Requirement will be tested for a possible negative and positive result.
+
+\appendix
+\renewcommand
+{\bibname}
+{\huge{Appendix A}\\
+\vspace{12pt}
+\Huge{References}}
+\addcontentsline{toc}{chapter}{References}
+\setcounter{chapter}{1}
+
+\begin{thebibliography}{9}
+%item
+%Salesmen Project, \url{http://wilma.vub.ac.be/~se2_0910}
+%\item
+%Software Design Document 
+%\item
+%Software Requirements Specification 
+%\item
+%Software Quality Assurance Plan 
+%\item
+%JUnit Testing Framework, \url{http://junit.org/}
+%\item
+%Google Code Repository 
+\bibitem{slidesSE}
+Dirk Vermeir \emph{\url{http://tinf2.vub.ac.be/~dvermeir/courses/software_engineering/slides.pdf}} 1 Nov 2009.
+\end{thebibliography}
+
 \end{projdoc}
 \end{document}

@@ -105,12 +105,12 @@
   \addvspace{70mm}
   \Large{\show@projectname}\\
   \rule{148mm}{1pt}\\
-  \vspace{6pt}
-  \huge\textbf{\show@documentname}\\
+  \vspace{8pt}
+  \LARGE\textbf{\show@documentname}\\
   \rule{148mm}{1pt}
     
   \addvspace{5mm}
-  \large{\textit{author:} \show@authorname}
+  \large{\textit{author(s):} \show@authorname}
   
   \vspace{10mm}
   \ifx\@logoname\@empty

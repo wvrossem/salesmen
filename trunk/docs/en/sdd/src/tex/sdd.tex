@@ -1,47 +1,13 @@
-\documentclass[a4paper, 12pt]{report}
+\documentclass[salesmen, twoside]{../../../templates/latex/2009/softproj}
+\usepackage[english]{babel} % For a load of tiny changes in the text
+\usepackage{graphicx, ctable, url, hyperref} % graphics, tables, urls and cross-referencing
 
-\usepackage{url}
-\usepackage{graphicx}
 \usepackage{amsmath}
 \usepackage{eurosym}
 
 
-
-\title{Software Engineering Group 2 (2009-2010) \\Software Design Document}
-\author{Bart Maes}
-\date {November 30, 2009}
-
-\makeindex
-
-
-
 \begin{document}
-
-\maketitle
-
-\thispagestyle{empty}
-
-
-
-\begin{abstract}
-This document, the Software Design Description lays down the architecture and detailed design of the Salesmen software, to be conceived in the context of the annual project for the \emph{Software Engineering} course. It took place under guidance of Prof Dirk Vermeir and assistant Yoeri De Koster during the 2009-2010 study year at the Vrije Universiteit Brussel (Brussels, Belgium).
-\end{abstract}
-
-\begin{center}
-\emph{Document history:}\\
-\begin{tabular}{llll}
-version & date & author & description \\
-\hline
-v0.1 & 27 Nov 2009 & Bart Maes & Draft initialization \\
-v0.2 & 29 Nov 2009 & Bart Maes & Added Appendix A, added Technical Design\\
-v0.3 & 29 Nov 2009 & Bart Maes & Added Appendix B, initial QA check\\
-v0.4 & 14 Dec 2009 & Bart Maes & Updated (integration JBoss Seam)\\
-\end{tabular}
-\end{center}
-
-\newpage
-\tableofcontents
-\newpage
+\begin{projdoc}
 
 \chapter{Introduction}
 
@@ -49,15 +15,12 @@ v0.4 & 14 Dec 2009 & Bart Maes & Updated (integration JBoss Seam)\\
    This document specifies the entire software architecture and design for the Salesmen software. These design decisions directly relate to the functionalities, performances, constraints, attributes and interfaces of the system.
 
 \section{Scope}
-    This document describes the software architecture and design for the initial release of the Salesmen software, version 1.0. The intended audience of this document exclusively includes the designers, the developers and the testers of the software.
+    This document describes the software architecture and design for the initial release of the Salesmen software. The intended audience of this document exclusively includes the designers, the developers and the testers of the software.
 
 This SDD document mainly follows the standards of the IEEE 1016-1998 standard.
 
 \section{Reference materials}
-\begin{itemize}
-\item IEEE Std. 1016-1998 - Software Design Descriptions
-\item \url{http://tinf2.vub.ac.be/~dvermeir/courses/software_engineering/slides.pdf} [1 Nov 2009].
-\end{itemize}
+See Appendix A.
 
 \section{Definitions and acronyms \label{acronyms}}
 \begin{tabular}{ll}
@@ -76,10 +39,9 @@ This SDD document mainly follows the standards of the IEEE 1016-1998 standard.
 \textbf{SQL}   & Structured Query Language \\
 \end{tabular}
 
-\pagebreak
 \chapter{System Architecture}
 \section{Overview}
-System architecture diagram: see Appendix A, \ref{fig_architecture}
+System architecture diagram: see Appendix B, \ref{fig_architecture}
 
 \section{Three-Tier Architecture}
 Three-tier is a client-server architecture in which the user interface, functional process logic, computer data storage and data access are developed and maintained as independent modules, most often on separate platforms.
@@ -135,13 +97,12 @@ As Seam has built-in support for Hibernate, HQL statements will be used to commu
 \section{Physical Configuration}
 The software is to be installed on the Wilma server at the VUB datacenter. Wilma is accessible over the internet through web browsers and command line clients. The software relies on the availability of an SMTP server on the local LAN of the VUB, so that we do not have to include MDA (Mail Delivery Agent) functionality in the software.
 
-System infrastructure diagram: see Appendix A, \ref{fig_infrastructure}
+System infrastructure diagram: see Appendix B, \ref{fig_infrastructure}
 
 
 \section{System Interface Description}
 The web-interface is the only interface available to users of the Salesmen software. However, depending of the access-rights provided to a given user, more options may become available. Website administrators, for example, can close auctions or ban other members while 'normal' members cannot access these facilities. A more detailed description of the access-rights provided to each group of users will be provided in the SRS.
-Prototypes of the webinterface can be found in Appendix B.
-\pagebreak
+Prototypes of the webinterface can be found in Appendix C.
 \chapter{Technical Design \label{Technical Design}}
 \section{Presentation layer}
 The presentation merely consists of static XHTML files that contain calls to Java Servlets to obtain dynamicly changing information. These XHTML files will use CSS to seperate the static information from the actual presentation of the website. Javascript will be used to provide the user with a friendly and smooth interface.
@@ -151,22 +112,21 @@ This facilitates the following goals:
 \item Support for multiple languages (1 set of html templates per language), as required in the SRS
 \item 'Smooth' interface with a minimum of required page refreshes, as required in the SRS
 \end{itemize}
-Prototypes of the webinterface can be found in Appendix B.
+Prototypes of the webinterface can be found in Appendix C.
 
 \section{Business layer}
 The business layer consists of the Java Servlets that will be able to receive and process requests, and return proper responses.
 From the class diagram it becomes clear that two classes will play a central role in our application: User and Auction.
 
-Class diagram, see Appendix A, \ref{fig_class}
+Class diagram, see Appendix B, \ref{fig_class}
 
 \section{Data layer}
 The data layer consists of the database and the EJB3 standard for persistent objects. EJB3 allows, through the use of annotations in the class, to abstract away from SQL-statements as EJB3 will generate these.
 
 The database design supports all current requirements and is designed with expansion in mind.
 
-Entity-Relationship diagram: see Appendix A, \ref{fig_database}
+Entity-Relationship diagram: see Appendix B, \ref{fig_database}
 
-\pagebreak
 \chapter{Software Features}
 
 % ------------------------------------------------------------------------
@@ -178,29 +138,48 @@ Entity-Relationship diagram: see Appendix A, \ref{fig_database}
 % End of Use Cases
 % ------------------------------------------------------------------------
 
-\pagebreak
 \chapter{User Interface Design \label{UI Design}}
 \section{Web pages tree}
 \subsection{Overview}
 (pagetree image)
-
 \subsection{Page Description}
-
-\pagebreak
 \section{User Interface}
-Prototypes of the webinterface can be found in Appendix B.
-
+Prototypes of the webinterface can be found in Appendix C.
 
 \chapter{Additional Material \label{Additional}}
 \chapter{Requirements Traceability Matrix}
 
-\chapter{Appendix A}
 
+\appendix
+\renewcommand
+{\bibname}
+{\huge{Appendix A}\\
+\vspace{12pt}
+\Huge{References}}
+\addcontentsline{toc}{chapter}{References}
+\setcounter{chapter}{1}
+
+\begin{thebibliography}{9}
+\bibitem{IEEE} IEEE Standards \\
+    IEEE \emph{Std. 1016-1998 - Software Design Descriptions}.
+\bibitem{slidesSE} Slides Software Engineering \\
+    Dirk Vermeir \emph{\url{http://tinf2.vub.ac.be/~dvermeir/courses/software_engineering/slides.pdf}} 1 Nov 2009.
+\bibitem{English} English auction \\ 
+	\url{http://en.wikipedia.org/wiki/English_auction} [October 2009]
+\bibitem{silent} Silent auction \\
+	\url{http://en.wikipedia.org/wiki/Silent_auction#Secondary_types_of_auction} [October 2009]
+\bibitem{browsers} Usage share of web browsers \\
+	\url{http://en.wikipedia.org/wiki/Usage_share_of_web_browsers} [November 2009]
+\bibitem{SEO} Search engine optimization \\
+	\url{http://en.wikipedia.org/wiki/Search_engine_optimization} [December 2009]
+\end{thebibliography}
+
+\chapter{Diagrams}
 
 \begin{figure}
 \section{Architecture}
 \label{fig_architecture}
-\includegraphics[scale=0.8]{../../img/archi1.png}
+\includegraphics[scale=0.7]{../../img/archi1.png}
 \caption{Salesmen Architecture}
 \end{figure}
 
@@ -214,18 +193,18 @@ Prototypes of the webinterface can be found in Appendix B.
 \begin{figure}
 \section{Class Diagram}
 \label{fig_class}
-\includegraphics[scale=0.4,angle=90]{../../img/class1.jpg}
+\includegraphics[scale=0.35,angle=90]{../../img/class1.jpg}
 \caption{Salesmen class diagram}
 \end{figure}
 
 \begin{figure}
 \section{Database diagram}
 \label{fig_database}
-\includegraphics[scale=0.5,angle=90]{../../img/erd1.jpg}
+\includegraphics[scale=0.44,angle=90]{../../img/erd1.jpg}
 \caption{Salesmen database layout}
 \end{figure}
 
-\chapter{Appendix B}
+\chapter{Website Prototypes}
 \begin{figure}
 \section{Auction list}
 \label{fig_prototype_auctionlist}
@@ -263,4 +242,5 @@ Prototypes of the webinterface can be found in Appendix B.
 \caption{profile.jsp - website information}
 \end{figure}
 
+\end{projdoc}
 \end{document}

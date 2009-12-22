@@ -1,7 +1,7 @@
-\documentclass[a4paper, 12pt]{report}
-\usepackage{ctable}
-\usepackage{url}
-\usepackage{graphicx}
+\documentclass[salesmen, twoside]{../../../templates/latex/2009/softproj}
+\usepackage[english]{babel} % For a load of tiny changes in the text
+\usepackage{graphicx, ctable, url, hyperref} % graphics, tables, urls and cross-referencing
+
 \usepackage{amsmath}
 \usepackage{eurosym}
 
@@ -10,11 +10,7 @@
 \date {December 13, 2009}
 
 \begin{document}
-	
-	\maketitle
-	
-	\setcounter{tocdepth}{1}	
-	\tableofcontents
+\begin{projdoc}
 	
 	\chapter{Introduction}
 	
@@ -60,15 +56,7 @@
 		
 		\section{Reference materials}
 		
-			\begin{itemize}
-			
-				\item 
-					\url{http://tinf2.vub.ac.be/~dvermeir/courses/software_engineering/slides.pdf}
-			
-				\item Eric J. Braude, \emph{Software Engineering -
-				An Object-Oriented Perspective}, John Wiley \& Sons, 2001. ISBN 0-471-32208-3.
-			
-			\end{itemize}
+			See Appendix A.
 			
 		\section{Definitions and acronyms}
 
@@ -83,28 +71,7 @@
 				\textbf{COCOMO} & Constructive Cost Model
 
 			\end{tabular}				
-		
-		\section{Revision history}
-		
-			\begin{tabular}{l l l l}
-				\\
-				\FL Version & Date & Name & Description
-				\ML 0.10 & 21/10/09 & Nick De Cooman & Initial draft
-				\NN 0.11 & 22/10/09 & Nick De Cooman & Revision after quality control
-				\NN 0.20 & 12/11/09 & Nick De Cooman & Revision including customer's comments
-				\NN 0.21 & 20/11/09 & Nick De Cooman & Adding estimation of effort
-				\NN 0.22 & 22/11/09 & Nick De Cooman & 	- Revision on process model 
-				\NN & & &								- Adding real costs
-				\NN 0.23 & 23/11/09 & Nick De Cooman & 	Adding Gantt chart 
-				\NN 0.24 & 26/11/09 & Nick De Cooman & 	Adding estimation of costs
-				\NN 0.30 & 10/12/09 & Nick De Cooman & 	Updating monitoring mechanisms
-				\NN 0.31 & 12/12/09 & Nick De Cooman &	- Updating costs
-				\NN & &	 &								- Updating Gantt chart
-				\\
-			\end{tabular}	
-		
-		
-		
+
 	\chapter{Project Organization}
 	
 		\section{Process model}
@@ -113,8 +80,8 @@
 		the waterfall process, we will be able to show partial versions to the customer 
 		for feedback, reducing risks such as faulty requirements. The application will 
 		consists of some basic functionality after the first iteration and more advanced features will be implemented 
-		during the second one. \\
-		\\
+		during the second one.
+		
 		A detailed planning of this process can be found in section \ref{planning}.
 			
 		
@@ -403,7 +370,7 @@
 			
 			\section{Software documentation}
 			
-			Several documents will be publised during the execution of this project. \\
+			Several documents will be publised during the execution of this project.
 			
 			\label{deadlines}
 				\begin{tabular}{l l}
@@ -465,7 +432,7 @@
 			\subsection{Estimation of total man-costs}
 			
 			Based on the information in table \ref{realcosts}, we can estimate the total cost of this project
-			by calculating the average number of hours up to now. For the first 8 weeks, the average number of worked hours is \emph{52,1 hours/week}.\\
+			by calculating the average number of hours up to now. For the first 8 weeks, the average number of worked hours is \emph{52,1 hours/week}.
 			
 			Assuming 27 weeks will be needed to accomplish this project, the total number of man-hours can be estimated as:
 			\[ 52,1 \textrm{ hours/week} \cdot  27 \textrm{ week} \approx 1407 \textrm{ man-hours} \]
@@ -547,5 +514,24 @@
 			\begin{figure}
 				\includegraphics[angle=90, height=20cm]{../../img/gantt-chart.jpg}
 				\caption{Current schedule of planning in form of Gantt-chart}
-			\end{figure}	
+			\end{figure}
+			
+\appendix
+\renewcommand
+{\bibname}
+{\huge{Appendix A}\\
+\vspace{12pt}
+\Huge{References}}
+\addcontentsline{toc}{chapter}{References}
+\setcounter{chapter}{1}
+
+\begin{thebibliography}{9}
+\bibitem{OOPerspective} Eric J. Braude, \emph{Software Engineering - An Object-Oriented Perspective}, John Wiley \& Sons, 2001. ISBN 0-471-32208-3.
+\bibitem{slidesSE}
+Dirk Vermeir \emph{\url{http://tinf2.vub.ac.be/~dvermeir/courses/software_engineering/slides.pdf}} 1 Nov 2009.
+\end{thebibliography}
+
+
+
+\end{projdoc}
 \end{document}
