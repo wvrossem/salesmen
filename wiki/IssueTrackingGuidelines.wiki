@@ -5,6 +5,11 @@
 
 An issue tracking system can tremendously help software projects. In this document, we present the best practices when it comes to issue management for Salesmen developers.
 
+= Quick Tips =
+  * Comments are not for discussions. Only comment to provide readers with concise status report about the issue.
+  * Give readers --ourselves-- context by referring to discussions on the [MailingList dev-list] or SVN revisions.
+  * Issue notifications are posted the dev-list. Use them for detailed discussions.
+
 = F²AQ =
 
 *Note:* The _2_ superscript on _F_ implies that this section represents a *_Fake_ FAQ*. That is, no-one has really asked these questions yet but a _dialogue_ is being used to convey the message.
