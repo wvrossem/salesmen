@@ -76,9 +76,7 @@
   <item duration="PT1H">
    <desc>Studying seam registration example</desc>
    <refs>	
-	<ref>
-	http://docs.jboss.com/seam/latest/reference/en-US/html/tutorial.html#registration-example
-	</ref>
+	<ref>http://docs.jboss.com/seam/latest/reference/en-US/html/tutorial.html#registration-example</ref>
    </refs>
   </item>
 

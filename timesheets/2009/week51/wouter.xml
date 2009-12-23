@@ -31,7 +31,7 @@
   <item duration="PT2H">
     <desc>Read "Introduction to JBoss Seam"</desc>
     <refs>
-      <ref>hhttp://www.infoq.com/articles/jboss-seam</ref>
+      <ref>http://www.infoq.com/articles/jboss-seam</ref>
     </refs>
   </item>
   
