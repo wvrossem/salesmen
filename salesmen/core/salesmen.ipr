@@ -32,18 +32,18 @@
   </component>
   <component name="DataSourceManagerImpl">
     <DataSource DataSourceSourceName="LOCAL">
-      <option name="DRIVER_CLASS" value="com.mysql.jdbc.Driver" />
-      <option name="DATABASE_URL" value="jdbc:mysql:///sm" />
+      <option name="DRIVER_CLASS" value="org.postgresql.Driver" />
+      <option name="DATABASE_URL" value="jdbc:postgresql://wendy.vub.ac.be/se2_0910_dev_sina" />
       <option name="DRIVER_PATH" />
-      <option name="DATBASE_USERNAME" value="root" />
-      <option name="ENCODED_DATABASE_PASSWORD" value="dfcfdfd0" />
+      <option name="DATBASE_USERNAME" value="se2_0910_dev_sina" />
+      <option name="ENCODED_DATABASE_PASSWORD" value="dfd9dfffdfc8dfc7df9edfd8df9bdfc4dfcf" />
       <option name="DEFAULT_SCHEMA_NAME" />
       <option name="TABLE_PATTERN" value="" />
-      <option name="UUID" value="22f27cac-afb8-47e2-a3d3-c44e871f05af" />
+      <option name="UUID" value="df79a789-1904-4a9b-a066-41c33d4d1111" />
       <option name="NAME" value="salesmenDatasource" />
       <libraries>
         <library>
-          <url>jar://$PROJECT_DIR$/lib/mysql.jar!/</url>
+          <url>jar://$PROJECT_DIR$/lib/postgresql.jar!/</url>
         </library>
       </libraries>
     </DataSource>

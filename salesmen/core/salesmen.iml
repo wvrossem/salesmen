@@ -389,7 +389,7 @@
     <orderEntry type="module-library">
       <library>
         <CLASSES>
-          <root url="jar://$MODULE_DIR$/lib/mysql.jar!/" />
+          <root url="jar://$MODULE_DIR$/lib/postgresql.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />
