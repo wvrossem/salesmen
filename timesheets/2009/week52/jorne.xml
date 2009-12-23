@@ -1,0 +1,15 @@
+<?xml version='1.0'?>
+<timesheet xmlns="http://purl.org/net/timetrack">
+
+  <item duration="PT1H30M">
+	<desc>Read guide on JBoss Seam.</desc>
+	<refs>
+	<ref></ref>
+	</refs>
+  </item>
+  
+  <item duration="PT5M">
+    <desc>Administration and Communication</desc>
+  </item>
+  
+</timesheet>
