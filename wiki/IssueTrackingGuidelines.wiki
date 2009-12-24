@@ -9,6 +9,7 @@ An issue tracking system can tremendously help software projects. In this docume
   * Comments are not for discussions. Only comment to provide readers with concise status report about the issue.
   * Give readers --ourselves-- context by referring to discussions on the [MailingList dev-list] or SVN revisions.
   * Issue notifications are posted the dev-list. Use them for detailed discussions.
+  * Don't forget to refer to SVN revisions by typing rX where X would be the revision number. A link to the relevant issue is automatically generated.
 
 = F²AQ =
 
