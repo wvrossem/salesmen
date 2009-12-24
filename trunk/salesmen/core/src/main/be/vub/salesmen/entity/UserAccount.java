@@ -1,7 +1,7 @@
 package be.vub.salesmen.entity;
 
-import java.io.Serializable;
 import java.util.Set;
+import java.io.Serializable;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;
@@ -111,7 +111,7 @@ public class UserAccount implements Serializable
     }
     
     @OneToOne
-    @JoinColumn(name = "USER_ID")
+    @JoinColumn(name = "userid")
     public User getUser() {
     	return user;
     }
