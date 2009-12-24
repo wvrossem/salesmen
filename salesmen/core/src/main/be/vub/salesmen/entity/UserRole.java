@@ -15,14 +15,12 @@ import org.jboss.seam.annotations.security.management.RoleConditional;
 import org.jboss.seam.annotations.security.management.RoleGroups;
 import org.jboss.seam.annotations.security.management.RoleName;
 
-//import org.hibernate.validator.Length;
-
 @Entity
 public class UserRole implements Serializable
 {
-	
-	private static final long serialVersionUID = 1391628537025835188L;
-    private Integer version;
+	private static final long serialVersionUID = 8164732519163535494L;
+
+	private Integer version;
 
     private Long roleId;
     private String name;
