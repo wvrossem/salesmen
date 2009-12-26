@@ -15,6 +15,13 @@
         <f:facet name="header">placeAuction</f:facet>
 
         <h:form id="placeAuctionForm">
+            <f:facet name="header">userAccount</f:facet>
+
+            <s:decorate id="nameField" template="layout/edit.xhtml">
+                <ui:define name="label">Auction title</ui:define>
+                <h:inputText id="title" required="true"
+                             value="#{placeAuctionHome.instance.title}"/>
+            </s:decorate>
 
             <h:commandButton id="placeAuction" value="placeAuction!"
                              action="#{placeAuction.placeAuction}"/>
