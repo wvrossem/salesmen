@@ -114,7 +114,7 @@
   <language>en</language>
   <size rdf:parseType="Resource">
     <unit rdf:resource="http://purl.org/urfm/Kilobyte"/>
-    <rdf:value>138</rdf:value>
+    <rdf:value>300</rdf:value>
   </size> 
   <link>http://wilma.vub.ac.be/~se2_0910/docs/spmp/archive/v0_3/spmp-v0_3.pdf</link>
   <format>application/pdf</format>
@@ -127,7 +127,7 @@
   <language>en</language>
   <size rdf:parseType="Resource">
     <unit rdf:resource="http://purl.org/urfm/Kilobyte"/>
-    <rdf:value>155</rdf:value>
+    <rdf:value>180</rdf:value>
   </size> 
   <link>http://wilma.vub.ac.be/~se2_0910/docs/spmp/archive/v0_3/spmp-v0_3-src.zip</link>
   <format>application/zip</format>
