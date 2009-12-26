@@ -1,0 +1,3 @@
+#! /bin/bash
+
+$JBOSS_HOME/bin/run.sh -b 134.184.49.2
