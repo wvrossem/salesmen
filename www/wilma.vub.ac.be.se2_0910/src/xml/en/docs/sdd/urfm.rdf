@@ -27,9 +27,14 @@
     </packages>
 
     <releases rdf:parseType="Collection">
+<Release rdf:about="http://wilma.vub.ac.be/~se2_0910/docs/sdd/archive/v0_2/">
+  <package rdf:resource="http://wilma.vub.ac.be/~se2_0910/docs/sdd/"/>
+  <revision>0.2</revision>
+  <created>2009-12-21</created>
+</Release>
 <Release rdf:about="http://wilma.vub.ac.be/~se2_0910/docs/sdd/archive/v0_1/">
   <package rdf:resource="http://wilma.vub.ac.be/~se2_0910/docs/sdd/"/>
-  <revision>v0.1</revision>
+  <revision>0.1</revision>
   <created>2009-11-30</created>
 </Release>
     </releases>
@@ -65,6 +70,34 @@
   <format>application/zip</format>
 </File>
 
+<!-- **************************************************************
+     SDD v0.2
+     ************************************************************** -->
+<File rdf:about="http://wilma.vub.ac.be/~se2_0910/docs/sdd/archive/v0_2/sdd-v0_2.pdf">
+  <release rdf:resource="http://wilma.vub.ac.be/~se2_0910/docs/sdd/archive/v0_2/"/>
+  <basename>sdd-v0_2</basename>
+  <extension>.pdf</extension>
+  <language>en</language>
+  <size rdf:parseType="Resource">
+    <unit rdf:resource="http://purl.org/urfm/Kilobyte"/>
+    <rdf:value>951</rdf:value>
+  </size> 
+  <link>http://wilma.vub.ac.be/~se2_0910/docs/sdd/archive/v0_2/sdd-v0_2.pdf</link>
+  <format>application/pdf</format>
+</File>
+
+<File rdf:about="http://wilma.vub.ac.be/~se2_0910/docs/sdd/archive/v0_2/sdd-v0_2-src.zip">
+  <release rdf:resource="http://wilma.vub.ac.be/~se2_0910/docs/sdd/archive/v0_2/"/>
+  <basename>sdd-v0_2-src</basename>
+  <extension>.zip</extension>
+  <language>en</language>
+  <size rdf:parseType="Resource">
+    <unit rdf:resource="http://purl.org/urfm/Kilobyte"/>
+    <rdf:value>634</rdf:value>
+  </size> 
+  <link>http://wilma.vub.ac.be/~se2_0910/docs/sdd/archive/v0_2/sdd-v0_2-src.zip</link>
+  <format>application/zip</format>
+</File>
 
     </files>
   </Channel>
