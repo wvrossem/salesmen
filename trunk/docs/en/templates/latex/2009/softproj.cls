@@ -90,7 +90,7 @@
 
 \RequirePackage{graphicx}
 \RequirePackage{vhistory}
-\graphicspath{{../../../img/}{img/}}
+\graphicspath{{../../../common/img/}{img/}}
 
 % basic definition of the project environment. Will be expanded later in regards to the type of document.
 \newenvironment{projdoc}{%
@@ -158,4 +158,4 @@
 \pagestyle{followingpage}
 \AtBeginDocument{\thispagestyle{firstpage}}
 
-\setcounter{tocdepth}{2} 
+\setcounter{tocdepth}{2}
