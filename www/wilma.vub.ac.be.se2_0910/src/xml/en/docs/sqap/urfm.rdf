@@ -91,7 +91,7 @@
   <language>en</language>
   <size rdf:parseType="Resource">
     <unit rdf:resource="http://purl.org/urfm/Kilobyte"/>
-    <rdf:value>160</rdf:value>
+    <rdf:value>150</rdf:value>
   </size> 
   <link>http://wilma.vub.ac.be/~se2_0910/docs/sqap/archive/v0_2/sqap-v0_2-src.zip</link>
   <format>application/zip</format>
