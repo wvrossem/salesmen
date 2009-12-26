@@ -1,10 +1,8 @@
 % Project Controls
 \setprojectname{Salesmen (Group2 SE)}
 \setdocumentname{Software Configuration Management Plan}
-\setmembers{\manager{Nick De Cooman}, Jonathan Jeurissen, Sina Khakbaz Heshmati, Jorne Laton, Bart Maes, Patrick Provinciael, Wouter Van Rossem}
 \setprojectlogo{salesmenlogo}
 \setcompanylogo{vub}
-
 
 % Title Controls
 \setauthorname{Jorne Laton, Sina Khakbaz Heshmati}
@@ -14,7 +12,9 @@ are stored, processed, and deployed. This project is created by group 2 of the c
 % Revision History Controls
 \setrevisionhist{
 \begin{versionhistory}
-\vhEntry{v0.0.0}{21-12-2009}{P. Provinciael}{Made the document consistent with the other documents}
+\vhEntry{v0.1}{08-11-2009}{J. Laton, S.~K.~Heshmati}{Initial draft for review}
+\vhEntry{v0.2}{08-11-2009}{J. Laton, S.~K.~Heshmati}{Added the ``Tools'' section}
+\vhEntry{v0.2.1}{21-12-2009}{P.~Provinciael}{Adapted the document presentation in order to be consistent with other Salesmen documents.}
 \end{versionhistory}
 }
 \setrevisioncurr{21-12-2009}
