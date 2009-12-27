@@ -63,7 +63,7 @@ public class RegisterUserAccountBean implements RegisterUserAccount, Serializabl
 		if (user == null)
 		{
 			user = new User();
-			user.setUsername(account.getUsername());
+			user.setScreenName(account.getUsername());
 			user.setFirstName("John");
 			user.setLastName("Smith");
 			user.setEmail(account.getUsername() + "@nowhere.com");
