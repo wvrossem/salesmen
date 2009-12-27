@@ -8,10 +8,8 @@
     xmlns:rich="http://richfaces.org/rich"
     template="layout/template.xhtml">
 
-    <ui:define name="body">
-
-        <h1>Welcome to Seam!</h1>
-	<h:commandButton id="register" value="Sign up!" action="#{registerUserAccount.createUser}"/>
-	<s:link id="reg" value="Sign up!" action="#{registerUserAccount.createUser}" view="/registerUserAccount.xhtml"/>
-    </ui:define>
+  <ui:define name="body">
+    <h1>Welcome to Seam!</h1>
+    <s:link id="register" value="Sign up!" action="#{registerUserAccount.createUser}" view="/register.xhtml"/>
+  </ui:define>
 </ui:composition>
