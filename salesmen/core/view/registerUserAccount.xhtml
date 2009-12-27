@@ -10,29 +10,23 @@
 
 <ui:define name="body">
 
-    <rich:panel>
-        <f:facet name="header">registerUserAccount</f:facet>
-
-        <div class="dialog">
-            <div class="prop">
-                <span class="name">Value</span>
-                <span class="value">#{RegisterUserAccount.value}</span>
-            </div>
-        </div>
-
-        <div style="clear:both"/>
-
-    </rich:panel>
-
     <h:form id="RegisterUserAccount">
-        <div class="actionButtons">
-            <h:commandButton id="begin" value="Begin"
-                action="#{RegisterUserAccount.begin}" rendered="#{not conversation.longRunning}"/>
-            <h:commandButton id="inc" value="Increment"
-                action="#{RegisterUserAccount.increment}" rendered="#{conversation.longRunning}"/>
-            <h:commandButton id="end" value="End"
-                action="#{RegisterUserAccount.end}" rendered="#{conversation.longRunning}"/>
-        </div>
+    
+    	<s:validateAll>
+    		<p>
+    			<b>Username:</b><br/>
+    			<h:inputText id="username" value="#{newAccount.username}" required="true"/>
+    		</p>
+    	
+    		<p>
+    			<b>Email:</b><br/>
+    			<h:inputText id="email" value="#{newAccount.user.email}" required="true"/>
+    		</p>
+    		
+    	</s:validateAll>
+    	
+    	<h:commandButton id="submit" value="Register >" action="#{RegisterUserAccount.register}"/>
+    	
     </h:form>
 
 </ui:define>

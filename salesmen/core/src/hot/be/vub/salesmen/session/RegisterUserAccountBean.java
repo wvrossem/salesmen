@@ -1,58 +1,63 @@
 package be.vub.salesmen.session;
 
 import java.io.Serializable;
-import javax.ejb.Remove;
-import javax.ejb.Stateful;
-import org.jboss.seam.annotations.Name;
+import javax.persistence.EntityManager;
+
 import org.jboss.seam.annotations.Begin;
 import org.jboss.seam.annotations.End;
-import org.jboss.seam.annotations.Logger;
-import org.jboss.seam.log.Log;
+import org.jboss.seam.annotations.In;
+import org.jboss.seam.annotations.Name;
+import org.jboss.seam.annotations.Out;
+import org.jboss.seam.annotations.Scope;
 
-@Stateful
+import be.vub.salesmen.entity.User;
+import be.vub.salesmen.entity.UserAccount;
+
+import static org.jboss.seam.ScopeType.CONVERSATION;
+
+
+@Scope(CONVERSATION)
 @Name("RegisterUserAccount")
 public class RegisterUserAccountBean implements RegisterUserAccount, Serializable
 {
-    /**
-	 * 
-	 */
-	private static final long serialVersionUID = 1L;
+	
+	private static final long serialVersionUID = -4349512217411197622L;
+	
+	   @In
+	   EntityManager entityManager;
 
-	@Logger private Log log;
+	   @Out
+	   private UserAccount newAccount;
+	   
+	   
+	   
+	   @Begin()
+	   public void newRegistration()
+	   {
+	      if (newAccount == null)
+	      {
+	    	 newAccount = new UserAccount();
+	    	 newAccount.setUser(new User());
+	      }
+	   }
 
-    private int value;
+	   
+	   
+	   @End()
+	   public String register()
+	   {
+		
+		   newAccount.getUser().setUsername(newAccount.getUsername());
+		   newAccount.getUser().setFirstName("Test");
+		   newAccount.getUser().setLastName("Test2");
+		   
+		   newAccount.setPasswordHash("test");
+		   newAccount.setPasswordSalt("test");
 
-    @Begin
-    public String begin()
-    {
-        // implement your begin conversation business logic
-        log.info("beginning conversation");
-        return "success";
-    }
-  
-    public String increment()
-    {
-        log.info("incrementing");
-        value++;
-        return "success";
-    }
-  
-    // add additional action methods that participate in this conversation
-  
-    @End
-    public String end()
-    {
-        // implement your end conversation business logic
-        log.info("ending conversation");
-        return "home";
-    }
-  
-    public int getValue()
-    {
-        return value;
-    }
-  
-    @Remove
-    public void destroy() {}
+		   entityManager.persist(newAccount.getUser());
+		   entityManager.persist(newAccount);
+		   return "success";
+
+	   }
 
 }
