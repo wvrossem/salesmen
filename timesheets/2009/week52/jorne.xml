@@ -8,7 +8,14 @@
 	</refs>
   </item>
   
-  <item duration="PT5M">
+  <item duration="PT3H">
+	<desc>Examined Seam examples, programmed some try-outs.</desc>
+	<refs>
+	<ref></ref>
+	</refs>
+  </item>
+  
+  <item duration="PT15M">
     <desc>Administration and Communication</desc>
   </item>
   
