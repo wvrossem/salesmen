@@ -7,9 +7,9 @@
    <local-tx-datasource>
       <jndi-name>salesmenDatasource</jndi-name>
       <use-java-context>false</use-java-context>
-      <connection-url>jdbc:postgresql://wendy.vub.ac.be/se2_0910_dev_sina</connection-url>
+      <connection-url>jdbc:postgresql://wendy.vub.ac.be/se2_0910_dev_jonathan</connection-url>
       <driver-class>org.postgresql.Driver</driver-class>
-      <user-name>se2_0910_dev_sina</user-name>
+      <user-name>se2_0910_dev_jonathan</user-name>
       <password>sUbm4r1ne</password>
    </local-tx-datasource>
     
