@@ -1,8 +1,8 @@
 -- SQL statements which are executed at application startup if hibernate.hbm2ddl.auto is 'create' or 'create-drop'
-insert into Member (userid, username, firstname, lastname, email) values (1, 'Mr_Smiley', 'Mr', 'Smiley', 'smiley@nowhere.com')
-insert into Member (userid, username, firstname, lastname, email) values (2, 'duke', 'duke', 'McDuke', 'duke@sun.com')
-insert into Member (userid, username, firstname, lastname, email) values (3, 'shadowman', 'shadow', 'man', 'shadowman@redhat.com')
-insert into Member (userid, username, firstname, lastname, email) values (4, 'mona', 'mona', 'lisa', 'monalisa@louvre.fr')
+insert into Member (userid, screenname, firstname, lastname, email) values (1, 'Mr_Smiley', 'Mr', 'Smiley', 'smiley@nowhere.com')
+insert into Member (userid, screenname, firstname, lastname, email) values (2, 'duke', 'duke', 'McDuke', 'duke@sun.com')
+insert into Member (userid, screenname, firstname, lastname, email) values (3, 'shadowman', 'shadow', 'man', 'shadowman@redhat.com')
+insert into Member (userid, screenname, firstname, lastname, email) values (4, 'mona', 'mona', 'lisa', 'monalisa@louvre.fr')
 
 insert into UserRole (roleid, name, conditional) values (1, 'user', false);
 insert into UserRole (roleid, name, conditional) values (2, 'admin', false);

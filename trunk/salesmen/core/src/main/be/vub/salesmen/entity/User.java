@@ -18,14 +18,15 @@ import org.hibernate.validator.Pattern;
 
 @Entity
 @Name("user")
-@Table(name="Member", uniqueConstraints = @UniqueConstraint(columnNames = "username"))
+@Table(name="Member", uniqueConstraints = @UniqueConstraint(columnNames = "screenname"))
 public class User implements Serializable
 {
-	private static final long serialVersionUID = -5679551708265150079L;
+	private static final long serialVersionUID = 8131778475502231881L;
+
 	private Integer version;
 	
 	private Long userId;
-	private String username;
+	private String screenName;
 	private String firstName;
 	private String lastName;
 	private String email;
@@ -43,14 +44,14 @@ public class User implements Serializable
     @Length(min=3, max=32)
     @Pattern(regex="[a-zA-Z]?[a-zA-Z0-9_]+",
     		message="Usernames must start with a letter, and only contain letters, numbers, and undescores")
-	public String getUsername() 
+	public String getScreenName() 
 	{
-		return username;
+		return screenName;
 	}
 
-	public void setUsername(String username) 
+	public void setScreenName(String screenName) 
     {
-		this.username = username;
+		this.screenName = screenName;
 	}
 
 	@NotNull

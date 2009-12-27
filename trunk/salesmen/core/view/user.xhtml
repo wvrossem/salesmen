@@ -16,9 +16,9 @@
             <f:facet name="header">user</f:facet>
 
             <s:decorate id="nameField" template="layout/edit.xhtml">
-                <ui:define name="label">Name</ui:define>
-                <h:inputText id="name" required="true"
-                             value="#{userHome.instance.username}"/>
+                <ui:define name="label">Screen Name</ui:define>
+		<h:inputText id="name" required="true"
+			     value="#{userHome.instance.screenName}"/>
             </s:decorate>
 
             <div style="clear:both"/>
