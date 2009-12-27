@@ -9,6 +9,6 @@ public interface RegisterUserAccount
 {
 	public void createUser();
 	public void verifyPassword();
-	public void userAccountCreated(UserAccount userAccount);
+	public void userAccountCreated(UserAccount account);
 	public void createUserAccount();
 }

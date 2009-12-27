@@ -36,14 +36,11 @@ public class RegisterUserAccountBean implements RegisterUserAccount, Serializabl
 	private String passwordConfirmation;
 	private boolean passwordVerified;
 	
-	@In
-	EntityManager entityManager;
+	@In EntityManager entityManager;
 
-	@In
-	Identity identity;
+	@In Identity identity;
 	
-	@In
-	IdentityManager identityManager;
+	@In IdentityManager identityManager;
 	
 	@Begin
 	public void createUser()
@@ -56,13 +53,22 @@ public class RegisterUserAccountBean implements RegisterUserAccount, Serializabl
 		passwordVerified = (passwordConfirmation != null && passwordConfirmation.equals(password));
 		if (!passwordVerified)
 		{
-			FacesMessages.instance().addToControl("confirmPassword", "Passwords don not match");
+			FacesMessages.instance().addToControl("passwordConfirmation", "Passwords don not match");
 		}
 	}
 	
 	@Observer(JpaIdentityStore.EVENT_USER_CREATED)
 	public void userAccountCreated(UserAccount account)
 	{
+		if (user == null)
+		{
+			user = new User();
+			user.setUsername(account.getUsername());
+			user.setFirstName("John");
+			user.setLastName("Smith");
+			user.setEmail(account.getUsername() + "@nowhere.com");
+			entityManager.persist(user);
+		}
 		account.setUser(user);
 		this.newAccount = account;
 	}
