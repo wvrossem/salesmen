@@ -58,4 +58,7 @@
    </bpm:jbpm>
    -->
 
+  <security:jpa-identity-store 
+    user-class="be.vub.salesmen.entity.UserAccount"
+    role-class="be.vub.salesmen.entity.UserRole"/>
 </components>
