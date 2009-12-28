@@ -38,8 +38,12 @@
    </drools:rule-base>
 
    <security:rule-based-permission-resolver security-rules="#{securityRules}"/>
-
-   <security:identity authenticate-method="#{authenticator.authenticate}" remember-me="true"/>
+   
+   <!--
+       Salesmen uses the built-in IdentityManager in Seam so the following 
+       is not needed.
+       <security:identity authenticate-method="#{authenticator.authenticate}" remember-me="true"/>
+   -->
 
    <event type="org.jboss.seam.security.notLoggedIn">
       <action execute="#{redirect.captureCurrentView}"/>

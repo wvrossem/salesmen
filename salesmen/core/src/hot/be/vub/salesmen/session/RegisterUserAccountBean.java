@@ -92,7 +92,7 @@ public class RegisterUserAccountBean implements RegisterUserAccount, Serializabl
 		// Automatically, sign the user in
 		identity.getCredentials().setUsername(username);
 		identity.getCredentials().setPassword(password);
-		identity.logout();
+		identity.login();
 	}
 	
 	public User getUser()
