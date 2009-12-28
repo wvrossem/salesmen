@@ -1,0 +1,87 @@
+<?xml version='1.0'?>
+<timesheet xmlns="http://purl.org/net/timetrack">
+  <item duration="PT2H20M">
+    <desc>
+      Released SCMP v0.2 and SDD v0.2. Re-published SQAP v0.2, 
+      STD v0.2, SPMP v0.3, and SRS v0.3.
+    </desc>
+    <refs>
+      <ref>http://code.google.com/p/salesmen/source/detail?r=734</ref>
+      <ref>http://code.google.com/p/salesmen/source/detail?r=735</ref>
+      <ref>http://code.google.com/p/salesmen/source/detail?r=736</ref>
+      <ref>http://code.google.com/p/salesmen/source/detail?r=737</ref>
+      <ref>http://code.google.com/p/salesmen/source/detail?r=738</ref>
+      <ref>http://code.google.com/p/salesmen/source/detail?r=739</ref>
+      <ref>http://code.google.com/p/salesmen/source/detail?r=740</ref>
+      <ref>http://code.google.com/p/salesmen/source/detail?r=741</ref>
+      <ref>http://code.google.com/p/salesmen/source/detail?r=742</ref>
+      <ref>http://code.google.com/p/salesmen/source/detail?r=743</ref>
+      <ref>http://code.google.com/p/salesmen/source/detail?r=744</ref>
+      <ref>http://groups.google.com/group/salesmen/browse_thread/thread/35c1a3400d3ba1fa</ref>
+    </refs>
+  </item>
+  <item duration="PT4H10M">
+    <desc>
+      Wrote Ant targets for hot and remote deployment of Salesmen using
+      rsync through an SSH tunnel.
+    </desc>
+    <refs>
+      <ref>http://code.google.com/p/salesmen/source/detail?r=732</ref>
+    </refs>
+  </item>
+  <item duration="PT20M">
+    <desc>
+      Helped improved the issue tracking experience.
+    </desc>
+    <refs>
+      <ref>http://code.google.com/p/salesmen/source/detail?r=729</ref>
+      <ref>http://groups.google.com/group/salesmen/browse_thread/thread/5e0ea9d1256220cb</ref>
+    </refs>
+  </item>
+  <item duration="PT3H">
+    <desc>
+      Adapted Salesmen configuration to use PostgreSQL as the development
+      database.
+    </desc>
+    <refs>
+      <ref>http://code.google.com/p/salesmen/issues/detail?id=14</ref>
+      <ref>http://code.google.com/p/salesmen/source/detail?r=726</ref>
+    </refs>
+  </item>
+  <item duration="PT6H">
+    <desc>
+      Worked on the user registration process.
+    </desc>
+    <refs>
+      <ref>http://code.google.com/p/salesmen/issues/detail?id=7</ref>
+      <ref>http://code.google.com/p/salesmen/source/detail?r=753</ref>
+      <ref>http://code.google.com/p/salesmen/source/detail?r=754</ref>
+      <ref>http://code.google.com/p/salesmen/source/detail?r=755</ref>
+      <ref>http://code.google.com/p/salesmen/source/detail?r=756</ref>
+      <ref>http://code.google.com/p/salesmen/source/detail?r=757</ref>
+      <ref>http://code.google.com/p/salesmen/source/detail?r=759</ref>
+      <ref>http://code.google.com/p/salesmen/source/detail?r=769</ref>
+      <ref>http://groups.google.com/group/salesmen/browse_thread/thread/b4218e73c311ec39</ref>
+    </refs>
+  </item>
+  <item duration="PT3H">
+    <desc>
+      Worked on setting up a development workspace on Wilma.
+    </desc>
+    <refs>
+      <ref>http://code.google.com/p/salesmen/issues/detail?id=21</ref>
+      <ref>http://groups.google.com/group/salesmen/browse_thread/thread/e4c8d3557995dcae</ref>
+    </refs>
+  </item>
+  <item duration="PT15M">
+    <desc>
+      Published minutes of the 2009-12-18 meeting.
+    </desc>
+    <refs>
+      <ref>http://code.google.com/p/salesmen/source/detail?r=733</ref>
+    </refs>
+  </item>
+  <item duration="PT30M">
+    <desc>Administration and Communication</desc>
+  </item>
+</timesheet>
