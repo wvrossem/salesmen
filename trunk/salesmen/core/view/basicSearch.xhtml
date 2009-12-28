@@ -1,0 +1,79 @@
+<!DOCTYPE composition PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:s="http://jboss.com/products/seam/taglib"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:rich="http://richfaces.org/rich"
+	xmlns:a="http://richfaces.org/a4j" template="layout/template.xhtml">
+
+	<ui:define name="body">
+
+		<rich:panel>
+			<f:facet name="header">basicSearch</f:facet>
+
+			<div class="section">
+				<span class="errors"> 
+					<h:messages id="messages" globalOnly="true" /> 
+				</span>
+
+				<h1>Search Entities</h1>
+
+				<h:form id="searchCriteria">
+					<fieldset>
+					<h:inputText id="searchString"
+						value="#{basicearch.searchString}" style="width: 165px;">
+						<a:support id="onkeyup" event="onkeyup"
+							actionListener="#{basicSearch.find}" reRender="searchResults" />
+					</h:inputText>
+					&#160; 
+					<h:selectOneMenu id="entityType" value="#{basicSearch.entityType}>
+						<f:selectItem id="Auction" itemLabel="Auction" itemValue="Auction" />
+						<f:selectItem id="User" itemLabel="User" itemValue="User" />
+						<f:selectItem id="Tag" itemLabel="Tag" itemValue="Tag" />
+					</h:selectOneMenu>
+					&#160; 
+					<a:commandButton id="findEntities" value="Find"
+						action="#{basicSearch.find}" reRender="searchResults" /> 
+					&#160; 
+					<a:status id="status">
+						<f:facet id="StartStatus" name="start">
+							<h:graphicImage id="SpinnerGif" value="/img/spinner.gif" />
+						</f:facet>
+					</a:status> 
+					<br />
+					<h:outputLabel id="MaximumResultsLabel" for="pageSize">Maximum results:</h:outputLabel>
+					&#160;
+					<h:selectOneMenu id="pageSize" value="#{basicSearch.pageSize}">
+						<f:selectItem id="PageSize10" itemLabel="10" itemValue="10" />
+						<f:selectItem id="PageSize20" itemLabel="20" itemValue="20" />
+						<f:selectItem id="PageSize50" itemLabel="50" itemValue="50" />
+					</h:selectOneMenu>
+					</fieldset>
+				</h:form>
+			</div>
+
+			<a:outputPanel id="searchResults">
+				<div class="section">
+					<h:outputText id="NoEntitiesFoundMessage"
+						value="No Entities Found"
+						rendered="#{entities != null and entities.rowCount==0}" /> 
+					<h:dataTable id="entities" value="#{entities}" var="ent"
+						rendered="#{entities.rowCount>0}">
+						<h:column id="column1">
+							<f:facet id="NameFacet" name="header">Name</f:facet>
+							#{ent.name}
+						</h:column>
+					</h:dataTable> 
+					<s:link id="MoreResultsLink" value="More results"
+						action="#{basicearch.nextPage}"
+						rendered="#{basicSearch.nextPageAvailable}" />
+				</div>
+			</a:outputPanel>
+
+		</rich:panel>
+
+	</ui:define>
+
+</ui:composition>
