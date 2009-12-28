@@ -1,0 +1,47 @@
+<?xml version='1.0'?>
+<timesheet xmlns="http://purl.org/net/timetrack">
+
+  <item duration="PT1H">
+    <desc>Set up Java, Ant, Jboss, Seam and Eclipse in Linux enviroment</desc>
+  </item>
+
+  <item duration="PT30M">
+    <desc>Read "Registration example"</desc>
+    <refs>
+      <ref>http://docs.jboss.org/seam/2.2.0.GA/reference/en-US/html/tutorial.html#registration-example</ref>
+    </refs>
+  </item>
+
+  <item duration="PT30M">
+    <desc>Read "Booking example"</desc>
+    <refs>
+      <ref>http://docs.jboss.org/seam/2.2.0.GA/reference/en-US/html/tutorial.html#booking</ref>
+    </refs>
+  </item>
+  
+  <item duration="PT20M">
+    <desc>Read about EJB Query Language</desc>
+    <refs>
+      <ref>http://java.sun.com/j2ee/tutorial/1_3-fcs/doc/EJBQL.html</ref>>
+    </refs>
+  </item>
+  
+  <item duration="PT30M">
+    <desc>Read about Expression Language</desc>
+    <refs>
+      <ref>http://java.sun.com/j2ee/1.4/docs/tutorial/doc/JSPIntro7.html</ref>
+    </refs>
+  </item>
+  
+  <item duration="PT1H">
+    <desc>First version of basic search bean</desc>
+    <refs>
+      <ref>http://code.google.com/p/salesmen/source/detail?r=773</ref>
+    </refs>
+  </item>
+  
+  <item duration="PT10M">
+    <desc>Administration and Communication</desc>
+  </item>
+  
+</timesheet>
