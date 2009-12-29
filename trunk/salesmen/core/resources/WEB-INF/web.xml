@@ -95,16 +95,6 @@
       <auth-constraint/>
    </security-constraint>
 
-   <!-- uncomment <ejb-local-ref> entries when deploying to GlassFish and (optionally) JBoss AS 5 -->
-   <!--
-   <ejb-local-ref>
-      <ejb-ref-name>salesmen/AuthenticatorBean/local</ejb-ref-name>
-      <ejb-ref-type>Session</ejb-ref-type>
-      <local-home/>
-      <local>be.vub.salesmen.session.Authenticator</local>
-   </ejb-local-ref>
-   -->
-
    <!-- Add entries for each EJB session bean which is also a Seam component (not required on JBoss AS) -->
 
    <persistence-unit-ref>

@@ -52,7 +52,7 @@ TODO:
     <param name="remote.copy.source" 
 	   value="resources/${project.name}-${profile}-ds.xml"/>
     <param name="remote.copy.destination"
-	   value="${remote.deploy.dir}"/>
+	   value="${remote.deploy.dir}/${project.name}-ds.xml"/>
   </antcall>
 </target>
 
