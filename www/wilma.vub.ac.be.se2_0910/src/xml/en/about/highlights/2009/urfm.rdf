@@ -28,6 +28,12 @@
 
     <releases rdf:parseType="Collection">
 
+<Release rdf:about="http://wilma.vub.ac.be/~se2_0910/about/highlights/2009/12/">
+  <package rdf:resource="http://wilma.vub.ac.be/~se2_0910/about/highlights/"/>
+  <revision>200912</revision>
+  <created>2009-12-31</created>
+</Release>
+
 <Release rdf:about="http://wilma.vub.ac.be/~se2_0910/about/highlights/2009/11/">
   <package rdf:resource="http://wilma.vub.ac.be/~se2_0910/about/highlights/"/>
   <revision>200911</revision>
@@ -53,6 +59,50 @@
   <link>http://wilma.vub.ac.be/~se2_0910/about/highlights/2009/11/highlights-200911.pdf</link>
   <format>application/pdf</format>
 </File>
+
+<File rdf:about="http://wilma.vub.ac.be/~se2_0910/about/highlights/2009/11/highlights-200911.tex">
+  <release rdf:resource="http://wilma.vub.ac.be/~se2_0910/about/highlights/2009/11/"/>
+  <basename>highlights-200911</basename>
+  <extension>.tex</extension>
+  <language>en</language>
+  <size rdf:parseType="Resource">
+    <unit rdf:resource="http://purl.org/urfm/Kilobyte"/>
+    <rdf:value>3</rdf:value>
+  </size> 
+  <link>http://wilma.vub.ac.be/~se2_0910/about/highlights/2009/11/highlights-200911.pdf</link>
+  <format>application/x-latex</format>
+</File>
+
+<!-- *********************************************************************
+     200912
+     ********************************************************************* -->
+     
+     <File rdf:about="http://wilma.vub.ac.be/~se2_0910/about/highlights/2009/12/highlights-200912.pdf">
+  <release rdf:resource="http://wilma.vub.ac.be/~se2_0910/about/highlights/2009/12/"/>
+  <basename>highlights-200912</basename>
+  <extension>.pdf</extension>
+  <language>en</language>
+  <size rdf:parseType="Resource">
+    <unit rdf:resource="http://purl.org/urfm/Kilobyte"/>
+    <rdf:value>53</rdf:value>
+  </size> 
+  <link>http://wilma.vub.ac.be/~se2_0910/about/highlights/2009/12/highlights-200912.pdf</link>
+  <format>application/pdf</format>
+</File>
+
+<File rdf:about="http://wilma.vub.ac.be/~se2_0910/about/highlights/2009/12/highlights-200912.tex">
+  <release rdf:resource="http://wilma.vub.ac.be/~se2_0910/about/highlights/2009/12/"/>
+  <basename>highlights-200912</basename>
+  <extension>.tex</extension>
+  <language>en</language>
+  <size rdf:parseType="Resource">
+    <unit rdf:resource="http://purl.org/urfm/Kilobyte"/>
+    <rdf:value>2.5</rdf:value>
+  </size> 
+  <link>http://wilma.vub.ac.be/~se2_0910/about/highlights/2009/12/highlights-200912.pdf</link>
+  <format>application/x-latex</format>
+</File>
+
     </files>
   </Channel>
 </rdf:RDF>
