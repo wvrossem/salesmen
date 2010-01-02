@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<timesheets xmlns="http://purl.org/net/timetrack" xmlns:xi="http://www.w3.org/2001/XInclude" from="2009-12-21" to="2009-12-27" xml:id="week52-2009">
+<timesheets xmlns="http://purl.org/net/timetrack" xmlns:xi="http://www.w3.org/2001/XInclude" from="2009-12-21" to="2009-12-28" xml:id="week52-2009">
   <title>VUB - SE2 Timesheets for the 52st Week of 2009</title>
   <published>2009-12-28</published>
   <updated>2009-12-28</updated>
@@ -7,93 +7,40 @@
     <name>Nick De Cooman</name>
     <timesheet xmlns="http://purl.org/net/timetrack">
 
-  <item duration="PT10M">
+  <item duration="PT15M">
    <desc>Updating statistics of timesheets</desc>
+	<refs>	<ref>http://groups.google.com/group/salesmen/msg/af2bcd6687c37e35?hl=en</ref>
+	</refs>
   </item>
 	
-  <item duration="PT20M">
-   <desc>Compare SPMP of other teams</desc>
-  </item>
-
-  <item duration="PT20M">
-   <desc>Analyze timesheets of other groups</desc>
-  </item>
-
-  <item duration="PT1H30M">
-    <desc>Prepare conference 1 on Tuesday 2009/12/15.</desc>
-    <refs>
-     <ref>http://wilma.vub.ac.be/~se2_0910/dev/events/2009/vub-se/index.html</ref>
-    </refs>
-  </item>
-
-<item duration="PT3H">
-<desc>Conference on Tuesday 2009/12/15.</desc>
-<refs>
-<ref>http://wilma.vub.ac.be/~se2_0910/dev/events/2009/vub-se/index.html</ref>
-</refs>
-</item>
-
-  <item duration="PT15M">
-   <desc>Uploading all conference related documents</desc>
-	<refs>
-		<ref>http://code.google.com/p/salesmen/source/detail?r=658</ref>
-		<ref>http://code.google.com/p/salesmen/source/detail?r=659</ref>
-		<ref>http://code.google.com/p/salesmen/source/detail?r=660</ref>
-		<ref>http://code.google.com/p/salesmen/source/detail?r=661</ref>
-		<ref>http://code.google.com/p/salesmen/source/detail?r=664</ref>
+  <item duration="PT2H">
+   <desc>Read chapter 15 of the JBOSS Seam guide</desc>
+	<refs>	<ref>http://docs.jboss.org/seam/2.2.0.GA/reference/en-US/html/security.html</ref>
 	</refs>
   </item>
 
   <item duration="PT1H30M">
-   <desc>Learn how to work with Eclipse, JBoss and Seam</desc>
-   <refs>
- 	<ref>http://www.infoq.com/articles/jboss-seam</ref>
-	<ref>http://docs.jboss.org/seam/2.2.0.GA/reference/en-US/html/</ref>
-   </refs>
+   <desc>First steps in implementing RegisterUserAccount bean</desc>
+	<refs>
+		<ref>http://code.google.com/p/salesmen/source/detail?r=749</ref>
+		<ref>http://code.google.com/p/salesmen/source/detail?r=750</ref>
+		<ref>http://code.google.com/p/salesmen/source/detail?r=752</ref>
+	</refs>
   </item>
 
-  <item duration="PT20M">
-   <desc>Prepare meeting on Friday 2009/12/18</desc>
-   <refs>
- 	<ref>http://code.google.com/p/salesmen/source/detail?r=657</ref>
-   </refs>
-  </item>
-
-  <item duration="PT1H">
-   <desc>Meeting on Friday 2009/11/27</desc>
- 	<refs>
-	<ref>http://wilma.vub.ac.be/~se2_0910/docs/minutes/2009/12/18/minutes-20091218.pdf</ref>
-    </refs>
+  <item duration="PT1H30M">
+   <desc>Studying security features of Seamspace example</desc>
+	<refs>			<ref>http://shane.bryzak.com/blog/articles/seam_security_gets_an_upgrade</ref>
+	<ref>http://groups.google.com/group/salesmen/msg/af2bcd6687c37e35?hl=en</ref>
+	</refs>
   </item>
 
   <item duration="PT30M">
-   <desc>Try to install PostgreSQL on Wilma</desc>
-  </item>
-
-  <item duration="PT45M">
-   <desc>Adding references to conference related items on previous timesheets</desc>
- 	<refs>
- 		<ref>http://code.google.com/p/salesmen/source/detail?r=687</ref>
-<ref>http://code.google.com/p/salesmen/source/detail?r=689</ref>
-<ref>http://code.google.com/p/salesmen/source/detail?r=688</ref>
-    </refs>
-  </item>
-
-  <item duration="PT1H">
-   <desc>Studying seam registration example</desc>
-   <refs>	
-	<ref>http://docs.jboss.com/seam/latest/reference/en-US/html/tutorial.html#registration-example</ref>
-   </refs>
-  </item>
-
-  <item duration="PT30M">
-    <desc>Check and upload timesheets</desc>
+   <desc>Check and publish timesheets</desc>
    <refs>
-	<ref>http://code.google.com/p/salesmen/source/detail?r=705</ref>
-	<ref>http://code.google.com/p/salesmen/source/detail?r=706</ref>
-	<ref>http://code.google.com/p/salesmen/source/detail?r=707</ref>
-	<ref>http://code.google.com/p/salesmen/source/detail?r=708</ref>
-    </refs>
+ 	<ref>http://code.google.com/p/salesmen/source/detail?r=760</ref>
+	<ref>http://code.google.com/p/salesmen/source/detail?r=761</ref>
+   </refs>
   </item>
   
   <item duration="PT30M">
@@ -105,230 +52,95 @@
   <person>
     <name>Jonathan Jeurissen</name>
     <timesheet xmlns="http://purl.org/net/timetrack">
-
-
-<item duration="PT35M">
-    
-<desc>Rehearsed pitch for conference presentation</desc>
-    
-<refs>
-      
-<ref/>
-
-</refs>
   
-</item>
-
-
-
-<item duration="PT3H">
-    
-<desc>Conference on Tuesday 2009/12/15.</desc>
-    
-<refs>
-      
-<ref>http://wilma.vub.ac.be/~se2_0910/dev/events/2009/vub-se/index.html</ref>
-    
-</refs>
-
-</item>
-
-
-<item duration="PT1H">
-    
-<desc>Meeting on Friday 2009/12/18.</desc>
-    
-<refs>
-      
-<ref>http://wilma.vub.ac.be/~se2_0910/docs/minutes/2009/12/18/minutes-20091218.pdf</ref>
-    
-</refs>
-
-</item>
-
- 
-<item duration="PT05M">
-     
-<desc>Reviewing Minutes of Tuesday 2009/12/11.</desc>
-     
-<refs>
-       
-<ref>http://code.google.com/p/salesmen/source/detail?r=690</ref>
-     
-</refs>
-   
-</item>
-
-
-<item duration="PT1H30M">
-    
-<desc>Writing Minutes of Tuesday 2009/12/18.</desc>
-    
-<refs>
-      
-<ref>http://code.google.com/p/salesmen/source/detail?r=691</ref>
-    
-</refs>
+  <item duration="PT10M">
+    <desc>Administration and Communication</desc>
+  </item>
   
-</item>
-
-  
-
-<item duration="PT15M">
-    
-<desc>Correcting Minutes of Tuesday 2009/12/18.</desc>
-    
-<refs>
-      
-<ref>http://code.google.com/p/salesmen/source/detail?r=692</ref>
-<ref>http://code.google.com/p/salesmen/source/detail?r=695</ref>
-<ref>http://code.google.com/p/salesmen/source/detail?r=720</ref>
-
-</refs>
-  
-</item>
-
-
-
-  
-
-<item duration="PT30M">
-    
-<desc>Administration and Communication</desc>
-    
-<refs>
-      
-<ref/>
-    
-</refs>
-  
-</item>
-
-
 </timesheet>
   </person>
   <person>
     <name>Sina Khakbaz Heshmati</name>
     <timesheet xmlns="http://purl.org/net/timetrack">
-  <item duration="PT2H">
+  <item duration="PT2H20M">
     <desc>
-      Published STD v0.2, SQAP v0.2, and SRS v0.3
+      Released SCMP v0.2 and SDD v0.2. Re-published SQAP v0.2, 
+      STD v0.2, SPMP v0.3, and SRS v0.3.
     </desc>
     <refs>
-      <ref>http://code.google.com/p/salesmen/source/detail?r=656</ref>
-      <ref>http://code.google.com/p/salesmen/source/detail?r=665</ref>
-      <ref>http://code.google.com/p/salesmen/source/detail?r=667</ref>
-      <ref>http://code.google.com/p/salesmen/source/detail?r=668</ref>
-      <ref>http://code.google.com/p/salesmen/source/detail?r=669</ref>
-      <ref>http://code.google.com/p/salesmen/source/detail?r=670</ref>
-      <ref>http://code.google.com/p/salesmen/source/detail?r=671</ref>
-      <ref>http://code.google.com/p/salesmen/source/detail?r=672</ref>
-      <ref>http://code.google.com/p/salesmen/source/detail?r=673</ref>
-      <ref>http://code.google.com/p/salesmen/source/detail?r=674</ref>
+      <ref>http://code.google.com/p/salesmen/source/detail?r=734</ref>
+      <ref>http://code.google.com/p/salesmen/source/detail?r=735</ref>
+      <ref>http://code.google.com/p/salesmen/source/detail?r=736</ref>
+      <ref>http://code.google.com/p/salesmen/source/detail?r=737</ref>
+      <ref>http://code.google.com/p/salesmen/source/detail?r=738</ref>
+      <ref>http://code.google.com/p/salesmen/source/detail?r=739</ref>
+      <ref>http://code.google.com/p/salesmen/source/detail?r=740</ref>
+      <ref>http://code.google.com/p/salesmen/source/detail?r=741</ref>
+      <ref>http://code.google.com/p/salesmen/source/detail?r=742</ref>
+      <ref>http://code.google.com/p/salesmen/source/detail?r=743</ref>
+      <ref>http://code.google.com/p/salesmen/source/detail?r=744</ref>
+      <ref>http://groups.google.com/group/salesmen/browse_thread/thread/35c1a3400d3ba1fa</ref>
     </refs>
   </item>
-  <item duration="PT45M">
+  <item duration="PT4H10M">
     <desc>
-      Publish the developers' timesheets for the 50th week of 2009.
+      Wrote Ant targets for hot and remote deployment of Salesmen using
+      rsync through an SSH tunnel.
     </desc>
     <refs>
-      <ref>http://code.google.com/p/salesmen/source/detail?r=622</ref>
-      <ref>http://code.google.com/p/salesmen/source/detail?r=623</ref>
-      <ref>http://code.google.com/p/salesmen/source/detail?r=624</ref>
-      <ref>http://code.google.com/p/salesmen/source/detail?r=642</ref>
-      <ref>http://code.google.com/p/salesmen/source/detail?r=643</ref>
-      <ref>http://code.google.com/p/salesmen/source/detail?r=644</ref>
-      <ref>http://code.google.com/p/salesmen/source/detail?r=648</ref>
+      <ref>http://code.google.com/p/salesmen/source/detail?r=732</ref>
     </refs>
   </item>
   <item duration="PT20M">
     <desc>
-      Released and published SPMP v0.3.
+      Helped improved the issue tracking experience.
     </desc>
     <refs>
-      <ref>http://code.google.com/p/salesmen/source/detail?r=618</ref>
-      <ref>http://code.google.com/p/salesmen/source/detail?r=619</ref>
-      <ref>http://code.google.com/p/salesmen/source/detail?r=620</ref>
-      <ref>http://code.google.com/p/salesmen/source/detail?r=621</ref>
-    </refs>
-  </item>
-  <item duration="PT40M">
-    <desc>
-      Wrote a guide for developers to use Emacs and the nXML-mode for editing
-      XML files.
-    </desc>
-    <refs>
-      <ref>http://code.google.com/p/salesmen/source/detail?r=639</ref>
-      <ref>http://code.google.com/p/salesmen/source/detail?r=641</ref>
-    </refs>
-  </item>
-  <item duration="PT15M">
-    <desc>
-      Published the minutes of the 2009-12-11 meeting.
-    </desc>
-    <refs>
-      <ref>http://code.google.com/p/salesmen/source/detail?r=651</ref>
+      <ref>http://code.google.com/p/salesmen/source/detail?r=729</ref>
+      <ref>http://groups.google.com/group/salesmen/browse_thread/thread/5e0ea9d1256220cb</ref>
     </refs>
   </item>
   <item duration="PT3H">
     <desc>
-      Research on Seam security and i18n.
+      Adapted Salesmen configuration to use PostgreSQL as the development
+      database.
     </desc>
     <refs>
-      <ref>http://docs.jboss.org/seam/2.2.0.GA/reference/en-US/html/</ref>
+      <ref>http://code.google.com/p/salesmen/issues/detail?id=14</ref>
+      <ref>http://code.google.com/p/salesmen/source/detail?r=726</ref>
     </refs>
   </item>
-  <item duration="PT2H">
+  <item duration="PT6H">
     <desc>
-      Published the 2009-12-15 VUB SE conference coverage.
+      Worked on the user registration process.
     </desc>
     <refs>
-      <ref>http://code.google.com/p/salesmen/source/detail?r=677</ref>
-      <ref>http://code.google.com/p/salesmen/source/detail?r=678</ref>
-      <ref>http://code.google.com/p/salesmen/source/detail?r=679</ref>
-    </refs>
-  </item>
-  <item duration="PT5H">
-    <desc>
-      Added the User, UserAccount, and UserRole entity beans. Spent two hours
-      debugging a runtime bug caused by table joins and another one caused by
-      an inappropriate whitespace in one of the JSF templates.
-    </desc>
-    <refs>
-      <ref>http://code.google.com/p/salesmen/source/detail?r=685</ref>
-    </refs>
-  </item>
-  <item duration="PT1H30M">
-    <desc>
-      Distributed implementation tasks.
-    </desc>
-    <refs>
-      <ref>http://code.google.com/p/salesmen/source/detail?r=686</ref>
-      <ref>http://groups.google.com/group/salesmen/browse_thread/thread/4f538a032616dde5</ref>
       <ref>http://code.google.com/p/salesmen/issues/detail?id=7</ref>
-      <ref>http://code.google.com/p/salesmen/issues/detail?id=9</ref>
-      <ref>http://code.google.com/p/salesmen/issues/detail?id=10</ref>
-      <ref>http://code.google.com/p/salesmen/issues/detail?id=11</ref>
-      <ref>http://code.google.com/p/salesmen/issues/detail?id=12</ref>
+      <ref>http://code.google.com/p/salesmen/source/detail?r=753</ref>
+      <ref>http://code.google.com/p/salesmen/source/detail?r=754</ref>
+      <ref>http://code.google.com/p/salesmen/source/detail?r=755</ref>
+      <ref>http://code.google.com/p/salesmen/source/detail?r=756</ref>
+      <ref>http://code.google.com/p/salesmen/source/detail?r=757</ref>
+      <ref>http://code.google.com/p/salesmen/source/detail?r=759</ref>
+      <ref>http://code.google.com/p/salesmen/source/detail?r=769</ref>
+      <ref>http://groups.google.com/group/salesmen/browse_thread/thread/b4218e73c311ec39</ref>
     </refs>
   </item>
-  <item duration="PT30M">
+  <item duration="PT3H">
     <desc>
-      Wrote a Fake FAQ to explain a few concepts regarding the issue tracking
-      system to Salesmen developers.
+      Worked on setting up a development workspace on Wilma.
     </desc>
     <refs>
-      <ref>http://code.google.com/p/salesmen/source/detail?r=696</ref>
-      <ref>http://code.google.com/p/salesmen/source/detail?r=702</ref>
+      <ref>http://code.google.com/p/salesmen/issues/detail?id=21</ref>
+      <ref>http://groups.google.com/group/salesmen/browse_thread/thread/e4c8d3557995dcae</ref>
     </refs>
   </item>
-  <item duration="PT30M">
+  <item duration="PT15M">
     <desc>
-      Improved documentation for developers on the Wiki.
+      Published minutes of the 2009-12-18 meeting.
     </desc>
     <refs>
-      <ref>http://code.google.com/p/salesmen/source/detail?r=699</ref>
-      <ref>http://code.google.com/p/salesmen/source/detail?r=700</ref>
+      <ref>http://code.google.com/p/salesmen/source/detail?r=733</ref>
     </refs>
   </item>
   <item duration="PT30M">
@@ -341,21 +153,14 @@
     <timesheet xmlns="http://purl.org/net/timetrack">
 
   <item duration="PT1H30M">
-	<desc>Rehearsed dialog for conference presentation.</desc>
+	<desc>Read guide on JBoss Seam.</desc>
 	<refs>
-	<ref/>
+	<ref>http://docs.jboss.org/seam/2.2.0.GA/reference/en-US/html/</ref>
 	</refs>
   </item>
   
-  <item duration="PT15M">
-	<desc>Added Silkpage to section Tools in SCMP.</desc>
-	<refs>
-	<ref>http://code.google.com/p/salesmen/source/detail?r=675</ref>
-	</refs>
-  </item>
-
-  <item duration="PT3H">
-	<desc>Conference on Tuesday 2009/12/15.</desc>
+  <item duration="PT2H">
+	<desc>Examined Seam examples, programmed some try-outs.</desc>
 	<refs>
 	<ref/>
 	</refs>
@@ -371,113 +176,47 @@
     <name>Bart Maes</name>
     <timesheet xmlns="http://purl.org/net/timetrack">
 
-<item duration="PT2H">
-	<desc>Read chapter 15 of the JBOSS Seam guide.</desc>
-	<refs>	<ref>http://docs.jboss.org/seam/2.2.0.GA/reference/en-US/html/security.html</ref>
-	</refs>
-</item>
 
-<item duration="PT45M">
-	<desc>Integrate Seam in design, check-up with Sina</desc>
-	<refs>
-		<ref>http://groups.google.com/group/salesmen/browse_thread/thread/467d0f87d4ed0414?hl=en</ref>
-	</refs>
-</item>
+  <item duration="PT1H00M">
+   <desc>First steps in implementing PlaceAuction bean</desc>
+  </item>
 
-<item duration="PT2H">
-	<desc>Update SDD (v0.4)</desc>
-	<refs>
-		<ref>http://code.google.com/p/salesmen/source/detail?r=645</ref>
-	</refs>
-</item>
-
-<item duration="PT2H15M">
-<desc>Prepare conference (last bits).</desc>
-</item>
-
-<item duration="PT3H">
-<desc>Conference on Tuesday 2009/12/15.</desc>
-<refs>
-<ref>http://wilma.vub.ac.be/~se2_0910/dev/events/2009/vub-se/index.html</ref>
-</refs>
-</item>
-
-<item duration="PT1H">
-<desc>Meeting on Friday 2009/12/18.</desc>
-<refs>
-<ref>http://wilma.vub.ac.be/~se2_0910/docs/minutes/2009/12/18/minutes-20091218.pdf</ref>
-</refs>
-</item>
-
-<item duration="PT3H">
-<desc>Attempt to setup multiple instances of JBoss (1 for each dev), attempt to install PostgreSQL.</desc>
-</item>
-
-<item duration="PT2H">
-<desc>Read the Seam guide</desc>
-<refs>
-<ref>http://groups.google.com/group/salesmen/browse_thread/thread/b7ff2044567a1caa/aa02c507c5840e9b</ref>
-</refs>
-</item>
-
-<item duration="PT1H30M">
-<desc>Install JBoss/Seam/Eclipse on desktop computer</desc>
-<refs>
-<ref>http://code.google.com/p/salesmen/wiki/HowtoRunJBossSeamExamples</ref>
-<ref>http://code.google.com/p/salesmen/wiki/HowtoSetupEclipse</ref>
-</refs>
-</item>
-
-<item duration="PT30M">
-<desc>Administration and Communication</desc>
-</item>
-
+  <item duration="PT1H30M">
+   <desc>Further attempts to provide individual instances of the JBoss server (for each dev)</desc>
+  </item>
+  
+  <item duration="PT30M">
+    <desc>Administration and Communication</desc>
+  </item>
+  
 </timesheet>
   </person>
   <person>
     <name>Patrick Provinciael</name>
     <timesheet xmlns="http://purl.org/net/timetrack">
-
-  <item duration="PT90M">
-    <desc>Full QA of SDD, SCMP and SRS in function of conference 1.</desc>
+	
+  <item duration="PT10M">
+    <desc>QA of the minutes of meeting 13 on friday 18/12/09</desc>
     <refs>
-	  <ref>http://code.google.com/p/salesmen/source/detail?r=652</ref>
-      <ref>http://wilma.vub.ac.be/~se2_0910/docs/scmp/index.html</ref>
-      <ref>http://wilma.vub.ac.be/~se2_0910/docs/sdd/index.html</ref>
-      <ref>http://wilma.vub.ac.be/~se2_0910/docs/srs/index.html</ref>
+      <ref>http://code.google.com/p/salesmen/source/browse/minutes/2009/12/18/minutes-20091218.pdf</ref>
     </refs>
   </item>
 
-  <item duration="PT1H">
-    <desc>Repetition for conference 1 on Tuesday 2009/15/08.</desc>
-    <refs>
-      <ref>http://wilma.vub.ac.be/~se2_0910/dev/events/2009/vub-se/index.html</ref>
-    </refs>
-  </item>
-  
   <item duration="PT3H">
-    <desc>Conference 1 on Tuesday 2009/12/15.</desc>
+    <desc>Updated all documents to the new template</desc>
     <refs>
-      <ref>http://wilma.vub.ac.be/~se2_0910/dev/events/2009/vub-se/index.html</ref>
+      <ref>http://code.google.com/p/salesmen/source/detail?r=723</ref>
     </refs>
   </item>
-
-  <item duration="PT1H">
-    <desc>Meeting on Friday 2009/12/18</desc>
+  <item duration="PT3H">
+    <desc>Studied details to start implementing</desc>
     <refs>
- <ref>http://wilma.vub.ac.be/~se2_0910/docs/minutes/2009/12/18/minutes-20091218.pdf</ref>
-    </refs>
-  </item>
-
-
-  <item duration="PT1H">
-    <desc>Prepared for the Implementation fase. Including: Ensuring that environment is set-up. Read and prepared the task assigned to me.</desc>
-    <refs>
+      <ref>http://docs.jboss.com/seam/latest/reference/en-US/html/tutorial.html#registration-example</ref>
       <ref>http://code.google.com/p/salesmen/wiki/DevelopmentRoles</ref>
-      <ref>http://wilma.vub.ac.be/~se2_0910/docs/srs/index.html</ref>
+      <ref>http://code.google.com/p/salesmen/source/browse/trunk/docs/en/sdd/archive/v0_2/sdd-v0_2.pdf</ref>
+      <ref>http://code.google.com/p/salesmen/source/browse/trunk/docs/en/srs/archive/v0_3/srs-v0_3.pdf</ref>
     </refs>
   </item>
-  
   <item duration="PT30M">
     <desc>Administration and Communication.</desc>
   </item>
@@ -487,42 +226,47 @@
     <name>Wouter Van Rossem</name>
     <timesheet xmlns="http://purl.org/net/timetrack">
 
-	<item duration="PT1H30M">
-		<desc>Update SRS (v0.3)</desc>
-		<refs>
-			<ref>http://code.google.com/p/salesmen/source/detail?r=647</ref>
-		</refs>
-	</item>
-
   <item duration="PT1H">
-    <desc>Prepare conference 1 on Tuesday 2009/12/15.</desc>
-    <refs>
-      <ref>http://wilma.vub.ac.be/~se2_0910/dev/events/2009/vub-se/index.html</ref>
-    </refs>
+    <desc>Set up Java, Ant, Jboss, Seam and Eclipse in Linux enviroment</desc>
   </item>
-  
-  <item duration="PT3H">
-    <desc>Conference 1 on Tuesday 2009/12/15.</desc>
+
+  <item duration="PT30M">
+    <desc>Read "Registration example"</desc>
     <refs>
-      <ref>http://wilma.vub.ac.be/~se2_0910/dev/events/2009/vub-se/index.html</ref>
+      <ref>http://docs.jboss.org/seam/2.2.0.GA/reference/en-US/html/tutorial.html#registration-example</ref>
     </refs>
   </item>
 
-  <item duration="PT1H">
-    <desc>Meeting on Friday 2009/12/18</desc>
+  <item duration="PT30M">
+    <desc>Read "Booking example"</desc>
     <refs>
-      <ref>http://wilma.vub.ac.be/~se2_0910/docs/minutes/2009/12/18/minutes-20091218.pdf</ref></refs>
-  </item>
-  
-  <item duration="PT2H">
-    <desc>Read "Introduction to JBoss Seam"</desc>
-    <refs>
-      <ref>http://www.infoq.com/articles/jboss-seam</ref>
+      <ref>http://docs.jboss.org/seam/2.2.0.GA/reference/en-US/html/tutorial.html#booking</ref>
     </refs>
   </item>
   
   <item duration="PT20M">
-    <desc>Administration and Communication.</desc>
+    <desc>Read about EJB Query Language</desc>
+    <refs>
+      <ref>http://java.sun.com/j2ee/tutorial/1_3-fcs/doc/EJBQL.html</ref>
+    </refs>
+  </item>
+  
+  <item duration="PT30M">
+    <desc>Read about Expression Language</desc>
+    <refs>
+      <ref>http://java.sun.com/j2ee/1.4/docs/tutorial/doc/JSPIntro7.html</ref>
+    </refs>
+  </item>
+  
+  <item duration="PT1H">
+    <desc>First version of basic search bean</desc>
+    <refs>
+      <ref>http://code.google.com/p/salesmen/source/detail?r=773</ref>
+    </refs>
+  </item>
+  
+  <item duration="PT10M">
+    <desc>Administration and Communication</desc>
   </item>
   
 </timesheet>

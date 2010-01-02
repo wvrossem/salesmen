@@ -2,12 +2,12 @@
 <timesheets
     xmlns="http://purl.org/net/timetrack"
     xmlns:xi="http://www.w3.org/2001/XInclude"
-    from="2009-12-14"
-    to="2009-12-21"
-    xml:id="week51-2009">
-  <title>VUB - SE2 Timesheets for the 51st Week of 2009</title>
-  <published>2009-12-21</published>
-  <updated>2009-12-21</updated>
+    from="2009-12-21"
+    to="2009-12-28"
+    xml:id="week52-2009">
+  <title>VUB - SE2 Timesheets for the 52st Week of 2009</title>
+  <published>2009-12-28</published>
+  <updated>2009-12-28</updated>
   <person>
     <name>Nick De Cooman</name>
     <xi:include href="nick.xml">
