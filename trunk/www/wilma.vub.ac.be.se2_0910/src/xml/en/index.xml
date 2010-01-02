@@ -23,28 +23,67 @@
     distributed under an <emphasis>Open Source</emphasis> license.
     <olink targetdoc='about'>Learn more</olink>
   </para>
-  <html:div id="cse" style="width: 95%;">Loading</html:div>
-  <html:script 
-      src="http://www.google.com/jsapi" type="text/javascript"></html:script>
-  <html:script type="text/javascript">
-    google.load('search', '1');
-    google.setOnLoadCallback(function(){
-    var customSearchControl = new google.search.CustomSearchControl('009007427696665646697:qeccfw243ks');
-    customSearchControl.setResultSetSize(google.search.Search.FILTERED_CSE_RESULTSET);
-    customSearchControl.draw('cse');
-    }, true);
-  </html:script>
-  <html:link 
-      rel="stylesheet" 
-      href="http://www.google.com/cse/style/look/default.css" 
-      type="text/css" />
+<!--
+  <para>
+    <html:div id="cse" style="width: 95%;">Loading</html:div>
+    <html:script 
+	src="http://www.google.com/jsapi" type="text/javascript"></html:script>
+    <html:script type="text/javascript">
+      google.load('search', '1');
+      google.setOnLoadCallback(function(){
+      var customSearchControl = new google.search.CustomSearchControl('009007427696665646697:qeccfw243ks');
+      customSearchControl.setResultSetSize(google.search.Search.FILTERED_CSE_RESULTSET);
+      customSearchControl.draw('cse');
+      }, true);
+    </html:script>
+    <html:link 
+	rel="stylesheet" 
+	href="http://www.google.com/cse/style/look/default.css" 
+	type="text/css" />
+  </para>
+-->
+  <para role='twitter'>
+    <html:script src="http://widgets.twimg.com/j/2/widget.js"></html:script>
+    <html:script>
+new TWTR.Widget({
+  version: 2,
+  type: 'faves',
+  rpp: 5,
+  interval: 6000,
+  title: 'Salesmen Development Status Updates',
+  subject: '',
+  width: 570,
+  height: 110,
+  theme: {
+    shell: {
+      background: '#e0e0e0',
+      color: '#000000'
+    },
+    tweets: {
+      background: '#ffffff',
+      color: '#999999',
+      links: '#222b2b'
+    }
+  },
+  features: {
+    scrollbar: true,
+    loop: false,
+    live: true,
+    hashtags: true,
+    timestamp: true,
+    avatars: true,
+    behavior: 'all'
+  }
+}).render().setUser('salesmendev').start();
+    </html:script>
+  </para>
   <sidebar id='spotlight'>
     <title>Spotlight</title>
     <itemizedlist>
       <listitem><para><olink targetdoc='events-2009-vub-se'>1st Conference
       Coverage</olink></para></listitem>
       <listitem><para><olink targetdoc='highlights-2009'>Highlights in 
-      Nov. 2009</olink></para></listitem>
+      Dec. 2009</olink></para></listitem>
       <listitem><para><olink targetdoc='minutes-2009'>Minutes -
       Dec. 18 2009</olink></para></listitem>
       <listitem><para><olink targetdoc='scmp'>
@@ -60,7 +99,7 @@
       <listitem><para><olink targetdoc='std'>
       STD v0.2</olink></para></listitem>
       <listitem><para><olink targetdoc='timesheets-2009'>Timesheets - 
-      Week 10</olink></para></listitem>
+      Week 11</olink></para></listitem>
     </itemizedlist>
   </sidebar>
 </webpage>
