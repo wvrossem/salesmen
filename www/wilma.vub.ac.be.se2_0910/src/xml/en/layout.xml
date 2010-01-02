@@ -75,6 +75,10 @@
 	<tocentry page="docs/timesheets/2009/week49.xml" dir="week49" filename="timesheet-week49-2009.html"/>
 	<tocentry page="docs/timesheets/2009/week50.xml" dir="week50" filename="timesheet-week50-2009.html"/>
 	<tocentry page="docs/timesheets/2009/week51.xml" dir="week51" filename="timesheet-week51-2009.html"/>
+	<tocentry page="docs/timesheets/2009/week52.xml" dir="week52" filename="timesheet-week52-2009.html"/>
+      </tocentry>
+      <tocentry page="docs/timesheets/2010/index.xml" dir="2010" filename="index.html">
+	<tocentry page="docs/timesheets/2010/week01.xml" dir="week01" filename="timesheet-week01-2010.html"/>
       </tocentry>
     </tocentry>
   </tocentry>

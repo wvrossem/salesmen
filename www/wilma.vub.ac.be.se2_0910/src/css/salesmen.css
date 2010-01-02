@@ -167,6 +167,15 @@ form .invalid input { background-color: #ffcccc; }
 .urfm .description { display: none; }
 .timetrack .key { font-weight: bold; }
 
+.timesheet-week01-2010 h1,
+.timesheet-week52-2009 h1,
+.timesheet-week51-2009 h1,
+.timesheet-week50-2009 h1,
+.timesheet-week49-2009 h1,
+.timesheet-week48-2009 h1,
+.timesheet-week47-2009 h1,
+.timesheet-week46-2009 h1,
+.timesheet-week45-2009 h1,
 .timesheet-week44-2009 h1,
 .timesheet-week43-2009 h1,
 .timesheet-week42-2009 h1 { 
@@ -178,7 +187,9 @@ form .invalid input { background-color: #ffcccc; }
 
 .sitemap #maincontent .minutes ul .summary,
 .sitemap #maincontent .minutes ul .hbar { display: none; }
-.sitemap #maincontent .timesheets-2009 ul { display: none; }
+
+.sitemap #maincontent .timesheets-2009 ul,
+.sitemap #maincontent .timesheets-2010 ul { display: none; }
 
 .team table td.name { 
   font-weight: bold; 
