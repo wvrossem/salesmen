@@ -6,7 +6,7 @@
     xmlns:dc="http://purl.org/dc/elements/1.1/">
   
   <Channel rdf:about="http://wilma.vub.ac.be/~se2_0910/docs/timesheets/2009/urfm.rdf">
-    <title>SE2_0910 2009 Timesheets</title>
+    <title>VUB SE2_0910 - 2009 Timesheets</title>
     <link>http://wilma.vub.ac.be/~se2_0910/docs/timesheets/2009/</link>
     <description>
       This file contains metadata to describe our 2009 timesheets that are
@@ -20,24 +20,24 @@
     <packages rdf:parseType="Collection">
       <Package rdf:about="http://wilma.vub.ac.be/~se2_0910/docs/timesheets/">
 	<shortdesc>
-	  Timesheets of the Software Engineering Group 2 in 2009
+	  Timesheets of the Software Engineering Group 2
 	</shortdesc>
 	<dc:identifier>timesheets-2009</dc:identifier>
       </Package>
     </packages>
 
     <releases rdf:parseType="Collection">
-<Release
-	rdf:about="http://wilma.vub.ac.be/~se2_0910/docs/timesheets/2009/week52/">
-	<package rdf:resource="http://wilma.vub.ac.be/~se2_0910/docs/timesheets/"/>
-	<revision>week52-2009</revision>
-	<created>2009-12-28</created>
+<Release 
+    rdf:about="http://wilma.vub.ac.be/~se2_0910/docs/timesheets/2009/week52/">
+  <package rdf:resource="http://wilma.vub.ac.be/~se2_0910/docs/timesheets/"/>
+  <revision>week52-2009</revision>
+  <created>2009-12-28</created>
 </Release>
 <Release
-	rdf:about="http://wilma.vub.ac.be/~se2_0910/docs/timesheets/2009/week51/">
-	<package rdf:resource="http://wilma.vub.ac.be/~se2_0910/docs/timesheets/"/>
-	<revision>week51-2009</revision>
-	<created>2009-12-21</created>
+    rdf:about="http://wilma.vub.ac.be/~se2_0910/docs/timesheets/2009/week51/">
+  <package rdf:resource="http://wilma.vub.ac.be/~se2_0910/docs/timesheets/"/>
+  <revision>week51-2009</revision>
+  <created>2009-12-21</created>
 </Release>
 <Release
     rdf:about="http://wilma.vub.ac.be/~se2_0910/docs/timesheets/2009/week50/">
