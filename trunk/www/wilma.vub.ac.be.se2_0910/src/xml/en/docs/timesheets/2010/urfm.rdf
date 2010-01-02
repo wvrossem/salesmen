@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF xmlns="http://purl.org/urfm/"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:urfm="http://purl.org/urfm/"
+    xmlns:dc="http://purl.org/dc/elements/1.1/">
+  
+  <Channel rdf:about="http://wilma.vub.ac.be/~se2_0910/docs/timesheets/2010/urfm.rdf">
+    <title>VUB SE2_0910 - 2010 Timesheets</title>
+    <link>http://wilma.vub.ac.be/~se2_0910/docs/timesheets/2010/</link>
+    <description>
+      This file contains metadata to describe our 2010 timesheets that are
+      published on a weekly basis.
+    </description>
+    <dc:language>en-US</dc:language>
+    <dc:identifier>http://wilma.vub.ac.be/~se2_0910/docs/timesheets/2010/urfm.rdf</dc:identifier>
+    <dc:publisher rdf:resource="http://wilma.vub.ac.be/~se2_0910/"/>
+    <dc:rights>Copyright &#169; VUB</dc:rights>
+    
+    <packages rdf:parseType="Collection">
+      <Package rdf:about="http://wilma.vub.ac.be/~se2_0910/docs/timesheets/">
+	<shortdesc>
+	  Timesheets of the Software Engineering Group 2
+	</shortdesc>
+	<dc:identifier>timesheets-2010</dc:identifier>
+      </Package>
+    </packages>
+
+    <releases rdf:parseType="Collection">
+<Release
+    rdf:about="http://wilma.vub.ac.be/~se2_0910/docs/timesheets/2010/week01/">
+  <package rdf:resource="http://wilma.vub.ac.be/~se2_0910/docs/timesheets/"/>
+  <revision>week01-2010</revision>
+  <created>2010-01-03</created>
+</Release>
+    </releases>
+    
+    <files rdf:parseType="Collection">
+
+<!-- **************************************************************
+     Week01-2010
+     ************************************************************** -->
+ <File rdf:about="http://wilma.vub.ac.be/~se2_0910/docs/timesheets/2010/week01/timesheet-week01-2010.xml">
+  <release rdf:resource="http://wilma.vub.ac.be/~se2_0910/docs/timesheets/2010/week01/"/>
+  <basename>timesheet-week01-2010</basename>
+  <extension>.xml</extension>
+  <language>en</language>
+  <size rdf:parseType="Resource">
+    <unit rdf:resource="http://purl.org/urfm/Kilobyte"/>
+    <rdf:value>8</rdf:value>
+  </size>
+  <link>http://wilma.vub.ac.be/~se2_0910/docs/timesheets/2010/week01/timesheet-week01-2010.xml</link>
+  <format>application/xml</format>
+ </File>
+
+<File rdf:about="http://wilma.vub.ac.be/~se2_0910/docs/timesheets/2010/week01/timesheet-week01-2010.html">
+  <release rdf:resource="http://wilma.vub.ac.be/~se2_0910/docs/timesheets/2010/week01/"/>
+  <basename>timesheet-week01-2010</basename>
+  <extension>.html</extension>
+  <language>en</language>
+  <size rdf:parseType="Resource">
+    <unit rdf:resource="http://purl.org/urfm/Kilobyte"/>
+    <rdf:value>20</rdf:value>
+  </size>
+  <link>http://wilma.vub.ac.be/~se2_0910/docs/timesheets/2010/week01/timesheet-week01-2010.html</link>
+  <format>text/html</format>
+</File>
+
+    </files>
+  </Channel>
+</rdf:RDF>
