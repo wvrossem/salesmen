@@ -25,7 +25,7 @@
 <!-- ==================================================================== -->
 
   <xsl:param name="site.author" select="$autolayout/autolayout/copyright/holder[1]"/>
-  <xsl:param name="site.url" select="'http://www.markupware.com'"/>
+  <xsl:param name="site.url" select="'http://wilma.vub.ac.be/~se2_0910'"/>
   <xsl:param name="site.id" select="'salesmen'"/>
   <xsl:param name="site.license" select="'http://creativecommons.org/licenses/by-nc-sa/2.0/'"/>
   <xsl:param name="css.decoration" select="0"/>
@@ -40,7 +40,6 @@
   <xsl:param name="pages.search-box" select="1"/>
   <xsl:param name="pages.search.input-label" select="'Search This Site'"/>
   <xsl:param name="pages.search.submit-label" select="'Go'"/>
-  <xsl:param name="access.validator.url" select="''"/>
   <xsl:param name="rdf.to.html.stylesheet.path" 
 	     select="'/~se2_0910/rdf-html.xsl'"/>
   <xsl:param name="table.borders.with.css" select="1"/>
