@@ -1,12 +1,8 @@
 <?xml version='1.0'?>
 <timesheet xmlns="http://purl.org/net/timetrack">
   
-  <item duration="PT10M">
+  <item duration="PT15M">
     <desc>Administration and Communication</desc>
-  </item>
-
-  <item duration="PT5M">
-    <desc>Adding SCRUM for the last two weeks</desc>
   </item>
   
 </timesheet>
