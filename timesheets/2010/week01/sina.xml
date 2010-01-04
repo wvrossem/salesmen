@@ -1,0 +1,48 @@
+<?xml version='1.0'?>
+<timesheet xmlns="http://purl.org/net/timetrack">
+  <item duration="PT50M">
+    <desc>
+      Adapted the timesheet publishing system to handle 2010 timesheets given
+      our chronological classification of information.
+    </desc>
+    <refs>
+      <ref>http://code.google.com/p/salesmen/source/detail?r=789</ref>
+      <ref>http://code.google.com/p/salesmen/source/detail?r=794</ref>
+      <ref>http://groups.google.com/group/salesmen/browse_thread/thread/eade750b545a3958</ref>
+    </refs>
+  </item>
+  <item duration="PT1H">
+    <desc>
+      Setup Twitter as a communication channel during the implementation phase.
+    </desc>
+    <refs>
+      <ref>http://code.google.com/p/salesmen/issues/detail?id=791</ref>
+      <ref>http://groups.google.com/group/salesmen/browse_thread/thread/2a478a691a7a704f/e03b99f502582eb2?lnk=raot#e03b99f502582eb2</ref>
+    </refs>
+  </item>
+  <item duration="PT20M">
+    <desc>
+      Source code cleanup and issue management.
+    </desc>
+    <refs>
+      <ref>http://code.google.com/p/salesmen/source/detail?r=783</ref>
+      <ref>http://code.google.com/p/salesmen/source/detail?r=782</ref>
+      <ref>http://code.google.com/p/salesmen/source/detail?r=781</ref>
+      <ref>http://code.google.com/p/salesmen/issues/detail?id=22</ref>
+      <ref>http://code.google.com/p/salesmen/issues/detail?id=23</ref>
+    </refs>
+  </item>
+  <item duration="PT25M">
+    <desc>
+      Published the Salesmen project highlights in Dec. 2009.
+    </desc>
+    <refs>
+      <ref>http://code.google.com/p/salesmen/source/detail?r=792</ref>
+      <ref>http://twitter.com/sindoc/status/7233714479</ref>
+      <ref>http://twitter.com/sindoc/status/7233679256</ref>
+    </refs>
+  </item>
+  <item duration="PT30M">
+    <desc>Administration and Communication</desc>
+  </item>
+</timesheet>
