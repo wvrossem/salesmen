@@ -1,0 +1,21 @@
+<?xml version='1.0'?>
+<timesheet xmlns="http://purl.org/net/timetrack">
+  <item duretion=PT10M">
+    <desc>QA of Highlights December</desc>
+    <refs>
+      <ref>http://code.google.com/p/salesmen/source/detail?r=786&path=/attic/2009/12/highlights/highlights-200912.pdf</ref>
+    </refs>
+  </item>
+  <item duration="PT4H">
+    <desc>Studied details to start implementing</desc>
+    <refs>
+      <ref>http://docs.jboss.com/seam/latest/reference/en-US/html/tutorial.html#registration-example</ref>
+      <ref>http://code.google.com/p/salesmen/wiki/DevelopmentRoles</ref>
+      <ref>http://code.google.com/p/salesmen/source/browse/trunk/docs/en/sdd/archive/v0_2/sdd-v0_2.pdf</ref>
+      <ref>http://code.google.com/p/salesmen/source/browse/trunk/docs/en/srs/archive/v0_3/srs-v0_3.pdf</ref>
+    </refs>
+  </item>
+  <item duration="PT30M">
+    <desc>Administration and Communication.</desc>
+  </item>
+</timesheet>
