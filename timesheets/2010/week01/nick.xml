@@ -1,0 +1,29 @@
+<?xml version='1.0'?>
+<timesheet xmlns="http://purl.org/net/timetrack">
+
+  <item duration="PT1H30">
+   <desc>Reading about identity manager, and apply this on seamspace example</desc>
+	<refs>
+		<ref>http://docs.jboss.org/seam/2.2.0.GA/reference/en-US/html/security.html#d0e9087</ref>
+	</refs>
+  </item>
+
+  <item duration="PT1H30">
+   <desc>Writing highlights of December</desc>
+	<refs>
+		<ref>http://docs.jboss.org/seam/2.2.0.GA/reference/en-US/html/security.html#d0e9087</ref>
+	</refs>
+  </item>
+
+  <item duration="PT15M">
+    <desc>Check timesheets</desc>
+   <refs>
+	<ref>http://code.google.com/p/salesmen/source/detail?r=799</ref>
+    </refs>
+  </item>
+  
+  <item duration="PT30M">
+    <desc>Administration and Communication</desc>
+  </item>
+  
+</timesheet>
