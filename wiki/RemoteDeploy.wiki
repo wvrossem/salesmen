@@ -23,6 +23,7 @@ You cna now test if this worked by trying to log in to wilma again. You should n
 == Starting the server on wilma ==
 Log in to wilma and enter these commands:
   . .bashrc
+
   salesmen-jboss-run
 
 To check if this worked, open your webbrowser and go to http://wilma.vub.ac.be:1388/salesmen
@@ -30,4 +31,5 @@ To check if this worked, open your webbrowser and go to http://wilma.vub.ac.be:1
 == Deploying ==
 Go to the folder where the code resides:
   cd ./salesmen/trunk/salesmen/core
+
   ant remote-explode
