@@ -3,6 +3,15 @@
 
 = Topics for next meeting =
 
+=== Meeting: Friday 12 February 2010, 10:00 - 12:00 ===
+
+Location: D.3.12
+
+ * How to evaluate
+ * Planning
+ * Timesheets
+ * Server and database
+
 === Meeting: Friday 18 December 2009, 12:00 - 13:00===
 
  * Evaluation conference
