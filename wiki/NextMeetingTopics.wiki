@@ -1,7 +1,7 @@
-#summary Topics to be treated at next meeting
+#summary Topics to be treated during the next meeting
 #labels Meetings
 
-= Topics for next meeting =
+= Upcoming Topics =
 
 === Meeting: Friday 12 February 2010, 10:00 - 12:00 ===
 
