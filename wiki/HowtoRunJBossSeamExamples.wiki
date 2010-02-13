@@ -27,6 +27,7 @@
 
   # Install Apache Ant:
 http://ant.apache.org/manual/install.html
+  On Windows: Handy tool to install Ant in Windows: [http://code.google.com/p/winant/ WinAnt]
 
   # [http://sourceforge.net/projects/jboss/files/JBoss/JBoss-5.1.0.GA/ Download JBoss AS 5]. For instance, pick the pre-compiled `jboss-5.1.0.GA-jdk6.zip` as we work with JDK 6.
   # [http://sourceforge.net/projects/jboss/files/JBoss%20Seam/2.2.0.GA Download JBoss Seam 2.2].
