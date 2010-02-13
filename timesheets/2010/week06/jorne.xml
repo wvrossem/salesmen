@@ -8,15 +8,38 @@
 	</item>
 
 	<item duration="PT1H30M">
-		<desc>Set up server, but with some problems.</desc>
+		<desc>Made server running, with some problems. No daemon implemented yet.</desc>
 		<refs>
 			<ref>http://compgroups.net/comp.lang.ruby/Why-does-source-bashrc-complain-command-not-found</ref>
 			<ref>http://groups.google.com/group/salesmen/browse_thread/thread/f8b6b04912365b43#</ref>
-			<ref>http://wilma.vub.ac.be:1388/salesmen</ref>
+		</refs>
+	</item>
+	
+	<item duration="PT1H30M">
+		<desc>Studied Seam from referenced site, and running some of the examples.</desc>
+		<refs>
+			<ref>http://docs.jboss.com/seam/latest/reference/en-US/html/tutorial.html#registration-example
+</ref>
+		</refs>
+	</item>
+	
+	<item duration="PT3H0M">
+		<desc>Daemons: researched what it is, how to make it and followed instructions shown in referenced sites to try to make one.</desc>
+		<refs>
+			<ref>http://en.wikipedia.org/wiki/Daemon_%28computer_software%29</ref>
+			<ref>http://www-theorie.physik.unizh.ch/~dpotter/howto/daemonize</ref>
+			<ref>http://www.enderunix.org/docs/eng/daemon.php</ref>
+			<ref>http://www.netzmafia.de/skripten/unix/linux-daemon-howto.html</ref>
+			<ref>http://www.computing.net/answers/unix/call-shell-script-from-c-program/2276.html</ref>
+			<ref>http://www.jguru.com/faq/view.jsp?EID=1251699</ref>
+			<ref>http://docstore.mik.ua/orelly/perl/cookbook/ch17_16.htm</ref>
+			<ref>http://peterlombardo.wikidot.com/linux-daemon-in-c</ref>
+			<ref>http://www.neowin.net/forum/topic/344119-daemon-create-using-c</ref>
+			<ref>http://forums.devx.com/archive/index.php/t-87596.html</ref>
 		</refs>
 	</item>
 
-  <item duration="PT15M">
+  <item duration="PT30M">
     <desc>Administration and Communication.</desc>
   </item>
 </timesheet>
