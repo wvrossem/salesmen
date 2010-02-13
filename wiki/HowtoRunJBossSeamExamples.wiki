@@ -1,28 +1,27 @@
 #summary Howto install JBoss, the Seam Framework and run Seam examples
 #labels Dev,Seam,JBoss
 
-  # Install JDK 6 like this:
-  # To Install the JDK Software and Set JAVA_HOME:
+  # To Install the JDK 6 Software and Set JAVA_HOME:
    On a UNIX system:
 
-   A. Install the JDK software.
+      A. Install the JDK software.
          a) Go to http://java.sun.com/javase/downloads/index.jsp.
          b) Select the appropriate JDK version and click Download.
 
             The JDK software is installed on your computer, for example, at /usr/jdk/jdk1.6.0_02. You can change this location.
-   B. Set JAVA_HOME.
+      B. Set JAVA_HOME.
           * Korn and bash shells:export JAVA_HOME=jdk-install-direxport PATH=$JAVA_HOME/bin:$PATH
           * Bourne shell:JAVA_HOME=jdk-install-direxport JAVA_HOMEPATH=$JAVA_HOME/bin:$PATHexport PATH
           * C shell:setenv JAVA_HOME jdk-install-dirsetenv PATH $JAVA_HOME/bin:$PATHexport PATH=$JAVA_HOME/bin:$PATH
-   C. Change the permissions to enable you to run the Java CAPS Installer.chmod 755 JavaCAPS.bin
+      C. Change the permissions to enable you to run the Java CAPS Installer.chmod 755 JavaCAPS.bin
    
 
-   On Windows:
-   A. Install the JDK software.
+  On Windows:
+      A. Install the JDK software.
          a) Go to http://java.sun.com/javase/downloads/index.jsp.
          b) Select the appropriate JDK software and click Download.
             The JDK software is installed on your computer, for example, at C:\Program Files\Java\jdk1.6.0_02. You can move the JDK software to another location if desired.
-   B. To set JAVA_HOME:
+      B. To set JAVA_HOME:
          a) Right click My Computer and select Properties.
          b) On the Advanced tab, select Environment Variables, and then edit JAVA_HOME to point to where the JDK software is located, for example, C:\Program Files\Java\jdk1.6.0_02.
 
