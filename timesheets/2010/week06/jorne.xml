@@ -1,0 +1,22 @@
+<?xml version='1.0'?>
+<timesheet xmlns="http://purl.org/net/timetrack">
+	<item duration="PT1H30M">
+		<desc>Meeting on Friday 2010/02/12.</ref>
+		<refs>
+			<ref></ref>
+		</refs>
+	</item>
+
+	<item duration="PT1H30M">
+		<desc>Set up server, but with some problems.</desc>
+		<refs>
+			<ref>http://compgroups.net/comp.lang.ruby/Why-does-source-bashrc-complain-command-not-found</ref>
+			<ref>http://groups.google.com/group/salesmen/browse_thread/thread/f8b6b04912365b43#</ref>
+			<ref>http://wilma.vub.ac.be:1388/salesmen</ref>
+		</refs>
+	</item>
+
+  <item duration="PT15M">
+    <desc>Administration and Communication.</desc>
+  </item>
+</timesheet>
