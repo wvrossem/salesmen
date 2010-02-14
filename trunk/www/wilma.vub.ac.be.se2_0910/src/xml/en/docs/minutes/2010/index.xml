@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<webpage id="minutes-2010">
+  <config param="rcsdate" value="$Date: 2010-12-07 14:36:09 +0100 (Mon, 07 Dec 2010) $"/>
+  <config param="URFM" value="urfm.rdf"/>
+  <head>
+    <title>2010</title>
+    <summary>Minutes of our 2010 meetings</summary>
+    <keywords>
+      Minutes, 2010, Developers' Meeting, Open Source, Free Software, VUB,
+      Vrije Universiteit Brussel, Computer Science, Software Engineering
+    </keywords>
+  </head>
+  <para>
+    In this page, you can download the minutes of Salesmen developers'
+    meetings that were held in the year <emphasis>2010</emphasis>.
+  </para>
+</webpage>
