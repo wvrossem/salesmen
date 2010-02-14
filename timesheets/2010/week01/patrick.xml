@@ -1,9 +1,9 @@
 <?xml version='1.0'?>
 <timesheet xmlns="http://purl.org/net/timetrack">
-  <item duretion=PT10M">
+  <item duration="PT10M">
     <desc>QA of Highlights December</desc>
     <refs>
-      <ref>http://code.google.com/p/salesmen/source/detail?r=786&path=/attic/2009/12/highlights/highlights-200912.pdf</ref>
+      <ref>http://code.google.com/p/salesmen/source/detail?r=786&amp;path=/attic/2009/12/highlights/highlights-200912.pdf</ref>
     </refs>
   </item>
   <item duration="PT4H">
