@@ -33,6 +33,12 @@
   <revision>week01-2010</revision>
   <created>2010-01-03</created>
 </Release>
+<Release
+    rdf:about="http://wilma.vub.ac.be/~se2_0910/docs/timesheets/2010/week06/">
+  <package rdf:resource="http://wilma.vub.ac.be/~se2_0910/docs/timesheets/"/>
+  <revision>week06-2010</revision>
+  <created>2010-02-15</created>
+</Release>
     </releases>
     
     <files rdf:parseType="Collection">
@@ -63,6 +69,36 @@
     <rdf:value>20</rdf:value>
   </size>
   <link>http://wilma.vub.ac.be/~se2_0910/docs/timesheets/2010/week01/timesheet-week01-2010.html</link>
+  <format>text/html</format>
+</File>
+
+<!-- **************************************************************
+     Week06-2010
+     ************************************************************** -->
+     
+ <File rdf:about="http://wilma.vub.ac.be/~se2_0910/docs/timesheets/2010/week06/timesheet-week06-2010.xml">
+  <release rdf:resource="http://wilma.vub.ac.be/~se2_0910/docs/timesheets/2010/week06/"/>
+  <basename>timesheet-week06-2010</basename>
+  <extension>.xml</extension>
+  <language>en</language>
+  <size rdf:parseType="Resource">
+    <unit rdf:resource="http://purl.org/urfm/Kilobyte"/>
+    <rdf:value>8</rdf:value>
+  </size>
+  <link>http://wilma.vub.ac.be/~se2_0910/docs/timesheets/2010/week06/timesheet-week06-2010.xml</link>
+  <format>application/xml</format>
+ </File>
+
+<File rdf:about="http://wilma.vub.ac.be/~se2_0910/docs/timesheets/2010/week06/timesheet-week06-2010.html">
+  <release rdf:resource="http://wilma.vub.ac.be/~se2_0910/docs/timesheets/2010/week06/"/>
+  <basename>timesheet-week06-2010</basename>
+  <extension>.html</extension>
+  <language>en</language>
+  <size rdf:parseType="Resource">
+    <unit rdf:resource="http://purl.org/urfm/Kilobyte"/>
+    <rdf:value>20</rdf:value>
+  </size>
+  <link>http://wilma.vub.ac.be/~se2_0910/docs/timesheets/2010/week06/timesheet-week06-2010.html</link>
   <format>text/html</format>
 </File>
 
