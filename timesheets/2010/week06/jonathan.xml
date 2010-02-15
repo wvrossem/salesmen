@@ -1,0 +1,34 @@
+<?xml version='1.0'?>
+<timesheet xmlns="http://purl.org/net/timetrack">
+  
+   <item duration="PT2H">
+    <desc>Installing Java, Apache Ant, JBoss and JBoss-Seam (had some problems)</desc>
+    <refs>
+	<ref>http://code.google.com/p/salesmen/wiki/HowtoRunJBossSeamExamples</ref>
+    </refs>
+  </item>
+
+
+   <item duration="PT30M">
+    <desc>Editing Wiki page HowtoRunJBossSeamExamples</desc>
+    <refs>
+	<ref>http://code.google.com/p/salesmen/source/detail?r=812</ref>
+        <ref>http://code.google.com/p/salesmen/source/detail?r=813</ref>
+	<ref>http://code.google.com/p/salesmen/source/detail?r=814</ref>
+        <ref>http://code.google.com/p/salesmen/source/detail?r=815</ref>
+    </refs>
+  </item>
+
+   <item duration="PT1H30M">
+    <desc>Testing with Seam Examples (Part 1)</desc>
+    <refs>
+	<ref>http://docs.jboss.com/seam/latest/reference/en-US/html/tutorial.html#registration-example</ref>
+    </refs>
+  </item>
+  
+
+  <item duration="PT20M">
+    <desc>Administration and Communication</desc>
+  </item>
+  
+</timesheet>
