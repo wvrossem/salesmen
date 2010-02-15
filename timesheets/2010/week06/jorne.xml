@@ -3,7 +3,7 @@
 	<item duration="PT1H30M">
 		<desc>Meeting on Friday 2010/02/12.</ref>
 		<refs>
-			<ref></ref>
+			<ref>http://wilma.vub.ac.be/~se2_0910/docs/minutes/2010/02/12/minutes-20100212.pdf</ref>
 		</refs>
 	</item>
 
@@ -15,8 +15,8 @@
 		</refs>
 	</item>
 	
-	<item duration="PT1H30M">
-		<desc>Part 1 of Seam study (from referenced site), running the examples.</desc>
+	<item duration="PT2H30M">
+		<desc>Seam study (from referenced site), running the examples.</desc>
 		<refs>
 			<ref>http://docs.jboss.com/seam/latest/reference/en-US/html/tutorial.html#registration-example
 </ref>
@@ -36,14 +36,6 @@
 			<ref>http://peterlombardo.wikidot.com/linux-daemon-in-c</ref>
 			<ref>http://www.neowin.net/forum/topic/344119-daemon-create-using-c</ref>
 			<ref>http://forums.devx.com/archive/index.php/t-87596.html</ref>
-		</refs>
-	</item>
-	
-	<item duration="PT3H0M">
-		<desc>Part 2 of Seam study (from referenced site), running the examples.</desc>
-		<refs>
-			<ref>http://docs.jboss.com/seam/latest/reference/en-US/html/tutorial.html#registration-example
-</ref>
 		</refs>
 	</item>
 
