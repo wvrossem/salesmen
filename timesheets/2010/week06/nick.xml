@@ -1,0 +1,44 @@
+<?xml version='1.0'?>
+<timesheet xmlns="http://purl.org/net/timetrack">
+	
+	<item duration="PT1H0M">
+    <desc>Update statistics and make analysis.</ref>
+    <refs>
+      <ref>http://groups.google.com/group/salesmen/browse_thread/thread/5b99f469ae9ab3d7</ref>
+    </refs>
+  </item>
+	
+	<item duration="PT0H15M">
+    <desc>Write agenda of meeting on Friday 2010/02/12.</ref>
+    <refs>
+      <ref>http://groups.google.com/group/salesmen/browse_thread/thread/2035573e8e9adf64</ref>
+    </refs>
+  </item>
+
+	<item duration="PT1H0M">
+    <desc>Refresh knowledge of Seam Security.</ref>
+    <refs>
+      <ref>http://docs.jboss.org/seam/2.2.0.GA/reference/en-US/html/security.html</ref>
+    </refs>
+  </item>
+
+  <item duration="PT1H30M">
+    <desc>Meeting on Friday 2010/02/12.</ref>
+    <refs>
+      <ref>http://wilma.vub.ac.be/~se2_0910/docs/minutes/2010/02/12/minutes-20100212.pdf</ref>
+    </refs>
+  </item>
+
+  <item duration="PT30M">
+    <desc>Checking and publishing timesheets.</ref>
+    <refs>
+      <ref>http://code.google.com/p/salesmen/source/detail?r=826</ref>
+	  <ref>http://code.google.com/p/salesmen/source/detail?r=827</ref>
+	  <ref>http://code.google.com/p/salesmen/source/detail?r=828</ref>
+    </refs>
+  </item>
+
+  <item duration="PT20M">
+    <desc>Administration and Communication.</desc>
+  </item>
+</timesheet>
