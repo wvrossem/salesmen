@@ -1,0 +1,41 @@
+<?xml version='1.0'?>
+<timesheet xmlns="http://purl.org/net/timetrack">
+	<item duration="PT1H40M">
+		<desc>Meeting on Friday 2010/02/12.</ref>
+		<refs>
+			<ref>http://wilma.vub.ac.be/~se2_0910/docs/minutes/2010/02/12/minutes-20100212.pdf</ref>
+		</refs>
+	</item>
+
+	<item duration="PT45M">
+		<desc>Wrote wiki on remote deployment</desc>
+		<refs>
+			<ref>http://code.google.com/p/salesmen/wiki/RemoteDeploy</ref>
+		</refs>
+	</item>
+	
+	<item duration="PT30M">
+		<desc>Research remote deployment on windows</desc>
+		<refs>
+			<ref>http://groups.google.com/group/salesmen/msg/9dee51548777a9df</ref>
+		</refs>
+	</item>
+	
+	<item duration="PT1H30M">
+		<desc>Added the agenda for the meeting on 12/02 to the website to learn to administrate the website </desc>
+		<refs>
+			<ref>http://code.google.com/p/salesmen/source/detail?r=821</ref>
+		</refs>
+	</item>
+	
+	<item duration="PT50M">
+		<desc>Wrote first draft of minutes for meeting on 12/02</desc>
+		<refs>
+			<ref>http://code.google.com/p/salesmen/source/detail?r=822</ref>
+		</refs>
+	</item>
+
+  <item duration="PT30M">
+    <desc>Administration and Communication.</desc>
+  </item>
+</timesheet>
