@@ -1,0 +1,24 @@
+<?xml version='1.0'?>
+<timesheet xmlns="http://purl.org/net/timetrack">
+	<item duration="PT1H0M">
+		<desc>Meeting on Monday 2010/02/15.</desc>
+		<refs>
+			<ref>http://wilma.vub.ac.be/~se2_0910/docs/minutes/2010/02/15/minutes-20100215.pdf</ref>
+		</refs>
+	</item>
+
+	<item duration="PT1H30M">
+		<desc>Searched how to activate daemon by startup script.</desc>
+		<refs>
+			<ref>http://www.askesis.nl/en/public_documentation/jboss/body.html#JBoss_deamon_Linux</ref>
+			<ref>http://docs.jboss.org/jbossas/getting_started/v4/html/install.html</ref>
+			<ref>http://ubuntuforums.org/showthread.php?p=4031613</ref>
+			<ref>http://www.linuxquestions.org/questions/linux-general-1/jboss-daemon-176143/</ref>
+			<ref>http://community.jboss.org/wiki/startjbossonbootwithlinux</ref>
+		</refs>
+	</item>
+
+  <item duration="PT10M">
+    <desc>Administration and Communication.</desc>
+  </item>
+</timesheet>
