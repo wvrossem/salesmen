@@ -41,7 +41,7 @@
 <!-- *********************************************************************
      20100212
      ********************************************************************* -->
-     <File rdf:about="http://wilma.vub.ac.be/~se2_0910/docs/minutes/2010/02/12/agenda-20100212.pdf">
+<File rdf:about="http://wilma.vub.ac.be/~se2_0910/docs/minutes/2010/02/12/agenda-20100212.pdf">
 	     <release rdf:resource="http://wilma.vub.ac.be/~se2_0910/docs/minutes/2010/02/12/"/>
   <basename>agenda-20100212</basename>
   <extension>.pdf</extension>
@@ -54,7 +54,7 @@
   <format>application/pdf</format>
 </File>
 
-<!--<File rdf:about="http://wilma.vub.ac.be/~se2_0910/docs/minutes/2010/02/12/minutes-20100212.pdf">
+<File rdf:about="http://wilma.vub.ac.be/~se2_0910/docs/minutes/2010/02/12/minutes-20100212.pdf">
 	<release rdf:resource="http://wilma.vub.ac.be/~se2_0910/docs/minutes/2010/02/12/"/>
   <basename>minutes-20100212</basename>
   <extension>.pdf</extension>
@@ -65,22 +65,22 @@
   </size> 
   <link>http://wilma.vub.ac.be/~se2_0910/docs/minutes/2010/02/12/minutes-20100212.pdf</link>
   <format>application/pdf</format>
-</File>-->
-<!--
-<File rdf:about="http://wilma.vub.ac.be/~se2_0910/docs/minutes/2009/12/18/minutes-20091218.txt">
-  <release rdf:resource="http://wilma.vub.ac.be/~se2_0910/docs/minutes/2009/12/18/"/>
-  <basename>minutes-20091218</basename>
+</File>
+
+<File rdf:about="http://wilma.vub.ac.be/~se2_0910/docs/minutes/2010/02/12/minutes-20100212.txt">
+	<release rdf:resource="http://wilma.vub.ac.be/~se2_0910/docs/minutes/2010/02/12/"/>
+  <basename>minutes-20100212</basename>
   <extension>.txt</extension>
   <language>en</language>
   <size rdf:parseType="Resource">
     <unit rdf:resource="http://purl.org/urfm/Kilobyte"/>
     <rdf:value>4</rdf:value>
   </size> 
-  <link>http://wilma.vub.ac.be/~se2_0910/docs/minutes/2009/12/18/minutes-20091218.txt</link>
+  <link>http://wilma.vub.ac.be/~se2_0910/docs/minutes/2010/02/12/minutes-20100212.txt</link>
   <format>text/plain</format>
 </File>
--->
-<!--<File rdf:about="http://wilma.vub.ac.be/~se2_0910/docs/minutes/2010/02/12/minutes-20100212.tex">
+
+<File rdf:about="http://wilma.vub.ac.be/~se2_0910/docs/minutes/2010/02/12/minutes-20100212.tex">
 	<release rdf:resource="http://wilma.vub.ac.be/~se2_0910/docs/minutes/2010/02/12/"/>
   <basename>minutes-20100212</basename>
   <extension>.tex</extension>
@@ -91,7 +91,7 @@
   </size> 
   <link>http://wilma.vub.ac.be/~se2_0910/docs/minutes/2010/02/12/minutes-20100212.tex</link>
   <format>application/x-latex</format>
-</File>-->
+</File>
     </files>
   </Channel>
 </rdf:RDF>

@@ -80,6 +80,8 @@ new TWTR.Widget({
   <sidebar id='spotlight'>
     <title>Spotlight</title>
     <itemizedlist>
+      <listitem><para><ulink url="http://wilma.vub.ac.be:1388/salesmen">
+      Product Website</ulink></para></listitem>
       <listitem><para><olink targetdoc='events-2009-vub-se'>1st Conference
       Coverage</olink></para></listitem>
       <listitem><para><olink targetdoc='highlights-2009'>Highlights in 

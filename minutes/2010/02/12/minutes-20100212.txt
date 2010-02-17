@@ -1,0 +1,101 @@
+                      Minutes Meeting 14
+
+                         Wouter Van Rossem
+                           February 17, 2010
+
+
+1 Meeting Information
+Date: Friday, February 12, 2010
+Time: 10H00--11H40
+Place: D.3.13
+
+1.1 Attendees
+
+Following members were present:
+   * Nick De Cooman
+   * Sina Khakbaz Heshmati
+   * Bart Maes
+   * Jorne Laton
+   * Patrick Provinciael
+   * Wouter Van Rossem
+
+Following members were absent:
+   * Jonathan Jeurissen
+
+2 Evaluation
+A meeting will be held to discuss what went right and what went wrong
+during the last semester. Each team member will be able to speak their
+minds about the problems they encountered that prevented them from doing
+the work they were assigned to do.
+                                      1
+
+3 Timesheets
+Timesheets will now come online Monday evening. The deadline to submit
+timesheets is still Sunday 23h59.
+   In order for each member to get his full study points (and not exceed
+these), the workload for each member was calculated by Nick. Here is a
+short summary (the complete charts are also available [2]):
+
+Nick, Bart, Patrick : 8 hour/week
+Wouter, Jorne : 9 hour/week
+Sina, Jonathan : 3 hour/week
+
+   Wouter will also manage the website from now on, in order to reduce
+some of the workload of Sina. Configuration will now be completely done by
+Jorne as well.
+
+4 Planning
+Nick created a planning for this semester, which was approved by all present
+members. The planning is as follows:
+8/2 - 21/2 : Evaluation of the previous semester and preparation for the
+      implementation phase
+
+22/2 - 29/3 : Implementation phase. Also, preparation for the second con-
+      ference during the last couple of weeks
+Easter holiday : Nothing
+19/4 - 17/5 : Finish the implementation and prepare for the third confer-
+      ence
+   There will also be less meetings from now on.
+
+5 Server and Database
+
+There will be two versions of the salesmen project on the server: salesmen
+development and salesmen stable. This way a stable version of the site will
+always be available, while members can also still deploy their test code re-
+motely. Patrick will be in charge of maintaining the stable branch. Patrick
+also suggested that we should evaluate this system after a couple of weeks.
+                                            2
+
+6 Communication
+Google Wave was chosen as an additional communication channel. IRC was
+another option, but Wave was preferred by several members.
+
+6.1 Revision History
+ Rev. Date Description
+  1.0 February 15, 2010 First draft created
+  1.1 February 17, 2009 Revised by QA Manager
+
+7 Next Meeting
+Date: Monday, February 16, 2010
+Time: 18H00--19H30
+Place: Infogroep
+
+
+7.1 Agenda
+A complete list of Agenda items is available on [1].
+
+References
+
+ [1] http://code.google.com/p/salesmen/wiki/NextMeetingTopics
+ [2] http : //groups.google.com/group/salesmen/browse hread/thread/5b99f469ae9ab3d7
+                                                              t
+
+
+
+
+
+
+
+
+
+                                         3
