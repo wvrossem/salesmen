@@ -17,8 +17,17 @@
 			<ref>http://community.jboss.org/wiki/startjbossonbootwithlinux</ref>
 		</refs>
 	</item>
+	
+	<item duration="PT1H30M">
+		<desc>Succesfully implemented and installed salesmen.init script with crontab.</desc>
+		<refs>
+			<ref>http://www.unix.com/unix-dummies-questions-answers/6017-check-if-deamons-running.html</ref>
+			<ref>http://www.manpagez.com/man/5/crontab/</ref>
+			<ref>http://wilma.vub.ac.be:1388/salesmen/home.seam</ref>
+		</refs>
+	</item>
 
-  <item duration="PT10M">
+  <item duration="PT15M">
     <desc>Administration and Communication.</desc>
   </item>
 </timesheet>
