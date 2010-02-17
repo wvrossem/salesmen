@@ -3,6 +3,11 @@
 
 <config 
     param="headlink" 
+    altval="Product Website"
+    value="http://wilma.vub.ac.be:1388/salesmen/"/>
+  
+<config 
+    param="headlink" 
     altval="Blog"
     value="http://salesmen-dev.blogspot.com/"/>
 
