@@ -3,7 +3,7 @@
 
 <config 
     param="headlink" 
-    altval="Product Website"
+    altval="Demo"
     value="http://wilma.vub.ac.be:1388/salesmen/"/>
   
 <config 
