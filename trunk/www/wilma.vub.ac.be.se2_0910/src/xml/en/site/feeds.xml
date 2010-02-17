@@ -12,6 +12,8 @@
     directly to your desktop or online feed aggregator.
   </para>
   <rss feed="http://salesmen-dev.blogspot.com/feeds/posts/default"/>
+  <rss feed="http://twitter.com/statuses/user_timeline/99899866.rss"/>
+  <rss feed="http://salesmen-dev.blogspot.com/feeds/posts/default"/>
   <rss feed="http://code.google.com/feeds/p/salesmen/downloads/basic"/>
   <rss feed="http://code.google.com/feeds/p/salesmen/issueupdates/basic"/>
   <rss feed="http://code.google.com/feeds/p/salesmen/svnchanges/basic"/>
