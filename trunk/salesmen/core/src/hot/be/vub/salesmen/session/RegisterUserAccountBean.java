@@ -53,7 +53,7 @@ public class RegisterUserAccountBean implements RegisterUserAccount, Serializabl
 		passwordVerified = (passwordConfirmation != null && passwordConfirmation.equals(password));
 		if (!passwordVerified)
 		{
-			FacesMessages.instance().addToControl("passwordConfirmation", "Passwords don not match");
+			FacesMessages.instance().addToControl("passwordConfirmation", "Passwords do not match");
 		}
 	}
 	
