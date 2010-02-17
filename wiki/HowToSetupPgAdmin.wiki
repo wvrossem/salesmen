@@ -1,0 +1,19 @@
+#labels PgAdmin,Database
+#How to setup PgAdmin3
+
+= Install =
+
+Download the program on: http://www.pgadmin.org/download/
+
+= Add database =
+
+Click on "Add a connection with the server"
+
+Submit the following information:
+
+  * Name: Free to choose
+  * Host: wendy.vub.ac.be
+  * Port: 5432
+  * Onderhoud_db: se2_0910_dev`_*`
+  * Password: 
+
