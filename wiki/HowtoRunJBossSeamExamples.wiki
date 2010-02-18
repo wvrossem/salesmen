@@ -56,3 +56,7 @@ http://ant.apache.org/manual/install.html
   # See the running example application here: [http://localhost:8080/seam-booking/]
 
 Please feel free to adapt this howto document should you think it's necessary.
+
+*NOTE* If you can't make a connection to a postgresql database, you need to 'install' the postgresql driver. You do this by copying the postgresql.jar file to the following directory:
+"[path_to_jboss]\common\lib\"
+You should be able to find this file somewhere on your harddisk (in the salesmen repository)
