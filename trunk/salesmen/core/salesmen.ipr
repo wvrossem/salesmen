@@ -33,9 +33,9 @@
   <component name="DataSourceManagerImpl">
     <DataSource DataSourceSourceName="LOCAL">
       <option name="DRIVER_CLASS" value="org.postgresql.Driver" />
-      <option name="DATABASE_URL" value="jdbc:postgresql://wendy.vub.ac.be/se2_0910_dev_sina" />
+      <option name="DATABASE_URL" value="jdbc:postgresql://wendy.vub.ac.be/se2_0910_test" />
       <option name="DRIVER_PATH" />
-      <option name="DATBASE_USERNAME" value="se2_0910_dev_sina" />
+      <option name="DATBASE_USERNAME" value="se2_0910_test" />
       <option name="ENCODED_DATABASE_PASSWORD" value="dfd9dfffdfc8dfc7df9edfd8df9bdfc4dfcf" />
       <option name="DEFAULT_SCHEMA_NAME" />
       <option name="TABLE_PATTERN" value="" />
