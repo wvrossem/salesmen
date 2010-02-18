@@ -43,7 +43,7 @@ Choose Add..., these are the 3 plugins to add:
   Location: http://download.eclipse.org/birt/update-site/2.5/
 
   Name: m2eclipse
-  Location: http://m2eclipse.sonatype.org/update-dev/
+  Location: http://m2eclipse.sonatype.org/sites/m2e
 
   Name: TestNG
   Location: http://beust.com/eclipse
