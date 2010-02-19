@@ -2,6 +2,6 @@
 <!-- Hibernate Console launch configuration -->
 <launchConfiguration type="org.hibernate.eclipse.launch.ConsoleConfigurationLaunchConfigurationType">
 <stringAttribute key="org.eclipse.jdt.launching.PROJECT_ATTR" value="salesmen"/>
-<stringAttribute key="org.hibernate.eclipse.launch.PROPERTY_FILE" value="/salesmen/hibernate-console.properties"/>
+<stringAttribute key="org.hibernate.eclipse.launch.PROPERTY_FILE" value="/salesmen/misc/hibernate-console.properties"/>
 <stringAttribute key="org.hibernate.eclipse.launch.CONFIGURATION_FACTORY" value="JPA"/>
 </launchConfiguration>
