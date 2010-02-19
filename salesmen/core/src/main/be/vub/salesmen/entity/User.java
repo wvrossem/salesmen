@@ -32,11 +32,13 @@ public class User implements Serializable
 	private String email;
 	
     @Id @GeneratedValue
-    public Long getUserId() {
+    public Long getUserId()
+    {
         return userId;
     }
 
-    public void setUserId(Long userId) {
+    public void setUserId(Long userId)
+    {
         this.userId = userId;
     }
 
