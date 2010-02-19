@@ -23,11 +23,11 @@ public class Category implements Serializable
     private Category parent;
 
     @Id @GeneratedValue
-    public Long getCategoryId() {
+    public Long getId() {
         return id;
     }
 
-    public void setCategoryId(Long id) {
+    public void setId(Long id) {
         this.id = id;
     }
 
