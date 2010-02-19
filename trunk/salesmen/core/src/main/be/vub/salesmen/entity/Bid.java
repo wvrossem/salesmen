@@ -10,7 +10,11 @@ import org.hibernate.validator.Length;
 @Entity
 public class Bid implements Serializable
 {
-    // seam-gen attributes (you should probably edit these)
+    /**
+	 * 
+	 */
+	private static final long serialVersionUID = -2396616177266665351L;
+	// seam-gen attributes (you should probably edit these)
     private Long id;
     private Integer version;
     private String name;
@@ -33,9 +37,6 @@ public class Bid implements Serializable
         return version;
     }
 
-    private void setVersion(Integer version) {
-        this.version = version;
-    }
 
     @Length(max = 20)
     public String getName() {
