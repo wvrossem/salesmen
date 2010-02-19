@@ -18,7 +18,7 @@ TODO:
 <project basedir=".">
 
 <!-- For some properties -->
-<import file="build.xml"/>
+<import file="../build.xml"/>
   
 <property name="remote.deploy.server.name" value="wilma.vub.ac.be"/>
 <property name="remote.deploy.username" value="se2_0910"/>
