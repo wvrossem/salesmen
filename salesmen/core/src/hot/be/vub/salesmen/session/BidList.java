@@ -7,7 +7,12 @@ import be.vub.salesmen.entity.Bid;
 @Name("bidList")
 public class BidList extends EntityQuery<Bid>
 {
-    public BidList()
+    /**
+	 * 
+	 */
+	private static final long serialVersionUID = -494416824009132695L;
+
+	public BidList()
     {
         setEjbql("select bid from Bid bid");
     }

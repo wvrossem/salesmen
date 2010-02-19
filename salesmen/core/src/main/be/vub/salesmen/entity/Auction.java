@@ -13,7 +13,8 @@ import org.hibernate.validator.Pattern;
 @Entity
 public class Auction implements Serializable
 {
-    // seam-gen attributes (you should probably edit these)
+	private static final long serialVersionUID = -398119848361114787L;
+
     private int id;
     private Integer version;
     private String name;
@@ -24,12 +25,12 @@ public class Auction implements Serializable
     private String description;
     private Date endDate;
     private Bid highBid;
-    private Bid[] bidHistory;
+    //private Bid[] bidHistory;
     private double startingPrice;
 
     // add additional entity attributes
 
-    // seam-gen attribute getters/setters with annotations (you probably should edit)
+
 
     @Id @GeneratedValue
     public int getId() {
@@ -144,9 +145,7 @@ public class Auction implements Serializable
         return version;
     }
 
-    private void setVersion(Integer version) {
-        this.version = version;
-    }
+
 
     @Length(max = 20)
     public String getName() {

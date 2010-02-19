@@ -10,7 +10,11 @@ import be.vub.salesmen.entity.Bid;
 @Name("bidHome")
 public class BidHome extends EntityHome<Bid>
 {
-    @RequestParameter Long bidId;
+    /**
+	 * 
+	 */
+	private static final long serialVersionUID = 5585245033590065487L;
+	@RequestParameter Long bidId;
 
     @Override
     public Object getId()

@@ -10,7 +10,11 @@ import be.vub.salesmen.entity.Category;
 @Name("categoryHome")
 public class CategoryHome extends EntityHome<Category>
 {
-    @RequestParameter Long categoryId;
+    /**
+	 * 
+	 */
+	private static final long serialVersionUID = -468312262064764801L;
+	@RequestParameter Long categoryId;
 
     @Override
     public Object getId()

@@ -10,7 +10,12 @@ import be.vub.salesmen.entity.Auction;
 @Name("auctionHome")
 public class AuctionHome extends EntityHome<Auction>
 {
-    @RequestParameter Long auctionId;
+    /**
+	 * 
+	 */
+	private static final long serialVersionUID = 2972682350816743680L;
+
+	@RequestParameter Long auctionId;
 
     @Override
     public Object getId()
