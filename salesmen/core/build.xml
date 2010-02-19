@@ -2,7 +2,7 @@
 <project name="salesmen" default="explode" basedir=".">
 
   <!-- Import remote deployment targets -->
-  <import file="${basedir}/remote.xml"/>
+  <import file="${basedir}/misc/remote.xml"/>
   
     <!-- Give user a chance to override without editing this file or typing -D -->
     <property file="${basedir}/build.properties"/>
@@ -489,7 +489,7 @@
                 <include name="org/jboss/seam/*.dtd"/>
             </patternset>
         </unjar>
-        <ant antfile="validate.xml" target="validateConfiguration"/>
+        <ant antfile="misc/validate.xml" target="validateConfiguration"/>
     </target>
 
     <target name="purge" depends="undeploy" description="Clean out JBoss AS temporary deployment files">
