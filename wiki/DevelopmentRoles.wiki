@@ -1,5 +1,5 @@
 #summary Who's responsible for what during the development
-#labels Dev,Roles
+#labels Phase-Implementation
 
 = Introduction =
 
