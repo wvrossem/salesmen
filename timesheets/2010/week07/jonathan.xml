@@ -1,0 +1,20 @@
+<?xml version='1.0'?>
+<timesheet xmlns="http://purl.org/net/timetrack">
+  
+  <item duration="PT1H">
+		<desc>Workshop #1: 17/02/2010, 9h00 -> 10h00</desc>
+	</item>
+	
+<item duration="PT2H15M">
+		<desc>Workshop #2: 19/02/2010, 12h00 -> 14h15</desc>
+        </item>
+
+<item duration="PT0H25M">
+		<desc>Trying to fix JBoss-Seam NullPointerException deployment issue</desc>
+        </item>
+
+  <item duration="PT35M">
+    <desc>Administration and Communication</desc>
+  </item>
+  
+</timesheet>
