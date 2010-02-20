@@ -59,7 +59,7 @@ public class CategoryHome extends EntityHome<Category>
     public void loadCategories()
     {
        categories = entityManager.createQuery(
-             "from Category where parent = null order by name")
+             "from Category order by name")
              .getResultList();
     }
 

@@ -7,14 +7,18 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.Version;
 import org.hibernate.validator.Length;
 
+
 /*
  * Extra imports
  * 
  */
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
+import javax.persistence.UniqueConstraint;
+import javax.persistence.Table;
 
 @Entity
+@Table(name="Category",uniqueConstraints = {@UniqueConstraint(columnNames={"name"})})
 public class Category implements Serializable
 {
     /**
@@ -26,6 +30,7 @@ public class Category implements Serializable
     private Integer version;
     private String name;
     private Category parent;
+
 
     // add additional entity attributes
 
