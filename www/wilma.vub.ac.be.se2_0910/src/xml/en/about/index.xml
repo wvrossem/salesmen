@@ -12,7 +12,7 @@
   <section id='what'>
     <title>What</title>
     <para>
-      We're a group of <olink targetdoc='team'>seven students</olink> 
+      We're a group of <olink targetdoc='salesmen-team'>seven students</olink> 
       who are assigned to <emphasis>design</emphasis> and 
       <emphasis>implement</emphasis> the software behind an 
       <emphasis role='bold'>online auction website</emphasis> such as eBay.
@@ -65,7 +65,7 @@
     </formalpara>
     <formalpara>
       <title>Members</title>
-      <para>See <olink targetdoc='team'>Team</olink></para>
+      <para>See <olink targetdoc='salesmen-team'>Team</olink></para>
     </formalpara>
     <formalpara>
       <title>Description</title>
