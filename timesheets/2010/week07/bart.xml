@@ -44,8 +44,8 @@
 		<desc>Revised basicSearch for users</desc>
 	</item>
 
-	<item duration="PT1H0M">
-		<desc>Attempted to populate the DB on build, no success yet</desc>
+	<item duration="PT3H0M">
+		<desc>Attempted to populate the DB on build, with success (made several attempts)</desc>
 		<refs>
 			<ref>http://code.google.com/p/salesmen/issues/detail?id=31</ref>
 		</refs>
