@@ -20,7 +20,15 @@
                 <h:inputText id="name" required="true"
                              value="#{categoryHome.instance.name}"/>
             </s:decorate>
-
+            
+            <s:decorate id="categoryField" template="layout/edit.xhtml">
+            <ui:define name="label">Category</ui:define>
+            <h:selectOneMenu id="selectedCat" value="#{categoryHome.instance.parent}">
+                <s:selectItems value="#{categories}" var="cat" label="#{cat.name}" noSelectionLabel="All Categories"/>
+                <s:convertEntity />
+              </h:selectOneMenu>
+			</s:decorate>
+			
             <div style="clear:both"/>
 
         </rich:panel>

@@ -7,6 +7,19 @@ import org.jboss.seam.framework.EntityHome;
 
 import be.vub.salesmen.entity.Category;
 
+/*
+ * 
+ * Extra imports
+ */
+import java.util.List;
+
+import javax.persistence.EntityManager;
+
+import org.jboss.seam.annotations.Factory;
+import org.jboss.seam.annotations.In;
+import org.jboss.seam.annotations.Out;
+
+
 @Name("categoryHome")
 public class CategoryHome extends EntityHome<Category>
 {
@@ -14,6 +27,13 @@ public class CategoryHome extends EntityHome<Category>
 	 * 
 	 */
 	private static final long serialVersionUID = -468312262064764801L;
+	@In
+	EntityManager entityManager;
+	
+	@SuppressWarnings("unused")
+	@Out(required = false)
+	private List<Category> categories;
+	
 	@RequestParameter Long categoryId;
 
     @Override
@@ -32,6 +52,15 @@ public class CategoryHome extends EntityHome<Category>
     @Override @Begin
     public void create() {
         super.create();
+    }
+    
+    @SuppressWarnings("unchecked")
+    @Factory("categories")
+    public void loadCategories()
+    {
+       categories = entityManager.createQuery(
+             "from Category where parent = null order by name")
+             .getResultList();
     }
 
 }
