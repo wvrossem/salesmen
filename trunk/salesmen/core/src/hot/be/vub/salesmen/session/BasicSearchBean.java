@@ -70,7 +70,7 @@ public class BasicSearchBean implements BasicSearch {
 		}
 		
 		// Only works for users
-		qry.append(" where e.screenName like #{pattern}");
+		qry.append(" WHERE UPPER(e.screenName) LIKE UPPER(#{pattern})");
 		
 		List results = entityManager.createQuery(qry.toString())
 			.setMaxResults(pageSize) //+1?
@@ -99,8 +99,7 @@ public class BasicSearchBean implements BasicSearch {
 
 	@Factory(value = "pattern", scope = ScopeType.EVENT)
 	public String getSearchPattern() {
-		return searchTerm == null ? "%" : '%' + searchTerm.toLowerCase()
-				.replace('*', '%') + '%';
+		return searchTerm == null ? "%" : '%' + searchTerm.replace('*', '%') + '%';
 	}
 
 	public String getSearchTerm() {
