@@ -1,2 +1,5 @@
+#summary Links to guides, howtos, etc.
+#labels DevResource
+
 * Hibernate annotations:
 http://docs.jboss.org/hibernate/stable/annotations/reference/en/html_single/
