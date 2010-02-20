@@ -9,11 +9,15 @@ public interface BasicSearch {
 
 	public void setPageSize(int pageSize);
 
-	public String getSearchString();
+	public String getSearchTerm();
 
-	public void setSearchString(String searchString);
+	public void setSearchTerm(String searchTerm);
 
 	public String getSearchPattern();
+
+	public String getEntityType();
+		
+	public void setEntityType(String entityType);
 
 	public void find();
 
