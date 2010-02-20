@@ -6,6 +6,7 @@ import javax.persistence.Id;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Version;
 import org.hibernate.validator.Length;
+import org.jboss.seam.annotations.Name;
 
 
 /*
@@ -16,8 +17,11 @@ import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 import javax.persistence.UniqueConstraint;
 import javax.persistence.Table;
+import org.hibernate.validator.NotNull;
+import javax.persistence.GenerationType;
 
 @Entity
+@Name("category")
 @Table(name="Category",uniqueConstraints = {@UniqueConstraint(columnNames={"name"})})
 public class Category implements Serializable
 {
@@ -46,7 +50,7 @@ public class Category implements Serializable
 		this.parent = parent;
 	}
 
-	@Id @GeneratedValue
+	@Id @GeneratedValue(strategy=GenerationType.IDENTITY)
     public Long getId() {
         return id;
     }
@@ -65,6 +69,7 @@ public class Category implements Serializable
         this.version = version;
     }
 
+    @NotNull
     @Length(max = 20)
     public String getName() {
         return name;
