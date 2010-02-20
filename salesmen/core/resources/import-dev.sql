@@ -19,23 +19,9 @@ insert into UserAccountRoles (accountid, roleid) values (1004, 1001);
 
 insert into UserRoleGroup (roleid, memberof) values (1002, 1001);
 
-insert into Category (id, name) values (1001, 'Book');
-  insert into Category (id, name, parent_id) values (10011, 'Books', 1001);
+--insert into Category (name) values ('Root category');
+--insert into Category (name,parent_id) values ('Vehicles',1);
+--insert into Category (name,parent_id) values ('Immo',1);
 
-insert into Category (id, name) values (1002, 'Music, Moves & Games');
-  insert into Category (id, name, parent_id) values (10021, 'Movies & TV', 1002);
 
-insert into Category (id, name) values (1003, 'Electronics');
-  insert into Category (id, name, parent_id) values (10031, 'TV & Video', 1003);
 
-insert into Category (id, name) values (1004, 'Grocery, Health & Beauty');
-  insert into Category (id, name, parent_id) values (10041, 'Grocery', 1004);
-  
-insert into Category (id, name) values (1005, 'Clothing, Shoes & Jewlery');
-  insert into Category (id, name, parent_id) values (10051, 'Clothing & Accessories', 1005);
-
-insert into Category (id, name) values (1006, 'Sports & Outdoor');
-  insert into Category (id, name, parent_id) values (10061, 'Exercise & Fitness', 1006);
-
-insert into Category (id, name) values (1007, 'Tools, Auto & Industrial');
-  insert into Category (id, name, parent_id) values (10071, 'Power & Hand Tools', 1007);
