@@ -1,0 +1,36 @@
+#summary Time constraints on project deliverables.
+#labels Phase-Implementation
+
+= Introduction =
+
+Find out what *tasks* you're assigned to and the *time* by which you're expected to have them *done*.
+
+= Tasks =
+
+== Nick ==
+
+|| Description || Issues Involved || Deadline || Delivered ||
+|| Complete the user registration process || Issue 7 || Wed. 24 Feb. || N/A ||
+
+== Jorne ==
+
+|| Description || Issues Involved || Deadline || Delivered ||
+|| Enable the application to send emails || Issue 12 || Fri. 26 Feb. || N/A ||
+
+== Bart ==
+
+|| Description || Issues Involved || Deadline || Delivered ||
+|| Category Management || Issue 10 Issue 27 Issue 30 Issue 32 || Mon. 22 Feb. || N/A ||
+
+== Patrick ==
+
+|| Description || Issues Involved || Deadline || Delivered ||
+|| View/edit user profile || Issue 33 || Wed. 26 Feb. || N/A ||
+
+== Wouter ==
+
+|| Description || Issues Involved || Deadline || Delivered ||
+|| Basic search in auctions and user || Issue 9, Issue 16 || Wed. 24 Feb. || N/A ||
+
+= See Also =
+[DevelopmentRoles Development Roles]
