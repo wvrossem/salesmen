@@ -14,4 +14,4 @@ Developer responsibilities throughout the development of Salesmen are listed in 
 || Chief Ontology || Integration of categories with other components || Jonathan ||
 || Chief Club || User space and user preferences || Patrick ||
 || Chief Communication || System and user notifications and messages || Jorne ||
-|| Chief Athena || System integration || Sina ||
+|| Chief Zeus || System integration || Sina ||
