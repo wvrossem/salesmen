@@ -14,21 +14,21 @@
 			<f:facet name="header">basicSearch</f:facet>
 
 			<div class="section">
-				<span class="errors"> 
+				<!--<span class="errors"> 
 					<h:messages id="messages" globalOnly="true" /> 
-				</span>
+				</span>-->
 
 				<h1>Search Entities</h1>
 
 				<h:form id="searchCriteria">
 					<fieldset>
-					<h:inputText id="searchString"
-						value="#{basicearch.searchString}" style="width: 165px;">
+					<h:inputText id="searchTerm"
+						value="#{basicSearch.searchTerm}" style="width: 165px;">
 						<a:support id="onkeyup" event="onkeyup"
 							actionListener="#{basicSearch.find}" reRender="searchResults" />
 					</h:inputText>
 					&#160; 
-					<h:selectOneMenu id="entityType" value="#{basicSearch.entityType}>
+					<h:selectOneMenu id="entityType" value="#{basicSearch.entityType}">
 						<f:selectItem id="Auction" itemLabel="Auction" itemValue="Auction" />
 						<f:selectItem id="User" itemLabel="User" itemValue="User" />
 						<f:selectItem id="Tag" itemLabel="Tag" itemValue="Tag" />
@@ -62,12 +62,20 @@
 					<h:dataTable id="entities" value="#{entities}" var="ent"
 						rendered="#{entities.rowCount>0}">
 						<h:column id="column1">
-							<f:facet id="NameFacet" name="header">Name</f:facet>
-							#{ent.name}
+							<f:facet id="ScreenNameFacet" name="header">Screen Name</f:facet>
+							#{ent.screenName} <!-- Only works for users -->
+						</h:column>
+						<h:column id="column2">
+							<f:facet id="FirstNameFacet" name="header">First Name</f:facet>
+							#{ent.firstName} <!-- Only works for users -->
+						</h:column>
+						<h:column id="column3">
+							<f:facet id="LastNameFacet" name="header">Last Name</f:facet>
+							#{ent.lastName} <!-- Only works for users -->
 						</h:column>
 					</h:dataTable> 
 					<s:link id="MoreResultsLink" value="More results"
-						action="#{basicearch.nextPage}"
+						action="#{basicSearch.nextPage}"
 						rendered="#{basicSearch.nextPageAvailable}" />
 				</div>
 			</a:outputPanel>
