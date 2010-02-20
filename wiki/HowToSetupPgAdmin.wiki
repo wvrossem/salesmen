@@ -1,5 +1,5 @@
+#summary How to setup PgAdmin3
 #labels PgAdmin,Database
-#How to setup PgAdmin3
 
 = Install =
 
@@ -16,4 +16,3 @@ Submit the following information:
   * Port: 5432
   * Onderhoud_db: se2_0910_dev`_*`
   * Password: 
-
