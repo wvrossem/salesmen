@@ -1,0 +1,44 @@
+<?xml version='1.0'?>
+<timesheet xmlns="http://purl.org/net/timetrack">
+	<item duration="PT1H0M">
+		<desc>Meeting on Monday 2010/02/15.</desc>
+		<refs>
+			<ref>http://wilma.vub.ac.be/~se2_0910/docs/minutes/2010/02/15/minutes-20100215.pdf</ref>
+		</refs>
+	</item>
+
+	<item duration="PT3H50M">
+		<desc>Workshop #1: 17/02/2010, 09h10 -> 13h00</desc>
+	</item>
+	
+	<item duration="PT3H45M">
+		<desc>Workshop #2: 19/02/2010, 10h15 -> 12h00, 13h00 -> 15h00</desc>
+	</item>
+	
+	<item duration="PT30M">
+		<desc>Finished basic search</desc>
+		<refs>
+			<ref>http://code.google.com/p/salesmen/source/detail?r=883</ref>
+		</refs>
+	</item>
+	
+	<item duration="PT20M">
+		<desc>Wrote first draft of minutes of meeting on 15/2</desc>
+		<refs>
+			<ref>http://code.google.com/p/salesmen/source/detail?r=901</ref>
+		</refs>
+	</item>
+	
+	<item duration="PT40M">
+		<desc>Updated the website</desc>
+		<refs>
+			<ref>http://code.google.com/p/salesmen/source/detail?r=848</ref>
+			<ref>http://code.google.com/p/salesmen/source/detail?r=835</ref>
+			<ref>http://code.google.com/p/salesmen/source/detail?r=834</ref>
+		</refs>
+	</item>
+
+  <item duration="PT25M">
+    <desc>Administration and Communication.</desc>
+  </item>
+</timesheet>
