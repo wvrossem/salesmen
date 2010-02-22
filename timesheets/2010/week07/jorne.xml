@@ -26,6 +26,12 @@
 			<ref>http://wilma.vub.ac.be:1388/salesmen/home.seam</ref>
 		</refs>
 	</item>
+	
+	<item duration="PT2H0M">
+		<desc>Workshop 2</desc>
+		<refs>
+		</refs>
+	</item>
 
   <item duration="PT15M">
     <desc>Administration and Communication.</desc>
