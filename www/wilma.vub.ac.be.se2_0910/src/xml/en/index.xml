@@ -87,7 +87,7 @@ new TWTR.Widget({
       <listitem><para><ulink url="http://wilma.vub.ac.be:1388/salesmen">
       Live Demo</ulink></para></listitem>
       <listitem><para><olink targetdoc='minutes-2010'>Minutes -
-      Feb. 12 2010</olink></para></listitem>
+      Feb. 15 2010</olink></para></listitem>
       <listitem><para><olink targetdoc='scmp'>
       SCMP v0.2</olink></para></listitem>
       <listitem><para><olink targetdoc='sdd'>
@@ -101,7 +101,7 @@ new TWTR.Widget({
       <listitem><para><olink targetdoc='std'>
       STD v0.2</olink></para></listitem>
       <listitem><para><olink targetdoc='timesheets-2010'>Timesheets - 
-      Week 17</olink></para></listitem>
+      Week 18</olink></para></listitem>
     </itemizedlist>
   </sidebar>
 </webpage>
