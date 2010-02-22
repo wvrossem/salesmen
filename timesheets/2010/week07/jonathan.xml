@@ -13,7 +13,7 @@
 		<desc>Trying to fix JBoss-Seam NullPointerException deployment issue</desc>
         </item>
 
-  <item duration="PT35M">
+  <item duration="PT20M">
     <desc>Administration and Communication</desc>
   </item>
   
