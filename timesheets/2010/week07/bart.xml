@@ -18,14 +18,14 @@
 	<item duration="PT1H20M">
 		<desc>Fixed the JBoss-Seam database issue</desc>
 		<refs>
-			<ref>http://groups.google.com/group/salesmen/browse_thread/thread/33099b160f9c97e9/f419ff6ef63bf309?hl=en&lnk=gst&q=wendy#f419ff6ef63bf309</ref>
+			<ref>http://groups.google.com/group/salesmen/browse_thread/thread/33099b160f9c97e9/f419ff6ef63bf309</ref>
 		</refs>
 	</item>
 	
 	<item duration="PT1H30M">
 		<desc>Fixed the JBoss-Seam NullPointerException deployment issue (made several attempts)</desc>
 		<refs>
-			<ref>http://groups.google.com/group/salesmen/browse_thread/thread/2ac8ea6d31abbed2?hl=en#</ref>
+			<ref>http://groups.google.com/group/salesmen/browse_thread/thread/2ac8ea6d31abbed2</ref>
 		</refs>
 	</item>
 	
