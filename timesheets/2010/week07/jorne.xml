@@ -32,8 +32,16 @@
 		<refs>
 		</refs>
 	</item>
+	
+	<item duration="PT2H0M">
+		<desc>Researched how to change the project's display name.</desc>
+		<refs>
+			<ref>http://seamframework.org/Documentation/ParametrizeSeamgenProjectPropertiesProjectNameDatabaseMailing</ref>
+			<ref>http://wilma.vub.ac.be:1388/salesmen-dev/home.seam</ref>
+		</refs>
+	</item>
 
-  <item duration="PT15M">
+  <item duration="PT25M">
     <desc>Administration and Communication.</desc>
   </item>
 </timesheet>
