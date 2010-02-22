@@ -3,16 +3,7 @@ package be.vub.salesmen.entity;
 import java.util.Set;
 import java.io.Serializable;
 
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.GeneratedValue;
-import javax.persistence.JoinTable;
-import javax.persistence.JoinColumn;
-import javax.persistence.ManyToMany;
-import javax.persistence.OneToOne;
-import javax.persistence.Version;
-import javax.persistence.Table;
-import javax.persistence.UniqueConstraint;
+import javax.persistence.*;
 
 import org.hibernate.validator.NotNull;
 
@@ -39,7 +30,7 @@ public class UserAccount implements Serializable
     private Set<UserRole> roles;
     private User user;
 
-    @Id @GeneratedValue
+    @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
     public Long getAccountId() 
     {
         return accountId;
