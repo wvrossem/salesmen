@@ -1,4 +1,4 @@
-#Brief summary on using TestNG for writing tests.
+#summary Brief introduction on using TestNG for writing tests.
 
 *WARNING* This is an unfinished page, I have yet to test the more in-depth details. I will  update this page as I progress with the research. You can however use the links for a clear explanation regarding these details.
 
