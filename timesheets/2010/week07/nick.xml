@@ -1,0 +1,60 @@
+<?xml version='1.0'?>
+<timesheet xmlns="http://purl.org/net/timetrack">
+	
+	<item duration="PT30M">
+	  <desc>Checking and publishing timesheets of week06.</ref>
+	  <refs>
+	     <ref>http://code.google.com/p/salesmen/source/detail?r=826</ref>
+		  <ref>http://code.google.com/p/salesmen/source/detail?r=827</ref>
+		  <ref>http://code.google.com/p/salesmen/source/detail?r=828</ref>
+		<ref>http://code.google.com/p/salesmen/source/detail?r=830</ref>
+		<ref>http://code.google.com/p/salesmen/source/detail?r=831</ref>
+		<ref>http://code.google.com/p/salesmen/source/detail?r=832</ref>
+	  </refs>
+	</item>
+
+  <item duration="PT1H0M">
+    <desc>Meeting on Monday 2010/02/15.</desc>
+    <refs>
+   	<ref>http://wilma.vub.ac.be/~se2_0910/docs/minutes/2010/02/12/minutes-20100215.pdf</ref>
+    </refs>
+  </item>
+
+  <item duration="PT15M">
+    <desc>Enable remote deploying.</desc>
+    <refs>
+    	<ref>http://code.google.com/p/salesmen/wiki/RemoteDeploy</ref>
+    </refs>
+  </item>
+
+  <item duration="PT20M">
+    <desc>Install PgAdmin for db access and try to setup connection with Wendy</desc>
+    <refs>
+    </refs>
+  </item>
+
+  <item duration="PT3H">
+    <desc>Workshop Wednesday 17/02.</desc>
+    <refs>
+    </refs>
+  </item>
+
+  <item duration="PT2H">
+    <desc>Attempt to connect local Jboss with Wendy-database.</desc>
+    <refs>
+    	<ref>http://seamframework.org/Community/SeamExampleWithPostgres</ref>
+		<ref>http://binodjsf.blogspot.com/2009/01/first-seam-example.html</ref>
+		<ref>http://groups.google.com/group/salesmen/browse_thread/thread/33099b160f9c97e9/f419ff6ef63bf309</ref>
+    </refs>
+  </item>
+
+  <item duration="PT3H">
+    <desc>Workshop Friday 19/02</desc>
+    <refs>
+    </refs>
+  </item>
+
+  <item duration="PT30M">
+    <desc>Administration and Communication.</desc>
+  </item>
+</timesheet>
