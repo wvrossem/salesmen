@@ -7,6 +7,9 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.Version;
 import org.hibernate.validator.Length;
 
+//other imports
+import java.util.Date;
+
 @Entity
 public class Auction implements Serializable
 {
@@ -20,6 +23,14 @@ public class Auction implements Serializable
     private String name;
 
     // add additional entity attributes
+    private User owner;
+    private Category category;
+    private String title;
+    private String description;
+    private Date endDate;
+    private Bid highBid;
+    //private Bid[] bids;
+    private double startingPrice;
 
     //attribute getters/setters with annotations (you probably should edit)
 
@@ -50,5 +61,61 @@ public class Auction implements Serializable
     public void setName(String name) {
         this.name = name;
     }
+
+	public User getOwner() {
+		return owner;
+	}
+
+	public void setOwner(User owner) {
+		this.owner = owner;
+	}
+
+	public Category getCategory() {
+		return category;
+	}
+
+	public void setCategory(Category category) {
+		this.category = category;
+	}
+
+	public String getTitle() {
+		return title;
+	}
+
+	public void setTitle(String title) {
+		this.title = title;
+	}
+
+	public String getDescription() {
+		return description;
+	}
+
+	public void setDescription(String description) {
+		this.description = description;
+	}
+
+	public Date getEndDate() {
+		return endDate;
+	}
+
+	public void setEndDate(Date endDate) {
+		this.endDate = endDate;
+	}
+
+	public Bid getHighBid() {
+		return highBid;
+	}
+
+	public void setHighBid(Bid highBid) {
+		this.highBid = highBid;
+	}
+
+	public double getStartingPrice() {
+		return startingPrice;
+	}
+
+	public void setStartingPrice(double startingPrice) {
+		this.startingPrice = startingPrice;
+	}
 
 }
