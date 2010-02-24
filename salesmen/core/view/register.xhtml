@@ -56,6 +56,14 @@
 		 value="#{registerUserAccount.user.email}"/>
     <div class="validation-error"><h:message for="email"/></div>
   </p>
+    <p>
+    <h:outputLabel for="gender">Gender<em>*</em></h:outputLabel>
+        <h:selectOneRadio id="gender" value="#{registerUserAccount.user.gender}" required="true">
+            <f:selectItem itemValue="male" itemLabel="Male" />
+            <f:selectItem itemValue="female" itemLabel="Female" />
+        </h:selectOneRadio>
+    <div class="validation-error"><h:message for="gender"/></div>
+  </p>
 </s:validateAll>
 
 <h:commandButton id="submit" value="Register" 

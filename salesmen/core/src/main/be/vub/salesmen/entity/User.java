@@ -18,13 +18,17 @@ public class User implements Serializable
 {
 	private static final long serialVersionUID = 8131778475502231881L;
 
+   public enum Gender {
+     male, female
+   }
+  
 	private Integer version;
-	
 	private Long userId;
 	private String screenName;
 	private String firstName;
 	private String lastName;
 	private String email;
+  private Gender gender;
 	
     @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
     public Long getUserId()
@@ -88,6 +92,17 @@ public class User implements Serializable
 	public void setEmail(String email)
 	{
 		this.email = email;
+	}
+
+  @NotNull
+	public Gender getGender()
+	{
+		return gender;
+	}
+
+	public void setGender(Gender gender)
+	{
+		this.gender = gender;
 	}
 	
 	@Version
