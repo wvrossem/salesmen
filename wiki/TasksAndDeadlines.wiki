@@ -15,22 +15,23 @@ Find out what *tasks* you're assigned to and the *time* by which you're expected
 == Jorne ==
 
 || Description || Issues Involved || Deadline || Delivered ||
-|| Enable the application to send emails || Issue 12 || Fri. 26 Feb. || N/A ||
+|| Sending email via the application and account verification || Issue 12 || Fri. 26 Feb. || N/A ||
 
 == Bart ==
 
 || Description || Issues Involved || Deadline || Delivered ||
-|| Category Management || Issue 10 Issue 27 Issue 30 Issue 32 || Mon. 22 Feb. || N/A ||
+|| Category management || Issue 27 || ~~Mon. 22 Feb.~~ || N/A ||
+|| Process of placing an auction || Issue 10 || Mon. 27 Feb. || N/A ||
 
 == Patrick ==
 
 || Description || Issues Involved || Deadline || Delivered ||
-|| View/edit user profile || Issue 33 || Wed. 26 Feb. || N/A ||
+|| View/edit user profile || Issue 33 || Fri. 26 Feb. || N/A ||
 
 == Wouter ==
 
 || Description || Issues Involved || Deadline || Delivered ||
-|| Basic search in auctions and user || Issue 9, Issue 16 || Wed. 24 Feb. || N/A ||
+|| Basic search in auctions and users || Issue 9 || Wed. 24 Feb. || N/A ||
 
 = See Also =
 [DevelopmentRoles Development Roles]
