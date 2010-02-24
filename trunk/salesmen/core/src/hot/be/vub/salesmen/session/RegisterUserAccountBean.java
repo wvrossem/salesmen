@@ -67,6 +67,7 @@ public class RegisterUserAccountBean implements RegisterUserAccount, Serializabl
 			user.setFirstName("John");
 			user.setLastName("Smith");
 			user.setEmail(account.getUsername() + "@nowhere.com");
+      user.setGender(User.Gender.male);
 			entityManager.persist(user);
 		}
 		account.setUser(user);
