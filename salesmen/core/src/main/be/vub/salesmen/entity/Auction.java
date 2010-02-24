@@ -9,6 +9,9 @@ import org.hibernate.validator.Length;
 
 //other imports
 import java.util.Date;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
+import org.hibernate.validator.NotNull;
 
 @Entity
 public class Auction implements Serializable
@@ -29,7 +32,7 @@ public class Auction implements Serializable
     private String description;
     private Date endDate;
     private Bid highBid;
-    //private Bid[] bids;
+   // private Bid[] bids;
     private double startingPrice;
 
     //attribute getters/setters with annotations (you probably should edit)
@@ -62,6 +65,9 @@ public class Auction implements Serializable
         this.name = name;
     }
 
+    @NotNull
+    @ManyToOne
+    @JoinColumn(name = "USER_ID")
 	public User getOwner() {
 		return owner;
 	}
@@ -70,6 +76,9 @@ public class Auction implements Serializable
 		this.owner = owner;
 	}
 
+	@NotNull   
+	@ManyToOne
+	@JoinColumn(name = "CATEGORY_ID")
 	public Category getCategory() {
 		return category;
 	}
@@ -78,6 +87,7 @@ public class Auction implements Serializable
 		this.category = category;
 	}
 
+	@NotNull
 	public String getTitle() {
 		return title;
 	}
@@ -86,6 +96,7 @@ public class Auction implements Serializable
 		this.title = title;
 	}
 
+	@NotNull
 	public String getDescription() {
 		return description;
 	}
@@ -94,6 +105,7 @@ public class Auction implements Serializable
 		this.description = description;
 	}
 
+	@NotNull
 	public Date getEndDate() {
 		return endDate;
 	}
@@ -102,6 +114,7 @@ public class Auction implements Serializable
 		this.endDate = endDate;
 	}
 
+	@NotNull
 	public Bid getHighBid() {
 		return highBid;
 	}
@@ -110,6 +123,7 @@ public class Auction implements Serializable
 		this.highBid = highBid;
 	}
 
+	@NotNull
 	public double getStartingPrice() {
 		return startingPrice;
 	}
