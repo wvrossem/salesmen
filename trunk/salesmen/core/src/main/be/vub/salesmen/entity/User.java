@@ -31,6 +31,7 @@ public class User implements Serializable
 	private String email;
   private Gender gender;
   private Date dob;
+  private Date memberSince;
 	
     @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
     public Long getUserId()
@@ -116,6 +117,17 @@ public class User implements Serializable
    public void setDob(Date dob)
    {
       this.dob = dob;
+   }
+
+   @NotNull
+   public Date getMemberSince()
+   {
+      return memberSince;
+   }
+
+   public void setMemberSince(Date memberSince)
+   {
+      this.memberSince = memberSince;
    }
 	
 	@Version
