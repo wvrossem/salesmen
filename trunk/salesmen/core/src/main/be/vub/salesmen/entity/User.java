@@ -1,6 +1,7 @@
 package be.vub.salesmen.entity;
 
 import java.io.Serializable;
+import java.util.Date;
 
 import javax.persistence.*;
 
@@ -29,6 +30,7 @@ public class User implements Serializable
 	private String lastName;
 	private String email;
   private Gender gender;
+  private Date dob;
 	
     @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
     public Long getUserId()
@@ -104,6 +106,17 @@ public class User implements Serializable
 	{
 		this.gender = gender;
 	}
+
+   @NotNull
+   public Date getDob()
+   {
+      return dob;
+   }
+
+   public void setDob(Date dob)
+   {
+      this.dob = dob;
+   }
 	
 	@Version
     public Integer getVersion() {

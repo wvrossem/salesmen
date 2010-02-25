@@ -3,6 +3,7 @@ package be.vub.salesmen.session;
 import static org.jboss.seam.ScopeType.CONVERSATION;
 
 import java.io.Serializable;
+import java.util.Date;
 
 import javax.ejb.Remove;
 import javax.persistence.EntityManager;
@@ -68,6 +69,7 @@ public class RegisterUserAccountBean implements RegisterUserAccount, Serializabl
 			user.setLastName("Smith");
 			user.setEmail(account.getUsername() + "@nowhere.com");
       user.setGender(User.Gender.male);
+      user.setDob(new Date());
 			entityManager.persist(user);
 		}
 		account.setUser(user);
