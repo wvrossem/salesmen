@@ -8,13 +8,7 @@ import java.util.Date;
 import javax.ejb.Remove;
 import javax.persistence.EntityManager;
 
-import org.jboss.seam.annotations.Begin;
-import org.jboss.seam.annotations.Destroy;
-import org.jboss.seam.annotations.End;
-import org.jboss.seam.annotations.In;
-import org.jboss.seam.annotations.Name;
-import org.jboss.seam.annotations.Observer;
-import org.jboss.seam.annotations.Scope;
+import org.jboss.seam.annotations.*;
 import org.jboss.seam.faces.FacesMessages;
 import org.jboss.seam.security.Identity;
 import org.jboss.seam.security.RunAsOperation;
@@ -57,7 +51,7 @@ public class RegisterUserAccountBean implements RegisterUserAccount, Serializabl
 			FacesMessages.instance().addToControl("passwordConfirmation", "Passwords do not match");
 		}
 	}
-	
+
 	@Observer(JpaIdentityStore.EVENT_USER_CREATED)
 	public void userAccountCreated(UserAccount account)
 	{
@@ -70,6 +64,7 @@ public class RegisterUserAccountBean implements RegisterUserAccount, Serializabl
 			user.setEmail(account.getUsername() + "@nowhere.com");
       user.setGender(User.Gender.male);
       user.setDob(new Date());
+      user.setMemberSince(new Date());
 			entityManager.persist(user);
 		}
 		account.setUser(user);
@@ -79,6 +74,7 @@ public class RegisterUserAccountBean implements RegisterUserAccount, Serializabl
 	@End
 	public void createUserAccount()
 	{
+    user.setMemberSince(new Date());
 		entityManager.persist(user);
 		new RunAsOperation()
 		{
@@ -97,8 +93,8 @@ public class RegisterUserAccountBean implements RegisterUserAccount, Serializabl
 		identity.getCredentials().setPassword(password);
 		identity.login();
 	}
-	
-	public User getUser()
+
+  public User getUser()
 	{
 		return user;
 	}
