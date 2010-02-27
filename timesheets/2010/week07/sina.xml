@@ -1,0 +1,25 @@
+<?xml version='1.0'?>
+<timesheet xmlns="http://purl.org/net/timetrack">
+  <item duration="PT1H">
+    <desc>Meeting on Mon. 15 Feb.</desc>
+    <refs>
+      <ref>http://wilma.vub.ac.be/~se2_0910/docs/minutes/2010/02/15/minutes-20100215.pdf</ref>
+    </refs>
+  </item>
+  <item duration="PT2H">
+    <desc>Workshop on Feb. 17 from 9am.</desc>
+  </item>
+  <item duration="PT1H">
+    <desc>Workshop on Feb. 19 from 1pm.</desc>
+  </item>
+  <item duration="PT30M">
+    <desc>Worked on the DBMS.</desc>
+    <refs>
+      <ref>http://code.google.com/p/salesmen/issues/detail?id=31</ref>
+      <ref>http://groups.google.com/group/salesmen/browse_thread/thread/4f34c81d6d08dd58</ref>
+    </refs>
+  </item>
+  <item duration="PT30M">
+    <desc>Administration and Communication.</desc>
+  </item>
+</timesheet>
