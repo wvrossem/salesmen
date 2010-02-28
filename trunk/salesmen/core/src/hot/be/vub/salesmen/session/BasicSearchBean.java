@@ -1,15 +1,8 @@
 package be.vub.salesmen.session;
 
-import java.io.Serializable;
 import java.util.ArrayList;
-import java.util.Collections;
-import java.util.Comparator;
-import java.util.HashMap;
-import java.util.HashSet;
 import java.util.List;
-import java.util.Map;
-import java.util.Set;
-import java.util.Map.Entry;
+import java.util.concurrent.atomic.AtomicReference;
 
 import javax.ejb.Remove;
 import javax.ejb.Stateful;
@@ -22,10 +15,6 @@ import org.jboss.seam.annotations.Factory;
 import org.jboss.seam.annotations.Name;
 import org.jboss.seam.annotations.Scope;
 import org.jboss.seam.annotations.datamodel.DataModel;
-import org.jboss.seam.annotations.datamodel.DataModel;
-import org.jboss.seam.annotations.datamodel.DataModelSelection;
-
-import be.vub.salesmen.entity.User;
 
 @Stateful
 @Name("basicSearch")
@@ -37,7 +26,7 @@ public class BasicSearchBean implements BasicSearch {
 	private String searchTerm;
 	private String entityType;
 	
-	private int pageSize = 10;
+	private int pageSize = 2;
 	private int page;
 	
 	private boolean nextPageAvailable;
@@ -45,32 +34,41 @@ public class BasicSearchBean implements BasicSearch {
 	@DataModel
 	private List entities;
 
-	public void find() {
+    public void find() {
 		page = 0;
 		queryEntities();
 	}
 
-	public void nextPage() {
+    public List suggest(Object begin) {
+       AtomicReference<String> qry = new AtomicReference<String>("select u.screenName from User u");
+
+        List results = entityManager.createQuery(qry.get()).getResultList();
+
+        return results;
+    }
+
+    public void nextPage() {
 		page++;
 		queryEntities();
 	}
 
 	private void queryEntities() {
-		
+
 		StringBuilder qry = new StringBuilder();
 		
 		if ( entityType.equals("Auction")) {
 			qry.append("from Auction e");
+			qry.append(" WHERE UPPER(e.name) LIKE UPPER(#{pattern})");			
 		} else if (entityType.equals("User")) {
 			qry.append("from User e");
+			qry.append(" WHERE UPPER(e.screenName) LIKE UPPER(#{pattern})");
+			qry.append(" or UPPER(e.firstName) LIKE UPPER(#{pattern})");
+			qry.append(" or UPPER(e.lastName) LIKE UPPER(#{pattern})");
 		} else if (entityType.equals("Tag")) {
 			qry.append("from Tag e");
 		} else if (entityType.equals("Category")){
 			qry.append("from Category e");
-		}
-		
-		// Only works for users
-		qry.append(" WHERE UPPER(e.screenName) LIKE UPPER(#{pattern})");
+		}		
 		
 		List results = entityManager.createQuery(qry.toString())
 			.setMaxResults(pageSize) //+1?
