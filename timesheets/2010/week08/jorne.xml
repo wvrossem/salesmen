@@ -1,0 +1,35 @@
+<?xml version='1.0'?>
+<timesheet xmlns="http://purl.org/net/timetrack">
+	<item duration="PT1H10M">
+		<desc>Meeting on Monday 2010/02/22.</desc>
+		<refs>
+			<ref></ref>
+		</refs>
+
+	<item duration="PT3H15M">
+		<desc>Workshop 3</desc>
+		<refs>
+			<ref></ref>
+		</refs>
+	</item>
+	
+	<item duration="PT3H30M">
+		<desc>Researched how to change project's name. Received some errors while trying out possible solutions</desc>
+		<refs>
+			<ref>http://seamframework.org/Documentation/ParametrizeSeamgenProjectPropertiesProjectNameDatabaseMailing</ref>
+			<ref>http://www.redhat.com/docs/en-US/JBoss_Developer_Studio/en/seam/html_single/index.html#renaming_projects_folders</ref>
+			<ref>http://groups.google.com/group/orc-lang/browse_thread/thread/00a695f114fd1cf5</ref>
+		</refs>
+	</item>
+	
+	<item duration="PT0H45M">
+		<desc>Created new Seam project for stable version of salesmen (salesmen-stable), with some problems. Therefore not committed</desc>
+		<refs>
+			<ref></ref>
+		</refs>
+	</item>
+
+  <item duration="PT30M">
+    <desc>Administration and Communication.</desc>
+  </item>
+</timesheet>
