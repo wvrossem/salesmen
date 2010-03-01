@@ -1,7 +1,7 @@
 <?xml version='1.0'?>
 <timesheet xmlns="http://purl.org/net/timetrack">
   
-  <item duration="PT1H30M">
+  <item duration="PT1H0M">
     <desc>Meeting on Monday 22/02/2010.</desc>
     <refs>
       <ref>No minutes yet</ref>
