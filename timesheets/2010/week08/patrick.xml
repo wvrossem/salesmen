@@ -4,17 +4,11 @@
   <item duration="PT1H30M">
     <desc>Meeting on Monday 22/02/2010.</desc>
     <refs>
-      <ref>No Minutes Yet</ref>
+      <ref>No minutes yet</ref>
     </refs>
   </item>
-  <item duration="PT4H">
-    <desc>Workshop #2: 24/02/2010, 09h00 -> 13h00.</desc>
-  </item>
-  <item duration="PT4H">
-    <desc>Programmed (only a minor commit)</desc>
-    <refs>
-      <ref>http://code.google.com/p/salesmen/source/detail?r=928</ref>
-    </refs>
+  <item duration="PT3H30M">
+    <desc>Workshop: 24/02/2010, 09h00 -> 12h30.</desc>
   </item>
   <item duration="PT30M">
     <desc>Administration and Communication</desc>
