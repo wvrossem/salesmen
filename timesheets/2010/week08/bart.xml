@@ -1,0 +1,22 @@
+<?xml version='1.0'?>
+<timesheet xmlns="http://purl.org/net/timetrack">
+
+  <item duration="PT1H0M">
+    <desc>Meeting on Monday 2010/02/22.</desc>
+    <refs>
+   	<ref>No minutes yet</ref>
+    </refs>
+  </item>
+
+  <item duration="PT2H30M">
+    <desc>Workshop 24/02 09h30->12h00</desc>
+    <refs>
+   	<ref>http://groups.google.com/group/salesmen/browse_thread/thread/baf54b819e2572bb</ref>
+    </refs>
+  </item>
+
+  <item duration="PT30M">
+    <desc>Administration and Communication.</desc>
+    <refs></refs>
+  </item>
+</timesheet>
