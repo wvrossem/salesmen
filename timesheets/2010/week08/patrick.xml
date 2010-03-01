@@ -10,6 +10,15 @@
   <item duration="PT3H30M">
     <desc>Workshop: 24/02/2010, 09h00 -> 12h30.</desc>
   </item>
+
+<item duration="PT4H">
+    <desc>Programmed (only a minor commit)</desc>
+    <refs>
+      <ref>http://code.google.com/p/salesmen/source/detail?r=928</ref>
+	<ref>http://code.google.com/p/salesmen/source/detail?r=948</ref>
+    </refs>
+  </item>
+
   <item duration="PT30M">
     <desc>Administration and Communication</desc>
   </item>
