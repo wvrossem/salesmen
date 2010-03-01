@@ -1,0 +1,67 @@
+<?xml version='1.0'?>
+<timesheets
+    xmlns="http://purl.org/net/timetrack"
+    xmlns:xi="http://www.w3.org/2001/XInclude"
+    from="2010-02-22"
+    to="2010-02-28"
+    xml:id="week08-2010">
+  <title>VUB - SE2 Timesheets for the 8th Week of 2010</title>
+  <published>2010-03-01</published>
+  <updated>2010-03-01</updated>
+  <person>
+    <name>Nick De Cooman</name>
+    <xi:include href="nick.xml">
+      <xi:fallback>
+	<xi:include href="../default/timesheet.xml"/>
+      </xi:fallback>      
+    </xi:include>
+  </person>
+  <person>
+    <name>Jonathan Jeurissen</name>
+    <xi:include href="jonathan.xml">
+      <xi:fallback>
+	<xi:include href="../default/timesheet.xml"/>
+      </xi:fallback>      
+    </xi:include>
+  </person>
+  <person>
+    <name>Sina Khakbaz Heshmati</name>
+    <xi:include href="sina.xml">
+      <xi:fallback>
+	<xi:include href="../default/timesheet.xml"/>
+      </xi:fallback>      
+    </xi:include>
+  </person>
+  <person>
+    <name>Jorne Laton</name>
+    <xi:include href="jorne.xml">
+      <xi:fallback>
+	<xi:include href="../default/timesheet.xml"/>
+      </xi:fallback>      
+    </xi:include>
+  </person>
+  <person>
+    <name>Bart Maes</name>
+    <xi:include href="bart.xml">
+      <xi:fallback>
+	<xi:include href="../default/timesheet.xml"/>
+      </xi:fallback>      
+    </xi:include>
+  </person>
+  <person>
+    <name>Patrick Provinciael</name>
+    <xi:include href="patrick.xml">
+      <xi:fallback>
+	<xi:include href="../default/timesheet.xml"/>
+      </xi:fallback>
+    </xi:include>
+  </person>
+  <person>
+    <name>Wouter Van Rossem</name>
+    <xi:include href="wouter.xml">
+      <xi:fallback>
+	<xi:include href="../default/timesheet.xml"/>
+      </xi:fallback>
+    </xi:include>
+  </person>
+</timesheets>
