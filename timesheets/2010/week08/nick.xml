@@ -1,0 +1,84 @@
+<?xml version='1.0'?>
+<timesheet xmlns="http://purl.org/net/timetrack">
+	
+	<item duration="PT25M">
+	  <desc>Checking and publishing timesheets of week07.</desc>
+	  <refs>
+	     <ref>http://code.google.com/p/salesmen/source/detail?r=903</ref>
+		  <ref>http://code.google.com/p/salesmen/source/detail?r=904</ref>
+		  <ref>http://code.google.com/p/salesmen/source/detail?r=905</ref>
+		<ref>http://code.google.com/p/salesmen/source/detail?r=906</ref>
+		<ref>http://code.google.com/p/salesmen/source/detail?r=907</ref>
+		<ref>http://code.google.com/p/salesmen/source/detail?r=908</ref>
+		<ref>http://code.google.com/p/salesmen/source/detail?r=909</ref>
+	  </refs>
+	</item>
+
+  <item duration="PT1H0M">
+    <desc>Meeting on Monday 2010/02/22.</desc>
+    <refs>
+   	<ref>No minutes yet</ref>
+    </refs>
+  </item>
+
+  <item duration="PT30M">
+    <desc>Look up requirements in srs concerning issue 7 and take a look at current state of register-process.</desc>
+    <refs>
+   	<ref>http://code.google.com/p/salesmen/issues/detail?id=7</ref>
+<ref>http://wilma.vub.ac.be/~se2_0910/docs/srs/index.html</ref>
+    </refs>
+  </item>
+
+  <item duration="PT3H0M">
+    <desc>Workshop</desc>
+    <refs>
+   	<ref>http://groups.google.com/group/salesmen/browse_thread/thread/baf54b819e2572bb</ref>
+    </refs>
+  </item>
+
+  <item duration="PT1H30M">
+    <desc>Added birthday and gender to register form</desc>
+    <refs>
+   	<ref>http://code.google.com/p/salesmen/issues/detail?id=7</ref>
+	<ref>http://code.google.com/p/salesmen/source/detail?r=925</ref>
+	<ref>http://code.google.com/p/salesmen/source/detail?r=924</ref>
+    </refs>
+  </item>
+
+  <item duration="PT0H30M">
+    <desc>Fixed problem in build.xml to enable deploy/explode</desc>
+    <refs>
+ 	<ref>http://seamframework.org/Community/AntBuildFailedFailedToCopyDroolstemplatesjarDueToJavaioFileNotFoundException</ref>
+    </refs>
+  </item>
+
+  <item duration="PT1H15M">
+    <desc>Attempt to verify uniqueness of username with Ajax</desc>
+    <refs>
+ 	<ref>http://www.coderanch.com/t/482021/JSF/java/javax-el-PropertyNotFoundException</ref>
+	<ref>http://groups.google.com/group/salesmen/browse_thread/thread/c23bd3fbf4033604</ref>
+	<ref>http://seamframework.org/Community/FacesMessagesHaveBeenEnqueuedButMayNotHaveBeenDisplayed</ref>
+	
+    </refs>
+  </item>
+
+  <item duration="PT0H15M">
+    <desc>Added memberSince field to register form</desc>
+    <refs>
+ 	<ref>http://code.google.com/p/salesmen/source/detail?r=926</ref>
+    </refs>
+  </item>
+
+  <item duration="PT0H10M">
+    <desc>Enable support for spaces in last-name field of register form</desc>
+    <refs>
+ 	<ref>http://code.google.com/p/salesmen/source/detail?r=927</ref>
+    </refs>
+  </item>
+
+
+  <item duration="PT30M">
+    <desc>Administration and Communication.</desc>
+    <refs></refs>
+  </item>
+</timesheet>
