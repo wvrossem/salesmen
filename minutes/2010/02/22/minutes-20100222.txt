@@ -1,0 +1,190 @@
+                      Minutes Meeting 16
+
+                           Jonathan Jeurissen
+                              March 2, 2010
+
+
+1 Meeting Information
+Date: Friday, February 22, 2009
+Time: 18H00--19H00
+Place: E.010
+
+1.1 Attendees
+Following members were present:
+
+   * Nick De Cooman
+   * Jonathan Jeurissen
+   * Bart Maes
+   * Jorne Laton
+   * Patrick Provinciael
+   * Wouter Van Rossem
+
+   * Sina Khakbaz Heshmati
+1.2 Revision History
+ Rev. Date Description
+  1.0 February 28, 2009 First draft created
+  1.1 March 1, 2009 Revised by QA Assistant
+
+
+                                      1
+
+
+2 Purpose of this meeting
+
+This meeting has been arranged because there were a few complaints about
+Patrick and Patrick's attitude towards the project and it's members. In this
+meeting those arguments have been discussed by the whole team.
+
+3 Arguments
+   * Implementation:
+     Offense: Friday February 19,2010 it looked like Patrick has not im-
+     plemented anything yet.
+     Defense: Patrick has already done implementation, but has not com-
+     mitted it yet (because his code was not tested yet), which let to believe
+     Patrick did not implement anything yet.
+   * Environment not set-up completely:
+     Offense: In the timesheet of week 51, Patrick claims to have set-up
+     the environment. Quote: "Prepared for the Implementation phase. In-
+     cluding: Ensuring that environment is set-up. Read and prepared the
+     task assigned to me." At February 19th, Patrick was not finished with
+     setting up JBoss and Seam. This became clear in the workshop. De-
+     fense: Patrick had installed Eclipse, with all it's plugins. This was
+     what he meant by setting up the environment. It was a misunder-
+     standing. Patrick could easily install JBoss, but he was waiting for the
+     verdict whether JBoss would be installed on the server or locally (N.B.
+     On the server and locally was the answer to this question, as already
+     explained by Sina). Anyway, he encountered a problem: his laptop was
+     unable to run JBoss and Seam due to a shortage of memory.
+
+   * No progression, no drive:
+     Offense: According to Nick, there was no drive in Patrick for this
+     project. This statement was not shared by everyone. He didn't come
+     to the workshop, because it didn't seem important enough. Defense:
+     Patrick has put a lot of work in the project, but sometimes he spends
+     time on the wrong subjects instead of those of his deadlines. Patrick
+     also knows from himself that he has been too lazy sometimes in the
+     past, but he will work on this. However, Patrick says that his drive for
+     this course was strong enough, but that it decreases by these critics.
+   * No test framework:
+     Offense: There is no test framework yet, while the deadline was in
+
+                                          2
+
+
+  December. Defense: There is a test framework, namely JUnit, but
+  it seemed insufficient for Seam. Seam has its own test framework,
+  but Patrick knew too late that he should have used TestNG instead
+  of JUnit. He still needed time (because of the exams) to study Seam
+  and TestNG, that's why the usable test framework is not finished yet.
+  Wednesday, February 24th, he will give a quick tutorial on how to use
+  TestNG. The framework will be finished by the end of February.
+* STD not finished yet:
+  Offense: The STD is only 9 pages and only contains basic information.
+  It's not fished yet. Defense: In the previous meeting this has already
+  been discussed. The STD will be updated in the future, but Patrick
+  wanted to focus on the implementation instead of working on the STD.
+  In his opinion, the Implementation (which needs 2 phases) is more
+  important than finishing the STD.
+
+* Attitude:
+  Offense: Sometime Patrick has a negative (or even aggressive) atti-
+  tude towards the other team members. Arguing is sometimes a prob-
+  lem, as Patrick gets easily infuriated (with yelling in a meeting as a
+  result). Patrick has a strong opinion and sometimes does not like the
+  help or thoughts from others. When he sticks to his opinion (which
+  is not always the one with the best arguments), this can work contra-
+  productive. Defense: He is aware of this problem and does its best to
+  keep himself under control when arguing. This effort is visible, but still
+  insufficient for now. Also, this critic is a little bit old and there have
+  not been real problems since the last time that there was some yelling
+  in the meetings, as he worked on that. Nevertheless, Patrick also has
+  to be to be a contributor. He is aware of his strong opinion and he will
+  try to appreciate the help from others. We're all a team here.
+* Conventions:
+  Offense: The conventions are not yet complete and are not specific
+  enough. Defense: The conventions were still general because Patrick
+  didn't want to overload the team with conventions. They will be edited
+  soon and will be put online on the according Wiki page.
+* Critics towards the manager:
+  Offense: Nick claims that the line has been crossed too much and too
+  many time and he sent an e-mail with arguments to Patrick, without
+  telling him first in person. This e-mail was for Patrick an aggressive
+  attack and has put him in a weak position. Defense: There were
+
+                                        3
+
+
+     several opinions about this subject. Some members agreed that Nick
+     should not have send this e-mail to the whole group, but should have
+     privately discussed this with Patrick. The meeting on the other hand
+     was a good idea, as the team wants to help with these problems. Patrick
+     said he was surprised about all the arguments and noted that one should
+     handle a problem when it occurs and not when the line has been crossed
+     too much'.
+
+4 Arguments against Patrick from Patrick him-
+     self
+
+Patrick had prepared a document with a sort of QA against himself and he
+discussed this shortly. The items in this document are enumerated because
+he wanted to improve on these subjects. By the way, this document was
+meant for the previous meeting, but due to a train delay, he could not be
+there.
+   * Communication:
+     Patrick did too many things without clearly communicating with the
+     others.
+   * Deadlines:
+     Unimportant deadlines are also important.
+
+   * Laziness:
+     Patrick claims to be lazy sometimes.
+   * Timesheets:
+     His timesheets are wrong, but not because he puts too much on them
+     but often because he didn't put enough references on them. Patrick
+     did give some examples about this. However, sometimes the results
+     of his many hours were not there. Also, occasionally there are a few
+     references missing in his timesheets.
+   * A few other items, which were already discussed above
+
+5 N.B.
+
+This meeting should also be a warning to the other team members. This
+project should be taken seriously and there is not much time to lose. This is
+
+                                          4
+
+
+why this problem has been discussed, in the line of progression. The purpose
+is that the team gets stronger out of it.
+
+6 Agenda
+A complete list of Agenda items is available on [?].
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                         5
+
+
