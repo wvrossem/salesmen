@@ -5,6 +5,7 @@ import java.util.Date;
 
 import javax.persistence.*;
 
+import be.vub.salesmen.session.Country;
 import org.jboss.seam.annotations.Name;
 
 import org.hibernate.validator.Email;
@@ -32,6 +33,7 @@ public class User implements Serializable
   private Gender gender;
   private Date dob;
   private Date memberSince;
+  private Country country;
 	
     @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
     public Long getUserId()
@@ -134,6 +136,16 @@ public class User implements Serializable
     public Integer getVersion() {
         return version;
     }
+
+  @Enumerated(EnumType.STRING)
+  public Country getCountry() {
+    return country;
+  }
+
+  public void setCountry(Country country)
+  {
+    this.country = country;
+  }
 
 	@SuppressWarnings("unused")
 	private void setVersion(Integer version) {
