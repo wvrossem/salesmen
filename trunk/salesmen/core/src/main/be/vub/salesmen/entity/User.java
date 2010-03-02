@@ -74,7 +74,7 @@ public class User implements Serializable
 
 	@NotNull
 	@Length(min = 3, max = 32)
-	@Pattern(regex="^[a-zA-Z.-]+ [a-zA-Z.-]+", 
+	@Pattern(regex="[a-zA-Z]+(\\s[a-zA-Z]+)*",
 		message="Last names must only contain letters")
 	public String getLastName()
 	{
