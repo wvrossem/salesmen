@@ -2,7 +2,7 @@
 <timesheet xmlns="http://purl.org/net/timetrack">
 	
 	<item duration="PT30M">
-	  <desc>Checking and publishing timesheets of week06.</ref>
+	  <desc>Checking and publishing timesheets of week06.</desc>
 	  <refs>
 	     <ref>http://code.google.com/p/salesmen/source/detail?r=826</ref>
 		  <ref>http://code.google.com/p/salesmen/source/detail?r=827</ref>

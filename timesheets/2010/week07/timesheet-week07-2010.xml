@@ -1,41 +1,66 @@
 <?xml version="1.0"?>
-<timesheets xmlns="http://purl.org/net/timetrack" xmlns:xi="http://www.w3.org/2001/XInclude" from="2010-02-08" to="2010-02-14" xml:id="week06-2010">
-  <title>VUB - SE2 Timesheets for the 6st Week of 2010</title>
-  <published>2010-02-15</published>
-  <updated>2010-02-15</updated>
+<timesheets xmlns="http://purl.org/net/timetrack" xmlns:xi="http://www.w3.org/2001/XInclude" from="2010-02-15" to="2010-02-21" xml:id="week07-2010">
+  <title>VUB - SE2 Timesheets for the 7th Week of 2010</title>
+  <published>2010-02-22</published>
+  <updated>2010-02-22</updated>
   <person>
     <name>Nick De Cooman</name>
     <timesheet xmlns="http://purl.org/net/timetrack">
 	
-	<item duration="PT1H0M">
-    <desc>Update statistics and make analysis.</desc>
+	<item duration="PT30M">
+	  <desc>Checking and publishing timesheets of week06.</desc>
+	  <refs>
+	     <ref>http://code.google.com/p/salesmen/source/detail?r=826</ref>
+		  <ref>http://code.google.com/p/salesmen/source/detail?r=827</ref>
+		  <ref>http://code.google.com/p/salesmen/source/detail?r=828</ref>
+		<ref>http://code.google.com/p/salesmen/source/detail?r=830</ref>
+		<ref>http://code.google.com/p/salesmen/source/detail?r=831</ref>
+		<ref>http://code.google.com/p/salesmen/source/detail?r=832</ref>
+	  </refs>
+	</item>
+
+  <item duration="PT1H0M">
+    <desc>Meeting on Monday 2010/02/15.</desc>
     <refs>
-      <ref>http://groups.google.com/group/salesmen/browse_thread/thread/5b99f469ae9ab3d7</ref>
-    </refs>
-  </item>
-	
-	<item duration="PT0H15M">
-    <desc>Write agenda of meeting on Friday 2010/02/12.</desc>
-    <refs>
-      <ref>http://groups.google.com/group/salesmen/browse_thread/thread/2035573e8e9adf64</ref>
+   	<ref>http://wilma.vub.ac.be/~se2_0910/docs/minutes/2010/02/12/minutes-20100215.pdf</ref>
     </refs>
   </item>
 
-	<item duration="PT1H0M">
-    <desc>Refresh knowledge of Seam Security.</desc>
+  <item duration="PT15M">
+    <desc>Enable remote deploying.</desc>
     <refs>
-      <ref>http://docs.jboss.org/seam/2.2.0.GA/reference/en-US/html/security.html</ref>
-    </refs>
-  </item>
-
-  <item duration="PT1H30M">
-    <desc>Meeting on Friday 2010/02/12.</desc>
-    <refs>
-      <ref>http://wilma.vub.ac.be/~se2_0910/docs/minutes/2010/02/12/minutes-20100212.pdf</ref>
+    	<ref>http://code.google.com/p/salesmen/wiki/RemoteDeploy</ref>
     </refs>
   </item>
 
   <item duration="PT20M">
+    <desc>Install PgAdmin for db access and try to setup connection with Wendy</desc>
+    <refs>
+    </refs>
+  </item>
+
+  <item duration="PT3H">
+    <desc>Workshop Wednesday 17/02.</desc>
+    <refs>
+    </refs>
+  </item>
+
+  <item duration="PT2H">
+    <desc>Attempt to connect local Jboss with Wendy-database.</desc>
+    <refs>
+    	<ref>http://seamframework.org/Community/SeamExampleWithPostgres</ref>
+		<ref>http://binodjsf.blogspot.com/2009/01/first-seam-example.html</ref>
+		<ref>http://groups.google.com/group/salesmen/browse_thread/thread/33099b160f9c97e9/f419ff6ef63bf309</ref>
+    </refs>
+  </item>
+
+  <item duration="PT3H">
+    <desc>Workshop Friday 19/02</desc>
+    <refs>
+    </refs>
+  </item>
+
+  <item duration="PT30M">
     <desc>Administration and Communication.</desc>
   </item>
 </timesheet>
@@ -44,31 +69,17 @@
     <name>Jonathan Jeurissen</name>
     <timesheet xmlns="http://purl.org/net/timetrack">
   
-   <item duration="PT2H">
-    <desc>Installing Java, Apache Ant, JBoss and JBoss-Seam (had some problems)</desc>
-    <refs>
-	<ref>http://code.google.com/p/salesmen/wiki/HowtoRunJBossSeamExamples</ref>
-    </refs>
-  </item>
+  <item duration="PT1H">
+		<desc>Workshop #1: 17/02/2010, 9h00 -&gt; 10h00</desc>
+	</item>
+	
+<item duration="PT2H15M">
+		<desc>Workshop #2: 19/02/2010, 12h00 -&gt; 14h15</desc>
+        </item>
 
-
-   <item duration="PT30M">
-    <desc>Editing Wiki page HowtoRunJBossSeamExamples</desc>
-    <refs>
-	<ref>http://code.google.com/p/salesmen/source/detail?r=812</ref>
-        <ref>http://code.google.com/p/salesmen/source/detail?r=813</ref>
-	<ref>http://code.google.com/p/salesmen/source/detail?r=814</ref>
-        <ref>http://code.google.com/p/salesmen/source/detail?r=815</ref>
-    </refs>
-  </item>
-
-   <item duration="PT1H30M">
-    <desc>Testing with Seam Examples (Part 1)</desc>
-    <refs>
-	<ref>http://docs.jboss.com/seam/latest/reference/en-US/html/tutorial.html#registration-example</ref>
-    </refs>
-  </item>
-  
+<item duration="PT0H25M">
+		<desc>Trying to fix JBoss-Seam NullPointerException deployment issue</desc>
+        </item>
 
   <item duration="PT20M">
     <desc>Administration and Communication</desc>
@@ -79,10 +90,23 @@
   <person>
     <name>Sina Khakbaz Heshmati</name>
     <timesheet xmlns="http://purl.org/net/timetrack">
-  <item duration="PT1H30M">
-    <desc>Meeting on Friday 2010/02/12.</desc>
+  <item duration="PT1H">
+    <desc>Meeting on Mon. 15 Feb.</desc>
     <refs>
-      <ref>http://wilma.vub.ac.be/~se2_0910/docs/minutes/2010/02/12/minutes-20100212.pdf</ref>
+      <ref>http://wilma.vub.ac.be/~se2_0910/docs/minutes/2010/02/15/minutes-20100215.pdf</ref>
+    </refs>
+  </item>
+  <item duration="PT2H">
+    <desc>Workshop on Feb. 17 from 9am.</desc>
+  </item>
+  <item duration="PT1H">
+    <desc>Workshop on Feb. 19 from 1pm.</desc>
+  </item>
+  <item duration="PT30M">
+    <desc>Worked on the DBMS.</desc>
+    <refs>
+      <ref>http://code.google.com/p/salesmen/issues/detail?id=31</ref>
+      <ref>http://groups.google.com/group/salesmen/browse_thread/thread/4f34c81d6d08dd58</ref>
     </refs>
   </item>
   <item duration="PT30M">
@@ -93,46 +117,48 @@
   <person>
     <name>Jorne Laton</name>
     <timesheet xmlns="http://purl.org/net/timetrack">
-	<item duration="PT1H30M">
-		<desc>Meeting on Friday 2010/02/12.</desc>
+	<item duration="PT1H0M">
+		<desc>Meeting on Monday 2010/02/15.</desc>
 		<refs>
-			<ref>http://wilma.vub.ac.be/~se2_0910/docs/minutes/2010/02/12/minutes-20100212.pdf</ref>
+			<ref>http://wilma.vub.ac.be/~se2_0910/docs/minutes/2010/02/15/minutes-20100215.pdf</ref>
 		</refs>
 	</item>
 
 	<item duration="PT1H30M">
-		<desc>Made server running, with some problems. No daemon implemented yet.</desc>
+		<desc>Searched how to activate daemon by startup script.</desc>
 		<refs>
-			<ref>http://compgroups.net/comp.lang.ruby/Why-does-source-bashrc-complain-command-not-found</ref>
-			<ref>http://groups.google.com/group/salesmen/browse_thread/thread/f8b6b04912365b43#</ref>
+			<ref>http://www.askesis.nl/en/public_documentation/jboss/body.html#JBoss_deamon_Linux</ref>
+			<ref>http://docs.jboss.org/jbossas/getting_started/v4/html/install.html</ref>
+			<ref>http://ubuntuforums.org/showthread.php?p=4031613</ref>
+			<ref>http://www.linuxquestions.org/questions/linux-general-1/jboss-daemon-176143/</ref>
+			<ref>http://community.jboss.org/wiki/startjbossonbootwithlinux</ref>
 		</refs>
 	</item>
 	
-	<item duration="PT2H30M">
-		<desc>Seam study (from referenced site), running the examples.</desc>
+	<item duration="PT1H30M">
+		<desc>Succesfully implemented and installed salesmen.init script with crontab.</desc>
 		<refs>
-			<ref>http://docs.jboss.com/seam/latest/reference/en-US/html/tutorial.html#registration-example
-</ref>
+			<ref>http://www.unix.com/unix-dummies-questions-answers/6017-check-if-deamons-running.html</ref>
+			<ref>http://www.manpagez.com/man/5/crontab/</ref>
+			<ref>http://wilma.vub.ac.be:1388/salesmen/home.seam</ref>
 		</refs>
 	</item>
 	
-	<item duration="PT3H0M">
-		<desc>Daemons: researched what it is, how to make it and followed instructions shown in referenced sites to try to make one.</desc>
+	<item duration="PT2H0M">
+		<desc>Workshop 2</desc>
 		<refs>
-			<ref>http://en.wikipedia.org/wiki/Daemon_%28computer_software%29</ref>
-			<ref>http://www-theorie.physik.unizh.ch/~dpotter/howto/daemonize</ref>
-			<ref>http://www.enderunix.org/docs/eng/daemon.php</ref>
-			<ref>http://www.netzmafia.de/skripten/unix/linux-daemon-howto.html</ref>
-			<ref>http://www.computing.net/answers/unix/call-shell-script-from-c-program/2276.html</ref>
-			<ref>http://www.jguru.com/faq/view.jsp?EID=1251699</ref>
-			<ref>http://docstore.mik.ua/orelly/perl/cookbook/ch17_16.htm</ref>
-			<ref>http://peterlombardo.wikidot.com/linux-daemon-in-c</ref>
-			<ref>http://www.neowin.net/forum/topic/344119-daemon-create-using-c</ref>
-			<ref>http://forums.devx.com/archive/index.php/t-87596.html</ref>
+		</refs>
+	</item>
+	
+	<item duration="PT2H0M">
+		<desc>Researched how to change the project's display name.</desc>
+		<refs>
+			<ref>http://seamframework.org/Documentation/ParametrizeSeamgenProjectPropertiesProjectNameDatabaseMailing</ref>
+			<ref>http://wilma.vub.ac.be:1388/salesmen-dev/home.seam</ref>
 		</refs>
 	</item>
 
-  <item duration="PT30M">
+  <item duration="PT25M">
     <desc>Administration and Communication.</desc>
   </item>
 </timesheet>
@@ -140,73 +166,142 @@
   <person>
     <name>Bart Maes</name>
     <timesheet xmlns="http://purl.org/net/timetrack">
-  
-  <item duration="PT15M">
-    <desc>Administration and Communication</desc>
-  </item>
-
-  	<item duration="PT1H30M">
-		<desc>Meeting on Friday 12/02/2010.</desc>
+	<item duration="PT1H0M">
+		<desc>Meeting on Monday 2010/02/15.</desc>
 		<refs>
-			<ref>http://wilma.vub.ac.be/~se2_0910/docs/minutes/2010/02/12/minutes-20100212.pdf</ref>
-		</refs>
-	</item>
-</timesheet>
-  </person>
-  <person>
-    <name>Patrick Provinciael</name>
-    
-	<timesheet xmlns="http://purl.org/net/timetrack" xml:base="../default/timesheet.xml">
-  <item duration="PT0M">
-    <desc>
-      This is a fallback timesheet, meaning that the
-      developer has not submitted their timesheet yet.
-      Please check back later to see this developer's 
-      timesheet.
-    </desc>
-  </item>
-</timesheet>
-      
-  </person>
-  <person>
-    <name>Wouter Van Rossem</name>
-    <timesheet xmlns="http://purl.org/net/timetrack">
-	<item duration="PT1H40M">
-		<desc>Meeting on Friday 2010/02/12.</desc>
-		<refs>
-			<ref>http://wilma.vub.ac.be/~se2_0910/docs/minutes/2010/02/12/minutes-20100212.pdf</ref>
+			<ref>http://wilma.vub.ac.be/~se2_0910/docs/minutes/2010/02/15/minutes-20100215.pdf</ref>
 		</refs>
 	</item>
 
-	<item duration="PT45M">
-		<desc>Wrote wiki on remote deployment</desc>
-		<refs>
-			<ref>http://code.google.com/p/salesmen/wiki/RemoteDeploy</ref>
-		</refs>
+	<item duration="PT3H15M">
+		<desc>Workshop #1: 17/02/2010, 08h45 -&gt; 12h00</desc>
 	</item>
 	
-	<item duration="PT30M">
-		<desc>Research remote deployment on windows</desc>
+	<item duration="PT4H30M">
+		<desc>Workshop #2: 19/02/2010, 09h45 -&gt; 14h15</desc>
+	</item>
+	
+	<item duration="PT1H20M">
+		<desc>Fixed the JBoss-Seam database issue</desc>
 		<refs>
-			<ref>http://groups.google.com/group/salesmen/msg/9dee51548777a9df</ref>
+			<ref>http://groups.google.com/group/salesmen/browse_thread/thread/33099b160f9c97e9/f419ff6ef63bf309</ref>
 		</refs>
 	</item>
 	
 	<item duration="PT1H30M">
-		<desc>Added the agenda for the meeting on 12/02 to the website to learn to administrate the website </desc>
+		<desc>Fixed the JBoss-Seam NullPointerException deployment issue (made several attempts)</desc>
 		<refs>
-			<ref>http://code.google.com/p/salesmen/source/detail?r=821</ref>
+			<ref>http://groups.google.com/group/salesmen/browse_thread/thread/2ac8ea6d31abbed2</ref>
 		</refs>
 	</item>
 	
-	<item duration="PT50M">
-		<desc>Wrote first draft of minutes for meeting on 12/02</desc>
+	
+	<item duration="PT2H0M">
+		<desc>Implemented basic category, auction and bid classes</desc>
 		<refs>
-			<ref>http://code.google.com/p/salesmen/source/detail?r=822</ref>
+			<ref>http://code.google.com/p/salesmen/issues/detail?id=25</ref>
+			<ref>http://code.google.com/p/salesmen/issues/detail?id=26</ref>
+			<ref>http://code.google.com/p/salesmen/issues/detail?id=27</ref>
+			<ref>http://code.google.com/p/salesmen/issues/detail?id=30</ref>
+		</refs>
+	</item>
+	
+	<item duration="PT0H10M">
+		<desc>Revised basicSearch for users</desc>
+	</item>
+
+	<item duration="PT3H0M">
+		<desc>Attempted to populate the DB on build, with success (made several attempts)</desc>
+		<refs>
+			<ref>http://code.google.com/p/salesmen/issues/detail?id=31</ref>
 		</refs>
 	</item>
 
+  <item duration="PT25M">
+    <desc>Administration and Communication.</desc>
+  </item>
+</timesheet>
+  </person>
+  <person>
+    <name>Patrick Provinciael</name>
+    <timesheet xmlns="http://purl.org/net/timetrack">
+  
+  <item duration="PT1H00M">
+    <desc>Meeting on Monday 15/02/2010.</desc>
+    <refs>
+      <ref>http://wilma.vub.ac.be/~se2_0910/docs/minutes/2010/02/15/minutes-20100215.pdf</ref>
+    </refs>
+  </item>
+  <item duration="PT2H15M">
+    <desc>Workshop #2: 19/02/2010, 12h00 -&gt; 14h15.</desc>
+  </item>
+  <item duration="PT2H">
+    <desc>Studied Seam</desc>
+    <refs>
+      <ref>http://docs.jboss.com/seam/2.0.2.SP1/reference/en-US/html/index.html</ref>
+    </refs>
+  </item>
+  <item duration="PT4H">
+    <desc>Studied TestNG</desc>
+    <refs>
+      <ref>http://code.google.com/p/salesmen/wiki/UsingRunningTestNG</ref>
+      <ref>http://testng.org/doc/documentation-main.html#introduction</ref>
+      <ref>http://docs.jboss.com/seam/2.0.2.SP1/reference/en-US/html/testing.html</ref>
+    </refs>
+  </item>
+  <item duration="PT2H">
+    <desc>Programmed</desc>
+    <refs>
+    </refs>
+  </item>
   <item duration="PT30M">
+    <desc>Administration and Communication</desc>
+  </item>
+
+</timesheet>
+  </person>
+  <person>
+    <name>Wouter Van Rossem</name>
+    <timesheet xmlns="http://purl.org/net/timetrack">
+	<item duration="PT1H0M">
+		<desc>Meeting on Monday 2010/02/15.</desc>
+		<refs>
+			<ref>http://wilma.vub.ac.be/~se2_0910/docs/minutes/2010/02/15/minutes-20100215.pdf</ref>
+		</refs>
+	</item>
+
+	<item duration="PT3H50M">
+		<desc>Workshop #1: 17/02/2010, 09h10 -&gt; 13h00</desc>
+	</item>
+	
+	<item duration="PT3H45M">
+		<desc>Workshop #2: 19/02/2010, 10h15 -&gt; 12h00, 13h00 -&gt; 15h00</desc>
+	</item>
+	
+	<item duration="PT30M">
+		<desc>Finished basic search</desc>
+		<refs>
+			<ref>http://code.google.com/p/salesmen/source/detail?r=883</ref>
+		</refs>
+	</item>
+	
+	<item duration="PT20M">
+		<desc>Wrote first draft of minutes of meeting on 15/2</desc>
+		<refs>
+			<ref>http://code.google.com/p/salesmen/source/detail?r=901</ref>
+		</refs>
+	</item>
+	
+	<item duration="PT40M">
+		<desc>Updated the website</desc>
+		<refs>
+			<ref>http://code.google.com/p/salesmen/source/detail?r=848</ref>
+			<ref>http://code.google.com/p/salesmen/source/detail?r=835</ref>
+			<ref>http://code.google.com/p/salesmen/source/detail?r=834</ref>
+		</refs>
+	</item>
+
+  <item duration="PT25M">
     <desc>Administration and Communication.</desc>
   </item>
 </timesheet>
