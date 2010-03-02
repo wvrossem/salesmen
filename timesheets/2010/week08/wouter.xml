@@ -1,0 +1,48 @@
+<?xml version='1.0'?>
+<timesheet xmlns="http://purl.org/net/timetrack">
+
+  <item duration="PT1H0M">
+    <desc>Meeting on Monday 2010/02/22.</desc>
+    <refs>
+   	  <ref>http://wilma.vub.ac.be/~se2_0910/docs/minutes/2010/02/22/minutes-20100222.pdf</ref>
+    </refs>
+  </item>
+
+  <item duration="PT3H30M">
+    <desc>Workshop 24/02 09h30->13h00</desc>
+    <refs>
+    </refs>
+  </item>
+  
+  <item duration="PT3H0M">
+    <desc>Improved the user search, added a loading image, added a suggestion box</desc>
+    <refs>
+   	 <ref>http://code.google.com/p/salesmen/source/detail?r=934</ref>
+	 <ref>http://www.ibm.com/developerworks/java/library/j-richfaces/#listing11</ref>
+	 <ref>http://www.ajaxload.info/</ref>
+	 <ref>http://livedemo.exadel.com/richfaces-demo/richfaces/status.jsf?s=glassX</ref>
+	 <ref>http://livedemo.exadel.com/richfaces-demo/richfaces/suggestionBox.jsf;jsessionid=FBD12B42F5470F52C6B98A50D391C179?c=suggestionBox&tab=usage</ref>
+    </refs>
+  </item>
+
+  <item duration="PT20M">
+    <desc>Changed the favorite icon to our own</desc>
+    <refs>
+   	  <ref>http://code.google.com/p/salesmen/source/detail?r=917</ref>
+   	  <ref>http://www.linuxquestions.org/questions/linux-newbie-8/png-to-ico-converstion-710036/</ref>
+    </refs>
+  </item>
+  
+  <item duration="PT15M">
+    <desc>Update minutes of 22/02 and add them to the website</desc>
+    <refs>
+   	  <ref>http://code.google.com/p/salesmen/source/detail?r=912</ref>
+   	  <ref>http://code.google.com/p/salesmen/source/detail?r=913/</ref>
+    </refs>
+  </item>
+
+  <item duration="PT25M">
+    <desc>Administration and Communication.</desc>
+    <refs></refs>
+  </item>
+</timesheet>
