@@ -1,8 +1,8 @@
 -- SQL statements which are executed at application startup if hibernate.hbm2ddl.auto is 'create' or 'create-drop'
-insert into Member (screenname, firstname, lastname, email, gender, dob, membersince, country) values ('Mr_Smiley', 'Mr', 'Smiley', 'smiley@nowhere.com', 0, '1503-07-01', '2007-01-02', 'BE')
-insert into Member (screenname, firstname, lastname, email, gender, dob, membersince, country) values ('duke', 'duke', 'McDuke', 'duke@sun.com', 1, '1503-07-01', '2007-01-02', 'BE')
-insert into Member (screenname, firstname, lastname, email, gender, dob, membersince, country) values ('shadowman', 'shadow', 'man', 'shadowman@redhat.com', 0, '1503-07-01', '2007-01-02', 'BE')
-insert into Member (screenname, firstname, lastname, email, gender, dob, membersince, country) values ('mona', 'mona', 'lisa', 'monalisa@louvre.fr', 1, '1503-07-01', '2007-01-02', 'BE')
+insert into Member (screenname, firstname, lastname, email, gender, dob, membersince, country, city) values ('Mr_Smiley', 'Mr', 'Smiley', 'smiley@nowhere.com', 0, '1503-07-01', '2007-01-02', 'BE', 'Brussels')
+insert into Member (screenname, firstname, lastname, email, gender, dob, membersince, country, city) values ('duke', 'duke', 'McDuke', 'duke@sun.com', 1, '1503-07-01', '2007-01-02', 'BE', 'Gent')
+insert into Member (screenname, firstname, lastname, email, gender, dob, membersince, country, city) values ('shadowman', 'shadow', 'man', 'shadowman@redhat.com', 0, '1503-07-01', '2007-01-02', 'BE', 'Antwerp')
+insert into Member (screenname, firstname, lastname, email, gender, dob, membersince, country, city) values ('mona', 'mona', 'lisa', 'monalisa@louvre.fr', 1, '1503-07-01', '2007-01-02', 'BE', 'Ostend')
 
 insert into UserRole (name, conditional) values ('user', false);
 insert into UserRole (name, conditional) values ('admin', false);

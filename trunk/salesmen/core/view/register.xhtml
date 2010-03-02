@@ -65,8 +65,14 @@
             <div class="validation-error"><h:message for="gender"/></div>
         </div>
         <div class="formRow">
+            <h:outputLabel for="city">City<em>*</em></h:outputLabel>
+            <h:inputText id="city" required="true"
+                         value="#{registerUserAccount.user.city}"/>
+            <div class="validation-error"><h:message for="city"/></div>
+        </div>
+        <div class="formRow">
             <h:outputLabel for="country">Country<em>*</em></h:outputLabel>
-            <h:selectOneMenu value="#{registerUserAccount.user.country}" required="true">
+            <h:selectOneMenu id="country" value="#{registerUserAccount.user.country}" required="true">
                 <s:selectItems var="country" value="#{countries}"
                                label="#{country.longName}" noSelectionLabel="-- Select --"/>
                 <s:convertEnum/>
