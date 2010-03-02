@@ -65,6 +65,14 @@
             <div class="validation-error"><h:message for="gender"/></div>
         </div>
         <div class="formRow">
+            <h:outputLabel for="country">Country<em>*</em></h:outputLabel>
+            <h:selectOneMenu value="#{registerUserAccount.user.country}" required="true">
+                <s:selectItems var="country" value="#{countries}"
+                               label="#{country.longName}" noSelectionLabel="-- Select --"/>
+                <s:convertEnum/>
+            </h:selectOneMenu>
+        </div>
+        <div class="formRow">
                 <h:outputLabel for="dob">Date of birth<em>*</em></h:outputLabel>
             <rich:calendar id="dob" value="#{registerUserAccount.user.dob}" required="true" datePattern="MM/dd/yyyy"
                            buttonIcon="img/dtpick.gif" />

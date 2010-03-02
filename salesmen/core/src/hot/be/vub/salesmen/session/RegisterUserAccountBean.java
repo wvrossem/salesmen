@@ -65,6 +65,7 @@ public class RegisterUserAccountBean implements RegisterUserAccount, Serializabl
       user.setGender(User.Gender.male);
       user.setDob(new Date());
       user.setMemberSince(new Date());
+      user.setCountry(Country.BE);
 			entityManager.persist(user);
 		}
 		account.setUser(user);
