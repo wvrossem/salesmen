@@ -33,6 +33,7 @@ public class User implements Serializable
   private Gender gender;
   private Date dob;
   private Date memberSince;
+  private String city;
   private Country country;
 	
     @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -131,6 +132,20 @@ public class User implements Serializable
    {
       this.memberSince = memberSince;
    }
+
+  @NotNull
+  @Length(min = 3, max = 32)
+	@Pattern(regex="[a-zA-Z]+(-[a-zA-Z]+)*",
+		message="Please enter a valid city name")
+	public String getCity()
+	{
+		return city;
+	}
+
+	public void setCity(String city)
+	{
+		this.city = city;
+	}
 	
 	@Version
     public Integer getVersion() {
