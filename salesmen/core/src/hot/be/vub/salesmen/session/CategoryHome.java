@@ -20,9 +20,13 @@ import org.jboss.seam.annotations.In;
 import org.jboss.seam.annotations.Out;
 
 
+
+
+
 @Name("categoryHome")
 public class CategoryHome extends EntityHome<Category>
 {
+	
     /**
 	 * 
 	 */
@@ -33,6 +37,9 @@ public class CategoryHome extends EntityHome<Category>
 	@SuppressWarnings("unused")
 	@Out(required = false)
 	private List<Category> categories;
+	
+	@Out(required = false)
+	private List<Category> allCategories;
 	
 	@RequestParameter Long categoryId;
 
@@ -59,8 +66,16 @@ public class CategoryHome extends EntityHome<Category>
     public void loadCategories()
     {
        categories = entityManager.createQuery(
-             "from Category WHERE id!=1 order by name")
+             "from Category order by name")
              .getResultList();
     }
 
+    //@WebRemote
+    @SuppressWarnings("unchecked")
+	public List<Category> getAllCategories()
+    {
+       allCategories = entityManager.createQuery("from Category").getResultList(); 
+       return allCategories;
+    }
+    
 }

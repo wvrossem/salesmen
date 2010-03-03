@@ -30,7 +30,7 @@ public class Category implements Serializable
 	 */
 	private static final long serialVersionUID = -6813329677396178284L;
 	// attributes (you should probably edit these)
-    private Long id;
+    private int id;
     private Integer version;
     private String name;
     private Category parent;
@@ -51,11 +51,11 @@ public class Category implements Serializable
 	}
 
 	@Id @GeneratedValue(strategy=GenerationType.IDENTITY)
-    public Long getId() {
+    public int getId() {
         return id;
     }
 
-    public void setId(Long id) {
+    public void setId(int id) {
         this.id = id;
     }
 
