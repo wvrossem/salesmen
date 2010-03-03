@@ -10,30 +10,27 @@ import org.jboss.seam.international.StatusMessages;
 
 @Stateless
 @Name("SendConfirmEmail")
-public class SendConfirmEmailBean implements SendConfirmEmail
+public class SendEmailBean implements SendEmail
 {
     @Logger private Log log;
 
     @In StatusMessages statusMessages;
 
-    public void sendConfirmEmail()
+    public void sendEmail()
     {
-        // implement your business logic here
-        log.info("SendConfirmEmail.sendConfirmEmail() action called");
-        statusMessages.add("sendConfirmEmail");
+        log.info("SendEmail.sendEmail() action called");
+        statusMessages.add("sendEmail");
     }
     
     @In(create=true)
     private Renderer renderer;
        
-    public void send() {
+    public void send(String emailxhtml) {
        try {
-           renderer.render("/sendConfirmEmail.xhtml");
+           renderer.render(emailxhtml);
            statusMessages.add("Email sent successfully");
        } catch (Exception e) {
            statusMessages.add("Email sending failed: " + e.getMessage());
        }
     }
-    // add additional action methods
-
 }
