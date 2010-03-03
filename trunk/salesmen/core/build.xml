@@ -1,8 +1,5 @@
 <?xml version="1.0"?>
 <project name="salesmen" default="explode" basedir=".">
-
-  <!-- Import remote deployment targets -->
-  <import file="${basedir}/misc/remote.xml"/>
   
     <!-- Give user a chance to override without editing this file or typing -D -->
     <property file="${basedir}/build.properties"/>
@@ -348,7 +345,7 @@
 
     <target name="deploy" depends="archive,datasource" description="Deploy the packaged archive">
         <fail unless="jboss.home">jboss.home not set</fail>
-        <copy todir="${deploy.dir}" file="${dist.dir}/${project.name}.ear"/>
+    	<antcall target="explode"/>
     </target>
 
     <target name="undeploy" description="Undeploy the packaged archive">
