@@ -1,0 +1,39 @@
+<?xml version='1.0'?>
+<timesheet xmlns="http://purl.org/net/timetrack">
+	
+
+  <item duration="PT1H">
+    <desc>Meeting on Monday 2010/02/22.</desc>
+    <refs>
+   	<ref>http://wilma.vub.ac.be/~se2_0910/dev/events/2009/vub-se/resources/minutes/20100222/minutes-20100222.pdf</ref>
+    </refs>
+  </item>
+  
+  <item duration="PT20M"> 
+      <desc>Testing with Seam Examples (Part 2, with problems...)</desc>    
+      <refs>    
+        <ref>http://docs.jboss.com/seam/latest/reference/en-US/html/tutorial.html#registration-example</ref>
+      </refs>  
+  </item>
+  
+  <item duration="PT3H10M"> 
+    <desc>Writing Minutes of Monday 2010/02/22.</desc>    
+    <refs>    
+      <ref>http://code.google.com/p/salesmen/source/detail?r=947</ref>
+    </refs>  
+  </item>
+   
+  
+  <item duration="PT10M">    
+    <desc>Correcting Minutes of Monday 2010/02/22.</desc>   
+     <refs>     
+      <ref>http://code.google.com/p/salesmen/source/detail?r=952</ref>
+     </refs>  
+  </item>
+
+
+  <item duration="PT20M">
+    <desc>Administration and Communication.</desc>
+    <refs></refs>
+  </item>
+</timesheet>
