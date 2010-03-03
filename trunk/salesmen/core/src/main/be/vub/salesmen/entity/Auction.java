@@ -2,8 +2,11 @@ package be.vub.salesmen.entity;
 
 import java.io.Serializable;
 import javax.persistence.Entity;
+import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.GeneratedValue;
+import javax.persistence.Table;
+
 import javax.persistence.Version;
 import org.hibernate.validator.Length;
 
@@ -12,18 +15,29 @@ import java.util.Date;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 import org.hibernate.validator.NotNull;
+import org.jboss.seam.annotations.Name;
+
 
 @Entity
+@Name("action")
+@Table(name="Auction")
 public class Auction implements Serializable
 {
+	public enum AuctionStatus
+	{
+		UNLISTED,
+		LISTED,
+		FINISHED,
+		CLOSED,
+		REMOVED
+	}
     /**
 	 * 
 	 */
 	private static final long serialVersionUID = 2195670493386700385L;
 	//attributes (you should probably edit these)
-    private Long id;
+    private int id;
     private Integer version;
-    private String name;
 
     // add additional entity attributes
     private User owner;
@@ -34,15 +48,24 @@ public class Auction implements Serializable
     private Bid highBid;
    // private Bid[] bids;
     private double startingPrice;
-
+    private AuctionStatus status;
+    
+    //SOME PREDEFINED STATUS:
+    /*
+	public final int UNLISTED=0;
+	public final int LISTED=1;//open
+	public final int FINISHED=2;//auction has expired
+	public final int CLOSED=3;//unlisted, but viewable (by direct request)
+	public final int REMOVED=4;//removed by admins
+*/
     //attribute getters/setters with annotations (you probably should edit)
 
-    @Id @GeneratedValue
-    public Long getId() {
+    @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
+    public int getId() {
         return id;
     }
 
-    public void setId(Long id) {
+    public void setId(int id) {
         this.id = id;
     }
 
@@ -56,14 +79,6 @@ public class Auction implements Serializable
         this.version = version;
     }
 
-    @Length(max = 20)
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
 
     @NotNull
     @ManyToOne
@@ -87,7 +102,8 @@ public class Auction implements Serializable
 		this.category = category;
 	}
 
-	@NotNull
+    @NotNull
+    @Length(min=5, max=32)
 	public String getTitle() {
 		return title;
 	}
@@ -114,7 +130,7 @@ public class Auction implements Serializable
 		this.endDate = endDate;
 	}
 
-	@NotNull
+	//@NotNull
 	public Bid getHighBid() {
 		return highBid;
 	}
@@ -130,6 +146,14 @@ public class Auction implements Serializable
 
 	public void setStartingPrice(double startingPrice) {
 		this.startingPrice = startingPrice;
+	}
+
+	public void setStatus(AuctionStatus status) {
+		this.status = status;
+	}
+
+	public AuctionStatus getStatus() {
+		return status;
 	}
 
 }
