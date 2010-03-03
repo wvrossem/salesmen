@@ -3,11 +3,11 @@ package be.vub.salesmen.session;
 import javax.ejb.Local;
 
 @Local
-public interface SendConfirmEmail
+public interface SendEmail
 {
     // seam-gen method
-    public void sendConfirmEmail();
+    public void sendEmail();
 
     // add additional interface methods here
-    public void send();
+    public void send(String emailxhtml);
 }
