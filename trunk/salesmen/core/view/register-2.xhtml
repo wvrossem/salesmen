@@ -9,23 +9,34 @@
     xmlns:rich="http://richfaces.org/rich"
     template="layout/template.xhtml">
 
-<ui:define name="body">
-    
-<h:form id="register">
-<s:validateAll>
-  <p>
-    <h:outputLabel for="verifyCaptcha">
-      <h:graphicImage value="/seam/resource/captcha"/><em>*</em>
-    </h:outputLabel>
-    <h:inputText id="verifyCaptcha" required="true"
-		 value="#{captcha.response}"/>
-    <div class="validation-error"><h:message for="verifyCaptcha"/></div>
-  </p>
-</s:validateAll>
+    <ui:define name="body">
 
-<h:commandButton id="submit" value="Register" 
-		 action="#{registerUserAccount.createUserAccount}"/>
+        <h:form id="register">
 
-</h:form>
-</ui:define>
+            <rich:panel>
+                <f:facet name="header">Register - Step 2</f:facet>
+
+                <div class="dialog">
+
+                    <s:validateAll>
+                        <h:panelGrid columns="3" rowClasses="prop" columnClasses="name,value">
+                            <h:outputLabel for="verifyCaptcha">
+                                <h:graphicImage value="/seam/resource/captcha"/><em>*</em>
+                            </h:outputLabel>
+                            <h:inputText id="verifyCaptcha" required="true"
+                                         value="#{captcha.response}"/>
+                            <div class="validation-error"><h:message for="verifyCaptcha"/></div>
+                        </h:panelGrid>
+                    </s:validateAll>
+                </div>
+            </rich:panel>
+
+            <div class="actionButtons">
+
+                <h:commandButton id="submit" value="Register"
+                                 action="#{registerUserAccount.createUserAccount}"/>
+            </div>
+
+        </h:form>
+    </ui:define>
 </ui:composition>
