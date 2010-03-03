@@ -1,94 +1,99 @@
 <!DOCTYPE composition PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<ui:composition 
-    xmlns="http://www.w3.org/1999/xhtml"
-    xmlns:s="http://jboss.com/products/seam/taglib"
-    xmlns:ui="http://java.sun.com/jsf/facelets"
-    xmlns:f="http://java.sun.com/jsf/core"
-    xmlns:h="http://java.sun.com/jsf/html"
-    xmlns:rich="http://richfaces.org/rich"
-    xmlns:a="http://richfaces.org/a4j"
-    template="layout/template.xhtml">
+<ui:composition
+        xmlns="http://www.w3.org/1999/xhtml"
+        xmlns:s="http://jboss.com/products/seam/taglib"
+        xmlns:ui="http://java.sun.com/jsf/facelets"
+        xmlns:f="http://java.sun.com/jsf/core"
+        xmlns:h="http://java.sun.com/jsf/html"
+        xmlns:rich="http://richfaces.org/rich"
+        xmlns:a="http://richfaces.org/a4j"
+        template="layout/template.xhtml">
 
-<ui:define name="body">
-    
-<h:form id="register">
-    <s:validateAll>
-        <div class="formRow">
-            <h:outputLabel for="username">Username<em>*</em></h:outputLabel>
-            <h:inputText id="username" required="true"
-                         value="#{registerUserAccount.username}" />
-        </div>
-        <div class="formRow">
-            <h:outputLabel for="password">Password<em>*</em></h:outputLabel>
-            <h:inputSecret id="password" required="true"
-                           value="#{registerUserAccount.password}"/>
-            <div class="validation-error"><h:message for="password"/></div>
-        </div>
-        <div class="formRow">
-            <h:outputLabel for="passwordConfirmation">
-                Confirm Password<em>*</em></h:outputLabel>
-            <h:inputSecret id="passwordConfirmation" required="true"
-                           value="#{registerUserAccount.passwordConfirmation}"/>
-            <div class="validation-error"><h:message for="passwordConfirmation"/></div>
-        </div>
-        <div>
-            <h:outputLabel for="firstname">First name<em>*</em></h:outputLabel>
-            <h:inputText id="firstname" required="true"
-                         value="#{registerUserAccount.user.firstName}"/>
-            <div class="validation-error"><h:message for="firstname"/></div>
-        </div>
-        <div class="formRow">
-            <h:outputLabel for="lastName">Last name<em>*</em></h:outputLabel>
-            <h:inputText id="lastName" required="true"
-                         value="#{registerUserAccount.user.lastName}"/>
-            <div class="validation-error"><h:message for="lastName"/></div>
-        </div>
-        <div class="formRow">
-            <h:outputLabel for="screenName">Screen Name<em>*</em></h:outputLabel>
-            <h:inputText id="screenName" required="true"
-                         value="#{registerUserAccount.user.screenName}"/>
-            <div class="validation-error"><h:message for="screenName"/></div>
-        </div>
-        <div class="formRow">
-            <h:outputLabel for="email">Email<em>*</em></h:outputLabel>
-            <h:inputText id="email" required="true"
-                         value="#{registerUserAccount.user.email}"/>
-            <div class="validation-error"><h:message for="email"/></div>
-        </div>
-        <div class="formRow">
-            <h:outputLabel for="gender">Gender<em>*</em></h:outputLabel>
-            <h:selectOneRadio id="gender" value="#{registerUserAccount.user.gender}" required="true">
-                <f:selectItem itemValue="male" itemLabel="Male" />
-                <f:selectItem itemValue="female" itemLabel="Female" />
-            </h:selectOneRadio>
-            <div class="validation-error"><h:message for="gender"/></div>
-        </div>
-        <div class="formRow">
-            <h:outputLabel for="city">City<em>*</em></h:outputLabel>
-            <h:inputText id="city" required="true"
-                         value="#{registerUserAccount.user.city}"/>
-            <div class="validation-error"><h:message for="city"/></div>
-        </div>
-        <div class="formRow">
-            <h:outputLabel for="country">Country<em>*</em></h:outputLabel>
-            <h:selectOneMenu id="country" value="#{registerUserAccount.user.country}" required="true">
-                <s:selectItems var="country" value="#{countries}"
-                               label="#{country.longName}" noSelectionLabel="-- Select --"/>
-                <s:convertEnum/>
-            </h:selectOneMenu>
-        </div>
-        <div class="formRow">
-                <h:outputLabel for="dob">Date of birth<em>*</em></h:outputLabel>
-            <rich:calendar id="dob" value="#{registerUserAccount.user.dob}" required="true" datePattern="MM/dd/yyyy"
-                           buttonIcon="img/dtpick.gif" />
-                <div class="validationError"><h:message for="dob"/></div>
-        </div>
-    </s:validateAll>
+    <ui:define name="body">
 
-<h:commandButton id="submit" value="Register" 
-		 action="#{registerUserAccount.verifyPassword}"/>
+        <h:form id="register">
 
-</h:form>
-</ui:define>
+            <rich:panel>
+                <f:facet name="header">Register!</f:facet>
+
+                <div class="dialog">
+
+                    <s:validateAll>
+                        <h:panelGrid columns="3" rowClasses="prop" columnClasses="name,value">
+
+                            <h:outputLabel for="username">Username<em>*</em></h:outputLabel>
+                            <h:inputText id="username" required="true"
+                                         value="#{registerUserAccount.username}" />
+                            <h:message for="username"/>
+
+
+                            <h:outputLabel for="password">Password<em>*</em></h:outputLabel>
+                            <h:inputSecret id="password" required="true"
+                                           value="#{registerUserAccount.password}"/>
+                            <h:message for="password"/>
+
+                            <h:outputLabel for="passwordConfirmation">
+                                Confirm Password<em>*</em></h:outputLabel>
+                            <h:inputSecret id="passwordConfirmation" required="true"
+                                           value="#{registerUserAccount.passwordConfirmation}"/>
+                            <h:message for="passwordConfirmation"/>
+
+                            <h:outputLabel for="firstname">First name<em>*</em></h:outputLabel>
+                            <h:inputText id="firstname" required="true"
+                                         value="#{registerUserAccount.user.firstName}"/>
+                            <h:message for="firstname"/>
+
+                            <h:outputLabel for="lastName">Last name<em>*</em></h:outputLabel>
+                            <h:inputText id="lastName" required="true"
+                                         value="#{registerUserAccount.user.lastName}"/>
+                            <h:message for="lastName"/>
+
+                            <h:outputLabel for="screenName">Screen Name<em>*</em></h:outputLabel>
+                            <h:inputText id="screenName" required="true"
+                                         value="#{registerUserAccount.user.screenName}"/>
+                            <h:message for="screenName"/>
+
+                            <h:outputLabel for="email">Email<em>*</em></h:outputLabel>
+                            <h:inputText id="email" required="true"
+                                         value="#{registerUserAccount.user.email}"/>
+                            <h:message for="email"/>
+
+                            <h:outputLabel for="gender">Gender<em>*</em></h:outputLabel>
+                            <h:selectOneRadio id="gender" value="#{registerUserAccount.user.gender}" required="true">
+                                <f:selectItem itemValue="male" itemLabel="Male" />
+                                <f:selectItem itemValue="female" itemLabel="Female" />
+                            </h:selectOneRadio>
+                            <h:message for="gender"/>
+
+                            <h:outputLabel for="city">City<em>*</em></h:outputLabel>
+                            <h:inputText id="city" required="true"
+                                         value="#{registerUserAccount.user.city}"/>
+                            <h:message for="city"/>
+
+                            <h:outputLabel for="country">Country<em>*</em></h:outputLabel>
+                            <h:selectOneMenu id="country" value="#{registerUserAccount.user.country}" required="true">
+                                <s:selectItems var="country" value="#{countries}"
+                                               label="#{country.longName}" noSelectionLabel="-- Select --"/>
+                                <s:convertEnum/>
+                            </h:selectOneMenu>
+                            <h:message for="country"/>
+
+                            <h:outputLabel for="dob">Date of birth<em>*</em></h:outputLabel>
+                            <rich:calendar id="dob" value="#{registerUserAccount.user.dob}" required="true" datePattern="MM/dd/yyyy"
+                                           buttonIcon="img/dtpick.gif" />
+                            <h:message for="dob"/>
+                        </h:panelGrid>
+                    </s:validateAll>
+                </div>
+            </rich:panel>
+
+            <div class="actionButtons">
+
+                <h:commandButton id="submit" value="Next"
+                                 action="#{registerUserAccount.verifyPassword}"/>
+            </div>
+
+        </h:form>
+    </ui:define>
 </ui:composition>
