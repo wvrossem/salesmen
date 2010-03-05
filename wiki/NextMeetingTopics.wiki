@@ -13,6 +13,7 @@ Location: CBS
  * Language support
  * Developers blog
  * Timesheet statistics
+ * Planning of next weeks
 
 
 === Meeting: Friday 12 February 2010, 10:00 - 12:00 ===
