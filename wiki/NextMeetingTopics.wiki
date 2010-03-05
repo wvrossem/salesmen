@@ -3,6 +3,18 @@
 
 = Upcoming Topics =
 
+=== Meeting: Wednesday 10 March 2010, 15:00 - 16:00 ===
+
+Location: CBS
+
+ * Progress implementation
+ * Role Jonathan in implementation
+ * Stable + development branch
+ * Language support
+ * Developers blog
+ * Timesheet statistics
+
+
 === Meeting: Friday 12 February 2010, 10:00 - 12:00 ===
 
 Location: D.3.12
