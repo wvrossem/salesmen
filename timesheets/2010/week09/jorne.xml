@@ -1,0 +1,37 @@
+<?xml version='1.0'?>
+<timesheet xmlns="http://purl.org/net/timetrack">
+
+	<item duration="PT3H15M">
+		<desc>Workshop</desc>
+	</item>
+	
+	<item duration="PT1H0M">
+		<desc>Explored web for Seam e-mail support</desc>
+		<refs>
+			<ref>http://seamframework.org/Community/EmailConfigurationHelp</ref>
+			<ref>http://docs.jboss.org/seam/1.1.5.GA/reference/en/html/mail.html</ref>
+			<ref>https://jira.jboss.org/jira/browse/JBSEAM-977</ref>
+		</refs>
+	</item>
+	
+	<item duration="PT1H0M">
+		<desc>Implemented e-mail class and simple webpage to test it. This gave errors when trying out, therefore not committed.</desc>
+		<refs>
+			<ref></ref>
+		</refs>
+	</item>
+
+
+	<item duration="PT3H0M">
+		<desc>Studied and tried out Seam examples for mailing, which seemed not to be working. Tried to solve the problem.</desc>
+		<refs>
+			<ref>http://lists.jboss.org/pipermail/jboss-user/2007-February/039560.html</ref>
+			<ref>http://stackoverflow.com/questions/1631546/seanding-email-jboss-as-5-1-seam-2-2</ref>
+			<ref>http://seamframework.org/Community/SendingEmailJBossSA51Seam22</ref>
+		</refs>
+	</item>
+		
+	<item duration="PT0H15M">
+		<desc>Administration and Communication.</desc>
+	</item>
+</timesheet>
