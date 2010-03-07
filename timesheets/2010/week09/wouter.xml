@@ -1,0 +1,31 @@
+<?xml version='1.0'?>
+<timesheet xmlns="http://purl.org/net/timetrack">
+
+  <item duration="PT3H35M">
+    <desc>Workshop 03/03 14h15->17h50</desc>
+    <refs>
+    </refs>
+  </item>
+  
+  <item duration="PT20M">
+    <desc>Added the minutes of 22/2 to the website</desc>
+    <refs>
+   	  <ref>http://code.google.com/p/salesmen/source/detail?r=955</ref>
+   	  <ref>http://code.google.com/p/salesmen/source/detail?r=954</ref>
+    </refs>
+  </item>
+  
+  <item duration="PT1H">
+    <desc>Did some work on the advanced search</desc>
+    <refs>
+   	  <ref>http://groups.google.com/group/salesmen/web/AdvancedSearch.java</ref>
+   	  <ref>http://groups.google.com/group/salesmen/web/AdvancedSearchBean.java</ref>
+   	  <ref>http://groups.google.com/group/salesmen/web/advancedSearch.xhtml</ref>
+    </refs>
+  </item>
+
+  <item duration="PT25M">
+    <desc>Administration and Communication.</desc>
+    <refs></refs>
+  </item>
+</timesheet>
