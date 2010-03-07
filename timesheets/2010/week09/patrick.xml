@@ -1,0 +1,40 @@
+<?xml version='1.0'?>
+<timesheet xmlns="http://purl.org/net/timetrack">
+
+        <item duration="PT1H">
+                <desc>Workshop 2010/03/03, 15h00 -> 18h00</desc>
+        </item>
+        
+        <item duration="PT1H">
+                <desc>Looked into details for maintaining QA Branch to be discussed at the next meeting.</desc>
+                <refs>
+                    <ref>To update with minutes of next meeting.</ref>
+                </refs>
+        </item>
+		
+		<item duration="PT40M">
+                <desc>QA Highlights Februari</desc>
+                <refs>
+                        <ref>http://wilma.vub.ac.be/~se2_0910/about/highlights/2010/02/highlights-201002.pdf</ref>
+                </refs>
+        </item>
+		
+		<item duration="PT2H">
+                <desc>Implementation of User Profile.</desc>
+                <refs>
+                        <ref>To update with proper commit.</ref>
+                </refs>
+        </item>
+		
+		<item duration="PT2H">
+                <desc>Looking into recreating EntityHome Class. Decision not to recreate until further notice.</desc>
+                <refs>
+                        <ref>http://docs.jboss.org/seam/1.1BETA2/reference/en/html/framework.html</ref>
+						<ref>http://docs.jboss.org/seam/1.1CR1/api/org/jboss/seam/framework/EntityHome.html</ref>
+                </refs>
+        </item>
+                
+        <item duration="PT30M">
+                <desc>Administration and Communication.</desc>
+        </item>
+</timesheet>
