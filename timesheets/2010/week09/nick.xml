@@ -31,7 +31,7 @@
 	<item duration="PT1H0M">
   <desc>Added list of country to register page.</desc>
   <refs>
-	<ref>http://code.google.com/p/salesmen/source/detail?r=957</ref
+	<ref>http://code.google.com/p/salesmen/source/detail?r=957</ref>
 	<ref>http://theories.darwinsys.com/2009/01/27/1233094920000.html</ref>
 	<ref>http://joshuajava.wordpress.com/2008/03/26/localizing-enums-with-seam/</ref>
   </refs>
@@ -40,7 +40,7 @@
 	<item duration="PT0H15M">
   <desc>Added city field to register page.</desc>
   <refs>
-	<ref>http://code.google.com/p/salesmen/source/detail?r=958</ref
+	<ref>http://code.google.com/p/salesmen/source/detail?r=958</ref>
   </refs>
 </item>
 
