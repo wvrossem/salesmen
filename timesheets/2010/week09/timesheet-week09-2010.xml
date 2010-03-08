@@ -1,0 +1,217 @@
+<?xml version="1.0"?>
+<timesheets xmlns="http://purl.org/net/timetrack" xmlns:xi="http://www.w3.org/2001/XInclude" from="2010-02-22" to="2010-02-28" xml:id="week08-2010">
+  <title>VUB - SE2 Timesheets for the 8th Week of 2010</title>
+  <published>2010-03-01</published>
+  <updated>2010-03-01</updated>
+  <person>
+    <name>Nick De Cooman</name>
+    <timesheet xmlns="http://purl.org/net/timetrack">
+	
+	<item duration="PT25M">
+	  <desc>Checking and publishing timesheets of week07.</desc>
+	  <refs>
+	     <ref>http://code.google.com/p/salesmen/source/detail?r=903</ref>
+		  <ref>http://code.google.com/p/salesmen/source/detail?r=904</ref>
+		  <ref>http://code.google.com/p/salesmen/source/detail?r=905</ref>
+		<ref>http://code.google.com/p/salesmen/source/detail?r=906</ref>
+		<ref>http://code.google.com/p/salesmen/source/detail?r=907</ref>
+		<ref>http://code.google.com/p/salesmen/source/detail?r=908</ref>
+		<ref>http://code.google.com/p/salesmen/source/detail?r=909</ref>
+	  </refs>
+	</item>
+
+  <item duration="PT1H0M">
+    <desc>Meeting on Monday 2010/02/22.</desc>
+    <refs>
+   	<ref>No minutes yet</ref>
+    </refs>
+  </item>
+
+  <item duration="PT30M">
+    <desc>Look up requirements in srs concerning issue 7 and take a look at current state of register-process.</desc>
+    <refs>
+   	<ref>http://code.google.com/p/salesmen/issues/detail?id=7</ref>
+<ref>http://wilma.vub.ac.be/~se2_0910/docs/srs/index.html</ref>
+    </refs>
+  </item>
+
+  <item duration="PT3H0M">
+    <desc>Workshop</desc>
+    <refs>
+   	<ref>http://groups.google.com/group/salesmen/browse_thread/thread/baf54b819e2572bb</ref>
+    </refs>
+  </item>
+
+  <item duration="PT1H30M">
+    <desc>Added birthday and gender to register form</desc>
+    <refs>
+   	<ref>http://code.google.com/p/salesmen/issues/detail?id=7</ref>
+	<ref>http://code.google.com/p/salesmen/source/detail?r=925</ref>
+	<ref>http://code.google.com/p/salesmen/source/detail?r=924</ref>
+    </refs>
+  </item>
+
+  <item duration="PT0H30M">
+    <desc>Fixed problem in build.xml to enable deploy/explode</desc>
+    <refs>
+ 	<ref>http://seamframework.org/Community/AntBuildFailedFailedToCopyDroolstemplatesjarDueToJavaioFileNotFoundException</ref>
+    </refs>
+  </item>
+
+  <item duration="PT1H15M">
+    <desc>Attempt to verify uniqueness of username with Ajax</desc>
+    <refs>
+ 	<ref>http://www.coderanch.com/t/482021/JSF/java/javax-el-PropertyNotFoundException</ref>
+	<ref>http://groups.google.com/group/salesmen/browse_thread/thread/c23bd3fbf4033604</ref>
+	<ref>http://seamframework.org/Community/FacesMessagesHaveBeenEnqueuedButMayNotHaveBeenDisplayed</ref>
+	
+    </refs>
+  </item>
+
+  <item duration="PT0H15M">
+    <desc>Added memberSince field to register form</desc>
+    <refs>
+ 	<ref>http://code.google.com/p/salesmen/source/detail?r=926</ref>
+    </refs>
+  </item>
+
+  <item duration="PT0H10M">
+    <desc>Enable support for spaces in last-name field of register form</desc>
+    <refs>
+ 	<ref>http://code.google.com/p/salesmen/source/detail?r=927</ref>
+    </refs>
+  </item>
+
+
+  <item duration="PT30M">
+    <desc>Administration and Communication.</desc>
+    <refs/>
+  </item>
+</timesheet>
+  </person>
+  <person>
+    <name>Jonathan Jeurissen</name>
+    
+	<timesheet xmlns="http://purl.org/net/timetrack" xml:base="../default/timesheet.xml">
+  <item duration="PT0M">
+    <desc>
+      This is a fallback timesheet, meaning that the
+      developer has not submitted their timesheet yet.
+      Please check back later to see this developer's 
+      timesheet.
+    </desc>
+  </item>
+</timesheet>
+      
+  </person>
+  <person>
+    <name>Sina Khakbaz Heshmati</name>
+    <timesheet xmlns="http://purl.org/net/timetrack">
+	<item duration="PT1H0M">
+    <desc>Meeting on Monday 2010/02/22.</desc>
+    <refs>
+   	<ref>No minutes yet</ref>
+    </refs>
+  </item>
+
+  <item duration="PT30M">
+    <desc>Administration and Communication.</desc>
+  </item>
+</timesheet>
+  </person>
+  <person>
+    <name>Jorne Laton</name>
+    <timesheet xmlns="http://purl.org/net/timetrack">
+	<item duration="PT1H0M">
+		<desc>Meeting on Monday 2010/02/22.</desc>
+		<refs>
+			<ref>No minutes yet</ref>
+		</refs></item>
+
+	<item duration="PT3H15M">
+		<desc>Workshop</desc>
+		<refs>
+			<ref/>
+		</refs>
+	</item>
+	
+	<item duration="PT0H45M">
+		<desc>Created new Seam project for stable version of salesmen (salesmen-stable), with some problems. Therefore not committed</desc>
+		<refs>
+			<ref/>
+		</refs>
+	</item>
+
+  <item duration="PT20M">
+    <desc>Administration and Communication.</desc>
+  </item>
+</timesheet>
+  </person>
+  <person>
+    <name>Bart Maes</name>
+    <timesheet xmlns="http://purl.org/net/timetrack">
+
+  <item duration="PT1H0M">
+    <desc>Meeting on Monday 2010/02/22.</desc>
+    <refs>
+   	<ref>No minutes yet</ref>
+    </refs>
+  </item>
+
+  <item duration="PT2H30M">
+    <desc>Workshop 24/02 09h30-&gt;12h00</desc>
+    <refs>
+   	<ref>http://groups.google.com/group/salesmen/browse_thread/thread/baf54b819e2572bb</ref>
+    </refs>
+  </item>
+
+  <item duration="PT30M">
+    <desc>Administration and Communication.</desc>
+    <refs/>
+  </item>
+</timesheet>
+  </person>
+  <person>
+    <name>Patrick Provinciael</name>
+    <timesheet xmlns="http://purl.org/net/timetrack">
+  
+  <item duration="PT1H0M">
+    <desc>Meeting on Monday 22/02/2010.</desc>
+    <refs>
+      <ref>No minutes yet</ref>
+    </refs>
+  </item>
+  <item duration="PT3H30M">
+    <desc>Workshop: 24/02/2010, 09h00 -&gt; 12h30.</desc>
+  </item>
+
+<item duration="PT4H">
+    <desc>Programmed (only a minor commit)</desc>
+    <refs>
+      <ref>http://code.google.com/p/salesmen/source/detail?r=928</ref>
+	<ref>http://code.google.com/p/salesmen/source/detail?r=948</ref>
+    </refs>
+  </item>
+
+  <item duration="PT30M">
+    <desc>Administration and Communication</desc>
+  </item>
+
+</timesheet>
+  </person>
+  <person>
+    <name>Wouter Van Rossem</name>
+    
+	<timesheet xmlns="http://purl.org/net/timetrack" xml:base="../default/timesheet.xml">
+  <item duration="PT0M">
+    <desc>
+      This is a fallback timesheet, meaning that the
+      developer has not submitted their timesheet yet.
+      Please check back later to see this developer's 
+      timesheet.
+    </desc>
+  </item>
+</timesheet>
+      
+  </person>
+</timesheets>
