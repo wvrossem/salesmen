@@ -1,0 +1,23 @@
+<?xml version='1.0'?>
+<timesheet xmlns="http://purl.org/net/timetrack">
+
+  <item duration="PT0H30M">
+    <desc>Category + Auction implementation (view + logic)</desc>
+    <refs>
+   	<ref></ref>
+    </refs>
+  </item>
+
+  <item duration="PT3H0M">
+    <desc>Workshop 03/03/2010, 13h00->16h00 </desc>
+    <refs>
+   	<ref>http://groups.google.com/group/salesmen/browse_thread/thread/baf54b819e2572bb</ref>
+	<ref>http://code.google.com/p/salesmen/source/detail?r=964</ref>
+    </refs>
+  </item>
+  
+  <item duration="PT30M">
+    <desc>Administration and Communication.</desc>
+    <refs></refs>
+  </item>
+</timesheet>
