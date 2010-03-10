@@ -5,7 +5,7 @@
 
 === Meeting: Wednesday 10 March 2010, 15:00 - 16:00 ===
 
-Location: CBS
+Location: Lambda Room
 
  * Progress implementation
  * Role Jonathan in implementation
