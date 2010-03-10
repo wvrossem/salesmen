@@ -1,36 +1,33 @@
 package be.vub.salesmen.session;
 
-import javax.ejb.Stateless;
+import org.jboss.seam.ScopeType;
 import org.jboss.seam.annotations.Name;
 import org.jboss.seam.annotations.In;
 import org.jboss.seam.annotations.Logger;
+import org.jboss.seam.annotations.Scope;
 import org.jboss.seam.log.Log;
-import org.jboss.seam.faces.Renderer;
-import org.jboss.seam.international.StatusMessages;
+import org.jboss.seam.faces.*;
 
-@Stateless
-@Name("SendConfirmEmail")
+@Name("SendEmail")
+@Scope(ScopeType.CONVERSATION)
 public class SendEmailBean implements SendEmail
 {
-    @Logger private Log log;
+    @Logger
+    private Log log;
 
-    @In StatusMessages statusMessages;
-
-    public void sendEmail()
-    {
-        log.info("SendEmail.sendEmail() action called");
-        statusMessages.add("sendEmail");
-    }
+    @In
+    private FacesMessages facesMessages;
     
-    @In(create=true)
+    @In
     private Renderer renderer;
        
-    public void send(String emailxhtml) {
+    public void send() {
        try {
-           renderer.render(emailxhtml);
-           statusMessages.add("Email sent successfully");
+           renderer.render("/confirmEmail.xhtml");
+           facesMessages.add("Email sent successfully");
        } catch (Exception e) {
-           statusMessages.add("Email sending failed: " + e.getMessage());
+    	   log.error("Error sending mail", e);
+           facesMessages.add("Email sending failed: " + e.getMessage());
        }
     }
 }
