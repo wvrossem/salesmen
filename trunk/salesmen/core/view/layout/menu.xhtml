@@ -13,6 +13,7 @@
     <s:link view="/userAccountList.xhtml" value="UserAccount List" propagation="none"/>
     <s:link view="/userRoleList.xhtml" value="UserRole List" propagation="none"/>
     <s:link view="/basicSearch.xhtml" value="Basic Search" propagation="none"/>
+    <s:link view="/auction.xhtml" value="Create auction" action="#{manageAuction.createAuction}" rendered="#{not identity.loggedIn}"/>
     <!-- @newMenuItem@ -->
     <rich:toolBarGroup location="right">
         <s:link id="menuSignUpId" view="/register.xhtml" value="Sign Up!" action="#{registerUserAccount.createUser}" rendered="#{not identity.loggedIn}"/>

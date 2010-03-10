@@ -56,7 +56,7 @@ public class CategoryHome extends EntityHome<Category>
         }
     }
 
-    @Override @Begin
+    @Override @Begin(join=true)
     public void create() {
         super.create();
     }
