@@ -1,89 +1,80 @@
 <?xml version="1.0"?>
-<timesheets xmlns="http://purl.org/net/timetrack" xmlns:xi="http://www.w3.org/2001/XInclude" from="2010-02-22" to="2010-02-28" xml:id="week08-2010">
-  <title>VUB - SE2 Timesheets for the 8th Week of 2010</title>
-  <published>2010-03-01</published>
-  <updated>2010-03-01</updated>
+<timesheets xmlns="http://purl.org/net/timetrack" xmlns:xi="http://www.w3.org/2001/XInclude" from="2010-03-01" to="2010-03-07" xml:id="week09-2010">
+  <title>VUB - SE2 Timesheets for the 9th Week of 2010</title>
+  <published>2010-08-01</published>
+  <updated>2010-08-01</updated>
   <person>
     <name>Nick De Cooman</name>
     <timesheet xmlns="http://purl.org/net/timetrack">
 	
-	<item duration="PT25M">
-	  <desc>Checking and publishing timesheets of week07.</desc>
+	<item duration="PT40M">
+	  <desc>Checking and publishing timesheets of week08.</desc>
 	  <refs>
-	     <ref>http://code.google.com/p/salesmen/source/detail?r=903</ref>
-		  <ref>http://code.google.com/p/salesmen/source/detail?r=904</ref>
-		  <ref>http://code.google.com/p/salesmen/source/detail?r=905</ref>
-		<ref>http://code.google.com/p/salesmen/source/detail?r=906</ref>
-		<ref>http://code.google.com/p/salesmen/source/detail?r=907</ref>
-		<ref>http://code.google.com/p/salesmen/source/detail?r=908</ref>
-		<ref>http://code.google.com/p/salesmen/source/detail?r=909</ref>
+	     <ref>http://groups.google.com/group/salesmen/browse_thread/thread/97540182d4ae1230</ref>
+		  <ref>http://code.google.com/p/salesmen/source/detail?r=936</ref>
+		  <ref>http://code.google.com/p/salesmen/source/detail?r=937</ref>
+		<ref>http://code.google.com/p/salesmen/source/detail?r=938</ref>
+		<ref>http://code.google.com/p/salesmen/source/detail?r=940</ref>
+		<ref>http://code.google.com/p/salesmen/source/detail?r=941</ref>
+		<ref>http://code.google.com/p/salesmen/source/detail?r=942</ref>
+		<ref>http://code.google.com/p/salesmen/source/detail?r=943</ref>
+		<ref>http://code.google.com/p/salesmen/source/detail?r=944</ref>
+		<ref>http://code.google.com/p/salesmen/source/detail?r=974</ref>
+		<ref>http://code.google.com/p/salesmen/source/detail?r=975</ref>
 	  </refs>
 	</item>
-
-  <item duration="PT1H0M">
-    <desc>Meeting on Monday 2010/02/22.</desc>
+	
+	<item duration="PT1H0M">
+    <desc>Fixing issue 35.</desc>
     <refs>
-   	<ref>No minutes yet</ref>
+   	<ref>http://code.google.com/p/salesmen/issues/detail?id=35</ref>
+	<ref>http://code.google.com/p/salesmen/source/detail?r=953</ref>
+	<ref>http://www.zytrax.com/tech/web/regex.htm</ref>
+	<ref>http://gskinner.com/RegExr</ref>
     </refs>
   </item>
 
-  <item duration="PT30M">
-    <desc>Look up requirements in srs concerning issue 7 and take a look at current state of register-process.</desc>
-    <refs>
-   	<ref>http://code.google.com/p/salesmen/issues/detail?id=7</ref>
-<ref>http://wilma.vub.ac.be/~se2_0910/docs/srs/index.html</ref>
-    </refs>
-  </item>
+	<item duration="PT1H0M">
+  <desc>Added list of country to register page.</desc>
+  <refs>
+	<ref>http://code.google.com/p/salesmen/source/detail?r=957</ref>
+	<ref>http://theories.darwinsys.com/2009/01/27/1233094920000.html</ref>
+	<ref>http://joshuajava.wordpress.com/2008/03/26/localizing-enums-with-seam/</ref>
+  </refs>
+</item>
 
-  <item duration="PT3H0M">
+	<item duration="PT0H15M">
+  <desc>Added city field to register page.</desc>
+  <refs>
+	<ref>http://code.google.com/p/salesmen/source/detail?r=958</ref>
+  </refs>
+</item>
+
+  <item duration="PT2H0M">
     <desc>Workshop</desc>
     <refs>
    	<ref>http://groups.google.com/group/salesmen/browse_thread/thread/baf54b819e2572bb</ref>
+	<ref>http://code.google.com/p/salesmen/source/detail?r=967</ref>
     </refs>
   </item>
 
-  <item duration="PT1H30M">
-    <desc>Added birthday and gender to register form</desc>
+  <item duration="PT1H0M">
+    <desc>Writing and correcting highlights February</desc>
     <refs>
-   	<ref>http://code.google.com/p/salesmen/issues/detail?id=7</ref>
-	<ref>http://code.google.com/p/salesmen/source/detail?r=925</ref>
-	<ref>http://code.google.com/p/salesmen/source/detail?r=924</ref>
+   	<ref>http://code.google.com/p/salesmen/source/detail?r=963</ref>
+	<ref>http://groups.google.com/group/salesmen/browse_thread/thread/827e1851517c365a</ref>
+	<ref>http://groups.google.com/group/salesmen/browse_thread/thread/3d0e62f9fb9bb4e6</ref>
     </refs>
   </item>
 
-  <item duration="PT0H30M">
-    <desc>Fixed problem in build.xml to enable deploy/explode</desc>
+  <item duration="PT15M">
+    <desc>Update timesheets statistics</desc>
     <refs>
- 	<ref>http://seamframework.org/Community/AntBuildFailedFailedToCopyDroolstemplatesjarDueToJavaioFileNotFoundException</ref>
+   	<ref/>
     </refs>
   </item>
 
-  <item duration="PT1H15M">
-    <desc>Attempt to verify uniqueness of username with Ajax</desc>
-    <refs>
- 	<ref>http://www.coderanch.com/t/482021/JSF/java/javax-el-PropertyNotFoundException</ref>
-	<ref>http://groups.google.com/group/salesmen/browse_thread/thread/c23bd3fbf4033604</ref>
-	<ref>http://seamframework.org/Community/FacesMessagesHaveBeenEnqueuedButMayNotHaveBeenDisplayed</ref>
-	
-    </refs>
-  </item>
-
-  <item duration="PT0H15M">
-    <desc>Added memberSince field to register form</desc>
-    <refs>
- 	<ref>http://code.google.com/p/salesmen/source/detail?r=926</ref>
-    </refs>
-  </item>
-
-  <item duration="PT0H10M">
-    <desc>Enable support for spaces in last-name field of register form</desc>
-    <refs>
- 	<ref>http://code.google.com/p/salesmen/source/detail?r=927</ref>
-    </refs>
-  </item>
-
-
-  <item duration="PT30M">
+  <item duration="PT20M">
     <desc>Administration and Communication.</desc>
     <refs/>
   </item>
@@ -91,6 +82,20 @@
   </person>
   <person>
     <name>Jonathan Jeurissen</name>
+    <timesheet xmlns="http://purl.org/net/timetrack">
+	
+  <item duration="PT1H">
+		<desc>Workshop 2010/03/03, 15h00 -&gt; 18h00</desc>
+  </item>
+  
+  <item duration="PT15M">
+    <desc>Administration and Communication.</desc>
+    <refs/>
+  </item>
+</timesheet>
+  </person>
+  <person>
+    <name>Sina Khakbaz Heshmati</name>
     
 	<timesheet xmlns="http://purl.org/net/timetrack" xml:base="../default/timesheet.xml">
   <item duration="PT0M">
@@ -105,66 +110,63 @@
       
   </person>
   <person>
-    <name>Sina Khakbaz Heshmati</name>
-    <timesheet xmlns="http://purl.org/net/timetrack">
-	<item duration="PT1H0M">
-    <desc>Meeting on Monday 2010/02/22.</desc>
-    <refs>
-   	<ref>No minutes yet</ref>
-    </refs>
-  </item>
-
-  <item duration="PT30M">
-    <desc>Administration and Communication.</desc>
-  </item>
-</timesheet>
-  </person>
-  <person>
     <name>Jorne Laton</name>
     <timesheet xmlns="http://purl.org/net/timetrack">
-	<item duration="PT1H0M">
-		<desc>Meeting on Monday 2010/02/22.</desc>
-		<refs>
-			<ref>No minutes yet</ref>
-		</refs></item>
 
 	<item duration="PT3H15M">
 		<desc>Workshop</desc>
+	</item>
+	
+	<item duration="PT1H0M">
+		<desc>Explored web for Seam e-mail support</desc>
 		<refs>
-			<ref/>
+			<ref>http://seamframework.org/Community/EmailConfigurationHelp</ref>
+			<ref>http://docs.jboss.org/seam/1.1.5.GA/reference/en/html/mail.html</ref>
+			<ref>https://jira.jboss.org/jira/browse/JBSEAM-977</ref>
 		</refs>
 	</item>
 	
-	<item duration="PT0H45M">
-		<desc>Created new Seam project for stable version of salesmen (salesmen-stable), with some problems. Therefore not committed</desc>
+	<item duration="PT1H0M">
+		<desc>Implemented e-mail class and simple webpage to test it. This gave errors when trying out, therefore not committed.</desc>
 		<refs>
 			<ref/>
 		</refs>
 	</item>
 
-  <item duration="PT20M">
-    <desc>Administration and Communication.</desc>
-  </item>
+
+	<item duration="PT3H0M">
+		<desc>Studied and tried out Seam examples for mailing, which seemed not to be working. Tried to solve the problem.</desc>
+		<refs>
+			<ref>http://lists.jboss.org/pipermail/jboss-user/2007-February/039560.html</ref>
+			<ref>http://stackoverflow.com/questions/1631546/seanding-email-jboss-as-5-1-seam-2-2</ref>
+			<ref>http://seamframework.org/Community/SendingEmailJBossSA51Seam22</ref>
+		</refs>
+	</item>
+		
+	<item duration="PT0H15M">
+		<desc>Administration and Communication.</desc>
+	</item>
 </timesheet>
   </person>
   <person>
     <name>Bart Maes</name>
     <timesheet xmlns="http://purl.org/net/timetrack">
 
-  <item duration="PT1H0M">
-    <desc>Meeting on Monday 2010/02/22.</desc>
+  <item duration="PT0H30M">
+    <desc>Category + Auction implementation (view + logic)</desc>
     <refs>
-   	<ref>No minutes yet</ref>
+   	<ref/>
     </refs>
   </item>
 
-  <item duration="PT2H30M">
-    <desc>Workshop 24/02 09h30-&gt;12h00</desc>
+  <item duration="PT3H0M">
+    <desc>Workshop 03/03/2010, 13h00-&gt;16h00 </desc>
     <refs>
    	<ref>http://groups.google.com/group/salesmen/browse_thread/thread/baf54b819e2572bb</ref>
+	<ref>http://code.google.com/p/salesmen/source/detail?r=964</ref>
     </refs>
   </item>
-
+  
   <item duration="PT30M">
     <desc>Administration and Communication.</desc>
     <refs/>
@@ -174,44 +176,76 @@
   <person>
     <name>Patrick Provinciael</name>
     <timesheet xmlns="http://purl.org/net/timetrack">
-  
-  <item duration="PT1H0M">
-    <desc>Meeting on Monday 22/02/2010.</desc>
-    <refs>
-      <ref>No minutes yet</ref>
-    </refs>
-  </item>
-  <item duration="PT3H30M">
-    <desc>Workshop: 24/02/2010, 09h00 -&gt; 12h30.</desc>
-  </item>
 
-<item duration="PT4H">
-    <desc>Programmed (only a minor commit)</desc>
-    <refs>
-      <ref>http://code.google.com/p/salesmen/source/detail?r=928</ref>
-	<ref>http://code.google.com/p/salesmen/source/detail?r=948</ref>
-    </refs>
-  </item>
-
-  <item duration="PT30M">
-    <desc>Administration and Communication</desc>
-  </item>
-
+        <item duration="PT1H">
+                <desc>Workshop 2010/03/03, 15h00 -&gt; 18h00</desc>
+        </item>
+        
+        <item duration="PT1H">
+                <desc>Looked into details for maintaining QA Branch to be discussed at the next meeting.</desc>
+                <refs>
+                    <ref>To update with minutes of next meeting.</ref>
+                </refs>
+        </item>
+		
+		<item duration="PT40M">
+                <desc>QA Highlights February</desc>
+                <refs>
+                        <ref>http://wilma.vub.ac.be/~se2_0910/about/highlights/2010/02/highlights-201002.pdf</ref>
+                </refs>
+        </item>
+		
+		<item duration="PT2H">
+                <desc>Implementation of User Profile.</desc>
+                <refs>
+                        <ref>To update with proper commit.</ref>
+                </refs>
+        </item>
+		
+		<item duration="PT2H">
+                <desc>Looking into recreating EntityHome Class. Decision not to recreate until further notice.</desc>
+                <refs>
+                        <ref>http://docs.jboss.org/seam/1.1BETA2/reference/en/html/framework.html</ref>
+						<ref>http://docs.jboss.org/seam/1.1CR1/api/org/jboss/seam/framework/EntityHome.html</ref>
+                </refs>
+        </item>
+                
+        <item duration="PT30M">
+                <desc>Administration and Communication.</desc>
+        </item>
 </timesheet>
   </person>
   <person>
     <name>Wouter Van Rossem</name>
-    
-	<timesheet xmlns="http://purl.org/net/timetrack" xml:base="../default/timesheet.xml">
-  <item duration="PT0M">
-    <desc>
-      This is a fallback timesheet, meaning that the
-      developer has not submitted their timesheet yet.
-      Please check back later to see this developer's 
-      timesheet.
-    </desc>
+    <timesheet xmlns="http://purl.org/net/timetrack">
+
+  <item duration="PT3H35M">
+    <desc>Workshop 03/03 14h15-&gt;17h50</desc>
+    <refs>
+    </refs>
+  </item>
+  
+  <item duration="PT20M">
+    <desc>Added the minutes of 22/2 to the website</desc>
+    <refs>
+   	  <ref>http://code.google.com/p/salesmen/source/detail?r=955</ref>
+   	  <ref>http://code.google.com/p/salesmen/source/detail?r=954</ref>
+    </refs>
+  </item>
+  
+  <item duration="PT1H">
+    <desc>Did some work on the advanced search</desc>
+    <refs>
+   	  <ref>http://groups.google.com/group/salesmen/web/AdvancedSearch.java</ref>
+   	  <ref>http://groups.google.com/group/salesmen/web/AdvancedSearchBean.java</ref>
+   	  <ref>http://groups.google.com/group/salesmen/web/advancedSearch.xhtml</ref>
+    </refs>
+  </item>
+
+  <item duration="PT25M">
+    <desc>Administration and Communication.</desc>
+    <refs/>
   </item>
 </timesheet>
-      
   </person>
 </timesheets>
