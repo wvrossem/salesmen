@@ -1,0 +1,130 @@
+\documentclass[a4paper, 12pt]{article}
+\usepackage[english]{babel}
+\usepackage{graphicx, ctable, url}
+\usepackage{hyperref}
+\usepackage{eurosym}
+\usepackage{listings} % source listings
+\lstloadlanguages{java}
+\lstset{keywordstyle=\ttfamily\bfseries}
+\lstset{flexiblecolumns=true}
+\lstset{commentstyle=\ttfamily\itshape}
+
+	\begin{document}
+
+\title{Minutes Meeting 17}
+\author{Jonathan Jeurissen}
+\date{\today}
+
+\maketitle	
+	\section{Meeting Information}
+		\textbf{Date:} Wednesday, March 10, 2009\\
+		\textbf{Time:} 15H00--16H00\\
+		\textbf{Place:} D2.13\\
+		\subsection{Attendees}
+Following members were present:
+			\begin{itemize}
+				\item Nick De Cooman
+				\item Jonathan Jeurissen
+				\item Bart Maes
+				\item Jorne Laton
+				\item Patrick Provinciael
+				\item Wouter Van Rossem
+				\item Sina Khakbaz Heshmati
+			\end{itemize}
+%Following members were absent:
+%			\begin{itemize}
+			 
+%			\end{itemize}
+			
+		\subsection{Revision History}
+			\begin{tabular}{c | l | l }
+				\textbf{Rev.} & \textbf{Date} & \textbf{Description} \\
+				\hline
+				1.0 & March 10, 2010 & First draft created \\
+				%1.1 & March 10, 2010 & Revised by QA Manager \\
+			\end{tabular}		
+
+	\section{Progress Implementation}
+Tasks have been given to the team. We are on schedule for release 0.1. All must have requirements will be implemented on the end of release 0.1.
+		\subsection{What has been done?}	
+		\begin{itemize} 
+			\item \textbf{Nick:} Finished register process
+			\item \textbf{Bart:} Made categories (went quiet well) and started making auctions (with a few difficulties, such as coupling the categories with the auctions, which was harder than expected.)
+			\item \textbf{Jorne:} Worked on the e-mail system, but it's not fully functional yet. It generates an error, even when making a page with only a simple send-button. The examples from Seam did not work either, so this might be a server related problem.  Sina and Jorne will look into this in the following workshop to fix this error as soon as possible.
+			\item \textbf{Wouter:} Basic search is almost finished and the implementation of an advanced search is in progress. Features such as searching auctions from a specific user, excluding certain words and searching categories will be available in this advanced search function.
+			\item \textbf{Jonathan:} Has only just started trying to implement a forget password form. Due to less study points, there has not been a lot of progress in implementation. 
+			\item \textbf{Patrick:} The basic view of the user dashboard is finished, but a lot of details have to be added. The rough work has already been done though. At the moment, there is a persistence problem, that should be looked into.
+		\end{itemize}
+		\subsection{Layout} 
+Plans about the layout should be made. At first we thought it's best to work on the layout at the end of release 0.1, but we should not forget that the layout is important for the prototype, which we want to show on the conference. We cannot fail on the look of Salesmen, whatever fancy features are. \\
+Bart has already experience with .CSS. For that reason he will implement the layout and Nick will inspect this layout critically and will look for improvements. Nick also has to check the site throughout the different browsers that Salesmen supports.
+One should be aware that small changes might have to be made in the .xHTML code to match the layout with what will be declared in the .CSS (e.g. the bar in the user dashboard).\\
+The user space (made by Patrick) should be nicely adjusted to the auction space (made by Bart) to make a nice finished look.
+
+	\section{Stable and development branch}
+		\textit{Should there be 2 branches or not?}\\
+At the moment there were some problems with making a second branch: the classes in the two branches can't have the same name. Refactoring gave problems. As a possible solution, Jorne edited the configuration files, but that did not work either, because than neither salesmen or salesmen-dev works correctly.\\
+		\textit{Solution:}\\
+We will create a stable version of salesmen, named salesmen-stable, that will just be a copy of salesmen at a certain moment in time. This version will only be used by Patrick for QA purposes, so the rest of the team does not have to be bothered about salesmen-stable. The question is: can they run at the same time at the Wilma-server?\\ \\
+		\textit{Slowed down development of Salesmen}\\
+The development of Salesmen can be slowed down by Patrick, as he cannot review the code instantly after it's committed. Also, for Patrick, it's not very clear when something is committed. \\
+		\textit{Solution:}\\
+From now on the code committed should have the prefix \textbf{[Issue x]}, so it becomes clear which commits are lines of code and which are not.
+	\section{Language support}
+Because the support for foreign languages is rather deeply nested into the project, we should not wait to long to inspect this. The support for different languages is a feature in Seam and has been partially researched by Nick. Nick will look further into this and will already test this feature on a few examples.
+	\section{Role Jonathan in implementation}
+As Jonathan has less study points for this course, he runs a little behind on implementation. Also, it's not clear if implementing a few little things, will be sufficient for this course. As Jonathan only has to work approximately 3 hours a week (according to Nick's statistics), the minutes take too much valuable time. For this reason the minutes for the next meetings will be written by Wouter.
+	\section{Maintenance developers blog}
+A blog has already been made and should be edited once a week. This blog will conclude certain improvements of Salesmen or design decisions that have been made.
+The developers blog will be edited by every member of the team according to the following deadlines:\\ \\
+			\begin{tabular}{l | l }
+				\textbf{Week number} & \textbf{Team member} \\
+				\hline
+				Week 11 &  Wouter\\
+				\hline
+				Week 12 &  Nick\\
+				\hline
+				Week 13 &  Jonathan\\
+				\hline
+				Week 16 &  Jorne\\
+				\hline
+				Week 17 &  Bart\\
+				\hline
+				Week 18 &  Patrick\\
+				\hline
+				Week 19 &  Sina\\
+			\end{tabular}
+	\section{Timesheet statistics}
+The statistics of the timesheets have been shown to the team members. The balance in the workload on the team already looks a lot better. However, in general, every team member should work approximately 1 hour more per week.
+	\section{Planning of next weeks}
+There will not be any implementing in the easter vacation, unless the must have requirements should not be finished yet. In the easter vacation, Patrick should not QA the code of Salesmen. \\
+The next weeks will be planned as followed:
+	
+			\begin{tabular}{l | l | l }
+				\textbf{Date} & \textbf{Time} & \textbf{Description} \\
+				\hline
+				March 18, Thursday  & 12h-13h & Conference Meeting\\
+				\hline
+				March 24, Wednesday & 15h-18h & Workshop\\
+				\hline
+				March 29, Monday    & 17h-19h & Conference Rehearsal\\
+				\hline
+				March 31, Thursday  & 13h-15h & Conference II\\
+
+			\end{tabular}
+
+		\section{Agenda}
+A complete list of Agenda items is available on \cite{agendaitems}.\\
+	
+	\begin{thebibliography}{99}
+	%	\bibitem{site1}
+	%	\href{http://wilma.vub.ac.be/~se2\_{}0910/dev/events/2009/vub-se/index.html}{http://wilma.vub.ac.be/~se2\_{}0910/dev/events/2009/vub-se/index.html}
+		
+		
+		\bibitem{agendaitems}
+		\href{http://code.google.com/p/salesmen/wiki/NextMeetingTopics}{http://code.google.com/p/salesmen/wiki/NextMeetingTopics}
+
+		
+	\end{thebibliography}	
+		
+\end{document}
