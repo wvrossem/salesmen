@@ -4,7 +4,7 @@ import java.util.List;
 
 import javax.persistence.EntityManager;
 
-import org.jboss.seam.annotations.Factory;
+//import org.jboss.seam.annotations.Factory;
 import org.jboss.seam.annotations.In;
 import org.jboss.seam.annotations.Name;
 import org.jboss.seam.annotations.Begin;
@@ -26,6 +26,7 @@ import be.vub.salesmen.entity.Category;
 */
 import be.vub.salesmen.entity.Auction;
 import be.vub.salesmen.entity.Category;
+
 
 //TODO: to use this functionality, a user cannot be guest (nor admin?)
 //TODO: @In the account of the user

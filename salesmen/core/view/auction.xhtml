@@ -18,22 +18,17 @@
 				<s:validateAll>
 					<div class="section">
 					<h:outputLabel for="title">Enter a short description of the item you wish to sell</h:outputLabel>
-					<h:inputText id="title" required="true" value="#{auctionHome.instance.title}" />
+					<h:inputText id="title" required="true" value="#{manageAuction.auction.title}" />
 					<div class="validationError"><h:message for="title" /></div>
 					</div>
 
 
-					<div class="section">
-					<h:selectOneMenu id="categorySel" value="#{auctionHome.instance.category}">
-					<s:selectItems value="#{categories}" var="cat" label="#{cat.name}" noSelectionLabel="All Categories"/>
-					<s:convertEntity />
-					</h:selectOneMenu>
-					</div>
+
 					
 				
 					<div class="section">
 					<h:outputLabel for="price">Please enter the starting price for your auction (EUR)</h:outputLabel>
-					<h:inputText id="price" value="#{auctionHome.instance.startingPrice}" required="true">
+					<h:inputText id="price" value="#{manageAuction.auction.startingPrice}" required="true">
 						<f:convertNumber minFractionDigits="2" maxFractionDigits="2" minIntegerDigits="1" />
 					</h:inputText>
 					<div class="validationError"><h:message for="price" /></div>
@@ -43,7 +38,7 @@
 
 					<div class="section">
 					<h:outputLabel for="description">Please enter a description for the item you are trying to sell.</h:outputLabel>
-					<h:inputTextarea id="description" value="#{auctionHome.instance.description}" styleClass="description" />
+					<h:inputTextarea id="description" value="#{manageAuction.auction.description}" styleClass="description" />
 					<div class="validationError"><h:message for="description" /></div>
 					</div>
 				</s:validateAll>
@@ -53,23 +48,7 @@
         </rich:panel>
 
         <div class="actionButtons">
-            <h:commandButton id="save"
-                          value="Save"
-                         action="#{auctionHome.persist}"
-                       rendered="#{!auctionHome.managed}"/>
-            <h:commandButton id="update"
-                          value="Save"
-                         action="#{auctionHome.update}"
-                       rendered="#{auctionHome.managed}"/>
-            <h:commandButton id="delete"
-                          value="Delete"
-                         action="#{auctionHome.remove}"
-                      immediate="true"
-                       rendered="#{auctionHome.managed}"/>
-            <s:button propagation="end"
-                               id="cancel"
-                            value="Cancel"
-                             view="/auctionList.xhtml"/>
+            <h:commandButton  id="submit" value="Add auction" action="#{manageAuction.checkInput}"/>
         </div>
 
     </h:form>

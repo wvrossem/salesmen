@@ -11,15 +11,17 @@ import javax.persistence.Version;
 import org.hibernate.validator.Length;
 
 //other imports
+/*
 import java.util.Date;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
+*/
 import org.hibernate.validator.NotNull;
 import org.jboss.seam.annotations.Name;
 
 
 @Entity
-@Name("action")
+@Name("auction")
 @Table(name="Auction")
 public class Auction implements Serializable
 {
@@ -40,15 +42,15 @@ public class Auction implements Serializable
     private Integer version;
 
     // add additional entity attributes
-    private User owner;
-    private Category category;
+   // private User owner;
+    //private Category category;
     private String title;
     private String description;
-    private Date endDate;
-    private Bid highBid;
+    //private Date endDate;
+    //private Bid highBid;
    // private Bid[] bids;
     private double startingPrice;
-    private AuctionStatus status;
+    //private AuctionStatus status;
     
     //SOME PREDEFINED STATUS:
     /*
@@ -79,7 +81,7 @@ public class Auction implements Serializable
         this.version = version;
     }
 
-
+/*
     @NotNull
     @ManyToOne
     @JoinColumn(name = "USER_ID")
@@ -101,7 +103,7 @@ public class Auction implements Serializable
 	public void setCategory(Category category) {
 		this.category = category;
 	}
-
+*/
     @NotNull
     @Length(min=5, max=32)
 	public String getTitle() {
@@ -120,7 +122,7 @@ public class Auction implements Serializable
 	public void setDescription(String description) {
 		this.description = description;
 	}
-
+/*
 	@NotNull
 	public Date getEndDate() {
 		return endDate;
@@ -138,7 +140,7 @@ public class Auction implements Serializable
 	public void setHighBid(Bid highBid) {
 		this.highBid = highBid;
 	}
-
+*/
 	@NotNull
 	public double getStartingPrice() {
 		return startingPrice;
@@ -147,7 +149,7 @@ public class Auction implements Serializable
 	public void setStartingPrice(double startingPrice) {
 		this.startingPrice = startingPrice;
 	}
-
+/*
 	public void setStatus(AuctionStatus status) {
 		this.status = status;
 	}
@@ -155,5 +157,5 @@ public class Auction implements Serializable
 	public AuctionStatus getStatus() {
 		return status;
 	}
-
+*/
 }
