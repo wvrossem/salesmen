@@ -1,0 +1,18 @@
+<?xml version='1.0'?>
+<timesheet xmlns="http://purl.org/net/timetrack">
+
+	<item duration="PT2H30M">
+		<desc>Workshop</desc>
+	</item>
+	
+	<item duration="PT1H0M">
+		<desc>Meeting on Wednesday 2009/03/10.</desc>
+		<refs>
+			<ref>http://wilma.vub.ac.be/~se2_0910/docs/minutes/2010/03/10/minutes-20100310.pdf</ref>
+		</refs>
+	</item>
+		
+	<item duration="PT0H5M">
+		<desc>Administration and Communication.</desc>
+	</item>
+</timesheet>
