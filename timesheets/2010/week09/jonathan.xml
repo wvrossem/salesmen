@@ -1,8 +1,8 @@
 <?xml version='1.0'?>
 <timesheet xmlns="http://purl.org/net/timetrack">
 	
-  <item duration="PT1H">
-		<desc>Workshop 2010/03/03, 15h00 -> 18h00</desc>
+  <item duration="PT2H30M">
+		<desc>Workshop 2010/03/03, 15h00 -> 17h30</desc>
   </item>
   
   <item duration="PT15M">
