@@ -37,6 +37,22 @@
 	<redirect view-id="/home.xhtml"/>
       </navigation>
     </page>
+    <!-- 
+    AUCTION
+     -->
+    <page view-id="/auction.xhtml">
+      <navigation from-action="#{manageAuction.checkInput}">
+	<rule if="#{not manageAuction.inputIsOk}">
+	  <redirect view-id="/auction.xhtml"/>
+	</rule>
+	<rule if="#{manageAuction.inputIsOk}">
+	  <redirect view-id="/view_auction.xhtml"/>
+	</rule>
+	</navigation>
+	</page>
+	<!-- 
+    END AUCTION
+     -->
 
     <exception class="org.jboss.seam.framework.EntityNotFoundException">
         <redirect view-id="/error.xhtml">
