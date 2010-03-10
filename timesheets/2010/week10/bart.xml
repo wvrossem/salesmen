@@ -1,0 +1,21 @@
+<?xml version='1.0'?>
+<timesheet xmlns="http://purl.org/net/timetrack">
+	<item duration="PT20M">
+		<desc>QA Meeting 22 feb 2010</desc>
+		<refs>
+		<ref>http://wilma.vub.ac.be/~se2_0910/docs/minutes/2010/02/22/minutes-20100222.pdf</ref>
+		</refs>
+	</item>
+
+  <item duration="PT3H15M">
+    <desc>Workshop 10/03/2010, 16h00->18h15 </desc>
+    <refs>
+	<ref>http://code.google.com/p/salesmen/source/detail?r=988</ref>
+	<ref>http://code.google.com/p/salesmen/source/detail?r=989</ref>
+    </refs>
+  </item>
+  
+  <item duration="PT30M">
+    <desc>Administration and Communication.</desc>
+  </item>
+</timesheet>
