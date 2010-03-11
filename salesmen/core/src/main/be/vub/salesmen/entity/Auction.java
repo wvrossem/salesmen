@@ -25,6 +25,7 @@ import org.jboss.seam.annotations.Name;
 @Table(name="Auction")
 public class Auction implements Serializable
 {
+	private final double DEFAULT_STARTING_PRICE=1.00;
 	public enum AuctionStatus
 	{
 		UNLISTED,
@@ -52,15 +53,10 @@ public class Auction implements Serializable
     private double startingPrice;
     //private AuctionStatus status;
     
-    //SOME PREDEFINED STATUS:
-    /*
-	public final int UNLISTED=0;
-	public final int LISTED=1;//open
-	public final int FINISHED=2;//auction has expired
-	public final int CLOSED=3;//unlisted, but viewable (by direct request)
-	public final int REMOVED=4;//removed by admins
-*/
-    //attribute getters/setters with annotations (you probably should edit)
+    public Auction()
+    {
+    	this.startingPrice=DEFAULT_STARTING_PRICE;
+    }
 
     @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
     public int getId() {
