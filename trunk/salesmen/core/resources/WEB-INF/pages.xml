@@ -40,16 +40,36 @@
     <!-- 
     AUCTION
      -->
-    <page view-id="/auction.xhtml">
+    <page view-id="/createAuction.xhtml">
       <navigation from-action="#{manageAuction.checkInput}">
 	<rule if="#{not manageAuction.inputIsOk}">
-	  <redirect view-id="/auction.xhtml"/>
+	  <redirect view-id="/createAuction.xhtml"/>
 	</rule>
 	<rule if="#{manageAuction.inputIsOk}">
-	  <redirect view-id="/view_auction.xhtml"/>
+	  <redirect view-id="/createAuction2.xhtml"/>
 	</rule>
 	</navigation>
 	</page>
+	
+	<page view-id="/createAuction2.xhtml" conversation-required="true">
+        <navigation from-action="previous">
+            <redirect view-id="/createAuction.xhtml"/>
+        </navigation>
+
+        <navigation from-action="next">
+            <redirect view-id="/previewAuction.xhtml"/>
+        </navigation>
+	</page>
+
+    <page view-id="/previewAuction.xhtml" conversation-required="true">
+        <navigation from-action="previous">
+            <redirect view-id="/createAuction2.xhtml"/>
+        </navigation>
+
+        <navigation from-action="#{manageAuction.confirm}">
+            <redirect view-id="/auction.xhtml"/>
+        </navigation>
+    </page>
 	<!-- 
     END AUCTION
      -->
