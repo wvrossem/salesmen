@@ -22,6 +22,7 @@ public class ManageAuctionBean implements ManageAuction, Serializable
 	private static final long serialVersionUID = 5797405997183391745L;
 	private Auction auction; 
 	private boolean inputIsOk=false;
+    private int categoryId;
 	
 	
 
@@ -74,4 +75,11 @@ public class ManageAuctionBean implements ManageAuction, Serializable
 	public boolean isInputIsOk() {
 		return inputIsOk;
 	}
+        public int getCategoryId() {
+        return categoryId;
+    }
+
+    public void setCategoryId(int categoryId) {
+        this.categoryId = categoryId;
+    }
 }

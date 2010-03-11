@@ -4,6 +4,7 @@ import org.jboss.seam.annotations.Name;
 import org.jboss.seam.annotations.Begin;
 import org.jboss.seam.annotations.web.RequestParameter;
 import org.jboss.seam.framework.EntityHome;
+import org.jboss.seam.annotations.remoting.WebRemote;
 
 import be.vub.salesmen.entity.Category;
 
@@ -33,17 +34,16 @@ public class CategoryHome extends EntityHome<Category>
 	private static final long serialVersionUID = -468312262064764801L;
 	@In
 	EntityManager entityManager;
-	
-	@SuppressWarnings("unused")
+
 	@Out(required = false)
 	private List<Category> categories;
 	
 	@Out(required = false)
 	private List<Category> allCategories;
 	
-	@RequestParameter Long categoryId;
+	@RequestParameter int categoryId;
 
-    @Override
+
     public Object getId()
     {
         if (categoryId == null)
@@ -52,16 +52,16 @@ public class CategoryHome extends EntityHome<Category>
         }
         else
         {
-            return categoryId;
+            return (Integer)categoryId;
         }
     }
 
-    @Override @Begin(join=true)
+    @Begin(join=true)
     public void create() {
         super.create();
     }
+
     
-    @SuppressWarnings("unchecked")
     @Factory("categories")
     public void loadCategories()
     {
@@ -70,8 +70,7 @@ public class CategoryHome extends EntityHome<Category>
              .getResultList();
     }
 
-    //@WebRemote
-    @SuppressWarnings("unchecked")
+    @WebRemote
 	public List<Category> getAllCategories()
     {
        allCategories = entityManager.createQuery("from Category").getResultList(); 

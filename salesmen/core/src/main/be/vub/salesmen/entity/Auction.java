@@ -55,7 +55,8 @@ public class Auction implements Serializable
     
     public Auction()
     {
-    	this.startingPrice=DEFAULT_STARTING_PRICE;
+    	this.setStartingPrice(DEFAULT_STARTING_PRICE);
+        this.setStatus(AuctionStatus.UNLISTED);
     }
 
     @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
