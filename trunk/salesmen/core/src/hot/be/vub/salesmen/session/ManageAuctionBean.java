@@ -37,6 +37,7 @@ public class ManageAuctionBean implements ManageAuction, Serializable
 		if(this.auction.getStartingPrice()>0)
 		{
 			this.setInputIsOk(true);
+            entityManager.persist(auction);
 		}
 		else
 		{
@@ -44,8 +45,15 @@ public class ManageAuctionBean implements ManageAuction, Serializable
 		}
 	}
 
+    @End
+    public void confirm()
+    {
+        this.auction.setStatus(Auction.AuctionStatus.LISTED);
+        entityManager.merge(auction);
+    }
 	
-	public void setAuction(Auction auction) {
+	public void setAuction(Auction auction)
+    {
 		this.auction = auction;
 	}
 
