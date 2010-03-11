@@ -9,6 +9,7 @@ import java.io.Serializable;
 
 
 import org.jboss.seam.annotations.*;
+import org.jboss.seam.faces.FacesMessages;
 
 import be.vub.salesmen.entity.Auction;
 
@@ -33,7 +34,14 @@ public class ManageAuctionBean implements ManageAuction, Serializable
 	
 	public void checkInput()
 	{
-		this.setInputIsOk(true);
+		if(this.auction.getStartingPrice()>0)
+		{
+			this.setInputIsOk(true);
+		}
+		else
+		{
+			FacesMessages.instance().addToControl("price", "Price should be greater than 0");
+		}
 	}
 
 	
