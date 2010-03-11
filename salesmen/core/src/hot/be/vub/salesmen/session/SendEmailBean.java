@@ -7,10 +7,11 @@ import org.jboss.seam.annotations.Logger;
 import org.jboss.seam.annotations.Scope;
 import org.jboss.seam.log.Log;
 import org.jboss.seam.faces.*;
+import java.io.Serializable;
 
 @Name("SendEmail")
 @Scope(ScopeType.CONVERSATION)
-public class SendEmailBean implements SendEmail
+public class SendEmailBean implements SendEmail    ,Serializable
 {
     @Logger
     private Log log;

@@ -51,7 +51,7 @@ public class Auction implements Serializable
     //private Bid highBid;
    // private Bid[] bids;
     private double startingPrice;
-    //private AuctionStatus status;
+    private AuctionStatus status;
     
     public Auction()
     {
@@ -72,8 +72,9 @@ public class Auction implements Serializable
         return version;
     }
 
-    @SuppressWarnings("unused")
-	private void setVersion(Integer version) {
+    
+	private void setVersion(Integer version)
+    {
         this.version = version;
     }
 
@@ -145,7 +146,7 @@ public class Auction implements Serializable
 	public void setStartingPrice(double startingPrice) {
 		this.startingPrice = startingPrice;
 	}
-/*
+
 	public void setStatus(AuctionStatus status) {
 		this.status = status;
 	}
@@ -153,5 +154,5 @@ public class Auction implements Serializable
 	public AuctionStatus getStatus() {
 		return status;
 	}
-*/
+
 }
