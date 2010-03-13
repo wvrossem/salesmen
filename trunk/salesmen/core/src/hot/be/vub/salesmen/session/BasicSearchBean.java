@@ -42,9 +42,7 @@ public class BasicSearchBean implements BasicSearch {
     public List suggest(Object begin) {
        AtomicReference<String> qry = new AtomicReference<String>("select u.screenName from User u");
 
-        List results = entityManager.createQuery(qry.get()).getResultList();
-
-        return results;
+        return entityManager.createQuery(qry.get()).getResultList();
     }
 
     public void nextPage() {
@@ -58,7 +56,9 @@ public class BasicSearchBean implements BasicSearch {
 		
 		if ( entityType.equals("Auction")) {
 			qry.append("from Auction e");
-			qry.append(" WHERE UPPER(e.name) LIKE UPPER(#{pattern})");			
+			qry.append(" WHERE UPPER(e.title) LIKE UPPER(#{pattern})");
+            qry.append(" AND e.status = 1");  //#{Auction.AuctionStatus.LISTED.ordinal()}
+            // #{Auction.AuctionStatus.LISTED.equals(e.status)} 
 		} else if (entityType.equals("User")) {
 			qry.append("from User e");
 			qry.append(" WHERE UPPER(e.screenName) LIKE UPPER(#{pattern})");
@@ -77,7 +77,7 @@ public class BasicSearchBean implements BasicSearch {
 
 		nextPageAvailable = results.size() > pageSize;
 		if (nextPageAvailable) {
-			entities = new ArrayList(results.subList(0, pageSize));
+			entities = new ArrayList<Object>(results.subList(0, pageSize));
 		} else {
 			entities = results;
 		}
@@ -87,7 +87,15 @@ public class BasicSearchBean implements BasicSearch {
 		return nextPageAvailable;
 	}
 
-	public int getPageSize() {
+    public boolean entityTypeUser() {
+        return entityType.equals("User");
+    }
+
+    public boolean entityTypeAuction() {
+        return entityType.equals("Auction");
+    }
+
+    public int getPageSize() {
 		return pageSize;
 	}
 
