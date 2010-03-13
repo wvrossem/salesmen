@@ -1,20 +1,19 @@
 package be.vub.salesmen.session;
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.concurrent.atomic.AtomicReference;
-
-import javax.ejb.Remove;
-import javax.ejb.Stateful;
-import javax.persistence.EntityManager;
-import javax.persistence.PersistenceContext;
-
-
+import be.vub.salesmen.entity.Auction;
 import org.jboss.seam.ScopeType;
 import org.jboss.seam.annotations.Factory;
 import org.jboss.seam.annotations.Name;
 import org.jboss.seam.annotations.Scope;
 import org.jboss.seam.annotations.datamodel.DataModel;
+
+import javax.ejb.Remove;
+import javax.ejb.Stateful;
+import javax.persistence.EntityManager;
+import javax.persistence.PersistenceContext;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.concurrent.atomic.AtomicReference;
 
 @Stateful
 @Name("basicSearch")
@@ -57,8 +56,7 @@ public class BasicSearchBean implements BasicSearch {
 		if ( entityType.equals("Auction")) {
 			qry.append("from Auction e");
 			qry.append(" WHERE UPPER(e.title) LIKE UPPER(#{pattern})");
-            qry.append(" AND e.status = 1");  //#{Auction.AuctionStatus.LISTED.ordinal()}
-            // #{Auction.AuctionStatus.LISTED.equals(e.status)} 
+            qry.append(" AND e.status = " + Auction.AuctionStatus.LISTED.ordinal());
 		} else if (entityType.equals("User")) {
 			qry.append("from User e");
 			qry.append(" WHERE UPPER(e.screenName) LIKE UPPER(#{pattern})");
