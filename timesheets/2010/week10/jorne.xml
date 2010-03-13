@@ -11,8 +11,22 @@
 			<ref>http://wilma.vub.ac.be/~se2_0910/docs/minutes/2010/03/10/minutes-20100310.pdf</ref>
 		</refs>
 	</item>
+	
+	<item duration="PT4H0M">
+		<desc>Retried getting the Seam mail example to work.</desc>
+		<refs>
+			<ref>http://seamframework.org/Community/SeammailExampleConnectionRefused</ref>
+			<ref>http://lists.jboss.org/pipermail/jboss-user/2007-February/039560.html</ref>
+			<ref>http://www.mail-archive.com/jboss-user@lists.jboss.org/msg104403.html</ref>
+			<ref>http://www.coderanch.com/t/91306/JBoss/jboss-seam-mail-service</ref>
+			<ref>http://www.icefaces.org/JForum/posts/list/11054.page</ref>
+			<ref>http://docs.jboss.org/seam/2.0.0.GA/reference/en/html/mail.html</ref>
+			<ref>http://docs.jboss.org/seam/2.0.0.GA/reference/en/html/components.html#components.mail</ref>
+			<ref>http://lists.jboss.org/pipermail/jboss-user/2008-February/110390.html</ref>
+		</refs>
+	</item>
 		
-	<item duration="PT0H5M">
+	<item duration="PT0H15M">
 		<desc>Administration and Communication.</desc>
 	</item>
 </timesheet>
