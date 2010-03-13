@@ -28,6 +28,10 @@ public interface BasicSearch {
 
 	public boolean isNextPageAvailable();
 
+    public boolean entityTypeUser();
+
+    public boolean entityTypeAuction();
+
 	public void destroy();
 
 }

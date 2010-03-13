@@ -67,19 +67,46 @@
                     <h:outputText id="NoEntitiesFoundMessage"
                                   value="No Entities Found"
                                   rendered="#{entities != null and entities.rowCount==0}"/>
-                    <h:dataTable id="entities" value="#{entities}" var="ent"
-                                 rendered="#{entities.rowCount>0}">
-                        <h:column id="column1">
+                    <h:dataTable id="users" value="#{entities}" var="u"
+                                 rendered="#{entities.rowCount>0 and basicSearch.entityTypeUser()}">
+                        <h:column id="ScreenNameColumn">
                             <f:facet id="ScreenNameFacet" name="header">Screen Name</f:facet>
-                            #{ent.screenName} <!-- Only works for users -->
+                            <s:link id="userLink"
+                                value="#{u.screenName}"
+                   		        propagation="none"
+                                view="/user.xhtml">
+                                <f:param name="userId"
+                                    value="#{u.userId}"/>
+                            </s:link>
                         </h:column>
-                        <h:column id="column2">
+                        <h:column id="FirstNameColumn">
                             <f:facet id="FirstNameFacet" name="header">First Name</f:facet>
-                            #{ent.firstName} <!-- Only works for users -->
+                            #{u.firstName}
                         </h:column>
-                        <h:column id="column3">
+                        <h:column id="LastNameColumn">
                             <f:facet id="LastNameFacet" name="header">Last Name</f:facet>
-                            #{ent.lastName} <!-- Only works for users -->
+                            #{u.lastName}
+                        </h:column>
+                    </h:dataTable>
+                    <h:dataTable id="auctions" value="#{entities}" var="a"
+                                 rendered="#{entities.rowCount>0 and basicSearch.entityTypeAuction()}">
+                        <h:column id="TitleColumn">
+                            <f:facet id="TitleFacet" name="header">Title</f:facet>
+                            <s:link id="auctionLink"
+                                value="#{a.title}"
+                   		        propagation="none"
+                                view="/auction.xhtml">
+                                <f:param name="auctionId"
+                                    value="#{a.id}"/>
+                            </s:link>
+                        </h:column>
+                        <h:column id="DescriptionColumn">
+                            <f:facet id="DescriptionFacet" name="header">Description</f:facet>
+                            #{a.description}
+                        </h:column>
+                        <h:column id="StartPriceColumn">
+                            <f:facet id="StartPriceFacet" name="header">Start Price</f:facet>
+                            #{a.startingPrice}
                         </h:column>
                     </h:dataTable>
                     <s:link id="MoreResultsLink" value="More results"
