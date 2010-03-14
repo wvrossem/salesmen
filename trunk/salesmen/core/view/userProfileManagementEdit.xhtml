@@ -13,13 +13,25 @@
     <h:form id="userForm">
 
         <rich:panel>
-            <f:facet name="header">user</f:facet>
-
-            <s:decorate id="nameField" template="layout/edit.xhtml">
-                <ui:define name="label">Screen Name</ui:define>
-		<h:inputText id="name" required="true"
-			     value="#{userHome.instance.screenName}"/>
-            </s:decorate>
+        <f:facet name="header">user</f:facet>
+			<h:panelGrid columns="3" rowClasses="prop" columnClasses="name,value">
+				<h:outputLabel for="firstName">First name<em>*</em></h:outputLabel>
+                <h:inputText id="firstName" required="true"
+                                         value="#{userHome.instance.firstName}"/>
+                <h:message for="firstName"/>
+				
+				<h:outputLabel for="lastName">Last name<em>*</em></h:outputLabel>
+                <h:inputText id="lastName" required="true"
+                                         value="#{userHome.instance.lastName}"/>
+                <h:message for="lastName"/>
+				
+				<h:outputLabel for="gender">Gender<em>*</em></h:outputLabel>
+                <h:selectOneRadio id="gender" value="#{userHome.instance.lastName}" required="true">
+                    <f:selectItem itemValue="male" itemLabel="Male" />
+                    <f:selectItem itemValue="female" itemLabel="Female" />
+                </h:selectOneRadio>
+                <h:message for="gender"/>
+			</h:panelGrid>
 
             <div style="clear:both"/>
 
