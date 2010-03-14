@@ -11,14 +11,14 @@
     <ui:define name="body">
 
         <rich:panel>
-            <f:facet name="header">basicSearch</f:facet>
+            <f:facet name="header"><h:outputText value="#{messages['salesmen.BasicSearch.BasicSearch']}"/></f:facet>
 
             <div class="section">
                 <!--<span class="errors">
                         <h:messages id="messages" globalOnly="true" />
                     </span>-->
 
-                <h1>Search Entities</h1>
+                <h1><h:outputText value="#{messages['salesmen.BasicSearch.BasicSearch']}"/></h1>
 
                 <h:form id="searchCriteria">
                     <fieldset>
@@ -37,12 +37,12 @@
                         </a:region>
                         &#160;
                         <h:selectOneMenu id="entityType" value="#{basicSearch.entityType}">
-                            <f:selectItem id="Auction" itemLabel="Auction" itemValue="Auction"/>
-                            <f:selectItem id="User" itemLabel="User" itemValue="User"/>
-                            <f:selectItem id="Tag" itemLabel="Tag" itemValue="Tag"/>
+                            <f:selectItem id="Auction" itemLabel="#{messages['salesmen.general.Auction']}" itemValue="Auction"/>
+                            <f:selectItem id="User" itemLabel="#{messages['salesmen.general.User']}" itemValue="User"/>
+                            <f:selectItem id="Tag" itemLabel="#{messages['salesmen.general.Tag']}" itemValue="Tag"/>
                         </h:selectOneMenu>
                         &#160;
-                        <a:commandButton id="findEntities" value="Find"
+                        <a:commandButton id="findEntities" value="#{messages['salesmen.BasicSearch.Find']}"
                                          action="#{basicSearch.find}" reRender="searchResults"/>
                         &#160;
                         <a:status id="status">
@@ -51,7 +51,7 @@
                             </f:facet>
                         </a:status>
                         <br/>
-                        <h:outputLabel id="MaximumResultsLabel" for="pageSize">Maximum results:</h:outputLabel>
+                        <h:outputLabel id="MaximumResultsLabel" for="pageSize" value="#{messages['salesmen.BasicSearch.ResultsPerPage']}"></h:outputLabel>
                         &#160;
                         <h:selectOneMenu id="pageSize" value="#{basicSearch.pageSize}">
                             <f:selectItem id="PageSize10" itemLabel="10" itemValue="10"/>
@@ -70,7 +70,7 @@
                     <h:dataTable id="users" value="#{entities}" var="u"
                                  rendered="#{entities.rowCount>0 and basicSearch.entityTypeUser()}">
                         <h:column id="ScreenNameColumn">
-                            <f:facet id="ScreenNameFacet" name="header">Screen Name</f:facet>
+                            <f:facet id="ScreenNameFacet" name="header"><h:outputText value="#{messages['salesmen.User.ScreenName']}"/></f:facet>
                             <s:link id="userLink"
                                 value="#{u.screenName}"
                    		        propagation="none"
@@ -80,18 +80,18 @@
                             </s:link>
                         </h:column>
                         <h:column id="FirstNameColumn">
-                            <f:facet id="FirstNameFacet" name="header">First Name</f:facet>
+                            <f:facet id="FirstNameFacet" name="header"><h:outputText value="#{messages['salesmen.User.FirstName']}"/></f:facet>
                             #{u.firstName}
                         </h:column>
                         <h:column id="LastNameColumn">
-                            <f:facet id="LastNameFacet" name="header">Last Name</f:facet>
+                            <f:facet id="LastNameFacet" name="header"><h:outputText value="#{messages['salesmen.User.LastName']}"/></f:facet>
                             #{u.lastName}
                         </h:column>
                     </h:dataTable>
                     <h:dataTable id="auctions" value="#{entities}" var="a"
                                  rendered="#{entities.rowCount>0 and basicSearch.entityTypeAuction()}">
                         <h:column id="TitleColumn">
-                            <f:facet id="TitleFacet" name="header">Title</f:facet>
+                            <f:facet id="TitleFacet" name="header"><h:outputText value="#{messages['salesmen.Auction.Title']}"/></f:facet>
                             <s:link id="auctionLink"
                                 value="#{a.title}"
                    		        propagation="none"
@@ -101,11 +101,11 @@
                             </s:link>
                         </h:column>
                         <h:column id="DescriptionColumn">
-                            <f:facet id="DescriptionFacet" name="header">Description</f:facet>
+                            <f:facet id="DescriptionFacet" name="header"><h:outputText value="#{messages['salesmen.Auction.Description']}"/></f:facet>
                             #{a.description}
                         </h:column>
                         <h:column id="StartPriceColumn">
-                            <f:facet id="StartPriceFacet" name="header">Start Price</f:facet>
+                            <f:facet id="StartPriceFacet" name="header"><h:outputText value="#{messages['salesmen.Auction.StartPrice']}"/></f:facet>
                             #{a.startingPrice}
                         </h:column>
                     </h:dataTable>
