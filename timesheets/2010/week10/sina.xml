@@ -1,0 +1,13 @@
+<?xml version='1.0'?>
+<timesheet xmlns="http://purl.org/net/timetrack">
+  <item duration="PT2H30M">
+    <desc>Workshop on Mar. 10 from 15:30pm until 18:00pm</desc>
+    <refs>
+      <ref>http://code.google.com/p/salesmen/source/detail?r=988</ref>
+      <ref>http://code.google.com/p/salesmen/source/detail?r=989</ref>
+    </refs>
+  </item>
+  <item duration="PT20M">
+    <desc>Administration and Communication.</desc>
+  </item>
+</timesheet>
