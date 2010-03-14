@@ -1,0 +1,29 @@
+<?xml version='1.0'?>
+<timesheet xmlns="http://purl.org/net/timetrack">
+
+	<item duration="PT1H0M">
+		<desc>Meeting on Wednesday 2010/03/10.</desc>
+		<refs>
+			<ref>http://wilma.vub.ac.be/~se2_0910/docs/minutes/2010/03/10/minutes-20100310.pdf</ref>
+		</refs>
+	</item>
+        
+	<item duration="PT20M">
+		<desc>Quality Assurance of minutes of meeting Wednesday 2010/03/10.</desc>
+        <refs>
+            <ref>http://wilma.vub.ac.be/~se2_0910/docs/minutes/2010/03/10/minutes-20100310.pdf</ref>
+        </refs>
+    </item>
+	
+	<item duration="PT3H0M">
+		<desc>Started cleaning up the User Dashboard, as well as making it complete. Only partial commit.</desc>
+		<refs>
+			<ref>http://code.google.com/p/salesmen/source/detail?r=1017</ref>
+		</refs>
+	</item>
+                
+    <item duration="PT0H30M">
+        <desc>Administration and Communication.</desc>
+    </item>
+	
+</timesheet>
