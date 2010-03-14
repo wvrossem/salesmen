@@ -12,7 +12,14 @@
 
     <rich:panel>
         <f:facet name="header">Profile Management</f:facet>
-			<h:outputText value="Screen Name: #{userHome.instance.screenName}"/>
+		<h:panelGrid columns="2" rowClasses="prop" columnClasses="name,value">
+			<h:outputText value="First Name: "/>
+			<h:outputText value="#{userHome.instance.firstName}"/>
+			<h:outputText value="Last Name: "/>
+			<h:outputText value="#{userHome.instance.lastName}"/>
+			<h:outputText value="Gender: "/>
+			<h:outputText value="#{userHome.instance.gender}"/>
+		</h:panelGrid>
 
             <div style="clear:both"/>
 
