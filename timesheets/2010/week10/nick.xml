@@ -1,0 +1,64 @@
+<?xml version='1.0'?>
+<timesheet xmlns="http://purl.org/net/timetrack">
+	
+	<item duration="PT25M">
+	  <desc>Checking and publishing timesheets of week08.</desc>
+	  <refs>
+		  <ref>http://code.google.com/p/salesmen/source/detail?r=976</ref>
+		  <ref>http://code.google.com/p/salesmen/source/detail?r=977</ref>
+		<ref>http://code.google.com/p/salesmen/source/detail?r=978</ref>
+		<ref>http://code.google.com/p/salesmen/source/detail?r=979</ref>
+		<ref>http://code.google.com/p/salesmen/source/detail?r=980</ref>
+		<ref>http://code.google.com/p/salesmen/source/detail?r=981</ref>
+		<ref>http://code.google.com/p/salesmen/source/detail?r=982</ref>
+	  </refs>
+	</item>
+	
+	<item duration="PT25M">
+    <desc>Preparing meeting 10/03.</desc>
+    <refs>
+   	<ref>http://groups.google.com/group/salesmen/browse_thread/thread/384a66543ef49e2c</ref>
+	<ref>http://code.google.com/p/salesmen/source/detail?r=984</ref>
+    </refs>
+  </item>
+
+	<item duration="PT10M">
+    <desc>Read about Seam internationalization and localization.</desc>
+    <refs>
+   	<ref>http://docs.jboss.org/seam/2.0.3.CR1/reference/en-US/html/i18n.html</ref>
+    </refs>
+  </item>
+
+  <item duration="PT1H">
+    <desc>Meeting on Wednesday 2010/03/10.</desc>
+    <refs>
+   	<ref>http://wilma.vub.ac.be/~se2_0910/docs/minutes/2010/03/10/minutes-20100310.pdf</ref>
+    </refs>
+  </item>
+
+	<item duration="PT1H15M">
+    <desc>Workshop on Wednesday 10/03.</desc>
+    <refs>
+    </refs>
+  </item>
+
+	<item duration="PT1H0M">
+    <desc>Enabled support for multiple languages.</desc>
+    <refs>
+		<ref>http://code.google.com/p/salesmen/source/detail?r=1003</ref>
+    </refs>
+  </item>
+
+	<item duration="PT30M">
+    <desc>Fixed issue 36 and tried to solve issue 37.</desc>
+    <refs>
+		<ref>http://code.google.com/p/salesmen/source/detail?r=1005</ref>
+		<ref>http://code.google.com/p/salesmen/issues/detail?id=36</ref>
+    </refs>
+  </item>
+
+  <item duration="PT20M">
+    <desc>Administration and Communication.</desc>
+    <refs></refs>
+  </item>
+</timesheet>
