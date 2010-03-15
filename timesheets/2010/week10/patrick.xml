@@ -8,21 +8,21 @@
 		</refs>
 	</item>
         
-	<item duration="PT20M">
+	<item duration="PT15M">
 		<desc>Quality Assurance of minutes of meeting Wednesday 2010/03/10.</desc>
         <refs>
-            <ref>http://wilma.vub.ac.be/~se2_0910/docs/minutes/2010/03/10/minutes-20100310.pdf</ref>
+           <ref>http://groups.google.com/group/salesmen/browse_thread/thread/61d061e087a77b23</ref> <ref>http://wilma.vub.ac.be/~se2_0910/docs/minutes/2010/03/10/minutes-20100310.pdf</ref>
         </refs>
     </item>
 	
-	<item duration="PT3H0M">
+	<item duration="PT2H30M">
 		<desc>Started cleaning up the User Dashboard, as well as making it complete. Only partial commit.</desc>
 		<refs>
 			<ref>http://code.google.com/p/salesmen/source/detail?r=1017</ref>
 		</refs>
 	</item>
                 
-    <item duration="PT0H30M">
+    <item duration="PT0H20M">
         <desc>Administration and Communication.</desc>
     </item>
 	
