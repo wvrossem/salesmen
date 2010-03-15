@@ -1,7 +1,14 @@
 <?xml version='1.0'?>
 <timesheet xmlns="http://purl.org/net/timetrack">
-  <item duration="PT2H30M">
-    <desc>Workshop on Mar. 10 from 15:30pm until 18:00pm</desc>
+  <item duration="PT1H">
+    <desc>Meeting on Wednesday 2010/03/10.</desc>
+    <refs>
+   	<ref>http://wilma.vub.ac.be/~se2_0910/docs/minutes/2010/03/10/minutes-20100310.pdf</ref>
+    </refs>
+  </item>
+
+  <item duration="PT2H00M">
+    <desc>Workshop on Wednesday 2010/03/10 from 16:00pm until 18:00pm</desc>
     <refs>
       <ref>http://code.google.com/p/salesmen/source/detail?r=988</ref>
       <ref>http://code.google.com/p/salesmen/source/detail?r=989</ref>
