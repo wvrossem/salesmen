@@ -26,18 +26,13 @@
         </rich:panel>
 
         <div class="actionButtons">
-            <h:commandButton id="save"
-                          value="Save"
-                         action="#{userAccountHome.persist}"
-                       rendered="#{!userAccountHome.managed}"/>
             <h:commandButton id="update"
                           value="Save"
                          action="#{userAccountHome.update}"
                        rendered="#{userAccountHome.managed}"/>
-            <s:button propagation="end"
-                               id="cancel"
-                            value="Cancel"
-                             view="/userAccountManagement.xhtml"/>
+            <s:button id="cancel"
+                   value="Cancel"
+                    view="/userAccountManagement.xhtml"/>
         </div>
 
     </h:form>
