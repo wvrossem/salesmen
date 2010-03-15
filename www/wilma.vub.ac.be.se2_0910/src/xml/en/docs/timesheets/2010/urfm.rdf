@@ -28,6 +28,12 @@
 
     <releases rdf:parseType="Collection">
 <Release
+    rdf:about="http://wilma.vub.ac.be/~se2_0910/docs/timesheets/2010/week10/">
+  <package rdf:resource="http://wilma.vub.ac.be/~se2_0910/docs/timesheets/"/>
+  <revision>week10-2010</revision>
+  <created>2010-03-15</created>
+</Release>        
+<Release
     rdf:about="http://wilma.vub.ac.be/~se2_0910/docs/timesheets/2010/week09/">
   <package rdf:resource="http://wilma.vub.ac.be/~se2_0910/docs/timesheets/"/>
   <revision>week09-2010</revision>
@@ -60,6 +66,36 @@
     </releases>
     
     <files rdf:parseType="Collection">
+    
+    <!-- **************************************************************
+     Week10-2010
+     ************************************************************** -->
+     
+ <File rdf:about="http://wilma.vub.ac.be/~se2_0910/docs/timesheets/2010/week10/timesheet-week10-2010.xml">
+  <release rdf:resource="http://wilma.vub.ac.be/~se2_0910/docs/timesheets/2010/week10/"/>
+  <basename>timesheet-week10-2010</basename>
+  <extension>.xml</extension>
+  <language>en</language>
+  <size rdf:parseType="Resource">
+    <unit rdf:resource="http://purl.org/urfm/Kilobyte"/>
+    <rdf:value>8</rdf:value>
+  </size>
+  <link>http://wilma.vub.ac.be/~se2_0910/docs/timesheets/2010/week10/timesheet-week10-2010.xml</link>
+  <format>application/xml</format>
+ </File>
+
+<File rdf:about="http://wilma.vub.ac.be/~se2_0910/docs/timesheets/2010/week10/timesheet-week10-2010.html">
+  <release rdf:resource="http://wilma.vub.ac.be/~se2_0910/docs/timesheets/2010/week10/"/>
+  <basename>timesheet-week10-2010</basename>
+  <extension>.html</extension>
+  <language>en</language>
+  <size rdf:parseType="Resource">
+    <unit rdf:resource="http://purl.org/urfm/Kilobyte"/>
+    <rdf:value>20</rdf:value>
+  </size>
+  <link>http://wilma.vub.ac.be/~se2_0910/docs/timesheets/2010/week10/timesheet-week10-2010.html</link>
+  <format>text/html</format>
+</File>    
     
     <!-- **************************************************************
      Week09-2010
