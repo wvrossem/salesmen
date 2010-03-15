@@ -1,0 +1,59 @@
+<?xml version='1.0'?>
+<timesheet xmlns="http://purl.org/net/timetrack">
+        
+  <item duration="PT1H">
+    <desc>Meeting on Wednesday 2010/03/10.</desc>
+    <refs>
+        <ref>http://wilma.vub.ac.be/~se2_0910/docs/minutes/2010/03/10/minutes-20100310.pdf</ref>
+    </refs>
+  </item>
+
+  <item duration="PT2H">
+    <desc>Workshop 10/03/2010, 16h00->18h00 </desc>
+    <refs>
+        <ref>http://code.google.com/p/salesmen/source/detail?r=988</ref>
+        <ref>http://code.google.com/p/salesmen/source/detail?r=989</ref>
+    </refs>
+  </item>
+  
+  <item duration="PT30M">
+    <desc>Updated the website</desc>
+    <refs>
+        <ref>http://code.google.com/p/salesmen/source/detail?r=996</ref>
+        <ref>http://code.google.com/p/salesmen/source/detail?r=997</ref>
+    </refs>
+  </item>  
+  
+  <item duration="PT2H">
+    <desc>Updated the basic search to support searching for auctions + and added links to the serached entities</desc>
+    <refs>
+        <ref>http://code.google.com/p/salesmen/source/detail?r=1011</ref>
+        <ref>http://code.google.com/p/salesmen/source/detail?r=1013</ref>
+        <ref>http://groups.google.com/group/salesmen/browse_thread/thread/78cad342328c4021#</ref>
+    </refs>
+  </item>  
+  
+   <item duration="PT2H">
+    <desc>Updated the basic search to support internationalization</desc>
+    <refs>
+        <ref>http://code.google.com/p/salesmen/source/detail?r=1018</ref>
+        <ref>http://docs.jboss.org/seam/2.2.0.GA/reference/en-US/html/i18n.html</ref>
+    </refs>
+  </item>  
+  
+  <item duration="PT1H30">
+    <desc>Tried to implement the suggestion list for the basic search, problems adding a new entity type</desc>
+    <refs>
+        <ref>http://groups.google.com/group/salesmen/browse_thread/thread/e5e842d159904d1a</ref>
+        <ref>http://www.redhat.com/docs/en-US/JBoss_Developer_Studio/en/seam/html/seam_wizards.html</ref>
+        <ref>http://www.redhat.com/developer_studio/guides/seam/html_single/#generate_entities</ref>
+        <ref>https://jira.jboss.org/jira/browse/JBIDE-1010?page=com.atlassian.jira.plugin.system.issuetabpanels:comment-tabpanel</ref>
+        <ref>http://seamframework.org/Community/UnknownEntityWhenPersistingSeamManagedJPAEntity</ref>
+        <ref>http://www.seamframework.org/Community/SeamManagedPersistenceContextCannotFindEntityClasses</ref>
+    </refs>
+  </item>  
+  
+  <item duration="PT30M">
+    <desc>Administration and Communication.</desc>
+  </item>
+</timesheet>
