@@ -1,13 +1,20 @@
 <?xml version='1.0'?>
 <timesheet xmlns="http://purl.org/net/timetrack">
-  <item duration="PT3H15M">
+	
+	<item duration="PT1H">
+    <desc>Meeting on Wednesday 2010/03/10.</desc>
+    <refs>
+   	<ref>http://wilma.vub.ac.be/~se2_0910/docs/minutes/2010/03/10/minutes-20100310.pdf</ref>
+    </refs>
+  </item>
+
+  <item duration="PT2H15M">
     <desc>Workshop 10/03/2010, 16h00->18h15 </desc>
     <refs>
 	<ref>http://code.google.com/p/salesmen/source/detail?r=988</ref>
 	<ref>http://code.google.com/p/salesmen/source/detail?r=989</ref>
     </refs>
   </item>
-  
   
    <item duration="PT25M">
     <desc>Created defect-issues, tried to find reasons for failures</desc>
