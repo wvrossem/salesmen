@@ -1,0 +1,16 @@
+<?xml version='1.0'?>
+<timesheet xmlns="http://purl.org/net/timetrack">
+
+	<item duration="PT3H0M">
+		<desc>Programming User-Dashboard</desc>
+		<refs>
+			<ref>http://code.google.com/p/salesmen/source/detail?r=1029</ref>
+			<ref>http://groups.google.com/group/salesmen/browse_thread/thread/288cc131b2fe9c1b?hl=en</ref>
+		</refs>
+	</item>
+                
+    <item duration="PT0H30M">
+        <desc>Administration and Communication.</desc>
+    </item>
+        
+</timesheet>
