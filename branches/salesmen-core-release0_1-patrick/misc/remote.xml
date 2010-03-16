@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Salesmen tasks for deploying to a remote JBoss server.
+
+$Id$
+Author:   Sina K. Heshmati
+License:  http://www.gnu.org/licenses/gpl-3.0.html
+
+TODO:
+* Add remote-unexplode
+* Add remote-reexplode
+* Add remote-deploy
+* Add remote-undeploy
+* Add remote-redeploy
+* ...
+-->
+
+<project basedir=".">
+
+<!-- For some properties -->
+<import file="../build.xml"/>
+  
+<property name="remote.deploy.server.name" value="wilma.vub.ac.be"/>
+<property name="remote.deploy.username" value="se2_0910"/>
+<property name="remote.jboss.home.path" value="opt/jboss"/>
+<property name="remote.jboss.home" value="${remote.deploy.username}@${remote.deploy.server.name}:${remote.jboss.home.path}"/>
+
+<property name="remote.deploy.dir" value="${remote.jboss.home}/server/${jboss.domain}/deploy"/>
+<property name="remote.ear.deploy.dir" value="${remote.deploy.dir}/${project.name}.ear"/>
+<property name="remote.jar.deploy.dir" value="${remote.ear.deploy.dir}/${project.name}.jar"/>
+<property name="remote.war.deploy.dir" value="${remote.ear.deploy.dir}/${project.name}.war"/>
+
+<!-- 
+     An abstraction for remote copying using rsync.
+     Please make sure to have the rsync executable command in your path.
+     It's also assumed that you have a trusted key installed on the server.
+-->
+<target name="remote.copy">
+  <property name="remote.copy.excludes" value=""/>
+  <exec dir="${basedir}" executable="rsync">
+    <arg line="-e ssh"/>
+    <arg line="-avz"/>
+    <arg line="${remote.copy.excludes}"/>
+    <arg line="${remote.copy.source}"/>
+    <arg line="${remote.copy.destination}"/>
+  </exec>
+</target>
+
+<!-- Remote copy the datasource -->
+<target name="remote.datasource">
+  <antcall target="remote.copy">
+    <param name="remote.copy.source" 
+	   value="resources/${project.name}-${profile}-ds.xml"/>
+    <param name="remote.copy.destination"
+	   value="${remote.deploy.dir}/${project.name}-ds.xml"/>
+  </antcall>
+</target>
+
+<target name="remote-explode" depends="stage, remote.datasource"
+	description="Deploy the exploded archive to a remote server">
+  <!-- Remote copy ${ear.dir}/* execpt the jar and war archives -->
+  <antcall target="remote.copy">
+    <param name="remote.copy.excludes"
+	   value="--exclude=${project.name}_jar --exclude=${project.name}_war"/>
+    <param name="remote.copy.source"
+	   value="${ear.dir}/*"/>
+    <param name="remote.copy.destination"
+	   value="${remote.ear.deploy.dir}"/>
+  </antcall>
+  
+  <!-- Remote copy JAR separately -->
+  <antcall target="remote.copy">
+    <param name="remote.copy.source" 
+	   value="${jar.dir}/*"/>
+    <param name="remote.copy.destination"
+	   value="${remote.jar.deploy.dir}"/>
+  </antcall>
+  
+  <!-- Remote copy WAR separately -->
+  <antcall target="remote.copy">
+    <param name="remote.copy.source" 
+	   value="${war.dir}/*"/>
+    <param name="remote.copy.destination"
+	   value="${remote.war.deploy.dir}"/>
+  </antcall>
+</target>
+
+</project>

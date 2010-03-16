@@ -1,0 +1,17 @@
+#Wed Feb 17 09:18:17 CET 2010
+action.package=be.vub.salesmen.session
+action.sources=/salesmen/src/hot
+eclipse.preferences.version=1
+model.package=be.vub.salesmen.entity
+model.sources=/salesmen/src/main
+seam.ejb.project=salesmen
+seam.project.connection.profile=
+seam.project.deployment.type=ear
+seam.project.settings.version=1.1
+seam.project.web.root.folder=/salesmen/view
+seam.runtime.name=jboss-seam
+seam.settings.changed.by.user=true
+seam.test.creating=true
+seam.test.project=salesmen
+test.package=be.vub.salesmen.test
+test.sources=/salesmen/src/test

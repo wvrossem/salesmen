@@ -1,0 +1,39 @@
+<!DOCTYPE composition PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:s="http://jboss.com/products/seam/taglib"
+    xmlns:ui="http://java.sun.com/jsf/facelets"
+    xmlns:f="http://java.sun.com/jsf/core"
+    xmlns:h="http://java.sun.com/jsf/html"
+    xmlns:rich="http://richfaces.org/rich"
+    template="layout/template.xhtml">
+
+<ui:define name="body">
+
+    <rich:panel>
+        <f:facet name="header">Profile Management</f:facet>
+		<h:panelGrid columns="2" rowClasses="prop" columnClasses="name,value">
+			<h:outputText value="First Name: "/>
+			<h:outputText value="#{userHome.instance.firstName}"/>
+			<h:outputText value="Last Name: "/>
+			<h:outputText value="#{userHome.instance.lastName}"/>
+			<h:outputText value="Gender: "/>
+			<h:outputText value="#{userHome.instance.gender}"/>
+		</h:panelGrid>
+
+            <div style="clear:both"/>
+
+    </rich:panel>
+
+    <div class="actionButtons">
+        <s:button id="update"
+               value="Update"
+                view="/userProfileManagementEdit.xhtml"/>
+        <s:button id="cancel"
+               value="Cancel"
+                view="/userManagement.xhtml"/>
+    </div>
+
+</ui:define>
+
+</ui:composition>
