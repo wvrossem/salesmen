@@ -21,6 +21,8 @@ public interface BasicSearch {
 	public void setEntityType(String entityType);
 
 	public void find();
+	
+	public Object findUser(String userName);
 
     public List suggest(Object begin);
 
