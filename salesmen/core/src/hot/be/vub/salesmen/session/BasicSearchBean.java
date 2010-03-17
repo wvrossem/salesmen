@@ -1,8 +1,11 @@
 package be.vub.salesmen.session;
 
 import be.vub.salesmen.entity.Auction;
+import be.vub.salesmen.entity.User;
+import be.vub.salesmen.entity.SearchTerm;
 import org.jboss.seam.ScopeType;
 import org.jboss.seam.annotations.Factory;
+import org.jboss.seam.annotations.In;
 import org.jboss.seam.annotations.Name;
 import org.jboss.seam.annotations.Scope;
 import org.jboss.seam.annotations.datamodel.DataModel;
@@ -30,18 +33,26 @@ public class BasicSearchBean implements BasicSearch {
 	
 	private boolean nextPageAvailable;
 
+    private SearchTerm savedTerm;
+
 	@DataModel
 	private List entities;
 
     public void find() {
 		page = 0;
 		queryEntities();
+        /*if (entities.size() != 0 && searchTerm.length() >= 3) {
+            savedTerm = new SearchTerm();
+            savedTerm.setTerm(searchTerm);
+            entityManager.persist(savedTerm);
+        }*/
 	}
 
     public List suggest(Object begin) {
-       AtomicReference<String> qry = new AtomicReference<String>("select u.screenName from User u");
+       /*AtomicReference<String> qry = new AtomicReference<String>("select s.term from SearchTerm s where s.term like(#{pattern})");
 
-        return entityManager.createQuery(qry.get()).getResultList();
+       return entityManager.createQuery(qry.get()).getResultList();*/
+       return entities;
     }
 
     public void nextPage() {
@@ -78,6 +89,17 @@ public class BasicSearchBean implements BasicSearch {
 			entities = new ArrayList<Object>(results.subList(0, pageSize));
 		} else {
 			entities = results;
+		}
+	}
+	
+	public Object findUser(String userName) {
+		setEntityType("User");
+		setSearchTerm(userName);
+		find();
+		if (entities.size() == 1) {
+			return entities.get(0);
+		} else {
+			return false;
 		}
 	}
 
