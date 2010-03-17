@@ -1,0 +1,93 @@
+<!DOCTYPE composition PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+                xmlns:s="http://jboss.com/products/seam/taglib"
+                xmlns:ui="http://java.sun.com/jsf/facelets"
+                xmlns:f="http://java.sun.com/jsf/core"
+                xmlns:h="http://java.sun.com/jsf/html"
+                xmlns:rich="http://richfaces.org/rich"
+                xmlns:a="http://richfaces.org/a4j" template="layout/template.xhtml">
+
+    <ui:define name="body">
+
+        <rich:panel>
+            <f:facet name="header">advancedSearch</f:facet>
+
+            <div class="section">
+                <!--<span class="errors">
+                        <h:messages id="messages" globalOnly="true" />
+                    </span>-->
+
+                <h1>Search Entities</h1>
+
+                <h:form id="advancedSearchCriteria">
+                    <fieldset>
+                        Include
+                        <h:inputText id="includeTerm"
+                                     value="#{advancedSearch.includeTerm}" style="width: 165px;">
+                        </h:inputText>
+                        Exclude
+                        <h:inputText id="excludeTerm"
+                                     value="#{advancedSearch.excludeTerm}" style="width: 165px;">
+                        </h:inputText>
+                        &#160;
+                        <a:commandButton id="findEntities" value="Find"
+                                         action="#{advancedSearch.find}" reRender="searchResults" />
+                        &#160;
+                        <br/>
+                        <h:outputLabel id="MaximumResultsLabel" for="pageSize">Maximum results:</h:outputLabel>
+                        &#160;
+                        <h:selectOneMenu id="pageSize" value="#{advancedSearch.pageSize}">
+                            <f:selectItem id="PageSize10" itemLabel="10" itemValue="10"/>
+                            <f:selectItem id="PageSize20" itemLabel="20" itemValue="20"/>
+                            <f:selectItem id="PageSize50" itemLabel="50" itemValue="50"/>
+                        </h:selectOneMenu>
+                        <br/>
+                        User
+                        <h:selectBooleanCheckbox value="#{advancedSearch.searchUser}"
+                                                 label="User"/>
+                        Description
+                        <h:selectBooleanCheckbox value="#{advancedSearch.searchAuctionDescription}"
+                                                 label="Desciption"/>
+                        Title
+                        <h:selectBooleanCheckbox value="#{advancedSearch.searchAuctionTitle}"
+                                                 label="Title"/>
+                    </fieldset>
+                </h:form>
+            </div>
+
+             <a:outputPanel id="searchResults">
+                <div class="section">
+                    <h:outputText id="NoEntitiesFoundMessage"
+                                  value="No Entities Found"
+                                  rendered="#{entities != null and entities.rowCount==0}"/>
+                    <h:dataTable id="auctions" value="#{entities}" var="a"
+                                 rendered="#{entities.rowCount>0}">
+                        <h:column id="TitleColumn">
+                            <f:facet id="TitleFacet" name="header"><h:outputText value="#{messages['salesmen.Auction.Title']}"/></f:facet>
+                            <s:link id="auctionLink"
+                                value="#{a.title}"
+                   		        propagation="none"
+                                view="/auction.xhtml">
+                                <f:param name="auctionId"
+                                    value="#{a.id}"/>
+                            </s:link>
+                        </h:column>
+                        <h:column id="DescriptionColumn">
+                            <f:facet id="DescriptionFacet" name="header"><h:outputText value="#{messages['salesmen.Auction.Description']}"/></f:facet>
+                            #{a.description}
+                        </h:column>
+                        <h:column id="StartPriceColumn">
+                            <f:facet id="StartPriceFacet" name="header"><h:outputText value="#{messages['salesmen.Auction.StartPrice']}"/></f:facet>
+                            #{a.startingPrice}
+                        </h:column>
+                    </h:dataTable>
+                </div>
+            </a:outputPanel>
+
+        </rich:panel>
+
+    </ui:define>
+
+</ui:composition>
+   

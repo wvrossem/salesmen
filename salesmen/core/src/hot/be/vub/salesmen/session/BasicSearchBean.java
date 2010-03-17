@@ -41,18 +41,17 @@ public class BasicSearchBean implements BasicSearch {
     public void find() {
 		page = 0;
 		queryEntities();
-        /*if (entities.size() != 0 && searchTerm.length() >= 3) {
+        if (entities.size() != 0 && searchTerm.length() >= 3) {
             savedTerm = new SearchTerm();
             savedTerm.setTerm(searchTerm);
             entityManager.persist(savedTerm);
-        }*/
+        }
 	}
 
     public List suggest(Object begin) {
-       /*AtomicReference<String> qry = new AtomicReference<String>("select s.term from SearchTerm s where s.term like(#{pattern})");
+       AtomicReference<String> qry = new AtomicReference<String>("select s.term from SearchTerm s where s.term like(#{pattern})");
 
-       return entityManager.createQuery(qry.get()).getResultList();*/
-       return entities;
+       return entityManager.createQuery(qry.get()).getResultList();
     }
 
     public void nextPage() {
