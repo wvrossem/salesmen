@@ -1,6 +1,6 @@
 package be.vub.salesmen.session;
 
-import static org.jboss.seam.ScopeType.CONVERSATION;
+
 
 import javax.ejb.Remove;
 import javax.persistence.EntityManager;
@@ -12,28 +12,28 @@ import org.jboss.seam.annotations.*;
 import org.jboss.seam.faces.FacesMessages;
 
 import be.vub.salesmen.entity.Auction;
+ import static org.jboss.seam.ScopeType.CONVERSATION;
+import org.jboss.seam.annotations.Scope;
 
-@Scope(CONVERSATION)
 @Name("manageAuction")
+@Scope(CONVERSATION)
 public class ManageAuctionBean implements ManageAuction, Serializable 
 {
 	@In EntityManager entityManager;
-	
+	@In Auction auction; 
 	private static final long serialVersionUID = 5797405997183391745L;
-	private Auction auction; 
+
 	private boolean inputIsOk=false;
     private int categoryId;
 	
 	
 
-	@Begin
-	public void createAuction()
-	{
-		this.setAuction(new Auction());
-	}
+                 @Begin
+    public void create() {
+        //To change body of implemented methods use File | Settings | File Templates.
+    }
 
-	
-	public void checkInput()
+    public void checkInput()
 	{
 		if(this.auction.getStartingPrice()>0)
 		{
@@ -46,7 +46,7 @@ public class ManageAuctionBean implements ManageAuction, Serializable
 		}
 	}
 
-    @End
+
     public void confirm()
     {
         this.auction.setStatus(Auction.AuctionStatus.LISTED);
@@ -64,7 +64,8 @@ public class ManageAuctionBean implements ManageAuction, Serializable
 	}
 	
 	@Destroy @Remove
-	public void destroy() {}
+	public void destroy()
+    {}
 
 
 	public void setInputIsOk(boolean inputIsOk) {
