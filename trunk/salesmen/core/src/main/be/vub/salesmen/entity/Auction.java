@@ -6,9 +6,10 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Table;
-
+import static org.jboss.seam.ScopeType.CONVERSATION;
 import javax.persistence.Version;
 import org.hibernate.validator.Length;
+import org.jboss.seam.annotations.Scope;
 
 //other imports
 /*
@@ -22,6 +23,7 @@ import org.jboss.seam.annotations.Name;
 
 @Entity
 @Name("auction")
+@Scope(CONVERSATION)
 @Table(name="Auction")
 public class Auction implements Serializable
 {
