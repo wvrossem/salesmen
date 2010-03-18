@@ -46,7 +46,7 @@ public class CategoryHome extends EntityHome<Category>
 
     public Object getId()
     {
-        if (categoryId == null)
+        if (categoryId == 0)
         {
             return super.getId();
         }
