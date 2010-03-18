@@ -1,5 +1,5 @@
+#summary This page describes how to make use of the language support.
 #labels languages,implementation
-#This page describes how to make use of the language support.
 
 = INSTRUCTIONS =
 
