@@ -1,3 +1,0 @@
-#! /bin/bash
-
-xmllint --xinclude timesheet.xml -o timesheet-week*.xml
