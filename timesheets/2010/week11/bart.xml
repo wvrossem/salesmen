@@ -1,0 +1,15 @@
+<?xml version='1.0'?>
+<timesheet xmlns="http://purl.org/net/timetrack">
+
+	<item duration="PT2H0M">
+		<desc>Programming auction (once more), avoiding early CONVERSATION</desc>
+		<refs>
+			<ref>http://code.google.com/p/salesmen/source/detail?r=1044</ref>
+		</refs>
+	</item>
+                
+    <item duration="PT0H30M">
+        <desc>Administration and Communication.</desc>
+    </item>
+        
+</timesheet>
