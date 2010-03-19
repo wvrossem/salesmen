@@ -39,9 +39,9 @@ Refrain from using nameless variables, like "temp". Try to use something along t
 == Usage Conventions ==
 
 === Indentation ===
-Every level of indentation must be expressed by one single tab.
+Every level of indentation must be expressed by one single tab. Every closure starts a deeper indentation.
 
-Every closure starts a deeper indentation.
+Exceptions can be made when multiple parameters are set. In that case, an indentation should be added until the new line starts at the same place as the first assignment. In cases of an assignment using "=", one should indent the new line in such a way the "=" signs are aligned.
 
 === Closures ===
  * Opening "{" always at the start of a new line on the old indentation.
