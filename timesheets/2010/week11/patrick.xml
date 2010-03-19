@@ -4,8 +4,33 @@
 	<item duration="PT3H0M">
 		<desc>Programming User-Dashboard</desc>
 		<refs>
+			<ref>http://code.google.com/p/salesmen/source/detail?r=1033</ref>
 			<ref>http://code.google.com/p/salesmen/source/detail?r=1029</ref>
 			<ref>http://groups.google.com/group/salesmen/browse_thread/thread/288cc131b2fe9c1b?hl=en</ref>
+		</refs>
+	</item>
+	
+	<item duration="PT2H">
+		<desc>Workshop 17/03 15.00-17.00</desc>
+	</item>
+	
+	<item duration="PT45M">
+		<desc>Conferentie Meeting 18/03 12.00-13.00</desc>
+		<refs>
+			<ref>Minutes not available yet</ref>
+		</refs>
+	</item>
+	
+	<item duration="PT8H">
+		<desc>Quality Assurance of code</desc>
+		<refs>
+			<ref>http://code.google.com/p/salesmen/source/detail?r=1050</ref>
+			<ref>http://code.google.com/p/salesmen/source/detail?r=1049</ref>
+			<ref>http://code.google.com/p/salesmen/source/detail?r=1048</ref>
+			<ref>http://code.google.com/p/salesmen/source/detail?r=1047</ref>
+			<ref>http://code.google.com/p/salesmen/source/detail?r=1046</ref>
+			<ref>http://code.google.com/p/salesmen/source/detail?r=1043</ref>
+			<ref>http://code.google.com/p/salesmen/source/detail?r=1042</ref>
 		</refs>
 	</item>
                 
