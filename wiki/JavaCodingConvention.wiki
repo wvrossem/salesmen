@@ -34,6 +34,11 @@ All other words (or letters) must be used as shown in that particular convention
 
 == Usage Conventions ==
 
+=== Indentation ===
+Every level of indentation must be expressed by one single tab.
+
+Every closure starts a deeper indentation.
+
 === Closures ===
  * Opening "{" always at the start of a new line on the old indentation.
  * Closing "}" always at the start of a new line on the old indentation.
@@ -42,9 +47,10 @@ Example:
 {{{
 firstSecond(params)
 {
-  Some Code
+   Some Code
 }
 }}}
+
 
 == Files ==
 
@@ -52,7 +58,7 @@ firstSecond(params)
 To be completed...
 
 == Coding Convention Websites ==
-Please feel free to glance over the following Java coding conventions:
+Please feel free to glance over the following Java coding conventions. With exceptions explained here, we will use the SUN coding convention.
 
   * [http://www.ontko.com/java/java_coding_standards.html A collection of links to Java Coding Standards]
   * [http://www.bejug.org/confluenceBeJUG/display/JJGuidelines/Home Java Coding Conventions by Stephan Janssen]
