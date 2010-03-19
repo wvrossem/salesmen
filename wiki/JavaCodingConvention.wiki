@@ -1,5 +1,5 @@
+#summary Java Coding Standards and Conventions
 #labels Dev
-#Java Coding Standards and Conventions
 
 = Introduction =
 
