@@ -21,6 +21,10 @@ All other words (or letters) must be used as shown in that particular convention
  * Boolean getter: isFirstSecond()
  * loop counters: i, j, k, l, counterFirstSecond. No other letters/words allowed.
 
+Refrain from using abbreviations. Loop counters are the exception on this rule. Although even here it is preferred to use a name that states what you are iterating/counting.
+
+Refrain from using nameless variables, like "temp". Try to use something along the lines of tempVariableName.
+
 === Classes ===
  * Classname: FirstSecond
  * Constructors: same name as classname
