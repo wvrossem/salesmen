@@ -34,6 +34,15 @@
     <property name="javac.deprecation" value="false"/>
     <property name="debug" value="false"/>
 
+	<!-- Libraries -->
+	<property name="seam.ui.lib" value="yes" />
+	<property name="seam.mail.lib" value="yes" />
+	<property name="deploy.meldware.mail" value="yes" />
+	<property name="seam.pdf.lib"    value="yes"/>
+	<property name="seam.excel.lib"    value="yes"/>
+	<property name="seam.debug.lib" value="yes" />
+	<property name="facelets.lib" value="yes" />
+	
     <!--Properties for validating configuration files -->
     <property name="validate.resources.dir" value="${basedir}/exploded-archives"/>
     <property name="schema.dir" value="${basedir}/exploded-archives/schemas"/>
