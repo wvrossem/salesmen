@@ -19,7 +19,7 @@
 	<s:link view="/sendEmail.xhtml" value="Send An E-mail" propagation="none"/>
     <!-- @newMenuItem@ -->
     <rich:toolBarGroup location="right">
-        <s:link id="menuSignUpId" view="/register.xhtml" value="Sign Up!" action="#{registerUserAccount.createUser}" rendered="#{not identity.loggedIn}" propagation="end"/>
+        <s:link id="menuSignUpId" view="/register.xhtml" value="Sign Up!" rendered="#{not identity.loggedIn}" propagation="none"/>
         <h:outputText id="menuWelcomeId" value="signed in as: " rendered="#{identity.loggedIn}"/>
 		<s:link id="userAccount"
                          value="#{authenticatedUser.username}"

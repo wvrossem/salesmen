@@ -37,7 +37,7 @@ public class RegisterUserAccountBean implements RegisterUserAccount, Serializabl
 	
 	@In IdentityManager identityManager;
 	
-	@Begin
+	@Begin(join = true)
 	public void createUser()
 	{
 		user = new User();

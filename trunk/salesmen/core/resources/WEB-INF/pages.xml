@@ -15,13 +15,7 @@
       </page>
   -->
 
-    <page view-id="/home.xhtml">
-      <navigation from-action="#{registerUserAccount.createUser}">
-	<redirect view-id="/register.xhtml"/>
-      </navigation>
-    </page>
-
-    <page view-id="/register.xhtml">
+    <page view-id="/register.xhtml" action="#{registerUserAccount.createUser}">
       <navigation from-action="#{registerUserAccount.verifyPassword}">
 	<rule if="#{not registerUserAccount.passwordVerified}">
 	  <redirect view-id="/register.xhtml"/>
@@ -37,6 +31,7 @@
 	<redirect view-id="/home.xhtml"/>
       </navigation>
     </page>
+
     <!-- 
     AUCTION
      -->
