@@ -1,0 +1,37 @@
+<?xml version='1.0'?>
+<timesheet xmlns="http://purl.org/net/timetrack">
+	<item duration="PT3H15M">
+		<desc>Workshop</desc>
+	</item>
+	
+	<item duration="PT0H50M">
+		<desc>Meeting on Thursday 2009/03/18.</desc>
+		<refs>
+			<ref>http://wilma.vub.ac.be/~se2_0910/docs/minutes/2010/03/18/minutes-20100318.pdf</ref>
+		</refs>
+	</item>
+	
+	<item duration="PT3H0M">
+		<desc>Edited configuration, view and source files to get e-mailing work in Salesmen. Made an E-mailing page to test.</desc>
+		<refs>
+			<ref>http://code.google.com/p/salesmen/source/detail?r=1052</ref>
+			<ref>http://code.google.com/p/salesmen/source/detail?r=1053</ref>
+			<ref>http://code.google.com/p/salesmen/source/detail?r=1054</ref>
+			<ref>http://code.google.com/p/salesmen/source/detail?r=1055</ref>
+			<ref>http://code.google.com/p/salesmen/source/detail?r=1056</ref>
+			<ref>http://code.google.com/p/salesmen/source/detail?r=1057</ref>
+			<ref>http://code.google.com/p/salesmen/source/detail?r=1058</ref>
+		</refs>
+	</item>
+	
+	<item duration="PT1H0M">
+		<desc>Redeployed website, succesful build, but no website. Tried to find problem.</desc>
+		<refs>
+			<ref></ref>
+		</refs>
+	</item>
+		
+	<item duration="PT0H15M">
+		<desc>Administration and Communication.</desc>
+	</item>
+</timesheet>
