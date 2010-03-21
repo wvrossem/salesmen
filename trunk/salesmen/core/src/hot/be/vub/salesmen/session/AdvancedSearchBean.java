@@ -13,6 +13,7 @@ import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.concurrent.atomic.AtomicReference;
 
 @Stateful
 @Name("advancedSearch")
@@ -131,7 +132,16 @@ public class AdvancedSearchBean implements AdvancedSearch {
 		page = 0;
 		queryEntities();
     }
-    
+
+    public List auctionsOfUser(User user) {
+        AtomicReference<String> qry = new AtomicReference<String>("from Auction a where a.owner = #{user.userId}");
+        return entityManager.createQuery(qry.get()).getResultList();
+    }
+
+    public List auctionOfUser(String userName) {
+        return null;  //To change body of implemented methods use File | Settings | File Templates.
+    }
+
     @Factory(value = "includePattern", scope = ScopeType.EVENT)
 	public String getSearchIncludePattern() {
 		return includeTerm == null ? "%" : '%' + includeTerm.replace('*', '%') + '%';

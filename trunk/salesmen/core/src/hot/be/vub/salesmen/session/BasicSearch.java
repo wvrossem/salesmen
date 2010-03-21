@@ -1,5 +1,7 @@
 package be.vub.salesmen.session;
 
+import org.richfaces.model.TreeNodeImpl;
+
 import javax.ejb.Local;
 import java.util.List;
 
@@ -23,6 +25,8 @@ public interface BasicSearch {
 	public void find();
 	
 	public Object findUser(String userName);
+
+    public TreeNodeImpl getCategoryTree();
 
     public List suggest(Object begin);
 
