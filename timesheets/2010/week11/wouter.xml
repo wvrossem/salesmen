@@ -1,0 +1,66 @@
+<?xml version='1.0'?>
+<timesheet xmlns="http://purl.org/net/timetrack">
+
+	<item duration="PT30M">
+		<desc>Find solution for creating new enitity type</desc>
+		<refs>
+			<ref>http://groups.google.com/group/salesmen/msg/24db69d2816532e8</ref>
+		</refs>
+	</item>
+
+	<item duration="PT3H">
+		<desc>Workshop 17/03 15.00-18.00</desc>
+		<refs>
+			<ref>http://code.google.com/p/salesmen/source/detail?r=1034</ref>
+		</refs>
+	</item>
+	
+	<item duration="PT1H">
+		<desc>Updated the suggest method</desc>
+		<refs>
+			<ref>http://code.google.com/p/salesmen/source/detail?r=1036</ref>
+		</refs>
+	</item>
+	
+	<item duration="PT1H30M">
+		<desc>Created and updated the advanced search</desc>
+		<refs>
+			<ref>http://code.google.com/p/salesmen/source/detail?r=1036</ref>
+			<ref>http://code.google.com/p/salesmen/source/detail?r=1063</ref>
+		</refs>
+	</item>
+	
+	<item duration="PT3H">
+		<desc>Find information about visualizing the categories (richfaces tree). Attempt to implement it.</desc>
+		<refs>
+			<ref>http://groups.google.com/group/salesmen/msg/5aed25ad3cf145c7</ref>
+			<ref>http://code.google.com/p/salesmen/source/detail?r=1063</ref>
+		</refs>
+	</item>
+	
+	<item duration="PT1H">
+		<desc>Meeting on Thursday 2010/03/18</desc>
+		<refs>
+			<ref>Minutes available after conference</ref>
+		</refs>
+	</item>
+	
+	<item duration="PT30M">
+		<desc>Write minutes for meeting 18/03</desc>
+		<refs>
+			<ref>Will be available after conference</ref>
+		</refs>
+	</item>
+	
+	<item duration="PT30M">
+		<desc>Write blog post</desc>
+		<refs>
+			<ref>Will be available soon (currently on dropbox)</ref>
+		</refs>
+	</item>
+                
+    <item duration="PT0H20M">
+        <desc>Administration and Communication.</desc>
+    </item>
+        
+</timesheet>
