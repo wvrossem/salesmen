@@ -3,7 +3,7 @@
 
 = Introduction =
 
-These are the coding conventions of the Salesmen Project. Please follow these conventions. When you do not follow these conventions, add the reason why in comments with the code.
+These are the coding conventions for java programming in the Salesmen Project. Please follow these conventions. When you do not follow these conventions, add the reason why in comments with the code.
 
 == Usage ==
 First and Second denote the first and second word in a multiword variable.
@@ -57,6 +57,7 @@ firstSecond(params)
 
 
 == Files ==
+Same name as the class it implements.
 
 == Documentation and comments ==
 To be completed...
