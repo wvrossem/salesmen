@@ -60,7 +60,8 @@ firstSecond(params)
 Same name as the class it implements.
 
 == Documentation and comments ==
-To be completed...
+=== Comments ===
+Add comments to clarify when needed. Also use comments to make distinctions between sections within a file.
 
 == Coding Convention Websites ==
 Please feel free to glance over the following Java coding conventions. With exceptions explained here, we will use the SUN coding convention.
