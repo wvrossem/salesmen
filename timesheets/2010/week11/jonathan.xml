@@ -4,6 +4,13 @@
   <item duration="PT3H">
 		<desc>Workshop 2010/03/17, 15h00 -> 18h00</desc>
   </item>
+
+	<item duration="PT45M">
+		<desc>Conferentie Meeting 18/03 12.15-13.00</desc>
+		<refs>
+			<ref>Minutes available after conference</ref>
+		</refs>
+	</item>
   
   <item duration="PT10M">
     <desc>Administration and Communication.</desc>
