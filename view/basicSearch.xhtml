@@ -1,0 +1,121 @@
+<!DOCTYPE composition PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+		"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+				xmlns:s="http://jboss.com/products/seam/taglib"
+				xmlns:ui="http://java.sun.com/jsf/facelets"
+				xmlns:f="http://java.sun.com/jsf/core"
+				xmlns:h="http://java.sun.com/jsf/html"
+				xmlns:rich="http://richfaces.org/rich"
+				xmlns:a="http://richfaces.org/a4j" template="layout/template.xhtml">
+
+<ui:define name="body">
+
+	<rich:panel>
+		<f:facet name="header"><h:outputText value="#{messages['salesmen.BasicSearch.BasicSearch']}"/></f:facet>
+
+		<div class="section">
+			<!--<span class="errors">
+					<h:messages id="messages" globalOnly="true" />
+				</span>-->
+
+			<h1><h:outputText value="#{messages['salesmen.BasicSearch.BasicSearch']}"/></h1>
+
+			<h:form id="searchCriteria">
+				<fieldset>
+					<h:inputText id="searchTerm"
+								value="#{basicSearch.searchTerm}" style="width: 165px;">
+						<a:support id="onkeyup" event="onkeyup"
+								actionListener="#{basicSearch.find}" reRender="searchResults"/>
+					</h:inputText>
+					<a:region renderRegionOnly="true">
+						<rich:suggestionbox id="searchTermSuggestionBox" for="searchTerm"
+							  suggestionAction="#{basicSearch.suggest}" var="result">
+							<h:column>
+								<h:outputText value="#{result}" style="font: menu;"/>
+							</h:column>
+						</rich:suggestionbox>
+					</a:region>
+					&#160;
+					<h:selectOneMenu id="entityType" value="#{basicSearch.entityType}">
+						<f:selectItem id="Auction" itemLabel="#{messages['salesmen.general.Auction']}" itemValue="Auction"/>
+						<f:selectItem id="User" itemLabel="#{messages['salesmen.general.User']}" itemValue="User"/>
+						<f:selectItem id="Tag" itemLabel="#{messages['salesmen.general.Tag']}" itemValue="Tag"/>
+					</h:selectOneMenu>
+					&#160;
+					<a:commandButton id="findEntities" value="#{messages['salesmen.BasicSearch.Find']}"
+									action="#{basicSearch.find}" reRender="searchResults"/>
+					&#160;
+					<a:status id="status">
+						<f:facet id="StartStatus" name="start">
+							<h:graphicImage id="SpinnerGif" value="/img/ajax-loader.gif"/>
+						</f:facet>
+					</a:status>
+					<br/>
+					<h:outputLabel id="MaximumResultsLabel" for="pageSize" value="#{messages['salesmen.BasicSearch.ResultsPerPage']}"></h:outputLabel>
+					&#160;
+					<h:selectOneMenu id="pageSize" value="#{basicSearch.pageSize}">
+						<f:selectItem id="PageSize10" itemLabel="10" itemValue="10"/>
+						<f:selectItem id="PageSize20" itemLabel="20" itemValue="20"/>
+						<f:selectItem id="PageSize50" itemLabel="50" itemValue="50"/>
+					</h:selectOneMenu>
+				</fieldset>
+			</h:form>
+		</div>
+
+		<a:outputPanel id="searchResults">
+			<div class="section">
+				<h:outputText id="NoEntitiesFoundMessage"
+						   value="No Entities Found"
+						rendered="#{entities != null and entities.rowCount==0}"/>
+				<h:dataTable id="users" value="#{entities}" var="u"
+							rendered="#{entities.rowCount>0 and basicSearch.entityTypeUser()}">
+					<h:column id="ScreenNameColumn">
+						<f:facet id="ScreenNameFacet" name="header"><h:outputText value="#{messages['salesmen.User.ScreenName']}"/></f:facet>
+						<s:link id="userLink"
+							 value="#{u.screenName}"
+					   propagation="none"
+							  view="/user.xhtml">
+							<f:param name="userId"
+								value="#{u.userId}"/>
+						</s:link>
+					</h:column>
+					<h:column id="FirstNameColumn">
+						<f:facet id="FirstNameFacet" name="header"><h:outputText value="#{messages['salesmen.User.FirstName']}"/></f:facet>
+						#{u.firstName}
+					</h:column>
+					<h:column id="LastNameColumn">
+						<f:facet id="LastNameFacet" name="header"><h:outputText value="#{messages['salesmen.User.LastName']}"/></f:facet>
+						#{u.lastName}
+					</h:column>
+				</h:dataTable>
+				<h:dataTable id="auctions" value="#{entities}" var="a"
+							rendered="#{entities.rowCount>0 and basicSearch.entityTypeAuction()}">
+					<h:column id="TitleColumn">
+						<f:facet id="TitleFacet" name="header"><h:outputText value="#{messages['salesmen.Auction.Title']}"/></f:facet>
+						<s:link id="auctionLink"
+							 value="#{a.title}"
+					   propagation="none"
+							  view="/auction.xhtml">
+							<f:param name="auctionId"
+								value="#{a.id}"/>
+						</s:link>
+					</h:column>
+					<h:column id="DescriptionColumn">
+						<f:facet id="DescriptionFacet" name="header"><h:outputText value="#{messages['salesmen.Auction.Description']}"/></f:facet>
+						#{a.description}
+					</h:column>
+					<h:column id="StartPriceColumn">
+						<f:facet id="StartPriceFacet" name="header"><h:outputText value="#{messages['salesmen.Auction.StartPrice']}"/></f:facet>
+						#{a.startingPrice}
+					</h:column>
+				</h:dataTable>
+				<s:link id="MoreResultsLink" value="More results"
+						  action="#{basicSearch.nextPage}"
+						rendered="#{basicSearch.nextPageAvailable}"/>
+			</div>
+		</a:outputPanel>
+
+	</rich:panel>
+
+</ui:define>
+</ui:composition>
