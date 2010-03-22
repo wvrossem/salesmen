@@ -10,7 +10,7 @@ The changes made in the trunk do not need to be explained here, as you get these
 In fact, only one file needs to be changed in order to configure JBoss: mail-service.xml.
 
 Location of the new version:
-  [https://www.dropbox.com Dropbox], for safety reasons.
+  [https://www.dropbox.com Dropbox] (for safety reasons) in the folder Packages.
 
 Location of the old file to be replaced:
   * Windows: JBoss\server\default\deploy\
