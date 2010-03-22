@@ -1,0 +1,77 @@
+<?xml version='1.0'?>
+<timesheet xmlns="http://purl.org/net/timetrack">
+	
+	<item duration="PT30M">
+	  <desc>Checking and publishing timesheets of week10.</desc>
+	  <refs>
+		  <ref>http://code.google.com/p/salesmen/source/detail?r=1020</ref>
+		  <ref>http://code.google.com/p/salesmen/source/detail?r=1021</ref>
+		<ref>http://code.google.com/p/salesmen/source/detail?r=1022</ref>
+		<ref>http://code.google.com/p/salesmen/source/detail?r=1023</ref>
+		<ref>http://code.google.com/p/salesmen/source/detail?r=1024</ref>
+		<ref>http://code.google.com/p/salesmen/source/detail?r=1025</ref>
+		<ref>http://code.google.com/p/salesmen/source/detail?r=1026</ref>
+		<ref>http://code.google.com/p/salesmen/source/detail?r=1027</ref>
+		<ref>http://code.google.com/p/salesmen/source/detail?r=1028</ref>
+	  </refs>
+	</item>
+	
+	<item duration="PT3H">
+    <desc>Workshop 17/03.</desc>
+    <refs>
+    </refs>
+  </item>
+
+	<item duration="PT10M">
+    <desc>Updating statistics of timesheets.</desc>
+    <refs>
+		<ref>http://groups.google.com/group/salesmen/browse_thread/thread/6427ffdc66724509</ref>
+    </refs>
+  </item>
+	
+	<item duration="PT15M">
+    <desc>Prepare conference meeting 18/03.</desc>
+    <refs>
+    </refs>
+  </item>
+
+	<item duration="PT20M">
+    <desc>Reading about Seam Security and Drools rules.</desc>
+    <refs>
+		<ref>http://odyssi.blogspot.com/2008/07/intro-to-jboss-seam-security-part-3.html</ref>
+		<ref>http://www.redhat.com/docs/manuals/jboss/jboss-eap-4.2/doc/seam/Seam_Reference_Guide/Writing_Security_Rules-Creating_a_security_rules_file.html</ref>
+    </refs>
+  </item>
+
+	<item duration="PT45M">
+		<desc>Conferentie Meeting 18/03 12.15-13.00</desc>
+		<refs>
+			<ref>Minutes available after conference</ref>
+		</refs>
+	</item>
+
+	<item duration="PT20M">
+    <desc>Created wiki page about language support.</desc>
+    <refs>
+		<ref>http://code.google.com/p/salesmen/wiki/LanguageSupport</ref>
+		<ref>http://code.google.com/p/salesmen/source/detail?r=1039</ref>
+		<ref>http://code.google.com/p/salesmen/source/detail?r=1040</ref>
+		<ref>http://code.google.com/p/salesmen/source/detail?r=1041</ref>
+    </refs>
+  </item>
+
+	<item duration="PT1H15M">
+    <desc>Fixed issues 37 and 39.</desc>
+    <refs>
+		<ref>http://code.google.com/p/salesmen/issues/detail?id=37</ref>
+		<ref>http://code.google.com/p/salesmen/issues/detail?id=39</ref>
+		<ref>http://code.google.com/p/salesmen/source/detail?r=1062</ref>
+		<ref>http://groups.google.com/group/salesmen/browse_thread/thread/f66176fa58542151</ref>
+    </refs>
+  </item>
+
+  <item duration="PT20M">
+    <desc>Administration and Communication.</desc>
+    <refs></refs>
+  </item>
+</timesheet>
