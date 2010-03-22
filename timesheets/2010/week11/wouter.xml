@@ -38,8 +38,8 @@
 		</refs>
 	</item>
 	
-	<item duration="PT1H">
-		<desc>Meeting on Thursday 2010/03/18</desc>
+	<item duration="PT45M">
+		<desc>Conferentie Meeting 18/03 12.15-13.00</desc>
 		<refs>
 			<ref>Minutes available after conference</ref>
 		</refs>
@@ -48,14 +48,16 @@
 	<item duration="PT30M">
 		<desc>Write minutes for meeting 18/03</desc>
 		<refs>
-			<ref>Will be available after conference</ref>
+			<ref>Minutes available after conference</ref>
+			<ref>http://groups.google.com/group/salesmen/browse_thread/thread/ab4248540e46bf6e</ref>
 		</refs>
 	</item>
 	
 	<item duration="PT30M">
 		<desc>Write blog post</desc>
 		<refs>
-			<ref>Will be available soon (currently on dropbox)</ref>
+			<ref>Available soon</ref>
+			<ref>http://salesmen-dev.blogspot.com/</ref>
 		</refs>
 	</item>
                 
