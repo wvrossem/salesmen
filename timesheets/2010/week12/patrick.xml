@@ -1,0 +1,31 @@
+<?xml version='1.0'?>
+<timesheet xmlns="http://purl.org/net/timetrack">
+
+	<item duration="PT0H0M">
+		<desc>Programming User-Dashboard</desc>
+		<refs>
+		</refs>
+	</item>
+		
+	<item duration="PT10M">
+		<desc>QA van Conferentie Meeting 18/03 12.15-13.00</desc>
+		<refs>
+			<ref>Minutes available after conference</ref>
+		</refs>
+	</item>
+		
+	<item duration="PT6H">
+		<desc>Quality Assurance of code</desc>
+		<refs>
+			<ref>http://code.google.com/p/salesmen/source/detail?r=1076</ref>
+			<ref>http://code.google.com/p/salesmen/source/detail?r=1075</ref>
+			<ref>http://code.google.com/p/salesmen/source/detail?r=1074</ref>
+			<ref>http://code.google.com/p/salesmen/source/detail?r=1073</ref>
+		</refs>
+	</item>
+				
+	<item duration="PT0H30M">
+		<desc>Administration and Communication.</desc>
+	</item>
+		
+</timesheet>
