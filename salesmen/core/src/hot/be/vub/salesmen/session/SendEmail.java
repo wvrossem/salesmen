@@ -30,7 +30,7 @@ public class SendEmail implements Serializable
 	@In(create=true)
     private User user;
 
-    public void send() {
+    public void sendConfirmEmail() {
        try {
            renderer.render("/confirmEmail.xhtml");
            facesMessages.add("Email sent successfully");
@@ -38,5 +38,15 @@ public class SendEmail implements Serializable
     	   log.error("Error sending mail", e);
            facesMessages.add("Email sending failed: " + e.getMessage());
        }
+    }
+    
+    public void sendStandardEmail() {
+    	try {
+            renderer.render("/standardEmail.xhtml");
+            facesMessages.add("Email sent successfully");
+        } catch (Exception e) {
+     	   log.error("Error sending mail", e);
+            facesMessages.add("Email sending failed: " + e.getMessage());
+        }
     }
 }
