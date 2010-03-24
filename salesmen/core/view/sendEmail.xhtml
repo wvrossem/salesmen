@@ -8,24 +8,39 @@
                 xmlns:rich="http://richfaces.org/rich"
                 xmlns:a="http://richfaces.org/a4j" template="layout/template.xhtml">
 
-    <ui:define name="body">
+<ui:define name="body">
 
 	<h:form>
-        <h:panelGrid columns="2">
-            <h:outputText value="Name" />
-            <h:panelGroup>
-                <h:inputText value="#{user.firstName}" required="true" />
-                <h:inputText value="#{user.lastName}" required="true" />
-            </h:panelGroup>
-            <h:outputText value="Email Address" />
-            <h:inputText value="#{user.email}" required="true"/>
-        </h:panelGrid>
-        <h:panelGrid>
-	        <a:commandButton action="#{sendEmail.send}" value="Send" />
-        </h:panelGrid>
-        <h:messages infoStyle="info" errorStyle="error" fatalStyle="fatal" warnStyle="warn" />
-    </h:form>
+		<h3>Send a confirmation e-mail</h3>
+		<h:panelGrid columns="2">
+			<h:outputText value="Name" />
+			<h:panelGroup>
+				<h:inputText value="#{user.firstName}" required="true" />
+				<h:inputText value="#{user.lastName}" required="true" />
+			</h:panelGroup>
+			<h:outputText value="Email Address" />
+			<h:inputText value="#{user.email}" required="true" />
+		</h:panelGrid>
+		<h:panelGrid>
+			<a:commandButton action="#{sendEmail.sendConfirmEmail}" value="Send" />
+		</h:panelGrid>
+	</h:form>
+	<h:form>
+		<h3>Send an e-mail</h3>
+		<h:panelGrid columns="2">
+			<h:outputText value="Name" />
+			<h:inputText value="#{emailClass.fullName}" required="true" />
+			<h:outputText value="Email Address" />
+			<h:inputText value="#{emailClass.emailAddress}" required="true" />
+			<h:outputText value="Subject" />
+			<h:inputText value="#{emailClass.subject}" required="true" />
+			<h:outputText value="Content" />
+			<h:inputText value="#{emailClass.content}" required="true" />
+			<a:commandButton action="#{sendEmail.sendStandardEmail}"
+				value="Send" />
+		</h:panelGrid>
+	</h:form>
 
-	</ui:define>
+</ui:define>
 
 </ui:composition>
