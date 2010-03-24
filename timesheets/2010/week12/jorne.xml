@@ -6,6 +6,16 @@
 			<ref>http://code.google.com/p/salesmen/source/detail?r=1077</ref>
 		</refs>
 	</item>
+	
+	<item duration="PT4H0M">
+		<desc>Implemented EmailClass.java, standardEmail.xhtml and edited SendEmail.java and sendEmail.xhtml to support the first two changes.</desc>
+		<refs>
+			<ref>http://code.google.com/p/salesmen/source/detail?r=1081</ref>
+			<ref>http://code.google.com/p/salesmen/source/detail?r=1082</ref>
+			<ref>http://code.google.com/p/salesmen/source/detail?r=1083</ref>
+			<ref>http://code.google.com/p/salesmen/source/detail?r=1084</ref>
+		</refs>
+	</item>
 		
 	<item duration="PT0H5M">
 		<desc>Administration and Communication.</desc>
