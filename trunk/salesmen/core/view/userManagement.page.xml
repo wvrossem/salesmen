@@ -1,5 +1,6 @@
-<page view-id="/userManagement.xhtml"
-		login-required="true">
+<page login-required="true">
+
 	<param name="userAccountId"
-			 value="#{authenticatedUser.accountId}"/>
+		  value="#{authenticatedUser.accountId}"/>
+
 </page>

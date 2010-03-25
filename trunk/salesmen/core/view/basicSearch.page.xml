@@ -1,0 +1,7 @@
+<page>
+
+	<navigation from-action="#{viewAuction.selectAuction}">
+		<redirect view-id="/auction.xhtml"/>
+	</navigation>
+	
+</page>
