@@ -1,0 +1,15 @@
+<page  action="#{manageAuction.createAuction}">
+
+	<navigation from-action="#{manageAuction.checkInput}">
+	
+		<rule if="#{not manageAuction.inputIsOk}">
+			<redirect view-id="/createAuction.xhtml"/>
+		</rule>
+		
+		<rule if="#{manageAuction.inputIsOk}">
+			<redirect view-id="/createAuction2.xhtml"/>
+		</rule>
+		
+	</navigation>
+
+</page>

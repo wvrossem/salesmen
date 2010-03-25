@@ -1,0 +1,7 @@
+<page>
+
+	<navigation from-action="#{registerUserAccount.createUserAccount}">
+		<redirect view-id="/home.xhtml"/>
+	</navigation>
+
+</page>
