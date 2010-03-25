@@ -18,13 +18,13 @@
 				<s:validateAll>
 					<div class="section">
 					<h:outputLabel for="title">Enter a short description of the item you wish to sell</h:outputLabel>
-					<h:inputText id="title" required="true" value="#{auction.title}" />
+					<h:inputText id="title" required="true" value="#{manageAuction.auction.title}" />
 					<div class="validationError"><h:message for="title" /></div>
 					</div>
 
 					<div class="section">
 					<h:outputLabel for="price">Please enter the starting price for your auction (EUR)</h:outputLabel>
-					<h:inputText id="price" value="#{auction.startingPrice}" required="true">
+					<h:inputText id="price" value="#{manageAuction.auction.startingPrice}" required="true">
 						<f:convertNumber minFractionDigits="2" maxFractionDigits="2" minIntegerDigits="1" />
 					</h:inputText>
 					<div class="validationError"><h:message for="price" /></div>
@@ -32,7 +32,7 @@
 
 					<div class="section">
 					<h:outputLabel for="description">Please enter a description for the item you are trying to sell.</h:outputLabel>
-					<h:inputTextarea id="description" value="#{auction.description}" styleClass="description" />
+					<h:inputTextarea id="description" value="#{manageAuction.auction.description}" styleClass="description" />
 					<div class="validationError"><h:message for="description" /></div>
 					</div>
 
