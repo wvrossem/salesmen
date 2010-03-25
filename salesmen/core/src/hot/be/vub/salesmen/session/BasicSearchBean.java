@@ -81,8 +81,8 @@ public class BasicSearchBean implements BasicSearch {
 			qry.append(" or UPPER(e.lastName) LIKE UPPER(#{pattern})");
 		} else if (entityType.equals("Tag")) {
 			qry.append("from Tag e");
-		} else if (entityType.equals("Category")){
-			qry.append("from Category e");
+		} else if (entityType.equals("UserAccount")){
+			qry.append("from UserAccount e");
 		}		
 		
 		List results = entityManager.createQuery(qry.toString())
@@ -98,16 +98,25 @@ public class BasicSearchBean implements BasicSearch {
 		}
 	}
 	
-	public Object findUser(String userName) {
-		setEntityType("User");
-		setSearchTerm(userName);
-		find();
+	public Object findUser(String screenName) {
+		String qry = "FROM User u WHERE u.screenName = #{screenName}";
+        entities = entityManager.createQuery(qry).getResultList();
 		if (entities.size() == 1) {
 			return entities.get(0);
 		} else {
 			return false;
 		}
 	}
+
+    public Object findUserAccount(String userName) {
+       String qry = "FROM UserAccount u WHERE u.userName = #{userName}";
+        entities = entityManager.createQuery(qry).getResultList();
+		if (entities.size() == 1) {
+			return entities.get(0);
+		} else {
+			return false;
+		}
+    }
 
     private TreeNodeImpl findParent(List<TreeNodeImpl<Category>> parents, TreeNodeImpl<Category> child) {
         for (TreeNodeImpl node : parents) {
