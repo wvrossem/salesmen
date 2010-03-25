@@ -40,7 +40,10 @@ public class RegisterUserAccountBean implements RegisterUserAccount, Serializabl
 	@Begin(join = true)
 	public void createUser()
 	{
-		user = new User();
+        if(this.user == null)//REQUIRED, otherwise view-fields will be emptied on error message
+        {
+		    user = new User();
+        }
 	}
 
 	public void verifyPassword()

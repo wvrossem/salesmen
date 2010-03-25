@@ -30,8 +30,12 @@ public class ManageAuctionBean implements ManageAuction, Serializable
 	
 
                  @Begin(join = true)
-    public void createAuction() {
-        this.auction = new Auction();
+    public void createAuction()
+    {
+        if(this.auction==null)  //REQUIRED, otherwise view-fields will be emptied on error message
+        {
+           this.auction = new Auction();
+        }
     }
 
     public void checkInput()
