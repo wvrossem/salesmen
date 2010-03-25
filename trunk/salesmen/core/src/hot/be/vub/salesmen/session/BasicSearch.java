@@ -24,7 +24,9 @@ public interface BasicSearch {
 
 	public void find();
 	
-	public Object findUser(String userName);
+	public Object findUser(String screenName);
+
+    public Object findUserAccount(String userName);
 
     public TreeNodeImpl getCategoryTree();
 
