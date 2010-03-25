@@ -26,6 +26,7 @@ public class UserAccount implements Serializable
 	private String passwordHash;
 	private String passwordSalt;
 	private boolean enabled;
+  private long activationKey;
 
     private Set<UserRole> roles;
     private User user;
@@ -85,6 +86,16 @@ public class UserAccount implements Serializable
     {
        this.enabled = enabled;      
     }
+
+    public long getActivationKey()
+	  {
+		  return activationKey;
+	  }
+
+	  public void setActivationKey(long activationKey)
+	  {
+		  this.activationKey = activationKey;
+	  }
     
     @UserRoles
     @ManyToMany(targetEntity = UserRole.class)

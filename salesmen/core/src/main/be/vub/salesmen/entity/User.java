@@ -31,7 +31,7 @@ public class User implements Serializable
 	private String lastName;
 	private String email;
   private Gender gender;
-  private Date dob;
+  private Date dateOfBirth;
   private Date memberSince;
   private String city;
   private Country country;
@@ -112,14 +112,14 @@ public class User implements Serializable
 	}
 
    @NotNull
-   public Date getDob()
+   public Date getDateOfBirth()
    {
-      return dob;
+      return dateOfBirth;
    }
 
-   public void setDob(Date dob)
+   public void setDateOfBirth(Date dateOfBirth)
    {
-      this.dob = dob;
+      this.dateOfBirth = dateOfBirth;
    }
 
    @NotNull
