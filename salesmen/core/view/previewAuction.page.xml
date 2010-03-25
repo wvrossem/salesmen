@@ -1,0 +1,11 @@
+<page view-id="/previewAuction.xhtml" conversation-required="true">
+
+	<navigation from-action="previous">
+		<redirect view-id="/createAuction2.xhtml"/>
+	</navigation>
+		
+	<navigation from-action="#{manageAuction.confirm}">
+		<redirect view-id="/auction.xhtml"/>
+	</navigation>
+	
+</page>
