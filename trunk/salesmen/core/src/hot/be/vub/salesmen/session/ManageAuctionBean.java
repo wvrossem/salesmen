@@ -20,7 +20,8 @@ import org.jboss.seam.annotations.Scope;
 public class ManageAuctionBean implements ManageAuction, Serializable 
 {
 	@In EntityManager entityManager;
-	@In Auction auction; 
+	//@In Auction auction;
+    Auction auction;
 	private static final long serialVersionUID = 5797405997183391745L;
 
 	private boolean inputIsOk=false;
@@ -28,9 +29,9 @@ public class ManageAuctionBean implements ManageAuction, Serializable
 	
 	
 
-                 @Begin
-    public void create() {
-        //To change body of implemented methods use File | Settings | File Templates.
+                 @Begin(join = true)
+    public void createAuction() {
+        this.auction = new Auction();
     }
 
     public void checkInput()
@@ -38,7 +39,7 @@ public class ManageAuctionBean implements ManageAuction, Serializable
 		if(this.auction.getStartingPrice()>0)
 		{
 			this.setInputIsOk(true);
-            entityManager.persist(auction);
+            entityManager.persist(this.auction);
 		}
 		else
 		{
@@ -46,11 +47,11 @@ public class ManageAuctionBean implements ManageAuction, Serializable
 		}
 	}
 
-
+   @End
     public void confirm()
     {
         this.auction.setStatus(Auction.AuctionStatus.LISTED);
-        entityManager.merge(auction);
+        entityManager.merge(this.auction);
     }
 	
 	public void setAuction(Auction auction)
