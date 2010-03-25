@@ -142,8 +142,8 @@ public class Auction implements Serializable
 	}
 */
 	@NotNull
-   // @Pattern(regex="^[0-9]*\.?[0-9]+$",
-    //		message="Illegal amount")
+  // @Pattern(regex="^[0-9]*\.?[0-9]+$",
+  // 	message="Illegal amount")
 	public double getStartingPrice() {
 		return startingPrice;
 	}

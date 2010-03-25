@@ -43,7 +43,7 @@ public class ManageAuctionBean implements ManageAuction, Serializable
 		if(this.auction.getStartingPrice()>0)
 		{
 			this.setInputIsOk(true);
-            entityManager.persist(this.auction);
+            //entityManager.persist(this.auction);
 		}
 		else
 		{
