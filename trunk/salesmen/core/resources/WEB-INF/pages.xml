@@ -32,6 +32,13 @@
       </navigation>
     </page>
 
+
+    <page view-id="/basicSearch.xhtml">
+      <navigation from-action="#{viewAuction.selectAuction}">
+	    <redirect view-id="/auction.xhtml"/>
+      </navigation>
+    </page>
+
     <!-- 
     AUCTION
      -->
@@ -64,6 +71,9 @@
         <navigation from-action="#{manageAuction.confirm}">
             <redirect view-id="/auction.xhtml"/>
         </navigation>
+    </page>
+
+    <page view-id="/auction.xhtml" action="viewAuction.start">
     </page>
 	<!-- 
     END AUCTION
