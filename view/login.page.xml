@@ -1,0 +1,9 @@
+<page>
+
+	<navigation from-action="#{identity.login}">
+		<rule if="#{identity.loggedIn}">
+			<redirect view-id="/home.xhtml"/>
+		</rule>
+	</navigation>
+
+</page>
