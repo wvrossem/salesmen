@@ -35,7 +35,7 @@
     <!-- 
     AUCTION
      -->
-    <page view-id="/createAuction.xhtml">
+    <page view-id="/createAuction.xhtml" action="#{manageAuction.createAuction}">
       <navigation from-action="#{manageAuction.checkInput}">
 	<rule if="#{not manageAuction.inputIsOk}">
 	  <redirect view-id="/createAuction.xhtml"/>
