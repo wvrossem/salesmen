@@ -16,8 +16,18 @@
 			<ref>http://code.google.com/p/salesmen/source/detail?r=1084</ref>
 		</refs>
 	</item>
+	
+	<item duration="PT2H0M">
+		<desc>After testing EmailClass, noticed restraint on content attribute in EmailClass. Decided to create xhtml files and methods for different messages.</desc>
+		<refs>
+			<ref>http://code.google.com/p/salesmen/source/detail?r=1101</ref>
+			<ref>http://code.google.com/p/salesmen/source/detail?r=1102</ref>
+			<ref>http://code.google.com/p/salesmen/source/detail?r=1103</ref>
+			<ref>https://mail.google.com/mail/?hl=nl&shva=1#label/Salesmen/1278cf8314ac18be</ref>
+		</refs>
+	</item>
 		
-	<item duration="PT0H5M">
+	<item duration="PT0H15M">
 		<desc>Administration and Communication.</desc>
 	</item>
 </timesheet>
