@@ -25,14 +25,16 @@ public class ViewAuctionBean implements ViewAuction   , Serializable
 	//Attributes
 	Auction auction;
 
-	@RequestParameter
+
+
+    @RequestParameter
     Long auctionId;
 	 
 	//@In annotations
 	
 	@In EntityManager entityManager;
 
-	@Begin(join=true)
+	@Begin
     public void start()
     {
         System.out.println("MESS: viewAuction.start() called for auction with ID="+this.auctionId);
@@ -93,5 +95,15 @@ public class ViewAuctionBean implements ViewAuction   , Serializable
 	{
 		this.auction = auction;
 	}
-	
+
+
+    public Long getAuctionId()
+    {
+        return auctionId;
+    }
+
+    public void setAuctionId(Long auctionId)
+    {
+        this.auctionId = auctionId;
+    }
 }
