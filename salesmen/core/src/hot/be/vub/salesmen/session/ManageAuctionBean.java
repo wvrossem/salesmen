@@ -26,7 +26,7 @@ public class ManageAuctionBean implements ManageAuction, Serializable
 	@In EntityManager entityManager;
 	//@in Auction auction
 
-	@Begin
+	@Begin(join = true)
 	public void createAuction()
 	{
 		if(this.auction==null)  //REQUIRED, otherwise view-fields will be emptied on error message
@@ -57,7 +57,10 @@ public class ManageAuctionBean implements ManageAuction, Serializable
 	}
 	
 	@Destroy @Remove
-	public void destroy() {}
+	public void destroy()
+	{
+		System.out.println("manageAuctionBean destroyed");
+	}
 	
 	// Public Attribute getters/setters with annotations 
 	public void setAuction(Auction auction)

@@ -24,30 +24,50 @@ public class ViewAuctionBean implements ViewAuction   , Serializable
 	//Attributes
 	Auction auction;
 
+	@RequestParameter Long auctionId;
+	 
 	//@In annotations
+	
 	@In EntityManager entityManager;
 
 	@Begin(join=true)
 	public void start()
-	{
-		int id=1;
-		StringBuilder qry = new StringBuilder();
-			qry.append("from Auction e");
-			qry.append(" WHERE id="+id+"");
-			qry.append(" AND e.status = " + Auction.AuctionStatus.LISTED.ordinal());
+    public void start()
+    {
+        System.out.println("MESS: viewAuction.start() called for auction with ID="+this.auctionId);
 
-		this.auction = (Auction)entityManager.createQuery(qry.toString()).getSingleResult()        ;
+        if(this.auction==null)
+        {
 
+            BasicSearchBean search = new BasicSearchBean();
+            if(this.auctionId==null)
+            {
+                this.auctionId=1L;
+            }
+            this.auction = (Auction)search.findAuction(this.auctionId,this.entityManager);
+  
+              /*
+             // keep this code for a while, BART will delete it
+            StringBuilder qry = new StringBuilder();
+            qry.append("from Auction e");
+            qry.append(" WHERE id="+this.auctionId.intValue()+"");
+            qry.append(" AND e.status = " + Auction.AuctionStatus.LISTED.ordinal());
 
-		if(this.auction==null)  //REQUIRED, otherwise view-fields will be emptied on error message
-		{
-		this.auction = new Auction();
-		}
-	}
+            this.auction = (Auction)(entityManager.createQuery(qry.toString()).getSingleResult());
+
+            //System.out.println("viewAuction.start() MESS: after query, auction: "+this.auction.getTitle());
+            entityManager.joinTransaction();   //Bart: no idea why, but this loc is required to make this function work. Anyway, the basicSearchBean should provide this functionality
+        */
+        }
+    }
 	
 	public void selectAuction(Auction a)
 	{
-		this.auction=a;
+        if(a==null)
+        {
+            System.out.println("MESS: viewAuction.selectAuction called null auction ");
+        }
+        this.auction=a;
 	}
 
 	/*

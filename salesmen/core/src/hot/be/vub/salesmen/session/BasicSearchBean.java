@@ -120,6 +120,36 @@ public class BasicSearchBean implements BasicSearch
 			return false;
 		}
 	}
+	
+	public Object findAuction(Long auctionId, EntityManager em)
+    {
+        if(em==null)
+        {
+              System.out.println("findAuction ERROR: entityManager is null");
+        }
+        try
+        {
+            String qry = "FROM Auction a WHERE a.id = #{auctionId}";
+            entities = em.createQuery(qry).getResultList();
+            if(entities==null)
+            {
+                  System.out.println("findAuction ERROR: entities is null");
+            }
+            if (entities!=null && entities.size() == 1)
+            {
+                return entities.get(0);
+            }
+            else
+            {
+                return null;
+            }
+        }
+        catch(NullPointerException e)
+        {
+            System.out.println("findAuction ERROR: searching for ID="+auctionId);
+        }
+        return null;
+	}
 
 	public Object findUserAccount(String userName)
 	{
