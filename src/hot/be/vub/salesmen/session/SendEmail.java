@@ -42,6 +42,18 @@ public class SendEmail implements Serializable
 		}
 	}
 	
+	public void sendPasswordEmail() {
+		try
+		{
+			renderer.render("/passwordEmail.xhtml");
+			facesMessages.add("Email sent successfully");
+		} catch (Exception e)
+		{
+			log.error("Error sending mail", e);
+			facesMessages.add("Email sending failed: " + e.getMessage());
+		}
+	}
+	 
 	public void sendStandardEmail()
 	{
 		try
