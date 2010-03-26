@@ -2,6 +2,14 @@
 <project version="4">
   <component name="AntConfiguration">
     <defaultAnt bundledAnt="true" />
+    <buildFile url="file://$PROJECT_DIR$/build.xml">
+      <additionalClassPath />
+      <antReference projectDefault="true" />
+      <customJdkName value="" />
+      <maximumHeapSize value="128" />
+      <maximumStackSize value="2" />
+      <properties />
+    </buildFile>
   </component>
   <component name="ArtifactManager">
     <artifact type="exploded-war" name="salesmen:Web exploded">
@@ -41,7 +49,6 @@
   <component name="CopyrightManager" default="">
     <module2copyright />
   </component>
-  <component name="DataSourceManagerImpl" compressed="false" />
   <component name="DependenciesAnalyzeManager">
     <option name="myForwardDirection" value="false" />
   </component>
@@ -59,7 +66,9 @@
     <option name="ADDITIONAL_OPTIONS_STRING" value="" />
     <option name="MAXIMUM_HEAP_SIZE" value="128" />
   </component>
-  <component name="Encoding" useUTFGuessing="true" native2AsciiForPropertiesFiles="false" />
+  <component name="Encoding" useUTFGuessing="true" native2AsciiForPropertiesFiles="false">
+    <file url="file://$PROJECT_DIR$/src/main/be/vub/salesmen/entity/User.java" charset="MacRoman" />
+  </component>
   <component name="EntryPointsManager">
     <entry_points version="2.0" />
   </component>
@@ -213,8 +222,63 @@
   <component name="ProjectRootManager" version="2" languageLevel="JDK_1_5" assert-keyword="true" jdk-15="true" project-jdk-name="1.6" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/classes" />
   </component>
+  <component name="ProjectRunConfigurationManager">
+    <configuration default="false" name="jboss" type="JBossConfiguration" factoryName="Local" APPLICATION_SERVER_NAME="JBoss 5.1.0.GA">
+      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/" />
+      <option name="SHOW_DIALOG_ON_UPDATE" value="false" />
+      <option name="UPDATING_POLICY" value="redeploy-artifacts" />
+      <deployment />
+      <server-settings>
+        <option name="SERVER" value="default" />
+        <option name="USERNAME" value="" />
+        <option name="PASSWORD" value="" />
+      </server-settings>
+      <predefined_log_file id="JBoss" enabled="true" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="62953" />
+        <option name="TRANSPORT" value="0" />
+        <option name="LOCAL" value="true" />
+      </RunnerSettings>
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="/bin/run.sh" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="/bin/shutdown.sh" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value=" -s jnp://localhost:2147483647 -S" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="/bin/run.sh" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="/bin/shutdown.sh" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value=" -s jnp://localhost:2147483647 -S" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method>
+        <option name="AntTarget" enabled="true" antfile="file://$PROJECT_DIR$/build.xml" target="deploy" />
+        <option name="Make" enabled="false" />
+      </method>
+    </configuration>
+  </component>
   <component name="SvnBranchConfigurationManager">
     <option name="myVersion" value="123" />
+    <option name="mySupportsUserInfoFilter" value="true" />
   </component>
   <component name="VcsDirectoryMappings">
     <mapping directory="" vcs="" />

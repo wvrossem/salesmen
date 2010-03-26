@@ -10,6 +10,14 @@
 
 <ui:define name="body">
 	This page displays an auction...
+	
+	<rich:panel>
+		<f:facet name="header">Auction</f:facet>
+			<h:outputText value="#{viewAuction.auction.startingPrice}"/>
+
+			<div style="clear:both"/>
+
+	</rich:panel>
 
 </ui:define>
 </ui:composition>

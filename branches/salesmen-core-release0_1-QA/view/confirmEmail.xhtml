@@ -3,11 +3,11 @@
 	xmlns:h="http://java.sun.com/jsf/html">
 
 	<m:from name="Salesmen" address="no-reply@salesmen.com" />
-	<m:to name="Jorne">Jorne.laton@gmail.com</m:to>
+	<m:to name="#{user.firstName} #{user.lastName}">#{user.email}</m:to>
 	<m:subject>Registered to Salesmen!</m:subject>
 	
 	<m:body>
-		<p><h:outputText value="Welcome to Salesmen, Jorne" />,</p>
+		<p><h:outputText value="Welcome to Salesmen, #{user.firstName}" />,</p>
 		<p>Just click on the link below to confirm your registration:</p> 
 		<a href="http://wilma.vub.ac.be:1388/salesmen">http://wilma.vub.ac.be:1388/salesmen</a>
 		<p>See you soon!</p>

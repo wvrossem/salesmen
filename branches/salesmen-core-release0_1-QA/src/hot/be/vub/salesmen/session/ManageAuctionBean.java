@@ -1,35 +1,38 @@
 package be.vub.salesmen.session;
 
-import static org.jboss.seam.ScopeType.CONVERSATION;
-
 import javax.ejb.Remove;
 import javax.persistence.EntityManager;
 import java.io.Serializable;
-
-
 
 import org.jboss.seam.annotations.*;
 import org.jboss.seam.faces.FacesMessages;
 
 import be.vub.salesmen.entity.Auction;
+import static org.jboss.seam.ScopeType.CONVERSATION;
+import org.jboss.seam.annotations.Scope;
 
-@Scope(CONVERSATION)
 @Name("manageAuction")
+@Scope(CONVERSATION)
 public class ManageAuctionBean implements ManageAuction, Serializable 
 {
-	// Private attributes
 	private static final long serialVersionUID = 5797405997183391745L;
-	private Auction auction; 
+	
+	// Private attributes
+	Auction auction; 
 	private boolean inputIsOk=false;
 	private int categoryId;
 	
 	// In annotations
 	@In EntityManager entityManager;
+	//@in Auction auction
 
 	@Begin
 	public void createAuction()
 	{
-		this.setAuction(new Auction());
+		if(this.auction==null)  //REQUIRED, otherwise view-fields will be emptied on error message
+		{
+			this.setAuction(new Auction());
+		}
 	}
 
 	
@@ -38,7 +41,7 @@ public class ManageAuctionBean implements ManageAuction, Serializable
 		if(this.auction.getStartingPrice()>0)
 		{
 			this.setInputIsOk(true);
-				entityManager.persist(auction);
+			//entityManager.persist(auction);
 		}
 		else
 		{
@@ -50,7 +53,7 @@ public class ManageAuctionBean implements ManageAuction, Serializable
 	public void confirm()
 	{
 		this.auction.setStatus(Auction.AuctionStatus.LISTED);
-		entityManager.merge(auction);
+		entityManager.merge(this.auction);
 	}
 	
 	@Destroy @Remove
