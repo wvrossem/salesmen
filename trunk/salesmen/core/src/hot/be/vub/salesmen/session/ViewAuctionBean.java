@@ -6,6 +6,7 @@ import org.jboss.seam.annotations.Begin;
 import org.jboss.seam.annotations.In;
 import org.jboss.seam.annotations.Name;
 import org.jboss.seam.annotations.Scope;
+import org.jboss.seam.annotations.web.RequestParameter;
 
 
 import javax.persistence.EntityManager;
@@ -24,14 +25,14 @@ public class ViewAuctionBean implements ViewAuction   , Serializable
 	//Attributes
 	Auction auction;
 
-	@RequestParameter Long auctionId;
+	@RequestParameter
+    Long auctionId;
 	 
 	//@In annotations
 	
 	@In EntityManager entityManager;
 
 	@Begin(join=true)
-	public void start()
     public void start()
     {
         System.out.println("MESS: viewAuction.start() called for auction with ID="+this.auctionId);
