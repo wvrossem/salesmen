@@ -11,13 +11,15 @@
 <ui:define name="body">
 
 	<rich:panel>
-		<f:facet name="header">Profile Management</f:facet>
+		<f:facet name="header">#{messages['salesmen.UserDashboard.Profile']} #{messages['salesmen.UserDashboard.Management']}</f:facet>
 		<h:panelGrid columns="2" rowClasses="prop" columnClasses="name,value">
-			<h:outputText value="First Name: "/>
+			<h:outputText value="#{messages['salesmen.User.ScreenName']}: "/>
+			<h:outputText value="#{userHome.instance.screenName}"/>
+			<h:outputText value="#{messages['salesmen.User.FirstName']}: "/>
 			<h:outputText value="#{userHome.instance.firstName}"/>
-			<h:outputText value="Last Name: "/>
+			<h:outputText value="#{messages['salesmen.User.LastName']}: "/>
 			<h:outputText value="#{userHome.instance.lastName}"/>
-			<h:outputText value="Gender: "/>
+			<h:outputText value="#{messages['salesmen.User.Gender']}: "/>
 			<h:outputText value="#{userHome.instance.gender}"/>
 		</h:panelGrid>
 
@@ -27,10 +29,10 @@
 
 	<div class="actionButtons">
 		<s:button id="update"
-			value="Update"
+			value="#{messages['salesmen.Action.Update']}"
 				view="/userProfileManagementEdit.xhtml"/>
 		<s:button id="cancel"
-			value="Cancel"
+			value="#{messages['salesmen.Action.Cancel']}"
 				view="/userManagement.xhtml"/>
 	</div>
 
