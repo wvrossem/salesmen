@@ -8,15 +8,18 @@
 	</item>
 		
 	<item duration="PT10M">
-		<desc>QA van Conferentie Meeting 18/03 12.15-13.00</desc>
+		<desc>QA Conference Meeting 18/03 12.15-13.00</desc>
 		<refs>
 			<ref>Minutes available after conference</ref>
 		</refs>
 	</item>
 		
-	<item duration="PT6H">
+	<item duration="PT11H">
 		<desc>Quality Assurance of code</desc>
 		<refs>
+			<ref>http://code.google.com/p/salesmen/source/detail?r=1099</ref>
+			<ref>http://code.google.com/p/salesmen/source/detail?r=1093</ref>
+			<ref>http://code.google.com/p/salesmen/source/detail?r=1092</ref>
 			<ref>http://code.google.com/p/salesmen/source/detail?r=1076</ref>
 			<ref>http://code.google.com/p/salesmen/source/detail?r=1075</ref>
 			<ref>http://code.google.com/p/salesmen/source/detail?r=1074</ref>
