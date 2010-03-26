@@ -53,7 +53,7 @@ public class User implements Serializable
 	@NotNull
 	@Length(min=3, max=32)
 	@Pattern(regex="[a-zA-Z]?[a-zA-Z0-9_]+",
-			 message="Usernames must start with a letter, and only contain letters, numbers, and undescores")
+			 message="Usernames must start with a letter, and only contain letters, numbers, and underscores")
 	public String getScreenName() 
 	{
 		return screenName;

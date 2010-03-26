@@ -78,10 +78,10 @@
 						</h:selectOneMenu>
 						<h:message for="country"/>
 
-						<h:outputLabel for="dob">Date of birth<em>*</em></h:outputLabel>
-						<rich:calendar id="dob" value="#{registerUserAccount.user.dob}" required="true" datePattern="MM/dd/yyyy"
+						<h:outputLabel for="dateOfBirth">Date of birth<em>*</em></h:outputLabel>
+						<rich:calendar id="dateOfBirth" value="#{registerUserAccount.user.dateOfBirth}" required="true" datePattern="MM/dd/yyyy"
 									buttonIcon="img/dtpick.gif" />
-						<h:message for="dob"/>
+						<h:message for="dateOfBirth"/>
 					</h:panelGrid>
 				</s:validateAll>
 			</div>
