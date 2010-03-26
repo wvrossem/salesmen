@@ -1,49 +1,47 @@
 package be.vub.salesmen.session;
 
-
-
 import javax.ejb.Remove;
 import javax.persistence.EntityManager;
 import java.io.Serializable;
-
-
 
 import org.jboss.seam.annotations.*;
 import org.jboss.seam.faces.FacesMessages;
 
 import be.vub.salesmen.entity.Auction;
- import static org.jboss.seam.ScopeType.CONVERSATION;
+import static org.jboss.seam.ScopeType.CONVERSATION;
 import org.jboss.seam.annotations.Scope;
 
 @Name("manageAuction")
 @Scope(CONVERSATION)
 public class ManageAuctionBean implements ManageAuction, Serializable 
 {
-	@In EntityManager entityManager;
-	//@In Auction auction;
-    Auction auction;
 	private static final long serialVersionUID = 5797405997183391745L;
-
+	
+	// Private attributes
+	Auction auction; 
 	private boolean inputIsOk=false;
-    private int categoryId;
+	private int categoryId;
 	
+	// In annotations
+	@In EntityManager entityManager;
+	//@in Auction auction
+
+	@Begin
+	public void createAuction()
+	{
+		if(this.auction==null)  //REQUIRED, otherwise view-fields will be emptied on error message
+		{
+			this.setAuction(new Auction());
+		}
+	}
+
 	
-
-                 @Begin(join = true)
-    public void createAuction()
-    {
-        if(this.auction==null)  //REQUIRED, otherwise view-fields will be emptied on error message
-        {
-           this.auction = new Auction();
-        }
-    }
-
-    public void checkInput()
+	public void checkInput()
 	{
 		if(this.auction.getStartingPrice()>0)
 		{
 			this.setInputIsOk(true);
-            //entityManager.persist(this.auction);
+			//entityManager.persist(auction);
 		}
 		else
 		{
@@ -51,41 +49,44 @@ public class ManageAuctionBean implements ManageAuction, Serializable
 		}
 	}
 
-   @End
-    public void confirm()
-    {
-        this.auction.setStatus(Auction.AuctionStatus.LISTED);
-        entityManager.merge(this.auction);
-    }
-	
-	public void setAuction(Auction auction)
-    {
-		this.auction = auction;
-	}
-
-
-	public Auction getAuction() {
-		return auction;
+	@End
+	public void confirm()
+	{
+		this.auction.setStatus(Auction.AuctionStatus.LISTED);
+		entityManager.merge(this.auction);
 	}
 	
 	@Destroy @Remove
-	public void destroy()
-    {}
+	public void destroy() {}
+	
+	// Public Attribute getters/setters with annotations 
+	public void setAuction(Auction auction)
+	{
+		this.auction = auction;
+	}
+	
+	public Auction getAuction()
+	{
+		return auction;
+	}
 
-
-	public void setInputIsOk(boolean inputIsOk) {
+	public void setInputIsOk(boolean inputIsOk)
+	{
 		this.inputIsOk = inputIsOk;
 	}
 
-
-	public boolean isInputIsOk() {
+	public boolean isInputIsOk()
+	{
 		return inputIsOk;
 	}
-        public int getCategoryId() {
-        return categoryId;
-    }
+	
+	public int getCategoryId()
+	{
+		return categoryId;
+	}
 
-    public void setCategoryId(int categoryId) {
-        this.categoryId = categoryId;
-    }
+	public void setCategoryId(int categoryId)
+	{
+		this.categoryId = categoryId;
+	}
 }

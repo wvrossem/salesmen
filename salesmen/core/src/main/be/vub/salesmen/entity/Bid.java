@@ -10,44 +10,45 @@ import org.hibernate.validator.Length;
 @Entity
 public class Bid implements Serializable
 {
-    /**
-	 * 
-	 */
 	private static final long serialVersionUID = -2396616177266665351L;
-	//attributes (you should probably edit these)
+	
+	// Private Attributes
     private Long id;
     private Integer version;
     private String name;
-
-    // add additional entity attributes
-
-    //attribute getters/setters with annotations (you probably should edit)
-
+	
+	// Public Attribute getters/setters with annotations 
     @Id @GeneratedValue
-    public Long getId() {
+    public Long getId()
+	{
         return id;
     }
 
-    public void setId(Long id) {
+    public void setId(Long id)
+	{
         this.id = id;
     }
 
     @Version
-    public Integer getVersion() {
+    public Integer getVersion()
+	{
         return version;
     }
 
     @SuppressWarnings("unused")
-	private void setVersion(Integer version) {
+	private void setVersion(Integer version)
+	{
         this.version = version;
     }
 
     @Length(max = 20)
-    public String getName() {
+    public String getName()
+	{
         return name;
     }
 
-    public void setName(String name) {
+    public void setName(String name)
+	{
         this.name = name;
     }
 

@@ -30,15 +30,15 @@ public interface BasicSearch {
 
     public TreeNodeImpl getCategoryTree();
 
-    public List suggest(Object begin);
+	public List suggest(Object begin);
 
 	public void nextPage();
 
 	public boolean isNextPageAvailable();
 
-    public boolean entityTypeUser();
+	public boolean entityTypeUser();
 
-    public boolean entityTypeAuction();
+	public boolean entityTypeAuction();
 
 	public void destroy();
 

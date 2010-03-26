@@ -1,53 +1,53 @@
 <!DOCTYPE composition PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <ui:composition xmlns="http://www.w3.org/1999/xhtml"
-    xmlns:s="http://jboss.com/products/seam/taglib"
-    xmlns:ui="http://java.sun.com/jsf/facelets"
-    xmlns:f="http://java.sun.com/jsf/core"
-    xmlns:h="http://java.sun.com/jsf/html"
-    xmlns:rich="http://richfaces.org/rich"
-    template="layout/template.xhtml">
+	xmlns:s="http://jboss.com/products/seam/taglib"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:rich="http://richfaces.org/rich"
+	template="layout/template.xhtml">
 
 <ui:define name="body">
 
-    <h:form id="userForm">
+	<h:form id="userForm">
 
-        <rich:panel>
-        <f:facet name="header">user</f:facet>
+		<rich:panel>
+		<f:facet name="header">user</f:facet>
 			<h:panelGrid columns="3" rowClasses="prop" columnClasses="name,value">
 				<h:outputLabel for="firstName">First name<em>*</em></h:outputLabel>
-                <h:inputText id="firstName" required="true"
-                                         value="#{userHome.instance.firstName}"/>
-                <h:message for="firstName"/>
+				<h:inputText id="firstName" required="true"
+										value="#{userHome.instance.firstName}"/>
+				<h:message for="firstName"/>
 				
 				<h:outputLabel for="lastName">Last name<em>*</em></h:outputLabel>
-                <h:inputText id="lastName" required="true"
-                                         value="#{userHome.instance.lastName}"/>
-                <h:message for="lastName"/>
+				<h:inputText id="lastName" required="true"
+										value="#{userHome.instance.lastName}"/>
+				<h:message for="lastName"/>
 				
 				<h:outputLabel for="gender">Gender<em>*</em></h:outputLabel>
-                <h:selectOneRadio id="gender" value="#{userHome.instance.lastName}" required="true">
-                    <f:selectItem itemValue="male" itemLabel="Male" />
-                    <f:selectItem itemValue="female" itemLabel="Female" />
-                </h:selectOneRadio>
-                <h:message for="gender"/>
+				<h:selectOneRadio id="gender" value="#{userHome.instance.lastName}" required="true">
+					<f:selectItem itemValue="male" itemLabel="Male" />
+					<f:selectItem itemValue="female" itemLabel="Female" />
+				</h:selectOneRadio>
+				<h:message for="gender"/>
 			</h:panelGrid>
 
-            <div style="clear:both"/>
+			<div style="clear:both"/>
 
-        </rich:panel>
+		</rich:panel>
 
-        <div class="actionButtons">
-            <h:commandButton id="update"
-                          value="Save"
-                         action="#{userHome.update}"
-                       rendered="#{userHome.managed}"/>
-            <s:button id="cancel"
-                   value="Cancel"
-                    view="/userProfileManagement.xhtml"/>
-        </div>
+		<div class="actionButtons">
+			<h:commandButton id="update"
+						value="Save"
+						action="#{userHome.update}"
+					rendered="#{userHome.managed}"/>
+			<s:button id="cancel"
+				value="Cancel"
+					view="/userProfileManagement.xhtml"/>
+		</div>
 
-    </h:form>
+	</h:form>
 
 </ui:define>
 

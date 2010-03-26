@@ -1,53 +1,52 @@
 <!DOCTYPE composition PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <ui:composition xmlns="http://www.w3.org/1999/xhtml"
-    xmlns:s="http://jboss.com/products/seam/taglib"
-    xmlns:ui="http://java.sun.com/jsf/facelets"
-    xmlns:f="http://java.sun.com/jsf/core"
-    xmlns:h="http://java.sun.com/jsf/html"
-    xmlns:rich="http://richfaces.org/rich"
-    template="layout/template.xhtml">
+	xmlns:s="http://jboss.com/products/seam/taglib"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:rich="http://richfaces.org/rich"
+	template="layout/template.xhtml">
 
 <ui:define name="body">
 
-    <h:form id="auctionForm">
+	<h:form id="auctionForm">
 
-        <rich:panel>
-            <f:facet name="header">auction</f:facet>
+		<rich:panel>
+			<f:facet name="header">auction</f:facet>
 
 				<s:validateAll>
 					<div class="section">
-					<h:outputLabel for="title">Enter a short description of the item you wish to sell</h:outputLabel>
-					<h:inputText id="title" required="true" value="#{manageAuction.auction.title}" />
-					<div class="validationError"><h:message for="title" /></div>
+						<h:outputLabel for="title">Enter a short description of the item you wish to sell</h:outputLabel>
+						<h:inputText id="title" required="true" value="#{manageAuction.auction.title}" />
+						<div class="validationError"><h:message for="title" /></div>
 					</div>
 
 					<div class="section">
-					<h:outputLabel for="price">Please enter the starting price for your auction (EUR)</h:outputLabel>
-					<h:inputText id="price" value="#{manageAuction.auction.startingPrice}" required="true">
-						<f:convertNumber minFractionDigits="2" maxFractionDigits="2" minIntegerDigits="1" />
-					</h:inputText>
-					<div class="validationError"><h:message for="price" /></div>
+						<h:outputLabel for="price">Please enter the starting price for your auction (EUR)</h:outputLabel>
+						<h:inputText id="price" value="#{manageAuction.auction.startingPrice}" required="true">
+							<f:convertNumber minFractionDigits="2" maxFractionDigits="2" minIntegerDigits="1" />
+						</h:inputText>
+						<div class="validationError"><h:message for="price" /></div>
 					</div>
 
 					<div class="section">
-					<h:outputLabel for="description">Please enter a description for the item you are trying to sell.</h:outputLabel>
-					<h:inputTextarea id="description" value="#{manageAuction.auction.description}" styleClass="description" />
-					<div class="validationError"><h:message for="description" /></div>
+						<h:outputLabel for="description">Please enter a description for the item you are trying to sell.</h:outputLabel>
+						<h:inputTextarea id="description" value="#{manageAuction.auction.description}" styleClass="description" />
+						<div class="validationError"><h:message for="description" /></div>
 					</div>
 
 				</s:validateAll>
 
-            <div style="clear:both"/>
+			<div style="clear:both"/>
 
-        </rich:panel>
+		</rich:panel>
 
-        <div class="actionButtons">
-            <h:commandButton  id="submit" value="Add auction" action="#{manageAuction.checkInput}"/>
-        </div>
+		<div class="actionButtons">
+			<h:commandButton  id="submit" value="Add auction" action="#{manageAuction.checkInput}"/>
+		</div>
 
-    </h:form>
+	</h:form>
 
 </ui:define>
-
 </ui:composition>

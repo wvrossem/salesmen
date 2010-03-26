@@ -7,8 +7,8 @@ import be.vub.salesmen.entity.SearchTerm;
 @Name("searchTermList")
 public class SearchTermList extends EntityQuery<SearchTerm>
 {
-    public SearchTermList()
-    {
-        setEjbql("select searchTerm from SearchTerm searchTerm");
-    }
+	public SearchTermList()
+	{
+		setEjbql("select searchTerm from SearchTerm searchTerm");
+	}
 }

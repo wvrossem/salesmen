@@ -1,51 +1,51 @@
 <!DOCTYPE composition PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <ui:composition xmlns="http://www.w3.org/1999/xhtml"
-    xmlns:s="http://jboss.com/products/seam/taglib"
-    xmlns:ui="http://java.sun.com/jsf/facelets"
-    xmlns:f="http://java.sun.com/jsf/core"
-    xmlns:h="http://java.sun.com/jsf/html"
-    xmlns:rich="http://richfaces.org/rich"
-    template="layout/template.xhtml">
+	xmlns:s="http://jboss.com/products/seam/taglib"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:rich="http://richfaces.org/rich"
+	template="layout/template.xhtml">
 
 <ui:define name="body">
 
-    <rich:panel>
-        <f:facet name="header">auctionList</f:facet>
+	<rich:panel>
+		<f:facet name="header">auctionList</f:facet>
 
-        <div class="results">
+		<div class="results">
 
-            <h:outputText value="No auction exists"
-                       rendered="#{empty auctionList.resultList}"/>
+			<h:outputText value="No auction exists"
+					rendered="#{empty auctionList.resultList}"/>
 
-            <h:dataTable id="auctionList" var="auction"
-                      value="#{auctionList.resultList}"
-                   rendered="#{not empty auctionList.resultList}">
-                <h:column>
-                    <f:facet name="header">Id</f:facet>
-                    #{auction.id}
-                </h:column>
-                <h:column>
-                    <f:facet name="header">Name</f:facet>
-                    <s:link id="auction"
-                         value="#{auction.name}"
-                   propagation="none"
-                         view="/home.xhtml">
-                        <f:param name="auctionId"
-                                value="#{auction.id}"/>
-                    </s:link>
-                </h:column>
-            </h:dataTable>
+			<h:dataTable id="auctionList" var="auction"
+					  value="#{auctionList.resultList}"
+				   rendered="#{not empty auctionList.resultList}">
+				<h:column>
+					<f:facet name="header">Id</f:facet>
+					#{auction.id}
+				</h:column>
+				<h:column>
+					<f:facet name="header">Name</f:facet>
+					<s:link id="auction"
+						 value="#{auction.name}"
+				propagation="none"
+						view="/home.xhtml">
+						<f:param name="auctionId"
+								value="#{auction.id}"/>
+					</s:link>
+				</h:column>
+			</h:dataTable>
 
-        </div>
+		</div>
 
-    </rich:panel>
+	</rich:panel>
 
-    <div class="actionButtons">
-        <s:button id="done"
-               value="Create auction"
-                view="/home.xhtml"/>
-    </div>
+	<div class="actionButtons">
+		<s:button id="done"
+			   value="Create auction"
+				view="/home.xhtml"/>
+	</div>
 
 </ui:define>
 

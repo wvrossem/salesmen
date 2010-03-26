@@ -7,8 +7,8 @@ import be.vub.salesmen.entity.UserRole;
 @Name("userRoleList")
 public class UserRoleList extends EntityQuery<UserRole>
 {
-    public UserRoleList()
-    {
-        setEjbql("select userRole from UserRole userRole");
-    }
+	public UserRoleList()
+	{
+		setEjbql("select userRole from UserRole userRole");
+	}
 }

@@ -14,71 +14,71 @@ public class UserRole implements Serializable
 {
 	private static final long serialVersionUID = 8164732519163535494L;
 
+	// Private Attributes
 	private Integer version;
+	private Long roleId;
+	private String name;
+	private boolean conditional;
+	private Set<UserRole> groups;
 
-    private Long roleId;
-    private String name;
-    private boolean conditional;
-    
-    private Set<UserRole> groups;
+	// Public Attribute getters/setters with annotations 
+	@Id @GeneratedValue(strategy = GenerationType.IDENTITY)
+	public Long getRoleId() 
+	{
+		return roleId;
+	}
 
-    @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
-    public Long getRoleId() 
-    {
-        return roleId;
-    }
+	public void setRoleId(Long roleId) 
+	{
+		this.roleId = roleId;
+	}
 
-    public void setRoleId(Long roleId) 
-    {
-        this.roleId = roleId;
-    }
+	@RoleName
+	public String getName() 
+	{
+		return name;
+	}
 
-    @RoleName
-    public String getName() 
-    {
-        return name;
-    }
+	public void setName(String name) {
+		this.name = name;
+	}
+	
+	@RoleGroups
+	@ManyToMany(targetEntity = UserRole.class)
+	@JoinTable(name = "UserRoleGroup", 
+		joinColumns = @JoinColumn(name = "RoleId"),
+		inverseJoinColumns = @JoinColumn(name = "MemberOf")
+		)
+	public Set<UserRole> getGroups()
+	{
+		return groups;
+	}
 
-    public void setName(String name) {
-        this.name = name;
-    }
-    
-    @RoleGroups
-    @ManyToMany(targetEntity = UserRole.class)
-    @JoinTable(name = "UserRoleGroup", 
-    	joinColumns = @JoinColumn(name = "RoleId"),
-    	inverseJoinColumns = @JoinColumn(name = "MemberOf")
-       )
-    public Set<UserRole> getGroups()
-    {
-       return groups;
-    }
+	public void setGroups(Set<UserRole> groups)
+	{
+		this.groups = groups;
+	}   
+	
+	@RoleConditional
+	public boolean isConditional()
+	{
+		return conditional;
+	}
 
-    public void setGroups(Set<UserRole> groups)
-    {
-       this.groups = groups;
-    }   
-    
-    @RoleConditional
-    public boolean isConditional()
-    {
-       return conditional;
-    }
+	public void setConditional(boolean conditional)
+	{
+		this.conditional = conditional;
+	}
 
-    public void setConditional(boolean conditional)
-    {
-       this.conditional = conditional;
-    }
+	@Version
+	public Integer getVersion() 
+	{
+		return version;
+	}
 
-    @Version
-    public Integer getVersion() 
-    {
-        return version;
-    }
-
-    @SuppressWarnings("unused")
+	@SuppressWarnings("unused")
 	private void setVersion(Integer version) 
-    {
-        this.version = version;
-    }
+	{
+		this.version = version;
+	}
 }

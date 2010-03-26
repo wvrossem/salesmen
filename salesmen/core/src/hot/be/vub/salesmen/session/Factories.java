@@ -9,10 +9,10 @@ just add one new annotated method to this class. */
 @Name("factories")
 public class Factories
 {
-
-  @Factory("countries")
-  public Country[] getCountries(){
-    return Country.values();
-  }
-
+	
+	// Factory for the list of countries a User can live in.
+	@Factory("countries")
+	public Country[] getCountries(){
+		return Country.values();
+	}
 }

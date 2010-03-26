@@ -9,5 +9,3 @@ public interface ManageAuction
 	public void checkInput();
 	public void confirm();
 }
-
-

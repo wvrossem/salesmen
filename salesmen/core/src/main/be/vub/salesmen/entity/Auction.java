@@ -27,7 +27,13 @@ import org.jboss.seam.annotations.Name;
 @Table(name="Auction")
 public class Auction implements Serializable
 {
+
+	private static final long serialVersionUID = 2195670493386700385L;
+	
+	//Private Constants
 	private final double DEFAULT_STARTING_PRICE=1.00;
+	
+	// Public Enumerations
 	public enum AuctionStatus
 	{
 		UNLISTED,
@@ -36,55 +42,54 @@ public class Auction implements Serializable
 		CLOSED,
 		REMOVED
 	}
-    /**
-	 * 
-	 */
-	private static final long serialVersionUID = 2195670493386700385L;
-	//attributes (you should probably edit these)
-    private int id;
-    private Integer version;
+	
+	// Private Attributes
+	private int id;
+	private Integer version;
+	//private User owner;
+	//private Category category;
+	private String title;
+	private String description;
+	//private Date endDate;
+	//private Bid highBid;
+	//private Bid[] bids;
+	private double startingPrice;
+	private AuctionStatus status=AuctionStatus.UNLISTED;
+	
+	public Auction()
+	{
+		this.setStartingPrice(DEFAULT_STARTING_PRICE);
+		this.setStatus(AuctionStatus.UNLISTED);
+	}
 
-    // add additional entity attributes
-   // private User owner;
-    //private Category category;
-    private String title;
-    private String description;
-    //private Date endDate;
-    //private Bid highBid;
-   // private Bid[] bids;
-    private double startingPrice;
-    private AuctionStatus status=AuctionStatus.UNLISTED;
-    
-    public Auction()
-    {
-    	this.setStartingPrice(DEFAULT_STARTING_PRICE);
-        this.setStatus(AuctionStatus.UNLISTED);
-    }
+	// Public Attribute getters/setters with annotations 
+	@Id @GeneratedValue(strategy = GenerationType.IDENTITY)
+	public int getId()
+	{
+		return id;
+	}
 
-    @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
-    public int getId() {
-        return id;
-    }
+	public void setId(int id)
+	{
+		this.id = id;
+	}
 
-    public void setId(int id) {
-        this.id = id;
-    }
+	@Version
+	public Integer getVersion()
+	{
+		return version;
+	}
 
-    @Version
-    public Integer getVersion() {
-        return version;
-    }
-
-    
+	
 	private void setVersion(Integer version)
-    {
-        this.version = version;
-    }
+	{
+		this.version = version;
+	}
 
 /*
-    @NotNull
-    @ManyToOne
-    @JoinColumn(name = "USER_ID")
+	@NotNull
+	@ManyToOne
+	@JoinColumn(name = "USER_ID")
 	public User getOwner() {
 		return owner;
 	}
@@ -104,22 +109,26 @@ public class Auction implements Serializable
 		this.category = category;
 	}
 */
-    @NotNull
-    @Length(min=5, max=32)
-	public String getTitle() {
+	@NotNull
+	@Length(min=5, max=32)
+	public String getTitle()
+	{
 		return title;
 	}
 
-	public void setTitle(String title) {
+	public void setTitle(String title)
+	{
 		this.title = title;
 	}
 
 	@NotNull
-	public String getDescription() {
+	public String getDescription()
+	{
 		return description;
 	}
 
-	public void setDescription(String description) {
+	public void setDescription(String description)
+	{
 		this.description = description;
 	}
 /*
@@ -142,21 +151,25 @@ public class Auction implements Serializable
 	}
 */
 	@NotNull
-  // @Pattern(regex="^[0-9]*\.?[0-9]+$",
-  // 	message="Illegal amount")
-	public double getStartingPrice() {
+	//@Pattern(regex="^[0-9]*\.?[0-9]+$",
+	//		 message="Illegal amount")
+	public double getStartingPrice()
+	{
 		return startingPrice;
 	}
 
-	public void setStartingPrice(double startingPrice) {
+	public void setStartingPrice(double startingPrice)
+	{
 		this.startingPrice = startingPrice;
 	}
 
-	public void setStatus(AuctionStatus status) {
+	public void setStatus(AuctionStatus status)
+	{
 		this.status = status;
 	}
 
-	public AuctionStatus getStatus() {
+	public AuctionStatus getStatus()
+	{
 		return status;
 	}
 

@@ -11,7 +11,14 @@ public class EmailClass implements Serializable {
 	
 	private static final long serialVersionUID = 4629653426165185678L;
 	
-	public EmailClass(String fullName, String emailAddress, String subject, String content) {
+	// Private attributes
+	private String fullName;
+	private String emailAddress;
+	private String subject;
+	private String content;
+	
+	public EmailClass(String fullName, String emailAddress, String subject, String content)
+	{
 		this.fullName = fullName;
 		this.emailAddress = emailAddress;
 		this.subject = subject;
@@ -20,48 +27,52 @@ public class EmailClass implements Serializable {
 	
 	public EmailClass() {}
 	
-	private String fullName;
-	private String emailAddress;
-	private String subject;
-	private String content;
-	
+	// Public getter/setters with annotations
 	@NotNull
 	@Length(min=3, max=64)
-	public String getFullName() {
+	public String getFullName()
+	{
 		return fullName;
 	}
 	
-	public void setFullName(String fullName) {
+	public void setFullName(String fullName)
+	{
 		this.fullName = fullName;
 	}
 	
 	@NotNull
 	@Length(min=3, max=32)
-	public String getEmailAddress() {
+	public String getEmailAddress()
+	{
 		return emailAddress;
 	}
 	
-	public void setEmailAddress(String emailAddress) {
+	public void setEmailAddress(String emailAddress)
+	{
 		this.emailAddress = emailAddress;
 	}
 	
 	@NotNull
 	@Length(min=3, max=64)
-	public String getSubject() {
+	public String getSubject()
+	{
 		return subject;
 	}
 	
-	public void setSubject(String subject) {
+	public void setSubject(String subject)
+	{
 		this.subject = subject;
 	}
 	
 	@NotNull
 	@Length(min=3, max=1024)
-	public String getContent() {
+	public String getContent()
+	{
 		return content;
 	}
 	
-	public void setContent(String content) {
+	public void setContent(String content)
+	{
 		this.content = content;
 	}
 }

@@ -10,24 +10,24 @@ import be.vub.salesmen.entity.UserAccount;
 @Name("userAccountHome")
 public class UserAccountHome extends EntityHome<UserAccount>
 {
-    @RequestParameter Long userAccountId;
+	@RequestParameter Long userAccountId;
 
-    @Override
-    public Object getId()
-    {
-        if (userAccountId == null)
-        {
-            return super.getId();
-        }
-        else
-        {
-            return userAccountId;
-        }
-    }
+	@Override
+	public Object getId()
+	{
+		if (userAccountId == null)
+		{
+				return super.getId();
+		}
+		else
+		{
+				return userAccountId;
+		}
+	}
 
-    @Override @Begin
-    public void create() {
-        super.create();
-    }
-
+	@Override @Begin
+	public void create()
+	{
+		super.create();
+	}
 }

@@ -24,6 +24,7 @@ public class RegisterUserAccountBean implements RegisterUserAccount, Serializabl
 {
 	private static final long serialVersionUID = -5946808103467846878L;
 
+	// Private attributes
 	private User user;
 	private UserAccount newAccount;
 	private String username;
@@ -31,19 +32,18 @@ public class RegisterUserAccountBean implements RegisterUserAccount, Serializabl
 	private String passwordConfirmation;
 	private boolean passwordVerified;
 	
+	// In annotations
 	@In EntityManager entityManager;
-
 	@In Identity identity;
-	
 	@In IdentityManager identityManager;
 	
 	@Begin(join = true)
 	public void createUser()
 	{
-        if(this.user == null)//REQUIRED, otherwise view-fields will be emptied on error message
-        {
-		    user = new User();
-        }
+		if(this.user == null)//REQUIRED, otherwise view-fields will be emptied on error message
+		{
+			user = new User();
+		}
 	}
 
 	public void verifyPassword()
@@ -65,12 +65,11 @@ public class RegisterUserAccountBean implements RegisterUserAccount, Serializabl
 			user.setFirstName("John");
 			user.setLastName("Smith");
 			user.setEmail(account.getUsername() + "@nowhere.com");
-      user.setGender(User.Gender.male);
-      //user.setDob(new Date());
-            user.setDateOfBirth(new Date());
-      user.setMemberSince(new Date());
-      user.setCountry(Country.BE);
-      user.setCity("Brussels");
+			user.setGender(User.Gender.male);
+			user.setDateOfBirth(new Date());
+			user.setMemberSince(new Date());
+			user.setCountry(Country.BE);
+			user.setCity("Brussels");
 			entityManager.persist(user);
 		}
 		account.setUser(user);
@@ -80,7 +79,7 @@ public class RegisterUserAccountBean implements RegisterUserAccount, Serializabl
 	@End
 	public void createUserAccount()
 	{
-    user.setMemberSince(new Date());
+	user.setMemberSince(new Date());
 		entityManager.persist(user);
 		new RunAsOperation()
 		{
@@ -99,8 +98,12 @@ public class RegisterUserAccountBean implements RegisterUserAccount, Serializabl
 		identity.getCredentials().setPassword(password);
 		identity.login();
 	}
+		
+	@Destroy @Remove
+	public void destroy() {}
 
-  public User getUser()
+	// Public Attribute getters/setters with annotations 
+	public User getUser()
 	{
 		return user;
 	}
@@ -114,32 +117,29 @@ public class RegisterUserAccountBean implements RegisterUserAccount, Serializabl
 	{
 		this.username = username;
 	}
-	   
+		
 	public String getPassword()
 	{
 		return password;
 	}
-	   
+		
 	public void setPassword(String password)
 	{
 		this.password = password;
 	}
-	   
+		
 	public String getPasswordConfirmation()
 	{
 		return passwordConfirmation;
 	}
-	   
+		
 	public void setPasswordConfirmation(String passwordConfirmation)
 	{
 		this.passwordConfirmation = passwordConfirmation;
 	}
-	   
+		
 	public boolean isPasswordVerified()
 	{
 		return passwordVerified;
 	}
-	   
-	@Destroy @Remove
-	public void destroy() {}
 }

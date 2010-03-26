@@ -7,8 +7,8 @@ import be.vub.salesmen.entity.UserAccount;
 @Name("userAccountList")
 public class UserAccountList extends EntityQuery<UserAccount>
 {
-    public UserAccountList()
-    {
-        setEjbql("select userAccount from UserAccount userAccount");
-    }
+	public UserAccountList()
+	{
+		setEjbql("select userAccount from UserAccount userAccount");
+	}
 }
