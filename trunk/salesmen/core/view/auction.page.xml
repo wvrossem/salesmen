@@ -1,2 +1,3 @@
-<page view-id="/auction.xhtml" action="viewAuction.start">
+<page view-id="/auction.xhtml" action="#{viewAuction.start()}">
+    <param name="auctionId" value="#{viewAuction.auctionId}" />
 </page>
