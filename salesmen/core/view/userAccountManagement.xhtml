@@ -12,7 +12,7 @@
 
 	<rich:panel>
 		<f:facet name="header">Account Management</f:facet>
-			<h:outputText value="Username: #{userAccountHome.instance.username}"/>
+			<h:outputText value="Username: #{userAccountHome.instance.username'}"/>
 
 			<div style="clear:both"/>
 
@@ -20,10 +20,10 @@
 
 	<div class="actionButtons">
 		<s:button id="update"
-			   value="Update"
+			   value="#{messages['salesmen.Action.Update']}"
 				view="/userAccountManagementEdit.xhtml"/>
 		<s:button id="cancel"
-			   value="Cancel"
+			   value="#{messages['salesmen.Action.Cancel']}"
 				view="/userManagement.xhtml"/>
 	</div>
 
