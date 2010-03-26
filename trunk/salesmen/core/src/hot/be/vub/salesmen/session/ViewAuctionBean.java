@@ -15,69 +15,62 @@ import java.util.List;
 
 import static org.jboss.seam.ScopeType.CONVERSATION;
 
-/**
- * Created by IntelliJ IDEA.
- * User: Bart
- * Date: 25-mrt-2010
- * Time: 11:58:23
- * To change this template use File | Settings | File Templates.
- */
-
-
 @Scope(CONVERSATION)
 @Name("viewAuction")
 public class ViewAuctionBean implements ViewAuction   , Serializable 
 {
-    @In EntityManager entityManager;
+	private static final long serialVersionUID = 5797405497183391745L;
+	
+	//Attributes
+	Auction auction;
 
+	//@In annotations
+	@In EntityManager entityManager;
 
-    Auction auction;
-    private static final long serialVersionUID = 5797405497183391745L;
-
-    /*
-
-     */
-    @Begin(join=true)
-    public void start()
-    {
-        int id=1;
-        StringBuilder qry = new StringBuilder();
+	@Begin(join=true)
+	public void start()
+	{
+		int id=1;
+		StringBuilder qry = new StringBuilder();
 			qry.append("from Auction e");
 			qry.append(" WHERE id="+id+"");
-            qry.append(" AND e.status = " + Auction.AuctionStatus.LISTED.ordinal());
+			qry.append(" AND e.status = " + Auction.AuctionStatus.LISTED.ordinal());
 
-        this.auction = (Auction)entityManager.createQuery(qry.toString()).getSingleResult()        ;
+		this.auction = (Auction)entityManager.createQuery(qry.toString()).getSingleResult()        ;
 
 
-        if(this.auction==null)  //REQUIRED, otherwise view-fields will be emptied on error message
-        {
-           this.auction = new Auction();
-        }
-    }
-    
-    public void selectAuction(Auction a)
-    {
-        this.auction=a;
-    }
+		if(this.auction==null)  //REQUIRED, otherwise view-fields will be emptied on error message
+		{
+		this.auction = new Auction();
+		}
+	}
+	
+	public void selectAuction(Auction a)
+	{
+		this.auction=a;
+	}
 
-    /*
-    Bid on the current auction
-     */
-    public void bid()
-    {
-        if(this.auction!=null)
-        {
-            //...
-            this.auction=null;
-        }
-    }
+	/*
+	Bid on the current auction
+	*/
+	public void bid()
+	{
+		if(this.auction!=null)
+		{
+			//...
+			this.auction=null;
+		}
+	}
 
-    public Auction getAuction() {
-        return auction;
-    }
+	//Public getters/setters
+	public Auction getAuction()
+	{
+		return auction;
+	}
 
-    public void setAuction(Auction auction) {
-        this.auction = auction;
-    }
-    
+	public void setAuction(Auction auction)
+	{
+		this.auction = auction;
+	}
+	
 }

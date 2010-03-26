@@ -20,30 +20,23 @@ insert into UserAccountRoles (accountid, roleid) values (4, 1);
 insert into UserRoleGroup (roleid, memberof) values (2, 1);
 
 insert into Category (name) values ('Root category');
---insert into Category (name,parent_id) values ('Vehicles',1);
---insert into Category (name,parent_id) values ('Immo',1);
+	insert into Category (name,parent_id) values ('Book',1);
+		insert into Category (name,parent_id) values ('Literature', 2);
 
+	insert into Category (name,parent_id) values ('Music, Moves & Games',1);
+		insert into Category (name,parent_id) values ('Movies & TV', 4);
 
-insert into Category (name,parent_id) values ('Book',1);
-  insert into Category (name,parent_id) values ('Literature', 2);
+	insert into Category (name,parent_id) values ('Electronics',1);
+		insert into Category (name,parent_id) values ('TV & Video', 6);
 
-insert into Category (name,parent_id) values ('Music, Moves & Games',1);
-  insert into Category (name,parent_id) values ('Movies & TV', 4);
-
-insert into Category (name,parent_id) values ('Electronics',1);
-  insert into Category (name,parent_id) values ('TV & Video', 6);
-
-insert into Category (name,parent_id) values ('Health & Beauty',1);
-  insert into Category (name,parent_id) values ('Grocery', 8);
+	insert into Category (name,parent_id) values ('Health & Beauty',1);
+		insert into Category (name,parent_id) values ('Grocery', 8);
   
 insert into Category (name,parent_id) values ('Clothing & Shoes ');
-  insert into Category (name,parent_id) values ('Accessories', 10);
+	insert into Category (name,parent_id) values ('Accessories', 10);
 
 insert into Category (name,parent_id) values ('Sports & Outdoor');
-  insert into Category (name,parent_id) values ('Exercise & Fitness', 12);
+	insert into Category (name,parent_id) values ('Exercise & Fitness', 12);
 
 insert into Category (name,parent_id) values ('Tools & Auto');
-  insert into Category (name,parent_id) values ('Power & Hand Tools', 14);
-
-
-
+	insert into Category (name,parent_id) values ('Power & Hand Tools', 14);

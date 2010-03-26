@@ -13,156 +13,167 @@ import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.concurrent.atomic.AtomicReference;
 
 @Stateful
 @Name("advancedSearch")
 @Scope(ScopeType.SESSION)
-public class AdvancedSearchBean implements AdvancedSearch {
+public class AdvancedSearchBean implements AdvancedSearch
+{
 
-    @PersistenceContext
+	@PersistenceContext
 	private EntityManager entityManager;
 
-    String includeTerm;
-    String excludeTerm;
+	String includeTerm;
+	String excludeTerm;
 
-    boolean searchAuctionTitle;
-    boolean searchAuctionDescription;
-    boolean searchUser;
+	boolean searchAuctionTitle;
+	boolean searchAuctionDescription;
+	boolean searchUser;
 
-    String category;
-    String tags;
-    
-    User user = null;
+	String category;
+	String tags;
+	
+	User user = null;
 
-    int priceMin;
-    int priceMax;
+	int priceMin;
+	int priceMax;
 
-    private int pageSize = 10;
+	private int pageSize = 10;
 	private int page;
 
 	private boolean nextPageAvailable;
 
-    @DataModel
+	@DataModel
 	private List entities;
 
 
-    public String getIncludeTerm() {
-        return includeTerm;  
-    }
+	public String getIncludeTerm()
+	{
+		return includeTerm;  
+	}
 
-    public void setIncludeTerm(String term) {
-        this.includeTerm = term;
-    }
+	public void setIncludeTerm(String term)
+	{
+		this.includeTerm = term;
+	}
 
-    public String getExcludeTerm() {
-        return excludeTerm;
-    }
+	public String getExcludeTerm()
+	{
+		return excludeTerm;
+	}
 
-    public void setExcludeTerm(String term) {
-        this.excludeTerm = term;
-    }
+	public void setExcludeTerm(String term)
+	{
+		this.excludeTerm = term;
+	}
 
-    public boolean getSearchAuctionTitle() {
-        return searchAuctionTitle;
-    }
+	public boolean getSearchAuctionTitle()
+	{
+		return searchAuctionTitle;
+	}
 
-    public void setSearchAuctionTitle(boolean searchTitle) {
-        this.searchAuctionTitle = searchTitle;
-    }
+	public void setSearchAuctionTitle(boolean searchTitle)
+	{
+		this.searchAuctionTitle = searchTitle;
+	}
 
-    public boolean getSearchAuctionDescription() {
-        return searchAuctionDescription;
-    }
+	public boolean getSearchAuctionDescription()
+	{
+		return searchAuctionDescription;
+	}
 
-    public void setSearchAuctionDescription(boolean searchDescription) {
-        this.searchAuctionDescription = searchDescription;
-    }
+	public void setSearchAuctionDescription(boolean searchDescription)
+	{
+		this.searchAuctionDescription = searchDescription;
+	}
 
-    public boolean isSearchUser() {
-        return searchUser;
-    }
+	public boolean isSearchUser()
+	{
+		return searchUser;
+	}
 
-    public void setSearchUser(boolean searchUser) {
-        this.searchUser = searchUser;
-    }
+	public void setSearchUser(boolean searchUser)
+	{
+		this.searchUser = searchUser;
+	}
 
-    public int getPageSize() {
-        return pageSize;
-    }
+	public int getPageSize()
+	{
+		return pageSize;
+	}
 
-    public void setPageSize(int pageSize) {
-        this.pageSize = pageSize;
-    }
-    
-    private void queryEntities() {
+	public void setPageSize(int pageSize)
+	{
+		this.pageSize = pageSize;
+	}
+	
+	private void queryEntities()
+	{
 
 		StringBuilder qry = new StringBuilder();
 		
 		qry.append("from Auction a where upper(a.title) like upper(#{includePattern})");
 		
-		if (searchAuctionTitle) {
+		if (searchAuctionTitle)
+		{
 			//qry.append(" and ");
 			qry.append(" and upper(a.title) not like upper(#{excludePattern})");
 		}
 		
-		if (searchAuctionDescription) {
+		if (searchAuctionDescription)
+		{
 			qry.append(" and upper(a.description) like upper(#includePattern)");
 			qry.append(" and upper(a.description) not like upper(#{excludePattern})");
 		}
 		
-		if (user != null) {	
+		if (user != null)
+		{	
 			qry.append(" and a.owner = #{user.userId}");
 		}
 		
 		List results = entityManager.createQuery(qry.toString())
 			.setMaxResults(pageSize) //+1?
-            .setFirstResult( page * pageSize )
-            .getResultList(); 
+			.setFirstResult( page * pageSize )
+			.getResultList(); 
 
 		nextPageAvailable = results.size() > pageSize;
-		if (nextPageAvailable) {
+		if (nextPageAvailable)
+		{
 			entities = new ArrayList(results.subList(0, pageSize));
 		} else {
 			entities = results;
 		}
 	}
 
-    public void find() {
+	public void find()
+	{
 		page = 0;
 		queryEntities();
-    }
-
-    public List auctionsOfUser(User user) {
-        AtomicReference<String> qry = new AtomicReference<String>("from Auction a where a.owner = #{user.userId}");
-        return entityManager.createQuery(qry.get()).getResultList();
-    }
-
-    public List auctionOfUser(String userName) {
-        return null;  //To change body of implemented methods use File | Settings | File Templates.
-    }
-
-    @Factory(value = "includePattern", scope = ScopeType.EVENT)
-	public String getSearchIncludePattern() {
+	}
+	
+	@Factory(value = "includePattern", scope = ScopeType.EVENT)
+	public String getSearchIncludePattern()
+	{
 		return includeTerm == null ? "%" : '%' + includeTerm.replace('*', '%') + '%';
 	}
 	
 	@Factory(value = "excludePattern", scope = ScopeType.EVENT)
-	public String getSearchExcludePattern() {
+	public String getSearchExcludePattern()
+	{
 		return excludeTerm == null ? "%" : '%' + excludeTerm.replace('*', '%') + '%';
 	}
 
-    public void nextPage() {
+	public void nextPage()
+	{
 		page++;
 		queryEntities();
-    }
+	}
 
-    public boolean isNextPageAvailable() {
-        return false;
-    }
+	public boolean isNextPageAvailable()
+	{
+		return false;
+	}
 
-    @Remove
-    public void destroy() {
-        
-    }
+	@Remove
+	public void destroy() {}
 }       

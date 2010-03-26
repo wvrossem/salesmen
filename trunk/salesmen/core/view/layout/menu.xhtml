@@ -1,32 +1,32 @@
 <rich:toolBar
-    xmlns="http://www.w3.org/1999/xhtml"
-    xmlns:ui="http://java.sun.com/jsf/facelets"
-    xmlns:h="http://java.sun.com/jsf/html"
-    xmlns:f="http://java.sun.com/jsf/core"
-    xmlns:s="http://jboss.com/products/seam/taglib"
-    xmlns:rich="http://richfaces.org/rich">
-    <rich:toolBarGroup>
-        <h:outputText value="#{projectName}:"/>
-        <s:link id="menuHomeId" view="/home.xhtml" value="Home" propagation="none"/>
-    </rich:toolBarGroup>
-    <s:link view="/userList.xhtml" value="User List" propagation="none"/>
-    <s:link view="/userAccountList.xhtml" value="UserAccount List" propagation="none"/>
-    <s:link view="/userRoleList.xhtml" value="UserRole List" propagation="none"/>
-    <s:link view="/basicSearch.xhtml" value="#{messages['salesmen.BasicSearch.BasicSearch']}" propagation="none"/>
+	xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:s="http://jboss.com/products/seam/taglib"
+	xmlns:rich="http://richfaces.org/rich">
+	<rich:toolBarGroup>
+		<h:outputText value="#{projectName}:"/>
+		<s:link id="menuHomeId" view="/home.xhtml" value="Home" propagation="none"/>
+	</rich:toolBarGroup>
+	<s:link view="/userList.xhtml" value="User List" propagation="none"/>
+	<s:link view="/userAccountList.xhtml" value="UserAccount List" propagation="none"/>
+	<s:link view="/userRoleList.xhtml" value="UserRole List" propagation="none"/>
+	<s:link view="/basicSearch.xhtml" value="#{messages['salesmen.BasicSearch.BasicSearch']}" propagation="none"/>
     <s:link view="/createAuction.xhtml" value="Create auction" rendered="#{not identity.loggedIn}" />
-    <s:link view="/searchTermList.xhtml" value="SearchTerm List" propagation="none"/>
-    <s:link view="/advancedSearch.xhtml" value="Advanced Search" propagation="none"/>
+	<s:link view="/searchTermList.xhtml" value="SearchTerm List" propagation="none"/>
+	<s:link view="/advancedSearch.xhtml" value="Advanced Search" propagation="none"/>
 	<s:link view="/sendEmail.xhtml" value="Send An E-mail" propagation="none"/>
-    <!-- @newMenuItem@ -->
-    <rich:toolBarGroup location="right">
-        <s:link id="menuSignUpId" view="/register.xhtml" value="Sign Up!" rendered="#{not identity.loggedIn}" propagation="none"/>
-        <h:outputText id="menuWelcomeId" value="signed in as: " rendered="#{identity.loggedIn}"/>
-		<s:link id="userAccount"
-                         value="#{authenticatedUser.username}"
-                   propagation="none"
-                         view="/userManagement.xhtml"
-						 rendered="#{identity.loggedIn}"/>
-        <s:link id="menuLoginId" view="/login.xhtml" value="Login" rendered="#{not identity.loggedIn}" propagation="none"/>
-        <s:link id="menuLogoutId" view="/home.xhtml" action="#{identity.logout}" value="Logout" rendered="#{identity.loggedIn}" propagation="none"/>
-    </rich:toolBarGroup>
+	<!-- @newMenuItem@ -->
+	<rich:toolBarGroup location="right">
+		<s:link id="menuSignUpId" view="/register.xhtml" value="Sign Up!" rendered="#{not identity.loggedIn}" propagation="none"/>
+		<h:outputText id="menuWelcomeId" value="signed in as: " rendered="#{identity.loggedIn}"/>
+		<s:link propagation="none"
+						 id="userAccount"
+					  value="#{authenticatedUser.username}"
+					   view="/userManagement.xhtml"
+				   rendered="#{identity.loggedIn}"/>
+		<s:link id="menuLoginId" view="/login.xhtml" value="Login" rendered="#{not identity.loggedIn}" propagation="none"/>
+		<s:link id="menuLogoutId" view="/home.xhtml" action="#{identity.logout}" value="Logout" rendered="#{identity.loggedIn}" propagation="none"/>
+	</rich:toolBarGroup>
 </rich:toolBar>

@@ -21,116 +21,117 @@ public class UserAccount implements Serializable
 	private static final long serialVersionUID = -4294661352692699050L;
 	private Integer version;
 
+	// Private Attributes
 	private Long accountId;
 	private String username;
 	private String passwordHash;
 	private String passwordSalt;
 	private boolean enabled;
-  private long activationKey;
+	private Set<UserRole> roles;
+	private User user;
+	private long activationKey;
 
-    private Set<UserRole> roles;
-    private User user;
+	// Public Attribute getters/setters with annotations 
+	@Id @GeneratedValue(strategy = GenerationType.IDENTITY)
+	public Long getAccountId() 
+	{
+		return accountId;
+	}
 
-    @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
-    public Long getAccountId() 
-    {
-        return accountId;
-    }
+	public void setAccountId(Long accountId) 
+	{
+		this.accountId = accountId;
+	}
 
-    public void setAccountId(Long accountId) 
-    {
-        this.accountId = accountId;
-    }
+	@NotNull
+	@UserPrincipal
+	public String getUsername() 
+	{
+		return username;
+	}
 
-    @NotNull
-    @UserPrincipal
-    public String getUsername() 
-    {
-        return username;
-    }
+	public void setUsername(String username) 
+	{
+		this.username = username;
+	}
 
-    public void setUsername(String username) 
-    {
-        this.username = username;
-    }
+	@UserPassword
+	public String getPasswordHash() 
+	{
+		return passwordHash;
+	}
+	
+	public void setPasswordHash(String passwordHash)
+	{
+		this.passwordHash = passwordHash;
+	}
+	
+	@PasswordSalt
+	public String getPasswordSalt()
+	{
+		return passwordSalt;
+	}
+	
+	public void setPasswordSalt(String passwordSalt)
+	{
+		this.passwordSalt = passwordSalt;
+	}
+	
+	@UserEnabled
+	public boolean isEnabled()
+	{
+		return enabled;
+	}
 
-    @UserPassword
-    public String getPasswordHash() 
-    {
-    	return passwordHash;
-    }
-    
-    public void setPasswordHash(String passwordHash)
-    {
-    	this.passwordHash = passwordHash;
-    }
-    
-    @PasswordSalt
-    public String getPasswordSalt()
-    {
-       return passwordSalt;
-    }
-    
-    public void setPasswordSalt(String passwordSalt)
-    {
-       this.passwordSalt = passwordSalt;
-    }
-    
-    @UserEnabled
-    public boolean isEnabled()
-    {
-       return enabled;
-    }
+	public void setEnabled(boolean enabled)
+	{
+		this.enabled = enabled;      
+	}
+	
+	public long getActivationKey()
+	{
+		return activationKey;
+	}
 
-    public void setEnabled(boolean enabled)
-    {
-       this.enabled = enabled;      
-    }
+	public void setActivationKey(long activationKey)
+	{
+		this.activationKey = activationKey;
+	}
 
-    public long getActivationKey()
-	  {
-		  return activationKey;
-	  }
-
-	  public void setActivationKey(long activationKey)
-	  {
-		  this.activationKey = activationKey;
-	  }
-    
-    @UserRoles
-    @ManyToMany(targetEntity = UserRole.class)
-    @JoinTable(name = "UserAccountRoles",
-    	joinColumns = @JoinColumn(name = "AccountId"),
-    	inverseJoinColumns = @JoinColumn(name = "RoleId"))
-    public Set<UserRole> getRoles()
-    {
-    	return roles;
-    }
-    
-    public void setRoles(Set<UserRole> roles)
-    {
-    	this.roles = roles;
-    }
-    
-    @OneToOne
-    @JoinColumn(name = "userid")
-    public User getUser() {
-    	return user;
-    }
-    
-    public void setUser(User user) {
-    	this.user = user;
-    }
-    
-    @Version
-    public Integer getVersion() 
-    {
-        return version;
-    }
+	@UserRoles
+	@ManyToMany(targetEntity = UserRole.class)
+	@JoinTable(name = "UserAccountRoles",
+		joinColumns = @JoinColumn(name = "AccountId"),
+		inverseJoinColumns = @JoinColumn(name = "RoleId"))
+	public Set<UserRole> getRoles()
+	{
+		return roles;
+	}
+	
+	public void setRoles(Set<UserRole> roles)
+	{
+		this.roles = roles;
+	}
+	
+	@OneToOne
+	@JoinColumn(name = "userid")
+	public User getUser() {
+		return user;
+	}
+	
+	public void setUser(User user) {
+		this.user = user;
+	}
+	
+	@Version
+	public Integer getVersion() 
+	{
+		return version;
+	}
 
 	@SuppressWarnings("unused")
 	private void setVersion(Integer version) 
-    {
-        this.version = version;
-    }
+	{
+		this.version = version;
+	}
 }

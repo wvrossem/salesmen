@@ -11,17 +11,17 @@ import org.jboss.seam.international.StatusMessages;
 @Name("placeAuction")
 public class PlaceAuctionBean implements PlaceAuction
 {
-    @Logger private Log log;
+	@Logger private Log log;
 
-    @In StatusMessages statusMessages;
+	@In StatusMessages statusMessages;
 
-    public void placeAuction()
-    {
-        // implement your business logic here
-        log.info("placeAuction.placeAuction() action called");
-        statusMessages.add("placeAuction");
-    }
+	public void placeAuction()
+	{
+		// implement your business logic here
+		log.info("placeAuction.placeAuction() action called");
+		statusMessages.add("placeAuction");
+	}
 
-    // add additional action methods
+	// add additional action methods
 
 }

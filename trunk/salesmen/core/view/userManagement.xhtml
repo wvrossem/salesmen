@@ -1,29 +1,28 @@
 <!DOCTYPE composition PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <ui:composition xmlns="http://www.w3.org/1999/xhtml"
-    xmlns:s="http://jboss.com/products/seam/taglib"
-    xmlns:ui="http://java.sun.com/jsf/facelets"
-    xmlns:f="http://java.sun.com/jsf/core"
-    xmlns:h="http://java.sun.com/jsf/html"
-    xmlns:rich="http://richfaces.org/rich"
-    template="layout/template.xhtml">
+	xmlns:s="http://jboss.com/products/seam/taglib"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:rich="http://richfaces.org/rich"
+	template="layout/template.xhtml">
 
 <ui:define name="body">
 
-<rich:toolBar>
-    <rich:toolBarGroup>
-        <h:outputText value="User Management:"/>
-    </rich:toolBarGroup>
-    <s:link view="/userProfileManagement.xhtml" value="Profile" propagation="none">
-		<f:param name="userId"
-                value="#{authenticatedUser.user.userId}"/>
-	</s:link>
-    <s:link view="/userAccountManagement.xhtml" value="Account" propagation="none">
-		<f:param name="userAccountId"
-                value="#{authenticatedUser.accountId}"/>
-	</s:link>
-</rich:toolBar>
+	<rich:toolBar>
+		<rich:toolBarGroup>
+			<h:outputText value="User Management:"/>
+		</rich:toolBarGroup>
+		<s:link view="/userProfileManagement.xhtml" value="Profile" propagation="none">
+			<f:param name="userId"
+					value="#{authenticatedUser.user.userId}"/>
+		</s:link>
+		<s:link view="/userAccountManagement.xhtml" value="Account" propagation="none">
+			<f:param name="userAccountId"
+					value="#{authenticatedUser.accountId}"/>
+		</s:link>
+	</rich:toolBar>
 
 </ui:define>
-
 </ui:composition>

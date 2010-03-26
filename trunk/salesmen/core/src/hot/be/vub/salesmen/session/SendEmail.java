@@ -19,44 +19,51 @@ public class SendEmail implements Serializable
 	private static final long serialVersionUID = -8132989898020136666L;
 
 	@Logger
-    private Log log;
+	private Log log;
 
-    @In
-    private FacesMessages facesMessages;
-    
-    @In
-    private Renderer renderer;
-	
+	//@in annotations
+	@In
+	private FacesMessages facesMessages;
+	@In
+	private Renderer renderer;
 	@In(create=true)
-    private User user;
+	private User user;
 
-    public void sendConfirmEmail() {
-       try {
-           renderer.render("/confirmEmail.xhtml");
-           facesMessages.add("Email sent successfully");
-       } catch (Exception e) {
-    	   log.error("Error sending mail", e);
-           facesMessages.add("Email sending failed: " + e.getMessage());
-       }
-    }
-    
-    public void sendPasswordEmail() {
-        try {
-            renderer.render("/passwordEmail.xhtml");
-            facesMessages.add("Email sent successfully");
-        } catch (Exception e) {
-     	   log.error("Error sending mail", e);
-            facesMessages.add("Email sending failed: " + e.getMessage());
-        }
-     }
-    
-    public void sendStandardEmail() {
-    	try {
-            renderer.render("/standardEmail.xhtml");
-            facesMessages.add("Email sent successfully");
-        } catch (Exception e) {
-     	   log.error("Error sending mail", e);
-            facesMessages.add("Email sending failed: " + e.getMessage());
-        }
-    }
+	public void sendConfirmEmail()
+	{
+		try
+		{
+			renderer.render("/confirmEmail.xhtml");
+			facesMessages.add("Email sent successfully");
+		} catch (Exception e)
+		{
+			log.error("Error sending mail", e);
+			facesMessages.add("Email sending failed: " + e.getMessage());
+		}
+	}
+	
+	public void sendPasswordEmail() {
+		try
+		{
+			renderer.render("/passwordEmail.xhtml");
+			facesMessages.add("Email sent successfully");
+		} catch (Exception e)
+		{
+			log.error("Error sending mail", e);
+			facesMessages.add("Email sending failed: " + e.getMessage());
+		}
+	}
+	 
+	public void sendStandardEmail()
+	{
+		try
+		{
+			renderer.render("/standardEmail.xhtml");
+			facesMessages.add("Email sent successfully");
+		} catch (Exception e)
+		{
+			log.error("Error sending mail", e);
+			facesMessages.add("Email sending failed: " + e.getMessage());
+		}
+	}
 }

@@ -11,41 +11,44 @@ import org.hibernate.validator.NotNull;
 @Entity
 public class SearchTerm implements Serializable
 {
-    // seam-gen attributes (you should probably edit these)
-    private Long id;
-    private Integer version;
-    private String term;
+	// Private Attributes
+	private Long id;
+	private Integer version;
+	private String term;
 
-    // add additional entity attributes
+	// Public Attribute getters/setters with annotations 
+	@Id @GeneratedValue
+	public Long getId()
+	{
+		return id;
+	}
 
-    // seam-gen attribute getters/setters with annotations (you probably should edit)
+	public void setId(Long id)
+	{
+		this.id = id;
+	}
 
-    @Id @GeneratedValue
-    public Long getId() {
-        return id;
-    }
+	@Version
+	public Integer getVersion()
+	{
+		return version;
+	}
 
-    public void setId(Long id) {
-        this.id = id;
-    }
+	private void setVersion(Integer version)
+	{
+		this.version = version;
+	}
 
-    @Version
-    public Integer getVersion() {
-        return version;
-    }
+	@NotNull
+	@Length(min=3, max = 20)
+	public String getTerm()
+	{
+		return term;
+	}
 
-    private void setVersion(Integer version) {
-        this.version = version;
-    }
-
-    @NotNull
-    @Length(min=3, max = 20)
-    public String getTerm() {
-        return term;
-    }
-
-    public void setTerm(String term) {
-        this.term = term;
-    }
+	public void setTerm(String term)
+	{
+		this.term = term;
+	}
 
 }

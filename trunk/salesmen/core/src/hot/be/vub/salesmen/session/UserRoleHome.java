@@ -10,24 +10,25 @@ import be.vub.salesmen.entity.UserRole;
 @Name("userRoleHome")
 public class UserRoleHome extends EntityHome<UserRole>
 {
-    @RequestParameter Long userRoleId;
+	@RequestParameter Long userRoleId;
 
-    @Override
-    public Object getId()
-    {
-        if (userRoleId == null)
-        {
-            return super.getId();
-        }
-        else
-        {
-            return userRoleId;
-        }
-    }
+	@Override
+	public Object getId()
+	{
+		if (userRoleId == null)
+		{
+				return super.getId();
+		}
+		else
+		{
+				return userRoleId;
+		}
+	}
 
-    @Override @Begin
-    public void create() {
-        super.create();
-    }
+	@Override @Begin
+	public void create()
+	{
+		super.create();
+	}
 
 }

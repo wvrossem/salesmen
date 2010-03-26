@@ -11,12 +11,7 @@ import org.jboss.seam.annotations.Begin;
 import org.jboss.seam.annotations.web.RequestParameter;
 import org.jboss.seam.framework.EntityHome;
 
-
-
-/*
- * Extra imports
- * 
- */
+// Extra imports
 /*
 import java.util.Calendar;
 import java.util.GregorianCalendar;
@@ -57,6 +52,4 @@ public class AuctionHome extends EntityHome<Auction>
     public void create() {
         super.create();
     }
-
-
 }
