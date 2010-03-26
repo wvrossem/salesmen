@@ -18,7 +18,7 @@
 	</item>
 	
 	<item duration="PT2H0M">
-		<desc>After testing EmailClass, noticed restraint on content attribute in EmailClass. Decided to create xhtml files and methods for different messages.</desc>
+		<desc>After testing EmailClass, noticed restriction on content attribute in EmailClass. Decided to create xhtml files and methods for different messages.</desc>
 		<refs>
 			<ref>http://code.google.com/p/salesmen/source/detail?r=1101</ref>
 			<ref>http://code.google.com/p/salesmen/source/detail?r=1102</ref>
@@ -26,8 +26,16 @@
 			<ref>https://mail.google.com/mail/?hl=nl&shva=1#label/Salesmen/1278cf8314ac18be</ref>
 		</refs>
 	</item>
+	
+	<item duration="PT1H15M">
+		<desc>Implemented multi-language support in e-mail system, had to solve a few svn conflicts.</desc>
+		<refs>
+			<ref>http://code.google.com/p/salesmen/source/detail?r=1108</ref>
+			<ref>http://code.google.com/p/salesmen/source/detail?r=1109</ref>
+		</refs>
+	</item>
 		
-	<item duration="PT0H15M">
+	<item duration="PT0H25M">
 		<desc>Administration and Communication.</desc>
 	</item>
 </timesheet>
