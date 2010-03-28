@@ -50,8 +50,7 @@
 			<h:outputText value="Subject" />
 			<h:inputText value="#{emailClass.subject}" required="true" />
 			<h:outputText value="Content" />
-			<h:inputText value="#{emailClass.content}" required="true">
-			</h:inputTextarea>
+			<h:inputText value="#{emailClass.content}" required="true" />
 			<a:commandButton action="#{sendEmail.sendStandardEmail}"
 							  value="Send" />
 		</h:panelGrid>
