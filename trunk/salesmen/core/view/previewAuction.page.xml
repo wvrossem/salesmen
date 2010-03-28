@@ -5,11 +5,8 @@
 	</navigation>
 		
 	<navigation from-action="#{manageAuction.confirm}">
-		<redirect view-id="/auction.xhtml" action="#{viewAuction.start()}">
-              <param name="auctionId" value="1"/>
-		</redirect>
-
-
+		    <redirect view-id="/auction.xhtml" include-page-params="true">
+            </redirect>
 	</navigation>
 	
 </page>

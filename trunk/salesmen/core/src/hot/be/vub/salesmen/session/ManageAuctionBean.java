@@ -21,7 +21,18 @@ public class ManageAuctionBean implements ManageAuction, Serializable
 	Auction auction; 
 	private boolean inputIsOk=false;
 	private int categoryId;
-	
+       private Long auctionId;
+
+    public Long getAuctionId() {
+        return auctionId;
+    }
+
+    public void setAuctionId(Long auctionId) {
+        this.auctionId = auctionId;
+    }
+
+
+
 	// In annotations
 	@In EntityManager entityManager;
 	//@in Auction auction
@@ -49,11 +60,16 @@ public class ManageAuctionBean implements ManageAuction, Serializable
 		}
 	}
 
-	@End
-	public void confirm()
+
+   // @End
+	public Long confirm()
 	{
 		this.auction.setStatus(Auction.AuctionStatus.LISTED);
+        this.auctionId=this.auction.getId();
 		entityManager.merge(this.auction);
+
+        System.out.println("manageAuctionBean confirmed,  conversation NOT ended");
+        return this.auctionId;
 	}
 	
 	@Destroy @Remove

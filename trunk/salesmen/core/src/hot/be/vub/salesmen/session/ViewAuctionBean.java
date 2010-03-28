@@ -34,7 +34,7 @@ public class ViewAuctionBean implements ViewAuction   , Serializable
 	
 	@In EntityManager entityManager;
 
-	@Begin
+	@Begin(join=true)
     public void start()
     {
         System.out.println("MESS: viewAuction.start() called for auction with ID="+this.auctionId);
@@ -48,29 +48,22 @@ public class ViewAuctionBean implements ViewAuction   , Serializable
                 this.auctionId=1L;
             }
             this.auction = (Auction)search.findAuction(this.auctionId,this.entityManager);
-  
-              /*
-             // keep this code for a while, BART will delete it
-            StringBuilder qry = new StringBuilder();
-            qry.append("from Auction e");
-            qry.append(" WHERE id="+this.auctionId.intValue()+"");
-            qry.append(" AND e.status = " + Auction.AuctionStatus.LISTED.ordinal());
-
-            this.auction = (Auction)(entityManager.createQuery(qry.toString()).getSingleResult());
-
-            //System.out.println("viewAuction.start() MESS: after query, auction: "+this.auction.getTitle());
-            entityManager.joinTransaction();   //Bart: no idea why, but this loc is required to make this function work. Anyway, the basicSearchBean should provide this functionality
-        */
         }
     }
-	
+	@Begin
 	public void selectAuction(Auction a)
 	{
         if(a==null)
         {
             System.out.println("MESS: viewAuction.selectAuction called null auction ");
+            this.auctionId=2L;
         }
-        this.auction=a;
+        else
+        {
+            System.out.println("MESS: viewAuction.selectAuction called auction with ID "+a.getId());
+            this.auctionId=a.getId();
+            this.auction=a;
+        }
 	}
 
 	/*
