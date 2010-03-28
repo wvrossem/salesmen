@@ -44,7 +44,7 @@ public class Auction implements Serializable
 	}
 	
 	// Private Attributes
-	private Long id;
+	private Long auctionId;
 	private Integer version;
 	//private User owner;
 	//private Category category;
@@ -66,12 +66,12 @@ public class Auction implements Serializable
 	@Id @GeneratedValue(strategy = GenerationType.IDENTITY)
 	public Long getId()
 	{
-		return id;
+		return auctionId;
 	}
 
 	public void setId(Long id)
 	{
-		this.id = id;
+		this.auctionId = id;
 	}
 
 	@Version
