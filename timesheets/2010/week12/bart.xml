@@ -1,0 +1,49 @@
+<?xml version='1.0'?>
+<timesheet xmlns="http://purl.org/net/timetrack">
+
+		
+	<item duration="PT16H">
+		<desc>Auction implementation</desc>
+		<refs>
+			<ref>http://code.google.com/p/salesmen/source/detail?r=1087</ref>
+			<ref>http://code.google.com/p/salesmen/source/detail?r=1088</ref>
+			<ref>http://code.google.com/p/salesmen/source/detail?r=1089</ref>
+			<ref>http://code.google.com/p/salesmen/source/detail?r=1090</ref>
+			<ref>http://code.google.com/p/salesmen/source/detail?r=1091</ref>
+			<ref>http://code.google.com/p/salesmen/source/detail?r=1111</ref>
+			<ref>http://code.google.com/p/salesmen/source/detail?r=1112</ref>
+			<ref>http://code.google.com/p/salesmen/source/detail?r=1113</ref>
+			<ref>http://code.google.com/p/salesmen/source/detail?r=1114</ref>
+			<ref>http://code.google.com/p/salesmen/source/detail?r=1115</ref>
+		</refs>
+	</item>
+	
+	<item duration="PT30M">
+		<desc>BasicSearchBean, added searchAuction(Long id)</desc>
+		<refs>
+			<ref>http://code.google.com/p/salesmen/source/detail?r=1111</ref>
+		</refs>
+	</item>
+	
+	<item duration="PT20M">
+		<desc>Fixed SVN merge problems</desc>
+		<refs>
+			<ref>http://code.google.com/p/salesmen/source/detail?r=1112</ref>
+		</refs>
+	</item>
+		
+	<item duration="PT1H">
+		<desc>Administration and Communication.</desc>
+		<refs>
+			<ref>http://groups.google.com/group/salesmen/browse_thread/thread/a495f13f06c53408?hl=en</ref>
+			<ref>http://groups.google.com/group/salesmen/browse_thread/thread/aa831428d7508f60?hl=en</ref>
+			<ref>http://groups.google.com/group/salesmen/browse_thread/thread/1222fd0c28ce3f9?hl=en</ref>
+			<ref>http://groups.google.com/group/salesmen/browse_thread/thread/a3cccc4b7d816ecd?hl=en#</ref>
+			<ref>http://groups.google.com/group/salesmen/browse_thread/thread/67b2de4bb73dabcc?hl=en#</ref>
+			<ref>http://groups.google.com/group/salesmen/browse_thread/thread/a495f13f06c53408?hl=en#</ref>
+			<ref>http://groups.google.com/group/salesmen/browse_thread/thread/fcaadf089cc7ae0d?hl=en#</ref>
+			<ref>http://groups.google.com/group/salesmen/browse_thread/thread/379a8cdd4e733399/cc0a2189df956b82?hl=en#cc0a2189df956b82</ref>
+		</refs>
+	</item>
+		
+</timesheet>
