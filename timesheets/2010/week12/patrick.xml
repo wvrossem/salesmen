@@ -1,9 +1,11 @@
 <?xml version='1.0'?>
 <timesheet xmlns="http://purl.org/net/timetrack">
 
-	<item duration="PT4H0M">
+	<item duration="PT5H0M">
 		<desc>Programming User-Dashboard</desc>
 		<refs>
+			<ref>http://code.google.com/p/salesmen/source/detail?r=1120</ref>
+			<ref>http://code.google.com/p/salesmen/source/detail?r=1119</ref>
 			<ref>http://code.google.com/p/salesmen/source/detail?r=1117</ref>
 			<ref>http://code.google.com/p/salesmen/source/detail?r=1107</ref>
 		</refs>
