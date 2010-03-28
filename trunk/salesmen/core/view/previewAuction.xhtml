@@ -27,7 +27,7 @@
 		<div class="actionButtons">
 			<h:commandButton id="previous" value="Previous" action="previous"/>
             <h:commandButton id="confirm" value="Confirm" action="#{manageAuction.confirm}">
-                <f:param name="auctionId" value="99"/>
+                <f:attribute name="auctionId" value="#{manageAuction.auctionId}" />
             </h:commandButton>
 		</div>
 
