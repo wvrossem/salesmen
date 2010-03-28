@@ -22,55 +22,55 @@
 				<s:validateAll>
 					<h:panelGrid columns="3" rowClasses="prop" columnClasses="name,value">
 
-						<h:outputLabel for="username">Username<em>*</em></h:outputLabel>
+						<h:outputLabel for="username">#{messages['salesmen.UserAccount.Username']}<em>*</em></h:outputLabel>
 						<h:inputText id="username" required="true"
 									value="#{registerUserAccount.username}" />
 						<h:message for="username"/>
 
-						<h:outputLabel for="password">Password<em>*</em></h:outputLabel>
+						<h:outputLabel for="password">#{messages['salesmen.UserAccount.Password']}<em>*</em></h:outputLabel>
 						<h:inputSecret id="password" required="true"
 									value="#{registerUserAccount.password}"/>
 						<h:message for="password"/>
 
 						<h:outputLabel for="passwordConfirmation">
-							Confirm Password<em>*</em></h:outputLabel>
+							Confirm #{messages['salesmen.UserAccount.Password']}<em>*</em></h:outputLabel>
 						<h:inputSecret id="passwordConfirmation" required="true"
 									value="#{registerUserAccount.passwordConfirmation}"/>
 						<h:message for="passwordConfirmation"/>
 
-						<h:outputLabel for="firstname">First name<em>*</em></h:outputLabel>
+						<h:outputLabel for="firstname">#{messages['salesmen.User.FirstName']}<em>*</em></h:outputLabel>
 						<h:inputText id="firstname" required="true"
 									value="#{registerUserAccount.user.firstName}"/>
 						<h:message for="firstname"/>
 
-						<h:outputLabel for="lastName">Last name<em>*</em></h:outputLabel>
+						<h:outputLabel for="lastName">#{messages['salesmen.User.LastName']}<em>*</em></h:outputLabel>
 						<h:inputText id="lastName" required="true"
 									value="#{registerUserAccount.user.lastName}"/>
 						<h:message for="lastName"/>
 
-						<h:outputLabel for="screenName">Screen Name<em>*</em></h:outputLabel>
+						<h:outputLabel for="screenName">#{messages['salesmen.User.ScreenName']}<em>*</em></h:outputLabel>
 						<h:inputText id="screenName" required="true"
 									value="#{registerUserAccount.user.screenName}"/>
 						<h:message for="screenName"/>
 
-						<h:outputLabel for="email">Email<em>*</em></h:outputLabel>
+						<h:outputLabel for="email">#{messages['salesmen.User.Email']}<em>*</em></h:outputLabel>
 						<h:inputText id="email" required="true"
 									value="#{registerUserAccount.user.email}"/>
 						<h:message for="email"/>
 
-						<h:outputLabel for="gender">Gender<em>*</em></h:outputLabel>
+						<h:outputLabel for="gender">#{messages['salesmen.User.Gender']}<em>*</em></h:outputLabel>
 						<h:selectOneRadio id="gender" value="#{registerUserAccount.user.gender}" required="true">
 							<f:selectItem itemValue="male" itemLabel="Male" />
 							<f:selectItem itemValue="female" itemLabel="Female" />
 						</h:selectOneRadio>
 						<h:message for="gender"/>
 
-						<h:outputLabel for="city">City<em>*</em></h:outputLabel>
+						<h:outputLabel for="city">#{messages['salesmen.User.City']}<em>*</em></h:outputLabel>
 						<h:inputText id="city" required="true"
 									value="#{registerUserAccount.user.city}"/>
 						<h:message for="city"/>
 
-						<h:outputLabel for="country">Country<em>*</em></h:outputLabel>
+						<h:outputLabel for="country">#{messages['salesmen.User.Country']}<em>*</em></h:outputLabel>
 						<h:selectOneMenu id="country" value="#{registerUserAccount.user.country}" required="true">
 							<s:selectItems var="country" value="#{countries}"
 										label="#{country.longName}" noSelectionLabel="-- Select --"/>
@@ -78,7 +78,7 @@
 						</h:selectOneMenu>
 						<h:message for="country"/>
 
-						<h:outputLabel for="dateOfBirth">Date of birth<em>*</em></h:outputLabel>
+						<h:outputLabel for="dateOfBirth">#{messages['salesmen.User.Dateofbirth']}<em>*</em></h:outputLabel>
 						<rich:calendar id="dateOfBirth" value="#{registerUserAccount.user.dateOfBirth}" required="true" datePattern="MM/dd/yyyy"
 									buttonIcon="img/dtpick.gif" />
 						<h:message for="dateOfBirth"/>
