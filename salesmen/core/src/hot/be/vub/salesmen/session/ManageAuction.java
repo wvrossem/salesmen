@@ -7,5 +7,6 @@ public interface ManageAuction
 {
 	public void createAuction();
 	public void checkInput();
-	public Long confirm();
+	public void confirm();
+    public void save();
 }

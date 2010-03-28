@@ -63,7 +63,8 @@ public class Auction implements Serializable
 	}
 
 	// Public Attribute getters/setters with annotations 
-	@Id @GeneratedValue(strategy = GenerationType.IDENTITY)
+	@Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
 	public Long getId()
 	{
 		return auctionId;

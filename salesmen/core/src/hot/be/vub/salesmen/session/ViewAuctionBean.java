@@ -50,7 +50,7 @@ public class ViewAuctionBean implements ViewAuction   , Serializable
             this.auction = (Auction)search.findAuction(this.auctionId,this.entityManager);
         }
     }
-	@Begin
+	@Begin(join=true)
 	public void selectAuction(Auction a)
 	{
         if(a==null)
@@ -60,7 +60,7 @@ public class ViewAuctionBean implements ViewAuction   , Serializable
         }
         else
         {
-            System.out.println("MESS: viewAuction.selectAuction called auction with ID "+a.getId());
+            System.out.println("MESS: viewAuction.selectAuction called auction with title "+a.getTitle());
             this.auctionId=a.getId();
             this.auction=a;
         }
