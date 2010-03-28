@@ -1,52 +1,76 @@
 <!DOCTYPE composition PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
 	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <ui:composition xmlns="http://www.w3.org/1999/xhtml"
-	xmlns:s="http://jboss.com/products/seam/taglib"
-	xmlns:ui="http://java.sun.com/jsf/facelets"
-	xmlns:f="http://java.sun.com/jsf/core"
-	xmlns:h="http://java.sun.com/jsf/html"
-	xmlns:rich="http://richfaces.org/rich"
-	template="layout/template.xhtml">
+                xmlns:s="http://jboss.com/products/seam/taglib"
+                xmlns:ui="http://java.sun.com/jsf/facelets"
+                xmlns:f="http://java.sun.com/jsf/core"
+                xmlns:h="http://java.sun.com/jsf/html"
+                xmlns:rich="http://richfaces.org/rich" xmlns:a="http://java.sun.com/jsf/html"
+                template="layout/template.xhtml">
 
-<ui:define name="body">
+    <ui:define name="body">
 
-	<h:form id="auctionForm">
+        <h:form id="auctionForm">
 
-		<rich:panel>
-			<f:facet name="header">auction</f:facet>
+            <rich:panel>
+                <f:facet name="header">auction</f:facet>
 
-				<s:validateAll>
-					<div class="section">
-						<h:outputLabel for="title">Enter a short description of the item you wish to sell</h:outputLabel>
-						<h:inputText id="title" required="true" value="#{manageAuction.auction.title}" />
-						<div class="validationError"><h:message for="title" /></div>
-					</div>
+                <s:validateAll>
 
-					<div class="section">
-						<h:outputLabel for="price">Please enter the starting price for your auction (EUR)</h:outputLabel>
-						<h:inputText id="price" value="#{manageAuction.auction.startingPrice}" required="true">
-							<f:convertNumber minFractionDigits="2" maxFractionDigits="2" minIntegerDigits="1" />
-						</h:inputText>
-						<div class="validationError"><h:message for="price" /></div>
-					</div>
+                <div class="section">
+                    <h:outputLabel for="title">Enter a short description of the item you wish to sell</h:outputLabel>
+                    <h:inputText id="title" required="true" value="#{manageAuction.auction.title}"/>
 
-					<div class="section">
-						<h:outputLabel for="description">Please enter a description for the item you are trying to sell.</h:outputLabel>
-						<h:inputTextarea id="description" value="#{manageAuction.auction.description}" styleClass="description" />
-						<div class="validationError"><h:message for="description" /></div>
-					</div>
+                    <div class="validationError"><h:message for="title"/></div>
+                </div>
 
-				</s:validateAll>
+                <div class="section">
+                    <h:outputLabel for="price">Please enter the starting price for your auction (EUR)</h:outputLabel>
+                    <h:inputText id="price" value="#{manageAuction.auction.startingPrice}" required="true">
+                        <f:convertNumber minFractionDigits="2" maxFractionDigits="2" minIntegerDigits="1"/>
+                    </h:inputText>
 
-			<div style="clear:both"/>
+                    <div class="validationError"><h:message for="price"/></div>
+                </div>
 
-		</rich:panel>
+                <div class="section">
+                    <h:outputLabel
+                            for="description">Please enter a description for the item you are trying to sell.</h:outputLabel>
+                    <h:inputTextarea id="description" value="#{manageAuction.auction.description}"
+                                     styleClass="description"/>
 
-		<div class="actionButtons">
-			<h:commandButton  id="submit" value="Add auction" action="#{manageAuction.checkInput}"/>
-		</div>
+                    <div class="validationError"><h:message for="description"/></div>
+                </div>
 
-	</h:form>
+                <a:commandButton value="Select Category" action="#{basicSearch.createCategoryTree}"
+                                 reRender="allCategories"/>
+
+                <f:facet name="header">Categories</f:facet>
+
+                <rich:tree id="allCategories" value="#{basicSearch.categoryTree}" var="cat"
+                            ajaxSubmitSelection="true" switchType="ajax"
+                            nodeSelectListener="#{manageAuction.processTreeNodeImplSelection}">
+
+                    <rich:treeNode>
+
+                        <h:outputText value="#{cat.name}"/>
+
+                    </rich:treeNode>
+
+                </rich:tree>
+
+        </s:validateAll>
+
+        <div style="clear:both"/>
+
+    </rich:panel>
+
+
+    <div class="actionButtons">
+        <h:commandButton id="submit" value="Add auction" action="#{manageAuction.checkInput}"/>
+    </div>
+
+</h:form>
 
 </ui:define>
 </ui:composition>
