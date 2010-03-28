@@ -1,9 +1,19 @@
 <?xml version='1.0'?>
 <timesheet xmlns="http://purl.org/net/timetrack">
 
-	<item duration="PT0H0M">
+	<item duration="PT4H0M">
 		<desc>Programming User-Dashboard</desc>
 		<refs>
+			<ref>http://code.google.com/p/salesmen/source/detail?r=1117</ref>
+			<ref>http://code.google.com/p/salesmen/source/detail?r=1107</ref>
+		</refs>
+	</item>
+	
+	<item duration="PT1H0M">
+		<desc>Fix Java.lang.nullpointerexception</desc>
+		<refs>
+			<ref>http://groups.google.com/group/salesmen/browse_thread/thread/6dc0a0ef06dc67fa</ref>
+			<ref>http://code.google.com/p/salesmen/source/detail?r=1116</ref>
 		</refs>
 	</item>
 		
@@ -14,9 +24,11 @@
 		</refs>
 	</item>
 		
-	<item duration="PT11H">
+	<item duration="PT10H30M">
 		<desc>Quality Assurance of code</desc>
 		<refs>
+			<ref>http://code.google.com/p/salesmen/source/detail?r=1106</ref>
+			<ref>http://code.google.com/p/salesmen/source/detail?r=1105</ref>
 			<ref>http://code.google.com/p/salesmen/source/detail?r=1099</ref>
 			<ref>http://code.google.com/p/salesmen/source/detail?r=1093</ref>
 			<ref>http://code.google.com/p/salesmen/source/detail?r=1092</ref>
