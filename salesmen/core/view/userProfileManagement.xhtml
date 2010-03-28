@@ -30,10 +30,8 @@
 	<div class="actionButtons">
 		<s:button id="update"
 			value="#{messages['salesmen.Action.Update']}"
-				view="/userProfileManagementEdit.xhtml"/>
-		<s:button id="cancel"
-			value="#{messages['salesmen.Action.Cancel']}"
-				view="/userManagement.xhtml"/>
+				view="/userProfileManagementEdit.xhtml"
+				rendered="#{authenticatedUser.getUser().getUserId().equals(userHome.instance.getUserId())}"/>
 	</div>
 
 </ui:define>

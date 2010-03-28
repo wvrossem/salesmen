@@ -13,25 +13,27 @@
 	<h:form id="userForm">
 
 		<rich:panel>
-		<f:facet name="header">#{messages['salesmen.UserDashboard.Profile']} #{messages['salesmen.UserDashboard.Management']}</f:facet>
-			<h:panelGrid columns="3" rowClasses="prop" columnClasses="name,value">
-				<h:outputLabel for="firstName">#{messages['salesmen.User.FirstName']}<em>*</em></h:outputLabel>
-				<h:inputText id="firstName" required="true"
-										value="#{userHome.instance.firstName}"/>
-				<h:message for="firstName"/>
+			<s:validateAll>
+				<f:facet name="header">#{messages['salesmen.UserDashboard.Profile']} #{messages['salesmen.UserDashboard.Management']}</f:facet>
+				<h:panelGrid columns="3" rowClasses="prop" columnClasses="name,value">
+					<h:outputLabel for="firstName">#{messages['salesmen.User.FirstName']}<em>*</em></h:outputLabel>
+					<h:inputText id="firstName" required="true"
+											value="#{userHome.instance.firstName}"/>
+					<h:message for="firstName"/>
 				
-				<h:outputLabel for="lastName">#{messages['salesmen.User.LastName']}<em>*</em></h:outputLabel>
-				<h:inputText id="lastName" required="true"
-										value="#{userHome.instance.lastName}"/>
-				<h:message for="lastName"/>
-				
-				<h:outputLabel for="gender">#{messages['salesmen.User.Gender']}<em>*</em></h:outputLabel>
-				<h:selectOneRadio id="gender" value="#{userHome.instance.lastName}" required="true">
-					<f:selectItem itemValue="male" itemLabel="#{messages['salesmen.User.Gender.Male']}" />
-					<f:selectItem itemValue="female" itemLabel="#{messages['salesmen.User.Gender.Female']}" />
-				</h:selectOneRadio>
-				<h:message for="gender"/>
-			</h:panelGrid>
+					<h:outputLabel for="lastName">#{messages['salesmen.User.LastName']}<em>*</em></h:outputLabel>
+					<h:inputText id="lastName" required="true"
+											value="#{userHome.instance.lastName}"/>
+					<h:message for="lastName"/>
+					
+					<h:outputLabel for="gender">#{messages['salesmen.User.Gender']}<em>*</em></h:outputLabel>
+					<h:selectOneRadio id="gender" value="#{userHome.instance.gender}" required="true">
+						<f:selectItem itemValue="male" itemLabel="#{messages['salesmen.User.Gender.Male']}" />
+						<f:selectItem itemValue="female" itemLabel="#{messages['salesmen.User.Gender.Female']}" />
+					</h:selectOneRadio>
+					<h:message for="gender"/>
+				</h:panelGrid>
+			</s:validateAll>
 
 			<div style="clear:both"/>
 
