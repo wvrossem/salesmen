@@ -19,26 +19,28 @@ insert into UserAccountRoles (accountid, roleid) values (4, 1);
 
 insert into UserRoleGroup (roleid, memberof) values (2, 1);
 
-insert into Category (name,parent_id) values ('Book',1);
-  insert into Category (name,parent_id) values ('Literature', 2);
+insert into Category (name,version) values ('Categories', 0);
 
-insert into Category (name,parent_id) values ('Music, Moves & Games',1);
-  insert into Category (name,parent_id) values ('Movies & TV', 4);
+insert into Category (name,parent_id,version) values ('Book',1, 0);
+  --insert into Category (name,parent_id,version) values ('Literature', 2, 0);
 
-insert into Category (name,parent_id) values ('Electronics',1);
-  insert into Category (name,parent_id) values ('TV & Video', 6);
+insert into Category (name,parent_id,version) values ('Music, Moves & Games',1, 0);
+  --insert into Category (name,parent_id,version) values ('Movies & TV', 4, 0);
 
-insert into Category (name,parent_id) values ('Health & Beauty',1);
-  insert into Category (name,parent_id) values ('Grocery', 8);
+insert into Category (name,parent_id,version) values ('Electronics',1, 0);
+  --insert into Category (name,parent_id,version) values ('TV & Video', 6, 0);
+
+insert into Category (name,parent_id,version) values ('Health & Beauty',1, 0);
+  --insert into Category (name,parent_id,version) values ('Grocery', 8, 0);
   
-insert into Category (name,parent_id) values ('Clothing & Shoes',1);
-  insert into Category (name,parent_id) values ('Accessories', 10);
+insert into Category (name,parent_id,version) values ('Clothing & Shoes',1, 0);
+  --insert into Category (name,parent_id,version) values ('Accessories', 10, 0);
 
-insert into Category (name,parent_id) values ('Sports & Outdoor',1);
-  insert into Category (name,parent_id) values ('Exercise & Fitness', 12);
+insert into Category (name,parent_id,version) values ('Sports & Outdoor',1, 0);
+  --insert into Category (name,parent_id,version) values ('Exercise & Fitness', 12, 0);
 
-insert into Category (name,parent_id) values ('Tools & Auto',1);
-  insert into Category (name,parent_id) values ('Power & Hand Tools', 14);
+insert into Category (name,parent_id,version) values ('Tools & Auto',1, 0);
+  --insert into Category (name,parent_id,version) values ('Power & Hand Tools', 14, 0);
 
 
 
