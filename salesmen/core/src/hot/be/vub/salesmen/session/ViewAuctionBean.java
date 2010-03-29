@@ -24,46 +24,43 @@ public class ViewAuctionBean implements ViewAuction   , Serializable
 	
 	//Attributes
 	Auction auction;
-
-
-
+	
+	//Request Parameters
     @RequestParameter
     Long auctionId;
-	 
+
 	//@In annotations
-	
 	@In EntityManager entityManager;
 
 	@Begin(join=true)
-    public void start()
-    {
-        System.out.println("MESS: viewAuction.start() called for auction with ID="+this.auctionId);
+	public void start()
+	{
+		System.out.println("MESS: viewAuction.start() called for auction with ID="+this.auctionId);
 
-        if(this.auction==null)
-        {
-
-            BasicSearchBean search = new BasicSearchBean();
-            if(this.auctionId==null)
-            {
-                this.auctionId=1L;
-            }
-            this.auction = (Auction)search.findAuction(this.auctionId,this.entityManager);
-        }
-    }
-	@Begin(join=true)
+		if(this.auction==null)
+		{
+			BasicSearchBean search = new BasicSearchBean();
+			if(this.auctionId==null)
+			{
+				this.auctionId=1L;
+			}
+			this.auction = (Auction)search.findAuction(this.auctionId,this.entityManager);
+		}
+	}
+	
 	public void selectAuction(Auction a)
 	{
-        if(a==null)
-        {
-            System.out.println("MESS: viewAuction.selectAuction called null auction ");
-            this.auctionId=2L;
-        }
-        else
-        {
-            System.out.println("MESS: viewAuction.selectAuction called auction with title "+a.getTitle());
-            this.auctionId=a.getId();
-            this.auction=a;
-        }
+		if(a==null)
+		{
+			System.out.println("MESS: viewAuction.selectAuction called null auction ");
+			this.auctionId=2L;
+		}
+		else
+		{
+			System.out.println("MESS: viewAuction.selectAuction called auction with title "+a.getTitle());
+			this.auctionId=a.getId();
+			this.auction=a;
+		}
 	}
 
 	/*
@@ -88,15 +85,14 @@ public class ViewAuctionBean implements ViewAuction   , Serializable
 	{
 		this.auction = auction;
 	}
+	
+	public Long getAuctionId()
+	{
+		return auctionId;
+	}
 
-
-    public Long getAuctionId()
-    {
-        return auctionId;
-    }
-
-    public void setAuctionId(Long auctionId)
-    {
-        this.auctionId = auctionId;
-    }
+	public void setAuctionId(Long auctionId)
+	{
+		this.auctionId = auctionId;
+	}
 }

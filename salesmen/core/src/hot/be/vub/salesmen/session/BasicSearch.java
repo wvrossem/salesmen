@@ -1,6 +1,7 @@
 package be.vub.salesmen.session;
 
 import be.vub.salesmen.entity.Category;
+
 import org.richfaces.model.TreeNodeImpl;
 
 import javax.ejb.Local;
@@ -23,15 +24,15 @@ public interface BasicSearch {
 		
 	public void setEntityType(String entityType);
 
-    public TreeNodeImpl<Category> getCategoryTree();
-
+	public TreeNodeImpl<Category> getCategoryTree();
+	
 	public void find();
 	
 	public Object findUser(String screenName);
 
     public Object findUserAccount(String userName);
 
-    public void createCategoryTree();
+	public void createCategoryTree();
 
 	public List suggest(Object begin);
 

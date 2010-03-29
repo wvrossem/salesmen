@@ -29,15 +29,15 @@
 		<h3>Send an e-mail</h3>
 		<h:panelGrid columns="2">
 			<h:outputText value="Name" />
-			<h:inputText value="#{emailClass.fullName}" required="true" />
-			<h:outputText value="Email Address" />
-			<h:inputText value="#{emailClass.emailAddress}" required="true" />
-			<h:outputText value="Subject" />
-			<h:inputText value="#{emailClass.subject}" required="true" />
-			<h:outputText value="Content" />
-			<h:inputText value="#{emailClass.content}" required="true" />
+			<h:inputText value="#{emailClass.fullName}" required="true"/>
+			<h:outputText value="Email Address"/>
+			<h:inputText value="#{emailClass.emailAddress}" required="true"/>
+			<h:outputText value="Subject"/>
+			<h:inputText value="#{emailClass.subject}" required="true"/>
+			<h:outputText value="Content"/>
+			<h:inputText value="#{emailClass.content}" required="true"/>
 			<a:commandButton action="#{sendEmail.sendStandardEmail}"
-							  value="Send" />
+							  value="Send"/>
 		</h:panelGrid>
 	</h:form>
 

@@ -18,6 +18,10 @@ public class EmailService implements Serializable
 {
 	private static final long serialVersionUID = -8132989898020136666L;
 
+	//Private Attributes
+	private String email;
+	private String username;
+
 	@Logger
 	private Log log;
 
@@ -25,40 +29,39 @@ public class EmailService implements Serializable
 	@In(create=true)
 	private Renderer renderer;
 
-  private String email;
-  private String username;
-
-  @Asynchronous
-  public void sendConfirmation(String email, String username)
-  {
-    setEmail(email);
-    setUsername(username);
-    try
-    {
-      renderer.render("/confirmEmail.xhtml");
-    }
-    catch (Exception e)
+	@Asynchronous
+	public void sendConfirmation(String email, String username)
+	{
+		setEmail(email);
+		setUsername(username);
+		try
+		{
+			renderer.render("/confirmEmail.xhtml");
+		}
+		catch (Exception e)
 		{
 			log.error("Error sending mail", e);
 		}
-  }
+	}
 
-  public String getEmail()
-  {
-    return email;
-  }
+	//Public Attribute getters/setters
+	public String getEmail()
+	{
+		return email;
+	}
 
-  public void setEmail(String email)
-  {
-    this.email = email;
-  }
+	public void setEmail(String email)
+	{
+		this.email = email;
+	}
 
-  public String getUsername() {
-    return username;
-  }
+	public String getUsername()
+	{
+		return username;
+	}
 
-  public void setUsername(String username) {
-    this.username = username;
-  }
-
+	public void setUsername(String username)
+	{
+		this.username = username;
+	}
 }

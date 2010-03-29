@@ -23,16 +23,13 @@ public class ManageAuctionBean implements ManageAuction, Serializable
 	Auction auction; 
 	private boolean inputIsOk=false;
 	private Category category;
-    private boolean isNew=false;    //used by
-
-
-
+	private boolean isNew=false;    //used by
+	
 	// In annotations
 	@In EntityManager entityManager;
 	//@in Auction auction
-
-    @In
-    StatusMessages statusMessages;
+	@In
+	StatusMessages statusMessages;
 
 	@Begin(join = true)
 	public void createAuction()
@@ -46,16 +43,16 @@ public class ManageAuctionBean implements ManageAuction, Serializable
 	
 	public void checkInput()
 	{
-        if(this.category==null)
-        {
-            //FacesMessages.instance().addToControl("category", "Please select a category");
-            System.out.println("Category NOT set!");
-        }
-        else
-        {
-            this.auction.setCategory(this.category);
-            System.out.println("Category set, OK!");
-        }
+		if(this.category==null)
+		{
+			//FacesMessages.instance().addToControl("category", "Please select a category");
+			System.out.println("Category NOT set!");
+		} else
+		{
+			this.auction.setCategory(this.category);
+			System.out.println("Category set, OK!");
+		}
+		
 		if(this.auction.getStartingPrice()>0)
 		{
 			this.setInputIsOk(true);
@@ -67,23 +64,22 @@ public class ManageAuctionBean implements ManageAuction, Serializable
 		}
 	}
 
-    public void save()
-    {
-         this.setNew(true);
-        //this.auction.setStatus(Auction.AuctionStatus.UNLISTED);
-        //entityManager.persist(this.auction);
+	public void save()
+	{
+		this.setNew(true);
+		//this.auction.setStatus(Auction.AuctionStatus.UNLISTED);
+		//entityManager.persist(this.auction);
 
-        System.out.println("manageAuctionBean save(): ID "+this.auction.getId());
-    }
+		System.out.println("manageAuctionBean save(): ID "+this.auction.getId());
+	}
 
-    @End
+	@End
 	public void confirm()
 	{
-
 		this.auction.setStatus(Auction.AuctionStatus.LISTED);
 		entityManager.merge(this.auction);
 
-        System.out.println("manageAuctionBean confirmed,  conversation NOT ended");
+		System.out.println("manageAuctionBean confirmed,  conversation NOT ended");
 	}
 	
 	@Destroy @Remove
@@ -113,7 +109,7 @@ public class ManageAuctionBean implements ManageAuction, Serializable
 		return inputIsOk;
 	}
 	
-	public Category getCategory()
+	public Category getCategoryId()
 	{
 		return category;
 	}
@@ -121,22 +117,23 @@ public class ManageAuctionBean implements ManageAuction, Serializable
 	public void setCategory(Category category)
 	{
 		this.category = category;
-        statusMessages.add("Category " + category.getName() + " selected");
+		statusMessages.add("Category " + category.getName() + " selected");
 	}
 
-    public void processTreeNodeImplSelection(final NodeSelectedEvent event)
-    {
+	public void processTreeNodeImplSelection(final NodeSelectedEvent event)
+	{
+		System.out.println("Node selected : " + event);        
+		statusMessages.add("Category selected");
+	}    
 
-        System.out.println("Node selected : " + event);        
-        statusMessages.add("Category selected");
-    }    
+	public boolean isNew()
+	{
+		return isNew;
+	}
 
-    public boolean isNew() {
-        return isNew;
-    }
-
-    public void setNew(boolean aNew) {
-        isNew = aNew;
-    }
-    
+	public void setNew(boolean aNew)
+	{
+		isNew = aNew;
+	}
+	
 }

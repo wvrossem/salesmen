@@ -7,5 +7,5 @@
 	<navigation from-action="#{manageAuction.save}">
 		<redirect view-id="/previewAuction.xhtml"/>
 	</navigation>
-
+	
 </page>
