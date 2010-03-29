@@ -68,9 +68,9 @@
   </item>
 
 	<item duration="PT2H35">
-    <desc>Support for sending confirmation email after registration. Had to solve error messages and adapt emailservice since it was unsuitable for this purpose. >
+    <desc>Support for sending confirmation email after registration. Had to solve error messages and adapt emailservice since it was unsuitable for this purpose. </desc>
     <refs>
-		<ref>http://www.vineetmanohar.com/2009/04/03/seam-asynchronous-email/</ref>
+		<ref>http://www.vineetmanohar.com/2009/04/03/seam-asynchronous-email</ref>
 		<ref>http://code.google.com/p/salesmen/source/detail?r=1129</ref>
     </refs>
   </item>
