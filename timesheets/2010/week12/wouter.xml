@@ -1,0 +1,23 @@
+<?xml version='1.0'?>
+<timesheet xmlns="http://purl.org/net/timetrack">
+
+		
+	<item duration="PT30M">
+		<desc>Added method to find a UserAccount in BasicSearch</desc>
+		<refs>
+			<ref>http://code.google.com/p/salesmen/source/detail?r=1095</ref>
+		</refs>
+	</item>
+	
+	<item duration="PT3H">
+		<desc>Categorytree implementation</desc>
+		<refs>
+			<ref>http://code.google.com/p/salesmen/source/detail?r=1128</ref>
+		</refs>
+	</item>
+		
+	<item duration="PT20M">
+		<desc>Administration and Communication.</desc>
+	</item>
+		
+</timesheet>
