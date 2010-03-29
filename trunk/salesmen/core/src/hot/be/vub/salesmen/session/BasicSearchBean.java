@@ -198,7 +198,9 @@ public class BasicSearchBean implements BasicSearch
 			{
                 //categoryTreeNodes.add(categoryTree);
 				categoryTree.setData(cat);
-			} else
+                
+			}
+            else
             {
 			    TreeNodeImpl categoryNode = new TreeNodeImpl<Category>();
 			    categoryNode.setData(cat);
