@@ -1,13 +1,10 @@
 package be.vub.salesmen.entity;
 
 import java.io.Serializable;
-import javax.persistence.Entity;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Table;
+import javax.persistence.*;
+
 import static org.jboss.seam.ScopeType.CONVERSATION;
-import javax.persistence.Version;
+
 import org.hibernate.validator.Length;
 import org.hibernate.validator.Pattern;
 import org.jboss.seam.annotations.Scope;
@@ -47,7 +44,7 @@ public class Auction implements Serializable
 	private Long auctionId;
 	private Integer version;
 	//private User owner;
-	//private Category category;
+	private Category category;
 	private String title;
 	private String description;
 	//private Date endDate;
@@ -98,7 +95,7 @@ public class Auction implements Serializable
 	public void setOwner(User owner) {
 		this.owner = owner;
 	}
-
+     */
 	@NotNull   
 	@ManyToOne
 	@JoinColumn(name = "CATEGORY_ID")
@@ -109,7 +106,7 @@ public class Auction implements Serializable
 	public void setCategory(Category category) {
 		this.category = category;
 	}
-*/
+
 	@NotNull
 	@Length(min=5, max=32)
 	public String getTitle()
