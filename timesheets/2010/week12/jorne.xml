@@ -1,9 +1,10 @@
 <?xml version='1.0'?>
 <timesheet xmlns="http://purl.org/net/timetrack">
-	<item duration="PT0H40M">
+	<item duration="PT0H30M">
 		<desc>Wrote wiki page on how to configure e-mail support in JBoss.</desc>
 		<refs>
 			<ref>http://code.google.com/p/salesmen/source/detail?r=1077</ref>
+			<ref>http://code.google.com/p/salesmen/wiki/JBossEmailConfiguration</ref>
 		</refs>
 	</item>
 	
@@ -23,12 +24,11 @@
 			<ref>http://code.google.com/p/salesmen/source/detail?r=1101</ref>
 			<ref>http://code.google.com/p/salesmen/source/detail?r=1102</ref>
 			<ref>http://code.google.com/p/salesmen/source/detail?r=1103</ref>
-			<ref>https://mail.google.com/mail/?hl=nl&shva=1#label/Salesmen/1278cf8314ac18be</ref>
 		</refs>
 	</item>
 	
 	<item duration="PT1H15M">
-		<desc>Implemented multi-language support in e-mail system, had to solve a few svn conflicts.</desc>
+		<desc>Implemented multi-language support in e-mail system, had to solve multiple svn conflicts.</desc>
 		<refs>
 			<ref>http://code.google.com/p/salesmen/source/detail?r=1108</ref>
 			<ref>http://code.google.com/p/salesmen/source/detail?r=1109</ref>
