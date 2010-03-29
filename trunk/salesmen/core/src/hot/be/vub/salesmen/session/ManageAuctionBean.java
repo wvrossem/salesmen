@@ -46,6 +46,16 @@ public class ManageAuctionBean implements ManageAuction, Serializable
 	
 	public void checkInput()
 	{
+        if(this.category==null)
+        {
+            //FacesMessages.instance().addToControl("category", "Please select a category");
+            System.out.println("Category NOT set!");
+        }
+        else
+        {
+            this.auction.setCategory(this.category);
+            System.out.println("Category set, OK!");
+        }
 		if(this.auction.getStartingPrice()>0)
 		{
 			this.setInputIsOk(true);
