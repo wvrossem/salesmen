@@ -114,10 +114,10 @@ public class ManageAuctionBean implements ManageAuction, Serializable
 		return category;
 	}
 
-	public void setCategoryId(Category categoryId)
+	public void setCategory(Category category)
 	{
-		this.category = categoryId;
-		statusMessages.add("Category " + categoryId.getName() + " selected");
+		this.category = category;
+		statusMessages.add("Category " + category.getName() + " selected");
 	}
 
 	public void processTreeNodeImplSelection(final NodeSelectedEvent event)
