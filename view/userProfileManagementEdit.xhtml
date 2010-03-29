@@ -13,25 +13,50 @@
 	<h:form id="userForm">
 
 		<rich:panel>
-		<f:facet name="header">user</f:facet>
-			<h:panelGrid columns="3" rowClasses="prop" columnClasses="name,value">
-				<h:outputLabel for="firstName">First name<em>*</em></h:outputLabel>
-				<h:inputText id="firstName" required="true"
-										value="#{userHome.instance.firstName}"/>
-				<h:message for="firstName"/>
+			<s:validateAll>
+				<f:facet name="header">#{messages['salesmen.UserDashboard.Profile']} #{messages['salesmen.UserDashboard.Management']}</f:facet>
+				<h:panelGrid columns="3" rowClasses="prop" columnClasses="name,value">
+					<h:outputLabel for="firstName">#{messages['salesmen.User.ScreenName']}<em>*</em></h:outputLabel>
+					<h:inputText id="screenName" required="true"
+											value="#{userHome.instance.screenName}"/>
+					<h:message for="screenName"/>
+					
+					<h:outputLabel for="firstName">#{messages['salesmen.User.FirstName']}<em>*</em></h:outputLabel>
+					<h:inputText id="firstName" required="true"
+											value="#{userHome.instance.firstName}"/>
+					<h:message for="firstName"/>
 				
-				<h:outputLabel for="lastName">Last name<em>*</em></h:outputLabel>
-				<h:inputText id="lastName" required="true"
-										value="#{userHome.instance.lastName}"/>
-				<h:message for="lastName"/>
-				
-				<h:outputLabel for="gender">Gender<em>*</em></h:outputLabel>
-				<h:selectOneRadio id="gender" value="#{userHome.instance.lastName}" required="true">
-					<f:selectItem itemValue="male" itemLabel="Male" />
-					<f:selectItem itemValue="female" itemLabel="Female" />
-				</h:selectOneRadio>
-				<h:message for="gender"/>
-			</h:panelGrid>
+					<h:outputLabel for="lastName">#{messages['salesmen.User.LastName']}<em>*</em></h:outputLabel>
+					<h:inputText id="lastName" required="true"
+											value="#{userHome.instance.lastName}"/>
+					<h:message for="lastName"/>
+					
+					<h:outputLabel for="gender">#{messages['salesmen.User.Gender']}<em>*</em></h:outputLabel>
+					<h:selectOneRadio id="gender" value="#{userHome.instance.gender}" required="true">
+						<f:selectItem itemValue="male" itemLabel="#{messages['salesmen.User.Gender.Male']}" />
+						<f:selectItem itemValue="female" itemLabel="#{messages['salesmen.User.Gender.Female']}" />
+					</h:selectOneRadio>
+					<h:message for="gender"/>
+					
+					<h:outputLabel for="email">#{messages['salesmen.User.Email']}<em>*</em></h:outputLabel>
+					<h:inputText id="email" required="true"
+								value="#{userHome.instance.email}"/>
+					<h:message for="email"/>
+					
+					<h:outputLabel for="city">#{messages['salesmen.User.City']}<em>*</em></h:outputLabel>
+					<h:inputText id="city" required="true"
+								value="#{userHome.instance.city}"/>
+					<h:message for="city"/>
+					
+					<h:outputLabel for="country">#{messages['salesmen.User.Country']}<em>*</em></h:outputLabel>
+					<h:selectOneMenu id="country" value="#{userHome.instance.country}" required="true">
+						<s:selectItems var="country" value="#{countries}"
+									label="#{country.longName}" noSelectionLabel="-- Select --"/>
+						<s:convertEnum/>
+					</h:selectOneMenu>
+					<h:message for="country"/>
+				</h:panelGrid>
+			</s:validateAll>
 
 			<div style="clear:both"/>
 
@@ -39,11 +64,11 @@
 
 		<div class="actionButtons">
 			<h:commandButton id="update"
-						value="Save"
-						action="#{userHome.update}"
-					rendered="#{userHome.managed}"/>
+						  value="#{messages['salesmen.Action.Save']}"
+						 action="#{userHome.update()}"
+					   rendered="#{userHome.managed}"/>
 			<s:button id="cancel"
-				value="Cancel"
+				   value="#{messages['salesmen.Action.Cancel']}"
 					view="/userProfileManagement.xhtml"/>
 		</div>
 

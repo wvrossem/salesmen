@@ -12,13 +12,13 @@
 
 	<rich:toolBar>
 		<rich:toolBarGroup>
-			<h:outputText value="User Management:"/>
+			<h:outputText value="#{messages['salesmen.UserDashboard.UserDashboard']}:"/>
 		</rich:toolBarGroup>
-		<s:link view="/userProfileManagement.xhtml" value="Profile" propagation="none">
+		<s:link view="/userProfileManagement.xhtml" value="#{messages['salesmen.UserDashboard.Profile']}" propagation="none">
 			<f:param name="userId"
 					value="#{authenticatedUser.user.userId}"/>
 		</s:link>
-		<s:link view="/userAccountManagement.xhtml" value="Account" propagation="none">
+		<s:link view="/userAccountManagement.xhtml" value="#{messages['salesmen.UserDashboard.Account']}" propagation="none">
 			<f:param name="userAccountId"
 					value="#{authenticatedUser.accountId}"/>
 		</s:link>

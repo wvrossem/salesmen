@@ -20,11 +20,9 @@
 
 	<div class="actionButtons">
 		<s:button id="update"
-			   value="Update"
-				view="/userAccountManagementEdit.xhtml"/>
-		<s:button id="cancel"
-			   value="Cancel"
-				view="/userManagement.xhtml"/>
+			   value="#{messages['salesmen.Action.Update']}"
+				view="/userAccountManagementEdit.xhtml"
+				rendered="#{authenticatedUser.getAccountId().equals(userAccountHome.instance.getAccountId())}"/>
 	</div>
 
 </ui:define>

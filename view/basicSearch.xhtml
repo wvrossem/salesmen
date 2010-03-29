@@ -89,18 +89,21 @@
 					</h:column>
 				</h:dataTable>
 				<h:dataTable id="auctions" value="#{entities}" var="a"
-							rendered="#{entities.rowCount>0 and basicSearch.entityTypeAuction()}">
+								rendered="#{entities.rowCount>0 and basicSearch.entityTypeAuction()}">
 					<h:column id="TitleColumn">
 						<f:facet id="TitleFacet" name="header"><h:outputText value="#{messages['salesmen.Auction.Title']}"/></f:facet>
 						<s:link id="auctionLink"
-							 value="BY ID: #{a.title}"
-					   propagation="none"
-							  view="/auction.xhtml">
-							<f:param name="auctionId"
-								value="#{a.id}"/>
+							propagation="none"
+								  value="BY ID: #{a.title}"
+								   view="/auction.xhtml">
+							<f:param name="auctionId" value="#{a.id}"/>
 						</s:link>
 						<br/>
-						<s:link id="viewAuctionLink" value="BY REFERENCE: #{a.title}" action="#{viewAuction.selectAuction(a)}" view="/auction.xhtml"/>
+						<s:link id="viewAuctionLink" 
+							propagation="none"
+								  value="BY REFERENCE: #{a.title}"
+								 action="#{viewAuction.selectAuction(a)}"
+								   view="/auction.xhtml"/>
 					</h:column>
 					<h:column id="DescriptionColumn">
 						<f:facet id="DescriptionFacet" name="header"><h:outputText value="#{messages['salesmen.Auction.Description']}"/></f:facet>

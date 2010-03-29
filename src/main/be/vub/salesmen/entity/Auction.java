@@ -1,13 +1,8 @@
 package be.vub.salesmen.entity;
 
 import java.io.Serializable;
-import javax.persistence.Entity;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Table;
+import javax.persistence.*;
 import static org.jboss.seam.ScopeType.CONVERSATION;
-import javax.persistence.Version;
 import org.hibernate.validator.Length;
 import org.hibernate.validator.Pattern;
 import org.jboss.seam.annotations.Scope;
@@ -44,10 +39,10 @@ public class Auction implements Serializable
 	}
 	
 	// Private Attributes
-	private int id;
+	private Long auctionId;
 	private Integer version;
 	//private User owner;
-	//private Category category;
+	private Category category;
 	private String title;
 	private String description;
 	//private Date endDate;
@@ -62,16 +57,17 @@ public class Auction implements Serializable
 		this.setStatus(AuctionStatus.UNLISTED);
 	}
 
-	// Public Attribute getters/setters with annotations 
-	@Id @GeneratedValue(strategy = GenerationType.IDENTITY)
-	public int getId()
+	// Public Attribute getters/setters with annotations
+	@Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+	public Long getId()
 	{
-		return id;
+		return auctionId;
 	}
 
-	public void setId(int id)
+	public void setId(Long id)
 	{
-		this.id = id;
+		this.auctionId = id;
 	}
 
 	@Version
@@ -97,7 +93,7 @@ public class Auction implements Serializable
 	public void setOwner(User owner) {
 		this.owner = owner;
 	}
-
+*/
 	@NotNull   
 	@ManyToOne
 	@JoinColumn(name = "CATEGORY_ID")
@@ -108,7 +104,7 @@ public class Auction implements Serializable
 	public void setCategory(Category category) {
 		this.category = category;
 	}
-*/
+
 	@NotNull
 	@Length(min=5, max=32)
 	public String getTitle()
