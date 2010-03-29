@@ -41,8 +41,13 @@
 		</refs>
 	</item>
 				
-	<item duration="PT0H30M">
+	<item duration="PT0H40M">
 		<desc>Administration and Communication.</desc>
+	<refs>
+		<ref>http://groups.google.com/group/salesmen/browse_thread/thread/a495f13f06c53408</ref>
+		<ref>http://groups.google.com/group/salesmen/browse_thread/thread/a3cccc4b7d816ecd</ref>
+		<ref>http://groups.google.com/group/salesmen/browse_thread/thread/a495f13f06c53408</ref>
+	</refs>
 	</item>
 		
 </timesheet>
