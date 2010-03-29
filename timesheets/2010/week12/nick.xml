@@ -1,0 +1,82 @@
+<?xml version='1.0'?>
+<timesheet xmlns="http://purl.org/net/timetrack">
+	
+	<item duration="PT30M">
+    <desc>Solving SVN-client problems.</desc>
+    <refs>
+		<ref>http://groups.google.com/group/salesmen/browse_thread/thread/384460c1b47f796f</ref>
+		<ref>http://groups.google.com/group/versions/browse_thread/thread/245059d58a5ca08e</ref>
+		<ref>http://groups.google.com/group/versions/browse_thread/thread/8275849edd0c94ab</ref>
+    </refs>
+  </item>
+	
+	<item duration="PT25M">
+	  <desc>Checking and publishing timesheets of week11.</desc>
+	  <refs>
+		  <ref>http://code.google.com/p/salesmen/source/detail?r=1065</ref>
+		  <ref>http://code.google.com/p/salesmen/source/detail?r=1066</ref>
+		<ref>http://code.google.com/p/salesmen/source/detail?r=1067</ref>
+		<ref>http://code.google.com/p/salesmen/source/detail?r=1068</ref>
+		<ref>http://code.google.com/p/salesmen/source/detail?r=1069</ref>
+		<ref>http://code.google.com/p/salesmen/source/detail?r=1070</ref>
+		<ref>http://code.google.com/p/salesmen/source/detail?r=1071</ref>
+		<ref>http://code.google.com/p/salesmen/source/detail?r=1072</ref>
+	  </refs>
+	</item>
+
+	<item duration="PT5M">
+    <desc>Updating statistics of timesheets.</desc>
+    <refs>
+		<ref></ref>
+    </refs>
+  </item>
+
+	<item duration="PT2H">
+    <desc>Generate activation-key and get parameter in URL.</desc>
+    <refs>
+		<ref>http://code.google.com/p/salesmen/source/detail?r=1094</ref>
+		<ref>http://groups.google.com/group/salesmen/browse_thread/thread/fcaadf089cc7ae0d</ref>
+    </refs>
+  </item>
+
+	<item duration="PT3H">
+    <desc>Tried to implement activation of user account. Problems with accessing and modifying UserAccount. Code not commited since it is not yet working.</desc>
+    <refs>
+		<ref>http://groups.google.com/group/salesmen/browse_thread/thread/f50cc9713d21f1e8</ref>
+    </refs>
+  </item>
+
+	<item duration="PT1H45M">
+    <desc>Tried to solve JBoss problem: salesmen project is constantly deployed. Have re-installed jboss, reverted code etc.. </desc>
+    <refs>
+		<ref>http://groups.google.com/group/salesmen/browse_thread/thread/67b2de4bb73dabcc</ref>
+    </refs>
+  </item>
+
+	<item duration="PT1H20M">
+    <desc>Making slides for conference 2.</desc>
+    <refs>
+		<ref>Slides available after conference</ref>
+    </refs>
+  </item>
+
+	<item duration="PT20M">
+    <desc>Tried out email system and fixed two bugs.</desc>
+    <refs>
+		<ref>http://code.google.com/p/salesmen/source/detail?r=1126</ref>
+    </refs>
+  </item>
+
+	<item duration="PT2H35">
+    <desc>Support for sending confirmation email after registration. Had to solve error messages and adapt emailservice since it was unsuitable for this purpose. >
+    <refs>
+		<ref>http://www.vineetmanohar.com/2009/04/03/seam-asynchronous-email/</ref>
+		<ref>http://code.google.com/p/salesmen/source/detail?r=1129</ref>
+    </refs>
+  </item>
+
+  <item duration="PT30M">
+    <desc>Administration and Communication.</desc>
+    <refs></refs>
+  </item>
+</timesheet>
