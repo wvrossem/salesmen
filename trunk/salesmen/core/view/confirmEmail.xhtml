@@ -3,11 +3,11 @@
 	xmlns:h="http://java.sun.com/jsf/html">
 
 	<m:from name="Salesmen" address="no-reply@salesmen.com" />
-	<m:to name="#{user.firstName} #{user.lastName}">#{user.email}</m:to>
+	<m:to name="#{emailService.username}">#{emailService.email}</m:to>
 	<m:subject>#{messages['salesmen.ConfirmEmail.Subject']}</m:subject>
 	
 	<m:body>
-		<p>#{messages['salesmen.ConfirmEmail.Hello']}, #{user.firstName}</p>
+		<p>#{messages['salesmen.ConfirmEmail.Hello']}</p>
 		<p>#{messages['salesmen.ConfirmEmail.Click']}</p> 
 		<a href="http://wilma.vub.ac.be:1388/salesmen">http://wilma.vub.ac.be:1388/salesmen</a>
 		<p>#{messages['salesmen.ConfirmEmail.Bye']}</p>

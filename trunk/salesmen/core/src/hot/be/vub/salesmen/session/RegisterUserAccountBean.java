@@ -36,6 +36,7 @@ public class RegisterUserAccountBean implements RegisterUserAccount, Serializabl
 	@In EntityManager entityManager;
 	@In Identity identity;
 	@In IdentityManager identityManager;
+  @In EmailService emailService;
 	
 	@Begin(join = true)
 	public void createUser()
@@ -92,6 +93,9 @@ public class RegisterUserAccountBean implements RegisterUserAccount, Serializabl
 		
 		newAccount.setUser(user);
 		newAccount = entityManager.merge(newAccount);
+
+    // Send email
+    emailService.sendConfirmation(user.getEmail(), username);
 		
 		// Automatically, sign the user in
 		identity.getCredentials().setUsername(username);
