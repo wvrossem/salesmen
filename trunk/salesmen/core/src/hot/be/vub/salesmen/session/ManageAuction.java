@@ -10,7 +10,7 @@ public interface ManageAuction
 	public void createAuction();
 	public void checkInput();
 	public void confirm();
-    public void save();
+	public void save();
 
-    public void processTreeNodeImplSelection(final NodeSelectedEvent event);
+	public void processTreeNodeImplSelection(final NodeSelectedEvent event);
 }

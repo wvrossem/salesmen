@@ -36,10 +36,10 @@ public interface AdvancedSearch {
 	public void nextPage();
 
 	public boolean isNextPageAvailable();
-	
+
 	public List auctionsOfUser(User user);
 
-    public List auctionsOfUser(String userName);
+	public List auctionsOfUser(String userName);
 
 	public void destroy();
 }

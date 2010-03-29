@@ -2,9 +2,7 @@ package be.vub.salesmen.entity;
 
 import java.io.Serializable;
 import javax.persistence.*;
-
 import static org.jboss.seam.ScopeType.CONVERSATION;
-
 import org.hibernate.validator.Length;
 import org.hibernate.validator.Pattern;
 import org.jboss.seam.annotations.Scope;
@@ -59,7 +57,7 @@ public class Auction implements Serializable
 		this.setStatus(AuctionStatus.UNLISTED);
 	}
 
-	// Public Attribute getters/setters with annotations 
+	// Public Attribute getters/setters with annotations
 	@Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
 	public Long getId()
@@ -95,7 +93,7 @@ public class Auction implements Serializable
 	public void setOwner(User owner) {
 		this.owner = owner;
 	}
-     */
+*/
 	@NotNull   
 	@ManyToOne
 	@JoinColumn(name = "CATEGORY_ID")

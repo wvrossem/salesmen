@@ -1,7 +1,7 @@
 <page>
 
 	<navigation from-action="#{registerUserAccount.createUserAccount}">
-		<redirect view-id="/register-done.xhtml"/>
+		<redirect view-id="/register3.xhtml"/>
 	</navigation>
 
 </page>
