@@ -2,6 +2,7 @@ package be.vub.salesmen.session;
 
 import be.vub.salesmen.entity.Auction;
 import be.vub.salesmen.entity.SearchTerm;
+import be.vub.salesmen.entity.UserAccount;
 import org.jboss.seam.annotations.Begin;
 import org.jboss.seam.annotations.In;
 import org.jboss.seam.annotations.Name;
@@ -23,7 +24,8 @@ public class ViewAuctionBean implements ViewAuction   , Serializable
 	private static final long serialVersionUID = 5797405497183391745L;
 	
 	//Attributes
-	Auction auction;
+	private Auction auction;
+    private double bidAmount=0;
 	
 	//Request Parameters
     @RequestParameter
@@ -66,9 +68,9 @@ public class ViewAuctionBean implements ViewAuction   , Serializable
 	/*
 	Bid on the current auction
 	*/
-	public void bid()
+	public void bid(UserAccount owner)
 	{
-		if(this.auction!=null)
+		if(this.auction!=null && owner!=null && this.bidAmount!=0)
 		{
 			//...
 			this.auction=null;
@@ -95,4 +97,14 @@ public class ViewAuctionBean implements ViewAuction   , Serializable
 	{
 		this.auctionId = auctionId;
 	}
+
+    public double getBidAmount()
+    {
+        return bidAmount;
+    }
+
+    public void setBidAmount(double bidAmount)
+    {
+        this.bidAmount = bidAmount;
+    }
 }

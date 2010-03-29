@@ -13,14 +13,13 @@
 	
 	<rich:panel>
 		<f:facet name="header">Auction</f:facet>
-		<h:outputText value="Starting Price: #{viewAuction.auction.title}"/><br/>
-		<h:outputText value="#{viewAuction.auctionId}"/>  <br/>
-							...       <br/>
-						viewAuction.auctionId: "#{viewAuction.auctionId}" <br/>
-		<div class="xxxs">
-			<h:commandButton id="save"
-						  value="#{viewAuction.auctionId}"
-					   rendered="true"/>
+		<h:outputText value="Auction: #{viewAuction.auction.title}"/><br/>
+
+		<div class="bidDiv">
+			<h:commandButton id="bidButton"
+						  value="Bid!"
+                          action="#{viewAuction.bid(authenticatedUser)}"
+					   rendered="#{identity.loggedIn}"/>
 		</div>
 		<div style="clear:both"/>
 
