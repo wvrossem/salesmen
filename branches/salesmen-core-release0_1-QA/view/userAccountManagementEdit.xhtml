@@ -16,9 +16,9 @@
 			<f:facet name="header">user</f:facet>
 
 			<s:decorate id="nameField" template="layout/edit.xhtml">
-				<ui:define name="label">Username</ui:define>
-		<h:inputText id="name" required="true"
-				value="#{userAccountHome.instance.username}"/>
+				<ui:define name="label">#{messages['salesmen.UserAccount.Username']}</ui:define>
+					<h:inputText id="name" required="true"
+						value="#{userAccountHome.instance.username}"/>
 			</s:decorate>
 
 			<div style="clear:both"/>
@@ -27,11 +27,11 @@
 
 		<div class="actionButtons">
 			<h:commandButton id="update"
-						  value="Save"
+						  value="#{messages['salesmen.Action.Save']}"
 						 action="#{userAccountHome.update}"
 						renered="#{userAccountHome.managed}"/>
 			<s:button id="cancel"
-				   value="Cancel"
+				   value="#{messages['salesmen.Action.Cancel']}"
 					view="/userAccountManagement.xhtml"/>
 		</div>
 

@@ -1,2 +1,5 @@
-<page view-id="/auction.xhtml" action="viewAuction.start">
+<page view-id="/auction.xhtml">
+	<param name="auctionId" value="#{viewAuction.auctionId}" />
+	<action execute="#{viewAuction.start()}"  if="#{!manageAuction.isNew()}"/>
+	<action execute="#{viewAuction.selectAuction(manageAuction.auction)}"  if="#{manageAuction.isNew()}"/>
 </page>

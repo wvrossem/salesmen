@@ -3,15 +3,15 @@
 	xmlns:h="http://java.sun.com/jsf/html">
 
 	<m:from name="Salesmen" address="no-reply@salesmen.com" />
-	<m:to name="#{user.firstName} #{user.lastName}">#{user.email}</m:to>
-	<m:subject>Registered to Salesmen!</m:subject>
+	<m:to name="#{emailService.username}">#{emailService.email}</m:to>
+	<m:subject>#{messages['salesmen.ConfirmEmail.Subject']}</m:subject>
 	
 	<m:body>
-		<p><h:outputText value="Welcome to Salesmen, #{user.firstName}" />,</p>
-		<p>Just click on the link below to confirm your registration:</p> 
+		<p>#{messages['salesmen.ConfirmEmail.Hello']}</p>
+		<p>#{messages['salesmen.ConfirmEmail.Click']}</p> 
 		<a href="http://wilma.vub.ac.be:1388/salesmen">http://wilma.vub.ac.be:1388/salesmen</a>
-		<p>See you soon!</p>
-		<p>The Salesmen Team</p>
+		<p>#{messages['salesmen.ConfirmEmail.Bye']}</p>
+		<p>#{messages['salesmen.Email.Team']}</p>
 	</m:body>
 	
 </m:message>
