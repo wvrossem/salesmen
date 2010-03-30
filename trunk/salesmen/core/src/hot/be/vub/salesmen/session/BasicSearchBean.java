@@ -196,23 +196,26 @@ public class BasicSearchBean implements BasicSearch
 
     public List findBids(Auction auction, int limit, EntityManager em)
     {
-
-	    String qry = "FROM Bid b WHERE b.auction.id = '"+auction.getId()+"' ORDER BY b.amount DESC, b.id ASC";
-        List<Bid> bids = (List<Bid>)em.createQuery(qry).getResultList();
-        System.out.println("findBids: qry: "+qry);
-        if(bids!=null && bids.size()>5)
+        List<Bid> bids=null;
+        if(auction.getId()!=null)
         {
-            bids  = (List<Bid>)em.createQuery(qry).getResultList().subList(0, limit);
-        }
+            String qry = "FROM Bid b WHERE b.auction.id = '"+auction.getId()+"' ORDER BY b.amount DESC, b.id ASC";
+            bids = (List<Bid>)em.createQuery(qry).getResultList();
+            System.out.println("findBids: qry: "+qry);
+            if(bids!=null && bids.size()>5)
+            {
+                bids  = (List<Bid>)em.createQuery(qry).getResultList().subList(0, limit);
+            }
 
 
-        if(bids==null)
-        {
-           System.out.println("findBids: return null");
-        }
-        else
-        {
-            System.out.println("findBids: return List");
+            if(bids==null)
+            {
+               System.out.println("findBids: return null");
+            }
+            else
+            {
+                System.out.println("findBids: return List");
+            }
         }
 		return bids;
     }

@@ -80,21 +80,28 @@ public class ViewAuctionBean implements ViewAuction   , Serializable
 
     private void updateBids()
     {
-        BasicSearchBean search = new BasicSearchBean();
-        //TODO: (Bart) do not use fixed value
-        bids=search.findBids(this.auction,5,this.entityManager);
-
-           
-        //update highest bid
-        if(bids!=null && bids.size()>0)
+        if(this.auction!=null && this.auction.getId()!=null)
         {
-            this.highestBid=bids.get(0);
+            BasicSearchBean search = new BasicSearchBean();
+            //TODO: (Bart) do not use fixed value
+            bids=search.findBids(this.auction,5,this.entityManager);
+
+
+            //update highest bid
+            if(bids!=null && bids.size()>0)
+            {
+                this.highestBid=bids.get(0);
+            }
+            else
+            {
+                this.highestBid=new Bid(0,null,this.auction);
+            }
         }
         else
         {
+            System.out.println("Not good..");
             this.highestBid=new Bid(0,null,this.auction);
         }
-
     }
 	/*
 	Bid on the current auction
