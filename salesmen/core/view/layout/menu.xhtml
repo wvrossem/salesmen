@@ -22,8 +22,11 @@
 		<s:link propagation="none"
 						 id="userAccount"
 					  value="#{authenticatedUser.username}"
-					   view="/userDashboard.xhtml"
-				   rendered="#{identity.loggedIn}"/>
+					   view="/userAccount.xhtml"
+				   rendered="#{identity.loggedIn}">
+			<f:param name="userAccountId"
+					value="#{authenticatedUser.accountId}"/>
+		</s:link>
 		<s:link id="menuLoginId" view="/login.xhtml" value="Login" rendered="#{not identity.loggedIn}" propagation="none"/>
 		<s:link id="menuLogoutId" view="/home.xhtml" action="#{identity.logout}" value="Logout" rendered="#{identity.loggedIn}" propagation="none"/>
 	</rich:toolBarGroup>

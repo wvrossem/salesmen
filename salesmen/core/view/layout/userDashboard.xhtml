@@ -1,0 +1,22 @@
+<rich:toolBar
+	xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:s="http://jboss.com/products/seam/taglib"
+	xmlns:rich="http://richfaces.org/rich"
+	rendered="#{identity.loggedIn}">
+
+	<rich:toolBarGroup>
+		<h:outputText value="#{messages['salesmen.UserDashboard.UserDashboard']}:"/>
+	</rich:toolBarGroup>
+	<s:link view="/userProfile.xhtml" value="#{messages['salesmen.UserDashboard.Profile']}" propagation="none">
+		<f:param name="userId"
+				value="#{authenticatedUser.user.userId}"/>
+	</s:link>
+	<s:link view="/userAccount.xhtml" value="#{messages['salesmen.UserDashboard.Account']}" propagation="none">
+		<f:param name="userAccountId"
+				value="#{authenticatedUser.accountId}"/>
+	</s:link>
+
+</rich:toolBar>

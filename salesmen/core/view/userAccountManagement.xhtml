@@ -10,20 +10,32 @@
 
 <ui:define name="body">
 
-	<rich:panel>
-		<f:facet name="header">Account Management</f:facet>
-			<h:outputText value="Username: #{userAccountHome.instance.username}"/>
+	<h:form id="userAccountForm">
+
+		<rich:panel>
+			<f:facet name="header">user</f:facet>
+
+			<s:decorate id="nameField" template="layout/edit.xhtml">
+				<ui:define name="label">#{messages['salesmen.UserAccount.Username']}</ui:define>
+					<h:inputText id="name" required="true"
+						value="#{userAccountHome.instance.username}"/>
+			</s:decorate>
 
 			<div style="clear:both"/>
 
-	</rich:panel>
+		</rich:panel>
 
-	<div class="actionButtons">
-		<s:button id="update"
-			   value="#{messages['salesmen.Action.Update']}"
-				view="/userAccountManagementEdit.xhtml"
-				rendered="#{authenticatedUser.getAccountId().equals(userAccountHome.instance.getAccountId())}"/>
-	</div>
+		<div class="actionButtons">
+			<h:commandButton id="update"
+						  value="#{messages['salesmen.Action.Save']}"
+						 action="#{userAccountHome.update}"
+						rendered="#{userAccountHome.managed}"/>
+			<s:button id="cancel"
+				   value="#{messages['salesmen.Action.Cancel']}"
+					view="/userAccount.xhtml"/>
+		</div>
 
-</ui:define>
-</ui:composition>
+	</h:form>
+
+</ui:define> 
+</ui:composition> 
