@@ -1,0 +1,4 @@
+<page view-id="/activateAccount.xhtml" action="#{activateUserAccount.verifyActivationKey()}">
+    <param name="username" value="#{activateUserAccount.username}" />
+    <param name="key" value="#{activateUserAccount.key}" />
+</page>

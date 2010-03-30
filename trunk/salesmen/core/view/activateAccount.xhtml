@@ -11,10 +11,9 @@
 <ui:define name="body">
 
 	<br/>
-	<h1><h:outputText value="Registration complete"/></h1>
-	<br/>
-	An email has been sent to activate your account.
-	<br/>
-	
+    <h1><h:outputText value="#{messages['salesmen.ActivateAccount.Success']}" rendered="#{activateUserAccount.activated}"/></h1>
+    <h1><h:outputText value="#{messages['salesmen.ActivateAccount.Failure']}" rendered="#{not activateUserAccount.activated}"/></h1>
+    <br/>
+
 </ui:define>
 </ui:composition>
