@@ -4,7 +4,7 @@
 		<redirect view-id="/createAuction.xhtml"/>
 	</navigation>
 
-	<navigation from-action="#{manageAuction.save(authenticatedUser.user)}">
+	<navigation from-action="#{manageAuction.save(authenticatedUser)}">
 		<redirect view-id="/previewAuction.xhtml"/>
 	</navigation>
 	
