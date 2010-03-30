@@ -2,17 +2,10 @@ package be.vub.salesmen.entity;
 
 import java.io.Serializable;
 import javax.persistence.*;
-import static org.jboss.seam.ScopeType.CONVERSATION;
 import org.hibernate.validator.Length;
-import org.hibernate.validator.Pattern;
-import org.jboss.seam.annotations.Scope;
+
 
 //other imports
-/*
-import java.util.Date;
-import javax.persistence.JoinColumn;
-import javax.persistence.ManyToOne;
-*/
 import org.hibernate.validator.NotNull;
 import org.jboss.seam.annotations.Name;
 
@@ -47,7 +40,7 @@ public class Auction implements Serializable
 	private String description;
 	//private Date endDate;
 	//private Bid highBid;
-	//private Bid[] bids;
+
 	private double startingPrice;
 	private AuctionStatus status=AuctionStatus.UNLISTED;
 	

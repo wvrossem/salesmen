@@ -8,7 +8,6 @@ import org.jboss.seam.annotations.Name;
 import org.jboss.seam.annotations.Scope;
 import org.jboss.seam.annotations.datamodel.DataModel;
 import org.jboss.seam.international.StatusMessages;
-import org.richfaces.model.TreeNode;
 import org.richfaces.model.TreeNodeImpl;
 
 import javax.ejb.Remove;
@@ -16,9 +15,7 @@ import javax.ejb.Stateful;
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
 import java.util.ArrayList;
-import java.util.Iterator;
 import java.util.List;
-import java.util.Map;
 import java.util.concurrent.atomic.AtomicReference;
 
 @Stateful
@@ -196,6 +193,29 @@ public class BasicSearchBean implements BasicSearch
 		}
 		return null;
 	}
+
+    public List findBids(Auction auction, int limit, EntityManager em)
+    {
+
+	    String qry = "FROM Bid b WHERE b.auction.id = '"+auction.getId()+"' ORDER BY b.amount DESC, b.id ASC";
+        List<Bid> bids = (List<Bid>)em.createQuery(qry).getResultList();
+        System.out.println("findBids: qry: "+qry);
+        if(bids!=null && bids.size()>5)
+        {
+            bids  = (List<Bid>)em.createQuery(qry).getResultList().subList(0, limit);
+        }
+
+
+        if(bids==null)
+        {
+           System.out.println("findBids: return null");
+        }
+        else
+        {
+            System.out.println("findBids: return List");
+        }
+		return bids;
+    }
 
 	public void createCategoryTree()
 	{
