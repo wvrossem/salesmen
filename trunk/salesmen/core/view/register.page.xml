@@ -1,15 +1,7 @@
 <page action="#{registerUserAccount.createUser}">
 
-	<navigation from-action="#{registerUserAccount.verifyPassword}">
-	
-		<rule if="#{not registerUserAccount.passwordVerified}">
-			<redirect view-id="/register.xhtml"/>
-		</rule>
-		
-		<rule if="#{registerUserAccount.passwordVerified}">
-			<redirect view-id="/register2.xhtml"/>
-		</rule>
-		
+	<navigation from-action="#{registerUserAccount.next}">
+        <redirect view-id="/register2.xhtml"/>
 	</navigation>
 	
 </page>

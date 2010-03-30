@@ -8,7 +8,10 @@ import be.vub.salesmen.entity.UserAccount;
 public interface RegisterUserAccount
 {
 	public void createUser();
-	public void verifyPassword();
 	public void userAccountCreated(UserAccount account);
 	public void createUserAccount();
+  public void next();
+
+  public boolean verifyUsername();
+  public void verifyPassword();
 }
