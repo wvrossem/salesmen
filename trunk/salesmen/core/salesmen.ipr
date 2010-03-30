@@ -67,7 +67,7 @@
     <option name="MAXIMUM_HEAP_SIZE" value="128" />
   </component>
   <component name="Encoding" useUTFGuessing="true" native2AsciiForPropertiesFiles="false">
-    <file url="file://$PROJECT_DIR$/src/main/be/vub/salesmen/entity/User.java" charset="MacRoman" />
+    <file url="file://$PROJECT_DIR$/src/main/be/vub/salesmen/entity/User.java" charset="x-MacRoman" />
   </component>
   <component name="EntryPointsManager">
     <entry_points version="2.0" />
@@ -271,7 +271,7 @@
         </SHUTDOWN>
       </ConfigurationWrapper>
       <method>
-        <option name="AntTarget" enabled="true" antfile="file://$PROJECT_DIR$/build.xml" target="deploy" />
+        <option name="AntTarget" enabled="true" antfile="file://$PROJECT_DIR$/build.xml" target="explode" />
         <option name="Make" enabled="false" />
       </method>
     </configuration>
@@ -281,7 +281,7 @@
     <option name="mySupportsUserInfoFilter" value="true" />
   </component>
   <component name="VcsDirectoryMappings">
-    <mapping directory="" vcs="" />
+    <mapping directory="" vcs="svn" />
   </component>
   <component name="WebServicesPlugin" addRequiredLibraries="true" />
 </project>
