@@ -12,6 +12,6 @@ public interface RegisterUserAccount
 	public void createUserAccount();
   public boolean next();
 
-  public boolean verifyUsername();
+  public void verifyUsername();
   public void verifyPassword();
 }
