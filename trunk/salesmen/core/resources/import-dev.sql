@@ -44,7 +44,7 @@ insert into Category (name,parent_id,version) values ('Tools & Auto',1, 0);
 
 
 
-insert into auction (title,description,startingprice,status, category_id) values ('Botten','Zwarte met strikjes',51.6,1,2);
-insert into auction (title,description,startingprice,status, category_id) values ('Auto','Blauw',36.51,1,4);
-insert into auction (title,description,startingprice,status, category_id) values ('PC','Kapot enzo',5.1,1,6);
-insert into auction (title,description,startingprice,status, category_id) values ('Mijn moeder','...',1.88,1,7);
+insert into auction (title,description,startingprice,status, category_id, version, user_id) values ('Botten','Zwarte met strikjes',51.6,1,2,0,3);
+insert into auction (title,description,startingprice,status, category_id, version, user_id) values ('Auto','Blauw',36.51,1,4,0,2);
+insert into auction (title,description,startingprice,status, category_id, version, user_id) values ('PC','Kapot enzo',5.1,1,6,0,1);
+insert into auction (title,description,startingprice,status, category_id, version, user_id) values ('Mijn moeder','...',1.88,1,7,0,2);
