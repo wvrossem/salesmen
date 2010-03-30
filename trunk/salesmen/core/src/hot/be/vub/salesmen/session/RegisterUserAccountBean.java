@@ -53,9 +53,15 @@ public class RegisterUserAccountBean implements RegisterUserAccount, Serializabl
 		}
 	}
 
-	public void next()
+	public String next()
 	{
-    return;
+		if(passwordVerified)
+		{
+			return "Success";
+		} else
+		{
+			return "Password not verified";
+		}
 	}
 
 	@Observer(JpaIdentityStore.EVENT_USER_CREATED)

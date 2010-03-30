@@ -6,6 +6,7 @@
 	xmlns:f="http://java.sun.com/jsf/core"
 	xmlns:h="http://java.sun.com/jsf/html"
 	xmlns:rich="http://richfaces.org/rich"
+	xmlns:a="http://richfaces.org/a4j"
 	template="layout/template.xhtml">
 
 <ui:define name="body">
@@ -13,13 +14,45 @@
 	<h:form id="userAccountForm">
 
 		<rich:panel>
-			<f:facet name="header">user</f:facet>
+			<s:validateAll>
+				<f:facet name="header">#{messages['salesmen.UserDashboard.Account']} #{messages['salesmen.UserDashboard.Management']}</f:facet>
+				<h:panelGrid columns="3" rowClasses="prop" columnClasses="name,value">
+				
+					<h:outputText value="#{messages['salesmen.UserAccount.Username']}: "/>
+					<h:outputText value="#{userAccountHome.instance.username}"/>
+					<h:outputText value="#{messages['salesmen.UserAccount.Cannotbechanged']}}"/>
+					
+					<h:outputLabel for="password"><b>#{messages['salesmen.UserAccount.Password']}</b></h:outputLabel>
+					<h:inputSecret id="password" value="#{userAccountHome.istance.password}" required="true">
+						<a:support event="onblur"
+										reRender="passwordMessage"
+										ajaxSingle="true"
+										limitToList="true" />
+					</h:inputSecret>
+					<a:outputPanel for="password" id="passwordMessage"><rich:message for="password"/></a:outputPanel>
 
-			<s:decorate id="nameField" template="layout/edit.xhtml">
-				<ui:define name="label">#{messages['salesmen.UserAccount.Username']}</ui:define>
-					<h:inputText id="name" required="true"
-						value="#{userAccountHome.instance.username}"/>
-			</s:decorate>
+
+					<h:outputLabel for="passwordConfirmation"><b>#{messages['salesmen.UserAccount.Password']}</b></h:outputLabel>
+					<a:region id="passwordConfirmationRegion">
+						<h:inputSecret id="passwordConfirmation" value="#{userAccountHome.passwordConfirmation}" required="true">
+								<a:support event="onblur"
+											action="#{userAccountHome.verifyPassword()}"
+											reRender="passwordConfirmationMessage"
+											ajaxSingle="true"
+											limitToList="true" />
+						</h:inputSecret>
+					</a:region>
+					<a:outputPanel for="passwordConfirmation" id="passwordConfirmationMessage">
+						<a:status for="passwordConfirmationRegion">
+								<f:facet name="start">
+									<h:graphicImage value="/img/ajax-loader.gif"/>
+								</f:facet>
+						</a:status>
+						<rich:message for="passwordConfirmation"/>
+					</a:outputPanel>
+					
+					</h:panelGrid>
+			</s:validateAll>
 
 			<div style="clear:both"/>
 
@@ -27,11 +60,11 @@
 
 		<div class="actionButtons">
 			<h:commandButton id="update"
-						  value="#{messages['salesmen.Action.Save']}"
-						 action="#{userAccountHome.update}"
+						value="#{messages['salesmen.Action.Save']}"
+						action="#{userAccountHome.update}"
 						rendered="#{userAccountHome.managed}"/>
 			<s:button id="cancel"
-				   value="#{messages['salesmen.Action.Cancel']}"
+					value="#{messages['salesmen.Action.Cancel']}"
 					view="/userAccount.xhtml"/>
 		</div>
 

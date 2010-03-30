@@ -1,7 +1,9 @@
 <page action="#{registerUserAccount.createUser}">
 
 	<navigation from-action="#{registerUserAccount.next}">
-        <redirect view-id="/register2.xhtml"/>
+		<rule if-outcome="Success">
+			<redirect view-id="/register2.xhtml"/>
+		</rule>
 	</navigation>
 	
 </page>
