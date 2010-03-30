@@ -32,7 +32,8 @@ public class RegisterUserAccountBean implements RegisterUserAccount, Serializabl
 	private String username;
 	private String password;
 	private String passwordConfirmation;
-	private boolean passwordVerified = false;
+	private boolean usernameValid = false;
+  private boolean passwordValid = false;
 	
 	// In annotations
 	@In EntityManager entityManager;
@@ -55,7 +56,7 @@ public class RegisterUserAccountBean implements RegisterUserAccount, Serializabl
 
 	public boolean next()
 	{
-		return passwordVerified;
+		return usernameValid && passwordValid;
 	}
 
 	@Observer(JpaIdentityStore.EVENT_USER_CREATED)
@@ -100,25 +101,25 @@ public class RegisterUserAccountBean implements RegisterUserAccount, Serializabl
 		emailService.sendConfirmation(user.getEmail(), username);
 	}
 
-  public boolean verifyUsername()
+  public void verifyUsername()
   {
-    String qry = "FROM UserAccount u WHERE u.username = username";
-		entities = entityManager.createQuery(qry).getResultList();
-		if (entities.size() == 1)
+    BasicSearchBean search = new BasicSearchBean();
+    UserAccount result  = search.findUserAccount(username, entityManager);
+		if (result == null)
     {
-      facesMessages.addToControl("username", "Username already exists");
-      return false;
+      facesMessages.addToControl("username", "Username unique");
+      usernameValid = true;
     }
     else{
-      facesMessages.addToControl("username", "Username unique");
-      return true;
+      facesMessages.addToControl("username", "Username already exists!");
+      usernameValid = false;
     }
   }
 
   public void verifyPassword()
 	{
-		passwordVerified = (passwordConfirmation != null && passwordConfirmation.equals(password));
-		if (!passwordVerified)
+		passwordValid = (passwordConfirmation != null && passwordConfirmation.equals(password));
+		if (!passwordValid)
 		{
 			facesMessages.addToControl("passwordConfirmation", "Passwords do not match");
 		}
@@ -161,10 +162,5 @@ public class RegisterUserAccountBean implements RegisterUserAccount, Serializabl
 	public void setPasswordConfirmation(String passwordConfirmation)
 	{
 		this.passwordConfirmation = passwordConfirmation;
-	}
-		
-	public boolean isPasswordVerified()
-	{
-		return passwordVerified;
 	}
 }

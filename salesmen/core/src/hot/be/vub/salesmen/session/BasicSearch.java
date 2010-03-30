@@ -30,8 +30,6 @@ public interface BasicSearch {
 	
 	public Object findUser(String screenName);
 
-    public Object findUserAccount(String userName);
-
 	public void createCategoryTree();
 
 	public List suggest(Object begin);
