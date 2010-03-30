@@ -11,43 +11,35 @@
 <ui:define name="body">
 
 	<rich:panel>
-		<f:facet name="header">Profile Management</f:facet>
+		<f:facet name="header">#{messages['salesmen.UserDashboard.Profile']}</f:facet>
 		<h:panelGrid columns="2" rowClasses="prop" columnClasses="name,value">
-			<h:outputText value="First Name: "/>
+			<h:outputText value="#{messages['salesmen.User.ScreenName']}: "/>
+			<h:outputText value="#{userHome.instance.screenName}"/>
+			<h:outputText value="#{messages['salesmen.User.FirstName']}: "/>
 			<h:outputText value="#{userHome.instance.firstName}"/>
-			<h:outputText value="Last Name: "/>
+			<h:outputText value="#{messages['salesmen.User.LastName']}: "/>
 			<h:outputText value="#{userHome.instance.lastName}"/>
-			<h:outputText value="Gender: "/>
+			<h:outputText value="#{messages['salesmen.User.Gender']}: "/>
 			<h:outputText value="#{userHome.instance.gender}"/>
-			<h:outputText value="E-mail: "/>
+			<h:outputText value="#{messages['salesmen.User.Email']}: "/>
 			<h:outputText value="#{userHome.instance.email}"/>
-			<h:outputText value="City: "/>
+			<h:outputText value="#{messages['salesmen.User.City']}: "/>
 			<h:outputText value="#{userHome.instance.city}"/>
-			<h:outputText value="Country: "/>
+			<h:outputText value="#{messages['salesmen.User.Country']}: "/>
 			<h:outputText value="#{userHome.instance.country}"/>
-			<h:outputText value="Member since "/>
-			<h:outputText value="#{userHome.instance.memberSince}"/>
 		</h:panelGrid>
 
-		<div style="clear:both"/>
+			<div style="clear:both"/>
 
 	</rich:panel>
 
 	<div class="actionButtons">
 		<s:button id="update"
-			   value="Update"
-				view="/userProfileManagementEdit.xhtml"
-			rendered="#{authenticatedUser.user.getUserId().equals(userHome.instance.getUserId()}/>
-		<s:button id="cancel"
-			   value="Cancel"
-				view="/userManagement.xhtml"
-			rendered="#{authenticatedUser.user.getUserId().equals(userHome.instance.getUserId()}/>
-		<s:button id="home"
-			   value="Home"
-				view="/home.xhtml"
-			rendered="#{!authenticatedUser.user.getUserId().equals(userHome.instance.getUserId()}/>
+			value="#{messages['salesmen.Action.Update']}"
+				view="/userProfileManagement.xhtml"
+				rendered="#{authenticatedUser.getUser().getUserId().equals(userHome.instance.getUserId())}"/>
 	</div>
-	
 
 </ui:define>
+
 </ui:composition>

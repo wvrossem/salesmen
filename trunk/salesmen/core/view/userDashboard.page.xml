@@ -1,6 +1,0 @@
-<page login-required="true">
-
-	<param name="userAccountId"
-		  value="#{authenticatedUser.accountId}"/>
-
-</page>
