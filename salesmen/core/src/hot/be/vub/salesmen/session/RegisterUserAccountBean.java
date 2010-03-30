@@ -4,11 +4,13 @@ import static org.jboss.seam.ScopeType.CONVERSATION;
 
 import java.io.Serializable;
 import java.util.Date;
+import java.util.List;
 
 import javax.ejb.Remove;
 import javax.persistence.EntityManager;
 
 import org.jboss.seam.annotations.*;
+import org.jboss.seam.annotations.datamodel.DataModel;
 import org.jboss.seam.faces.FacesMessages;
 import org.jboss.seam.security.Identity;
 import org.jboss.seam.security.RunAsOperation;
@@ -37,6 +39,10 @@ public class RegisterUserAccountBean implements RegisterUserAccount, Serializabl
 	@In Identity identity;
 	@In IdentityManager identityManager;
 	@In EmailService emailService;
+  @In FacesMessages facesMessages;
+
+  @DataModel
+	private List entities;
 	
 	@Begin(join = true)
 	public void createUser()
@@ -47,13 +53,9 @@ public class RegisterUserAccountBean implements RegisterUserAccount, Serializabl
 		}
 	}
 
-	public void verifyPassword()
+	public void next()
 	{
-		passwordVerified = (passwordConfirmation != null && passwordConfirmation.equals(password));
-		if (!passwordVerified)
-		{
-			FacesMessages.instance().addToControl("passwordConfirmation", "Passwords do not match");
-		}
+    return;
 	}
 
 	@Observer(JpaIdentityStore.EVENT_USER_CREATED)
@@ -96,11 +98,30 @@ public class RegisterUserAccountBean implements RegisterUserAccount, Serializabl
 		
 		// Send email
 		emailService.sendConfirmation(user.getEmail(), username);
-		
-		// Automatically, sign the user in
-		identity.getCredentials().setUsername(username);
-		identity.getCredentials().setPassword(password);
-		identity.login();
+	}
+
+  public boolean verifyUsername()
+  {
+    String qry = "FROM UserAccount u WHERE u.username = username";
+		entities = entityManager.createQuery(qry).getResultList();
+		if (entities.size() == 1)
+    {
+      facesMessages.addToControl("username", "Username already exists");
+      return false;
+    }
+    else{
+      facesMessages.addToControl("username", "Username unique");
+      return true;
+    }
+  }
+
+  public void verifyPassword()
+	{
+		passwordVerified = (passwordConfirmation != null && passwordConfirmation.equals(password));
+		if (!passwordVerified)
+		{
+			facesMessages.addToControl("passwordConfirmation", "Passwords do not match");
+		}
 	}
 		
 	@Destroy @Remove

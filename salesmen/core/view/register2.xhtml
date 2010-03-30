@@ -7,29 +7,120 @@
 	xmlns:f="http://java.sun.com/jsf/core"
 	xmlns:h="http://java.sun.com/jsf/html"
 	xmlns:rich="http://richfaces.org/rich"
+	xmlns:a="http://richfaces.org/a4j"
 	template="layout/template.xhtml">
 
 <ui:define name="body">
 
 	<h:form id="register">
 
-		<rich:panel>
-			<f:facet name="header">Register - Step 2</f:facet>
+        <rich:panel>
+            <f:facet name="header">Register - Step 2</f:facet>
 
-			<div class="dialog">
+            <p>Please fill in the following information</p>
+            <s:validateAll>
 
-				<s:validateAll>
-					<h:panelGrid columns="3" rowClasses="prop" columnClasses="name,value">
-						<h:outputLabel for="verifyCaptcha">
-							<h:graphicImage value="/seam/resource/captcha"/><em>*</em>
-						</h:outputLabel>
-						<h:inputText id="verifyCaptcha" required="true"
-									value="#{captcha.response}"/>
-						<div class="validation-error"><h:message for="verifyCaptcha"/></div>
-					</h:panelGrid>
-				</s:validateAll>
-			</div>
-		</rich:panel>
+                <h:panelGrid columns="3" rowClasses="prop" columnClasses="name,value">
+
+                    <h:outputLabel for="firstName"><b>#{messages['salesmen.User.FirstName']}</b></h:outputLabel>
+                    <a:region id="firstNameRegion">
+                        <h:inputText id="firstName" value="#{registerUserAccount.user.firstName}" required="true">
+                            <a:support event="onblur"
+                                       reRender="firstNameMessage"
+                                       ajaxSingle="true"
+                                       limitToList="true" />
+                        </h:inputText>
+                    </a:region>
+                    <a:outputPanel id="firstNameMessage">
+                        <a:status for="firstNameRegion">
+                            <f:facet name="start">
+                                <h:graphicImage value="/img/ajax-loader.gif"/>
+                            </f:facet>
+                        </a:status>
+                        <rich:message for="firstName"/>
+                    </a:outputPanel>
+
+                    <h:outputLabel for="lastName"><b>#{messages['salesmen.User.LastName']}</b></h:outputLabel>
+                    <a:region id="lastNameRegion">
+                        <h:inputText id="lastName" value="#{registerUserAccount.user.lastName}" required="true">
+                            <a:support event="onblur"
+                                       reRender="lastNameMessage"
+                                       ajaxSingle="true"
+                                       limitToList="true" />
+                        </h:inputText>
+                    </a:region>
+                    <a:outputPanel id="lastNameMessage">
+                        <a:status for="lastNameRegion">
+                            <f:facet name="start">
+                                <h:graphicImage value="/img/ajax-loader.gif"/>
+                            </f:facet>
+                        </a:status>
+                        <rich:message for="lastName"/>
+                    </a:outputPanel>
+
+                    <h:outputLabel for="screenName"><b>#{messages['salesmen.User.ScreenName']}</b></h:outputLabel>
+                    <a:region id="screenNameRegion">
+                        <h:inputText id="screenName" value="#{registerUserAccount.user.screenName}" required="true">
+                            <a:support event="onblur"
+                                       reRender="screenNameMessage"
+                                       ajaxSingle="true"
+                                       limitToList="true" />
+                        </h:inputText>
+                    </a:region>
+                    <a:outputPanel id="screenNameMessage">
+                        <a:status for="screenNameRegion">
+                            <f:facet name="start">
+                                <h:graphicImage value="/img/ajax-loader.gif"/>
+                            </f:facet>
+                        </a:status>
+                        <rich:message for="screenName"/>
+                    </a:outputPanel>
+
+                    <h:outputLabel for="city"><b>#{messages['salesmen.User.City']}</b></h:outputLabel>
+                    <a:region id="cityRegion">
+                        <h:inputText id="city" value="#{registerUserAccount.user.city}" required="true">
+                            <a:support event="onblur"
+                                       reRender="cityMessage"
+                                       ajaxSingle="true"
+                                       limitToList="true" />
+                        </h:inputText>
+                    </a:region>
+                    <a:outputPanel id="cityMessage">
+                        <a:status for="cityRegion">
+                            <f:facet name="start">
+                                <h:graphicImage value="/img/ajax-loader.gif"/>
+                            </f:facet>
+                        </a:status>
+                        <rich:message for="city"/>
+                    </a:outputPanel>
+
+                    <h:outputLabel for="gender"><b>#{messages['salesmen.User.Gender']}</b></h:outputLabel>
+                    <h:selectOneRadio id="gender" value="#{registerUserAccount.user.gender}" required="true">
+                        <f:selectItem itemValue="male" itemLabel="Male" />
+                        <f:selectItem itemValue="female" itemLabel="Female" />
+                    </h:selectOneRadio>
+                    <a:outputPanel id="genderMessage"><rich:message for="gender"/></a:outputPanel>
+
+                    <h:outputLabel for="country"><b>#{messages['salesmen.User.Country']}</b></h:outputLabel>
+                    <h:selectOneMenu id="country" value="#{registerUserAccount.user.country}" required="true">
+                        <s:selectItems  var="country" value="#{countries}"
+                                        label="#{country.longName}" noSelectionLabel="-- Select --"/>
+                        <s:convertEnum/>
+                    </h:selectOneMenu>
+                    <a:outputPanel id="countryMessage"><rich:message for="country"/></a:outputPanel>
+
+                    <h:outputLabel for="dateOfBirth"><b>#{messages['salesmen.User.Dateofbirth']}</b></h:outputLabel>
+                    <rich:calendar id="dateOfBirth" value="#{registerUserAccount.user.dateOfBirth}"
+                                   required="true" datePattern="MM/dd/yyyy" buttonIcon="img/dtpick.gif" />
+                    <a:outputPanel id="dateOfBirthMessage"><rich:message for="dateOfBirth"/></a:outputPanel>
+
+                    <h:outputLabel for="captcha"><h:graphicImage value="/seam/resource/captcha"/></h:outputLabel>
+                    <h:inputText id="captcha" value="#{captcha.response}" required="true" />
+                    <a:outputPanel id="captchaMessage"><rich:message for="captcha"/></a:outputPanel>
+
+                </h:panelGrid>
+            </s:validateAll>
+            <br/>
 
 		<div class="actionButtons">
 
@@ -37,6 +128,8 @@
 							action="#{registerUserAccount.createUserAccount}"/>
 		</div>
 
-	</h:form>
+        </rich:panel>
+    </h:form>
+    
 </ui:define>
 </ui:composition>

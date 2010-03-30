@@ -12,87 +12,96 @@
 
 <ui:define name="body">
 
-	<h:form id="register">
+    <h:form id="register">
 
-		<rich:panel>
-			<f:facet name="header">Register!</f:facet>
+        <rich:panel>
+            <f:facet name="header">Register - Step 1</f:facet>
 
-			<div class="dialog">
+            <p>Please fill in the following information</p>
+            <s:validateAll>
 
-				<s:validateAll>
-					<h:panelGrid columns="3" rowClasses="prop" columnClasses="name,value">
+            <h:panelGrid columns="3" rowClasses="prop" columnClasses="name,value">
 
-						<h:outputLabel for="username">#{messages['salesmen.UserAccount.Username']}<em>*</em></h:outputLabel>
-						<h:inputText id="username" required="true"
-									value="#{registerUserAccount.username}" />
-						<h:message for="username"/>
+                <h:outputLabel for="username"><b>#{messages['salesmen.UserAccount.Username']}</b></h:outputLabel>
+                <a:region id="usernameRegion">
+                    <h:inputText id="username" value="#{registerUserAccount.username}" required="true">
+                        <a:support event="onblur"
+                                   action="#{registerUserAccount.verifyUsername()}"
+                                   reRender="usernameMessage"
+                                   ajaxSingle="true"
+                                   limitToList="true" />
+                    </h:inputText>
+                </a:region>
+                <a:outputPanel for="username" id="usernameMessage">
+                    <a:status for="usernameRegion">
+                        <f:facet name="start">
+                            <h:graphicImage value="/img/ajax-loader.gif"/>
+                        </f:facet>
+                    </a:status>
+                    <rich:message for="username"/>
+                </a:outputPanel>
 
-						<h:outputLabel for="password">#{messages['salesmen.UserAccount.Password']}<em>*</em></h:outputLabel>
-						<h:inputSecret id="password" required="true"
-									value="#{registerUserAccount.password}"/>
-						<h:message for="password"/>
+                
+                <h:outputLabel for="email"><b>#{messages['salesmen.User.Email']}</b></h:outputLabel>
+                <a:region id="emailRegion">
+                    <h:inputText id="email" value="#{registerUserAccount.user.email}" required="true">
+                        <a:support event="onblur"
+                                   reRender="emailMessage"
+                                   ajaxSingle="true"
+                                   limitToList="true" />
+                    </h:inputText>
+                </a:region>
+                <a:outputPanel id="emailMessage">
+                    <a:status for="emailRegion">
+                        <f:facet name="start">
+                            <h:graphicImage value="/img/ajax-loader.gif"/>
+                        </f:facet>
+                    </a:status>
+                    <rich:message for="email"/>
+                </a:outputPanel>
 
-						<h:outputLabel for="passwordConfirmation">
-							Confirm #{messages['salesmen.UserAccount.Password']}<em>*</em></h:outputLabel>
-						<h:inputSecret id="passwordConfirmation" required="true"
-									value="#{registerUserAccount.passwordConfirmation}"/>
-						<h:message for="passwordConfirmation"/>
 
-						<h:outputLabel for="firstname">#{messages['salesmen.User.FirstName']}<em>*</em></h:outputLabel>
-						<h:inputText id="firstname" required="true"
-									value="#{registerUserAccount.user.firstName}"/>
-						<h:message for="firstname"/>
+                <h:outputLabel for="password"><b>#{messages['salesmen.UserAccount.Password']}</b></h:outputLabel>
+                <h:inputSecret id="password" value="#{registerUserAccount.password}" required="true">
+                    <a:support event="onblur"
+                               reRender="passwordMessage"
+                               ajaxSingle="true"
+                               limitToList="true" />
+                </h:inputSecret>
+                <a:outputPanel for="password" id="passwordMessage"><rich:message for="password"/></a:outputPanel>
 
-						<h:outputLabel for="lastName">#{messages['salesmen.User.LastName']}<em>*</em></h:outputLabel>
-						<h:inputText id="lastName" required="true"
-									value="#{registerUserAccount.user.lastName}"/>
-						<h:message for="lastName"/>
 
-						<h:outputLabel for="screenName">#{messages['salesmen.User.ScreenName']}<em>*</em></h:outputLabel>
-						<h:inputText id="screenName" required="true"
-									value="#{registerUserAccount.user.screenName}"/>
-						<h:message for="screenName"/>
+                <h:outputLabel for="passwordConfirmation"><b>#{messages['salesmen.UserAccount.Password']}</b></h:outputLabel>
+                <a:region id="passwordConfirmationRegion">
+                    <h:inputSecret id="passwordConfirmation" value="#{registerUserAccount.passwordConfirmation}" required="true">
+                        <a:support event="onblur"
+                                   action="#{registerUserAccount.verifyPassword()}"
+                                   reRender="passwordConfirmationMessage"
+                                   ajaxSingle="true"
+                                   limitToList="true" />
+                    </h:inputSecret>
+                </a:region>
+                <a:outputPanel for="passwordConfirmation" id="passwordConfirmationMessage">
+                    <a:status for="passwordConfirmationRegion">
+                        <f:facet name="start">
+                            <h:graphicImage value="/img/ajax-loader.gif"/>
+                        </f:facet>
+                    </a:status>
+                    <rich:message for="passwordConfirmation"/>
+                </a:outputPanel>
+            </h:panelGrid>
+            </s:validateAll>
+            <br/>
 
-						<h:outputLabel for="email">#{messages['salesmen.User.Email']}<em>*</em></h:outputLabel>
-						<h:inputText id="email" required="true"
-									value="#{registerUserAccount.user.email}"/>
-						<h:message for="email"/>
+            <div class="actionButtons">
 
-						<h:outputLabel for="gender">#{messages['salesmen.User.Gender']}<em>*</em></h:outputLabel>
-						<h:selectOneRadio id="gender" value="#{registerUserAccount.user.gender}" required="true">
-							<f:selectItem itemValue="male" itemLabel="Male" />
-							<f:selectItem itemValue="female" itemLabel="Female" />
-						</h:selectOneRadio>
-						<h:message for="gender"/>
+                <h:commandButton id="submit" value="Next"
+                                 action="#{registerUserAccount.next}"/>
+            </div>
 
-						<h:outputLabel for="city">#{messages['salesmen.User.City']}<em>*</em></h:outputLabel>
-						<h:inputText id="city" required="true"
-									value="#{registerUserAccount.user.city}"/>
-						<h:message for="city"/>
+        </rich:panel>
+    </h:form>
 
-						<h:outputLabel for="country">#{messages['salesmen.User.Country']}<em>*</em></h:outputLabel>
-						<h:selectOneMenu id="country" value="#{registerUserAccount.user.country}" required="true">
-							<s:selectItems var="country" value="#{countries}"
-										label="#{country.longName}" noSelectionLabel="-- Select --"/>
-							<s:convertEnum/>
-						</h:selectOneMenu>
-						<h:message for="country"/>
 
-						<h:outputLabel for="dateOfBirth">#{messages['salesmen.User.Dateofbirth']}<em>*</em></h:outputLabel>
-						<rich:calendar id="dateOfBirth" value="#{registerUserAccount.user.dateOfBirth}" required="true" datePattern="MM/dd/yyyy"
-									buttonIcon="img/dtpick.gif" />
-						<h:message for="dateOfBirth"/>
-					</h:panelGrid>
-				</s:validateAll>
-			</div>
-		</rich:panel>
-
-		<div class="actionButtons">
-
-			<h:commandButton id="submit" value="Next"
-						action="#{registerUserAccount.verifyPassword}"/>
-		</div>
-
-	</h:form>
 </ui:define>
 </ui:composition>
