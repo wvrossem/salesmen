@@ -1,29 +1,60 @@
 <!DOCTYPE composition PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
 	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <ui:composition xmlns="http://www.w3.org/1999/xhtml"
-	xmlns:s="http://jboss.com/products/seam/taglib"
-	xmlns:ui="http://java.sun.com/jsf/facelets"
-	xmlns:f="http://java.sun.com/jsf/core"
-	xmlns:h="http://java.sun.com/jsf/html"
-	xmlns:rich="http://richfaces.org/rich"
-	template="layout/template.xhtml">
+                xmlns:s="http://jboss.com/products/seam/taglib"
+                xmlns:ui="http://java.sun.com/jsf/facelets"
+                xmlns:f="http://java.sun.com/jsf/core"
+                xmlns:h="http://java.sun.com/jsf/html"
+                xmlns:rich="http://richfaces.org/rich"
+				xmlns:a="http://richfaces.org/a4j" template="layout/template.xhtml">
 
-<ui:define name="body">
-	This page displays an auction...
-	
-	<rich:panel>
-		<f:facet name="header">Auction</f:facet>
-		<h:outputText value="Auction: #{viewAuction.auction.title}"/><br/>
+    <ui:define name="body">
+        This page displays an auction...
 
-		<div class="bidDiv">
-			<h:commandButton id="bidButton"
-						  value="Bid!"
-                          action="#{viewAuction.bid(authenticatedUser)}"
-					   rendered="#{identity.loggedIn}"/>
-		</div>
-		<div style="clear:both"/>
+        <rich:panel>
+            <f:facet name="header">Auction</f:facet>
+            <h:outputText value="Auction: #{viewAuction.auction.title}"/><br/>
+            <h:outputText value="Desciption: #{viewAuction.auction.description}"/><br/>
+            <h:outputText value="Starting price: #{viewAuction.auction.startingPrice}"/><br/>
+            <h:outputText
+                    value="Highest bid: #{viewAuction.highestBid.amount} by #{viewAuction.highestBid.owner.username}"
+                    rendered="#{viewAuction.highestBid.amount!=0}"
+                    /><br/>
 
-	</rich:panel>
+            <h:form id="bidForm">
+			<fieldset>
+            <a:region id="bidRegion">
+                <h:inputText id="bidAmount" value="#{viewAuction.bidAmount}" style="width: 65px;"/>
+                <a:commandButton id="bidButton"
+                                 value="Bid!"
+                                 action="#{viewAuction.bid(authenticatedUser)}"
+                                 reRender="bidHistory"
+                                 rendered="#{identity.loggedIn}"/>
 
-</ui:define>
+                <a:outputPanel id="bidHistory">
+                    <h:outputText id="NoBidsFoundMessage"
+                        value="No bids placed yet"
+                        rendered="#{(viewAuction.bids != null and viewAuction.bids.size==0) or viewAuction.bids==null}"/>
+                    <h:dataTable id="bids" value="#{viewAuction.bids}" var="b"
+                        rendered="#{viewAuction.bids != null and viewAuction.bids.size!=0}">
+                    <h:column id="ScreenNameColumn">
+                        <f:facet name="header"><h:outputText value="User"/></f:facet>
+                        #{b.owner.username}
+                    </h:column>
+                    <h:column id="FirstNameColumn">
+                        <f:facet name="header"><h:outputText value="Amount"/></f:facet>
+                        #{b.amount}
+                    </h:column>
+                    </h:dataTable>
+                </a:outputPanel>    
+            </a:region>
+            </fieldset>
+            </h:form>
+
+
+            <div style="clear:both"/>
+
+        </rich:panel>
+
+    </ui:define>
 </ui:composition>

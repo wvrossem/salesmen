@@ -1,10 +1,12 @@
 package be.vub.salesmen.session;
 
+import be.vub.salesmen.entity.Auction;
 import be.vub.salesmen.entity.Category;
 
 import org.richfaces.model.TreeNodeImpl;
 
 import javax.ejb.Local;
+import javax.persistence.EntityManager;
 import java.util.List;
 
 @Local
@@ -43,5 +45,6 @@ public interface BasicSearch {
 	public boolean entityTypeAuction();
 
 	public void destroy();
+    
 
 }
