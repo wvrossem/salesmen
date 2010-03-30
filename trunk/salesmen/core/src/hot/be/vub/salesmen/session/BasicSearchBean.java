@@ -3,6 +3,7 @@ package be.vub.salesmen.session;
 import be.vub.salesmen.entity.Auction;
 import be.vub.salesmen.entity.Category;
 import be.vub.salesmen.entity.SearchTerm;
+import be.vub.salesmen.entity.User;
 import org.jboss.seam.ScopeType;
 import org.jboss.seam.annotations.Factory;
 import org.jboss.seam.annotations.In;
@@ -115,16 +116,31 @@ public class BasicSearchBean implements BasicSearch
 		}
 	}
 	
-	public Object findUser(String screenName)
+	public User findUser(String screenName)
 	{
-		String qry = "FROM User u WHERE u.screenName = #{screenName}";
+		String qry = "FROM User u WHERE u.screenName = '"+screenName+"'";
 		entities = entityManager.createQuery(qry).getResultList();
 		if (entities.size() == 1)
 		{
-			return entities.get(0);
-		} else
+			return (User)entities.get(0);
+		}
+        else
 		{
-			return false;
+			return null;
+		}
+	}
+
+    public User findUser(String screenName, EntityManager em)
+	{
+		String qry = "FROM User u WHERE u.screenName = '"+screenName+"'";
+		entities = em.createQuery(qry).getResultList();
+		if (entities.size() == 1)
+		{
+			return (User)entities.get(0);
+		}
+        else
+		{
+			return null;
 		}
 	}
 
