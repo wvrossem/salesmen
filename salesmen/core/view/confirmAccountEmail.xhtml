@@ -1,0 +1,18 @@
+<m:message xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:m="http://jboss.com/products/seam/mail"
+	xmlns:h="http://java.sun.com/jsf/html">
+
+	<m:from name="Salesmen" address="no-reply@salesmen.com" />
+	<m:to name="#{emailService.account.user.firstName} #{emailService.account.user.lastName}">
+	    #{emailService.account.user.email}
+    </m:to>
+	<m:subject>#{messages['salesmen.ConfirmAccountEmail.Subject']}</m:subject>
+
+	<m:body>
+		<p>#{messages['salesmen.Email.Hello']} #{emailService.account.user.screenName},</p>
+		<p>#{messages['salesmen.ConfirmAccountEmail.Message']}</p>
+		<p>#{messages['salesmen.Email.Bye']}</p>
+		<p>#{messages['salesmen.Email.Team']}</p>
+	</m:body>
+	
+</m:message>

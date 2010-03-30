@@ -66,12 +66,11 @@ public class ForgotPasswordBean implements ForgotPassword, Serializable
 				{
 				identityManager.changePassword(screenName, password);
 				}
-				
-			}.addRole("admin").run();
 
+			}.addRole("admin").run();
 		    FacesMessages.instance().addToControl("screenNameConfirmation", "We have found your screenname and we have sent your new password to your emailadres");
 			// Send email with the new password
-			emailService.sendPassword(this.foundEmail, this.screenName, this.password);
+			emailService.sendPassword(this.foundUserAccount, this.password);
 		}
 	}
 
