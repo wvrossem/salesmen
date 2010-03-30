@@ -37,7 +37,7 @@
 		<s:button id="update"
 			value="#{messages['salesmen.Action.Update']}"
 				view="/userProfileManagement.xhtml"
-				rendered="#{authenticatedUser.getUser().getUserId().equals(userHome.instance.getUserId())}"/>
+				rendered="#{identity.hasRole('admin') or authenticatedUser.getUser().getUserId().equals(userHome.instance.getUserId())}"/>
 	</div>
 
 </ui:define>

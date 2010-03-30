@@ -1,0 +1,3 @@
+<page login-required="true">
+	<restrict>#{identity.hasRole("admin") or authenticatedUser.getUser().getUserId().equals(userHome.instance.getUserId())}</restrict>
+</page>

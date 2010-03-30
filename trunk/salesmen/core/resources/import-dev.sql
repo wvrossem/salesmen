@@ -12,7 +12,7 @@ insert into UserAccount (username, passwordhash, passwordsalt, enabled, userid, 
 insert into UserAccount (username, passwordhash, passwordsalt, enabled, userid, activationKey, version) values ('shadowman', '1D70EA4F262D46525F38DA0C1A130FFF1CA02149', '727D5C9995088913', true, 3, 5946808103467846878, 0);
 insert into UserAccount (username, passwordhash, passwordsalt, enabled, userid, activationKey, version) values ('mona', 'CDF580AB2AFC6F7FBCF5A1F114E383DB0DF9E309', '7D804DD05067750C', true, 4, 5946808103467846878, 0);
 
-insert into UserAccountRoles (accountid, roleid) values (1, 1);
+insert into UserAccountRoles (accountid, roleid) values (1, 2);
 insert into UserAccountRoles (accountid, roleid) values (2, 1);
 insert into UserAccountRoles (accountid, roleid) values (3, 1);
 insert into UserAccountRoles (accountid, roleid) values (4, 1);
