@@ -4,6 +4,7 @@ import java.io.Serializable;
 import javax.ejb.Stateless;
 import javax.faces.application.FacesMessage;
 
+import be.vub.salesmen.entity.UserAccount;
 import org.jboss.seam.ScopeType;
 import org.jboss.seam.annotations.*;
 import org.jboss.seam.annotations.async.Asynchronous;
@@ -18,9 +19,8 @@ public class EmailService implements Serializable
 {
 	private static final long serialVersionUID = -8132989898020136666L;
 
-	//Private Attributes
-	private String email;
-	private String username;
+  //Private Attributes
+  private UserAccount account;
 	private String password;
 
 	@Logger
@@ -31,23 +31,23 @@ public class EmailService implements Serializable
 	private Renderer renderer;
 
 	@Asynchronous
-	public void sendConfirmation(String email, String username)
+	public void sendConfirmAccountEmail(UserAccount account)
 	{
-		setEmail(email);
-		setUsername(username);
+		this.account = account;
 		try
 		{
-			renderer.render("/confirmEmail.xhtml");
+			renderer.render("/confirmAccountEmail.xhtml");
 		}
 		catch (Exception e)
 		{
 			log.error("Error sending mail", e);
 		}
 	}
-		public void sendPassword(String email, String username, String password)
+
+  @Asynchronous
+  public void sendPassword(UserAccount account, String password)
 	{
-		setEmail(email);
-		setUsername(username);
+    this.account = account;
 		setPassword(password);
 		try
 		{
@@ -59,27 +59,30 @@ public class EmailService implements Serializable
 		}
 	}
 
+  @Asynchronous
+	public void sendActivateAccountEmail(UserAccount account)
+	{
+		this.account = account;
+		try
+		{
+			renderer.render("/activateAccountEmail.xhtml");
+		}
+		catch (Exception e)
+		{
+			log.error("Error sending mail", e);
+		}
+	}
+
 	//Public Attribute getters/setters
-	public String getEmail()
-	{
-		return email;
-	}
+  public UserAccount getAccount() {
+    return account;
+  }
 
-	public void setEmail(String email)
-	{
-		this.email = email;
-	}
+  public void setAccount(UserAccount account) {
+    this.account = account;
+  }
 
-	public String getUsername()
-	{
-		return username;
-	}
-
-	public void setUsername(String username)
-	{
-		this.username = username;
-	}
-		public String getPassword()
+	public String getPassword()
 	{
 		return password;
 	}

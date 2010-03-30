@@ -1,7 +1,6 @@
 package be.vub.salesmen.session;
 
 import java.io.Serializable;
-import javax.faces.application.FacesMessage;
 
 import org.jboss.seam.ScopeType;
 import org.jboss.seam.annotations.Name;
@@ -33,7 +32,7 @@ public class SendEmail implements Serializable
 	{
 		try
 		{
-			renderer.render("/confirmEmail.xhtml");
+			renderer.render("/confirmAccountEmail.xhtml");
 			facesMessages.add("Email sent successfully");
 		} catch (Exception e)
 		{

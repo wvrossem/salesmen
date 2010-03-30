@@ -5,6 +5,7 @@ import static org.jboss.seam.ScopeType.CONVERSATION;
 import java.io.Serializable;
 import java.util.Date;
 import java.util.List;
+import java.util.Random;
 
 import javax.ejb.Remove;
 import javax.persistence.EntityManager;
@@ -83,7 +84,7 @@ public class RegisterUserAccountBean implements RegisterUserAccount, Serializabl
 	@End
 	public void createUserAccount()
 	{
-	user.setMemberSince(new Date());
+	  user.setMemberSince(new Date());
 		entityManager.persist(user);
 		new RunAsOperation()
 		{
@@ -95,10 +96,16 @@ public class RegisterUserAccountBean implements RegisterUserAccount, Serializabl
 		}.addRole("admin").run();
 		
 		newAccount.setUser(user);
+    newAccount.setEnabled(false);
+
+    // Generate activation key
+    Long randomNumber = new Random().nextLong();
+    newAccount.setActivationKey(randomNumber);
+
 		newAccount = entityManager.merge(newAccount);
-		
+    
 		// Send email
-		emailService.sendConfirmation(user.getEmail(), username);
+		emailService.sendActivateAccountEmail(newAccount);
 	}
 
   public void verifyUsername()
