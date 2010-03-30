@@ -32,7 +32,7 @@ public class RegisterUserAccountBean implements RegisterUserAccount, Serializabl
 	private String username;
 	private String password;
 	private String passwordConfirmation;
-	private boolean passwordVerified;
+	private boolean passwordVerified = false;
 	
 	// In annotations
 	@In EntityManager entityManager;
@@ -53,15 +53,9 @@ public class RegisterUserAccountBean implements RegisterUserAccount, Serializabl
 		}
 	}
 
-	public String next()
+	public boolean next()
 	{
-		if(passwordVerified)
-		{
-			return "Success";
-		} else
-		{
-			return "Password not verified";
-		}
+		return passwordVerified;
 	}
 
 	@Observer(JpaIdentityStore.EVENT_USER_CREATED)
