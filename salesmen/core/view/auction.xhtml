@@ -11,7 +11,7 @@
     <ui:define name="body">
         This page displays an auction...
 
-        <rich:panel>
+        <rich:panel id="bidPanel">
             <f:facet name="header">Auction</f:facet>
             <h:outputText value="Auction: #{viewAuction.auction.title}"/><br/>
             <h:outputText value="Desciption: #{viewAuction.auction.description}"/><br/>
@@ -28,8 +28,17 @@
                 <a:commandButton id="bidButton"
                                  value="Bid!"
                                  action="#{viewAuction.bid(authenticatedUser)}"
-                                 reRender="bidHistory"
+                                 reRender="bidPanel"
                                  rendered="#{identity.loggedIn}"/>
+
+                <a:outputPanel for="bidAmount" id="bidMessage">
+                    <a:status for="bidRegion">
+                        <f:facet name="start">
+                            <h:graphicImage value="/img/ajax-loader.gif"/>
+                        </f:facet>
+                    </a:status>
+                    <rich:message for="bidAmount"/>
+                </a:outputPanel>
 
                 <a:outputPanel id="bidHistory">
                     <h:outputText id="NoBidsFoundMessage"
