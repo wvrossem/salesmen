@@ -41,7 +41,7 @@ public class Auction implements Serializable
 	// Private Attributes
 	private Long auctionId;
 	private Integer version;
-	private UserAccount owner;
+	private User owner;
 	private Category category;
 	private String title;
 	private String description;
@@ -86,12 +86,12 @@ public class Auction implements Serializable
 	//@NotNull
 	@ManyToOne
 	@JoinColumn(name = "USER_ID")
-	public UserAccount getOwner()
+	public User getOwner()
     {
 		return owner;
 	}
 
-	public void setOwner(UserAccount owner)
+	public void setOwner(User owner)
     {
 		this.owner = owner;
 	}
