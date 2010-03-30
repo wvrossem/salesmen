@@ -10,7 +10,7 @@ public interface RegisterUserAccount
 	public void createUser();
 	public void userAccountCreated(UserAccount account);
 	public void createUserAccount();
-  public void next();
+  public String next();
 
   public boolean verifyUsername();
   public void verifyPassword();
