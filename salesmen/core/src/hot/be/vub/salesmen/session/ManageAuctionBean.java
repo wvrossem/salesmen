@@ -1,6 +1,6 @@
 package be.vub.salesmen.session;
 
-import be.vub.salesmen.entity.User;
+import be.vub.salesmen.entity.UserAccount;
 import be.vub.salesmen.entity.Auction;
 import be.vub.salesmen.entity.Category;
 import org.jboss.seam.annotations.*;
@@ -65,7 +65,7 @@ public class ManageAuctionBean implements ManageAuction, Serializable
 		}
 	}
 
-	public void save(User user)
+	public void save(UserAccount user)
 	{
 		this.setNew(true);
 		this.auction.setOwner(user);
