@@ -21,6 +21,7 @@ public class EmailService implements Serializable
 	//Private Attributes
 	private String email;
 	private String username;
+	private String password;
 
 	@Logger
 	private Log log;
@@ -37,6 +38,20 @@ public class EmailService implements Serializable
 		try
 		{
 			renderer.render("/confirmEmail.xhtml");
+		}
+		catch (Exception e)
+		{
+			log.error("Error sending mail", e);
+		}
+	}
+		public void sendPassword(String email, String username, String password)
+	{
+		setEmail(email);
+		setUsername(username);
+		setPassword(password);
+		try
+		{
+			renderer.render("/passwordEmail.xhtml");
 		}
 		catch (Exception e)
 		{
@@ -63,5 +78,14 @@ public class EmailService implements Serializable
 	public void setUsername(String username)
 	{
 		this.username = username;
+	}
+		public String getPassword()
+	{
+		return password;
+	}
+
+	public void setPassword(String password)
+	{
+		this.password = password;
 	}
 }
