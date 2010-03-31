@@ -2,10 +2,7 @@ package be.vub.salesmen.session;
 
 import be.vub.salesmen.entity.*;
 import org.jboss.seam.ScopeType;
-import org.jboss.seam.annotations.Factory;
-import org.jboss.seam.annotations.In;
-import org.jboss.seam.annotations.Name;
-import org.jboss.seam.annotations.Scope;
+import org.jboss.seam.annotations.*;
 import org.jboss.seam.annotations.datamodel.DataModel;
 import org.jboss.seam.international.StatusMessages;
 import org.richfaces.model.TreeNodeImpl;
@@ -21,6 +18,7 @@ import java.util.concurrent.atomic.AtomicReference;
 @Stateful
 @Name("basicSearch")
 @Scope(ScopeType.SESSION)
+@Synchronized(timeout=1000000000)
 public class BasicSearchBean implements BasicSearch
 {
 	@PersistenceContext
@@ -45,25 +43,30 @@ public class BasicSearchBean implements BasicSearch
 
 	public void find()
 	{
-		page = 0;
-		queryEntities();
-		if (entities.size() != 0 && searchTerm.length() >= 3)
-		{
-			String q = "from SearchTerm s where s.term = #{searchTerm}";
-			List entLst = entityManager.createQuery(q).getResultList();
-			if (entLst.size() != 0)
-			{
-				savedTerm = new SearchTerm();
-				savedTerm.setTerm(searchTerm);
-				entityManager.persist(savedTerm);
-			}
-		}
+        try {
+            page = 0;
+            queryEntities();
+            if (entities.size() != 0 && searchTerm.length() >= 3)
+            {
+                String q = "from SearchTerm s where s.term = #{searchTerm}";
+                List entLst = entityManager.createQuery(q).getResultList();
+                if (entLst.size() == 0)
+                {
+                    savedTerm = new SearchTerm();
+                    savedTerm.setTerm(searchTerm);
+                    entityManager.persist(savedTerm);
+                }
+            }
+        } catch (Exception e) {
+            System.out.println(e);
+        }
 	}
 
 	public List suggest(Object begin)
 	{
-		AtomicReference<String> qry = new AtomicReference<String>("select s.term from SearchTerm s where s.term like(#{searchTerm})");
-		return entityManager.createQuery(qry.get()).setMaxResults(10).getResultList();
+		System.out.println("ok");
+		String qry = "from SearchTerm s where s.term like #{pattern}";
+		return entityManager.createQuery(qry).setMaxResults(10).getResultList();
 	}
 
 	public void nextPage()
@@ -74,40 +77,44 @@ public class BasicSearchBean implements BasicSearch
 
 	private void queryEntities()
 	{
-		StringBuilder qry = new StringBuilder();
-		
-		if ( entityType.equals("Auction"))
-		{
-			qry.append("from Auction e");
-			qry.append(" WHERE UPPER(e.title) LIKE UPPER(#{pattern})");
-				qry.append(" AND e.status = " + Auction.AuctionStatus.LISTED.ordinal());
-		} else if (entityType.equals("User"))
-		{
-			qry.append("from User e");
-			qry.append(" WHERE UPPER(e.screenName) LIKE UPPER(#{pattern})");
-			qry.append(" or UPPER(e.firstName) LIKE UPPER(#{pattern})");
-			qry.append(" or UPPER(e.lastName) LIKE UPPER(#{pattern})");
-		} else if (entityType.equals("Tag"))
-		{
-			qry.append("from Tag e");
-		} else if (entityType.equals("UserAccount"))
-		{
-			qry.append("from UserAccount e");
-		}		
-		
-		List results = entityManager.createQuery(qry.toString())
-			.setMaxResults(pageSize) //+1?
-			.setFirstResult( page * pageSize )
-			.getResultList(); 
+        try {
+            StringBuilder qry = new StringBuilder();
 
-		nextPageAvailable = results.size() > pageSize;
-		if (nextPageAvailable)
-		{
-			entities = new ArrayList<Object>(results.subList(0, pageSize));
-		} else
-		{
-			entities = results;
-		}
+            if ( entityType.equals("Auction"))
+            {
+                qry.append("from Auction e");
+                qry.append(" WHERE UPPER(e.title) LIKE UPPER(#{pattern})");
+                    qry.append(" AND e.status = " + Auction.AuctionStatus.LISTED.ordinal());
+            } else if (entityType.equals("User"))
+            {
+                qry.append("from User e");
+                qry.append(" WHERE UPPER(e.screenName) LIKE UPPER(#{pattern})");
+                qry.append(" or UPPER(e.firstName) LIKE UPPER(#{pattern})");
+                qry.append(" or UPPER(e.lastName) LIKE UPPER(#{pattern})");
+            } else if (entityType.equals("Tag"))
+            {
+                qry.append("from Tag e");
+            } else if (entityType.equals("UserAccount"))
+            {
+                qry.append("from UserAccount e");
+            }
+
+            List results = entityManager.createQuery(qry.toString())
+                .setMaxResults(pageSize) //+1?
+                .setFirstResult( page * pageSize )
+                .getResultList();
+
+            nextPageAvailable = results.size() > pageSize;
+            if (nextPageAvailable)
+            {
+                entities = new ArrayList<Object>(results.subList(0, pageSize));
+            } else
+            {
+                entities = results;
+            }
+        } catch (Exception e) {
+            System.out.println(e);
+        }
 	}
 	
 	public User findUser(String screenName)

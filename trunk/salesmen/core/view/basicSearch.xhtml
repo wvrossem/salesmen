@@ -29,9 +29,10 @@
 					</h:inputText>
 					<a:region renderRegionOnly="true">
 						<rich:suggestionbox id="searchTermSuggestionBox" for="searchTerm"
-							  suggestionAction="#{basicSearch.suggest}" var="result">
+							  suggestionAction="#{basicSearch.suggest}" var="result"
+                               width="165" height="100">
 							<h:column>
-								<h:outputText value="#{result}" style="font: menu;"/>
+								<h:outputText value="#{result.term}" style="font: menu;"/>                          
 							</h:column>
 						</rich:suggestionbox>
 					</a:region>
@@ -39,7 +40,7 @@
 					<h:selectOneMenu id="entityType" value="#{basicSearch.entityType}">
 						<f:selectItem id="Auction" itemLabel="#{messages['salesmen.General.Auction']}" itemValue="Auction"/>
 						<f:selectItem id="User" itemLabel="#{messages['salesmen.General.User']}" itemValue="User"/>
-						<f:selectItem id="Tag" itemLabel="#{messages['salesmen.General.Tag']}" itemValue="Tag"/>
+						<!--<f:selectItem id="Tag" itemLabel="#{messages['salesmen.General.Tag']}" itemValue="Tag"/> -->
 					</h:selectOneMenu>
 					&#160;
 					<a:commandButton id="findEntities" value="#{messages['salesmen.BasicSearch.Find']}"
@@ -94,16 +95,16 @@
 						<f:facet id="TitleFacet" name="header"><h:outputText value="#{messages['salesmen.Auction.Title']}"/></f:facet>
 						<s:link id="auctionLink"
 							propagation="none"
-								  value="BY ID: #{a.title}"
+								  value="#{a.title}"
 								   view="/auction.xhtml">
 							<f:param name="auctionId" value="#{a.id}"/>
 						</s:link>
 						<br/>
-						<s:link id="viewAuctionLink" 
+						<!--<s:link id="viewAuctionLink"
 							propagation="none"
 								  value="BY REFERENCE: #{a.title}"
 								 action="#{viewAuction.selectAuction(a)}"
-								   view="/auction.xhtml"/>
+								   view="/auction.xhtml"/>     -->
 					</h:column>
 					<h:column id="DescriptionColumn">
 						<f:facet id="DescriptionFacet" name="header"><h:outputText value="#{messages['salesmen.Auction.Description']}"/></f:facet>
@@ -116,7 +117,7 @@
 				</h:dataTable>
 				<s:link id="MoreResultsLink" value="More results"
 						  action="#{basicSearch.nextPage}"
-						rendered="#{basicSearch.nextPageAvailable}"/>
+						rendered="#{basicSearch.nextPageAvailable}"/>   
 			</div>
 		</a:outputPanel>
 
