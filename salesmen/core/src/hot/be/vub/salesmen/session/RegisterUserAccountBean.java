@@ -113,11 +113,11 @@ public class RegisterUserAccountBean implements RegisterUserAccount, Serializabl
     UserAccount result  = search.findUserAccount(username, entityManager);
 		if (result == null)
     {
-      facesMessages.addToControl("username", FacesMessage.SEVERITY_INFO, "Username unique");
+      facesMessages.addToControlFromResourceBundle("username", FacesMessage.SEVERITY_INFO, "salesmen.UserAccount.Username.Unique");
       usernameValid = true;
     }
     else{
-      facesMessages.addToControl("username", FacesMessage.SEVERITY_ERROR, "Username already exists!");
+      facesMessages.addToControlFromResourceBundle("username", FacesMessage.SEVERITY_ERROR, "salesmen.UserAccount.Username.AlreadyExists");
       usernameValid = false;
     }
   }
@@ -127,9 +127,9 @@ public class RegisterUserAccountBean implements RegisterUserAccount, Serializabl
 		passwordValid = (passwordConfirmation != null && passwordConfirmation.equals(password));
 		if (!passwordValid)
 		{
-			facesMessages.addToControl("passwordConfirmation", FacesMessage.SEVERITY_ERROR, "Passwords do not match");
+			facesMessages.addToControlFromResourceBundle("passwordConfirmation", FacesMessage.SEVERITY_ERROR, "salesmen.UserAccount.Password.NoMatch");
 		} else {
-            facesMessages.addToControl("passwordConfirmation", FacesMessage.SEVERITY_INFO, "Passwords match");
+            facesMessages.addToControlFromResourceBundle("passwordConfirmation", FacesMessage.SEVERITY_INFO, "salesmen.UserAccount.Password.Match");
         }
 	}
 		
