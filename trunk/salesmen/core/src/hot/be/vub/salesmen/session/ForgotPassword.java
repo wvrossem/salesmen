@@ -7,5 +7,5 @@ import javax.ejb.Local;
 @Local
 public interface ForgotPassword
 {
-	public void checkScreenName();
+	public void checkUsername();
 }
