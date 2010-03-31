@@ -1,0 +1,93 @@
+\documentclass[a4paper, 12pt]{article}
+\usepackage[english]{babel}
+\usepackage{graphicx, ctable, url}
+\usepackage{hyperref}
+\usepackage{eurosym}
+\usepackage{listings} % source listings
+\lstloadlanguages{java}
+\lstset{keywordstyle=\ttfamily\bfseries}
+\lstset{flexiblecolumns=true}
+\lstset{commentstyle=\ttfamily\itshape}
+
+	\begin{document}
+
+\title{Minutes Meeting 18}
+\author{Wouter Van Rossem}
+\date{\today}
+
+\maketitle	
+	\section{Meeting Information}
+		\textbf{Date:} Thursday, March 18, 2009\\
+		\textbf{Time:} 12H00--13H00\\
+		\textbf{Place:} CSB Seminary room 2\\
+		\subsection{Attendees}
+Following members were present:
+			\begin{itemize}
+				\item Nick De Cooman
+				\item Jonathan Jeurissen
+				\item Bart Maes
+				\item Jorne Laton
+				\item Patrick Provinciael
+				\item Wouter Van Rossem
+				\item Sina Khakbaz Heshmati
+			\end{itemize}
+
+%Following members were absent:
+%			\begin{itemize}
+			 
+%			\end{itemize}
+			
+		\subsection{Revision History}
+			\begin{tabular}{c | l | l }
+				\textbf{Rev.} & \textbf{Date} & \textbf{Description} \\
+				\hline
+				1.0 & March 21, 2010 & First draft created \\
+				%1.1 & March 10, 2010 & Revised by QA Manager \\
+			\end{tabular}		
+
+	\section{Introduction}
+		In this meeting we brainstormed about the structure and the content of our presentation for the second conference. 
+		
+	\section{Structure and content}
+		This section describes how we will divide the 30 minutes we get during the conference.
+		\begin{description}
+			\item[Sina (5 min)]: Will give his vision as implementation manager. He will talk about what we have accomplished in the previous weeks and what we want to have completed at end of the first implementation phase. The design of the website will also be discussed by him: how we currently have no design, but will do this at the end. Sina will prepare some slides for his part of the presentation.
+			\item[Bart + Wouter (15 min)]: Will give a demo of the current functionalities of the website. Some notable parts that should be included in the demo are:
+				\begin{itemize}
+					\item Searching
+					\item Creating and viewing an auction
+					\item Creating a user and viewing the user dashboard
+					\item Internationalization
+				\end{itemize}
+			\item[Nick (10 min)]: Will talk about:
+				\begin{itemize}
+					\item Timesheets
+					\item Planning 
+					\item Evaluation of previous semester
+				\end{itemize}
+				He will also discuss why our previous implementation failed and the measures we took to resolve this (e.g. workshops). A Gantt chart that shows the progress of the requirements will also be presented by him. 
+		\end{description}
+		
+	\section{Risk management}
+		In order to give a fluent demo of our project, we discussed some risks and their solutions.
+		\begin{itemize}
+			\item We can't connect to our database because we there is no internet connection available during the demo. \\
+				\textbf{Solution}: The machine on which we will run the demo, will have a local database
+			\item Unexpected errors during the demo \\
+				\textbf{Solution}: A new stable branch will be created on 28/03
+		\end{itemize} 
+		
+	\section{Documents}
+		It was decided that the documents will be brought to their next versions during the Easter holiday.
+	
+	\section{Agenda}
+A complete list of Agenda items is available on \cite{agendaitems}.\\
+	
+	\begin{thebibliography}{99}
+		
+		\bibitem{agendaitems}
+		\href{http://code.google.com/p/salesmen/wiki/NextMeetingTopics}{http://code.google.com/p/salesmen/wiki/NextMeetingTopics}
+		
+	\end{thebibliography}	
+		
+\end{document}
