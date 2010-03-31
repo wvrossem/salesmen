@@ -90,7 +90,7 @@
 					</h:column>
 				</h:dataTable>
 				<s:div rendered="#{entities.rowCount>0 and basicSearch.entityTypeAuction()}">
-					<ui:include src="/auctionListSample.xhtml"/>
+					<ui:include src="/auctionList.xhtml"/>
 				</s:div>
 				<s:link id="MoreResultsLink" value="More results"
 						  action="#{basicSearch.nextPage}"
