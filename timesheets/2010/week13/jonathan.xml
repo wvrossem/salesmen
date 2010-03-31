@@ -1,0 +1,43 @@
+<?xml version='1.0'?>
+<timesheet xmlns="http://purl.org/net/timetrack">
+	
+	<item duration="PT4H30">
+		<desc>Programming ForgotPassword</desc>
+			<refs>
+				<ref>http://code.google.com/p/salesmen/source/detail?r=1163</ref>
+				<ref>http://code.google.com/p/salesmen/source/detail?r=1164</ref>
+				<ref>http://code.google.com/p/salesmen/source/detail?r=1165</ref>
+				<ref>http://code.google.com/p/salesmen/source/detail?r=1166</ref>
+			</refs>
+	</item>
+	
+	<item duration="PT2H30M">
+		<desc>Editing ForgotPassword (language support,username instead of screenname, asynchronous search, conversation error solved)</desc>
+			<refs>
+				<ref>http://code.google.com/p/salesmen/source/detail?r=1182</ref>
+				<ref>http://code.google.com/p/salesmen/source/detail?r=1180</ref>
+				<ref>http://code.google.com/p/salesmen/source/detail?r=1175</ref>
+			</refs>
+	</item>
+	
+	<item duration="PT10M">
+		<desc>Editing Login (language support)</desc>
+			<refs>
+				<ref>http://code.google.com/p/salesmen/source/detail?r=1181</ref>
+			</refs>
+	</item>
+  
+    <item duration="PT1H45">
+		<desc>Conference II</desc>
+	</item>
+  
+     <item duration="PT30M">
+		<desc>Conference II evaluation</desc>
+		<refs>No_Reference_Available_yet</refs>
+	</item>
+  
+	<item duration="PT45M">
+		<desc>Administration and Communication.</desc>
+		<refs></refs>
+	</item>
+</timesheet>
