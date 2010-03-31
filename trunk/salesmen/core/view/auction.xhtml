@@ -16,7 +16,7 @@
             <h:outputText value="Auction: #{viewAuction.auction.title}"/><br/>
             <h:outputText value="Desciption: #{viewAuction.auction.description}"/><br/>
             <h:outputText value="Starting price: #{viewAuction.auction.startingPrice}"/><br/>
-            <h:outputText
+            <h:outputText id="highestBid"
                     value="Highest bid: #{viewAuction.highestBid.amount} by #{viewAuction.highestBid.owner.username}"
                     rendered="#{viewAuction.highestBid.amount!=0}"
                     /><br/>
@@ -30,6 +30,15 @@
                                  action="#{viewAuction.bid(authenticatedUser)}"
                                  reRender="bidPanel"
                                  rendered="#{identity.loggedIn}"/>
+                <rich:message for="bidRegion">
+                    <f:facet name="errorMarker">
+                        <h:graphicImage url="/img/msgerror.png"/>
+                    </f:facet>
+                    <f:facet name="infoMarker">
+                            <h:graphicImage url="/img/true.png"/>
+                    </f:facet>
+                </rich:message>
+                <br/>
 
                 <a:outputPanel for="bidAmount" id="bidMessage">
                     <a:status for="bidRegion">
