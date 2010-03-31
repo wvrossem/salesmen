@@ -1,15 +1,7 @@
 package be.vub.salesmen.session;
 
-import static org.jboss.seam.ScopeType.CONVERSATION;
-
-import java.io.Serializable;
-import java.util.Date;
-import java.util.List;
-import java.util.Random;
-
-import javax.ejb.Remove;
-import javax.persistence.EntityManager;
-
+import be.vub.salesmen.entity.User;
+import be.vub.salesmen.entity.UserAccount;
 import org.jboss.seam.annotations.*;
 import org.jboss.seam.annotations.datamodel.DataModel;
 import org.jboss.seam.faces.FacesMessages;
@@ -18,8 +10,15 @@ import org.jboss.seam.security.RunAsOperation;
 import org.jboss.seam.security.management.IdentityManager;
 import org.jboss.seam.security.management.JpaIdentityStore;
 
-import be.vub.salesmen.entity.User;
-import be.vub.salesmen.entity.UserAccount;
+import javax.ejb.Remove;
+import javax.faces.application.FacesMessage;
+import javax.persistence.EntityManager;
+import java.io.Serializable;
+import java.util.Date;
+import java.util.List;
+import java.util.Random;
+
+import static org.jboss.seam.ScopeType.CONVERSATION;
 
 @Scope(CONVERSATION)
 @Name("registerUserAccount")
@@ -114,11 +113,11 @@ public class RegisterUserAccountBean implements RegisterUserAccount, Serializabl
     UserAccount result  = search.findUserAccount(username, entityManager);
 		if (result == null)
     {
-      facesMessages.addToControl("username", "Username unique");
+      facesMessages.addToControl("username", FacesMessage.SEVERITY_INFO, "Username unique");
       usernameValid = true;
     }
     else{
-      facesMessages.addToControl("username", "Username already exists!");
+      facesMessages.addToControl("username", FacesMessage.SEVERITY_ERROR, "Username already exists!");
       usernameValid = false;
     }
   }
@@ -128,8 +127,10 @@ public class RegisterUserAccountBean implements RegisterUserAccount, Serializabl
 		passwordValid = (passwordConfirmation != null && passwordConfirmation.equals(password));
 		if (!passwordValid)
 		{
-			facesMessages.addToControl("passwordConfirmation", "Passwords do not match");
-		}
+			facesMessages.addToControl("passwordConfirmation", FacesMessage.SEVERITY_ERROR, "Passwords do not match");
+		} else {
+            facesMessages.addToControl("passwordConfirmation", FacesMessage.SEVERITY_INFO, "Passwords match");
+        }
 	}
 		
 	@Destroy @Remove

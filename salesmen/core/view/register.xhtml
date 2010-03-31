@@ -38,7 +38,14 @@
                             <h:graphicImage value="/img/ajax-loader.gif"/>
                         </f:facet>
                     </a:status>
-                    <rich:message for="username"/>
+                    <rich:message for="username" >
+                        <f:facet name="errorMarker">
+                            <h:graphicImage url="/img/msgerror.png"/>
+                        </f:facet>
+                        <f:facet name="infoMarker">
+                            <h:graphicImage url="/img/true.png"/>
+                        </f:facet>
+                    </rich:message>
                 </a:outputPanel>
 
                 
@@ -57,7 +64,11 @@
                             <h:graphicImage value="/img/ajax-loader.gif"/>
                         </f:facet>
                     </a:status>
-                    <rich:message for="email"/>
+                    <rich:message for="email">
+                        <f:facet name="errorMarker">
+                            <h:graphicImage url="/img/msgerror.png"/>
+                        </f:facet>
+                    </rich:message>
                 </a:outputPanel>
 
 
@@ -68,7 +79,12 @@
                                ajaxSingle="true"
                                limitToList="true" />
                 </h:inputSecret>
-                <a:outputPanel for="password" id="passwordMessage"><rich:message for="password"/></a:outputPanel>
+                <a:outputPanel for="password" id="passwordMessage">
+                    <rich:message for="password">
+                        <f:facet name="errorMarker">
+                            <h:graphicImage url="/img/msgerror.png"/>
+                        </f:facet>
+                    </rich:message></a:outputPanel>
 
 
                 <h:outputLabel for="passwordConfirmation"><b>#{messages['salesmen.UserAccount.Password']}</b></h:outputLabel>
@@ -87,7 +103,14 @@
                             <h:graphicImage value="/img/ajax-loader.gif"/>
                         </f:facet>
                     </a:status>
-                    <rich:message for="passwordConfirmation"/>
+                    <rich:message for="passwordConfirmation">
+                        <f:facet name="errorMarker">
+                            <h:graphicImage url="/img/msgerror.png"/>
+                        </f:facet>
+                        <f:facet name="infoMarker">
+                            <h:graphicImage url="/img/true.png"/>
+                        </f:facet>
+                    </rich:message>
                 </a:outputPanel>
             </h:panelGrid>
             </s:validateAll>

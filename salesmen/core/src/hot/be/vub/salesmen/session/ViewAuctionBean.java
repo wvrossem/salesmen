@@ -9,9 +9,10 @@ import org.jboss.seam.annotations.Name;
 import org.jboss.seam.annotations.Scope;
 import org.jboss.seam.annotations.datamodel.DataModel;
 import org.jboss.seam.annotations.web.RequestParameter;
+import org.jboss.seam.faces.FacesMessages;
 
 
-
+import javax.faces.application.FacesMessage;
 import javax.persistence.EntityManager;
 import java.io.Serializable;
 import java.util.List;
@@ -34,7 +35,8 @@ public class ViewAuctionBean implements ViewAuction   , Serializable
     @RequestParameter
     Long auctionId;
 
-
+    @In
+    FacesMessages facesMessages;
 
     @DataModel
 	private List<Bid> bids;
@@ -111,6 +113,7 @@ public class ViewAuctionBean implements ViewAuction   , Serializable
         if(this.bidAmount==0)
         {
             System.out.println("viewAuction.bid(): amount is zero, ignoring bid.");
+            facesMessages.addToControl("bidRegion", FacesMessage.SEVERITY_ERROR, "Bid amount can't be zero");
             return;
         }
 		if(this.auction!=null && owner!=null)
@@ -121,7 +124,8 @@ public class ViewAuctionBean implements ViewAuction   , Serializable
 
             if(highestBid.getAmount()>=this.bidAmount || this.auction.getStartingPrice()>this.bidAmount)
             {
-                 System.out.println("viewAuction.bid(): Bid inadequate");   
+                 System.out.println("viewAuction.bid(): Bid inadequate");
+                 facesMessages.addToControl("bidRegion", FacesMessage.SEVERITY_ERROR, "Bid amount too low");
             }
             else
             {
@@ -136,6 +140,7 @@ public class ViewAuctionBean implements ViewAuction   , Serializable
                 this.updateBids();
 
                 System.out.println("viewAuction.bid(): Bid saved");
+                facesMessages.addToControl("bidRegion", FacesMessage.SEVERITY_INFO, "Bid successful");
             }
 		}
         else

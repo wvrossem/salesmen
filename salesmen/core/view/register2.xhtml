@@ -37,7 +37,11 @@
                                 <h:graphicImage value="/img/ajax-loader.gif"/>
                             </f:facet>
                         </a:status>
-                        <rich:message for="firstName"/>
+                        <rich:message for="firstName">
+                            <f:facet name="errorMarker">
+                                <h:graphicImage url="/img/msgerror.png"/>
+                            </f:facet>
+                        </rich:message>
                     </a:outputPanel>
 
                     <h:outputLabel for="lastName"><b>#{messages['salesmen.User.LastName']}</b></h:outputLabel>
@@ -55,7 +59,11 @@
                                 <h:graphicImage value="/img/ajax-loader.gif"/>
                             </f:facet>
                         </a:status>
-                        <rich:message for="lastName"/>
+                        <rich:message for="lastName">
+                            <f:facet name="errorMarker">
+                                <h:graphicImage url="/img/msgerror.png"/>
+                            </f:facet>
+                        </rich:message>
                     </a:outputPanel>
 
                     <h:outputLabel for="screenName"><b>#{messages['salesmen.User.ScreenName']}</b></h:outputLabel>
@@ -73,7 +81,11 @@
                                 <h:graphicImage value="/img/ajax-loader.gif"/>
                             </f:facet>
                         </a:status>
-                        <rich:message for="screenName"/>
+                        <rich:message for="screenName">
+                            <f:facet name="errorMarker">
+                                <h:graphicImage url="/img/msgerror.png"/>
+                            </f:facet>
+                        </rich:message>
                     </a:outputPanel>
 
                     <h:outputLabel for="city"><b>#{messages['salesmen.User.City']}</b></h:outputLabel>
@@ -91,7 +103,11 @@
                                 <h:graphicImage value="/img/ajax-loader.gif"/>
                             </f:facet>
                         </a:status>
-                        <rich:message for="city"/>
+                        <rich:message for="city">
+                            <f:facet name="errorMarker">
+                                <h:graphicImage url="/img/msgerror.png"/>
+                            </f:facet>
+                        </rich:message>
                     </a:outputPanel>
 
                     <h:outputLabel for="gender"><b>#{messages['salesmen.User.Gender']}</b></h:outputLabel>
@@ -99,7 +115,12 @@
                         <f:selectItem itemValue="male" itemLabel="Male" />
                         <f:selectItem itemValue="female" itemLabel="Female" />
                     </h:selectOneRadio>
-                    <a:outputPanel id="genderMessage"><rich:message for="gender"/></a:outputPanel>
+                    <a:outputPanel id="genderMessage">
+                        <rich:message for="gender">
+                            <f:facet name="errorMarker">
+                                <h:graphicImage url="/img/msgerror.png"/>
+                            </f:facet>
+                        </rich:message> </a:outputPanel>
 
                     <h:outputLabel for="country"><b>#{messages['salesmen.User.Country']}</b></h:outputLabel>
                     <h:selectOneMenu id="country" value="#{registerUserAccount.user.country}" required="true">
@@ -107,16 +128,31 @@
                                         label="#{country.longName}" noSelectionLabel="-- Select --"/>
                         <s:convertEnum/>
                     </h:selectOneMenu>
-                    <a:outputPanel id="countryMessage"><rich:message for="country"/></a:outputPanel>
+                    <a:outputPanel id="countryMessage">
+                        <rich:message for="country">
+                            <f:facet name="errorMarker">
+                                <h:graphicImage url="/img/msgerror.png"/>
+                            </f:facet>
+                        </rich:message></a:outputPanel>
 
                     <h:outputLabel for="dateOfBirth"><b>#{messages['salesmen.User.Dateofbirth']}</b></h:outputLabel>
                     <rich:calendar id="dateOfBirth" value="#{registerUserAccount.user.dateOfBirth}"
                                    required="true" datePattern="MM/dd/yyyy" buttonIcon="img/dtpick.gif" />
-                    <a:outputPanel id="dateOfBirthMessage"><rich:message for="dateOfBirth"/></a:outputPanel>
+                    <a:outputPanel id="dateOfBirthMessage">
+                        <rich:message for="dateOfBirth">
+                            <f:facet name="errorMarker">
+                                <h:graphicImage url="/img/msgerror.png"/>
+                            </f:facet>
+                        </rich:message></a:outputPanel>
 
                     <h:outputLabel for="captcha"><h:graphicImage value="/seam/resource/captcha"/></h:outputLabel>
                     <h:inputText id="captcha" value="#{captcha.response}" required="true" />
-                    <a:outputPanel id="captchaMessage"><rich:message for="captcha"/></a:outputPanel>
+                    <a:outputPanel id="captchaMessage">
+                        <rich:message for="captcha">
+                            <f:facet name="errorMarker">
+                                <h:graphicImage url="/img/msgerror.png"/>
+                            </f:facet>
+                        </rich:message></a:outputPanel>
 
                 </h:panelGrid>
             </s:validateAll>
