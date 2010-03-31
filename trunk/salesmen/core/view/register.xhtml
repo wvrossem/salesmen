@@ -15,9 +15,9 @@
     <h:form id="register">
 
         <rich:panel>
-            <f:facet name="header">Register - Step 1</f:facet>
+            <f:facet name="header">#{messages['salesmen.General.Signup']} - #{messages['salesmen.General.Step1']}</f:facet>
 
-            <p>Please fill in the following information</p>
+            <p>#{messages['salesmen.Signup.Info']}</p>
             <s:validateAll>
 
             <h:panelGrid columns="3" rowClasses="prop" columnClasses="name,value">
@@ -118,7 +118,7 @@
 
             <div class="actionButtons">
 
-                <h:commandButton id="submit" value="Next"
+                <h:commandButton id="submit" value="#{messages['salesmen.General.Next']}"
                                  action="#{registerUserAccount.next}"/>
             </div>
 
