@@ -6,6 +6,10 @@ import org.jboss.seam.annotations.Begin;
 import org.jboss.seam.annotations.web.RequestParameter;
 import org.jboss.seam.framework.EntityHome;
 import org.jboss.seam.faces.FacesMessages;
+import org.jboss.seam.security.Identity;
+import org.jboss.seam.security.RunAsOperation;
+import org.jboss.seam.security.management.IdentityManager;
+import org.jboss.seam.security.management.JpaIdentityStore;
 
 import be.vub.salesmen.entity.UserAccount;
 
@@ -14,10 +18,12 @@ public class UserAccountHome extends EntityHome<UserAccount>
 {
 	@RequestParameter Long userAccountId;
 	
-	private String passwordConfirmation;
-	private boolean passwordVerified;
+	private String newPassword;
+	private String newPasswordConfirmation;
+	private boolean passwordValid;
 	
 	@In FacesMessages facesMessages;
+	@In IdentityManager identityManager;
 
 	@Override
 	public Object getId()
@@ -31,6 +37,25 @@ public class UserAccountHome extends EntityHome<UserAccount>
 				return userAccountId;
 		}
 	}
+	
+	@Override
+	public String update()
+	{
+		if (passwordValid)
+		{
+			new RunAsOperation()
+			{
+				public void execute()
+				{
+					identityManager.changePassword(getInstance().getUsername(), newPassword);
+				}
+			}.addRole("admin").run();
+			return super.update();
+		} else
+		{
+			return "Password not valid";
+		}
+	}
 
 	@Override @Begin
 	public void create()
@@ -40,20 +65,30 @@ public class UserAccountHome extends EntityHome<UserAccount>
 	
 	public void verifyPassword()
 	{
-		passwordVerified = (passwordConfirmation != null && passwordConfirmation.equals(passwordConfirmation));
-		if (!passwordVerified)
+		passwordValid = (newPasswordConfirmation != null && newPasswordConfirmation.equals(newPassword));
+		if (!passwordValid)
 		{
-			facesMessages.addToControl("passwordConfirmation", "Passwords do not match");
+			facesMessages.addToControl("newPasswordConfirmation", "Passwords do not match");
 		}
 	}
 	
-	public String getPasswordConfirmation()
+	public String getNewPasswordConfirmation()
 	{
-		return passwordConfirmation;
+		return newPasswordConfirmation;
 	}
 	
-	public void setPasswordConfirmation(String passwordConfirmation)
+	public void setNewPasswordConfirmation(String newPasswordConfirmation)
 	{
-		this.passwordConfirmation = passwordConfirmation;
+		this.newPasswordConfirmation = newPasswordConfirmation;
+	}
+	
+	public String getNewPassword()
+	{
+		return newPassword;
+	}
+	
+	public void setNewPassword(String newPassword)
+	{
+		this.newPassword = newPassword;
 	}
 }
