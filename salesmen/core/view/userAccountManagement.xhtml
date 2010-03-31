@@ -20,35 +20,35 @@
 				
 					<h:outputText value="#{messages['salesmen.UserAccount.Username']}: "/>
 					<h:outputText value="#{userAccountHome.instance.username}"/>
-					<h:outputText value="#{messages['salesmen.UserAccount.Cannotbechanged']}}"/>
+					<h:outputText value="#{messages['salesmen.UserAccount.Cannotbechanged']}"/>
 					
-					<h:outputLabel for="password"><b>#{messages['salesmen.UserAccount.Password']}</b></h:outputLabel>
-					<h:inputSecret id="password" value="#{userAccountHome.istance.password}" required="true">
+					<h:outputLabel for="newPassword"><b>#{messages['salesmen.UserAccount.Password']}</b></h:outputLabel>
+					<h:inputSecret id="newPassword" value="#{userAccountHome.newPassword}" required="true">
 						<a:support event="onblur"
-										reRender="passwordMessage"
+										reRender="newPasswordMessage"
 										ajaxSingle="true"
 										limitToList="true" />
 					</h:inputSecret>
-					<a:outputPanel for="password" id="passwordMessage"><rich:message for="password"/></a:outputPanel>
+					<a:outputPanel for="newPassword" id="newPasswordMessage"><rich:message for="newPassword"/></a:outputPanel>
 
 
-					<h:outputLabel for="passwordConfirmation"><b>#{messages['salesmen.UserAccount.Password']}</b></h:outputLabel>
-					<a:region id="passwordConfirmationRegion">
-						<h:inputSecret id="passwordConfirmation" value="#{userAccountHome.passwordConfirmation}" required="true">
+					<h:outputLabel for="newPasswordConfirmation"><b>#{messages['salesmen.UserAccount.Password']}</b></h:outputLabel>
+					<a:region id="newPasswordConfirmationRegion">
+						<h:inputSecret id="newPasswordConfirmation" value="#{userAccountHome.newPasswordConfirmation}" required="true">
 								<a:support event="onblur"
 											action="#{userAccountHome.verifyPassword()}"
-											reRender="passwordConfirmationMessage"
+											reRender="newPasswordConfirmationMessage"
 											ajaxSingle="true"
 											limitToList="true" />
 						</h:inputSecret>
 					</a:region>
-					<a:outputPanel for="passwordConfirmation" id="passwordConfirmationMessage">
-						<a:status for="passwordConfirmationRegion">
+					<a:outputPanel for="newPasswordConfirmation" id="newPasswordConfirmationMessage">
+						<a:status for="newPasswordConfirmationRegion">
 								<f:facet name="start">
 									<h:graphicImage value="/img/ajax-loader.gif"/>
 								</f:facet>
 						</a:status>
-						<rich:message for="passwordConfirmation"/>
+						<rich:message for="newPasswordConfirmation"/>
 					</a:outputPanel>
 					
 					</h:panelGrid>

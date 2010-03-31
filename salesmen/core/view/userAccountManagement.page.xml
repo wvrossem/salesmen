@@ -1,3 +1,8 @@
 <page login-required="true">
 	<restrict>#{identity.hasRole("admin") or authenticatedUser.getUser().getUserId().equals(userHome.instance.getUserId())}</restrict>
+	<navigation from-action="#{userAccountHome.update}">
+		<rule if-outcome="updated">
+			<redirect view-id="/userAccount.xhtml"/>
+		</rule>
+	</navigation>
 </page>

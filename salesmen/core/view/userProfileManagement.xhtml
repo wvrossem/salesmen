@@ -6,6 +6,7 @@
 	xmlns:f="http://java.sun.com/jsf/core"
 	xmlns:h="http://java.sun.com/jsf/html"
 	xmlns:rich="http://richfaces.org/rich"
+	xmlns:a="http://richfaces.org/a4j"
 	template="layout/template.xhtml">
 
 <ui:define name="body">
@@ -16,45 +17,119 @@
 			<s:validateAll>
 				<f:facet name="header">#{messages['salesmen.UserDashboard.Profile']} #{messages['salesmen.UserDashboard.Management']}</f:facet>
 				<h:panelGrid columns="3" rowClasses="prop" columnClasses="name,value">
-					<h:outputLabel for="firstName">#{messages['salesmen.User.ScreenName']}<em>*</em></h:outputLabel>
-					<h:inputText id="screenName" required="true"
-											value="#{userHome.instance.screenName}"/>
-					<h:message for="screenName"/>
-					
-					<h:outputLabel for="firstName">#{messages['salesmen.User.FirstName']}<em>*</em></h:outputLabel>
-					<h:inputText id="firstName" required="true"
-											value="#{userHome.instance.firstName}"/>
-					<h:message for="firstName"/>
-				
-					<h:outputLabel for="lastName">#{messages['salesmen.User.LastName']}<em>*</em></h:outputLabel>
-					<h:inputText id="lastName" required="true"
-											value="#{userHome.instance.lastName}"/>
-					<h:message for="lastName"/>
-					
-					<h:outputLabel for="gender">#{messages['salesmen.User.Gender']}<em>*</em></h:outputLabel>
-					<h:selectOneRadio id="gender" value="#{userHome.instance.gender}" required="true">
-						<f:selectItem itemValue="male" itemLabel="#{messages['salesmen.User.Gender.Male']}" />
-						<f:selectItem itemValue="female" itemLabel="#{messages['salesmen.User.Gender.Female']}" />
-					</h:selectOneRadio>
-					<h:message for="gender"/>
-					
-					<h:outputLabel for="email">#{messages['salesmen.User.Email']}<em>*</em></h:outputLabel>
-					<h:inputText id="email" required="true"
-								value="#{userHome.instance.email}"/>
-					<h:message for="email"/>
-					
-					<h:outputLabel for="city">#{messages['salesmen.User.City']}<em>*</em></h:outputLabel>
-					<h:inputText id="city" required="true"
-								value="#{userHome.instance.city}"/>
-					<h:message for="city"/>
-					
-					<h:outputLabel for="country">#{messages['salesmen.User.Country']}<em>*</em></h:outputLabel>
-					<h:selectOneMenu id="country" value="#{userHome.instance.country}" required="true">
-						<s:selectItems var="country" value="#{countries}"
-									label="#{country.longName}" noSelectionLabel="-- Select --"/>
-						<s:convertEnum/>
-					</h:selectOneMenu>
-					<h:message for="country"/>
+
+                    <h:outputLabel for="firstName"><b>#{messages['salesmen.User.FirstName']}</b></h:outputLabel>
+                    <a:region id="firstNameRegion">
+                        <h:inputText id="firstName" value="#{userHome.instance.firstName}" required="true">
+                            <a:support event="onblur"
+                                       reRender="firstNameMessage"
+                                       ajaxSingle="true"
+                                       limitToList="true" />
+                        </h:inputText>
+                    </a:region>
+                    <a:outputPanel id="firstNameMessage">
+                        <a:status for="firstNameRegion">
+                            <f:facet name="start">
+                                <h:graphicImage value="/img/ajax-loader.gif"/>
+                            </f:facet>
+                        </a:status>
+                        <rich:message for="firstName">
+                            <f:facet name="errorMarker">
+                                <h:graphicImage url="/img/msgerror.png"/>
+                            </f:facet>
+                        </rich:message>
+                    </a:outputPanel>
+
+                    <h:outputLabel for="lastName"><b>#{messages['salesmen.User.LastName']}</b></h:outputLabel>
+                    <a:region id="lastNameRegion">
+                        <h:inputText id="lastName" value="#{userHome.instance.lastName}" required="true">
+                            <a:support event="onblur"
+                                       reRender="lastNameMessage"
+                                       ajaxSingle="true"
+                                       limitToList="true" />
+                        </h:inputText>
+                    </a:region>
+                    <a:outputPanel id="lastNameMessage">
+                        <a:status for="lastNameRegion">
+                            <f:facet name="start">
+                                <h:graphicImage value="/img/ajax-loader.gif"/>
+                            </f:facet>
+                        </a:status>
+                        <rich:message for="lastName">
+                            <f:facet name="errorMarker">
+                                <h:graphicImage url="/img/msgerror.png"/>
+                            </f:facet>
+                        </rich:message>
+                    </a:outputPanel>
+
+                    <h:outputLabel for="screenName"><b>#{messages['salesmen.User.ScreenName']}</b></h:outputLabel>
+                    <a:region id="screenNameRegion">
+                        <h:inputText id="screenName" value="#{userHome.instance.screenName}" required="true">
+                            <a:support event="onblur"
+                                       reRender="screenNameMessage"
+                                       ajaxSingle="true"
+                                       limitToList="true" />
+                        </h:inputText>
+                    </a:region>
+                    <a:outputPanel id="screenNameMessage">
+                        <a:status for="screenNameRegion">
+                            <f:facet name="start">
+                                <h:graphicImage value="/img/ajax-loader.gif"/>
+                            </f:facet>
+                        </a:status>
+                        <rich:message for="screenName">
+                            <f:facet name="errorMarker">
+                                <h:graphicImage url="/img/msgerror.png"/>
+                            </f:facet>
+                        </rich:message>
+                    </a:outputPanel>
+
+                    <h:outputLabel for="city"><b>#{messages['salesmen.User.City']}</b></h:outputLabel>
+                    <a:region id="cityRegion">
+                        <h:inputText id="city" value="#{userHome.instance.city}" required="true">
+                            <a:support event="onblur"
+                                       reRender="cityMessage"
+                                       ajaxSingle="true"
+                                       limitToList="true" />
+                        </h:inputText>
+                    </a:region>
+                    <a:outputPanel id="cityMessage">
+                        <a:status for="cityRegion">
+                            <f:facet name="start">
+                                <h:graphicImage value="/img/ajax-loader.gif"/>
+                            </f:facet>
+                        </a:status>
+                        <rich:message for="city">
+                            <f:facet name="errorMarker">
+                                <h:graphicImage url="/img/msgerror.png"/>
+                            </f:facet>
+                        </rich:message>
+                    </a:outputPanel>
+
+                    <h:outputLabel for="gender"><b>#{messages['salesmen.User.Gender']}</b></h:outputLabel>
+                    <h:selectOneRadio id="gender" value="#{userHome.instance.gender}" required="true">
+                        <f:selectItem itemValue="male" itemLabel="Male" />
+                        <f:selectItem itemValue="female" itemLabel="Female" />
+                    </h:selectOneRadio>
+                    <a:outputPanel id="genderMessage">
+                        <rich:message for="gender">
+                            <f:facet name="errorMarker">
+                                <h:graphicImage url="/img/msgerror.png"/>
+                            </f:facet>
+                        </rich:message> </a:outputPanel>
+
+                    <h:outputLabel for="country"><b>#{messages['salesmen.User.Country']}</b></h:outputLabel>
+                    <h:selectOneMenu id="country" value="#{userHome.instance.country}" required="true">
+                        <s:selectItems  var="country" value="#{countries}"
+                                        label="#{country.longName}" noSelectionLabel="-- Select --"/>
+                        <s:convertEnum/>
+                    </h:selectOneMenu>
+                    <a:outputPanel id="countryMessage">
+                        <rich:message for="country">
+                            <f:facet name="errorMarker">
+                                <h:graphicImage url="/img/msgerror.png"/>
+                            </f:facet>
+                        </rich:message></a:outputPanel>
 				</h:panelGrid>
 			</s:validateAll>
 
