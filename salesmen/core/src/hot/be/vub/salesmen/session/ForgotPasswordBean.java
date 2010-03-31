@@ -10,6 +10,7 @@ import javax.persistence.EntityManager;
 
 import org.jboss.seam.annotations.*;
 import org.jboss.seam.faces.FacesMessages;
+import javax.faces.application.FacesMessage;
 import org.jboss.seam.security.Identity;
 import org.jboss.seam.security.RunAsOperation;
 import org.jboss.seam.security.management.IdentityManager;
@@ -26,8 +27,7 @@ public class ForgotPasswordBean implements ForgotPassword, Serializable
 {
 	private static final long serialVersionUID = -5946808103467846879L;
 
-	public String screenName;
-	private User foundUser;
+	public String username;
 	private UserAccount foundUserAccount;
 	private String foundEmail;
 	public String password;
@@ -40,23 +40,23 @@ public class ForgotPasswordBean implements ForgotPassword, Serializable
 	
 	@In EmailService emailService;
 	
-	@Begin
-	public void checkScreenName()
+	@In FacesMessages facesMessages;
+	
+	@Begin(join=true)
+	public void checkUsername()
 	{
 	BasicSearchBean search = new BasicSearchBean();
-	//Find the User corresponding to the screenName
-	this.foundUser=search.findUser(screenName,entityManager);
-	//Find the UserAccount corresponding to the screenName
-	this.foundUserAccount=search.findUserAccount(screenName,entityManager);
+	//Find the UserAccount corresponding to the username
+	this.foundUserAccount=search.findUserAccount(username,entityManager);
 	
 	  
-		if ( this.foundUser==null){
-			FacesMessages.instance().addToControl("screenNameConfirmation", "Screenname "+this.screenName+" has not been found");
+		if ( this.foundUserAccount==null){
+			facesMessages.addToControlFromResourceBundle("MailSent", FacesMessage.SEVERITY_ERROR, "salesmen.ForgotPassword.UsernameNotFoundLong");			
 
 		}
 		else{
 			//Get Email from User
-		    this.foundEmail=foundUser.getEmail();
+		    this.foundEmail=foundUserAccount.getUser().getEmail();
 			//Generate Random Password (length 8)
 			this.password=generatePassword(8);
 			//Change the password to this random generated password
@@ -64,13 +64,26 @@ public class ForgotPasswordBean implements ForgotPassword, Serializable
 			{
 				public void execute()
 				{
-				identityManager.changePassword(screenName, password);
+				identityManager.changePassword(username, password);
 				}
 
 			}.addRole("admin").run();
-		    FacesMessages.instance().addToControl("screenNameConfirmation", "We have found your screenname and we have sent your new password to your emailadres");
+			facesMessages.addToControlFromResourceBundle("MailSent",  FacesMessage.SEVERITY_INFO, "salesmen.ForgotPassword.MailSent");
 			// Send email with the new password
 			emailService.sendPassword(this.foundUserAccount, this.password);
+		}
+	}
+	
+	 public void verifyUsername()
+	{
+		BasicSearchBean searchUser = new BasicSearchBean();
+		UserAccount result  = searchUser.findUserAccount(username, entityManager);
+			if (result != null) 
+		{
+		  facesMessages.addToControlFromResourceBundle("username", FacesMessage.SEVERITY_INFO, "salesmen.ForgotPassword.UsernameFound");
+		}
+		else{
+		  facesMessages.addToControlFromResourceBundle("username", FacesMessage.SEVERITY_ERROR, "salesmen.ForgotPassword.UsernameNotFound");
 		}
 	}
 
@@ -100,14 +113,14 @@ public class ForgotPasswordBean implements ForgotPassword, Serializable
 	public void destroy() {}
 	
 	
-    public String getScreenName()
+    public String getUsername()
 	{
-		return screenName;
+		return username;
 	}
 	
-	public void setScreenName(String screenName)
+	public void setUsername(String username)
 	{
-		this.screenName = screenName;
+		this.username = username;
 	}
 	
 }
