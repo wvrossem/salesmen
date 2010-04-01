@@ -9,6 +9,6 @@ import javax.ejb.Local;
 public interface ViewAuction
 {
     public void start();
-    public void selectAuction(Auction a);
+  //  public void selectAuction(Auction a); //deprecated
     public void bid(UserAccount owner);
 }
