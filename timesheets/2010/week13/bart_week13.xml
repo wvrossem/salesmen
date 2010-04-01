@@ -2,16 +2,32 @@
 <timesheet xmlns="http://purl.org/net/timetrack">
 
 		
-	<item duration="PT5H">
-		<desc>Auction implementation - more (tem maandagmiddag)</desc>
+	<item duration="PT10H30M">
+		<desc>Auction implementation - more (tem dinsdag)</desc>
 		<refs>
 			<ref>http://code.google.com/p/salesmen/source/detail?r=1127</ref>
 			<ref>http://code.google.com/p/salesmen/source/detail?r=1136</ref>
 			<ref>http://code.google.com/p/salesmen/source/detail?r=1137</ref>
 			<ref>http://code.google.com/p/salesmen/source/detail?r=1138</ref>
+			<ref>http://code.google.com/p/salesmen/source/detail?r=1144</ref>
+			<ref>http://code.google.com/p/salesmen/source/detail?r=1149</ref>
+			<ref>http://code.google.com/p/salesmen/source/detail?r=1155</ref>
+			<ref>http://code.google.com/p/salesmen/source/detail?r=1161</ref>
+			<ref>http://code.google.com/p/salesmen/source/detail?r=1162</ref>
 		</refs>
 	</item>
 	
+	<item duration="PT1H">
+		<desc>Final rehearsal before Conference 2</desc>
+	</item>
+	
+	<item duration="PT2H">
+        <desc>Conference 2</desc>
+	</item>
+  
+    <item duration="PT30M">
+		<desc>Conference 2 evaluation</desc>
+	</item>
 
 
 		
