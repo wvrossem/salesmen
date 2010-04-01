@@ -2,8 +2,8 @@
 <timesheet xmlns="http://purl.org/net/timetrack">
 
 		
-	<item duration="PT12H">
-		<desc>Auction implementation - more (tem woensdag)</desc>
+	<item duration="PT13H30M">
+		<desc>Auction implementation - more (tem donderdagavond)</desc>
 		<refs>
 			<ref>http://code.google.com/p/salesmen/source/detail?r=1127</ref>
 			<ref>http://code.google.com/p/salesmen/source/detail?r=1136</ref>
@@ -15,6 +15,9 @@
 			<ref>http://code.google.com/p/salesmen/source/detail?r=1161</ref>
 			<ref>http://code.google.com/p/salesmen/source/detail?r=1162</ref>
 			<ref>http://code.google.com/p/salesmen/source/detail?r=1185</ref>
+			<ref>http://code.google.com/p/salesmen/source/detail?r=1186</ref>
+			<ref>http://code.google.com/p/salesmen/source/detail?r=1188</ref>
+			<ref>http://code.google.com/p/salesmen/source/detail?r=1189</ref>
 		</refs>
 	</item>
 	
