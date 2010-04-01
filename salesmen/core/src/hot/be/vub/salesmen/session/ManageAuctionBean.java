@@ -11,6 +11,8 @@ import org.richfaces.event.NodeSelectedEvent;
 import javax.ejb.Remove;
 import javax.persistence.EntityManager;
 import java.io.Serializable;
+import java.util.Calendar;
+import java.util.Date;
 
 import static org.jboss.seam.ScopeType.CONVERSATION;
 
@@ -25,12 +27,19 @@ public class ManageAuctionBean implements ManageAuction, Serializable
 	private boolean inputIsOk=false;
 	private Category category;
 	private boolean isNew=false;    //used by
+    private Date auctionEndDate;
 	
 	// In annotations
 	@In EntityManager entityManager;
 	//@in Auction auction
 	@In
 	StatusMessages statusMessages;
+
+    public ManageAuctionBean()
+    {
+        long currentTimeInMillisec = System.currentTimeMillis();
+        this.auctionEndDate = new Date( currentTimeInMillisec+24*60*60*1000 );//1day = 24*60*60*1000 milliseconds
+    }
 
 	@Begin(join = true)
 	public void createAuction()
@@ -44,31 +53,42 @@ public class ManageAuctionBean implements ManageAuction, Serializable
 	
 	public void checkInput()
 	{
+
 		if(this.category==null)
 		{
 			//FacesMessages.instance().addToControl("category", "Please select a category");
 			System.out.println("Category NOT set!");
-		} else
+		}
+        else
 		{
 			this.auction.setCategory(this.category);
 			System.out.println("Category set, OK!");
 		}
-		
-		if(this.auction.getStartingPrice()>0)
+
+        if(this.auction.getStartingPrice()<=0)
 		{
-			this.setInputIsOk(true);
-			//entityManager.persist(auction);
-		}
-		else
-		{
-			FacesMessages.instance().addToControl("price", "Price should be greater than 0");
-		}
+            FacesMessages.instance().addToControl("priceMessage", "Price should be greater than 0");
+            return;
+        }
+
+        Calendar cal = Calendar.getInstance();
+        Date now = cal.getTime();//current date & time
+        this.auction.setEndDate(this.auctionEndDate);
+        if(now.after(this.auction.getEndDate()))
+        {
+            FacesMessages.instance().addToControl("endDateMessage", "End date should be after current time");
+            return;
+        }
+
+        //all ok
+		this.setInputIsOk(true);
 	}
 
 	public void save(UserAccount user)
 	{
 		this.setNew(true);
 		this.auction.setOwner(user);
+
 		//this.auction.setStatus(Auction.AuctionStatus.UNLISTED);
 		//entityManager.persist(this.auction);
 
@@ -78,6 +98,8 @@ public class ManageAuctionBean implements ManageAuction, Serializable
 	@End
 	public void confirm()
 	{
+        Calendar cal = Calendar.getInstance();
+        this.auction.setStartDate(cal.getTime());  //current date & time
 		this.auction.setStatus(Auction.AuctionStatus.LISTED);
 		entityManager.merge(this.auction);
 
@@ -137,5 +159,15 @@ public class ManageAuctionBean implements ManageAuction, Serializable
 	{
 		isNew = aNew;
 	}
-	
+
+
+    public Date getAuctionEndDate()
+    {
+        return auctionEndDate;
+    }
+
+    public void setAuctionEndDate(Date auctionEndDate)
+    {
+        this.auctionEndDate = auctionEndDate;
+    }
 }

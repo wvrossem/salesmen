@@ -1,6 +1,8 @@
 package be.vub.salesmen.entity;
 
 import java.io.Serializable;
+import java.util.Calendar;
+import java.util.Date;
 import javax.persistence.*;
 
 import org.hibernate.validator.Length;
@@ -19,6 +21,7 @@ public class Bid implements Serializable
     private double amount;
     private UserAccount owner;
     private Auction auction;
+    private Date date;
 
 
     public Bid(double amount, UserAccount owner, Auction auction)
@@ -26,6 +29,8 @@ public class Bid implements Serializable
         this.amount = amount;
         this.owner = owner;
         this.auction = auction;
+        Calendar cal = Calendar.getInstance();
+        this.date = cal.getTime();//current date & time
     }
 
     public Bid()
@@ -44,7 +49,7 @@ public class Bid implements Serializable
 	{
         this.id = id;
     }
-
+                
     @Version
     public Integer getVersion()
 	{
@@ -92,5 +97,16 @@ public class Bid implements Serializable
     public void setAuction(Auction auction)
     {
         this.auction = auction;
+    }
+
+    @NotNull
+    public Date getDate()
+    {
+        return date;
+    }
+
+    public void setDate(Date date)
+    {
+        this.date = date;
     }
 }

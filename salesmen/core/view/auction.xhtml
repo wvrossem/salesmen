@@ -9,8 +9,6 @@
 				xmlns:a="http://richfaces.org/a4j" template="layout/template.xhtml">
 
     <ui:define name="body">
-        This page displays an auction...
-
         <rich:panel id="bidPanel">
             <f:facet name="header">Auction</f:facet>
             <h:outputText value="Auction: #{viewAuction.auction.title}"/><br/>
@@ -59,9 +57,13 @@
                         <f:facet name="header"><h:outputText value="User"/></f:facet>
                         #{b.owner.username}
                     </h:column>
-                    <h:column id="FirstNameColumn">
+                    <h:column id="AmountColumn">
                         <f:facet name="header"><h:outputText value="Amount"/></f:facet>
                         #{b.amount}
+                    </h:column>
+                    <h:column id="DateColumn">
+                        <f:facet name="header"><h:outputText value="Date"/></f:facet>
+                        #{b.date}
                     </h:column>
                     </h:dataTable>
                 </a:outputPanel>    
