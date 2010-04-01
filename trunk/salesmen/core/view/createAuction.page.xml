@@ -1,5 +1,5 @@
 <page  action="#{manageAuction.createAuction}">
-
+    <restrict>#{authenticatedUser!=null}</restrict>
 	<navigation from-action="#{manageAuction.checkInput}">
 	
 		<rule if="#{not manageAuction.inputIsOk}">

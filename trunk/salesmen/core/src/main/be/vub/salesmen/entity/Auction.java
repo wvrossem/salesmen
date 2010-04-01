@@ -1,6 +1,7 @@
 package be.vub.salesmen.entity;
 
 import java.io.Serializable;
+import java.util.Date;
 import javax.persistence.*;
 import org.hibernate.validator.Length;
 
@@ -38,7 +39,8 @@ public class Auction implements Serializable
 	private Category category;
 	private String title;
 	private String description;
-	//private Date endDate;
+    private Date startDate=new Date();
+	private Date endDate=new Date();
 	//private Bid highBid;
 
 	private double startingPrice;
@@ -163,5 +165,24 @@ public class Auction implements Serializable
 	{
 		return status;
 	}
+    @NotNull
+    public Date getEndDate()
+    {
+        return endDate;
+    }
 
+    public void setEndDate(Date endDate)
+    {
+        this.endDate = endDate;
+    }
+    @NotNull
+    public Date getStartDate()
+    {
+        return startDate;
+    }
+
+    public void setStartDate(Date startDate)
+    {
+        this.startDate = startDate;
+    }
 }

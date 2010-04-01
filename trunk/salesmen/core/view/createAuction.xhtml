@@ -4,69 +4,79 @@
 				xmlns:s="http://jboss.com/products/seam/taglib"
 				xmlns:ui="http://java.sun.com/jsf/facelets"
 				xmlns:f="http://java.sun.com/jsf/core"
-				xmlns:h="http://java.sun.com/jsf/html"
-				xmlns:rich="http://richfaces.org/rich" xmlns:a="http://java.sun.com/jsf/html"
-				template="layout/template.xhtml">
+                xmlns:h="http://java.sun.com/jsf/html"
+                xmlns:rich="http://richfaces.org/rich"
+				xmlns:a="http://richfaces.org/a4j" template="layout/template.xhtml">
 
 <ui:define name="body">
 
 	<h:form id="auctionForm">
-
 		<rich:panel>
 			<f:facet name="header">auction</f:facet>
-
 			<s:validateAll>
-
-				<div class="section">
+               <h:panelGrid columns="3" rowClasses="prop" columnClasses="name,value">
 					<h:outputLabel for="title">Enter a short description of the item you wish to sell</h:outputLabel>
 					<h:inputText id="title" required="true" value="#{manageAuction.auction.title}"/>
+					<a:outputPanel id="titleMessage">
+                        <rich:message for="title">
+                            <f:facet name="errorMarker">
+                            <h:graphicImage url="/img/msgerror.png"/>
+                            </f:facet>
+                        </rich:message>
+                    </a:outputPanel>
 
-					<div class="validationError"><h:message for="title"/></div>
-				</div>
 
-				<div class="section">
+
 					<h:outputLabel for="price">Please enter the starting price for your auction (EUR)</h:outputLabel>
 					<h:inputText id="price" value="#{manageAuction.auction.startingPrice}" required="true">
-						<f:convertNumber minFractionDigits="2" maxFractionDigits="2" minIntegerDigits="1"/>
+					<f:convertNumber minFractionDigits="2" maxFractionDigits="2" minIntegerDigits="1"/>
 					</h:inputText>
+					<a:outputPanel id="priceMessage">
+                        <rich:message for="price">
+                            <f:facet name="errorMarker">
+                            <h:graphicImage url="/img/msgerror.png"/>
+                            </f:facet>
+                        </rich:message>
+                    </a:outputPanel>
 
-					<div class="validationError"><h:message for="price"/></div>
-				</div>
 
-				<div class="section">
-					<h:outputLabel
-							for="description">Please enter a description for the item you are trying to sell.</h:outputLabel>
-					<h:inputTextarea id="description" value="#{manageAuction.auction.description}"
-									styleClass="description"/>
+					<h:outputLabel for="description">Please enter a description for the item you are trying to sell.</h:outputLabel>
+					<h:inputTextarea id="description" value="#{manageAuction.auction.description}" styleClass="description"/>
+                    <a:outputPanel id="descriptionMessage">
+                        <rich:message for="description">
+                            <f:facet name="errorMarker">
+                            <h:graphicImage url="/img/msgerror.png"/>
+                            </f:facet>
+                        </rich:message>
+                    </a:outputPanel>
 
-					<div class="validationError"><h:message for="description"/></div>
-				</div>
 
-				<a:commandButton value="Select Category" action="#{basicSearch.createCategoryTree}"
-								reRender="allCategories"/>
+                    <h:outputLabel for="endDate"><b>#{messages['salesmen.auction.create.endDate']}</b></h:outputLabel>
+                    <rich:calendar id="endDate" value="#{manageAuction.auctionEndDate}" required="true" datePattern="dd/MM/yyyy" buttonIcon="img/dtpick.gif" />
+                    <a:outputPanel id="endDateMessage">
+                        <rich:message for="endDate">
+                            <f:facet name="errorMarker">
+                            <h:graphicImage url="/img/msgerror.png"/>
+                            </f:facet>
+                        </rich:message>
+                    </a:outputPanel>
 
-				<f:facet name="header">Categories</f:facet>
-
-				<rich:tree id="allCategories" value="#{basicSearch.categoryTree}" var="cat"
-							ajaxSubmitSelection="true" switchType="ajax"
-							nodeSelectListener="#{manageAuction.processTreeNodeImplSelection}">
-
-					<rich:treeNode>
-						<h:outputText value="#{cat.name}"/>
-					</rich:treeNode>
-
-				</rich:tree>
-
+                    <a:commandButton value="Select Category" action="#{basicSearch.createCategoryTree}" reRender="allCategories"/>
+                    <rich:tree id="allCategories" value="#{basicSearch.categoryTree}" var="cat"
+                        ajaxSubmitSelection="true" switchType="ajax"
+                        nodeSelectListener="#{manageAuction.processTreeNodeImplSelection}">
+                        <rich:treeNode>
+                            <h:outputText value="#{cat.name}"/>
+                        </rich:treeNode>
+                    </rich:tree>
+                    
+                </h:panelGrid>
 			</s:validateAll>
-
-			<div style="clear:both"/>
-
 		</rich:panel>
 
 		<div class="actionButtons">
 			<h:commandButton id="submit" value="Add auction" action="#{manageAuction.checkInput}"/>
 		</div>
-
 	</h:form>
 
 </ui:define>

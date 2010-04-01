@@ -1,5 +1,5 @@
 <page conversation-required="true">
-
+    <restrict>#{authenticatedUser!=null}</restrict>
 	<navigation from-action="previous">
 		<redirect view-id="/createAuction.xhtml"/>
 	</navigation>
