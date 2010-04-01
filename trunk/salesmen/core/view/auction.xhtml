@@ -14,6 +14,7 @@
             <h:outputText value="Auction: #{viewAuction.auction.title}"/><br/>
             <h:outputText value="Desciption: #{viewAuction.auction.description}"/><br/>
             <h:outputText value="Starting price: #{viewAuction.auction.startingPrice}"/><br/>
+            <h:outputText value="Auction ends: #{viewAuction.auction.endDate}"/><br/>
             <h:outputText id="highestBid"
                     value="Highest bid: #{viewAuction.highestBid.amount} by #{viewAuction.highestBid.owner.username}"
                     rendered="#{viewAuction.highestBid.amount!=0}"

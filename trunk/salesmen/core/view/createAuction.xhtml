@@ -52,7 +52,7 @@
 
 
                     <h:outputLabel for="endDate"><b>#{messages['salesmen.auction.create.endDate']}</b></h:outputLabel>
-                    <rich:calendar id="endDate" value="#{manageAuction.auctionEndDate}" required="true" datePattern="dd/MM/yyyy" buttonIcon="img/dtpick.gif" />
+                    <rich:calendar id="endDate" value="#{manageAuction.auctionEndDate}" required="true" datePattern="dd/MM/yyyy HH:mm" buttonIcon="img/dtpick.gif" />
                     <a:outputPanel id="endDateMessage">
                         <rich:message for="endDate">
                             <f:facet name="errorMarker">
