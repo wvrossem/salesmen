@@ -2,6 +2,7 @@ package be.vub.salesmen.entity;
 
 import java.io.Serializable;
 import java.util.Date;
+import java.util.Calendar;
 
 import javax.persistence.*;
 
@@ -37,7 +38,7 @@ public class User implements Serializable
 	private Date memberSince;
 	private String city;
 	private Country country;
-	
+
 	// Public Attribute getters/setters with annotations 
 	@Id @GeneratedValue(strategy = GenerationType.IDENTITY)
 	public Long getUserId()

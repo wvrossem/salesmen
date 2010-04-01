@@ -101,9 +101,9 @@ public class ManageAuctionBean implements ManageAuction, Serializable
         Calendar cal = Calendar.getInstance();
         this.auction.setStartDate(cal.getTime());  //current date & time
 		this.auction.setStatus(Auction.AuctionStatus.LISTED);
-		entityManager.merge(this.auction);
+		entityManager.persist(this.auction);
 
-		System.out.println("manageAuctionBean confirmed,  conversation NOT ended");
+		System.out.println("manageAuctionBean confirmed,  conversation ended, id of action: "+this.auction.getId());
 	}
 	
 	@Destroy @Remove
