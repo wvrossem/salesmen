@@ -1,4 +1,4 @@
 <page view-id="/auction.xhtml">
-	<param name="auctionId" value="#{viewAuction.auctionId}" />
+	<param name="auctionId" value="#{viewAuction.auctionId}" required="true"/>
 	<action execute="#{viewAuction.start()}"/>
 </page>

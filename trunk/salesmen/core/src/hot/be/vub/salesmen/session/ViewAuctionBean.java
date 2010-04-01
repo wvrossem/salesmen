@@ -48,12 +48,10 @@ public class ViewAuctionBean implements ViewAuction   , Serializable
 	@Begin(join=true)
 	public void start()
 	{
-		System.out.println("MESS: viewAuction.start() called for auction with ID="+this.auctionId);
-
 		if(this.auction==null)
 		{
 			BasicSearchBean search = new BasicSearchBean();
-			if(this.auctionId==null)
+			if(this.auctionId==null)//page.xml should prevent auctionId from being null, this is just a fail-safe
 			{
 				this.auctionId=1L;
 			}
@@ -62,7 +60,8 @@ public class ViewAuctionBean implements ViewAuction   , Serializable
             this.updateBids();
 		}
 	}
-	
+	 /*
+	 //Deprecated
 	public void selectAuction(Auction a)
 	{
 		if(a==null)
@@ -79,6 +78,7 @@ public class ViewAuctionBean implements ViewAuction   , Serializable
             this.updateBids();
 		}
 	}
+	*/
 
     private void updateBids()
     {
@@ -101,7 +101,6 @@ public class ViewAuctionBean implements ViewAuction   , Serializable
         }
         else
         {
-            System.out.println("Not good..");
             this.highestBid=new Bid(0,null,this.auction);
         }
     }
@@ -121,7 +120,6 @@ public class ViewAuctionBean implements ViewAuction   , Serializable
             //reload bids
             this.updateBids();
             //check if amount is high enough
-
             if(highestBid.getAmount()>=this.bidAmount || this.auction.getStartingPrice()>this.bidAmount)
             {
                  System.out.println("viewAuction.bid(): Bid inadequate");
@@ -131,22 +129,14 @@ public class ViewAuctionBean implements ViewAuction   , Serializable
             {
                 //continue
                 Bid bid = new Bid(this.bidAmount, owner,this.auction);
-                if(this.entityManager==null)
-                {
-                    System.out.println("viewAuction.bid(): warning: entityManager is null");
-                }
                 this.entityManager.persist(bid);
+
                 //reload bids
                 this.updateBids();
 
-                System.out.println("viewAuction.bid(): Bid saved");
                 facesMessages.addToControl("bidRegion", FacesMessage.SEVERITY_INFO, "Bid successful");
             }
 		}
-        else
-        {
-            System.out.println("viewAuction.bid(): OK");
-        }
 	}
 
 	//Public getters/setters
