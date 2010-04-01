@@ -61,7 +61,7 @@
                         </rich:message>
                     </a:outputPanel>
 
-                    <a:commandButton value="Select Category" action="#{basicSearch.createCategoryTree}" reRender="allCategories"/>
+                    <h:outputLabel for="endDate"><b>Please select a category for the item</b></h:outputLabel> 
                     <rich:tree id="allCategories" value="#{basicSearch.categoryTree}" var="cat"
                         ajaxSubmitSelection="true" switchType="ajax"
                         nodeSelectListener="#{manageAuction.processTreeNodeImplSelection}">

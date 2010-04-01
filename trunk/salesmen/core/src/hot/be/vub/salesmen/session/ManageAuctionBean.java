@@ -1,12 +1,15 @@
 package be.vub.salesmen.session;
 
-import be.vub.salesmen.entity.UserAccount;
 import be.vub.salesmen.entity.Auction;
 import be.vub.salesmen.entity.Category;
+import be.vub.salesmen.entity.UserAccount;
 import org.jboss.seam.annotations.*;
 import org.jboss.seam.faces.FacesMessages;
 import org.jboss.seam.international.StatusMessages;
+import org.richfaces.component.UITree;
+import org.richfaces.component.html.HtmlTree;
 import org.richfaces.event.NodeSelectedEvent;
+import org.richfaces.model.TreeNode;
 
 import javax.ejb.Remove;
 import javax.persistence.EntityManager;
@@ -144,13 +147,14 @@ public class ManageAuctionBean implements ManageAuction, Serializable
 		statusMessages.add("Category " + category.getName() + " selected");
 	}
 
-	public void processTreeNodeImplSelection(final NodeSelectedEvent event)
-	{
-		System.out.println("Node selected : " + event);        
-		statusMessages.add("Category selected");
-	}    
+    public void processTreeNodeImplSelection(NodeSelectedEvent event) {
+		System.out.println("Category selected");
+		HtmlTree tree = (HtmlTree) event.getComponent();
+		TreeNode<Category> currentNode = tree.getModelTreeNode();
+		System.out.println(currentNode.getData().getName());
+    }
 
-	public boolean isNew()
+    public boolean isNew()
 	{
 		return isNew;
 	}

@@ -1,10 +1,9 @@
 package be.vub.salesmen.session;
 
+import be.vub.salesmen.entity.UserAccount;
 import org.richfaces.event.NodeSelectedEvent;
 
 import javax.ejb.Local;
-
-import be.vub.salesmen.entity.UserAccount;
 
 @Local
 public interface ManageAuction
@@ -14,5 +13,5 @@ public interface ManageAuction
 	public void confirm();
 	public void save(UserAccount user);
 
-	public void processTreeNodeImplSelection(final NodeSelectedEvent event);
+	public void processTreeNodeImplSelection(NodeSelectedEvent event);
 }

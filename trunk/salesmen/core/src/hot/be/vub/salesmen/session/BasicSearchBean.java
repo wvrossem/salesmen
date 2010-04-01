@@ -36,7 +36,7 @@ public class BasicSearchBean implements BasicSearch
 
 	@DataModel
 	private List entities;
-	private TreeNodeImpl<Category> categoryTree;
+	private TreeNodeImpl<Category> categoryTree = null;
 
 	@In
 	StatusMessages statusMessages;
@@ -230,64 +230,37 @@ public class BasicSearchBean implements BasicSearch
 	public void createCategoryTree()
 	{
 		List<Category> allCategories = entityManager.createQuery("from Category").getResultList();
-		/*statusMessages.add("All categories");
-		for (Category c : allCategories)
-		{
-			statusMessages.add(c.getParent().getName());
-		}    */
 		categoryTree = new TreeNodeImpl<Category>();
 		List<TreeNodeImpl<Category>> categoryTreeNodes = new ArrayList();
-		int id = 0;
+
 		for (Category cat : allCategories)
 		{
 			if (cat.getParent() == null)
 			{
-				//categoryTreeNodes.add(categoryTree);
+				categoryTreeNodes.add(categoryTree);
 				categoryTree.setData(cat);
 			} else
 			{
 				TreeNodeImpl categoryNode = new TreeNodeImpl<Category>();
 				categoryNode.setData(cat);
-				categoryTree.addChild(id++,categoryNode);
-				//categoryTreeNodes.add(categoryNode);
+				categoryTreeNodes.add(categoryNode);
 			}
 		}
-		//statusMessages.add("Category nodes");
-		/*for (TreeNode<Category> c : categoryTreeNodes)
-		{
-			statusMessages.add(c.getData().getParent().getName());
-		}   */
-		//int id = 0;
-		/*for (TreeNodeImpl<Category> firstNode : categoryTreeNodes)
+		int id = 0;
+		for (TreeNodeImpl<Category> firstNode : categoryTreeNodes)
 		{
 			if (firstNode.getData().getParent() != null )
 			{
 				for (TreeNodeImpl<Category> secondNode : categoryTreeNodes)
 				{
-					if (secondNode.getData().getParent().getName().equals(firstNode.getData().getParent().getName()))
+					if (secondNode.getData() == firstNode.getData().getParent())
 					{
 						secondNode.addChild(id++,firstNode);
 						break;
 					}
 				}
-			}    */
-			/*//TreeNodeImpl<Category> parent = ;
-			if (node.getData().getParent() != null)
-			{
-				findParent(categoryTreeNodes, node).addChild(id++, node);
-			}        
-		} */
-		/*Iterator<Map.Entry<Object,TreeNode<Category>>> it = categoryTree.getChildren();
-		statusMessages.add("test0");
-		while(it.hasNext())
-		{
-			statusMessages.add("test1");
-			Map.Entry<Object,TreeNode<Category>> node = it.next();
-			statusMessages.add(node.getValue().getData().getName());
-			statusMessages.add("test2");
+			}
 		}
-		statusMessages.add("no children");    */
-		//statusMessages.add(categoryTree.getChild(1).getData().getName());
 	}
 	
 	public boolean isNextPageAvailable()
@@ -342,6 +315,9 @@ public class BasicSearchBean implements BasicSearch
 	}
 
 	public TreeNodeImpl<Category> getCategoryTree() {
+		if (categoryTree == null){
+			createCategoryTree();
+		}
 		return categoryTree;
 	}
 
