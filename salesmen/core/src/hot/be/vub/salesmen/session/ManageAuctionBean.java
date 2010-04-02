@@ -54,44 +54,56 @@ public class ManageAuctionBean implements ManageAuction, Serializable
 	}
 
 
-    public void verifyPrice()
+    public boolean verifyPrice()
     {
         if(this.auction.getStartingPrice()<=0)
 		{
             facesMessages.addToControlFromResourceBundle("price", FacesMessage.SEVERITY_INFO, "salesmen.Auction.create.priceBelowZero");
-           // return false;
+            return false;
         }
-        //return true;
+        return true;
     }
 
-	
-	public void checkInput()
-	{
-
-		if(this.category==null)
-		{
-			//FacesMessages.instance().addToControl("category", "Please select a category");
-			System.out.println("Category NOT set!");
-		}
-        else
-		{
-			this.auction.setCategory(this.category);
-			System.out.println("Category set, OK!");
-		}
-
-
-
+    public boolean verifyEndDate()
+    {
         Calendar cal = Calendar.getInstance();
         Date now = cal.getTime();//current date & time
         this.auction.setEndDate(this.auctionEndDate);
         if(now.after(this.auction.getEndDate()))
         {
             facesMessages.addToControlFromResourceBundle("endDate", FacesMessage.SEVERITY_INFO, "salesmen.Auction.create.endDateBeforeNow");
-            return;
+            return false;
+        }
+        return true;
+    }
+
+    public boolean verifyCategory()
+    {
+		if(this.category==null)
+		{
+            facesMessages.addToControlFromResourceBundle("category", FacesMessage.SEVERITY_INFO, "salesmen.Auction.create.invalidCategory");
+            return false;
+		}
+        else
+		{
+			this.auction.setCategory(this.category);
+			return true;
+		}
+    }
+
+	
+	public boolean checkInput()
+	{
+        //make sure input is ok
+        if(!verifyPrice() || !verifyEndDate() || !verifyCategory())
+        {
+            this.setInputIsOk(false);
+            return false;
         }
 
         //all ok
 		this.setInputIsOk(true);
+        return true;
 	}
 
 	public void save(UserAccount user)

@@ -9,10 +9,11 @@ import javax.ejb.Local;
 public interface ManageAuction
 {
 	public void createAuction();
-	public void checkInput();
+	public boolean checkInput();
 	public void confirm();
 	public void save(UserAccount user);
-    public void verifyPrice();
+    public boolean verifyPrice();
+    public boolean verifyEndDate();
 
 	public void processTreeNodeImplSelection(NodeSelectedEvent event);
 }
