@@ -1,6 +1,7 @@
 package be.vub.salesmen.session;
 
 import be.vub.salesmen.entity.Auction;
+import be.vub.salesmen.entity.AuctionImage;
 import be.vub.salesmen.entity.Category;
 import be.vub.salesmen.entity.UserAccount;
 import org.jboss.seam.annotations.*;
@@ -14,9 +15,12 @@ import org.richfaces.model.TreeNode;
 import javax.ejb.Remove;
 import javax.faces.application.FacesMessage;
 import javax.persistence.EntityManager;
+import java.io.IOException;
 import java.io.Serializable;
+import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.Date;
+import java.util.List;
 
 import static org.jboss.seam.ScopeType.CONVERSATION;
 
@@ -25,13 +29,20 @@ import static org.jboss.seam.ScopeType.CONVERSATION;
 public class ManageAuctionBean implements ManageAuction, Serializable 
 {
 	private static final long serialVersionUID = 5797405997183391745L;
-	
+
+
 	// Private attributes
 	Auction auction; 
 	private boolean inputIsOk=false;
 	private Category category;
 	private boolean isNew=false;    //used by
     private Date auctionEndDate;
+
+    //image related stuff
+    private List<AuctionImage> images = new ArrayList<AuctionImage>();
+    private byte[] imageData;
+    private String imageContentType;
+    private boolean primaryImage;
 	
 	// In annotations
 	@In EntityManager entityManager;
@@ -53,6 +64,23 @@ public class ManageAuctionBean implements ManageAuction, Serializable
 		}
 	}
 
+    public void uploadImage()
+    {
+        if (imageData == null || imageData.length == 0)
+        {
+            FacesMessages.instance().add("No image selected");
+        }
+        else
+        {
+            AuctionImage img = new AuctionImage();
+            img.setAuction(this.auction);
+            img.setData(imageData);
+            img.setContentType(imageContentType);
+            images.add(img);
+            imageData = null;
+            imageContentType = null;
+        }
+    }
 
     public boolean verifyPrice()
     {
@@ -82,7 +110,8 @@ public class ManageAuctionBean implements ManageAuction, Serializable
 		if(this.category==null)
 		{
             facesMessages.addToControlFromResourceBundle("category", FacesMessage.SEVERITY_INFO, "salesmen.Auction.create.invalidCategory");
-            return false;
+           // return false;
+            return true;//TODO: remove when category-select works as it should
 		}
         else
 		{
@@ -121,7 +150,29 @@ public class ManageAuctionBean implements ManageAuction, Serializable
         Calendar cal = Calendar.getInstance();
         this.auction.setStartDate(cal.getTime());  //current date & time
 		this.auction.setStatus(Auction.AuctionStatus.LISTED);
-		entityManager.persist(this.auction);
+
+        //if no images were uploaded, add the default salesmen image (this.contentType=contentType;)
+        if(images.size()==0)
+        {
+            //TODO: load default image
+            try
+            {
+                AuctionImage defaultImage=new AuctionImage("salesmen_default_auction_image.png","image/png");
+            }
+            catch (IOException e)
+            {
+                System.out.println("ERROR: defaultImage failed");
+            }
+        }
+        //save the auction (id gets filled in, perform before persisting images!)
+        entityManager.persist(this.auction);
+
+        //save the images
+        for (AuctionImage img : images)
+        {
+            img.setAuction(this.auction);
+            entityManager.persist(img);
+        }
 	}
 	
 	@Destroy @Remove
@@ -188,5 +239,21 @@ public class ManageAuctionBean implements ManageAuction, Serializable
     public void setAuctionEndDate(Date auctionEndDate)
     {
         this.auctionEndDate = auctionEndDate;
+    }
+
+    /* image upload related functions */
+    public void setImageData(byte[] imageData)
+    {
+        this.imageData = imageData;
+    }
+
+    public void setImageContentType(String contentType)
+    {
+        this.imageContentType = contentType;
+    }
+
+    public List<AuctionImage> getImages()
+    {
+        return images;
     }
 }
