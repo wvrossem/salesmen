@@ -21,11 +21,9 @@
                     /><br/>
 
             <ui:repeat value="#{viewAuction.images}" var="img">
-                <div class="image">
-                    <s:graphicImage value="#{img.data}">
-                        <s:transformImageSize width="200" maintainRatio="true"/>
-                    </s:graphicImage>
-                </div>
+                <s:graphicImage value="#{img.data}">
+                    <s:transformImageSize width="200" maintainRatio="true"/>
+                </s:graphicImage>
             </ui:repeat>
 
             <h:form id="bidForm">
