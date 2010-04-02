@@ -42,8 +42,7 @@ public class ManageAuctionBean implements ManageAuction, Serializable
     private List<AuctionImage> images = new ArrayList<AuctionImage>();
     private byte[] imageData;
     private String imageContentType;
-    private boolean primaryImage;
-	
+
 	// In annotations
 	@In EntityManager entityManager;
     @In FacesMessages facesMessages;
@@ -151,6 +150,10 @@ public class ManageAuctionBean implements ManageAuction, Serializable
         this.auction.setStartDate(cal.getTime());  //current date & time
 		this.auction.setStatus(Auction.AuctionStatus.LISTED);
 
+
+        /*
+        (BART: keep for a while)
+
         //if no images were uploaded, add the default salesmen image (this.contentType=contentType;)
         if(images.size()==0)
         {
@@ -164,6 +167,8 @@ public class ManageAuctionBean implements ManageAuction, Serializable
                 System.out.println("ERROR: defaultImage failed");
             }
         }
+        */
+
         //save the auction (id gets filled in, perform before persisting images!)
         entityManager.persist(this.auction);
 
@@ -173,6 +178,9 @@ public class ManageAuctionBean implements ManageAuction, Serializable
             img.setAuction(this.auction);
             entityManager.persist(img);
         }
+        //cleanup
+        this.auction=null;
+        this.images=null;
 	}
 	
 	@Destroy @Remove

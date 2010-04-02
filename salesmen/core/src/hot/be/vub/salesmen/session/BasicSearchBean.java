@@ -201,30 +201,45 @@ public class BasicSearchBean implements BasicSearch
 		return null;
 	}
 
-    public List findBids(Auction auction, int limit, EntityManager em)
+    public List<Bid> findBids(Auction auction, int limit, EntityManager em)
     {
         List<Bid> bids=null;
         if(auction.getId()!=null)
         {
             String qry = "FROM Bid b WHERE b.auction.id = '"+auction.getId()+"' ORDER BY b.amount DESC, b.id ASC";
             bids = (List<Bid>)em.createQuery(qry).getResultList();
-            System.out.println("findBids: qry: "+qry);
             if(bids!=null && bids.size()>5)
             {
                 bids  = (List<Bid>)em.createQuery(qry).getResultList().subList(0, limit);
             }
+        }
+		return bids;
+    }
 
-
-            if(bids==null)
+    public List<AuctionImage> findImages(Auction auction, int limit, EntityManager em)
+    {
+        //TODO: if no images were returned, return a default image
+        List<AuctionImage> images=null;
+        if(auction.getId()!=null)
+        {
+            String qry = "FROM AuctionImage a WHERE a.auction.id = '"+auction.getId()+"' ORDER BY a.id ASC";
+            images = (List<AuctionImage>)em.createQuery(qry).getResultList();
+            if(images!=null && images.size()>5)//TODO: remove fixed value
             {
-               System.out.println("findBids: return null");
+                images  = (List<AuctionImage>)em.createQuery(qry).getResultList().subList(0, limit);
+            }
+
+
+            if(images==null)
+            {
+               System.out.println("findImages: return null");
             }
             else
             {
-                System.out.println("findBids: return List");
+                System.out.println("findImages: return List");
             }
         }
-		return bids;
+		return images;
     }
 
 	public void createCategoryTree()

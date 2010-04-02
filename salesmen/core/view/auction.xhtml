@@ -20,6 +20,14 @@
                     rendered="#{viewAuction.highestBid.amount!=0}"
                     /><br/>
 
+            <ui:repeat value="#{viewAuction.images}" var="img">
+                <div class="image">
+                    <s:graphicImage value="#{img.data}">
+                        <s:transformImageSize width="200" maintainRatio="true"/>
+                    </s:graphicImage>
+                </div>
+            </ui:repeat>
+
             <h:form id="bidForm">
 			<fieldset>
             <a:region id="bidRegion">
