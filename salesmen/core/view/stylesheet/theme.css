@@ -216,3 +216,27 @@ padding: 0 2px;
 table.radio input[type=radio] {
 vertical-align: bottom;
 }
+
+
+/* Forms & related */
+/* should be first column*/
+td.description
+{
+    width:350px;
+}
+
+td.value
+{
+    width:150px;
+}
+
+td.message
+{
+    width:150px;
+}
+
+textarea.description
+{
+    width:300px;
+    height:200px;
+}

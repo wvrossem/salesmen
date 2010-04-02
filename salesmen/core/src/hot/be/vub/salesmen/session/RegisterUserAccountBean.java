@@ -111,14 +111,15 @@ public class RegisterUserAccountBean implements RegisterUserAccount, Serializabl
   {
     BasicSearchBean search = new BasicSearchBean();
     UserAccount result  = search.findUserAccount(username, entityManager);
-		if (result == null)
+    if (result == null)
     {
-      facesMessages.addToControlFromResourceBundle("username", FacesMessage.SEVERITY_INFO, "salesmen.UserAccount.Username.Unique");
-      usernameValid = true;
+        facesMessages.addToControlFromResourceBundle("username", FacesMessage.SEVERITY_INFO, "salesmen.UserAccount.Username.Unique");
+        usernameValid = true;
     }
-    else{
-      facesMessages.addToControlFromResourceBundle("username", FacesMessage.SEVERITY_ERROR, "salesmen.UserAccount.Username.AlreadyExists");
-      usernameValid = false;
+    else
+    {
+        facesMessages.addToControlFromResourceBundle("username", FacesMessage.SEVERITY_ERROR, "salesmen.UserAccount.Username.AlreadyExists");
+        usernameValid = false;
     }
   }
 
@@ -128,7 +129,9 @@ public class RegisterUserAccountBean implements RegisterUserAccount, Serializabl
 		if (!passwordValid)
 		{
 			facesMessages.addToControlFromResourceBundle("passwordConfirmation", FacesMessage.SEVERITY_ERROR, "salesmen.UserAccount.Password.NoMatch");
-		} else {
+		}
+        else 
+        {
             facesMessages.addToControlFromResourceBundle("passwordConfirmation", FacesMessage.SEVERITY_INFO, "salesmen.UserAccount.Password.Match");
         }
 	}
