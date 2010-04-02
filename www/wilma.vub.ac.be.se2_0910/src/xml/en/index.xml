@@ -80,7 +80,7 @@ new TWTR.Widget({
   <sidebar id='spotlight'>
     <title>Spotlight</title>
     <itemizedlist>
-      <listitem><para><olink targetdoc='events-2009-vub-se'>1st Conference
+      <listitem><para><olink targetdoc='events-2019-vub-se'>2nd Conference
       Coverage</olink></para></listitem>
       <listitem><para><olink targetdoc='highlights-2010'>Highlights in 
       Feb. 2010</olink></para></listitem>
@@ -100,8 +100,8 @@ new TWTR.Widget({
       SRS v0.3</olink></para></listitem>
       <listitem><para><olink targetdoc='std'>
       STD v0.2</olink></para></listitem>
-      <listitem><para><olink targetdoc='timesheets-2010'>Timesheets - 
-      Week 24</olink></para></listitem>
+      <listitem><para><olink targetdoc='timesheets-2010'>Latest Timesheets
+		<olink></para></listitem>
     </itemizedlist>
   </sidebar>
 </webpage>
