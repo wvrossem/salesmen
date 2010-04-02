@@ -41,7 +41,6 @@ public class Auction implements Serializable
 	private String description;
     private Date startDate=new Date();
 	private Date endDate=new Date();
-	//private Bid highBid;
 
 	private double startingPrice;
 	private AuctionStatus status=AuctionStatus.UNLISTED;

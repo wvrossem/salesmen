@@ -1,34 +1,58 @@
 <!DOCTYPE composition PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
 	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <ui:composition xmlns="http://www.w3.org/1999/xhtml"
-	xmlns:s="http://jboss.com/products/seam/taglib"
-	xmlns:ui="http://java.sun.com/jsf/facelets"
-	xmlns:f="http://java.sun.com/jsf/core"
-	xmlns:h="http://java.sun.com/jsf/html"
-	xmlns:rich="http://richfaces.org/rich"
-	template="layout/template.xhtml">
+                xmlns:s="http://jboss.com/products/seam/taglib"
+                xmlns:ui="http://java.sun.com/jsf/facelets"
+                xmlns:f="http://java.sun.com/jsf/core"
+                xmlns:h="http://java.sun.com/jsf/html"
+                xmlns:rich="http://richfaces.org/rich"
+				xmlns:a="http://richfaces.org/a4j"
+                template="layout/template.xhtml">
 
 <ui:define name="body">
 
-	<h:form id="auctionForm">
+	<h:form enctype="multipart/form-data">
+        <rich:panel>
+            <h:panelGrid columns="3" rowClasses="prop" columnClasses="description,value,message">
+                <h:outputLabel for="image">Select an image to upload</h:outputLabel>
+                <a:region id="imageRegion">
+                <s:fileUpload id="image" data="#{manageAuction.imageData}" accept="image/png" contentType="#{manageAuction.imageContentType}" />
+                <h:commandButton value="Upload Picture" action="#{manageAuction.uploadImage}"/>
+                </a:region>
+                <a:outputPanel id="imageMessage">
+                    <a:status for="imageRegion">
+                        <f:facet name="start">
+                            <h:graphicImage value="/img/ajax-loader.gif"/>
+                        </f:facet>
+                    </a:status>
+                    <rich:message for="image">
+                        <f:facet name="errorMarker">
+                            <h:graphicImage url="/img/msgerror.png"/>
+                        </f:facet>
+                    </rich:message>
+                </a:outputPanel>
+            </h:panelGrid>
 
-		<rich:panel>
-			<f:facet name="header">auction</f:facet>
+            <div class="actionButtons">
+                <h:commandButton  id="previous" value="Previous" action="previous"/>
+                <h:commandButton  id="next" value="Next" action="#{manageAuction.save(authenticatedUser)}"/>
+            </div>
+        </rich:panel>
+    </h:form>
 
-				<s:validateAll>
-					Show image selection stuff
-				</s:validateAll>
+    <hr class="thinLine"/>
 
-			<div style="clear:both"/>
+    <ui:repeat value="#{manageAuction.images}" var="img">
+        <div class="image">
+            <s:graphicImage value="#{img.data}">
+                <s:transformImageSize width="200" maintainRatio="true"/>
+            </s:graphicImage>
+        </div>
+        <hr class="thinLine"/>
+    </ui:repeat>
 
-		</rich:panel>
 
-		<div class="actionButtons">
-			<h:commandButton  id="previous" value="Previous" action="previous"/>
-			<h:commandButton  id="next" value="Next" action="#{manageAuction.save(authenticatedUser)}"/>
-		</div>
 
-	</h:form>
 
 </ui:define>
 </ui:composition>
