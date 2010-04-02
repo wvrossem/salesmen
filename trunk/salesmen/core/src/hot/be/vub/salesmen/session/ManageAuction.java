@@ -12,6 +12,7 @@ public interface ManageAuction
 	public void checkInput();
 	public void confirm();
 	public void save(UserAccount user);
+    public void verifyPrice();
 
 	public void processTreeNodeImplSelection(NodeSelectedEvent event);
 }

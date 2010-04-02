@@ -12,6 +12,7 @@ import org.richfaces.event.NodeSelectedEvent;
 import org.richfaces.model.TreeNode;
 
 import javax.ejb.Remove;
+import javax.faces.application.FacesMessage;
 import javax.persistence.EntityManager;
 import java.io.Serializable;
 import java.util.Calendar;
@@ -34,9 +35,8 @@ public class ManageAuctionBean implements ManageAuction, Serializable
 	
 	// In annotations
 	@In EntityManager entityManager;
-	//@in Auction auction
-	@In
-	StatusMessages statusMessages;
+    @In FacesMessages facesMessages;
+	@In StatusMessages statusMessages;
 
     public ManageAuctionBean()
     {
@@ -53,6 +53,17 @@ public class ManageAuctionBean implements ManageAuction, Serializable
 		}
 	}
 
+
+    public void verifyPrice()
+    {
+        if(this.auction.getStartingPrice()<=0)
+		{
+            facesMessages.addToControlFromResourceBundle("price", FacesMessage.SEVERITY_INFO, "salesmen.Auction.create.priceBelowZero");
+           // return false;
+        }
+        //return true;
+    }
+
 	
 	public void checkInput()
 	{
@@ -68,18 +79,14 @@ public class ManageAuctionBean implements ManageAuction, Serializable
 			System.out.println("Category set, OK!");
 		}
 
-        if(this.auction.getStartingPrice()<=0)
-		{
-            FacesMessages.instance().addToControl("priceMessage", "Price should be greater than 0");
-            return;
-        }
+
 
         Calendar cal = Calendar.getInstance();
         Date now = cal.getTime();//current date & time
         this.auction.setEndDate(this.auctionEndDate);
         if(now.after(this.auction.getEndDate()))
         {
-            FacesMessages.instance().addToControl("endDateMessage", "End date should be after current time");
+            facesMessages.addToControlFromResourceBundle("endDate", FacesMessage.SEVERITY_INFO, "salesmen.Auction.create.endDateBeforeNow");
             return;
         }
 
@@ -94,8 +101,6 @@ public class ManageAuctionBean implements ManageAuction, Serializable
 
 		//this.auction.setStatus(Auction.AuctionStatus.UNLISTED);
 		//entityManager.persist(this.auction);
-
-		System.out.println("manageAuctionBean save(): ID "+this.auction.getId());
 	}
 
 	@End
@@ -105,14 +110,12 @@ public class ManageAuctionBean implements ManageAuction, Serializable
         this.auction.setStartDate(cal.getTime());  //current date & time
 		this.auction.setStatus(Auction.AuctionStatus.LISTED);
 		entityManager.persist(this.auction);
-
-		System.out.println("manageAuctionBean confirmed,  conversation ended, id of action: "+this.auction.getId());
 	}
 	
 	@Destroy @Remove
 	public void destroy()
 	{
-		System.out.println("manageAuctionBean destroyed");
+
 	}
 	
 	// Public Attribute getters/setters with annotations 

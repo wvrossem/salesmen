@@ -14,10 +14,18 @@
 		<rich:panel>
 			<f:facet name="header">auction</f:facet>
 			<s:validateAll>
-               <h:panelGrid columns="3" rowClasses="prop" columnClasses="name,value">
-					<h:outputLabel for="title">Enter a short description of the item you wish to sell</h:outputLabel>
-					<h:inputText id="title" required="true" value="#{manageAuction.auction.title}"/>
+               <h:panelGrid columns="3" rowClasses="prop" columnClasses="description,value,message">
+                    <h:outputLabel for="title">Enter a short description of the item you wish to sell</h:outputLabel>
+                    <a:region id="titleRegion">
+                        <h:inputText id="title" required="true" value="#{manageAuction.auction.title}">
+                        </h:inputText>
+                    </a:region>
 					<a:outputPanel id="titleMessage">
+                        <a:status for="titleRegion">
+                        <f:facet name="start">
+                            <h:graphicImage value="/img/ajax-loader.gif"/>
+                        </f:facet>
+                        </a:status>
                         <rich:message for="title">
                             <f:facet name="errorMarker">
                             <h:graphicImage url="/img/msgerror.png"/>
@@ -26,12 +34,23 @@
                     </a:outputPanel>
 
 
-
-					<h:outputLabel for="price">Please enter the starting price for your auction (EUR)</h:outputLabel>
+                   <h:outputLabel for="price">Please enter the starting price for your auction (EUR)</h:outputLabel>
+                    <a:region id="priceRegion">
 					<h:inputText id="price" value="#{manageAuction.auction.startingPrice}" required="true">
 					<f:convertNumber minFractionDigits="2" maxFractionDigits="2" minIntegerDigits="1"/>
+                        <a:support event="onblur"
+                                   action="#{manageAuction.verifyPrice()}"
+                                   reRender="priceMessage"
+                                   ajaxSingle="true"
+                                   limitToList="true" />
 					</h:inputText>
-					<a:outputPanel id="priceMessage">
+                    </a:region>
+					<a:outputPanel for="price" id="priceMessage">
+                        <a:status for="priceRegion">
+                        <f:facet name="start">
+                            <h:graphicImage value="/img/ajax-loader.gif"/>
+                        </f:facet>
+                        </a:status>
                         <rich:message for="price">
                             <f:facet name="errorMarker">
                             <h:graphicImage url="/img/msgerror.png"/>
@@ -51,7 +70,7 @@
                     </a:outputPanel>
 
 
-                    <h:outputLabel for="endDate"><b>#{messages['salesmen.auction.create.endDate']}</b></h:outputLabel>
+                    <h:outputLabel for="endDate">#{messages['salesmen.auction.create.endDate']}</h:outputLabel>
                     <rich:calendar id="endDate" value="#{manageAuction.auctionEndDate}" required="true" datePattern="dd/MM/yyyy HH:mm" buttonIcon="img/dtpick.gif" />
                     <a:outputPanel id="endDateMessage">
                         <rich:message for="endDate">
@@ -61,7 +80,7 @@
                         </rich:message>
                     </a:outputPanel>
 
-                    <h:outputLabel for="endDate"><b>Please select a category for the item</b></h:outputLabel> 
+                    <h:outputLabel for="endDate">Please select a category for the item</h:outputLabel> 
                     <rich:tree id="allCategories" value="#{basicSearch.categoryTree}" var="cat"
                         ajaxSubmitSelection="true" switchType="ajax"
                         nodeSelectListener="#{manageAuction.processTreeNodeImplSelection}">
