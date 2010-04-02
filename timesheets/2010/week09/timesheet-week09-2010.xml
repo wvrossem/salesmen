@@ -84,8 +84,8 @@
     <name>Jonathan Jeurissen</name>
     <timesheet xmlns="http://purl.org/net/timetrack">
 	
-  <item duration="PT1H">
-		<desc>Workshop 2010/03/03, 15h00 -&gt; 18h00</desc>
+  <item duration="PT2H30M">
+		<desc>Workshop 2010/03/03, 15h00 -&gt; 17h30</desc>
   </item>
   
   <item duration="PT15M">
@@ -96,18 +96,11 @@
   </person>
   <person>
     <name>Sina Khakbaz Heshmati</name>
-    
-	<timesheet xmlns="http://purl.org/net/timetrack" xml:base="../default/timesheet.xml">
-  <item duration="PT0M">
-    <desc>
-      This is a fallback timesheet, meaning that the
-      developer has not submitted their timesheet yet.
-      Please check back later to see this developer's 
-      timesheet.
-    </desc>
+    <timesheet xmlns="http://purl.org/net/timetrack">
+  <item duration="PT30M">
+    <desc>Administration and Communication.</desc>
   </item>
 </timesheet>
-      
   </person>
   <person>
     <name>Jorne Laton</name>
@@ -166,6 +159,14 @@
 	<ref>http://code.google.com/p/salesmen/source/detail?r=964</ref>
     </refs>
   </item>
+  
+	<item duration="PT20M">
+		<desc>QA Meeting 22 feb 2010</desc>
+		<refs>
+			<ref>http://groups.google.com/group/salesmen/browse_thread/thread/54afd0017232cf90/79eecfdda7049b5c</ref>
+		<ref>http://wilma.vub.ac.be/~se2_0910/docs/minutes/2010/02/22/minutes-20100222.pdf</ref>
+		</refs>
+	</item>
   
   <item duration="PT30M">
     <desc>Administration and Communication.</desc>
