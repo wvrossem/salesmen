@@ -95,17 +95,6 @@
       <auth-constraint/>
    </security-constraint>
    
-   <servlet>
-         <servlet-name>Mail Servlet</servlet-name>
-         <servlet-class>org.jboss.seam.example.mail.MailSenderServlet</servlet-class>
-         <load-on-startup>1</load-on-startup>
-    </servlet>
-    
-    <servlet-mapping>
-         <servlet-name>Mail Servlet</servlet-name>
-         <url-pattern>/mail/sender</url-pattern>
-    </servlet-mapping>
-
    <!-- Add entries for each EJB session bean which is also a Seam component (not required on JBoss AS) -->
 
    <persistence-unit-ref>
