@@ -1,6 +1,7 @@
 package be.vub.salesmen.session;
 
 import be.vub.salesmen.entity.Auction;
+import be.vub.salesmen.entity.AuctionImage;
 import be.vub.salesmen.entity.Bid;
 import be.vub.salesmen.entity.UserAccount;
 import org.jboss.seam.annotations.Begin;
@@ -15,6 +16,7 @@ import org.jboss.seam.faces.FacesMessages;
 import javax.faces.application.FacesMessage;
 import javax.persistence.EntityManager;
 import java.io.Serializable;
+import java.util.ArrayList;
 import java.util.List;
 
 import static org.jboss.seam.ScopeType.CONVERSATION;
@@ -30,6 +32,7 @@ public class ViewAuctionBean implements ViewAuction   , Serializable
 	private Auction auction;
     private double bidAmount=0;
     private Bid highestBid;
+    private List<AuctionImage> images = new ArrayList<AuctionImage>();
 	
 	//Request Parameters
     @RequestParameter
@@ -58,27 +61,19 @@ public class ViewAuctionBean implements ViewAuction   , Serializable
 			this.auction = (Auction)search.findAuction(this.auctionId,this.entityManager);
             //reload bids
             this.updateBids();
+
+            //reload images
+            updateImages();
 		}
 	}
-	 /*
-	 //Deprecated
-	public void selectAuction(Auction a)
-	{
-		if(a==null)
-		{
-			System.out.println("MESS: viewAuction.selectAuction called null auction ");
-			this.auctionId=1L;
-		}
-		else
-		{
-			System.out.println("MESS: viewAuction.selectAuction called auction with title "+a.getTitle());
-			this.auctionId=a.getId();
-			this.auction=a;
-            //reload bids
-            this.updateBids();
-		}
-	}
-	*/
+
+    //loads the auction images
+    private void updateImages()
+    {
+        BasicSearchBean search = new BasicSearchBean();
+        //TODO: (Bart) do not use fixed value
+        images=search.findImages(this.auction,5,this.entityManager);
+    }
 
     private void updateBids()
     {
@@ -189,5 +184,10 @@ public class ViewAuctionBean implements ViewAuction   , Serializable
     public void setHighestBid(Bid highestBid)
     {
         this.highestBid = highestBid;
+    }
+
+    public List<AuctionImage> getImages()
+    {
+        return images;
     }
 }
