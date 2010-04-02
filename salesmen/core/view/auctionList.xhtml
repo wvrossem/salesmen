@@ -7,19 +7,13 @@
 	xmlns:rich="http://richfaces.org/rich"
 	id="auctions" value="#{entities}" var="a">
 	<h:column id="TitleColumn">
-		<f:facet id="TitleFacet" name="header"><h:outputText value="#{messages['salesmen.Auction.Title']}"/></f:facet>
+		<f:facet name="header"><h:outputText value="#{messages['salesmen.Auction.Title']}"/></f:facet>
 			<s:link id="auctionLink"
 				propagation="none"
 				  value="#{a.title}"
 			   view="/auction.xhtml">
 				<f:param name="auctionId" value="#{a.id}"/>
 			</s:link>
-			<br/>
-			<!--<s:link id="viewAuctionLink"
-				propagation="none"
-					  value="BY REFERENCE: #{a.title}"
-					 action="#{viewAuction.selectAuction(a)}"
-					   view="/auction.xhtml"/>     -->
 	</h:column>
 	<h:column id="DescriptionColumn">
 		<f:facet id="DescriptionFacet" name="header"><h:outputText value="#{messages['salesmen.Auction.Description']}"/></f:facet>
