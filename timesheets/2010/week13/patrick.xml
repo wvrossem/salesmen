@@ -19,8 +19,23 @@
 		</item>
 				
 		<item duration="PT10M">
-				<desc>QA Conference Meeting 18/03 12.15-13.00</desc>
+				<desc>QA Conference Meeting 29/03 14.00-16.00</desc>
 				<refs>
+					<ref>Not yet published</ref>
+				</refs>
+		</item>
+		
+		<item duration="PT10M">
+				<desc>QA Conference Meeting 30/03 16.00-17.00</desc>
+				<refs>
+					<ref>Not yet published</ref>
+				</refs>
+		</item>
+		
+		<item duration="PT15M">
+				<desc>QA Highlights March</desc>
+				<refs>
+					<ref>Not yet published</ref>
 				</refs>
 		</item>
 				
@@ -33,7 +48,7 @@
 				</refs>
 		</item>
 								
-		<item duration="PT0H30M">
+		<item duration="PT0H40M">
 				<desc>Administration and Communication.</desc>
 		</item>
 				
