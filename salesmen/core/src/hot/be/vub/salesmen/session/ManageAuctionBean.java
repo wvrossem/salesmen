@@ -35,8 +35,8 @@ public class ManageAuctionBean implements ManageAuction, Serializable
 	Auction auction; 
 	private boolean inputIsOk=false;
 	private Category category;
-	private boolean isNew=false;    //used by
     private Date auctionEndDate;
+    private Long auctionId;
 
     //image related stuff
     private List<AuctionImage> images = new ArrayList<AuctionImage>();
@@ -136,7 +136,6 @@ public class ManageAuctionBean implements ManageAuction, Serializable
 
 	public void save(UserAccount user)
 	{
-		this.setNew(true);
 		this.auction.setOwner(user);
 
 		//this.auction.setStatus(Auction.AuctionStatus.UNLISTED);
@@ -179,6 +178,7 @@ public class ManageAuctionBean implements ManageAuction, Serializable
             entityManager.persist(img);
         }
         //cleanup
+        this.auctionId=this.auction.getId();
         this.auction=null;
         this.images=null;
 	}
@@ -228,17 +228,6 @@ public class ManageAuctionBean implements ManageAuction, Serializable
 		System.out.println(currentNode.getData().getName());
     }
 
-    public boolean isNew()
-	{
-		return isNew;
-	}
-
-	public void setNew(boolean aNew)
-	{
-		isNew = aNew;
-	}
-
-
     public Date getAuctionEndDate()
     {
         return auctionEndDate;
@@ -263,5 +252,10 @@ public class ManageAuctionBean implements ManageAuction, Serializable
     public List<AuctionImage> getImages()
     {
         return images;
+    }
+
+    public Long getAuctionId()
+    {
+        return auctionId;
     }
 }

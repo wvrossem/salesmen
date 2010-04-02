@@ -6,7 +6,7 @@
 		
 	<navigation from-action="#{manageAuction.confirm}">
 		<redirect view-id="/auction.xhtml">
-            <param name="auctionId" value="#{manageAuction.auction.id}"/>
+            <param name="auctionId" value="#{manageAuction.auctionId}"/>
         </redirect>
 	</navigation>
 	

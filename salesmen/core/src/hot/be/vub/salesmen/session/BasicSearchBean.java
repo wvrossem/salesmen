@@ -228,16 +228,6 @@ public class BasicSearchBean implements BasicSearch
             {
                 images  = (List<AuctionImage>)em.createQuery(qry).getResultList().subList(0, limit);
             }
-
-
-            if(images==null)
-            {
-               System.out.println("findImages: return null");
-            }
-            else
-            {
-                System.out.println("findImages: return List");
-            }
         }
 		return images;
     }
