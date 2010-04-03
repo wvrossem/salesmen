@@ -30,6 +30,7 @@ public class AdvancedSearchBean implements AdvancedSearch
 	boolean searchAuctionTitle;
 	boolean searchAuctionDescription;
 	boolean searchUser;
+	boolean searchOwner;
 
 	String category;
 	String tags;
@@ -112,25 +113,44 @@ public class AdvancedSearchBean implements AdvancedSearch
 	{
 
 		StringBuilder qry = new StringBuilder();
+		boolean searchingElse = false;
 		
-		qry.append("from Auction a where upper(a.title) like upper(#{includePattern})");
+		qry.append("from");
+		
+		if (searchAuctionTitle | searchAuctionDescription | searchOwner)
+		{
+			qry.append(" Auction a");
+		}
+		
+		qry.append(" where");
 		
 		if (searchAuctionTitle)
 		{
-			//qry.append(" and ");
+			qry.append(" upper(a.title) like upper(#{includePattern})");
 			qry.append(" and upper(a.title) not like upper(#{excludePattern})");
+			searchingElse = true;
 		}
 		
 		if (searchAuctionDescription)
 		{
-			qry.append(" and upper(a.description) like upper(#includePattern)");
+			if (searchingElse)
+			{
+				qry.append(" and");
+			}
+			qry.append(" upper(a.description) like upper(#includePattern)");
 			qry.append(" and upper(a.description) not like upper(#{excludePattern})");
 		}
 		
-		if (user != null)
+		if (searchOwner & user != null)
 		{	
-			qry.append(" and a.owner = #{user.userId}");
+			if (searchingElse)
+			{
+				qry.append(" and");
+			}
+			qry.append(" a.owner = " + user.getUserId());
 		}
+		
+		System.out.println(qry.toString());
 		
 		List results = entityManager.createQuery(qry.toString())
 			.setMaxResults(pageSize) //+1?
@@ -155,6 +175,7 @@ public class AdvancedSearchBean implements AdvancedSearch
 	public void auctionsOfUser(User user)
 	{
 		this.user = user;
+		this.searchOwner = true;
 		page = 0;
 		queryEntities();
 	}
