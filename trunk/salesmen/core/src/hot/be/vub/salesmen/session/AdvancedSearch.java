@@ -37,7 +37,7 @@ public interface AdvancedSearch {
 
 	public boolean isNextPageAvailable();
 
-	public List auctionsOfUser(User user);
+	public void auctionsOfUser(User user);
 
 	public List auctionsOfUser(String userName);
 

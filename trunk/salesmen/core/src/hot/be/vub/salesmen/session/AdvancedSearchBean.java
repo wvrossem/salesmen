@@ -152,10 +152,11 @@ public class AdvancedSearchBean implements AdvancedSearch
 		queryEntities();
 	}
 	
-	public List auctionsOfUser(User user)
+	public void auctionsOfUser(User user)
 	{
-		AtomicReference<String> qry = new AtomicReference<String>("from Auction a where a.owner = #{user.userId}");
-		return entityManager.createQuery(qry.get()).getResultList();
+		this.user = user;
+		page = 0;
+		queryEntities();
 	}
 
 	public List auctionsOfUser(String userName)
