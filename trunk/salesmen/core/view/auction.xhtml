@@ -77,7 +77,47 @@
             </a:region>
             </fieldset>
             </h:form>
-
+            
+            <h:form id="commentForm">
+			<fieldset>
+            <a:region id="commentRegion">
+                <h:inputTextarea id="comment" value="#{viewComment.text}">
+                </h:inputTextarea>
+                <br/>
+                <a:commandButton id="commentButton"
+                                 value="Send!"
+                                 action="#{viewComment.AddComment(authenticatedUser)}"
+                                 reRender="bidPanel"
+                                 rendered="#{identity.loggedIn}"/>
+                <br/>
+                <a:outputPanel id="commentHistory">
+                    <h:outputText id="NoCommentsMessage"
+                        value="Not yet commented"
+                        rendered="#{(viewComment.comments != null and viewComment.comments.size == 0) or viewComment.comments == null}"/>
+                    <h:dataTable id="comments"
+                    	value="#{viewComment.comments}" var="c"
+                    	rendered="#{viewComments.comments != null and viewComment.comments.size != 0}">
+                    <h:column id="ScreenNameColumn">
+                        <f:facet name="header"><h:outputText value="User"/></f:facet>
+                        #{c.user.username}
+                    </h:column>
+                    <h:column id="DateColumn">
+                        <f:facet name="header"><h:outputText value="Date"/></f:facet>
+                        #{c.date}
+                    </h:column>
+                    <h:column id="CommentColumn">
+                        <f:facet name="header"><h:outputText value="Comment"/></f:facet>
+                        #{c.content}
+                    </h:column>
+                    <h:column id="RatingColumn">
+                        <f:facet name="header"><h:outputText value="Rating"/></f:facet>
+                        #{c.rating}
+                    </h:column>
+                    </h:dataTable>
+                </a:outputPanel>    
+            </a:region>
+            </fieldset>
+            </h:form>
 
             <div style="clear:both"/>
 
