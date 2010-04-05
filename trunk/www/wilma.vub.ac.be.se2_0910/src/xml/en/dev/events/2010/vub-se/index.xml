@@ -28,21 +28,22 @@
       and/or download both the slides and 
       the presentation agenda in <acronym>PDF</acronym> format.
     </para>
-    <!--<h:div id='embedded-slides'>
+      <h:div id='embedded-slides'>
       <h:div style="width:425px;text-align:left" id="__ss_2732447">
 	<h:object style="margin:0px" width="425" height="355">
 	  <h:param name="movie" 
-		   value="http://static.slidesharecdn.com/swf/ssplayer2.swf?doc=salesmen-slides-20100331-091216135619-phpapp01&amp;stripped_title=salesmen-at-vub-software-engineering-2010-conference" />
+		  value="http://static.slidesharecdn.com/swf/ssplayer2.swf?doc=salesmen-slides-20100331-100403060458-phpapp01&amp;stripped_title=salesmen-conference-2" />
 	  <h:param name="allowFullScreen" value="true"/>
 	  <h:param name="allowScriptAccess" value="always"/>
 	  <h:embed 
-	      src="http://static.slidesharecdn.com/swf/ssplayer2.swf?doc=salesmen-slides-20100331-091216135619-phpapp01&amp;stripped_title=salesmen-at-vub-software-engineering-2010-conference" 
+	      src="http://static.slidesharecdn.com/swf/ssplayer2.swf?doc=salesmen-slides-20100331-100403060458-phpapp01&amp;stripped_title=salesmen-conference-2" 
 	      type="application/x-shockwave-flash" allowscriptaccess="always" 
 	      allowfullscreen="true" width="425" height="355">
 	  </h:embed>
 	</h:object>
       </h:div>
-    </h:div>-->
+    </h:div>
+   
     <section id='download'>
       <title>Download Related Resources</title>
       <table id='download-table'>
