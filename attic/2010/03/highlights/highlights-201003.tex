@@ -1,0 +1,50 @@
+\documentclass{article}
+
+\usepackage{hyperref}
+
+\begin{document}
+
+	\title{Software Engineering Group 2 (2009-2010) \\ Highlights March 2010}
+	\author{Nick De Cooman}
+	\date{\today}
+
+\maketitle
+
+This report aims to give an overview of recent improvements of the Salesmen Project. A more detailed view on the status of this project can be obtained by looking at the timesheets \cite{timesheets}. \\
+
+This month, we have been working on:
+
+\begin{itemize}
+	
+	\item \textbf{Implementing must-have requirements} \\
+	Our website \cite{demo} is extended with a lot of functionality and supports most must-have requirements. The focus hereby was to make fully use of the power of Seam (support for asynchronous data validation for instance) and to prefer quality above quantity. The following functionality is currently supported:
+	
+	\begin{itemize}
+		\item \textbf{User registration}: a user can signup for a new account. After having the account activated, he can login. If he would have lost his password, he can request a new one. 
+		\item \textbf{Email service}: having an email service allows to contact the user via email. It is currently used to activate an account and for sending a new generated password. 
+		\item \textbf{User space}: a user can change its information and settings via the dashboard.
+		\item \textbf{Placing auctions}: to sell an item, a user can place an auction and offer the item at a certain price. Other users can already place a bid. 
+		\item \textbf{Search engine}: a user can search for other users, auctions and categories. Moreover, we have been working on an advanced search which provides extra functionality (such as search sugestions, excluding terms, etc).  
+		\item \textbf{Language support}: our website supports multiple languages. We chose to have an English and Dutch version. This is however not supported by all components yet. 
+	\end{itemize}
+	
+	\item \textbf{Conference II} \\
+	In the context of the conference on March 31, two rehearsals were organised to define the focus of our presentation. All documents (agenda, slides, minutes) are available on our project website \cite{conference}. After the conference, a meeting was also held to evaluate our presentation. 
+
+\end{itemize}
+
+\begin{thebibliography}{99}
+
+	\bibitem{timesheets}
+	\href{http://wilma.vub.ac.be/~se2_0910/docs/timesheets/}{http://wilma.vub.ac.be/~se2_0910/docs/timesheets/}
+	
+	\bibitem{demo}
+	\href{http://wilma.vub.ac.be:1388/salesmen}{http://wilma.vub.ac.be:1388/salesmen}
+	
+	\bibitem{conference}
+	\href{http://wilma.vub.ac.be/~se2_0910/dev/events/2010/vub-se/}{http://wilma.vub.ac.be/~se2_0910/dev/events/2010/vub-se/}
+	
+\end{thebibliography}
+
+
+\end{document}
