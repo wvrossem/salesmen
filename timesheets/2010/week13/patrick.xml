@@ -26,28 +26,21 @@
 				</refs>
 		</item>
 				
-		<item duration="PT10M">
-				<desc>QA Conference Meeting 29/03 14.00-16.00</desc>
-				<refs>
-					<ref>Not yet published</ref>
-				</refs>
-		</item>
-		
-		<item duration="PT10M">
-				<desc>QA Conference Meeting 30/03 16.00-17.00</desc>
-				<refs>
-					<ref>Not yet published</ref>
-				</refs>
-		</item>
-		
 		<item duration="PT15M">
+				<desc>QA Conference Meeting 29/03 14.00-16.00</desc>
+				<refs>	<ref>http://groups.google.com/group/salesmen/browse_thread/thread/b4385bb3b681facd</ref>	<ref>http://wilma.vub.ac.be/~se2_0910/dev/events/2010/vub-se/resources/minutes/20100329/minutes-20100329.pdf</ref>
+						<ref>http://wilma.vub.ac.be/~se2_0910/dev/events/2010/vub-se/resources/minutes/20100330/minutes-20100330.pdf</ref>
+				</refs>
+		</item>
+		
+		<item duration="PT10M">
 				<desc>QA Highlights March</desc>
 				<refs>
-					<ref>Not yet published</ref>
+					<ref>http://code.google.com/p/salesmen/source/detail?r=1216</ref>
 				</refs>
 		</item>
 				
-		<item duration="PT3H0M">
+		<item duration="PT2H30M">
 				<desc>Quality Assurance of code</desc>
 				<refs>
 					<ref>http://code.google.com/p/salesmen/source/detail?r=1142</ref>
@@ -55,8 +48,28 @@
 					<ref>http://code.google.com/p/salesmen/source/detail?r=1139</ref>
 				</refs>
 		</item>
+		
+		<item duration="PT45M">
+			<desc>Final rehearsal before Conference 2</desc>
+		</item>
+		
+
+		<item duration="PT1H45M">
+	  <desc>Conference 2.</desc>
+	  <refs>
+			<ref>http://wilma.vub.ac.be/~se2_0910/dev/events/2010/vub-se/</ref>
+	  </refs>
+		</item>
+
+		<item duration="PT30M">
+	  <desc>Meeting 31/03.</desc>
+	  <refs>
+			<ref>Minutes not available yet</ref>
+	  </refs>
+		</item>
+				
 								
-		<item duration="PT0H40M">
+		<item duration="PT0H30M">
 				<desc>Administration and Communication.</desc>
 		</item>
 				
