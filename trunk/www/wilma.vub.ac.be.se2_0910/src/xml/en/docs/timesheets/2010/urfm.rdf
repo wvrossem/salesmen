@@ -28,6 +28,12 @@
 
     <releases rdf:parseType="Collection">
 <Release
+    rdf:about="http://wilma.vub.ac.be/~se2_0910/docs/timesheets/2010/week13/">
+  <package rdf:resource="http://wilma.vub.ac.be/~se2_0910/docs/timesheets/"/>
+  <revision>week13-2010</revision>
+  <created>2010-04-05</created>
+</Release>      
+<Release
     rdf:about="http://wilma.vub.ac.be/~se2_0910/docs/timesheets/2010/week12/">
   <package rdf:resource="http://wilma.vub.ac.be/~se2_0910/docs/timesheets/"/>
   <revision>week12-2010</revision>
@@ -78,6 +84,36 @@
     </releases>
     
     <files rdf:parseType="Collection">
+    
+    <!-- **************************************************************
+     Week13-2010
+     ************************************************************** -->
+     
+ <File rdf:about="http://wilma.vub.ac.be/~se2_0910/docs/timesheets/2010/week13/timesheet-week13-2010.xml">
+  <release rdf:resource="http://wilma.vub.ac.be/~se2_0910/docs/timesheets/2010/week13/"/>
+  <basename>timesheet-week13-2010</basename>
+  <extension>.xml</extension>
+  <language>en</language>
+  <size rdf:parseType="Resource">
+    <unit rdf:resource="http://purl.org/urfm/Kilobyte"/>
+    <rdf:value>8</rdf:value>
+  </size>
+  <link>http://wilma.vub.ac.be/~se2_0910/docs/timesheets/2010/week13/timesheet-week13-2010.xml</link>
+  <format>application/xml</format>
+ </File>
+
+<File rdf:about="http://wilma.vub.ac.be/~se2_0910/docs/timesheets/2010/week13/timesheet-week13-2010.html">
+  <release rdf:resource="http://wilma.vub.ac.be/~se2_0910/docs/timesheets/2010/week13/"/>
+  <basename>timesheet-week13-2010</basename>
+  <extension>.html</extension>
+  <language>en</language>
+  <size rdf:parseType="Resource">
+    <unit rdf:resource="http://purl.org/urfm/Kilobyte"/>
+    <rdf:value>20</rdf:value>
+  </size>
+  <link>http://wilma.vub.ac.be/~se2_0910/docs/timesheets/2010/week13/timesheet-week13-2010.html</link>
+  <format>text/html</format>
+</File>        
     
     <!-- **************************************************************
      Week12-2010
