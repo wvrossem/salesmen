@@ -1,0 +1,286 @@
+<?xml version="1.0"?>
+<timesheets xmlns="http://purl.org/net/timetrack" xmlns:xi="http://www.w3.org/2001/XInclude" from="2010-03-22" to="2010-03-28" xml:id="week12-2010">
+  <title>VUB - SE2 Timesheets for the 12th Week of 2010</title>
+  <published>2010-03-29</published>
+  <updated>2010-03-29</updated>
+  <person>
+    <name>Nick De Cooman</name>
+    <timesheet xmlns="http://purl.org/net/timetrack">
+	
+	<item duration="PT30M">
+    <desc>Solving SVN-client problems.</desc>
+    <refs>
+		<ref>http://groups.google.com/group/salesmen/browse_thread/thread/384460c1b47f796f</ref>
+		<ref>http://groups.google.com/group/versions/browse_thread/thread/245059d58a5ca08e</ref>
+		<ref>http://groups.google.com/group/versions/browse_thread/thread/8275849edd0c94ab</ref>
+    </refs>
+  </item>
+	
+	<item duration="PT25M">
+	  <desc>Checking and publishing timesheets of week11.</desc>
+	  <refs>
+		  <ref>http://code.google.com/p/salesmen/source/detail?r=1065</ref>
+		  <ref>http://code.google.com/p/salesmen/source/detail?r=1066</ref>
+		<ref>http://code.google.com/p/salesmen/source/detail?r=1067</ref>
+		<ref>http://code.google.com/p/salesmen/source/detail?r=1068</ref>
+		<ref>http://code.google.com/p/salesmen/source/detail?r=1069</ref>
+		<ref>http://code.google.com/p/salesmen/source/detail?r=1070</ref>
+		<ref>http://code.google.com/p/salesmen/source/detail?r=1071</ref>
+		<ref>http://code.google.com/p/salesmen/source/detail?r=1072</ref>
+	  </refs>
+	</item>
+
+	<item duration="PT5M">
+    <desc>Updating statistics of timesheets.</desc>
+    <refs>
+		<ref/>
+    </refs>
+  </item>
+
+	<item duration="PT2H">
+    <desc>Generate activation-key and get parameter in URL.</desc>
+    <refs>
+		<ref>http://code.google.com/p/salesmen/source/detail?r=1094</ref>
+		<ref>http://groups.google.com/group/salesmen/browse_thread/thread/fcaadf089cc7ae0d</ref>
+    </refs>
+  </item>
+
+	<item duration="PT3H">
+    <desc>Tried to implement activation of user account. Problems with accessing and modifying UserAccount. Code not commited since it is not yet working.</desc>
+    <refs>
+		<ref>http://groups.google.com/group/salesmen/browse_thread/thread/f50cc9713d21f1e8</ref>
+    </refs>
+  </item>
+
+	<item duration="PT1H45M">
+    <desc>Tried to solve JBoss problem: salesmen project is constantly deployed. Have re-installed jboss, reverted code etc.. </desc>
+    <refs>
+		<ref>http://groups.google.com/group/salesmen/browse_thread/thread/67b2de4bb73dabcc</ref>
+    </refs>
+  </item>
+
+	<item duration="PT1H20M">
+    <desc>Making slides for conference 2.</desc>
+    <refs>
+		<ref>Slides available after conference</ref>
+    </refs>
+  </item>
+
+	<item duration="PT20M">
+    <desc>Tried out email system and fixed two bugs.</desc>
+    <refs>
+		<ref>http://code.google.com/p/salesmen/source/detail?r=1126</ref>
+    </refs>
+  </item>
+
+	<item duration="PT2H35">
+    <desc>Support for sending confirmation email after registration. Had to solve error messages and adapt emailservice since it was unsuitable for this purpose. </desc>
+    <refs>
+		<ref>http://www.vineetmanohar.com/2009/04/03/seam-asynchronous-email</ref>
+		<ref>http://code.google.com/p/salesmen/source/detail?r=1129</ref>
+    </refs>
+  </item>
+
+  <item duration="PT30M">
+    <desc>Administration and Communication.</desc>
+    <refs/>
+  </item>
+</timesheet>
+  </person>
+  <person>
+    <name>Jonathan Jeurissen</name>
+    <timesheet xmlns="http://purl.org/net/timetrack">
+	
+  <item duration="PT1H45M">
+		<desc>Programming ForgotPassword</desc>
+  </item>
+  
+  <item duration="PT15M">
+    <desc>Administration and Communication.</desc>
+    <refs/>
+  </item>
+</timesheet>
+  </person>
+  <person>
+    <name>Sina Khakbaz Heshmati</name>
+    <timesheet xmlns="http://purl.org/net/timetrack">
+  <item duration="PT15M">
+    <desc>Administration and Communication.</desc>
+  </item>
+</timesheet>
+  </person>
+  <person>
+    <name>Jorne Laton</name>
+    <timesheet xmlns="http://purl.org/net/timetrack">
+	<item duration="PT0H30M">
+		<desc>Wrote wiki page on how to configure e-mail support in JBoss.</desc>
+		<refs>
+			<ref>http://code.google.com/p/salesmen/source/detail?r=1077</ref>
+			<ref>http://code.google.com/p/salesmen/wiki/JBossEmailConfiguration</ref>
+		</refs>
+	</item>
+	
+	<item duration="PT4H0M">
+		<desc>Implemented EmailClass.java, standardEmail.xhtml and edited SendEmail.java and sendEmail.xhtml to support the first two changes.</desc>
+		<refs>
+			<ref>http://code.google.com/p/salesmen/source/detail?r=1081</ref>
+			<ref>http://code.google.com/p/salesmen/source/detail?r=1082</ref>
+			<ref>http://code.google.com/p/salesmen/source/detail?r=1083</ref>
+			<ref>http://code.google.com/p/salesmen/source/detail?r=1084</ref>
+		</refs>
+	</item>
+	
+	<item duration="PT2H0M">
+		<desc>After testing EmailClass, noticed restriction on content attribute in EmailClass. Decided to create xhtml files and methods for different messages.</desc>
+		<refs>
+			<ref>http://code.google.com/p/salesmen/source/detail?r=1101</ref>
+			<ref>http://code.google.com/p/salesmen/source/detail?r=1102</ref>
+			<ref>http://code.google.com/p/salesmen/source/detail?r=1103</ref>
+		</refs>
+	</item>
+	
+	<item duration="PT1H15M">
+		<desc>Implemented multi-language support in e-mail system, had to solve multiple svn conflicts.</desc>
+		<refs>
+			<ref>http://code.google.com/p/salesmen/source/detail?r=1108</ref>
+			<ref>http://code.google.com/p/salesmen/source/detail?r=1109</ref>
+		</refs>
+	</item>
+		
+	<item duration="PT0H25M">
+		<desc>Administration and Communication.</desc>
+	</item>
+</timesheet>
+  </person>
+  <person>
+    <name>Bart Maes</name>
+    <timesheet xmlns="http://purl.org/net/timetrack">
+
+		
+	<item duration="PT16H">
+		<desc>Auction implementation</desc>
+		<refs>
+			<ref>http://code.google.com/p/salesmen/source/detail?r=1087</ref>
+			<ref>http://code.google.com/p/salesmen/source/detail?r=1088</ref>
+			<ref>http://code.google.com/p/salesmen/source/detail?r=1089</ref>
+			<ref>http://code.google.com/p/salesmen/source/detail?r=1090</ref>
+			<ref>http://code.google.com/p/salesmen/source/detail?r=1091</ref>
+			<ref>http://code.google.com/p/salesmen/source/detail?r=1111</ref>
+			<ref>http://code.google.com/p/salesmen/source/detail?r=1112</ref>
+			<ref>http://code.google.com/p/salesmen/source/detail?r=1113</ref>
+			<ref>http://code.google.com/p/salesmen/source/detail?r=1114</ref>
+			<ref>http://code.google.com/p/salesmen/source/detail?r=1115</ref>
+		</refs>
+	</item>
+	
+	<item duration="PT30M">
+		<desc>BasicSearchBean, added searchAuction(Long id)</desc>
+		<refs>
+			<ref>http://code.google.com/p/salesmen/source/detail?r=1111</ref>
+		</refs>
+	</item>
+	
+	<item duration="PT20M">
+		<desc>Fixed SVN merge problems</desc>
+		<refs>
+			<ref>http://code.google.com/p/salesmen/source/detail?r=1112</ref>
+		</refs>
+	</item>
+		
+	<item duration="PT50M">
+		<desc>Administration and Communication.</desc>
+		<refs>
+			<ref>http://groups.google.com/group/salesmen/browse_thread/thread/a495f13f06c53408</ref>
+			<ref>http://groups.google.com/group/salesmen/browse_thread/thread/aa831428d7508f60</ref>
+			<ref>http://groups.google.com/group/salesmen/browse_thread/thread/1222fd0c28ce3f9</ref>
+			<ref>http://groups.google.com/group/salesmen/browse_thread/thread/a3cccc4b7d816ecd</ref>
+			<ref>http://groups.google.com/group/salesmen/browse_thread/thread/67b2de4bb73dabcc</ref>
+			<ref>http://groups.google.com/group/salesmen/browse_thread/thread/a495f13f06c53408</ref>
+			<ref>http://groups.google.com/group/salesmen/browse_thread/thread/fcaadf089cc7ae0d</ref>
+			<ref>http://groups.google.com/group/salesmen/browse_thread/thread/379a8cdd4e733399</ref>
+		</refs>
+	</item>
+		
+</timesheet>
+  </person>
+  <person>
+    <name>Patrick Provinciael</name>
+    <timesheet xmlns="http://purl.org/net/timetrack">
+
+	<item duration="PT5H0M">
+		<desc>Programming User-Dashboard</desc>
+		<refs>
+			<ref>http://code.google.com/p/salesmen/source/detail?r=1120</ref>
+			<ref>http://code.google.com/p/salesmen/source/detail?r=1119</ref>
+			<ref>http://code.google.com/p/salesmen/source/detail?r=1117</ref>
+			<ref>http://code.google.com/p/salesmen/source/detail?r=1107</ref>
+		</refs>
+	</item>
+	
+	<item duration="PT1H0M">
+		<desc>Fix Java.lang.nullpointerexception</desc>
+		<refs>
+			<ref>http://groups.google.com/group/salesmen/browse_thread/thread/6dc0a0ef06dc67fa</ref>
+			<ref>http://code.google.com/p/salesmen/source/detail?r=1116</ref>
+		</refs>
+	</item>
+		
+	<item duration="PT10M">
+		<desc>QA Conference Meeting 18/03 12.15-13.00</desc>
+		<refs>
+			<ref>Minutes available after conference</ref>
+		</refs>
+	</item>
+		
+	<item duration="PT10H30M">
+		<desc>Quality Assurance of code</desc>
+		<refs>
+			<ref>http://code.google.com/p/salesmen/source/detail?r=1106</ref>
+			<ref>http://code.google.com/p/salesmen/source/detail?r=1105</ref>
+			<ref>http://code.google.com/p/salesmen/source/detail?r=1099</ref>
+			<ref>http://code.google.com/p/salesmen/source/detail?r=1093</ref>
+			<ref>http://code.google.com/p/salesmen/source/detail?r=1092</ref>
+			<ref>http://code.google.com/p/salesmen/source/detail?r=1076</ref>
+			<ref>http://code.google.com/p/salesmen/source/detail?r=1075</ref>
+			<ref>http://code.google.com/p/salesmen/source/detail?r=1074</ref>
+			<ref>http://code.google.com/p/salesmen/source/detail?r=1073</ref>
+		</refs>
+	</item>
+				
+	<item duration="PT0H40M">
+		<desc>Administration and Communication.</desc>
+	<refs>
+		<ref>http://groups.google.com/group/salesmen/browse_thread/thread/a495f13f06c53408</ref>
+		<ref>http://groups.google.com/group/salesmen/browse_thread/thread/a3cccc4b7d816ecd</ref>
+		<ref>http://groups.google.com/group/salesmen/browse_thread/thread/a495f13f06c53408</ref>
+	</refs>
+	</item>
+		
+</timesheet>
+  </person>
+  <person>
+    <name>Wouter Van Rossem</name>
+    <timesheet xmlns="http://purl.org/net/timetrack">
+
+		
+	<item duration="PT30M">
+		<desc>Added method to find a UserAccount in BasicSearch</desc>
+		<refs>
+			<ref>http://code.google.com/p/salesmen/source/detail?r=1095</ref>
+		</refs>
+	</item>
+	
+	<item duration="PT3H">
+		<desc>Categorytree implementation</desc>
+		<refs>
+			<ref>http://code.google.com/p/salesmen/source/detail?r=1128</ref>
+		</refs>
+	</item>
+		
+	<item duration="PT20M">
+		<desc>Administration and Communication.</desc>
+	</item>
+		
+</timesheet>
+  </person>
+</timesheets>
