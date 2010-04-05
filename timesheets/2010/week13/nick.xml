@@ -1,0 +1,179 @@
+<?xml version='1.0'?>
+<timesheet xmlns="http://purl.org/net/timetrack">
+	
+	<item duration="PT25M">
+	  <desc>Checking and publishing timesheets of week12.</desc>
+	  <refs>
+		  <ref>http://code.google.com/p/salesmen/source/detail?r=1123</ref>
+		  <ref>http://code.google.com/p/salesmen/source/detail?r=1124</ref>
+		<ref>http://code.google.com/p/salesmen/source/detail?r=1125</ref>
+		<ref>http://code.google.com/p/salesmen/source/detail?r=1130</ref>
+		<ref>http://code.google.com/p/salesmen/source/detail?r=1131</ref>
+		<ref>http://code.google.com/p/salesmen/source/detail?r=1132</ref>
+		<ref>http://code.google.com/p/salesmen/source/detail?r=1133</ref>
+		<ref>http://code.google.com/p/salesmen/source/detail?r=1134</ref>
+		<ref>http://code.google.com/p/salesmen/source/detail?r=1135</ref>
+	  </refs>
+	</item>
+
+	<item duration="PT5M">
+    <desc>Updating statistics of timesheets.</desc>
+    <refs>
+		<ref></ref>
+    </refs>
+  </item>
+
+	<item duration="PT2H">
+    <desc>Conference meeting on Monday 29/03.</desc>
+    <refs>	<ref>http://wilma.vub.ac.be/~se2_0910/dev/events/2010/vub-se/resources/minutes/20100329/minutes-20100329.pdf</ref>
+    </refs>
+  </item>
+
+	<item duration="PT15M">
+    <desc>Writing agenda for presentation at conference 2.</desc>
+    <refs>
+		<ref>http://groups.google.com/group/salesmen/browse_thread/thread/18fbf2334803ed31</ref>
+		<ref>http://wilma.vub.ac.be/~se2_0910/dev/events/2010/vub-se/resources/agenda/agenda-20100331.pdf</ref>
+    </refs>
+  </item>
+
+	<item duration="PT30M">
+    <desc>Modifying slides for conference 2.</desc>
+    <refs>
+		<ref>http://wilma.vub.ac.be/~se2_0910/dev/events/2010/vub-se/resources/slides/slides-20100331.pdf</ref>
+    </refs>
+  </item>
+
+	<item duration="PT6H30M">
+    <desc>Update registration form with asynchronous validation. </desc>
+    <refs>
+		<ref>http://code.google.com/p/salesmen/source/detail?r=1147</ref>
+		<ref>http://docs.jboss.org/richfaces/3.3.2.GA/en/devguide/html/ArchitectureOverview.html</ref>
+		<ref>http://blog.xebia.com/2009/04/24/validation-in-seam/</ref>
+		<ref>http://community.jboss.org/message/34806</ref>
+		<ref>http://stackoverflow.com/questions/1089997/seam-richfaces-form-validation</ref>
+		<ref>http://www.javabeat.net/tips/89-use-a4jstatus-to-display-status-of-the-reque.html</ref>
+    </refs>
+  </item>
+
+	<item duration="PT1H">
+    <desc>Conference meeting on Tuesday 30/03.</desc>
+    <refs>
+		<ref>http://wilma.vub.ac.be/~se2_0910/dev/events/2010/vub-se/resources/minutes/20100330/minutes-20100330.pdf</ref>
+    </refs>
+  </item>
+
+	<item duration="PT30M">
+    <desc>Rehearsing presentation for conference 2.</desc>
+    <refs>
+    </refs>
+  </item>
+
+	<item duration="PT15M">
+    <desc>Fixed "passwords do not match" bug in registration form.</desc>
+    <refs>
+		<ref>http://code.google.com/p/salesmen/source/detail?r=1159</ref>
+    </refs>
+  </item>
+
+	<item duration="PT25M">
+    <desc>Fixed "username is not unique" bug in registration form.</desc>
+    <refs>
+		<ref>http://code.google.com/p/salesmen/source/detail?r=1160</ref>
+    </refs>
+  </item>
+
+	<item duration="PT30M">
+    <desc>Made EmailService more generic.</desc>
+    <refs>
+		<ref>http://code.google.com/p/salesmen/source/detail?r=1167</ref>
+    </refs>
+  </item>
+
+	<item duration="PT2H40M">
+    <desc>Added activation mechanism to register account.</desc>
+    <refs>
+		<ref>http://code.google.com/p/salesmen/source/detail?r=1168</ref>
+    </refs>
+  </item>
+
+	<item duration="PT1H">
+  <desc>Added Dutch language support, mainly for registration form.</desc>
+  <refs>
+		<ref>http://code.google.com/p/salesmen/source/detail?r=1170</ref>
+  </refs>
+	</item>
+	
+	<item duration="PT45M">
+		<desc>Final rehearsal before Conference 2</desc>
+	</item>	
+	
+	<item duration="PT2H">
+  <desc>Conference 2.</desc>
+  <refs>
+		<ref>http://wilma.vub.ac.be/~se2_0910/dev/events/2010/vub-se/</ref>
+  </refs>
+	</item>
+	
+	<item duration="PT30M">
+  <desc>Meeting 31/03.</desc>
+  <refs>
+		<ref>Minutes not available yet</ref>
+  </refs>
+	</item>
+	
+	<item duration="PT1H">
+  <desc>Wrote minutes for conference meetings 29/03 and 30/03.</desc>
+  <refs>
+		<ref>http://wilma.vub.ac.be/~se2_0910/dev/events/2010/vub-se/resources/minutes/20100329/minutes-20100329.pdf</ref>
+		<ref>http://wilma.vub.ac.be/~se2_0910/dev/events/2010/vub-se/resources/minutes/20100330/minutes-20100330.pdf</ref>
+  </refs>
+	</item>	
+	
+	<item duration="PT10M">
+  <desc>Created necessary folders and uploaded all conference related documents.</desc>
+  <refs>
+		<ref>http://code.google.com/p/salesmen/source/detail?r=1176</ref>
+		<ref>http://code.google.com/p/salesmen/source/detail?r=1177</ref>
+		<ref>http://code.google.com/p/salesmen/source/detail?r=1178</ref>
+  </refs>
+	</item>
+	
+	<item duration="PT45M">
+  <desc>Wrote highlights report of March.</desc>
+  <refs>
+		<ref>http://groups.google.com/group/salesmen/browse_thread/thread/34d82482fa2a76c2</ref>
+		<ref>http://code.google.com/p/salesmen/source/detail?r=1216</ref>
+  </refs>
+	</item>	
+	
+	<item duration="PT15M">
+  <desc>Revision of conference minutes 29/03 and 30/03 after QA.</desc>
+  <refs>
+		<ref>http://groups.google.com/group/salesmen/browse_thread/thread/b4385bb3b681facd</ref>
+		<ref>http://code.google.com/p/salesmen/source/detail?r=1202</ref>
+		<ref>http://wilma.vub.ac.be/~se2_0910/dev/events/2010/vub-se/resources/minutes/20100329/minutes-20100329.pdf</ref>
+		<ref>http://wilma.vub.ac.be/~se2_0910/dev/events/2010/vub-se/resources/minutes/20100330/minutes-20100330.pdf</ref>
+  </refs>
+	</item>	
+	
+	<item duration="PT5M">
+  <desc>Revision of highlights March after QA.</desc>
+  <refs>
+		<ref>http://groups.google.com/group/salesmen/browse_thread/thread/34d82482fa2a76c2</ref>
+		<ref>http://code.google.com/p/salesmen/source/detail?r=1216</ref>
+  </refs>
+	</item>
+	
+	<item duration="PT10M">
+  <desc>Support to remember language choice via cookies.</desc>
+  <refs>
+		<ref>http://code.google.com/p/salesmen/source/detail?r=1207</ref>
+  </refs>
+	</item>
+
+  <item duration="PT30M">
+    <desc>Administration and Communication.</desc>
+    <refs></refs>
+  </item>
+</timesheet>
