@@ -1,0 +1,92 @@
+<?xml version='1.0'?>
+<timesheet xmlns="http://purl.org/net/timetrack">
+	
+	<item duration="PT1H30M">
+	  <desc>Fixed the category tree to support nested categories</desc>
+	  <refs>
+			<ref>http://code.google.com/p/salesmen/source/detail?r=1191</ref>
+	  </refs>
+	</item>
+	
+	<item duration="PT2H">
+	  <desc>Fixed basic search lock problem and the suggestion box</desc>
+	  <refs>
+			<ref>http://code.google.com/p/salesmen/source/detail?r=1172</ref>
+			<ref>http://community.jboss.org/message/475111#475111</ref>
+	  </refs>
+	</item>
+	
+	<item duration="PT3H">
+	  <desc>Improved/added facesmessages of registerAccount and viewAuction</desc>
+	  <refs>
+			<ref>http://code.google.com/p/salesmen/source/detail?r=1169</ref>
+			<ref>http://docs.jboss.org/richfaces/3.3.2.GA/en/devguide/html/rich_message.html</ref>
+			<ref>http://wiki.apache.org/myfaces/Displaying_Errors/Infos/Warnings_in_JSF_Pages</ref>
+			<ref>http://myfaces.apache.org/core12/myfaces-api/apidocs/javax/faces/application/class-use/FacesMessage.Severity.html</ref>
+	  </refs>
+	</item>
+	
+	<item duration="PT1H">
+	  <desc>Try to fix select category problem with Sina</desc>
+	  <refs>
+			<ref>http://code.google.com/p/salesmen/source/detail?r=1157</ref>
+	  </refs>
+	</item>
+	
+	<item duration="PT2H">
+		<desc>Conference meeting on Monday 29/03.</desc>
+		<refs>
+			<ref>http://wilma.vub.ac.be/~se2_0910/dev/events/2010/vub-se/resources/minutes/20100329/minutes-20100329.pdf</ref>
+		</refs>
+	</item>
+	
+	<item duration="PT1H">
+		<desc>Conference meeting on Tuesday 30/03.</desc>
+		<refs>
+			<ref>http://wilma.vub.ac.be/~se2_0910/dev/events/2010/vub-se/resources/minutes/20100330/minutes-20100330.pdf</ref>
+		</refs>
+	</item>
+	
+	<item duration="PT45M">
+		<desc>Final rehearsal before Conference 2</desc>
+	</item>
+	
+	<item duration="PT1H45M">
+		<desc>Conference 2.</desc>
+		<refs>
+			<ref>http://wilma.vub.ac.be/~se2_0910/dev/events/2010/vub-se/</ref>
+		</refs>
+	</item>
+  
+	<item duration="PT30M">
+	  <desc>Meeting 31/03.</desc>
+	  <refs>
+			<ref>http://wilma.vub.ac.be/~se2_0910/doc/minutes/20100331/minutes-20100331.pdf</ref>
+	  </refs>
+	</item>
+	
+	<item duration="PT1H">
+	  <desc>Added the conference coverage to the website</desc>
+	  <refs>
+			<ref>http://code.google.com/p/salesmen/source/detail?r=1204</ref>
+			<ref>http://code.google.com/p/salesmen/source/detail?r=1205</ref>
+			<ref>http://code.google.com/p/salesmen/source/detail?r=1206</ref>
+	  </refs>
+	</item>
+	
+	<item duration="PT30M">
+	  <desc>Write minutes for meeting of 31/3</desc>
+	  <refs>
+			<ref>http://code.google.com/p/salesmen/source/detail?r=1227</ref>
+	  </refs>
+	</item>
+		
+	<item duration="PT20M">
+		<desc>Administration and Communication.</desc>
+		<refs>
+			<ref>http://groups.google.com/group/salesmen/browse_thread/thread/a495f13f06c53408?hl=en</ref>
+			<ref>http://groups.google.com/group/salesmen/browse_thread/thread/a853329439cfc164?hl=en</ref>
+		</refs>
+	</item>
+		
+</timesheet>
