@@ -1,19 +1,22 @@
 <?xml version='1.0'?>
 <timesheet xmlns="http://purl.org/net/timetrack">
-	<item duration="PT1H45M">
-		<desc>Conference 2 on Wednesday 2010/03/31.</desc>
-		<refs></refs>
-	</item>
 	
-	<item duration="PT0H30M">
-		<desc>Evaluation of Conference 2.</desc>
-		<refs>
-			<ref></ref>
-		</refs>
+	<item duration="PT1H45M">
+  <desc>Conference 2.</desc>
+  <refs>
+		<ref>http://wilma.vub.ac.be/~se2_0910/dev/events/2010/vub-se/</ref>
+  </refs>
+	</item>
+
+	<item duration="PT30M">
+  <desc>Meeting 31/03.</desc>
+  <refs>
+		<ref>Minutes not available yet</ref>
+  </refs>
 	</item>
 	
 	<item duration="PT1H0M">
-		<desc>Implemented user commenting support, but encountered some unsolvable errors, therefor not committed.</desc>
+		<desc>Implemented user commenting support, but encountered some errors, therefore not committed.</desc>
 		<refs></refs>
 	</item>
 	
@@ -26,7 +29,7 @@
 		</refs>
 	</item>
 		
-	<item duration="PT0H25M">
+	<item duration="PT0H20M">
 		<desc>Administration and Communication.</desc>
 	</item>
 </timesheet>
