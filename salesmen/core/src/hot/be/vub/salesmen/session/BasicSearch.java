@@ -3,6 +3,7 @@ package be.vub.salesmen.session;
 import be.vub.salesmen.entity.Auction;
 import be.vub.salesmen.entity.Category;
 
+import be.vub.salesmen.entity.UserAccount;
 import org.richfaces.model.TreeNodeImpl;
 
 import javax.ejb.Local;
@@ -45,6 +46,8 @@ public interface BasicSearch {
 	public boolean entityTypeAuction();
 
 	public void destroy();
+
+  public UserAccount findUserAccount(String userName);
     
 
 }

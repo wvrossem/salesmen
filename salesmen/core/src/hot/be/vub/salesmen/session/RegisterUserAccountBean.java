@@ -41,6 +41,7 @@ public class RegisterUserAccountBean implements RegisterUserAccount, Serializabl
 	@In IdentityManager identityManager;
 	@In EmailService emailService;
   @In FacesMessages facesMessages;
+  @In BasicSearch basicSearch;  
 
   @DataModel
 	private List entities;
@@ -109,8 +110,7 @@ public class RegisterUserAccountBean implements RegisterUserAccount, Serializabl
 
   public void verifyUsername()
   {
-    BasicSearchBean search = new BasicSearchBean();
-    UserAccount result  = search.findUserAccount(username, entityManager);
+    UserAccount result  = basicSearch.findUserAccount(username);
     if (result == null)
     {
         facesMessages.addToControlFromResourceBundle("username", FacesMessage.SEVERITY_INFO, "salesmen.UserAccount.Username.Unique");

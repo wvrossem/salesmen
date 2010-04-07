@@ -41,14 +41,14 @@ public class ForgotPasswordBean implements ForgotPassword, Serializable
 	@In EmailService emailService;
 	
 	@In FacesMessages facesMessages;
+
+  @In BasicSearch basicSearch;
 	
 	@Begin(join=true)
 	public void checkUsername()
 	{
-	BasicSearchBean search = new BasicSearchBean();
 	//Find the UserAccount corresponding to the username
-	this.foundUserAccount=search.findUserAccount(username,entityManager);
-	
+	this.foundUserAccount=basicSearch.findUserAccount(username);
 	  
 		if ( this.foundUserAccount==null){
 			facesMessages.addToControlFromResourceBundle("MailSent", FacesMessage.SEVERITY_ERROR, "salesmen.ForgotPassword.UsernameNotFoundLong");			
