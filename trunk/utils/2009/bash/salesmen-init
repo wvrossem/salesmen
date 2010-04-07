@@ -3,5 +3,7 @@
 PROCESSCOUNT=$(ps -ef | grep -v grep | grep -cw $JBOSS_HOME/bin/run.sh)
 if [ $PROCESSCOUNT -eq 0 ]
 then
-$JBOSS_HOME/bin/run.sh -b 134.184.49.2
+$JBOSS_HOME/bin/run.sh -b 134.184.49.2 \
+-Djboss.service.binding.set=ports-03 \
+-Djboss.messaging.ServerPeerID=1
 fi
