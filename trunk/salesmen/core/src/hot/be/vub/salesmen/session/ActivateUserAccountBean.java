@@ -30,10 +30,11 @@ public class ActivateUserAccountBean implements ActivateUserAccount, Serializabl
 
   @In EntityManager entityManager;
   @In EmailService emailService;
+  @In BasicSearch basicSearch;
 
   public void verifyActivationKey(){
-    BasicSearchBean search = new BasicSearchBean();
-    UserAccount result  = search.findUserAccount(username, entityManager);
+    if(username==null || key==null) return;
+    UserAccount result  = basicSearch.findUserAccount(username);
 		if (result != null && result.getActivationKey() == key)
     {
       result.setEnabled(true);

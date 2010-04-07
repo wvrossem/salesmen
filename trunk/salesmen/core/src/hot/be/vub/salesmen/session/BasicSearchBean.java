@@ -19,6 +19,7 @@ import java.util.concurrent.atomic.AtomicReference;
 @Name("basicSearch")
 @Scope(ScopeType.SESSION)
 @Synchronized(timeout=1000000000)
+@AutoCreate
 public class BasicSearchBean implements BasicSearch
 {
 	@PersistenceContext
@@ -175,7 +176,21 @@ public class BasicSearchBean implements BasicSearch
 		return null;
 	}
 
-	public UserAccount findUserAccount(String userName, EntityManager em)
+	public UserAccount findUserAccount(String userName)
+	{
+	  String qry = "FROM UserAccount u WHERE u.username = '"+userName+"'";
+		entities = entityManager.createQuery(qry).getResultList();
+		if (entities.size() == 1)
+		{
+			return (UserAccount)entities.get(0);
+		}
+        else
+		{
+			return null;
+		}
+	}
+
+  public UserAccount findUserAccount(String userName, EntityManager em)
 	{
 	  String qry = "FROM UserAccount u WHERE u.username = '"+userName+"'";
 		entities = em.createQuery(qry).getResultList();
