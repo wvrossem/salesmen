@@ -1,0 +1,27 @@
+<?xml version='1.0'?>
+<timesheet xmlns="http://purl.org/net/timetrack">
+  <item duration="PT2H">
+    <desc>Conference-related meeting on Monday, 29 March.</desc>
+    <refs>
+      <ref>http://wilma.vub.ac.be/~se2_0910/dev/events/2010/vub-se/resources/minutes/20100329/minutes-20100329.pdf</ref>
+    </refs>
+  </item>
+  <item duration="PT1H">
+    <desc>Conference-related meeting on Tuesday, 30 March.</desc>
+    <refs>
+      <ref>http://wilma.vub.ac.be/~se2_0910/dev/events/2010/vub-se/resources/minutes/20100330/minutes-20100330.pdf</ref>
+    </refs>
+  </item>
+  <item duration="PT2H">
+    <desc>Developers' Conference on Wednesday, 31 March.</desc>
+    <refs>
+      <ref>http://wilma.vub.ac.be/~se2_0910/dev/events/2010/vub-se/</ref>
+    </refs>
+  </item>
+  <item duration="PT30M">
+    <desc>Conference aftermath meeting on Wednesday, 31 March.</desc>
+  </item>
+  <item duration="PT15M">
+    <desc>Administration and Communication.</desc>
+  </item>
+</timesheet>
