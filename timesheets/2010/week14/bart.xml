@@ -2,10 +2,12 @@
 <timesheet xmlns="http://purl.org/net/timetrack">
 
 		
-	<item duration="PT3H">
-		<desc>SDD - revision 0.6</desc>
+	<item duration="PT4H">
+		<desc>SDD - revision 0.3.*</desc>
 		<refs>
 			<ref>http://code.google.com/p/salesmen/source/detail?r=1233</ref>
+			<ref>http://code.google.com/p/salesmen/source/detail?r=1236</ref>
+			<ref>http://code.google.com/p/salesmen/source/detail?r=1237</ref>
 		</refs>
 	</item>
 
