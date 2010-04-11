@@ -12,11 +12,11 @@
 \chapter{Introduction}
 
 \section{Purpose}
-This document specifies the entire software architecture and design for the Salesmen software. These design decisions directly relate to the functionalities, performances, constraints, attributes and interfaces of the system, as they are mentioned in the Software Requirements Specification (SRS) document.
+This document specifies the entire software architecture and design for the Salesmen software. These design decisions directly relate to the functionalities, performances, constraints, attributes and interfaces of the system, as they are mentioned in the Software Requirements Specification (SRS, \cite{SRS}) document.
 
 \section{Scope}
-This document describes the software architecture and design for the initial release of the Salesmen software. The intended audience of this document exclusively includes the designers, the developers and the testers of the software.\\
-It should be considered a thorough guide for the implementation of the software, however, developers may afwijken as they see required during the implementation phase, as long as they discuss these changes with the design manager.
+This document describes the software architecture and design for the first stable release of the Salesmen software. The intended audience of this document exclusively includes the designers, the developers and the testers of the software.\\
+It should be considered a thorough guide for the implementation of the software. However, developers may deviate from it as they see required during the implementation phase, as long as they discuss these changes with the design manager. 
 
 \section{Reference materials}
 See Appendix A.
@@ -32,7 +32,6 @@ See Appendix A.
 \textbf{J2EE}   & Java 2 Platform, Enterprise Edition \\
 \textbf{JBoss}   & An application server \\
 \textbf{RDBMS}    & Relational Database Management System \\
-\textbf{Servlet}   & (Java) program that runs in a J2EE web-container  \\
 \textbf{SCMP}   & Software Configuration Management Plan \\
 \textbf{SDD}    & Software Design Document \\
 \textbf{SMTP}   & Single Mail Transfer Protocol \\
@@ -45,7 +44,7 @@ See Appendix A.
 System architecture diagram: see Appendix B, \ref{fig_architecture}
 
 \section{Three-Tier Architecture}
-Three-tier is a client-server architecture in which the user interface, functional process logic, computer data storage and data access are developed and maintained as independent modules, most often on separate platforms.
+Three-tier architecture is a client-server architecture in which the user interface, functional process logic, computer data storage and data access are developed and maintained as independent modules, most often on separate platforms.
 
 Apart from the usual advantages of modular software with well defined interfaces, the three-tier architecture is intended to allow any of the three tiers to be upgraded or replaced independently as requirements or technology change. For example, a change of operating system in the presentation tier would only affect the user interface code.
 
@@ -71,7 +70,7 @@ From a historical perspective the three-tier architecture concept emerged in the
 
 \section{Survey of Technologies Used}
 \subsection{Introduction}
-This section describes briefly what software and technologies will be used to implement the Salesmen software. For more information about these technologies, the reader is kindly referred to the SCMP. This document will, however, concentrate on the practical side of these applications, libraries and frameworks.
+This section describes briefly what software and technologies will be used to implement the Salesmen software. For more information about these technologies, the reader is kindly referred to the SCMP (\cite{SCMP}). This document will, however, concentrate on the practical side of these applications, libraries and frameworks.
 
 \subsection{JBoss Seam}
 Seam is a powerful open source development platform for building rich Internet applications in Java. Seam integrates technologies such as Asynchronous JavaScript and XML (AJAX), JavaServer Faces (JSF), Java Persistence (JPA), Enterprise Java Beans (EJB 3.0) and Business Process Management (BPM) into a unified full-stack solution, complete with sophisticated tooling.
@@ -80,9 +79,9 @@ Seam has been designed from the ground up to eliminate complexity at both archit
 
 As a framework, it covers the 3 layers of the three tier architecture.
 
-\subsubsection Layers
+\subsubsection{Layers}
 \paragraph{Presentation Layer}
-XHTML and CSS files will cover the view of our project. The Seam framework allows the view to communicate with the business logic though Seam components. Seam uses reflection to enable easy-to-use Seam components in the view-files of the software. As a page is requested by a web browser, Seam will instantiate all mentioned components and display the values of the requested properties. Furthermore, it is easy to fill in the properties of a component by means of a web-form. The aforementioned components will be discussed in greater detail in the Seam Components section \ref{sec_seam_components}.
+XHTML and CSS files will cover the view of our project. The Seam framework allows the view to communicate with the business logic though Seam components. Seam uses reflection to enable easy-to-use Seam components in the view-files of the software. As a page is requested by a web browser, Seam will instantiate all mentioned components and display the values of the requested properties. Furthermore, it is easy to fill in the properties of a component by means of a web-form. The aforementioned components will be discussed in greater detail in the Seam Components section (\ref{sec_seam_components}).
 
 \paragraph{Business Layer}
 JBoss Application Server (or JBoss AS) is a free software/open-source Java EE-based application server. Because it is Java-based, the JBoss application server operates cross-platform: usable on any operating system that Java supports. 
@@ -90,39 +89,39 @@ As part of the JBoss software, the Apache Tomcat servlet container will allow us
 JBoss Seam allows us to implement the required Java Beans and Seam Entities in a fast and easy way, ensuring security and reliability.
 
 \paragraph{Data Layer}
-Two database platforms were considered: MySQL and PostgresSQL. After thourough investigation, it was decided to go with PostgreSQL. As documented in the Software Configuration Management Plan (SCMP) \ref{SCMP}, a thorough comparison was made between these two RDBM systems.\\
+Two database platforms were considered: MySQL and PostgresSQL. After thourough investigation, it was decided to go with PostgreSQL. As documented in the Software Configuration Management Plan (SCMP, \cite{SCMP}), a thorough comparison was made between these two RDBM systems.\\
 However, as one will discover by reading this document, this decision became less important as Seam provides a vast amount of database-related annotations, allowing to move away from a RDBMS-specific implementation. As a framework, Seam creates the described database and will also handle all select, update, insert and delete operations. With the help of these annotations, (primary) keys, default values, allowed values, relationships between tables, and more, can be obtained in a declarative manner. A more complete description of these annotations and their use can be found in section \ref{sec_annotations}\\
-Although Seam omits the need for basic select, insert and update SQL statements, it remains possible to communicate directy with the database by means of the Hibernate Query Language, HQL, which is also extended by Seam to support Seam\'s components and reflective evaluation.
+Although Seam omits the need for basic select, insert and update SQL statements, it remains possible to communicate directly with the database by means of the Hibernate Query Language, HQL, which is also extended by Seam to support Seam\'s components and reflective evaluation.
 
 \subsubsection{Annotations}
 \label{sec_annotations}
 The Seam framework allows the use of various annotations which help to write robust and correct code. Two mayor types can be observed:
 \paragraph{Database-related annotations}
-These annotations allow a programmer to describe properties of tables and fields holding the properties held by Plain Old Java Objects (POJO\'s, also referred to as  entity beans). These objects hold various properties and provides getter and setter methods to read or update these properties. The Seam framework will create a table in the database, containing a column for each property held by this class with the help of reflection, is is provided by the Java programming language. By providing an entity of this class to persist-function of Seam\'s EntityManager, it is simply stored in this table without further ado.\\
+These annotations allow a programmer to describe properties of tables and fields containing the properties held by Plain Old Java Objects (POJO\'s, also referred to as  entity beans). These objects hold various properties and provides getter and setter methods to read or update these properties. The Seam framework will create a table in the database, containing a column for each property held by this class with the help of reflection, as provided by the Java programming language. By providing an entity of this class to persist-function of Seam\'s EntityManager, it is simply stored in this table without further ado.\\
 The following annotations will be used to describe the database and its tables and columns:
 \begin{itemize}
 \item @Table: defines the database table name used for this POJO.
 \item @NotNull: forces a column entry to have some value.
 \item @ManyToOne,@OneToOne,@OneToMany: describes cardinality of a property
-\item ...
 \end{itemize}
 
 \paragraph{Other annotations}
-Seam provides more annotations which allow to describe correctness of properties. Seam enforces these rules when an attempt is made to update the \'protected\' property. Please note that Seam implicitly provides the same checks for datatypes: it will never allow a string to be set to an integer property. It is important to understand that Seam will not simply throw an exception when an input error, type-based or annotation-based, occurs. Instead, it will send messages to the FacesMessages component which will, in its turn, update the view, displaying clear descriptions, informing the user of the system of input incorrectness. Also note that these messages are defined in language files, allowing easy support for multiple languages.\\
+Seam provides more annotations which allow to describe correctness of properties. Seam enforces these rules when an attempt is made to update the \'protected\' property. Please note that Seam implicitly provides the same checks for data-types: it will never allow a string to be set to an integer property. It is important to understand that Seam will not simply throw an exception when an input error, type-based or annotation-based, occurs. Instead, it will send messages to the FacesMessages component which will, in its turn, update the view, displaying clear descriptions, informing the user of the system of input incorrectness. Also note that these messages will be defined in language files, allowing easy support for multiple languages.\\
 The following annotations will be used most frequently, although more do exist:
 \begin{itemize}
 \item @Name: defines the name of the Seam component.
+\item @In: injects a component into the current code/object
 \end{itemize}
 
 \subsubsection{Seam Components}
 \label{sec_seam_components}
-Seam components represent a link between the business logic, provided by a plethora of Java classes, and the view, represented by xHTML files. As explained in a previous section, Seam Components are instantiated upon a page request and their values are bound to the XHTML-forms and textfields.  Apart from the components defined by the programmers, Seam provides some components of its own. The following built-in components will be used frequently throughout the code:
+Seam components represent a link between the business logic, provided by a plethora of Java classes and described in detail in the class diagrams, and the view, represented by XHTML files. As explained in a previous section, Seam Components are instantiated upon a page request and their values are bound to the XHTML-forms and text fields.  Apart from the components defined by the programmers, Seam provides some components of its own. The following built-in components will be used frequently throughout the code:
 \begin{itemize}
-\item EntityManager: ...
-\item FacesMessages: ...
+\item EntityManager: can be used to store (persist) entity beans (objects) in the database
+\item FacesMessages: displays (enqueued) messages in the view of the software
 \end{itemize}
 
-As Seam is a very complete framework, describing all its features would bring us beyond the scope of this document. Therefor, the reader is kindly referred to the Seam documentation \ref{seam_doc}.
+As Seam is a very complete framework, describing all its features would bring us beyond the scope of this document. Therefor, the reader is kindly referred to the Seam documentation \cite{seam_doc}.
 
 
 \section{Physical Configuration}
@@ -138,7 +137,7 @@ Prototypes of the web-interface can be found in Appendix C.
 
 \chapter{Technical Design \label{Technical Design}}
 \section{Presentation layer}
-The presentation merely consists of static XHTML files that contain calls to Java Servlets to obtain dynamicly changing information. These XHTML files will use CSS to separate the static information from the actual presentation of the website. Seam uses AJAX technology, provided by RichFaces, to offer the user with a friendly and smooth interface. As discussed before, Seam Components allow easy access of information stored in JAVA objects.\\
+The presentation merely consists of static XHTML files that contain calls to Seam Components to obtain dynamicly changing information. These XHTML files will use CSS to separate the static information from the actual presentation of the website. Seam uses AJAX technology, provided by RichFaces, to offer the user with a friendly and smooth interface. As discussed before, Seam Components allow easy access of information stored in JAVA objects.\\
 Another feature of the Seam framework is built-in support of so-called language files, providing the developers an easy way to implement multiple languages.\\
 
 This facilitates the following goals:
@@ -150,17 +149,17 @@ This facilitates the following goals:
 Prototypes of the web-interface can be found in Appendix C.
 
 \section{Business layer}
-The business layer consists of the Java Servlets that will be able to receive and process requests, and return proper responses.
+The business layer consists of the Java Components that will be able to receive and process requests, and return proper responses.
 From the class diagram it becomes clear that two classes will play a central role in our application: User and Auction. It should be noted that this class diagram was thoroughly updated since the last revision of this document. The previous version of the class diagram did not take the Seam framework into consideration, which let to a somewhat incorrect class diagram. The changes to this diagram can be described as follows:
 \begin{itemize}
 \item Most of the existing classes were stripped down to so-called Plain Old Java Objects (or POJOs), only containing the necessary properties and their respective getters and setters.
 \item Where needed, annotations were added to classes and properties, to assert correctness of data held by an entity.
-\item Most of the non-getter/setter methods mentioned in the previous SDD were ondergebracht in various so-called 'Home' classes, which usually encapsulate stateful session information. These classes are used by the various user-forms in the project and allow for extra checks on the provided input. These extra checks constitute of requirements on data (e.g. consistency) which cannot be described by annotations.
+\item Most of the non-getter/setter methods mentioned in the previous SDD are now housed in various so-called 'Home' classes, which usually encapsulate stateful session information. These classes are used by the various user-forms in the project and allow for extra checks on the provided input. These extra checks constitute of requirements on data (e.g. consistency) which cannot be described by annotations.
 \end{itemize}
 
-Two class diagrams are provided with this document: the first shows the relations between the different POJO classes, offering a high-level view on the project. The second class diagram display a more in-depth look into the project, including all stateful and other classes as well.
+Three class diagrams are provided with this document: the first shows the relations between the different POJO classes, with the non-POJO classes encapsulated in the session-package. This view offers great insight in the relations between the different classes and resembles the previous class diagram, found in previous versions of this document. Another view expands the session package and collapses the entity package, hiding all the POJO classes. This view offers great insight in how the website processes incoming requests. The third view was added for the sake of completeness: it shows both packages expanded. However, due to the vast amount of classes in the diagram, it becomes hard to read. Because of this, this diagram will be available on the website as well (\cite{SDD_full_class_diagram}).
 
-Class diagram, see Appendix B, \ref{fig_class1}, \ref{fig_class2}
+Class diagram, see Appendix B, \ref{fig_class1}, \ref{fig_class2}, \ref{fig_class3}
 
 \section{Data layer}
 The data layer consists of the database and the EJB3 standard for persistent objects. EJB3 allows, through the use of annotations in the class, to abstract away from SQL-statements as EJB3 will generate these.
@@ -171,9 +170,9 @@ Entity-Relationship diagram: see Appendix B, \ref{fig_database}
 
 \chapter{Software Features}
 \section {Software Requirements}
-The design described in this document is based on the requirements as they are vastgelegd in version 0.3.1 of the Software Requirements Specification (SRS) document.
+The design described in this document is based on the requirements as they are set in version 0.3.1 of the Software Requirements Specification (SRS) document.
 The design covers all of the must-have and most of the want-to-have requirements, and allows for easy expansion to support the remaining want-to-have and nice-to-have requirements.\\
-For a complete list of these requirements, the reader is kindly referred to the SRS document.
+For a complete list of these requirements, the reader is kindly referred to the SRS document (\ref{SRS}).
 
 \chapter{User Interface Design \label{UI Design}}
 \section{Web pages tree}
@@ -186,6 +185,10 @@ The User Interface files will be stored in the \'/view\' folder. Although most s
 \end{itemize}
 
 \subsection{Page Description}
+The following table provides an overview of the available view files and their purpose.
+(TODO)
+
+
 \section{User Interface}
 Prototypes of the web-interface can be found in Appendix C.
 
@@ -206,17 +209,11 @@ Prototypes of the web-interface can be found in Appendix C.
 	\url{http://} [April 2010]
 \bibitem{SCMP} Software Configuration Management Plan \\ 
 	\url{http://} [April 2010]
-\bibitem{slidesSE} Slides Software Engineering \\
-    Dirk Vermeir \emph{\url{http://tinf2.vub.ac.be/~dvermeir/courses/software_engineering/slides.pdf}} 1 Nov 2009.
-\bibitem{English} English auction \\ 
-	\url{http://en.wikipedia.org/wiki/English_auction} [October 2009]
-\bibitem{silent} Silent auction \\
-	\url{http://en.wikipedia.org/wiki/Silent_auction#Secondary_types_of_auction} [October 2009]
-\bibitem{browsers} Usage share of web browsers \\
-	\url{http://en.wikipedia.org/wiki/Usage_share_of_web_browsers} [November 2009]
-\bibitem{SEO} Search engine optimization \\
-	\url{http://en.wikipedia.org/wiki/Search_engine_optimization} [December 2009]
+\bibitem{seam_doc} Seam Documentation \\
+	\url{http://seamframework.org/Documentation} [April 2010]
 \bibitem{seam_doc} Seam documentation \\
+	\url{http://} [April 2010]
+	\bibitem{SDD_full_class_diagram} SDD, full class diagram \\ 
 	\url{http://} [April 2010]
 \end{thebibliography}
 
