@@ -1,5 +1,7 @@
 package be.vub.salesmen.session;
 
+import be.vub.salesmen.entity.Auction;
+import be.vub.salesmen.entity.UserAccount;
 import be.vub.salesmen.entity.UserComment;
 import org.jboss.seam.annotations.In;
 import org.jboss.seam.annotations.Name;
@@ -21,6 +23,7 @@ public class ViewComment implements Serializable
 	private static final long serialVersionUID = 5953054119221671736L;
 	
 	// Private attributes
+	private Auction auction;
 	private String text;
 	private int rating;
 	
@@ -38,18 +41,22 @@ public class ViewComment implements Serializable
 	@In
     EntityManager entityManager;
 	
-	public void AddComment(UserComment comment) {
-		if(comment != null)
+	public void AddComment(UserAccount user)
+	{
+		if(this.auction!=null && user!=null)
 		{
-			comments.add(comment);
+			UserComment userComment = new UserComment(user, auction, rating, text);
+			this.entityManager.persist(userComment);
 		}
 	}
 	
-	public String getText() {
+	public String getText()
+	{
 		return text;
 	}
 	
-	public void setText(String text) {
+	public void setText(String text)
+	{
 		this.text = text;
 	}
 	
