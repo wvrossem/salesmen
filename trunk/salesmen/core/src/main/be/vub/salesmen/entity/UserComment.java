@@ -2,27 +2,41 @@ package be.vub.salesmen.entity;
 
 import java.io.Serializable;
 import java.util.Date;
-
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
-import javax.persistence.JoinColumn;
-import javax.persistence.OneToOne;
+import javax.persistence.*;
 
 import org.hibernate.validator.NotNull;
+import org.jboss.seam.annotations.Name;
 
 @Entity
+@Name("userComment")
+@Table(name="UserComment")
 public class UserComment implements Serializable
 {
 	private static final long serialVersionUID = 7444022244366099972L;
 	
 	// Private attributes
-	private String content = "No detailed comments"; 
-	private int rating = 0;
+	private String content; 
+	private int rating;
 	private Date date = new Date();
-	private User user;
+	private UserAccount user;
 	private Auction auction;
 	private Long commentId;
+	
+	public UserComment(UserAccount user, Auction auction) {
+		content = "No detailed comment";
+		rating = 0;
+		this.auction = auction;
+		this.user = user;
+		date = java.util.Calendar.getInstance().getTime();
+	}
+	
+	public UserComment(UserAccount user, Auction auction, int rating, String content) {
+		this.content = content;
+		this.rating = rating;
+		this.auction = auction;
+		this.user = user;
+		date = java.util.Calendar.getInstance().getTime();
+	}
 	
 	// Public attribute getters/setters with annotations
 	@Id @GeneratedValue
@@ -72,12 +86,12 @@ public class UserComment implements Serializable
 	@NotNull
 	@OneToOne
 	@JoinColumn(name = "userid")
-	public User getUser()
+	public UserAccount getUser()
 	{
 		return user;
 	}
 	
-	public void setUser(User user)
+	public void setUser(UserAccount user)
 	{
 		this.user = user;
 	}
