@@ -1,0 +1,16 @@
+<?xml version='1.0'?>
+<timesheet xmlns="http://purl.org/net/timetrack">
+	
+	<item duration="PT4H0M">
+		<desc>Dealt with error in UserComment, ViewComment and auction.xhtml. Solved error, received new error.</desc>
+		<refs>
+			<ref>http://code.google.com/p/salesmen/source/detail?r=1239</ref>
+			<ref>http://code.google.com/p/salesmen/source/detail?r=1240</ref>
+			<ref>http://code.google.com/p/salesmen/source/detail?r=1241</ref>
+		</refs>
+	</item>
+		
+	<item duration="PT0H10M">
+		<desc>Administration and Communication.</desc>
+	</item>
+</timesheet>
