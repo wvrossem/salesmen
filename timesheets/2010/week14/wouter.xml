@@ -1,0 +1,24 @@
+<?xml version='1.0'?>
+<timesheet xmlns="http://purl.org/net/timetrack">
+
+		
+	<item duration="PT1H">
+		<desc>Tried to upgrade the upload image to richfaces file upload</desc>
+		<refs>
+			<ref>http://livedemo.exadel.com/richfaces-demo/richfaces/fileUpload.jsf?c=fileUpload&tab=usage</ref>
+		</refs>
+	</item>
+
+	<item duration="PT20M">
+		<desc>Updated the minutes of 31/3 and added them to the website</desc>
+		<refs>
+			<ref>http://code.google.com/p/salesmen/source/detail?r=1231</ref>
+			<ref>http://code.google.com/p/salesmen/source/detail?r=1230</ref>
+		</refs>
+	</item>
+		
+	<item duration="PT15M">
+		<desc>Administration and Communication.</desc>
+	</item>
+		
+</timesheet>
