@@ -1,0 +1,22 @@
+<?xml version='1.0'?>
+<timesheet xmlns="http://purl.org/net/timetrack">
+
+		
+	<item duration="PT3H">
+		<desc>SDD - revision 0.6</desc>
+		<refs>
+			<ref>http://code.google.com/p/salesmen/source/detail?r=1233</ref>
+		</refs>
+	</item>
+
+	
+		
+	<item duration="PT40M">
+		<desc>Administration and Communication.</desc>
+		<refs>
+			<ref>http://groups.google.com/group/salesmen/browse_thread/thread/a495f13f06c53408?hl=en</ref>
+			<ref>http://groups.google.com/group/salesmen/browse_thread/thread/a853329439cfc164?hl=en</ref>
+		</refs>
+	</item>
+		
+</timesheet>
