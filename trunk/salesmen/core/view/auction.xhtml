@@ -83,10 +83,17 @@
             <a:region id="commentRegion">
                 <h:inputTextarea id="comment" value="#{viewComment.text}">
                 </h:inputTextarea>
-                <br/>
+				<h:selectOneMenu id="rating" value="#{viewComment.rating}">
+					<f:selectItem itemLabel="-2" itemValue="-2" />
+					<f:selectItem itemLabel="-1" itemValue="-1" />
+					<f:selectItem itemLabel="0" itemValue="0" />
+					<f:selectItem itemLabel="+1" itemValue="1" />
+					<f:selectItem itemLabel="+2" itemValue="2" />
+				</h:selectOneMenu>
+				<br/>
                 <a:commandButton id="commentButton"
                                  value="Send!"
-                                 action="#{viewComment.AddComment(authenticatedUser)}"
+                                 action="#{viewComment.AddComment(authenticatedUser, viewAuction.auction)}"
                                  reRender="bidPanel"
                                  rendered="#{identity.loggedIn}"/>
                 <br/>
