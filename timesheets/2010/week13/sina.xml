@@ -1,26 +1,37 @@
 <?xml version='1.0'?>
 <timesheet xmlns="http://purl.org/net/timetrack">
-  <item duration="PT2H">
-    <desc>Conference-related meeting on Monday, 29 March.</desc>
-    <refs>
-      <ref>http://wilma.vub.ac.be/~se2_0910/dev/events/2010/vub-se/resources/minutes/20100329/minutes-20100329.pdf</ref>
+	
+  	<item duration="PT2H">
+    <desc>Conference meeting on Monday 29/03.</desc>
+    <refs>	<ref>http://wilma.vub.ac.be/~se2_0910/dev/events/2010/vub-se/resources/minutes/20100329/minutes-20100329.pdf</ref>
     </refs>
   </item>
-  <item duration="PT1H">
-    <desc>Conference-related meeting on Tuesday, 30 March.</desc>
-    <refs>
-      <ref>http://wilma.vub.ac.be/~se2_0910/dev/events/2010/vub-se/resources/minutes/20100330/minutes-20100330.pdf</ref>
-    </refs>
-  </item>
-  <item duration="PT2H">
-    <desc>Developers' Conference on Wednesday, 31 March.</desc>
-    <refs>
-      <ref>http://wilma.vub.ac.be/~se2_0910/dev/events/2010/vub-se/</ref>
-    </refs>
-  </item>
-  <item duration="PT30M">
-    <desc>Conference aftermath meeting on Wednesday, 31 March.</desc>
-  </item>
+
+  	<item duration="PT1H">
+  <desc>Conference meeting on Tuesday 30/03.</desc>
+  <refs>
+		<ref>http://wilma.vub.ac.be/~se2_0910/dev/events/2010/vub-se/resources/minutes/20100330/minutes-20100330.pdf</ref>
+  </refs>
+</item>
+
+<item duration="PT45M">
+	<desc>Final rehearsal before Conference 2</desc>
+</item>	
+
+<item duration="PT2H">
+<desc>Conference 2.</desc>
+<refs>
+	<ref>http://wilma.vub.ac.be/~se2_0910/dev/events/2010/vub-se/</ref>
+</refs>
+</item>
+
+<item duration="PT30M">
+<desc>Meeting 31/03.</desc>
+<refs>
+	<ref>http://wilma.vub.ac.be/~se2_0910/docs/minutes/2010/03/31/minutes-20100331.pdf</ref>
+</refs>
+</item>
+
   <item duration="PT15M">
     <desc>Administration and Communication.</desc>
   </item>
