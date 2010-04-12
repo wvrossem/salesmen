@@ -5,7 +5,7 @@
 	<item duration="PT1H">
 		<desc>Tried to upgrade the upload image to richfaces file upload</desc>
 		<refs>
-			<ref>http://livedemo.exadel.com/richfaces-demo/richfaces/fileUpload.jsf?c=fileUpload&tab=usage</ref>
+			<ref>http://livedemo.exadel.com/richfaces-demo/richfaces/fileUpload.jsf?c=fileUpload</ref>
 		</refs>
 	</item>
 
