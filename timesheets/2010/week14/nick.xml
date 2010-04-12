@@ -1,0 +1,54 @@
+<?xml version='1.0'?>
+<timesheet xmlns="http://purl.org/net/timetrack">
+	
+	<item duration="PT40M">
+	  <desc>Checking and publishing timesheets of week13.</desc>
+	  <refs>
+		  <ref>http://code.google.com/p/salesmen/source/detail?r=1217</ref>
+		  <ref>http://code.google.com/p/salesmen/source/detail?r=1218</ref>
+		<ref>http://code.google.com/p/salesmen/source/detail?r=1219</ref>
+		<ref>http://code.google.com/p/salesmen/source/detail?r=1220</ref>
+		<ref>http://code.google.com/p/salesmen/source/detail?r=1221</ref>
+		<ref>http://code.google.com/p/salesmen/source/detail?r=1222</ref>
+		<ref>http://code.google.com/p/salesmen/source/detail?r=1223</ref>
+		<ref>http://code.google.com/p/salesmen/source/detail?r=1224</ref>
+		<ref>http://code.google.com/p/salesmen/source/detail?r=1225</ref>
+		<ref>http://code.google.com/p/salesmen/source/detail?r=1244</ref>
+		<ref>http://code.google.com/p/salesmen/source/detail?r=1245</ref>
+	  </refs>
+	</item>
+
+	<item duration="PT5M">
+    <desc>Updating statistics of timesheets.</desc>
+    <refs>
+		<ref></ref>
+    </refs>
+  </item>
+
+	<item duration="PT1H">
+    <desc>Research about Seam bijection.</desc>
+    <refs>
+		<ref>Seam in Action, Chapter 6, ISBN 1933988401</ref>
+    </refs>
+  </item>
+
+	<item duration="PT45M">
+    <desc>Injected BasicSearch instead of making new instance of it.</desc>
+    <refs>
+		<ref>http://code.google.com/p/salesmen/source/detail?r=1234</ref>
+    </refs>
+  </item>
+
+	<item duration="PT1H30M">
+    <desc>Wrote article for development blog: The Power of Seam Bijection.</desc>
+    <refs>
+		<ref>http://salesmen-dev.blogspot.com/2010/04/power-of-seam-bijection.html</ref>
+    </refs>
+  </item>
+
+
+  <item duration="PT15M">
+    <desc>Administration and Communication.</desc>
+    <refs></refs>
+  </item>
+</timesheet>
