@@ -66,7 +66,7 @@ It is the responsibility of every individual member to uphold the QA Requirement
 \section{Overview}
 This chapter will detail the control mechanisms to assure the quality of the documentation of the project.
 \section{Minimal requested documents}
-De volgende documenten zullen worden geproduceerd:
+The following documents will be produced:
 \begin{itemize}
 \item SQAP: Software Quality Assurance Plan
 \item SCMP: Software Configuration Management Plan
@@ -83,10 +83,14 @@ This section will detail the used standards and conventions. It will also detail
 
 A section regarding the metrics used in the project can be found in this section as well.
 
-\section{Standards}
-Standards must still be detailed.
-\section{Conventions}
-Coding conventions must still be detailed.
+\section{Standards and Conventions}
+There are standards and conventions on java code and xhtml code. These conventions and standards are prone to change. Any programmer has the right to request a change. The current locations of standards and conventions are as follows:
+\begin{description}
+\item[Java]
+http://code.google.com/p/salesmen/wiki/JavaCodingConvention
+\item[xhtml]
+http://code.google.com/p/salesmen/wiki/XhtmlCodingConvention
+\end{description}
 
 \section{Documentation Standard}
 All documents must be written in LaTeX. The source code of the latest revision of a document must be available at all times on the SVN server of the project. Documentation of code must exist in a separate document, as well as commented within the code itself.
@@ -114,11 +118,13 @@ Members unable to come must notify the Project Manager three hours before the ac
 \item
 Members may raise additional issues on a meeting after the agenda has been finished. These issues will then be handled if there is time left, or put on the agenda of next meeting. The minutes will detail these additional issues.
 \item
-If an emergency meeting must be arranged, the Project Manager must notify members at least 24hours before the meeting. Members have 12hours to reply on the notification. Members who have not verified their attendance after this time must be called on the phone by the Project Manager.
+If an emergency meeting must be arranged, the Project Manager must notify members at least twenty-four hours before the meeting. Members have twelve hours to reply on the notification. Members who have not verified their attendance after this time must be called on the phone by the Project Manager.
+\item
+A minutes document will be written during every meeting. This document must available on the official Salesmen website within three days after the meeting.
 \end{itemize}
 
 \section{Emailing Procedures}
-All emails must be sent to the google groups of the project. They should contain the target person(s) in the subject line. There will be no private correspondence. This to assure that subjects are handled by the right persons. Whenever a subject is sent to the wrong person, the right person can still reply. This is impossible with private communication.
+All emails must be sent to the google groups of the project. They should contain the target person(s) in the subject line. There will be no private correspondence. This to assure that subjects are handled by the right persons. Whenever a subject is sent to the wrong person, the right person can still reply. This is impossible with private communication. The sole exception on this rule is personal communication between the manager and another member regarding behavior of the member.
 
 \section{Metrics}
 The following metrics will be used to control the amount of work spent by the members on the project.
@@ -127,7 +133,7 @@ The following metrics will be used to control the amount of work spent by the me
 \item The amount of lines produced by each individual member, expressed in KLOC.
 \end{itemize}
 
-\section{maximum amount of errors}
+\section{Maximum Amount of Errors}
 This section will detail the maximum amount of errors that this project may have to qualify for good quality.
 \begin{itemize}
 \item Requirement errors : No more than one error in every twenty requirements.
@@ -140,18 +146,25 @@ In addition to this, the code must contain a good error handling system. Wheneve
 \section{Overview}
 The purpose of the reviews and audits is to ensure that the project members focus on the quality of the application. Every document will be inspected to assure the quality. This way we can assure that these documents are complete and consistent.
 
-There must be a review with the release of every document. There must also be a review of a previous and coming cycle at the start of each new cycle.
+There must be a review with the release of every document. There must also be a review of a previous and coming cycle at the start of each new implementation cycle.
 
 \chapter{Testing}
 \section{Unit-testing}
 A unit-testing framework will be written. This framework will be written by the QAM and reviewed by the assistant QAM. The framework will be made with the sole purpose of black-box testing. This project will not handle white-box testing.
 
-Every individual member is responsible for writing his own tests. These tests will be reviewed by the QA team to assure that it is testing every possible input. The QA team has the right to add or delete tests within the seperate test files.
+Every individual member is responsible for writing his own tests. These tests will be reviewed by the QA team to assure that it is testing every possible input. The QA team has the right to add or delete tests within the separate test files.
 
 \section{Integration and system tests}
 These tests will be primarily done by the QAM. Project members are encouraged to perform their own tests.
 
 These tests will be started as soon as the first stable version of the software is released. Afterwards these tests will be done every time a new stable version is released.
+
+\section{Lay-out Design Control}
+The Project Manager will ensure that the final lay-out of the final product is good. He will look at the color-scheme, user-friendliness and the overall lay-out.
+
+The QAM ensures that the final lay-out is without bugs and errors. He will also look at the usability.
+
+All members are urged to test the lay-out and to ask their close relaties and friends to test the lay-out.
 
 \section{Software Test Document}
 This document will be written by the QAM and reviewed for QA by the assistant QAM. It will detail all aspects of testing. As well as requirements on how testfiles must be constructed.
@@ -179,11 +192,9 @@ Refusing to do tasks without a good reason.
 \section{Documentation Problems}
 Minor errors in a document may be solved by any member directly in the source code. Minor errors are either grammatical or spelling-related.
 
-Major errors must be reported to both the QAM and the person responsible for the document. The person responsible for the document must make sure to solve this error within 24hours. The QAM must check if this errors is solved after this time. If not, he must remind the person responsible of his duties.
+Major errors must be reported to both the QAM and the person responsible for the document. The person responsible for the document must make sure to solve this error within twenty-four hours. The QAM must check if this errors is solved after this time. If not, he must remind the person responsible of his duties.
 
-\chapter{Tools, technieken en methodologie\"en}
-Richtlijnen betreffende de gebruikte codeerconventie[6] zijn beschikbaar via de projectwebsite[5].  Version control wordt mogelijk gemaakt door Subversion (SVN).
-
+\chapter{Tools, Technologies and Methodologies}
 \section{Sourcecode control}
 The QAM will assure that all code follows the chosen standards and conventions. The Configuration manager will make sure that there is always a working copy on the SVN server.
 
@@ -220,6 +231,10 @@ Risk management is discussed in more detail in the SPMP.
 \begin{thebibliography}{9}
 \bibitem{slidesSE}
 Dirk Vermeir \emph{\url{http://tinf2.vub.ac.be/~dvermeir/courses/software_engineering/slides.pdf}} 1 Nov 2009.
+\bibitem{se020910}
+Salesmen Project \emph{\url{http://wilma.vub.ac.be/~se2_0910/}} Nov 2009.
+\bibitem{googleSVN}
+Salesmen Code Repository \emph{\url{http://code.google.com/p/salesmen}} Nov 2009.
 \end{thebibliography}
 
 \end{projdoc}
