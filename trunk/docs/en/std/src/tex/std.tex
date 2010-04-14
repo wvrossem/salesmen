@@ -7,7 +7,7 @@
 \begin{projdoc}
 \chapter{Introduction}
 \section{Scope}
-The purpose of this document is to describe the Software Test Plan(STD) for the Salesmen Project (1). It will outline the various testing mechanisms and the responsibilities of these testing mechanisms. 
+The purpose of this document is to describe the Software Test Plan(STD) for the Salesmen Project\cite{se020910}. It will outline the various testing mechanisms and the responsibilities of these testing mechanisms. 
 
 Chapter 2 outlines the testing plan, while chapter 3 details the the integration tests. The results of the various integration tests will be included in this document.
 
@@ -35,11 +35,11 @@ The purpose of this chapter is to outline the various testing mechanisms and the
 The following items must be tested.
 \begin{itemize}
 \item
-All methods and classes as outlined in the SDD (2)
+All methods and classes as outlined in the SDD\cite{SDD}
 \item
-All requirements of the system as detailed in the SRS 3)
+All requirements of the system as detailed in the SRS\cite{SRS}
 \item
-The quality requirements as detailed in the the SQAP (4)
+The quality requirements as detailed in the the SQAP\cite{SQAP}
 \item
 Every piece of code, part of the completed system.
 \end{itemize}
@@ -58,7 +58,7 @@ Several methods will be used to test the various features.
 The following tests will be run.
 \begin{itemize}
 \item
-Unit testing of all bussiness logic with JUnit.
+Unit testing of all business logic with TestNG\cite{testNG}.
 \item
 internal testing of the various tools used. This will be done with the testing tools provided by these tools. When no testing facilities are provided, testing of these tools will be done within the integration tests.
 \item
@@ -66,27 +66,47 @@ Integration tests.
 \end{itemize}
 
 \subsection{Unit tests}
-The QAM will foresee the possibility of writing Unit tests. Each programmer is responsible for writing these tests.
-
-These unit tests will be created to run with the JUnit testing framework (5). 
+The QAM will foresee the possibility of writing Unit tests. Each programmer is responsible for writing these tests. These unit tests will be created to run with the TestNG\cite{testNG} testing framework. 
 
 Whenever changes are made, the QAM will run all Unit Tests. The programmers are encouraged to run the full Unit Testing suite as well.
 
+Unit tests are required on all code, excluding:
+\begin{itemize}
+\item
+Variables
+\item
+Getters for variables.
+\item
+Setters for variables, you can still use these in order to change the contents of your class to suit the given test.
+\end{itemize}
+
+Every Unit Test of a given class must contain a line that checks if the class can actually be initialized. Then for every non-trivial method, the following tests must be written:
+\begin{itemize}
+\item
+Two tests that have input which gives a normal expected result.
+\item
+Any number of inputs that could give a troubling output, but shouldn't. These can be non-existent, but try to think about it.
+\item
+As many possible inputs that give an error in the code of that specific method. Don't write tests to check for crashes in procedures used by that method.
+\item
+Optional: Any other test you can come up with to check the functionality of your method.
+\end{itemize}
+
 \subsection{Integration tests}
-Integration tests will be run whenever a new stable version of the system is released. The purpose of the integration tests is to ensure that the system works as a whole. Integration tests are focused on testing whether the requirements, as outlined in the SRS, are incorporated. More details regarding integration tests can be found in chapter 3.
+Integration tests will be run whenever a new stable version of the system is released. The purpose of the integration tests is to ensure that the system works as a whole. Integration tests are focused on testing whether the requirements, as outlined in the SRS\cite{SRS}, are incorporated. More details regarding integration tests can be found in chapter 3.
 
 \subsection{Regression tests}
 Whenever a new iteration is about to start, there will first be a round of regression tests. This means that all functionality added in the previous iteration is tested to ensure that nothing was broken in the previous iteration.
 
 \subsection{Interface tests}
-It is important to assure that the User Interface is userfriendly. To ensure this fact, the following methods will be used.
+It is important to assure that the User Interface is user-friendly. To ensure this fact, the following methods will be used.
 \begin{itemize}
 \item
-The interfaces will be developed with userfriendliness in mind.
+The interfaces will be developed with user-friendliness in mind.
 \item
-The interfaces will be tested by the other projectmembers. Each will evaluate if the interface was userfriendly enough. If necessary, the interface will then be adjusted and a new round of Interface testing will start.
+The interfaces will be tested by the other projectmembers. Each will evaluate if the interface was user-friendly enough. If necessary, the interface will then be adjusted and a new round of Interface testing will start.
 \item
-When all projectmembers deem the interface userfriendly, the User Interface will be tested by one or more external parties. These persons must all have different backgrounds of the targetted audience. This to ensure that every person will find his needs in the system.
+When all projectmembers deem the interface user-friendly, the User Interface will be tested by one or more external parties. These persons must all have different backgrounds of the target audience. This to ensure that every person will find his needs in the system.
 \end{itemize}
 
 \section{Item pass/fail criteria}
@@ -96,9 +116,9 @@ For every test, the pass criteria is the lack of errors or other problems.
 Testphases can be suspended in the following cases.
 \begin{itemize}
 \item
-When a unit test fails. If the error appeared in code that was recently written by the tester, he is encouraged to track down the error and fix this. When the error appears in code not written by the test, an issue must be made on the Google Code Repository website (6).
+When a unit test fails. If the error appeared in code that was recently written by the tester, he is encouraged to track down the error and fix this. When the error appears in code not written by the tester, an issue must be made on the Google Code Repository website\cite{googleSVN}. In the case the test requires a minor fix, the tester may change this locally and inform the responsible programmer of the change he made. The original programmer is responsible of commiting the fix to the repository.
 \item
-When an integration test fails. In this case, an issue has to be made on the Google Code Repository Website. The integration test must start over again when the issue is resolved.
+When an integration test fails, an issue has to be made on the Google Code Repository Website\cite{googleSVN}. The integration test must start over again when the issue is resolved.
 \end{itemize}
 
 \section{Test deliverables}
@@ -110,20 +130,20 @@ Every other test result will be included in an appendix of this document.
 The unit tests are the responsibilities of the developers. It is the responsibility of the QAM to assure that these tests are complete. Integration tests will be mainly completed by the QAM, but individual projectmembers are encouraged to run their own integration tests.
 
 \section{Environmental needs}
-Every person is required to have the JUnit plugin for Eclipse, in order to perform the various unit tests.
+No additional requirements are made for the programming environment, besides those listed in the SCMP\cite{SCMP}.
 
 \section{Responsibilities}
 The unit tests are the responsibilities of the developers. It is the responsibility of the QAM to assure that these tests are complete. It is also the responsibility of the QAM to assure that everything else is tested.
 
-\section{4.2.13 Stafﬁng and training needs}
-When needed, the QAM will explain the creation and use of the JUnit testing framework to the individual members.
+\section{4.2.13 Staff and training needs}
+When needed, the QAM will explain the creation and use of the TestNG testing framework to the individual members. There will also be wiki pages on the Google Code Wiki\cite{googleSVN} to explain matters that programmers are having difficulties with.
 
 \section{Schedule}
 Whenever anything new is added to the system, there must be tests.
 
 \chapter{Overview of the integration tests}
 \section{Scope}
-The purpose of this chapter is to document the various integration tests required. These tests will be conform with the SRS (3) and thus, they will each contain a reference to the correspondent SRS Requirement. Every Requirement will be tested for a possible negative and positive result.
+The purpose of this chapter is to document the various integration tests required. These tests will be conform with the SRS\cite{SRS} and thus, they will each contain a reference to the correspondent SRS\cite{SRS} Requirement. Every Requirement will be tested for a possible negative and positive result.
 
 \appendix
 \renewcommand
@@ -134,21 +154,27 @@ The purpose of this chapter is to document the various integration tests require
 \addcontentsline{toc}{chapter}{References}
 \setcounter{chapter}{1}
 
-\begin{thebibliography}{9}
-%item
-%Salesmen Project, \url{http://wilma.vub.ac.be/~se2_0910}
-%\item
-%Software Design Document 
-%\item
-%Software Requirements Specification 
-%\item
-%Software Quality Assurance Plan 
-%\item
-%JUnit Testing Framework, \url{http://junit.org/}
-%\item
-%Google Code Repository 
+\begin{thebibliography}{99}
+\bibitem{SPMP}
+Software Project Management Plan, Nick De Cooman, \emph{\url{http://wilma.vub.ac.be/~se2_0910/docs/spmp/index.html}}, October 26, 2009.
+\bibitem{SCMP}
+Software Configuration Management Plan, Jorne Laton \& Sina Khakbaz Heshmati, \emph{\url{http://wilma.vub.ac.be/~se2_0910/docs/scmp/index.html}}, October 8, 2009.
+\bibitem{SDD}
+Software Design Document, Bart Maes, \emph{\url{http://wilma.vub.ac.be/~se2_0910/docs/sdd/index.html}}, November 30, 2009.
+\bibitem{SRS}
+Software Requirements Specification, Wouter Van Rossem, \emph{\url{http://wilma.vub.ac.be/~se2_0910/docs/srs/index.html}}, November 12, 2009.
+\bibitem{SQAP}
+Software Quality Assurance Plan , Patrick Provinciael, \emph{\url{http://wilma.vub.ac.be/~se2_0910/docs/sqap/index.html}} November 22, 2009.
+\bibitem{STD}
+Software Testing Document , Patrick Provinciael, \emph{\url{http://wilma.vub.ac.be/~se2_0910/docs/std/index.html}} December 06, 2009.
+\bibitem{testNG}
+TestNG Unit Testing Framework, \url{http://testng.org/}
+\bibitem{se020910}
+Salesmen Project Website, Salesmen, \emph{\url{http://wilma.vub.ac.be/~se2_0910/}}, Nov, 2009.
+\bibitem{googleSVN}
+Code Repository, Salesmen, \emph{\url{http://code.google.com/p/salesmen}}, Nov, 2009.
 \bibitem{slidesSE}
-Dirk Vermeir \emph{\url{http://tinf2.vub.ac.be/~dvermeir/courses/software_engineering/slides.pdf}} 1 Nov 2009.
+Slides Software Engineering, Dirk Vermeir, \emph{\url{http://tinf2.vub.ac.be/~dvermeir/courses/software_engineering/slides.pdf}}, October 1, 2009.
 \end{thebibliography}
 
 \end{projdoc}
