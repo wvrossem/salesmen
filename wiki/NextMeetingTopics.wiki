@@ -3,6 +3,16 @@
 
 = Upcoming Topics =
 
+=== Meeting: Monday 19 April 2010, 18:00 - 19:00 ===
+
+Location: Lambda Room
+
+ * Revision of documents
+ * Next priorities
+ * Scheduling last weeks
+ * Risk management
+
+
 === Meeting: Wednesday 10 March 2010, 15:00 - 16:00 ===
 
 Location: Lambda Room
