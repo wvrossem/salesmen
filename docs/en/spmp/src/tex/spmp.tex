@@ -193,7 +193,7 @@
 		\end{itemize}
 		The subject of monitoring and controlling mechanisms is treated in section \ref{sec:monitoring}.
 		
-		\subsection{Concrete responsibilities}
+		\subsection{Assigned responsibilities}
 			The responsibilities as defined in \ref{sec:struc}, are 
 			associated to the following persons:
 		
@@ -262,6 +262,7 @@
 				\item Deadlines have to be respected
 				\item Reusability and extensibility of the software is very important
 				\item The system should be stable
+				\item Quality above quantity. 
 				
 			\end{enumerate}	
 			
@@ -269,11 +270,11 @@
 			
 			\begin{itemize}
 				
-				\item No assumptions will be made.
+				\item No assumptions are made.
 				
 				\item Dependencies \\
- 					  For the project to succeed, it will depend on
-					  the knowledge and the motivation of the team members	
+ 				For the project to succeed, it depends on the knowledge and the motivation of all team members. 
+				A team is only as strong as its weakest link.	
 				
 				\item Constraints:
 				\begin{itemize}
@@ -288,20 +289,22 @@
 			
 			Developing software introduces a lot of risks. At regular times these risks will
 			be discussed in order to reduce or eliminate them. Each member is encouraged to report
-			possible risk to the project leader.
+			possible risk to the project manager.
 			
 			\subsection{Google goes down for a certain period}
 			\textbf{Criticality}: + \\
 			We need to make daily backups of our files and documentation. This will be 
-			performed by the configuration team.
+			performed by the configuration manager.
 			
 			
-			\subsection{Lack of knowledge of certain tools or mechanisms}
+			\subsection{Lack of knowledge of certain tools and mechanisms}
 			\textbf{Criticality}: ++++ \\
-			Some tools and mechanisms will be completely new to some team members which can
-			results in a lack of knowledge and inefficiency. To prevent this, tutorials will be
-			made as Wiki-pages. Moreover, presentations can be given if the subject is 
-			too complex or if it demands a complete explanation. 
+			Some tools and mechanisms will be completely new for some team members. This can
+			result in a lack of knowledge and inefficiency. To prevent this, tutorials will be
+			made as wiki-pages and can be found at our Google Code website. 
+			Moreover, presentations are given if the subject is 
+			too complex or if it demands a complete explanation. During the implementation, we also organise workshops.			
+			These sessions allows members to ask advice and to help each other with encountered problems.
 			
 			\subsection{Somebody becomes ill}
 			\textbf{Criticality}: +++ \\
@@ -312,13 +315,14 @@
 			function and replace that leader or manager, for a certain period of time.
 			
 			\subsection{Risk Table}
-			The above risks can be ranked in a table based on the likelihood of the risks, the
-			impact on the project, the cost of disposal and the priority of it. 
-			This last one will be calculated as follows :
+			The above risks can be ranked in a table based on their likelihood, the
+			impact on the project, the cost of disposal and their priority. 
+			This last one is calculated as follows :
 			\begin{center}
 			$ priority = (11 - change) \cdot (11 - effect) \cdot disposal $
 			\end{center}
-			The lower the priority, the most impact it has on the project. 
+			 
+			The risk table is shown in table \ref{table:risks}.
 			
 			\begin{table}
 				\begin{center}
@@ -330,7 +334,9 @@
 				\NN Illness & 6 & 4 & 3 & \textbf{105}
 			\end{tabular}
 			\end{center}
-			\caption{Risk table}
+			\caption{Risk table \\
+			The lower the priority, the more impact it has on the project.}
+			\label{table:risks}
 			\end{table}
 			  
 			
@@ -339,33 +345,44 @@
 		\label{sec:monitoring}
 			
 			\subsection{Meetings}
-			Meetings will be held every week. The topics to handle at the meeting will be defined
+			Meetings will be held regularly. The topics to discuss are defined
 			in an agenda and will be sent to every team member before the start of the
-			meeting. Minutes will summarize the meetings and will be available on the project 
-			website within 3 days after the meeting.
+			meeting. Minutes will summarize the meeting and will be available on the project 
+			website within 3 days after the meeting. \\
 			
 			Should one not be able to attend the meeting, he/she is requested to inform
-			the project manager within 3 hours before the start of the meeting.
+			the project manager within three hours before the start of the meeting.
 			
 			\subsection{Timesheets}
-			A global timesheet will be available every Monday before 12H00. Team 
-			members will need to submit their timesheet on Sunday before 23h59
-			for approval by the team manager.
+			Team members need to submit their timesheet every week before Sunday 23h59, for approval by the team manager.
+			A global timesheet will be available every Monday before 12H00 on the project website. 
 			
 			\subsection{SCRUM Report}
-			Every 2 weeks all team members should deliver a SCRUM report in which they have to
-			answer briefly 3 questions:
+			Every two weeks, all team members need to deliver a SCRUM report in which they briefly have to
+			answer three questions:
 			
 			\begin{enumerate}
-				\item What have you done in the last 2 weeks?
-				\item What will you do in the next 2 weeks?
+				\item What have you done in the last two weeks?
+				\item What will you do in the next two weeks?
 				\item Is there anything preventing you from doing what you have
 				planned?
 			\end{enumerate}	
 			
 			In this way, the project manager is able to monitor the global progress of the project
 			and directing certain members where necessary. A summarized version will be available
-			onto the website afterwards. 
+			onto the website afterwards. \\
+			
+			In reality however, this did not worked out. Since it was yet another administrative task, the support within
+			the team was rather small. Therefore, the mechanism was stopped. 
+			
+			\subsection{Highlights}
+			Every month, a highlight report is published on our project website
+			to give an overview of recent improvements. Being so, it allows the customer to monitor the project progress. 
+			
+			\subsection{Development blog}
+			The development blog allows to share our experiences related to the implementation. 
+			It collects our success stories and failues and describes thoughts about the tools we use. It is intended
+			to be a communication channel during development in order to give an overview of our experiences.
 			
 			
 	\chapter{Technical Process}
