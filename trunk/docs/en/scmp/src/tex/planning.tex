@@ -24,13 +24,15 @@ For further explanation, see Chapter 2, Change Management.
 This directory contains three important directories.
 \begin{description}
 \item[docs]
-This is where all documentation about the project is stored.
+This is where all documentation about the project is stored. A short overview of the most important documents: SPMP, SCMP, SDD, SQAP, SRS and STD.
 \item[utils]
 Utilities can be found here.
 To give an example, Timetrack is a utility which is able to convert .xml-format files to other formats, such as .txt and .html.
 This utility is used to convert the timesheets, written in .xml, to .html, so that these can be placed on the website in a readable layout.
 \item[www]
-The project itself: all source files, website files and libraries must be stored here.
+The project website, this is where all official documents can be viewed. This includes files in the docs folder, overviews of timesheets, minutes of meetings and highlights.
+\item[salesmen]
+The project itself: all source files, website files and libraries are stored and run from here.
 \end{description}
 
 \subsection{Branches}
@@ -97,22 +99,60 @@ On the website, team members can write wikis and post them. Very useful for inte
 All files, changes and revisions on the server can be viewed from any computer with internet connection and a browser. So, there is no need for a working copy to check for changes on the server.
 \end{description}
 
-\subsection{Eclipse}
-Eclipse is a multi-language software development environment comprising an IDE and a plug-in system to extend it.
+\subsection{IDEs}
+This is an overview of which IDEs were decided to be the best-fitting IDEs for this project. The choice of coding environment is left free for the team members, even other editors (Notepad-alike) have been used to code.
+\subsubsection{Eclipse}
+Eclipse is a multi-language, cross-platform software development environment comprising an IDE and a plug-in system to extend it.
 It is written primarily in Java and can be used to develop applications in Java and, by means of the various plug-ins, in other languages as well, including C, C++, COBOL, Python, Perl, PHP, and others.
+It provides support for the Seam Framework and for the JBoss Application Server.
 Eclipse is free and open source software, which fits perfectly in this project's purpose.
+\subsubsection{IntelliJ}
+Because Eclipse was found too resource-demanding for some team member's computers, IntelliJ has been chosen as an alternative IDE.
+Like Eclipse, IntelliJ is a cross-platform Java IDE written in Java, which can be extended to support more languages, like JavaScript/Flex, HTML/XHTML/CSS, XML/XSL, Ruby/JRuby, Groovy, SQL, PHP, Scala (via separate plugin) and Clojure (initial support via separate plugin).
+It also supports the Seam Framework and the JBoss Application Server.
+All this makes it a perfect alternative for Eclipse in this project.
 
 \subsection{JBoss}
-JBoss Application Server (or JBoss AS) is a free software/open-source Java EE-based application server. Because it is Java-based, the JBoss application server operates cross-platform: usable on any operating system that Java supports. This assures great compatibility with Eclipse, which is the reason why this application server was chosen for this project.
+JBoss Application Server (or JBoss AS) is a free software/open-source Java EE-based application server.
+Because it is Java-based, the JBoss Application Server operates cross-platform: usable on any operating system that Java supports.
+This assures great compatibility with Eclipse.
+\subsubsection{Daemonizing}
+In order to run JBoss without having to keep a computer awake, JBoss has to run as a background service, in other words, as a daemon (Disk And Execution MONitor). This has been made possible using a script, salesmen-init, and a cronjob, salesmen-init-cron. The code for salesmen-init is shown below.
+
+\begin{figure}[hb]
+\caption{The Script to be run by Cron}
+\label{SalesmenInitialisationScript}
+\begin{enumerate}
+\item \verb*#! /bin/bash#
+\item \verb*#. .bashrc#
+\item \verb*#PROCESSCOUNT=$(ps -ef | grep -v grep | grep -cw $JBOSS_HOME/bin/run.sh)#
+\item \verb*#if [$PROCESSCOUNT -eq 0 ]#
+\item \verb*#then#
+\item \verb*#$JBOSS_HOME/bin/run.sh -b 134.184.49.2 \#
+\item \verb*#-Djboss.service.binding.set=ports-03 \#
+\item \verb*#-Djboss.messaging.ServerPeerID=1#
+\item \verb*#fi#
+\end{enumerate}
+\end{figure}
+
+\subsubsection{E-mail support}
+E-mail support is built-in in JBoss, but needs to be configured first.
+This configuring is to be done in the file mail-service.xml, where some property fields need to be edited.
+For this project, the following configuration is used:
+\begin{description}
+\item Protocol: SMTP
+\item SMTP gateway server: smtp.gmail.com
+\item Server port: 587
+\end{description}
 
 \subsection{LaTeX}
-LaTeX is a document markup language, which is used for professional purposes, therefor this has been chosen to write all documentation. This document itself is written in LaTeX.
+LaTeX is a document markup language, which is used for professional purposes, therefor this has been chosen to write all documentation.
+This document itself is written in LaTeX.
 
 \subsection{SilkPage}
 SilkPage is an XML-based publishing tool that generates Web standards 
-compliant websites. This tool has been chosen to maintain our project's website 
-for the following reasons:
-
+compliant websites.
+This tool has been chosen to maintain our project's website for the following reasons:
 \begin{itemize}
 \item Separation of concerns: It is possible to focus on the website's content 
   and use semantic tags provided by the DocBook XML vocabulary; 
@@ -120,7 +160,6 @@ for the following reasons:
 \item Native support for publishing external documents in various formats.
 \item Customization layers: SilkPage can easily be extended at CSS and
   XSLT levels.
-
 \end{itemize}
 
 \section{Management Control}
