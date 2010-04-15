@@ -1,0 +1,15 @@
+<?xml version='1.0'?>
+<timesheet xmlns="http://purl.org/net/timetrack">
+
+	<item duration="PT4H">
+		<desc>SCMP: Added IntelliJ to IDEs section, e-mail configuration and daemonizing to JBoss section,
+			expanded Trunk section and performed some other little changes.</desc>
+		<refs>
+			<ref>http://code.google.com/p/salesmen/source/detail?r=1260</ref>
+		</refs>
+	</item>
+	
+	<item duration="PT0H20M">
+		<desc>Administration and Communication.</desc>
+	</item>
+</timesheet>
