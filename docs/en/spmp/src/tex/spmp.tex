@@ -7,7 +7,7 @@
 
 \title{Software Engineering Group 2 (2009-2010) \\Software Project Management Plan}
 \author{Nick De Cooman}
-\date {December 13, 2009}
+\date {\today}
 
 \begin{document}
 \begin{projdoc}
@@ -18,9 +18,7 @@
 		
 			The goal of this project is to design and implement the software 
 			behind an online auction website such as eBay. The codename of our project 
-			is {\emph Salesmen}. 
-
-			This project is embedded in the Software Engineering course, 
+			is {\emph Salesmen}. The project is embedded in the Software Engineering course, 
 			which is designed for senior students of Computer Science and Engineering 
 			at the Vrije Universiteit Brussel. It has a threefold purpose:
 			
@@ -31,9 +29,7 @@
 				\item Develop a system that supports the functionality of an auction website. 
 				This means that a user will be able to sell or buy items in an online auction. 
 				
-				\item Develop and maintain a general website on our project. Up to date 
-				versions of all documents such as minutes, timesheets and deliverables will be 
-				available at any time. This site will be hosted at
+				\item Develop and maintain a project website, which contains all necessary documents and references to deliverables. The site will be hosted at
 				\url{http://wilma.vub.ac.be/~se2_0910/}.
 			\end{enumerate}	
 			
@@ -42,16 +38,22 @@
 		
 		\section{Project deliverables}
 		
+		The required deliverables are:
+		
 		\begin{itemize}
 			
-			\item Software documentation (see \ref{deadlines})
-			\item Minutes: 3 days after meeting
-			\item Timesheets: every Monday before 12H00
-			\item Source code
+			\item \textbf{SPMP} to describe the main management details.
+			\item \textbf{SCMP} to describe the configuration and tools.
+			\item \textbf{SRS} to describe  the software requirements specifications.
+			\item \textbf{SDD} to describe the architecture and design.
+			\item \textbf{SQAP} to describe the quality assurance guidelines. 
+			\item \textbf{STD} to describe the testing procedures.
+			\item \textbf{Timesheets} to provide an activity log of each week.
+			\item \textbf{Minutes} of meetings
+			\item \textbf{Source code}
 			
 		\end{itemize}	
-		
-		All of those documents will be available in English on our website.
+		All documents will be available in English on our project website.
 	
 		
 		\section{Reference materials}
@@ -76,13 +78,11 @@
 	
 		\section{Process model}
 		
-		The chosen proces model will be the spiral model, with 2 iterations. Unlike
-		the waterfall process, we will be able to show partial versions to the customer 
-		for feedback, reducing risks such as faulty requirements. The application will 
-		consists of some basic functionality after the first iteration and more advanced features will be implemented 
-		during the second one.
-		
-		A detailed planning of this process can be found in section \ref{planning}.
+		The chosen proces model is the spiral model, with two iterations. Unlike
+		the waterfall process, we are able to show partial versions to the customer 
+		for feedback in order to reduce risks such as faulty requirements. After the first iteration,
+		the application provides some basic functionality and more advanced features are implemented 
+		during the second one. A detailed planning can be found in section \ref{planning}.
 			
 		
 		\section{Organizational structure}
@@ -96,7 +96,7 @@
 				\item Deliver the SPMP
 				\item Risk Analysis
 				\item Keep track of the project's progress
-				\item Manage timesheets
+				\item Check and publish timesheets
 				\item Prepare and chair meetings
 				\item Spokesman to organizational boundaries and interfaces
 				\item Motivate and improve internal collaboration
@@ -142,22 +142,21 @@
 				\item Manage design of the system
 				\item Check whether implementation is based on the SDD
 				\item Design and manage database according to SRS and SQAP
-				\item Present design to the customer
 			\end{itemize}	
 			
 		\subsection{Implementation Manager}
 			\begin{itemize}
 				\item Head of implementation management
 				\item Manage the integration of different parts of the code
-				\item Track errors
-				\item Define implementation proces based on the SDD	
+				\item Assign implementation tasks
+				\item Track errors	
 				\item Manage documentation of code
 			\end{itemize}
 			
 		\subsection{Webmaster}
 			\begin{itemize}
 				\item Develop and maintain project website
-				\item Upload documents, after approval of the project manager
+				\item Upload documents
 			\end{itemize}	
 		
 		\section{Organizational boundaries and interfaces}
@@ -166,45 +165,89 @@
 		manager, the requirements manager and the design manager. The project manager reports
 		major problems, progress status and other organisatorial issues. 
 		The requirements manager discusses the functionality of the system and 
-		the design manager will present the design of the system to the
+		the design manager can present the design of the system to the
 		customer.  
+		
+		\section{Internal communication}
+		
+		Most internal communication is recommended to happen via a public mailinglist
+		(\href{mailto:salesmen@googlegroups.com}{salesmen@googlegroups.com}). 
+		Being so, all discussions can be consulted publicly on \url{http://groups.google.com/group/salesmen/}.
+
+		In exceptional situations, private communication is recommended via 
+		\href{mailto:se2@tinf.vub.ac.be}{se2@tinf.vub.ac.be}.
+		
 		
 		\section{Project responsibilities}
 		
-			The responsibilities, as defined in \ref{sec:struc}, will be 
+		\subsection{General responsibilities}
+		
+		Good agreements make good friends. Therefore, all team members have to be aware of the following responsibilities:
+		
+		\begin{itemize}
+			
+			\item Timesheets need to be uploaded every week before Sunday 23h59 and should contain sufficient references.
+			\item Documents need to be writen in \LaTeX-format, using the provided template and need to be ready in time.
+			\item Meetings should be attended as much as possible.
+			
+		\end{itemize}
+		The subject of monitoring and controlling mechanisms is treated in section \ref{sec:monitoring}.
+		
+		\subsection{Concrete responsibilities}
+			The responsibilities as defined in \ref{sec:struc}, are 
 			associated to the following persons:
 		
 			\begin{tabular}{l l l}
 				\\
-				\FL Role & Effective & Assistant
-				\ML Project Manager & Nick & Patrick
-				\NN Project Secretary & Jonathan & Wouter
-				\NN Configuration Manager & Jorne & Sina
-				\NN Quality Assurance Manager & Patrick & Bart
-				\NN Requirements Manager & Wouter & Jonathan
-				\NN Design Manager & Bart & Nick
-				\NN Implementation Manager & Sina & Jorne
-				\NN Webmaster & Sina & Wouter \\
+				\FL \textbf{Role} & \textbf{Effective} & \textbf{Assistant}
+				\ML \textbf{Project Manager} & Nick De Cooman & Patrick Provinciael
+				\NN \textbf{Project Secretary }& Jonathan Jeurissen & Wouter Van Rossem
+				\NN \textbf{Configuration Manager} & Jorne Laton & Sina Khakbaz Heshmati
+				\NN \textbf{Quality Assurance Manager} & Patrick Provinciael & Bart Maes
+				\NN \textbf{Requirements Manager} & Wouter Van Rossem & Jonathan Jeurissen
+				\NN \textbf{Design Manager} & Bart Maes & Nick De Cooman
+				\NN \textbf{Implementation Manager} & Sina Khakbaz Heshmati & Jorne Laton
+				\NN \textbf{Webmaster} & Sina Khakbaz Heshmati & Wouter Van Rossem\\
 				\\
 			\end{tabular}
 			\\
-			However, this does not mean that a person is only responsible
-			for his/her own function. Every team member can be asked for assistance in all 
-			processes in function to achieve the end goal.
+			Off course, this does not mean that a person is only responsible
+			for his own function. Every team member can be asked for assistance in all 
+			processes in order to achieve the end goal.
 			
-			A person responsible for creating a deliverable also needs to be aware
-			of the fact that
+			After the first semester, the above division appeared not to be well-balanced based on the timesheets. 
+			Therefore, a few changes were made in order to re-balance the timesheets:
 			
 			\begin{itemize}
+				\item Since Sina Khakbaz Heshmati was occupied with three important aspects, he had much more
+				to do than the other team members. Hence, he worked the double of some others in 
+				the first few months, which resulted in disproportionated timesheets.
 				
-				\item Documents will be writen in \LaTeX-format, using the provided template.
+				Therefore, we deceided that the maintaince of our project website is transferred to Wouter Van Rossem,
+				the assistent webmaster. As regards the configuration, Jorne Laton becomes fully responsible for this. 
 				
-				\item Documents need to be ready in time (as defined in \ref{deadlines}), and
-				sent to the project manager for approval. 
-				
-				\item Documents needs to be up-to-date during the entire project. 
-				
+				\item As for Jonathan Jeurissen this course only counts for four study-points, there has to be a clear
+				difference in the timesheet balance. Since we had several meetings the first semester, 
+				this was obviously not the case. 
+				Hence, we deceided that Wouter Van Rossem, the assistent secretary, also becomes responsible
+				for writing the minutes.
 			\end{itemize}
+			Consequently, the current division of tasks is the following:
+			
+				\begin{tabular}{l l l}
+					\\
+					\FL \textbf{Role} & \textbf{Effective} & \textbf{Assistant}
+					\ML \textbf{Project Manager} & Nick De Cooman & Patrick Provinciael
+					\NN \textbf{Project Secretary }& Wouter Van Rossem & Jonathan Jeurissen 
+					\NN \textbf{Configuration Manager} & Jorne Laton & (Sina Khakbaz Heshmati)
+					\NN \textbf{Quality Assurance Manager} & Patrick Provinciael & Bart Maes
+					\NN \textbf{Requirements Manager} & Wouter Van Rossem & Jonathan Jeurissen
+					\NN \textbf{Design Manager} & Bart Maes & Nick De Cooman
+					\NN \textbf{Implementation Manager} & Sina Khakbaz Heshmati & Jorne Laton
+					\NN \textbf{Webmaster}& Wouter Van Rossem  & Sina Khakbaz Heshmati \\
+					\\
+				\end{tabular}
+			
 			
 	\chapter{Managerial process}
 		
@@ -293,6 +336,7 @@
 			
 
 		\section{Monitoring and controlling mechanisms}	
+		\label{sec:monitoring}
 			
 			\subsection{Meetings}
 			Meetings will be held every week. The topics to handle at the meeting will be defined
