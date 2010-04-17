@@ -488,7 +488,7 @@
 			As 52 hours is a sufficient high weekly average, it indicates great motivation of the team.
 			Despite this, the partition of worked hours was divided disproportionatly as shown by the pie chart in
 			figure \ref{fig:stats1-1}. 
-			Therefore, some resposibilities were reorganized to minimize the gap with Sina Khakbaz Heshmati
+			Therefore, some resposibilities were re-organized to minimize the gap with Sina Khakbaz Heshmati
 			on the one hand, 
 			and to have a clean difference between Jonathan Jeurissen and the others team members on the other hand. 
 			This re-organisation is treated in section \ref{sec:respons}. \\
@@ -558,17 +558,14 @@
 				\label{fig:stats1-3}
 				\end{center}
 			\end{figure}
-			
-		
-			
-			
-			
+						
 			
 			\section{Costs}
 			
 			\subsection{Man-costs up to now}
+			\label{sec:costsofar}
 			
-			Using timesheets enables us to track the real cost of this project. Off course,
+			Using timesheets also enables to track the real cost of this project. Off course,
 			this only includes man-costs and does not cover hidden problems that can occur during
 			development. \\
 			
@@ -577,44 +574,29 @@
 			and a month consists of 4 weeks. This results in:
 			\[ \textrm{Wage/hour} = \frac{\textrm{\euro} 2200 \textrm{ wage/month}}{38 \textrm{ hours/week} \cdot 4 \textrm{ weeks/month}} \approx \textrm{\euro} 14,50 \]
 			 
+			We know that the total amount of working hours, given in table \ref{table:stats1}, is 1050 hours. This 
+			allows us to calculate the current man-cost:
 			
-			In that case, the total cost of this project so far is given in table \ref{realcosts}.
+			\[ \textrm{Total man-cost} = 1.050 \textrm{ working hours} \cdot 14,50 \textrm{ wage/hour} = \textrm{\euro} 15.225 \]
 			
 			
-			\begin{table}
-				\begin{center}
-			\begin{tabular}{l l l}
-				\FL Week & Total hours & Total Cost
-				\ML Week 42 & 43 hours & \euro623,50 
-				\NN Week 43 & 63 hours & \euro913,50
-				\NN Week 44 & 36 hours & \euro522,00
-				\NN Week 45 & 60 hours & \euro870,00
-				\NN Week 46 & 28 hours & \euro406,00 
-				\NN Week 47 & 53 hours & \euro768,50 
-				\NN Week 48 & 67 hours & \euro971,50 
-				\NN Week 49 & 67 hours & \euro971,50
-				\ML \textbf{TOTAL} & \textbf{417 hours} & \textbf{\euro6046,50} 
-				\LL
-			\end{tabular}
-				\end{center}
-				\caption{Real costs up to now based on timesheets}
-				\label{realcosts}
-			\end{table}
 			
 			\subsection{Estimation of total man-costs}
 			
-			Based on the information in table \ref{realcosts}, we can estimate the total cost of this project
-			by calculating the average number of hours up to now. For the first 8 weeks, the average number of worked hours is \emph{52,1 hours/week}.
+			Based on the information in section \ref{sec:costsofar}, we can estimate the total cost of this project
+			by using current weekly average of working hours. 
+			For the first iteration, this number is \emph{52,5 hours/week}. \\
 			
-			Assuming 27 weeks will be needed to accomplish this project, the total number of man-hours can be estimated as:
-			\[ 52,1 \textrm{ hours/week} \cdot  27 \textrm{ week} \approx 1407 \textrm{ man-hours} \]
+			Since 27 weeks are foreseen to work on this project, the total number of man-hours currently can 
+			be estimated as:
+			\[ 52,5 \textrm{ hours/week} \cdot  27 \textrm{ week} \approx 1420 \textrm{ man-hours} \]
 			
-			Thus, the total man-cost results in:
-			\[ 1407 \textrm{ man-hours} \cdot  14,50 \textrm{ euro/hour} = \textrm{\euro} 20.401 \]
+			In that case, the estimation of total man-cost results in:
+			\[ 1420 \textrm{ man-hours} \cdot  14,50 \textrm{ euro/hour} = \textrm{\euro} 20.590 \]
 
-			Note that this is just an estimation, and propably amount to \euro 25.000. 
-			
-			
+			Note that in previous document versions, the total man-costs was estimated more or less the same. 
+			Since the estimation is based on the weekly average of working hours, it indicates that this
+			number is consistent over time.
 			
 			\subsection{Estimation of effort}
 			
@@ -633,7 +615,7 @@
 			KLOC is the estimation of the code length expressed in thousands of lines of code.
 			Our project can be classified as a semi-detached project which means that our team of
 			a medium size has a mixed experience working with a mix of rigid and less than rigid
-			requirements. Therefore, the parameters a, b, c, d are defined as in table \ref{par}. 		
+			requirements. Therefore, the parameters a, b, c, d are defined as in table \ref{par}. \\		
 			
 			
 			\begin{table}
