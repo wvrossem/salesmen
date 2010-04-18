@@ -1,0 +1,17 @@
+<?xml version='1.0'?>
+<timesheet xmlns="http://purl.org/net/timetrack">
+
+	<item duration="PT1H30M">
+		<desc>SDD - reread SDD to find small errors and mistakes</desc>
+		<refs>
+			<ref>http://code.google.com/p/salesmen/source/detail?r=1237</ref>
+		</refs>
+	</item>
+		
+	<item duration="PT15M">
+		<desc>Administration and Communication.</desc>
+		<refs>
+		</refs>
+	</item>
+		
+</timesheet>
