@@ -1,14 +1,13 @@
 package be.vub.salesmen.entity;
 
-import java.io.Serializable;
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Version;
 import org.hibernate.validator.Length;
 import org.hibernate.validator.NotNull;
 
+import javax.persistence.*;
+import java.io.Serializable;
+
 @Entity
+@Table(uniqueConstraints = @UniqueConstraint(columnNames = "term"))
 public class SearchTerm implements Serializable
 {
 	// Private Attributes
