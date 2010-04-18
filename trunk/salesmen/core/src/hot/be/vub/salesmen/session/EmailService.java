@@ -1,17 +1,16 @@
 package be.vub.salesmen.session;
 
-import java.io.Serializable;
-import javax.ejb.Stateless;
-import javax.faces.application.FacesMessage;
-
+import be.vub.salesmen.entity.Transaction;
 import be.vub.salesmen.entity.UserAccount;
-import org.jboss.seam.ScopeType;
-import org.jboss.seam.annotations.*;
+import org.jboss.seam.annotations.AutoCreate;
+import org.jboss.seam.annotations.In;
+import org.jboss.seam.annotations.Logger;
+import org.jboss.seam.annotations.Name;
 import org.jboss.seam.annotations.async.Asynchronous;
-import org.jboss.seam.log.Log;
-import org.jboss.seam.faces.*;
-import be.vub.salesmen.entity.User;
 import org.jboss.seam.faces.Renderer;
+import org.jboss.seam.log.Log;
+
+import java.io.Serializable;
 
 @Name("emailService")
 @AutoCreate
@@ -22,6 +21,7 @@ public class EmailService implements Serializable
   //Private Attributes
   private UserAccount account;
 	private String password;
+	private Transaction transaction;
 
 	@Logger
 	private Log log;
@@ -29,6 +29,7 @@ public class EmailService implements Serializable
 	//@in annotations
 	@In(create=true)
 	private Renderer renderer;
+	;
 
 	@Asynchronous
 	public void sendConfirmAccountEmail(UserAccount account)
@@ -73,6 +74,21 @@ public class EmailService implements Serializable
 		}
 	}
 
+	@Asynchronous
+	public void sendRequestPaymentEmail(Transaction transaction)
+	{
+		this.transaction = transaction;
+		this.account = transaction.getBuyer();
+		try
+		{
+			renderer.render("/requestPaymentEmail.xhtml");
+		}
+		catch (Exception e)
+		{
+			log.error("Error sending mail", e);
+		}
+	}
+
 	//Public Attribute getters/setters
   public UserAccount getAccount() {
     return account;
@@ -90,5 +106,15 @@ public class EmailService implements Serializable
 	public void setPassword(String password)
 	{
 		this.password = password;
+	}
+
+	public Transaction getTransaction()
+	{
+		return transaction;
+	}
+
+	public void setTransaction(Transaction transaction)
+	{
+		this.transaction = transaction;
 	}
 }
