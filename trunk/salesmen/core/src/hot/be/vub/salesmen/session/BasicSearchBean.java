@@ -18,7 +18,7 @@ import java.util.concurrent.atomic.AtomicReference;
 @Stateful
 @Name("basicSearch")
 @Scope(ScopeType.SESSION)
-@Synchronized(timeout=1000000000)
+@Synchronized(timeout = 1000000000)
 @AutoCreate
 public class BasicSearchBean implements BasicSearch
 {
@@ -27,10 +27,10 @@ public class BasicSearchBean implements BasicSearch
 
 	private String searchTerm;
 	private String entityType;
-	
+
 	private int pageSize = 2;
 	private int page;
-	
+
 	private boolean nextPageAvailable;
 
 	private SearchTerm savedTerm;
@@ -44,23 +44,25 @@ public class BasicSearchBean implements BasicSearch
 
 	public void find()
 	{
-        try {
-            page = 0;
-            queryEntities();
-            if (entities.size() != 0 && searchTerm.length() >= 3)
-            {
-                String q = "from SearchTerm s where s.term = #{searchTerm}";
-                List entLst = entityManager.createQuery(q).getResultList();
-                if (entLst.size() == 0)
-                {
-                    savedTerm = new SearchTerm();
-                    savedTerm.setTerm(searchTerm);
-                    entityManager.persist(savedTerm);
-                }
-            }
-        } catch (Exception e) {
-            System.out.println(e);
-        }
+		try
+		{
+			page = 0;
+			queryEntities();
+			if (entities.size() != 0 && searchTerm.length() >= 3)
+			{
+				String q = "from SearchTerm s where s.term = #{searchTerm}";
+				List entLst = entityManager.createQuery(q).getResultList();
+				if (entLst.size() == 0)
+				{
+					savedTerm = new SearchTerm();
+					savedTerm.setTerm(searchTerm);
+					entityManager.persist(savedTerm);
+				}
+			}
+		} catch (Exception e)
+		{
+			System.out.println(e);
+		}
 	}
 
 	public List suggest(Object begin)
@@ -78,69 +80,69 @@ public class BasicSearchBean implements BasicSearch
 
 	private void queryEntities()
 	{
-        try {
-            StringBuilder qry = new StringBuilder();
+		try
+		{
+			StringBuilder qry = new StringBuilder();
 
-            if ( entityType.equals("Auction"))
-            {
-                qry.append("from Auction e");
-                qry.append(" WHERE UPPER(e.title) LIKE UPPER(#{pattern})");
-                    qry.append(" AND e.status = " + Auction.AuctionStatus.LISTED.ordinal());
-            } else if (entityType.equals("User"))
-            {
-                qry.append("from User e");
-                qry.append(" WHERE UPPER(e.screenName) LIKE UPPER(#{pattern})");
-                qry.append(" or UPPER(e.firstName) LIKE UPPER(#{pattern})");
-                qry.append(" or UPPER(e.lastName) LIKE UPPER(#{pattern})");
-            } else if (entityType.equals("Tag"))
-            {
-                qry.append("from Tag e");
-            } else if (entityType.equals("UserAccount"))
-            {
-                qry.append("from UserAccount e");
-            }
+			if (entityType.equals("Auction"))
+			{
+				qry.append("from Auction e");
+				qry.append(" WHERE UPPER(e.title) LIKE UPPER(#{pattern})");
+				qry.append(" AND e.status = " + Auction.AuctionStatus.LISTED.ordinal());
+			} else if (entityType.equals("User"))
+			{
+				qry.append("from User e");
+				qry.append(" WHERE UPPER(e.screenName) LIKE UPPER(#{pattern})");
+				qry.append(" or UPPER(e.firstName) LIKE UPPER(#{pattern})");
+				qry.append(" or UPPER(e.lastName) LIKE UPPER(#{pattern})");
+			} else if (entityType.equals("Tag"))
+			{
+				qry.append("from Tag e");
+			} else if (entityType.equals("UserAccount"))
+			{
+				qry.append("from UserAccount e");
+			}
 
-            List results = entityManager.createQuery(qry.toString())
-                .setMaxResults(pageSize) //+1?
-                .setFirstResult( page * pageSize )
-                .getResultList();
+			List results = entityManager.createQuery(qry.toString())
+					.setMaxResults(pageSize) //+1?
+					.setFirstResult(page * pageSize)
+					.getResultList();
 
-            nextPageAvailable = results.size() > pageSize;
-            if (nextPageAvailable)
-            {
-                entities = new ArrayList<Object>(results.subList(0, pageSize));
-            } else
-            {
-                entities = results;
-            }
-        } catch (Exception e) {
-            System.out.println(e);
-        }
+			nextPageAvailable = results.size() > pageSize;
+			if (nextPageAvailable)
+			{
+				entities = new ArrayList<Object>(results.subList(0, pageSize));
+			} else
+			{
+				entities = results;
+			}
+		} catch (Exception e)
+		{
+			System.out.println(e);
+		}
 	}
-	
+
 	public User findUser(String screenName)
 	{
-		String qry = "FROM User u WHERE u.screenName = '"+screenName+"'";
+		String qry = "FROM User u WHERE u.screenName = '" + screenName + "'";
 		entities = entityManager.createQuery(qry).getResultList();
 		if (entities.size() == 1)
 		{
-			return (User)entities.get(0);
-		}
-        else
+			return (User) entities.get(0);
+		} else
 		{
 			return null;
 		}
 	}
 
-    public User findUser(String screenName, EntityManager em)
+	public User findUser(String screenName, EntityManager em)
 	{
-		String qry = "FROM User u WHERE u.screenName = '"+screenName+"'";
+		String qry = "FROM User u WHERE u.screenName = '" + screenName + "'";
 		entities = em.createQuery(qry).getResultList();
 		if (entities.size() == 1)
 		{
-			return (User)entities.get(0);
-		}
-        else
+			return (User) entities.get(0);
+		} else
 		{
 			return null;
 		}
@@ -148,7 +150,7 @@ public class BasicSearchBean implements BasicSearch
 
 	public Object findAuction(Long auctionId, EntityManager em)
 	{
-		if(em==null)
+		if (em == null)
 		{
 			System.out.println("findAuction ERROR: entityManager is null");
 		}
@@ -156,49 +158,46 @@ public class BasicSearchBean implements BasicSearch
 		{
 			String qry = "FROM Auction a WHERE a.id = #{auctionId}";
 			entities = em.createQuery(qry).getResultList();
-			if(entities==null)
+			if (entities == null)
 			{
 				System.out.println("findAuction ERROR: entities is null");
 			}
-			if (entities!=null && entities.size() == 1)
+			if (entities != null && entities.size() == 1)
 			{
 				return entities.get(0);
-			}
-			else
+			} else
 			{
 				return null;
 			}
 		}
-		catch(NullPointerException e)
+		catch (NullPointerException e)
 		{
-			System.out.println("findAuction ERROR: searching for ID="+auctionId);
+			System.out.println("findAuction ERROR: searching for ID=" + auctionId);
 		}
 		return null;
 	}
 
 	public UserAccount findUserAccount(String userName)
 	{
-	  String qry = "FROM UserAccount u WHERE u.username = '"+userName+"'";
+		String qry = "FROM UserAccount u WHERE u.username = '" + userName + "'";
 		entities = entityManager.createQuery(qry).getResultList();
 		if (entities.size() == 1)
 		{
-			return (UserAccount)entities.get(0);
-		}
-        else
+			return (UserAccount) entities.get(0);
+		} else
 		{
 			return null;
 		}
 	}
 
-  public UserAccount findUserAccount(String userName, EntityManager em)
+	public UserAccount findUserAccount(String userName, EntityManager em)
 	{
-	  String qry = "FROM UserAccount u WHERE u.username = '"+userName+"'";
+		String qry = "FROM UserAccount u WHERE u.username = '" + userName + "'";
 		entities = em.createQuery(qry).getResultList();
 		if (entities.size() == 1)
 		{
-			return (UserAccount)entities.get(0);
-		}
-        else
+			return (UserAccount) entities.get(0);
+		} else
 		{
 			return null;
 		}
@@ -216,36 +215,36 @@ public class BasicSearchBean implements BasicSearch
 		return null;
 	}
 
-    public List<Bid> findBids(Auction auction, int limit, EntityManager em)
-    {
-        List<Bid> bids=null;
-        if(auction.getId()!=null)
-        {
-            String qry = "FROM Bid b WHERE b.auction.id = '"+auction.getId()+"' ORDER BY b.amount DESC, b.id ASC";
-            bids = (List<Bid>)em.createQuery(qry).getResultList();
-            if(bids!=null && bids.size()>5)
-            {
-                bids  = (List<Bid>)em.createQuery(qry).getResultList().subList(0, limit);
-            }
-        }
+	public List<Bid> findBids(Auction auction, int limit, EntityManager em)
+	{
+		List<Bid> bids = null;
+		if (auction.getId() != null)
+		{
+			String qry = "FROM Bid b WHERE b.auction.id = '" + auction.getId() + "' ORDER BY b.amount DESC, b.id ASC";
+			bids = (List<Bid>) em.createQuery(qry).getResultList();
+			if (bids != null && bids.size() > 5)
+			{
+				bids = (List<Bid>) em.createQuery(qry).getResultList().subList(0, limit);
+			}
+		}
 		return bids;
-    }
+	}
 
-    public List<AuctionImage> findImages(Auction auction, int limit, EntityManager em)
-    {
-        //TODO: if no images were returned, return a default image
-        List<AuctionImage> images=null;
-        if(auction.getId()!=null)
-        {
-            String qry = "FROM AuctionImage a WHERE a.auction.id = '"+auction.getId()+"' ORDER BY a.id ASC";
-            images = (List<AuctionImage>)em.createQuery(qry).getResultList();
-            if(images!=null && images.size()>5)//TODO: remove fixed value
-            {
-                images  = (List<AuctionImage>)em.createQuery(qry).getResultList().subList(0, limit);
-            }
-        }
+	public List<AuctionImage> findImages(Auction auction, int limit, EntityManager em)
+	{
+		//TODO: if no images were returned, return a default image
+		List<AuctionImage> images = null;
+		if (auction.getId() != null)
+		{
+			String qry = "FROM AuctionImage a WHERE a.auction.id = '" + auction.getId() + "' ORDER BY a.id ASC";
+			images = (List<AuctionImage>) em.createQuery(qry).getResultList();
+			if (images != null && images.size() > 5)//TODO: remove fixed value
+			{
+				images = (List<AuctionImage>) em.createQuery(qry).getResultList().subList(0, limit);
+			}
+		}
 		return images;
-    }
+	}
 
 	public void createCategoryTree()
 	{
@@ -269,20 +268,20 @@ public class BasicSearchBean implements BasicSearch
 		int id = 0;
 		for (TreeNodeImpl<Category> firstNode : categoryTreeNodes)
 		{
-			if (firstNode.getData().getParent() != null )
+			if (firstNode.getData().getParent() != null)
 			{
 				for (TreeNodeImpl<Category> secondNode : categoryTreeNodes)
 				{
 					if (secondNode.getData() == firstNode.getData().getParent())
 					{
-						secondNode.addChild(id++,firstNode);
+						secondNode.addChild(id++, firstNode);
 						break;
 					}
 				}
 			}
 		}
 	}
-	
+
 	public boolean isNextPageAvailable()
 	{
 		return nextPageAvailable;
@@ -314,6 +313,12 @@ public class BasicSearchBean implements BasicSearch
 		return searchTerm == null ? "%" : '%' + searchTerm.replace('*', '%') + '%';
 	}
 
+	@Factory(value = "termPattern", scope = ScopeType.EVENT)
+	public String getSearchTermPattern()
+	{
+		return searchTerm == null ? "" : searchTerm.replace('*', '%') + '%';
+	}
+
 	public String getSearchTerm()
 	{
 		return searchTerm;
@@ -323,25 +328,29 @@ public class BasicSearchBean implements BasicSearch
 	{
 		this.searchTerm = searchTerm;
 	}
-	
+
 	public String getEntityType()
 	{
 		return entityType;
 	}
-	
+
 	public void setEntityType(String entityType)
 	{
 		this.entityType = entityType;
 	}
 
-	public TreeNodeImpl<Category> getCategoryTree() {
-		if (categoryTree == null){
+	public TreeNodeImpl<Category> getCategoryTree()
+	{
+		if (categoryTree == null)
+		{
 			createCategoryTree();
 		}
 		return categoryTree;
 	}
 
 	@Remove
-	public void destroy() {}
+	public void destroy()
+	{
+	}
 
 }
