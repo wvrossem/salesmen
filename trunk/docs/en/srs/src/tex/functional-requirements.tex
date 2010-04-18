@@ -107,13 +107,14 @@
 				\paragraph \noindent \textbf{Main path}
  					\begin{enumerate}
 						\item Users follows link in the confirmation mail he or she has received
-						\item User selects confirm account on the confirmation page
-						\item 
+						\item System confirms the user
 					\end{enumerate}
 					
 				\paragraph \noindent \textbf{Exceptions} None
 				
 				\paragraph \noindent \textbf{Result} The user becomes a regular user and can make use of all the functionality of the site
+				
+				\paragraph \noindent \textbf{Update} Users become confirmed after following the link. The do not have to press a confirm button.
 
 		\subsubsection{Request new confirmation mail}
 			
@@ -131,7 +132,6 @@
  					\begin{enumerate}
 						\item Users selects "send new confirmation mail"
 						\item System send a new confirmation mail to the user's e-mail address
-						\item 
 					\end{enumerate}
 					
 				\paragraph \noindent \textbf{Exceptions} None
@@ -155,20 +155,23 @@
  					\begin{enumerate}
 						\item Users enters a search term in the basic search field form
 						\item User submits the search form
-						\item System redirects the user to a page with all found auctions that match this search
-						query
+						\item System displays the found auctions that match the search query
 					\end{enumerate}
 				
 				\paragraph \noindent \textbf{Exceptional paths}
-					\begin{enumerate}
+					\begin{enumerate}						
 						\item[2a] Incomplete search form
 							\begin{itemize}
 								\item[2a1] System informs the user that the search form is incomplete
 								\item[2a1] System returns the user to the form with the previously filled in fields still in place and a notification next to the field that needs to be filled in
 							\end{itemize}
-						\item[3a] No auctions found
+						\item[3a] User does not have javascript enabled
 							\begin{itemize}
-								\item[3a1] System informs the user that no auctions were found for the search query
+								\item[3a1] System redirects the user to a page with all found auctions that match this search query
+							\end{itemize}
+						\item[3b] No auctions found
+							\begin{itemize}
+								\item[3b1] System informs the user that no auctions were found for the search query
 							\end{itemize}
 					\end{enumerate}
 				
@@ -225,11 +228,16 @@
 				\paragraph \noindent \textbf{Main path}
  					\begin{enumerate}
 						\item Users select a category from the category list
-						\item System redirects the user to a page with all the auctions of the
-							selected category
+						\item System displays all the auctions of the selected category
 					\end{enumerate}
 					
-				\paragraph \noindent \textbf{Exceptions} None
+				\paragraph \noindent \textbf{Exceptional paths}
+					\begin{enumerate}
+						\item[3a] User does not have javascript enabled
+							\begin{itemize}
+								\item[3a1] System redirects the user to a page with all the auctions of the selected category
+							\end{itemize}
+					\end{enumerate}
 				
 				\paragraph \noindent \textbf{Result} A page displaying all the auctions of a certain category
 
@@ -248,7 +256,7 @@
 				\paragraph \noindent \textbf{Main path}
  					\begin{enumerate}
 						\item Users fills in \textit{view auctions with tag}
-						\item System redirects the user to a page with all the auctions with that tag
+						\item System displays all the auctions with a certain tag
 					\end{enumerate}
 					
 				\paragraph \noindent \textbf{Exceptional paths}
@@ -256,6 +264,10 @@
 						\item[3a] No auctions found
 							\begin{itemize}
 								\item[3a1] System informs the user that no auctions were found with that tag
+							\end{itemize}
+						\item[3b] User does not have javascript enabled
+							\begin{itemize}
+								\item[3b1] System redirects the user to a page with all the auctions with that tag
 							\end{itemize}
 					\end{enumerate}
 				
@@ -332,7 +344,7 @@
 				
 				\paragraph \noindent \textbf{Preconditions} User is logged in
 				
-				\paragraph \noindent \textbf{Description} Members who are logged in can log out
+				\paragraph \noindent \textbf{Description} Users who are logged in can log out
 				
 				\paragraph \noindent \textbf{Main path}
  					\begin{enumerate}
@@ -341,7 +353,7 @@
 						\item System redirects the user to the site's homepage
 					\end{enumerate}
 					
-				\paragraph \noindent \textbf{Exceptions} None
+				\paragraph \noindent \textbf{Exceptions} 
 				
 				\paragraph \noindent \textbf{Result} The user is logged out
 
@@ -361,8 +373,7 @@
  					\begin{enumerate}
 						\item User enters search term in search user field
 						\item User submits search
-						\item System redirects the user to page containing all users corresponding to that search 
-						query
+						\item System displays all users corresponding to the search query
 					\end{enumerate}
 				
 				\paragraph \noindent \textbf{Exceptional paths}
@@ -375,7 +386,11 @@
 						\item[3a] No users found
 							\begin{itemize}
 								\item[3a1] System informs the user that no users were found for the search query
-							\end{itemize}						
+							\end{itemize}			
+						\item[3b] User does not have javascript enabled
+							\begin{itemize}
+								\item[3b1] System redirects the user to a page containing all users corresponding to that search query
+							\end{itemize}		
 					\end{enumerate}
 				
 				\paragraph \noindent \textbf{Result} A page displaying the found members for the search term
@@ -428,7 +443,7 @@
 				\paragraph \noindent \textbf{Priority} Want to have
 				
 				\paragraph \noindent \textbf{Description} \\
-				When a user places a new auction, he or she has the option to create an English auction
+				When a user places a new auction, he or she has the option to create a silent auction
 
 		\subsubsection{View placed auctions}
 
@@ -634,7 +649,7 @@
 							\end{itemize}
 					\end{enumerate}
 				
-				\paragraph \noindent \textbf{Result} A message is sent to another user
+				\paragraph \noindent \textbf{Result} A message is sent to a user
 
 		\subsubsection{View personal messages}
 
@@ -1112,6 +1127,8 @@
 				
 				\paragraph \noindent \textbf{Priority} Want to have
 				
+				\paragraph \noindent \textbf{Preconditions} User is at home page
+				
 				\paragraph \noindent \textbf{Description} Users can view a list of the top ten most popular auctions
 				
 		\subsubsection{Sign up for salesmen pro}
@@ -1120,7 +1137,19 @@
 				
 				\paragraph \noindent \textbf{Priority} Want to have
 				
-				\paragraph \noindent \textbf{Description} Users can become a premium member of the site. They will get some extra's on the site. A monthly fee is required for this.
+				\paragraph \noindent \textbf{Preconditions} User is logged in. User is at user page
+				
+				\paragraph \noindent \textbf{Description} Users can become a premium member of the site. They will get some extra's on the site. A monthly fee is required for this. When the payment is done, the user will be signed up for salesmen pro.
+				
+				\paragraph \noindent \textbf{Main path}
+ 					\begin{enumerate}
+						\item User selects \emph{upgrade to salesmen pro}
+						\item User fills in \emph{salesmen pro subscription} form
+						\item User submits the form
+						\item System marks the user with \emph{salesmen pro subscription payment} pending
+					\end{enumerate}
+					
+				\paragraph \noindent \textbf{Result} The user will be marked with salesmen pro subscription pending
 
 	\subsection{Moderators}
 		\subsubsection{Remove a user}
@@ -1168,6 +1197,15 @@
 				\paragraph \noindent \textbf{Description} \\
 				An administrator can retract a bid from a user when that user has e.g. 
 					made a high bid because of a typo
+					
+		\subsubsection{Set user subscription to salesmen pro}
+			
+				\paragraph \noindent \textbf{Requirement ID} 59
+				
+				\paragraph \noindent \textbf{Priority} Want to have
+				
+				\paragraph \noindent \textbf{Description} \\
+				When the payment for salesmen pro is received, an administrator can set the subscription of the user for a certain amount of time to salesmen pro. 
 					
 	\subsection{Administrators}
 		\subsubsection{Modify default fees}
