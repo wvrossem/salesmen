@@ -1,0 +1,17 @@
+<m:message xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:m="http://jboss.com/products/seam/mail"
+	xmlns:h="http://java.sun.com/jsf/html">
+
+	<m:from name="Salesmen" address="no-reply@salesmen.com" />
+	<m:to name="#{emailService.account.user.firstName} #{emailService.account.user.lastName}">
+	    #{emailService.account.user.email}
+    </m:to>
+	<m:subject>Request payment</m:subject>
+
+	<m:body>
+		<p>Kind reminder to pay for you transaction</p>
+        <p>Buyer: #{emailService.transaction.buyer.username}</p>
+        <p>Seller: #{emailService.transaction.seller.username} </p>
+	</m:body>
+
+</m:message>
