@@ -7,6 +7,23 @@
 			<ref>http://code.google.com/p/salesmen/source/detail?r=1237</ref>
 		</refs>
 	</item>
+	
+	<item duration="PT50M">
+		<desc>Attempting to get JBoss running again, after it failed for some reason</desc>
+		<refs>
+			<ref>http://groups.google.com/group/salesmen/browse_thread/thread/cd10231d096ea57b?hl=en</ref>
+		</refs>
+	</item>
+	
+	<item duration="PT1H">
+		<desc>Testing various aspects of the website, tracking (and reporting) bugs</desc>
+		<refs>
+			<ref>http://code.google.com/p/salesmen/issues/detail?id=42</ref>
+		</refs>
+	</item>
+	
+	
+	
 		
 	<item duration="PT15M">
 		<desc>Administration and Communication.</desc>
