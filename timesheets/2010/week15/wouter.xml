@@ -1,0 +1,38 @@
+<?xml version='1.0'?>
+<timesheet xmlns="http://purl.org/net/timetrack">
+
+	<item duration="PT50M">
+		<desc>Reread SRS and made some minor changes</desc>
+		<refs>
+			<ref>http://code.google.com/p/salesmen/source/detail?r=1237</ref>
+		</refs>
+	</item>
+	
+	<item duration="PT30M">
+		<desc>Added the progress of the requirements to the summary table of the SRS</desc>
+		<refs>
+			<ref>http://code.google.com/p/salesmen/source/detail?r=1265</ref>
+		</refs>
+	</item>
+	
+	<item duration="PT35M">
+		<desc>Made the searchTerms for the suggestion box of basic search unique</desc>
+		<refs>
+			<ref>http://code.google.com/p/salesmen/source/detail?r=1272</ref>
+		</refs>
+	</item>
+	
+	<item duration="PT1H">
+		<desc>Started working on transactions</desc>
+		<refs>
+			<ref>http://code.google.com/p/salesmen/source/detail?r=1273</ref>
+		</refs>
+	</item>
+	
+	<item duration="PT15M">
+		<desc>Administration and Communication.</desc>
+		<refs>
+		</refs>
+	</item>
+		
+</timesheet>
