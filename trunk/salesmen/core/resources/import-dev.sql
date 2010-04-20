@@ -7,10 +7,10 @@ insert into Member (screenname, firstname, lastname, email, gender, dateOfBirth,
 insert into UserRole (name, conditional) values ('user', false);
 insert into UserRole (name, conditional) values ('admin', false);
 
-insert into UserAccount (username, passwordhash, passwordsalt, enabled, userid, activationKey, version) values ('demo', '70D33A98C7E76C7365A7C58F88CA8A89373B6EB5', 'C0FA5E59FC18E1E1', true, 1, 5946808103467846878, 0);
-insert into UserAccount (username, passwordhash, passwordsalt, enabled, userid, activationKey, version) values ('duke', '8D18E5D7DB472FF8AA3E3984F16BFDDA2B265598', '576EF3D383B00897', true, 2, 5946808103467846878, 0);
-insert into UserAccount (username, passwordhash, passwordsalt, enabled, userid, activationKey, version) values ('shadowman', '1D70EA4F262D46525F38DA0C1A130FFF1CA02149', '727D5C9995088913', true, 3, 5946808103467846878, 0);
-insert into UserAccount (username, passwordhash, passwordsalt, enabled, userid, activationKey, version) values ('mona', 'CDF580AB2AFC6F7FBCF5A1F114E383DB0DF9E309', '7D804DD05067750C', true, 4, 5946808103467846878, 0);
+insert into UserAccount (username, passwordhash, passwordsalt, enabled, userid, activationKey, loginAttempts, version) values ('demo', '70D33A98C7E76C7365A7C58F88CA8A89373B6EB5', 'C0FA5E59FC18E1E1', true, 1, 5946808103467846878, 0, 0);
+insert into UserAccount (username, passwordhash, passwordsalt, enabled, userid, activationKey, loginAttempts, version) values ('duke', '8D18E5D7DB472FF8AA3E3984F16BFDDA2B265598', '576EF3D383B00897', true, 2, 5946808103467846878, 0, 0);
+insert into UserAccount (username, passwordhash, passwordsalt, enabled, userid, activationKey, loginAttempts, version) values ('shadowman', '1D70EA4F262D46525F38DA0C1A130FFF1CA02149', '727D5C9995088913', true, 3, 5946808103467846878, 0, 0);
+insert into UserAccount (username, passwordhash, passwordsalt, enabled, userid, activationKey, loginAttempts, version) values ('mona', 'CDF580AB2AFC6F7FBCF5A1F114E383DB0DF9E309', '7D804DD05067750C', true, 4, 5946808103467846878, 0, 0);
 
 insert into UserAccountRoles (accountid, roleid) values (1, 2);
 insert into UserAccountRoles (accountid, roleid) values (2, 1);

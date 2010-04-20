@@ -1,8 +1,11 @@
 <page>
 
-	<navigation from-action="#{identity.login}">
-		<rule if="#{identity.loggedIn}">
+	<navigation from-action="#{userIdentity.login}">
+		<rule if="#{userIdentity.isLoggedIn()}">
 			<redirect view-id="/home.xhtml"/>
+		</rule>
+        <rule if="#{userIdentity.isBanned()}">
+			<redirect view-id="/accountBanned.xhtml"/>
 		</rule>
 	</navigation>
 
