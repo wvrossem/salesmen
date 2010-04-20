@@ -14,6 +14,7 @@ are stored, processed, and deployed. This project is created by group 2 of the c
 \begin{versionhistory}
 \vhEntry{v0.1}{08-11-2009}{J. Laton, S.~K.~Heshmati}{Initial draft for review}
 \vhEntry{v0.2}{21-12-2009}{J.~Laton, S.~K.~Heshmati, P.~Provinciael}{Added the ``Tools'' section and adapted the document presentation in order to be consistent with other Salesmen documents.}
+\vhEntry{v0.3}{19-04-2010}{J.~Laton}{Expansion of sections ``IDEs'', ``JBoss'' and ``Trunk'' in the first chapter}
 \end{versionhistory}
 }
 \setrevisioncurr{21-12-2009}
