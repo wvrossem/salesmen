@@ -102,6 +102,7 @@ public class RegisterUserAccountBean implements RegisterUserAccount, Serializabl
     Long randomNumber = new Random().nextLong();
     newAccount.setActivationKey(randomNumber);
 
+    newAccount.setLoginAttempts(0);
 		newAccount = entityManager.merge(newAccount);
     
 		// Send email
@@ -174,4 +175,6 @@ public class RegisterUserAccountBean implements RegisterUserAccount, Serializabl
 	{
 		this.passwordConfirmation = passwordConfirmation;
 	}
+
+
 }
