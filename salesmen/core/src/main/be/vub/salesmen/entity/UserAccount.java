@@ -30,6 +30,7 @@ public class UserAccount implements Serializable
 	private Set<UserRole> roles;
 	private User user;
 	private long activationKey;
+  private int loginAttempts = 0;
 
 	// Public Attribute getters/setters with annotations 
 	@Id @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -122,6 +123,14 @@ public class UserAccount implements Serializable
 	public void setUser(User user) {
 		this.user = user;
 	}
+
+  public int getLoginAttempts() {
+    return loginAttempts;
+  }
+
+  public void setLoginAttempts(int loginAttempts) {
+    this.loginAttempts = loginAttempts;
+  }
 	
 	@Version
 	public Integer getVersion() 
