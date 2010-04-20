@@ -1,24 +1,26 @@
 <?xml version="1.0"?>
-<timesheets xmlns="http://purl.org/net/timetrack" xmlns:xi="http://www.w3.org/2001/XInclude" from="2010-03-29" to="2010-04-04" xml:id="week13-2010">
-  <title>VUB - SE2 Timesheets for the 13th Week of 2010</title>
-  <published>2010-04-05</published>
-  <updated>2010-04-05</updated>
+<timesheets xmlns="http://purl.org/net/timetrack" xmlns:xi="http://www.w3.org/2001/XInclude" from="2010-04-05" to="2010-04-11" xml:id="week14-2010">
+  <title>VUB - SE2 Timesheets for the 14th Week of 2010</title>
+  <published>2010-04-12</published>
+  <updated>2010-04-12</updated>
   <person>
     <name>Nick De Cooman</name>
     <timesheet xmlns="http://purl.org/net/timetrack">
 	
-	<item duration="PT25M">
-	  <desc>Checking and publishing timesheets of week12.</desc>
+	<item duration="PT40M">
+	  <desc>Checking and publishing timesheets of week13.</desc>
 	  <refs>
-		  <ref>http://code.google.com/p/salesmen/source/detail?r=1123</ref>
-		  <ref>http://code.google.com/p/salesmen/source/detail?r=1124</ref>
-		<ref>http://code.google.com/p/salesmen/source/detail?r=1125</ref>
-		<ref>http://code.google.com/p/salesmen/source/detail?r=1130</ref>
-		<ref>http://code.google.com/p/salesmen/source/detail?r=1131</ref>
-		<ref>http://code.google.com/p/salesmen/source/detail?r=1132</ref>
-		<ref>http://code.google.com/p/salesmen/source/detail?r=1133</ref>
-		<ref>http://code.google.com/p/salesmen/source/detail?r=1134</ref>
-		<ref>http://code.google.com/p/salesmen/source/detail?r=1135</ref>
+		  <ref>http://code.google.com/p/salesmen/source/detail?r=1217</ref>
+		  <ref>http://code.google.com/p/salesmen/source/detail?r=1218</ref>
+		<ref>http://code.google.com/p/salesmen/source/detail?r=1219</ref>
+		<ref>http://code.google.com/p/salesmen/source/detail?r=1220</ref>
+		<ref>http://code.google.com/p/salesmen/source/detail?r=1221</ref>
+		<ref>http://code.google.com/p/salesmen/source/detail?r=1222</ref>
+		<ref>http://code.google.com/p/salesmen/source/detail?r=1223</ref>
+		<ref>http://code.google.com/p/salesmen/source/detail?r=1224</ref>
+		<ref>http://code.google.com/p/salesmen/source/detail?r=1225</ref>
+		<ref>http://code.google.com/p/salesmen/source/detail?r=1244</ref>
+		<ref>http://code.google.com/p/salesmen/source/detail?r=1245</ref>
 	  </refs>
 	</item>
 
@@ -29,156 +31,29 @@
     </refs>
   </item>
 
-	<item duration="PT2H">
-    <desc>Conference meeting on Monday 29/03.</desc>
-    <refs>	<ref>http://wilma.vub.ac.be/~se2_0910/dev/events/2010/vub-se/resources/minutes/20100329/minutes-20100329.pdf</ref>
-    </refs>
-  </item>
-
-	<item duration="PT15M">
-    <desc>Writing agenda for presentation at conference 2.</desc>
-    <refs>
-		<ref>http://groups.google.com/group/salesmen/browse_thread/thread/18fbf2334803ed31</ref>
-		<ref>http://wilma.vub.ac.be/~se2_0910/dev/events/2010/vub-se/resources/agenda/agenda-20100331.pdf</ref>
-    </refs>
-  </item>
-
-	<item duration="PT30M">
-    <desc>Modifying slides for conference 2.</desc>
-    <refs>
-		<ref>http://wilma.vub.ac.be/~se2_0910/dev/events/2010/vub-se/resources/slides/slides-20100331.pdf</ref>
-    </refs>
-  </item>
-
-	<item duration="PT6H30M">
-    <desc>Update registration form with asynchronous validation. </desc>
-    <refs>
-		<ref>http://code.google.com/p/salesmen/source/detail?r=1147</ref>
-		<ref>http://docs.jboss.org/richfaces/3.3.2.GA/en/devguide/html/ArchitectureOverview.html</ref>
-		<ref>http://blog.xebia.com/2009/04/24/validation-in-seam/</ref>
-		<ref>http://community.jboss.org/message/34806</ref>
-		<ref>http://stackoverflow.com/questions/1089997/seam-richfaces-form-validation</ref>
-		<ref>http://www.javabeat.net/tips/89-use-a4jstatus-to-display-status-of-the-reque.html</ref>
-    </refs>
-  </item>
-
 	<item duration="PT1H">
-    <desc>Conference meeting on Tuesday 30/03.</desc>
+    <desc>Research about Seam bijection.</desc>
     <refs>
-		<ref>http://wilma.vub.ac.be/~se2_0910/dev/events/2010/vub-se/resources/minutes/20100330/minutes-20100330.pdf</ref>
+		<ref>Seam in Action, Chapter 6, ISBN 1933988401</ref>
     </refs>
   </item>
 
-	<item duration="PT30M">
-    <desc>Rehearsing presentation for conference 2.</desc>
-    <refs>
-    </refs>
-  </item>
-
-	<item duration="PT15M">
-    <desc>Fixed "passwords do not match" bug in registration form.</desc>
-    <refs>
-		<ref>http://code.google.com/p/salesmen/source/detail?r=1159</ref>
-    </refs>
-  </item>
-
-	<item duration="PT25M">
-    <desc>Fixed "username is not unique" bug in registration form.</desc>
-    <refs>
-		<ref>http://code.google.com/p/salesmen/source/detail?r=1160</ref>
-    </refs>
-  </item>
-
-	<item duration="PT30M">
-    <desc>Made EmailService more generic.</desc>
-    <refs>
-		<ref>http://code.google.com/p/salesmen/source/detail?r=1167</ref>
-    </refs>
-  </item>
-
-	<item duration="PT2H40M">
-    <desc>Added activation mechanism to register account.</desc>
-    <refs>
-		<ref>http://code.google.com/p/salesmen/source/detail?r=1168</ref>
-    </refs>
-  </item>
-
-	<item duration="PT1H">
-  <desc>Added Dutch language support, mainly for registration form.</desc>
-  <refs>
-		<ref>http://code.google.com/p/salesmen/source/detail?r=1170</ref>
-  </refs>
-	</item>
-	
 	<item duration="PT45M">
-		<desc>Final rehearsal before Conference 2</desc>
-	</item>	
-	
-	<item duration="PT2H">
-  <desc>Conference 2.</desc>
-  <refs>
-		<ref>http://wilma.vub.ac.be/~se2_0910/dev/events/2010/vub-se/</ref>
-  </refs>
-	</item>
-	
-	<item duration="PT30M">
-  <desc>Meeting 31/03.</desc>
-  <refs>
-		<ref>Minutes not available yet</ref>
-  </refs>
-	</item>
-	
-	<item duration="PT1H">
-  <desc>Wrote minutes for conference meetings 29/03 and 30/03.</desc>
-  <refs>
-		<ref>http://wilma.vub.ac.be/~se2_0910/dev/events/2010/vub-se/resources/minutes/20100329/minutes-20100329.pdf</ref>
-		<ref>http://wilma.vub.ac.be/~se2_0910/dev/events/2010/vub-se/resources/minutes/20100330/minutes-20100330.pdf</ref>
-  </refs>
-	</item>	
-	
-	<item duration="PT10M">
-  <desc>Created necessary folders and uploaded all conference related documents.</desc>
-  <refs>
-		<ref>http://code.google.com/p/salesmen/source/detail?r=1176</ref>
-		<ref>http://code.google.com/p/salesmen/source/detail?r=1177</ref>
-		<ref>http://code.google.com/p/salesmen/source/detail?r=1178</ref>
-  </refs>
-	</item>
-	
-	<item duration="PT45M">
-  <desc>Wrote highlights report of March.</desc>
-  <refs>
-		<ref>http://groups.google.com/group/salesmen/browse_thread/thread/34d82482fa2a76c2</ref>
-		<ref>http://code.google.com/p/salesmen/source/detail?r=1216</ref>
-  </refs>
-	</item>	
-	
-	<item duration="PT15M">
-  <desc>Revision of conference minutes 29/03 and 30/03 after QA.</desc>
-  <refs>
-		<ref>http://groups.google.com/group/salesmen/browse_thread/thread/b4385bb3b681facd</ref>
-		<ref>http://code.google.com/p/salesmen/source/detail?r=1202</ref>
-		<ref>http://wilma.vub.ac.be/~se2_0910/dev/events/2010/vub-se/resources/minutes/20100329/minutes-20100329.pdf</ref>
-		<ref>http://wilma.vub.ac.be/~se2_0910/dev/events/2010/vub-se/resources/minutes/20100330/minutes-20100330.pdf</ref>
-  </refs>
-	</item>	
-	
-	<item duration="PT5M">
-  <desc>Revision of highlights March after QA.</desc>
-  <refs>
-		<ref>http://groups.google.com/group/salesmen/browse_thread/thread/34d82482fa2a76c2</ref>
-		<ref>http://code.google.com/p/salesmen/source/detail?r=1216</ref>
-  </refs>
-	</item>
-	
-	<item duration="PT10M">
-  <desc>Support to remember language choice via cookies.</desc>
-  <refs>
-		<ref>http://code.google.com/p/salesmen/source/detail?r=1207</ref>
-  </refs>
-	</item>
+    <desc>Injected BasicSearch instead of making new instance of it.</desc>
+    <refs>
+		<ref>http://code.google.com/p/salesmen/source/detail?r=1234</ref>
+    </refs>
+  </item>
 
-  <item duration="PT30M">
+	<item duration="PT1H30M">
+    <desc>Wrote article for development blog: The Power of Seam Bijection.</desc>
+    <refs>
+		<ref>http://salesmen-dev.blogspot.com/2010/04/power-of-seam-bijection.html</ref>
+    </refs>
+  </item>
+
+
+  <item duration="PT15M">
     <desc>Administration and Communication.</desc>
     <refs/>
   </item>
@@ -188,51 +63,7 @@
     <name>Jonathan Jeurissen</name>
     <timesheet xmlns="http://purl.org/net/timetrack">
 	
-	<item duration="PT4H30">
-		<desc>Programming ForgotPassword</desc>
-			<refs>
-				<ref>http://code.google.com/p/salesmen/source/detail?r=1163</ref>
-				<ref>http://code.google.com/p/salesmen/source/detail?r=1164</ref>
-				<ref>http://code.google.com/p/salesmen/source/detail?r=1165</ref>
-				<ref>http://code.google.com/p/salesmen/source/detail?r=1166</ref>
-			</refs>
-	</item>
-	
-	<item duration="PT2H30M">
-		<desc>Editing ForgotPassword (language support,username instead of screenname, asynchronous search, conversation error solved)</desc>
-			<refs>
-				<ref>http://code.google.com/p/salesmen/source/detail?r=1182</ref>
-				<ref>http://code.google.com/p/salesmen/source/detail?r=1180</ref>
-				<ref>http://code.google.com/p/salesmen/source/detail?r=1175</ref>
-			</refs>
-	</item>
-	
 	<item duration="PT10M">
-		<desc>Editing Login (language support)</desc>
-			<refs>
-				<ref>http://code.google.com/p/salesmen/source/detail?r=1181</ref>
-			</refs>
-	</item>
-
-	<item duration="PT45M">
-		<desc>Final rehearsal before Conference 2</desc>
-	</item>	
-  
-	<item duration="PT1H45M">
-  <desc>Conference 2.</desc>
-  <refs>
-		<ref>http://wilma.vub.ac.be/~se2_0910/dev/events/2010/vub-se/</ref>
-  </refs>
-	</item>
-  
-	<item duration="PT30M">
-  <desc>Meeting 31/03.</desc>
-  <refs>
-		<ref>Minutes not available yet</ref>
-  </refs>
-	</item>
-  
-	<item duration="PT30M">
 		<desc>Administration and Communication.</desc>
 		<refs/>
 	</item>
@@ -257,35 +88,16 @@
     <name>Jorne Laton</name>
     <timesheet xmlns="http://purl.org/net/timetrack">
 	
-	<item duration="PT1H45M">
-  <desc>Conference 2.</desc>
-  <refs>
-		<ref>http://wilma.vub.ac.be/~se2_0910/dev/events/2010/vub-se/</ref>
-  </refs>
-	</item>
-
-	<item duration="PT30M">
-  <desc>Meeting 31/03.</desc>
-  <refs>
-		<ref>Minutes not available yet</ref>
-  </refs>
-	</item>
-	
-	<item duration="PT1H0M">
-		<desc>Implemented user commenting support, but encountered some errors, therefore not committed.</desc>
-		<refs/>
-	</item>
-	
-	<item duration="PT4H30M">
-		<desc>Restarted implementing user commenting, still some errors though, but not breaking the build anymore.</desc>
+	<item duration="PT4H0M">
+		<desc>Dealt with error in UserComment, ViewComment and auction.xhtml. Solved error, received new error.</desc>
 		<refs>
-			<ref>http://code.google.com/p/salesmen/source/detail?r=1211</ref>
-			<ref>http://code.google.com/p/salesmen/source/detail?r=1212</ref>
-			<ref>http://code.google.com/p/salesmen/source/detail?r=1213</ref>
+			<ref>http://code.google.com/p/salesmen/source/detail?r=1239</ref>
+			<ref>http://code.google.com/p/salesmen/source/detail?r=1240</ref>
+			<ref>http://code.google.com/p/salesmen/source/detail?r=1241</ref>
 		</refs>
 	</item>
 		
-	<item duration="PT0H20M">
+	<item duration="PT0H10M">
 		<desc>Administration and Communication.</desc>
 	</item>
 </timesheet>
@@ -294,56 +106,18 @@
     <name>Bart Maes</name>
     <timesheet xmlns="http://purl.org/net/timetrack">
 
-		
-	<item duration="PT13H30M">
-		<desc>Auction implementation - more (until Thursday evening)</desc>
+	<item duration="PT4H">
+		<desc>SDD - revision 0.3.*</desc>
 		<refs>
-			<ref>http://code.google.com/p/salesmen/source/detail?r=1127</ref>
-			<ref>http://code.google.com/p/salesmen/source/detail?r=1136</ref>
-			<ref>http://code.google.com/p/salesmen/source/detail?r=1137</ref>
-			<ref>http://code.google.com/p/salesmen/source/detail?r=1138</ref>
-			<ref>http://code.google.com/p/salesmen/source/detail?r=1144</ref>
-			<ref>http://code.google.com/p/salesmen/source/detail?r=1149</ref>
-			<ref>http://code.google.com/p/salesmen/source/detail?r=1155</ref>
-			<ref>http://code.google.com/p/salesmen/source/detail?r=1161</ref>
-			<ref>http://code.google.com/p/salesmen/source/detail?r=1162</ref>
-			<ref>http://code.google.com/p/salesmen/source/detail?r=1185</ref>
-			<ref>http://code.google.com/p/salesmen/source/detail?r=1186</ref>
-			<ref>http://code.google.com/p/salesmen/source/detail?r=1188</ref>
-			<ref>http://code.google.com/p/salesmen/source/detail?r=1189</ref>
+			<ref>http://code.google.com/p/salesmen/source/detail?r=1233</ref>
+			<ref>http://code.google.com/p/salesmen/source/detail?r=1236</ref>
+			<ref>http://code.google.com/p/salesmen/source/detail?r=1237</ref>
 		</refs>
 	</item>
-	
-	<item duration="PT2H">
-    <desc>Conference meeting on Monday 29/03.</desc>
-    <refs>
-		<ref>http://wilma.vub.ac.be/~se2_0910/dev/events/2010/vub-se/resources/minutes/20100329/minutes-20100329.pdf</ref>
-    </refs>
-  </item>
-	
-	<item duration="PT45M">
-		<desc>Final rehearsal before Conference 2</desc>
-	</item>
-	
-	<item duration="PT1H45M">
-  <desc>Conference 2.</desc>
-  <refs>
-		<ref>http://wilma.vub.ac.be/~se2_0910/dev/events/2010/vub-se/</ref>
-  </refs>
-	</item>
-  
-	<item duration="PT30M">
-  <desc>Meeting 31/03.</desc>
-  <refs>
-		<ref>Minutes not available yet</ref>
-  </refs>
-	</item>
 		
-	<item duration="PT40M">
+	<item duration="PT10M">
 		<desc>Administration and Communication.</desc>
 		<refs>
-			<ref>http://groups.google.com/group/salesmen/browse_thread/thread/a495f13f06c53408?hl=en</ref>
-			<ref>http://groups.google.com/group/salesmen/browse_thread/thread/a853329439cfc164?hl=en</ref>
 		</refs>
 	</item>
 		
@@ -353,75 +127,14 @@
     <name>Patrick Provinciael</name>
     <timesheet xmlns="http://purl.org/net/timetrack">
 
-		<item duration="PT7H30M">
-				<desc>Programming User-Dashboard</desc>
-				<refs>
-					<ref>http://code.google.com/p/salesmen/source/detail?r=1152</ref>
-					<ref>http://code.google.com/p/salesmen/source/detail?r=1150</ref>
-					<ref>http://code.google.com/p/salesmen/source/detail?r=1148</ref>
-				</refs>
-		</item>
-		
-		<item duration="PT3H30M">
-				<desc>Creating view myAuctions for User-Dashboard</desc>
-				<refs>
-					<ref>http://code.google.com/p/salesmen/source/detail?r=1209</ref>
-					<ref>http://code.google.com/p/salesmen/source/detail?r=1208</ref>
-				</refs>
-		</item>
-		
-		<item duration="PT1H0M">
-				<desc>Fixing Error: Binding owner to a new auction</desc>
-				<refs>
-					<ref>http://code.google.com/p/salesmen/source/detail?r=1151</ref>
-					<ref>http://groups.google.com/group/salesmen/browse_thread/thread/f16b1b3eb66968b0</ref>
-				</refs>
-		</item>
-				
-		<item duration="PT15M">
-				<desc>QA Conference Meeting 29/03 14.00-16.00</desc>
-				<refs>	<ref>http://groups.google.com/group/salesmen/browse_thread/thread/b4385bb3b681facd</ref>	<ref>http://wilma.vub.ac.be/~se2_0910/dev/events/2010/vub-se/resources/minutes/20100329/minutes-20100329.pdf</ref>
-						<ref>http://wilma.vub.ac.be/~se2_0910/dev/events/2010/vub-se/resources/minutes/20100330/minutes-20100330.pdf</ref>
-				</refs>
-		</item>
-		
 		<item duration="PT10M">
-				<desc>QA Highlights March</desc>
+				<desc>QA Meeting 31/03 16.00-16.30</desc>
 				<refs>
-					<ref>http://code.google.com/p/salesmen/source/detail?r=1216</ref>
+					<ref>http://wilma.vub.ac.be/~se2_0910/docs/minutes/2010/03/31/minutes-20100331.pdf</ref>
 				</refs>
 		</item>
-				
-		<item duration="PT2H30M">
-				<desc>Quality Assurance of code</desc>
-				<refs>
-					<ref>http://code.google.com/p/salesmen/source/detail?r=1142</ref>
-					<ref>http://code.google.com/p/salesmen/source/detail?r=1140</ref>
-					<ref>http://code.google.com/p/salesmen/source/detail?r=1139</ref>
-				</refs>
-		</item>
-		
-		<item duration="PT45M">
-			<desc>Final rehearsal before Conference 2</desc>
-		</item>
-		
-
-		<item duration="PT1H45M">
-	  <desc>Conference 2.</desc>
-	  <refs>
-			<ref>http://wilma.vub.ac.be/~se2_0910/dev/events/2010/vub-se/</ref>
-	  </refs>
-		</item>
-
-		<item duration="PT30M">
-	  <desc>Meeting 31/03.</desc>
-	  <refs>
-			<ref>Minutes not available yet</ref>
-	  </refs>
-		</item>
-				
 								
-		<item duration="PT0H30M">
+		<item duration="PT10M">
 				<desc>Administration and Communication.</desc>
 		</item>
 				
@@ -429,17 +142,28 @@
   </person>
   <person>
     <name>Wouter Van Rossem</name>
-    
-	<timesheet xmlns="http://purl.org/net/timetrack" xml:base="../default/timesheet.xml">
-  <item duration="PT0M">
-    <desc>
-      This is a fallback timesheet, meaning that the
-      developer has not submitted their timesheet yet.
-      Please check back later to see this developer's 
-      timesheet.
-    </desc>
-  </item>
+    <timesheet xmlns="http://purl.org/net/timetrack">
+
+		
+	<item duration="PT1H">
+		<desc>Tried to upgrade the upload image to richfaces file upload</desc>
+		<refs>
+			<ref>http://livedemo.exadel.com/richfaces-demo/richfaces/fileUpload.jsf?c=fileUpload</ref>
+		</refs>
+	</item>
+
+	<item duration="PT20M">
+		<desc>Updated the minutes of 31/3 and added them to the website</desc>
+		<refs>
+			<ref>http://code.google.com/p/salesmen/source/detail?r=1231</ref>
+			<ref>http://code.google.com/p/salesmen/source/detail?r=1230</ref>
+		</refs>
+	</item>
+		
+	<item duration="PT15M">
+		<desc>Administration and Communication.</desc>
+	</item>
+		
 </timesheet>
-      
   </person>
 </timesheets>

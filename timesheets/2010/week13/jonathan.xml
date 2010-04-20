@@ -1,7 +1,7 @@
 <?xml version='1.0'?>
 <timesheet xmlns="http://purl.org/net/timetrack">
 	
-	<item duration="PT4H30">
+	<item duration="PT4H30M">
 		<desc>Programming ForgotPassword</desc>
 			<refs>
 				<ref>http://code.google.com/p/salesmen/source/detail?r=1163</ref>

@@ -233,6 +233,16 @@
 	<xsl:with-param name="str" select="$str"/>
       </xsl:call-template>
     </xsl:variable>
+    
+    <xsl:message>
+      <xsl:value-of select="../../tt:name"/>
+      <xsl:text> Duration: </xsl:text>
+      <xsl:value-of select="$str"/>
+      <xsl:text> Minutes: </xsl:text>
+      <xsl:value-of select="$minutes"/>
+      <xsl:text> Hours: </xsl:text>
+      <xsl:value-of select="$hours"/>
+    </xsl:message>
 
     <xsl:choose>
       <xsl:when test="$hours = ''">
