@@ -15,24 +15,28 @@ public class UserComment implements Serializable
 	private static final long serialVersionUID = 7444022244366099972L;
 	
 	// Private attributes
+	private Long id;
+    private Integer version;
 	private String content; 
-	private int rating;
-	private Date date = new Date();
+	private Date date;
 	private UserAccount user;
 	private Auction auction;
-	private Long commentId;
+	
+	public UserComment()
+	{
+		content = "";
+		date = java.util.Calendar.getInstance().getTime();
+	}
 	
 	public UserComment(UserAccount user, Auction auction) {
-		content = "No detailed comment";
-		rating = 0;
+		content = "No comment";
 		this.auction = auction;
 		this.user = user;
 		date = java.util.Calendar.getInstance().getTime();
 	}
 	
-	public UserComment(UserAccount user, Auction auction, int rating, String content) {
+	public UserComment(UserAccount user, Auction auction, String content) {
 		this.content = content;
-		this.rating = rating;
 		this.auction = auction;
 		this.user = user;
 		date = java.util.Calendar.getInstance().getTime();
@@ -42,12 +46,24 @@ public class UserComment implements Serializable
 	@Id @GeneratedValue
     public Long getId()
 	{
-        return commentId;
+        return id;
     }
 
-    public void setId(Long commentId)
-    {
-        this.commentId = commentId;
+    public void setId(Long id)
+	{
+        this.id = id;
+    }
+                
+    @Version
+    public Integer getVersion()
+	{
+        return version;
+    }
+
+    @SuppressWarnings("unused")
+	private void setVersion(Integer version)
+	{
+        this.version = version;
     }
 	
 	@NotNull
@@ -62,17 +78,6 @@ public class UserComment implements Serializable
 	}
 	
 	@NotNull
-	public int getRating()
-	{
-		return rating;
-	}
-	
-	public void setRating(int rating)
-	{
-		this.rating = rating;
-	}
-	
-	@NotNull
 	public Date getDate()
 	{
 		return date;
@@ -84,8 +89,8 @@ public class UserComment implements Serializable
 	}
 	
 	@NotNull
-	@OneToOne
-	@JoinColumn(name = "userid")
+	@ManyToOne
+	@JoinColumn(name = "USERACCOUNT_ID")
 	public UserAccount getUser()
 	{
 		return user;
@@ -97,8 +102,8 @@ public class UserComment implements Serializable
 	}
 	
 	@NotNull
-	@OneToOne
-	@JoinColumn(name = "auctionid")
+	@ManyToOne
+	@JoinColumn(name = "AUCTION_ID")
 	public Auction getAuction()
 	{
 		return auction;
