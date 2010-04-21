@@ -229,6 +229,17 @@ public class BasicSearchBean implements BasicSearch
 		}
 		return bids;
 	}
+	
+	public List<UserComment> findComments(Auction auction, EntityManager em)
+	{
+		List<UserComment> comments = null;
+		if (auction.getId() != null)
+		{
+			String qry = "FROM UserComment c WHERE c.auction.id = '" + auction.getId() + "' ORDER BY c.date DESC";
+			comments = (List<UserComment>) em.createQuery(qry).getResultList();
+		}
+		return comments;
+	}
 
 	public List<AuctionImage> findImages(Auction auction, int limit, EntityManager em)
 	{
