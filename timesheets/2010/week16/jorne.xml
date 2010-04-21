@@ -1,0 +1,32 @@
+<?xml version='1.0'?>
+<timesheet xmlns="http://purl.org/net/timetrack">
+	<item duration="PT1H">
+		<desc>Meeting on Monday 2010/04/19.</desc>
+		<refs>
+			<ref>http://wilma.vub.ac.be/~se2_0910/docs/minutes/2010/04/19/minutes-20100419.pdf</ref>
+		</refs>
+	</item>
+
+	<item duration="PT30M">
+		<desc>Made some additional changes to SCMP, suggested by QA.</desc>
+		<refs>
+			<ref>http://code.google.com/p/salesmen/source/detail?r=1287</ref>
+			<ref>http://code.google.com/p/salesmen/source/detail?r=1291</ref>
+		</refs>
+	</item>
+	
+	<item duration="PT4H">
+		<desc>Re-implemented and finished auction commenting.</desc>
+		<refs>
+			<ref>http://code.google.com/p/salesmen/source/detail?r=1292</ref>
+			<ref>http://code.google.com/p/salesmen/source/detail?r=1293</ref>
+			<ref>http://code.google.com/p/salesmen/source/detail?r=1294</ref>
+			<ref>http://code.google.com/p/salesmen/source/detail?r=1295</ref>
+			<ref>http://code.google.com/p/salesmen/source/detail?r=1296</ref>
+		</refs>
+	</item>
+	
+	<item duration="PT0H15M">
+		<desc>Administration and Communication.</desc>
+	</item>
+</timesheet>
