@@ -117,7 +117,12 @@ JBoss Application Server (or JBoss AS) is a free software/open-source Java EE-ba
 Because it is Java-based, the JBoss Application Server operates cross-platform: usable on any operating system that Java supports.
 This assures great compatibility with Eclipse.
 \subsubsection{Daemonizing}
-In order to run JBoss without having to keep a computer awake, JBoss has to run as a background service, in other words, as a daemon (Disk And Execution MONitor). This has been made possible using a script, salesmen-init, and a cronjob, salesmen-init-cron. The code for salesmen-init is shown below.
+Running JBoss is done by executing the command run.bat (Windows) or run.sh (Linux) in a terminal.
+To run it on the Wilma server, one connects to the server via ssh and then executes the command.
+Closing the terminal makes JBoss shut down, even if this terminal is not on the computer running JBoss.
+In order to keep it running on the Wilma server without having to keep another computer awake, JBoss has to run as a background service, in another word, as a daemon (Disk And Execution MONitor).
+This has been made possible using a script, salesmen-init, and a cronjob, salesmen-init-cron.
+The code for salesmen-init is shown below.
 
 \begin{figure}[hb]
 \caption{The Script to be run by Cron}
