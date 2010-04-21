@@ -4,6 +4,7 @@ import be.vub.salesmen.entity.Auction;
 import be.vub.salesmen.entity.AuctionImage;
 import be.vub.salesmen.entity.Bid;
 import be.vub.salesmen.entity.UserAccount;
+import be.vub.salesmen.entity.UserComment;
 import org.jboss.seam.annotations.Begin;
 import org.jboss.seam.annotations.In;
 import org.jboss.seam.annotations.Name;
@@ -31,6 +32,7 @@ public class ViewAuctionBean implements ViewAuction   , Serializable
 	//Attributes
 	private Auction auction;
     private double bidAmount=0;
+	private String commentText="";
     private Bid highestBid;
     private List<AuctionImage> images = new ArrayList<AuctionImage>();
 	
@@ -43,6 +45,9 @@ public class ViewAuctionBean implements ViewAuction   , Serializable
 
     @DataModel
 	private List<Bid> bids;
+	
+	@DataModel
+	private List<UserComment> comments;
 
 	//@In annotations
 	@In
@@ -64,6 +69,7 @@ public class ViewAuctionBean implements ViewAuction   , Serializable
 
             //reload images
             updateImages();
+			updateComments();
 		}
 	}
 
@@ -99,6 +105,7 @@ public class ViewAuctionBean implements ViewAuction   , Serializable
             this.highestBid=new Bid(0,null,this.auction);
         }
     }
+	
 	/*
 	Bid on the current auction
 	*/
@@ -133,6 +140,28 @@ public class ViewAuctionBean implements ViewAuction   , Serializable
             }
 		}
 	}
+	
+	private void updateComments()
+    {
+        if(this.auction!=null && this.auction.getId()!=null)
+        {
+            BasicSearchBean search = new BasicSearchBean();
+            comments = search.findComments(this.auction,this.entityManager);
+        }
+    }
+	/*
+	Leave a comment
+	*/
+	public void addComment(UserAccount user)
+	{
+		updateComments();
+		if(this.auction!=null && user!=null)
+		{
+			UserComment userComment = new UserComment(user, auction, commentText);
+			this.entityManager.persist(userComment);
+			updateComments();
+		}
+	}
 
 	//Public getters/setters
 	public Auction getAuction()
@@ -165,6 +194,16 @@ public class ViewAuctionBean implements ViewAuction   , Serializable
     {
         this.bidAmount = bidAmount;
     }
+	
+	public String getCommentText()
+	{
+		return commentText;
+	}
+	
+	public void setCommentText(String commentText)
+	{
+		this.commentText = commentText;
+	}
 
     public List getBids() 
     {
@@ -174,6 +213,16 @@ public class ViewAuctionBean implements ViewAuction   , Serializable
     public void setBids(List bids)
     {
         this.bids = bids;
+    }
+	
+	public List<UserComment> getComments() 
+    {
+        return comments;
+    }
+
+    public void setComments(List<UserComment> comments)
+    {
+        this.comments = comments;
     }
 
     public Bid getHighestBid()
