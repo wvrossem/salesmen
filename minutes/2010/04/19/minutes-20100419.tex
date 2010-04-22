@@ -1,0 +1,100 @@
+\documentclass[a4paper, 12pt]{article}
+\usepackage[english]{babel}
+\usepackage{graphicx, ctable, url}
+\usepackage{hyperref}
+\usepackage{eurosym}
+\usepackage{listings} % source listings
+\lstloadlanguages{java}
+\lstset{keywordstyle=\ttfamily\bfseries}
+\lstset{flexiblecolumns=true}
+\lstset{commentstyle=\ttfamily\itshape}
+
+	\begin{document}
+
+\title{Minutes Meeting 20}
+\author{Wouter Van Rossem}
+\date{\today}
+
+\maketitle	
+	\section{Meeting Information}
+		\textbf{Date:} Wednesday, April 19, 2010\\
+		\textbf{Time:} 18H00--19h00\\
+		\textbf{Place:} Infogroep\\
+		\subsection{Attendees}
+Following members were present:
+			\begin{itemize}
+				\item Nick De Cooman				
+				\item Bart Maes
+				\item Jorne Laton
+				\item Patrick Provinciael
+				\item Wouter Van Rossem
+				\item Sina Khakbaz Heshmati
+			\end{itemize}
+Following members were absent:
+			\begin{itemize}
+			 	\item Jonathan Jeurissen
+			\end{itemize}
+			
+		\subsection{Revision History}
+			\begin{tabular}{c | l | l }
+				\textbf{Rev.} & \textbf{Date} & \textbf{Description} \\
+				\hline
+				1.0 & April 22, 2010 & First draft created \\
+				%1.1 & April 5, 2010 & Updated after QA \\
+			\end{tabular}		
+
+	\section{Revision of documents}
+		Almost all documents are now revised, they should be quality assured and put online as soon as possible. Some remarks/suggestions about the documents were also given:
+		\begin{itemize}
+			 \item The document history should note what was actually changed in the revision and not just ``updated the document" for example.	
+			 \item When the SDD is published on the website, the diagrams should be available separately for easier viewing.	
+		\end{itemize}
+		
+	\section{Next priorities}
+		We will now focus on adding all the important functionalities, in order to get a good working webapplication. 
+		
+		We also decided that we would not implement the Salespal functionalities. Instead we will users of the website handle their own payments. Extra fees such for e.g. placing an auction will be taken care of by a monthly invoice to the seller.
+		
+		Instead of Salespal, the hot deals will be implemented as a special feature of our application.
+		
+	\section{Division of the labour}
+		It was decided that the different tasks will be divided as follows.
+		
+		\begin{tabular}{c|c}
+			\textbf{Name} & \textbf{Tasks} \\
+			\hline Patrick & Admin dashboard \\ 
+						   & User Dashboard \\ 
+						   & Categories \\
+			\hline Nick & Limited login attempts \\
+						& Hot Auctions \\
+						& Roles and Permissions \\
+			\hline Sina & Salesmen pro \\
+			\hline Jonathan & (Normal) Auction list \\
+			\hline Jorne & Comment on auction \\
+						 & Check finished auctions \\
+						 & Clean URLs \\
+			\hline Wouter & Transactions \\
+			\hline Bart & Visual design \\
+		\end{tabular} 
+		
+		The admin dashboard includes removing an auction, removing a user and modifying default fees. The user dashboard should be expanded with viewing placed, active and won auctions.
+		
+		Please consult the SRS and SDD documents for more information on these tasks.
+		
+	\section{Development blog}
+		Not everyone has added a post to the development blog. Team members are encouraged to write something on the blog whenever they learn something new. At the end of the project, everyone should have added at least one post.
+		
+	\section{Next meeting}
+		There will be a workshop on Wednesday, April 28, 2010 from 14h until 18h.
+		
+	\section{Agenda}
+A complete list of Agenda items is available on \cite{agendaitems}.\\
+	
+	\begin{thebibliography}{99}
+		
+		\bibitem{agendaitems}
+		\href{http://code.google.com/p/salesmen/wiki/NextMeetingTopics}{http://code.google.com/p/salesmen/wiki/NextMeetingTopics}
+		
+	\end{thebibliography}	
+		
+\end{document}
