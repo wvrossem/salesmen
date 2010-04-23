@@ -221,11 +221,19 @@ public class ManageAuctionBean implements ManageAuction, Serializable
 		statusMessages.add("Category " + category.getName() + " selected");
 	}
 
-    public void processTreeNodeImplSelection(NodeSelectedEvent event) {
+    public void processTreeNodeImplSelection(Category cat) {
 		System.out.println("Category selected");
+		/*System.out.println(event);
+		System.out.println(event.getComponent());
+		System.out.println(event.getComponent() instanceof HtmlTree);
 		HtmlTree tree = (HtmlTree) event.getComponent();
-		TreeNode<Category> currentNode = tree.getModelTreeNode();
-		System.out.println(currentNode.getData().getName());
+		System.out.println("Tree selected");
+		System.out.println(tree);
+		TreeNode<Category> currentNode = tree.getTreeNode();
+		System.out.println("Node selected");
+		System.out.println(currentNode);
+		System.out.println(currentNode.getData().getName());*/
+		System.out.println(cat.getName());
     }
 
     public Date getAuctionEndDate()
