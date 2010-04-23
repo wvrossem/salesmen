@@ -1,6 +1,7 @@
 package be.vub.salesmen.session;
 
 import be.vub.salesmen.entity.UserAccount;
+import be.vub.salesmen.entity.Category;
 import org.richfaces.event.NodeSelectedEvent;
 
 import javax.ejb.Local;
@@ -15,5 +16,5 @@ public interface ManageAuction
     public boolean verifyPrice();
     public boolean verifyEndDate();
 
-	public void processTreeNodeImplSelection(NodeSelectedEvent event);
+	public void processTreeNodeImplSelection(Category cat);
 }

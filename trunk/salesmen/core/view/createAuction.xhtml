@@ -96,11 +96,11 @@
 
                     <h:outputLabel for="category">Please select a category for the item</h:outputLabel>
                     <a:region id="categoryRegion">
-                        <rich:tree id="category" value="#{basicSearch.categoryTree}" var="cat"
-                            ajaxSubmitSelection="true" switchType="ajax"
-                            nodeSelectListener="#{manageAuction.processTreeNodeImplSelection}">
+                        <rich:tree id="category" value="#{basicSearch.categoryTree}" var="cat" switchType="client">
                             <rich:treeNode>
                                 <h:outputText value="#{cat.name}"/>
+										  <a:support action="#{manageAuction.processTreeNodeImplSelection(cat)}"
+												event="onselected"/>
                             </rich:treeNode>
                         </rich:tree>
                     </a:region>
