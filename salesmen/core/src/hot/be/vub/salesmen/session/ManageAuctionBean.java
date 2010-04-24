@@ -106,15 +106,15 @@ public class ManageAuctionBean implements ManageAuction, Serializable
 
     public boolean verifyCategory()
     {
-		if(this.category==null)
+		if(category==null)
 		{
             facesMessages.addToControlFromResourceBundle("category", FacesMessage.SEVERITY_INFO, "salesmen.Auction.create.invalidCategory");
            // return false;
-            return true;//TODO: remove when category-select works as it should
+            return false;//TODO: remove when category-select works as it should
 		}
         else
 		{
-			this.auction.setCategory(this.category);
+			auction.setCategory(category);
 			return true;
 		}
     }
@@ -125,12 +125,12 @@ public class ManageAuctionBean implements ManageAuction, Serializable
         //make sure input is ok
         if(!verifyPrice() || !verifyEndDate() || !verifyCategory())
         {
-            this.setInputIsOk(false);
+            inputIsOk = false;
             return false;
         }
 
         //all ok
-		this.setInputIsOk(true);
+		inputIsOk = true;
         return true;
 	}
 
@@ -222,18 +222,7 @@ public class ManageAuctionBean implements ManageAuction, Serializable
 	}
 
     public void processTreeNodeImplSelection(Category cat) {
-		System.out.println("Category selected");
-		/*System.out.println(event);
-		System.out.println(event.getComponent());
-		System.out.println(event.getComponent() instanceof HtmlTree);
-		HtmlTree tree = (HtmlTree) event.getComponent();
-		System.out.println("Tree selected");
-		System.out.println(tree);
-		TreeNode<Category> currentNode = tree.getTreeNode();
-		System.out.println("Node selected");
-		System.out.println(currentNode);
-		System.out.println(currentNode.getData().getName());*/
-		System.out.println(cat.getName());
+		category = cat;
     }
 
     public Date getAuctionEndDate()
