@@ -1,0 +1,44 @@
+<?xml version='1.0'?>
+<timesheet xmlns="http://purl.org/net/timetrack">
+
+		
+	<item duration="PT5H0M">
+		<desc>Auction implementation</desc>
+		<refs>
+			<ref>http://code.google.com/p/salesmen/source/detail?r=1190</ref>
+			<ref>http://code.google.com/p/salesmen/source/detail?r=1193</ref>
+			<ref>http://code.google.com/p/salesmen/source/detail?r=1194</ref>
+			<ref>http://code.google.com/p/salesmen/source/detail?r=1195</ref>
+			<ref>http://code.google.com/p/salesmen/source/detail?r=1196</ref>
+			<ref>http://code.google.com/p/salesmen/source/detail?r=1197</ref>
+			<ref>http://code.google.com/p/salesmen/source/detail?r=1198</ref>
+			<ref>http://code.google.com/p/salesmen/source/detail?r=1199</ref>
+			<ref>http://code.google.com/p/salesmen/source/detail?r=1200</ref>
+			<ref>http://code.google.com/p/salesmen/source/detail?r=1201</ref>
+		</refs>
+	</item>
+	
+	<item duration="PT25M">
+		<desc>Read up on the Java compiler (etc) cfr discussion</desc>
+		<refs>
+			<ref>http://groups.google.com/group/salesmen/browse_thread/thread/b5d8eee138636964?hl=en</ref>
+			<ref>http://en.wikipedia.org/wiki/Java_compiler</ref>
+			<ref>http://en.wikipedia.org/wiki/Java_bytecode</ref>
+			<ref>http://en.wikipedia.org/wiki/Java_virtual_machine</ref>
+		</refs>
+	</item>
+	
+	<item duration="PT35M">
+		<desc>Administration and Communication.</desc>
+		<refs>
+			<ref>http://groups.google.com/group/salesmen/browse_thread/thread/336357d6aaaad8b4?hl=en</ref>
+			<ref>http://groups.google.com/group/salesmen/browse_thread/thread/b5d8eee138636964?hl=en</ref>
+			<ref>http://groups.google.com/group/salesmen/browse_thread/thread/1e4b214e5f158e9b?hl=en</ref>
+			<ref>http://groups.google.com/group/salesmen/browse_thread/thread/38c7e20be012c2f8?hl=en</ref>
+			<ref>http://groups.google.com/group/salesmen/browse_thread/thread/fa15e8cc802899d9?hl=en</ref>
+			<ref>http://groups.google.com/group/salesmen/browse_thread/thread/dcb26a1a7ca1769?hl=en</ref>
+			<ref></ref>
+		</refs>
+	</item>
+			
+</timesheet>
