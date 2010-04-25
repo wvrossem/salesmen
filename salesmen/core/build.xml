@@ -185,6 +185,7 @@
 			</fileset>
 			<fileset dir="${basedir}/resources">
 				<include name="seam.properties"/>
+				<include name="seam.properties"/>
 				<include name="*.drl"/>
 				<include name="META-INF/*.drl"/>
 			</fileset>
