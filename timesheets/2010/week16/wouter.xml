@@ -1,0 +1,66 @@
+<?xml version='1.0'?>
+<timesheet xmlns="http://purl.org/net/timetrack">
+	<item duration="PT1H">
+		<desc>Meeting on Monday 2010/04/19.</desc>
+		<refs>
+			<ref>http://wilma.vub.ac.be/~se2_0910/docs/minutes/2010/04/19/minutes-20100419.pdf</ref>
+		</refs>
+	</item>
+	
+	<item duration="PT45M">
+		<desc>Publish latest versions of scmp, sqap and std documents on the website</desc>
+		<refs>
+			<ref>http://code.google.com/p/salesmen/source/detail?r=1308</ref>
+			<ref>http://code.google.com/p/salesmen/source/detail?r=1307</ref>
+			<ref>http://code.google.com/p/salesmen/source/detail?r=1306</ref>
+			<ref>http://code.google.com/p/salesmen/source/detail?r=1305</ref>
+			<ref>http://code.google.com/p/salesmen/source/detail?r=1304</ref>
+		</refs>
+	</item>
+	
+	<item duration="PT35M">
+		<desc>Write minutes of the meeting of 19/04</desc>
+		<refs>
+			<ref>http://code.google.com/p/salesmen/source/detail?r=1298</ref>
+		</refs>
+	</item>
+	
+	<item duration="PT35M">
+		<desc>Write minutes of the meeting of 19/04</desc>
+		<refs>
+			<ref>http://code.google.com/p/salesmen/source/detail?r=1298</ref>
+		</refs>
+	</item>
+	
+	<item duration="PT20M">
+		<desc>Update and publish the minutes of 19/04</desc>
+		<refs>
+			<ref>http://code.google.com/p/salesmen/source/detail?r=1301</ref>
+			<ref>http://code.google.com/p/salesmen/source/detail?r=1300</ref>
+		</refs>
+	</item>
+	
+	<item duration="PT15M">
+		<desc>Published version 0.4 of the spmp document on the website</desc>
+		<refs>
+			<ref>http://code.google.com/p/salesmen/source/detail?r=1286</ref>
+			<ref>http://code.google.com/p/salesmen/source/detail?r=1285</ref>
+			<ref>http://code.google.com/p/salesmen/source/detail?r=1284</ref>
+		</refs>
+	</item>
+	
+	<item duration="PT30M">
+		<desc>Tried to fix problem in basic search (error with duplicate searchTerms)</desc>
+		<refs>
+			<ref>http://groups.google.com/group/salesmen/browse_thread/thread/38c7e20be012c2f8</ref>
+		</refs>
+	</item>
+	
+	<item duration="PT1H">
+		<desc>Some work on transactions (views and sql import)</desc>
+	</item>
+	
+	<item duration="PT20M">
+		<desc>Administration and Communication.</desc>
+	</item>
+</timesheet>
