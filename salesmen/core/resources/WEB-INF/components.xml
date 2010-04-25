@@ -25,6 +25,8 @@
     <international:locale-selector cookie-enabled="true"/>
 
     <mail:mail-session session-jndi-name="java:/Mail"/>
+	
+	<async:quartz-dispatcher/>
 
     <!-- Configure meldware -->
     <mail:meldware>
