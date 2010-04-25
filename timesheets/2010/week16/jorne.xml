@@ -26,6 +26,23 @@
 		</refs>
 	</item>
 	
+	<item duration="PT1H">
+		<desc>Studied Seam Asynchronicity, Quartz in particular.</desc>
+		<refs>
+			<ref>http://docs.jboss.org/seam/2.1.2/reference/en-US/html/jms.html</ref>
+			<ref>http://www.digitalsanctuary.com/tech-blog/java/jboss/seam/quartz-scheduling-and-seam-part-1.html</ref>
+		</refs>
+	</item>
+	
+	<item duration="PT2H30M">
+		<desc>Configured Quartz and tested for errors. No errors received yet.</desc>
+		<refs>
+			<ref>http://code.google.com/p/salesmen/source/detail?r=1309</ref>
+			<ref>http://code.google.com/p/salesmen/source/detail?r=1310</ref>
+			<ref>http://code.google.com/p/salesmen/source/detail?r=1311</ref>
+		</refs>
+	</item>
+	
 	<item duration="PT0H15M">
 		<desc>Administration and Communication.</desc>
 	</item>
