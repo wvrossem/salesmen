@@ -25,15 +25,8 @@
 		</refs>
 	</item>
 	
-	<item duration="PT35M">
-		<desc>Write minutes of the meeting of 19/04</desc>
-		<refs>
-			<ref>http://code.google.com/p/salesmen/source/detail?r=1298</ref>
-		</refs>
-	</item>
-	
 	<item duration="PT20M">
-		<desc>Update and publish the minutes of 19/04</desc>
+		<desc>Update and publish minutes of 19/04</desc>
 		<refs>
 			<ref>http://code.google.com/p/salesmen/source/detail?r=1301</ref>
 			<ref>http://code.google.com/p/salesmen/source/detail?r=1300</ref>
