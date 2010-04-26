@@ -1,5 +1,13 @@
 <?xml version='1.0'?>
 <timesheet xmlns="http://purl.org/net/timetrack">
+	
+	<item duration="PT1H">
+		<desc>Meeting on Monday 2010/04/19.</desc>
+		<refs>
+			<ref>http://wilma.vub.ac.be/~se2_0910/docs/minutes/2010/04/19/minutes-20100419.pdf</ref>
+		</refs>
+	</item>
+	
   <item duration="PT15M">
     <desc>Administration and Communication.</desc>
   </item>
