@@ -1,0 +1,58 @@
+<?xml version='1.0'?>
+<timesheet xmlns="http://purl.org/net/timetrack">
+	
+	<item duration="PT1H">
+		<desc>Meeting on Monday 2010/04/19.</desc>
+		<refs>
+			<ref>http://wilma.vub.ac.be/~se2_0910/docs/minutes/2010/04/19/minutes-20100419.pdf</ref>
+		</refs>
+	</item>
+	
+	<item duration="PT1H">
+		<desc>QA of Meeting on Monday 2010/04/19.</desc>
+		<refs>
+			<ref>http://wilma.vub.ac.be/~se2_0910/docs/minutes/2010/04/19/minutes-20100419.pdf</ref>
+			<ref>http://groups.google.com/group/salesmen/browse_thread/thread/c668ff9a41704df7</ref>
+		</refs>
+	</item>
+	
+	<item duration="PT1H0M">
+		<desc>QA of SPMP v0_4</desc>
+		<refs>
+			<ref>http://wilma.vub.ac.be/~se2_0910/docs/spmp/index.html</ref>
+			<ref>http://groups.google.com/group/salesmen/browse_thread/thread/22e3a2134e8f1f59</ref>
+		</refs>
+	</item>
+	
+	<item duration="PT2H0M">
+		<desc>QA of SCMP v0_3</desc>
+		<refs>
+			<ref>http://wilma.vub.ac.be/~se2_0910/docs/scmp/index.html</ref>
+			<ref>http://groups.google.com/group/salesmen/browse_thread/thread/24f16e68fd76a096</ref>
+		</refs>
+	</item>
+	
+	<item duration="PT1H45M">
+		<desc>QA of SDD v0_4</desc>
+		<refs>
+			<ref>Not yet uploaded to Website</ref>
+			<ref>http://groups.google.com/group/salesmen/browse_thread/thread/4778165497a50b0d</ref>
+		</refs>
+	</item>
+		
+	<item duration="PT5H0M">
+		<desc>Codefix for categories (includes looking at and trying to see what old code did).</desc>
+		<refs>
+			<ref>http://code.google.com/p/salesmen/source/detail?r=1299</ref>
+			<ref>http://code.google.com/p/salesmen/source/detail?r=1302</ref>
+			
+		</refs>
+	</item>
+	
+	<item duration="PT30M">
+		<desc>Administration and Communication.</desc>
+		<refs>
+		</refs>
+	</item>
+			
+</timesheet>
