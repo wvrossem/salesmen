@@ -1,6 +1,12 @@
 <?xml version='1.0'?>
 <timesheet xmlns="http://purl.org/net/timetrack">
-
+	
+	<item duration="PT1H">
+		<desc>Meeting on Monday 2010/04/19.</desc>
+		<refs>
+			<ref>http://wilma.vub.ac.be/~se2_0910/docs/minutes/2010/04/19/minutes-20100419.pdf</ref>
+		</refs>
+	</item>
 		
 	<item duration="PT5H0M">
 		<desc>Auction implementation</desc>
@@ -28,16 +34,15 @@
 		</refs>
 	</item>
 	
-	<item duration="PT35M">
+	<item duration="PT30M">
 		<desc>Administration and Communication.</desc>
 		<refs>
 			<ref>http://groups.google.com/group/salesmen/browse_thread/thread/336357d6aaaad8b4?hl=en</ref>
 			<ref>http://groups.google.com/group/salesmen/browse_thread/thread/b5d8eee138636964?hl=en</ref>
 			<ref>http://groups.google.com/group/salesmen/browse_thread/thread/1e4b214e5f158e9b?hl=en</ref>
 			<ref>http://groups.google.com/group/salesmen/browse_thread/thread/38c7e20be012c2f8?hl=en</ref>
-			<ref>http://groups.google.com/group/salesmen/browse_thread/thread/fa15e8cc802899d9?hl=en</ref>
-			<ref>http://groups.google.com/group/salesmen/browse_thread/thread/dcb26a1a7ca1769?hl=en</ref>
-			<ref></ref>
+
+<ref>http://groups.google.com/group/salesmen/browse_thread/thread/dcb26a1a7ca1769?hl=en</ref>
 		</refs>
 	</item>
 			
