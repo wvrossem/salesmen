@@ -1,0 +1,44 @@
+<?xml version='1.0'?>
+<timesheet xmlns="http://purl.org/net/timetrack">
+	
+	<item duration="PT30M">
+	  <desc>Checking and publishing timesheets of week15.</desc>
+	  <refs>
+		<ref>http://groups.google.com/group/salesmen/browse_thread/thread/c5ac0db785557d7c?hl=en</ref>
+		  <ref>http://code.google.com/p/salesmen/source/detail?r=1275</ref>
+		<ref>http://code.google.com/p/salesmen/source/detail?r=1277</ref>
+		<ref>http://code.google.com/p/salesmen/source/detail?r=1278</ref>
+		<ref>http://code.google.com/p/salesmen/source/detail?r=1279</ref>
+	  </refs>
+	</item>
+	
+   <item duration="PT15M">
+    <desc>Preparing meeting 19/04.</desc>
+    <refs>
+		<ref>http://code.google.com/p/salesmen/source/detail?r=1258</ref>
+		<ref>http://code.google.com/p/salesmen/source/detail?r=1282</ref>
+    </refs>
+  </item>
+
+	<item duration="PT1H">
+		<desc>Meeting on Monday 2010/04/19.</desc>
+		<refs>
+			<ref>http://wilma.vub.ac.be/~se2_0910/docs/minutes/2010/04/19/minutes-20100419.pdf</ref>
+		</refs>
+	</item>
+
+	<item duration="PT2H30M">
+    <desc>Implemented limited login attempts.</desc>
+    <refs>
+		<ref>http://code.google.com/p/salesmen/source/detail?r=1288</ref>
+		<ref>http://code.google.com/p/salesmen/source/detail?r=1289</ref>
+		<ref>http://code.google.com/p/salesmen/source/detail?r=1290</ref>
+		<ref>http://nusairat.blogspot.com/2008/06/authentication-with-seam.html</ref>
+    </refs>
+  </item>
+
+  <item duration="PT20M">
+    <desc>Administration and Communication.</desc>
+    <refs></refs>
+  </item>
+</timesheet>
