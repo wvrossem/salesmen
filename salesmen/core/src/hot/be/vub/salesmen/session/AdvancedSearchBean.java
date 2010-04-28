@@ -31,6 +31,7 @@ public class AdvancedSearchBean implements AdvancedSearch
 	boolean searchAuctionDescription;
 	boolean searchUser;
 	boolean searchOwner;
+	boolean searchBid;
 
 	String category;
 	String tags;
@@ -139,10 +140,11 @@ public class AdvancedSearchBean implements AdvancedSearch
 			}
 			qry.append(" upper(a.description) like upper(#includePattern)");
 			qry.append(" and upper(a.description) not like upper(#{excludePattern})");
+			searchingElse = true;
 		}
 		
 		if (searchOwner & user != null)
-		{	
+		{
 			if (searchingElse)
 			{
 				qry.append(" and");
@@ -155,7 +157,7 @@ public class AdvancedSearchBean implements AdvancedSearch
 		List results = entityManager.createQuery(qry.toString())
 			.setMaxResults(pageSize) //+1?
 			.setFirstResult( page * pageSize )
-			.getResultList(); 
+			.getResultList();
 
 		nextPageAvailable = results.size() > pageSize;
 		if (nextPageAvailable)
