@@ -1,0 +1,23 @@
+<?xml version='1.0'?>
+<timesheet xmlns="http://purl.org/net/timetrack">
+	<item duration="PT2H0M">
+		<desc>Looked up how to implement a Quartz scheduler.</desc>
+		<refs>
+			<ref>http://seamframework.org/Community/QuartzQuestionIntervalCronMethodDoesntRun</ref>
+			<ref>http://www.theserverside.com/news/1364119/JBoss-Seam-A-Deep-Integration-Framework</ref>
+			<ref>http://www.quartz-scheduler.org/docs/quick_start_guide.html</ref>
+		</refs>
+	</item>
+	
+	<item duration="PT4H0M">
+		<desc>Implemented auction scheduler, but had no time left to test. Made sure build is not broken.</desc>
+		<refs>
+			<ref>http://code.google.com/p/salesmen/source/detail?r=1325</ref>
+			<ref>http://code.google.com/p/salesmen/source/detail?r=1326</ref>
+		</refs>
+	</item>
+	
+	<item duration="PT0H10M">
+		<desc>Administration and Communication.</desc>
+	</item>
+</timesheet>
