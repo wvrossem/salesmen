@@ -9,7 +9,7 @@ import org.hibernate.validator.Length;
 //other imports
 import org.hibernate.validator.NotNull;
 import org.jboss.seam.annotations.Name;
-
+import org.jboss.seam.async.QuartzTriggerHandle;
 
 @Entity
 @Name("auction")
@@ -44,6 +44,9 @@ public class Auction implements Serializable
 
 	private double startingPrice;
 	private AuctionStatus status=AuctionStatus.UNLISTED;
+	
+	@Lob
+    private QuartzTriggerHandle quartzTriggerHandle;
 	
 	public Auction()
 	{
@@ -183,5 +186,12 @@ public class Auction implements Serializable
     public void setStartDate(Date startDate)
     {
         this.startDate = startDate;
+    }
+	
+	public QuartzTriggerHandle getQuartzTriggerHandle() {
+        return quartzTriggerHandle;
+    }
+    public void setQuartzTriggerHandle(QuartzTriggerHandle quartzTriggerHandle) {
+        this.quartzTriggerHandle = quartzTriggerHandle;
     }
 }
