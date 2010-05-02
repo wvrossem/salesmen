@@ -1,6 +1,7 @@
 package be.vub.salesmen.session;
 
 import be.vub.salesmen.entity.*;
+import org.hibernate.exception.ConstraintViolationException;
 import org.jboss.seam.ScopeType;
 import org.jboss.seam.annotations.*;
 import org.jboss.seam.annotations.datamodel.DataModel;
@@ -33,8 +34,6 @@ public class BasicSearchBean implements BasicSearch
 
 	private boolean nextPageAvailable;
 
-	private SearchTerm savedTerm;
-
 	@DataModel
 	private List entities;
 	private TreeNodeImpl<Category> categoryTree = null;
@@ -50,11 +49,13 @@ public class BasicSearchBean implements BasicSearch
 			queryEntities();
 			if (entities.size() != 0 && searchTerm.length() >= 3)
 			{
-				String q = "from SearchTerm s where s.term = #{searchTerm}";
-				List entLst = entityManager.createQuery(q).getResultList();
-				if (entLst.size() == 0)
+				String q = "FROM SearchTerm s WHERE s.term = #{searchTerm}";
+				System.out.println(q);
+				List entLst = entityManager.createQuery(q).getResultList();         
+
+				if (entLst.isEmpty())
 				{
-					savedTerm = new SearchTerm();
+					SearchTerm savedTerm = new SearchTerm();
 					savedTerm.setTerm(searchTerm);
 					entityManager.persist(savedTerm);
 				}
@@ -68,7 +69,7 @@ public class BasicSearchBean implements BasicSearch
 	public List suggest(Object begin)
 	{
 		System.out.println("ok");
-		String qry = "from SearchTerm s where s.term like #{pattern}";
+		String qry = "from SearchTerm s where s.term like #{termPattern}";
 		return entityManager.createQuery(qry).setMaxResults(10).getResultList();
 	}
 
