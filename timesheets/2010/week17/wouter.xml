@@ -1,0 +1,33 @@
+<?xml version='1.0'?>
+<timesheet xmlns="http://purl.org/net/timetrack">
+	<item duration="PT2H30M">
+		<desc>Workshop 28/4: 14h00-16h30</desc>
+	</item>
+	
+	<item duration="PT3H">
+		<desc>Updated the advanced search</desc>
+		<refs>
+			<ref>http://code.google.com/p/salesmen/source/detail?r=1328</ref>
+			<ref>Java all-in-one desk reference for Dummies, Doug Lowe (regular expressions and splitting string)</ref>
+			<ref>http://shrubbery.mynetgear.net/wiki/Select_lists_with_Seam</ref>
+		</refs>
+	</item>
+	
+	<item duration="PT35M">
+		<desc>Find solutions for bugs mistakes in basic search, one fixed</desc>
+		<refs>
+			<ref>http://code.google.com/p/salesmen/source/detail?r=1329</ref>
+		</refs>
+	</item>
+	
+	<item duration="PT1H">
+		<desc>Worked some more on transactions</desc>
+		<refs>
+			<ref>http://code.google.com/p/salesmen/source/detail?r=1330</ref>
+		</refs>
+	</item>
+	
+	<item duration="PT10M">
+		<desc>Administration and Communication.</desc>
+	</item>
+</timesheet>
