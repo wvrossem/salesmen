@@ -52,6 +52,12 @@
 					Title
 					<h:selectBooleanCheckbox value="#{advancedSearch.searchAuctionTitle}"
 											label="Title"/>
+                    <h:selectOneMenu value="#{advancedSearch.includeCategory}" required="true">
+                        <s:selectItems value="#{categoryList.resultList}" var="category"
+                                       label="#{category.name}" noSelectionLabel="Please Select..."/>
+                        <s:convertEntity />
+                    </h:selectOneMenu>
+
 				</fieldset>
 			</h:form>
 		</div>
