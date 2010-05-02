@@ -1,23 +1,25 @@
 package be.vub.salesmen.entity;
 
 import org.hibernate.validator.NotNull;
+import org.jboss.seam.annotations.Name;
 
 import javax.persistence.*;
 import java.io.Serializable;
 
 @Entity
+@Name("transaction")
 public class Transaction implements Serializable
 {
 	// Private Attributes
 	private Long id;
 	private Integer version;
 
-	private boolean isPayed;
-	private boolean isShipped;
+	private boolean isPayed = false;
+	private boolean isShipped = false;
 	private UserAccount buyer;
 	private UserAccount seller;
 	private Auction auction;
-	private int rating;
+	private int rating = 0;
 
 	// Public Attribute getters/setters with annotations
 	@Id
