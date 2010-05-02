@@ -1,0 +1,75 @@
+<!DOCTYPE composition PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+                xmlns:s="http://jboss.com/products/seam/taglib"
+                xmlns:ui="http://java.sun.com/jsf/facelets"
+                xmlns:f="http://java.sun.com/jsf/core"
+                xmlns:h="http://java.sun.com/jsf/html"
+                xmlns:rich="http://richfaces.org/rich" xmlns:a="http://richfaces.org/a4j"
+                template="layout/template.xhtml">
+
+    <ui:define name="body">
+
+        <rich:panel>
+            <f:facet name="header">Transaction</f:facet>
+
+            <h:outputText value="Seller: #{transaction.seller.username}"/><br/>
+
+            <h:outputText value="Buyer: #{transaction.buyer.username}"/><br/>
+
+            <h:outputText value="Payed?: #{transaction.payed}"/><br/>
+
+            <h:outputText value="Shipped?: #{transaction.shipped}"/><br/>
+
+            <h:column id="TitleColumn">
+                <f:facet name="header"><h:outputText value="#{messages['salesmen.Auction.Title']}"/></f:facet>
+                <s:link id="auctionLink"
+                        propagation="none"
+                        value="#{transaction.auction.title}"
+                        view="/auction.xhtml">
+                    <f:param name="auctionId" value="#{transaction.auction.id}"/>
+                </s:link>
+            </h:column>
+
+            <h:form id="commentForm">
+                <fieldset>
+                    <a:region id="commentRegion">
+                        Leave a message or comment below:
+                        <br/>
+                        <h:inputTextarea id="comment" value="#{manageTransaction.commentText}">
+                        </h:inputTextarea>
+                        <br/>
+                        <a:commandButton id="commentButton"
+                                         value="Send!"
+                                         action="#{manageTransaction.addComment(authenticatedUser)}"
+                                         rendered="true"/>
+                        <br/>
+                        <a:outputPanel id="commentHistory">
+                            <h:outputText id="NoCommentsMessage"
+                                          value="Not yet commented"
+                                          rendered="#{(manageTransaction.comments != null and manageTransaction.comments.size == 0) or manageTransaction.comments == null}"/>
+                            <h:dataTable id="comments"
+                                         value="#{manageTransaction.comments}" var="c"
+                                         rendered="#{manageTransaction.comments != null and manageTransaction.comments.size != 0}">
+                                <h:column id="ScreenNameColumn">
+                                    <f:facet name="header"><h:outputText value="User"/></f:facet>
+                                    #{c.user.username}
+                                </h:column>
+                                <h:column id="DateColumn">
+                                    <f:facet name="header"><h:outputText value="Date"/></f:facet>
+                                    #{c.date}
+                                </h:column>
+                                <h:column id="CommentColumn">
+                                    <f:facet name="header"><h:outputText value="Comment"/></f:facet>
+                                    #{c.content}
+                                </h:column>
+                            </h:dataTable>
+                        </a:outputPanel>
+                    </a:region>
+                </fieldset>
+            </h:form>
+
+        </rich:panel>
+
+    </ui:define>
+</ui:composition>

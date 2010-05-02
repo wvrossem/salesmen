@@ -21,6 +21,7 @@ public class UserComment implements Serializable
 	private Date date;
 	private UserAccount user;
 	private Auction auction;
+	private Transaction transaction;
 	
 	public UserComment()
 	{
@@ -112,5 +113,17 @@ public class UserComment implements Serializable
 	public void setAuction(Auction auction)
 	{
 		this.auction = auction;
+	}
+	
+	@ManyToOne
+	@JoinColumn(name = "TRANSACTION_ID")
+	public Transaction getTransaction()
+	{
+		return transaction;
+	}
+	
+	public void setTransaction(Transaction transaction)
+	{
+		this.transaction = transaction;
 	}
 }
