@@ -1,5 +1,6 @@
 package be.vub.salesmen.session;
 
+import be.vub.salesmen.entity.Category;
 import be.vub.salesmen.entity.User;
 import org.jboss.seam.ScopeType;
 import org.jboss.seam.annotations.Factory;
@@ -12,6 +13,7 @@ import javax.ejb.Stateful;
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 import java.util.concurrent.atomic.AtomicReference;
 
@@ -32,14 +34,19 @@ public class AdvancedSearchBean implements AdvancedSearch
 	boolean searchUser;
 	boolean searchOwner;
 	boolean searchBid;
+	boolean searchCategory;
 
 	String category;
 	String tags;
 	
 	User user = null;
 
-	int priceMin;
-	int priceMax;
+	int priceMin = 0;
+	int priceMax = 0;
+	int minNrOfBids = 0;
+	int maxNrOfBids = 0;
+
+	Category includeCategory;
 
 	private int pageSize = 10;
 	private int page;
@@ -47,12 +54,165 @@ public class AdvancedSearchBean implements AdvancedSearch
 	private boolean nextPageAvailable;
 
 	@DataModel
-	private List entities;
+	private List entities;	
+	
+	private void queryEntities()
+	{
 
+		StringBuilder qry = new StringBuilder();
+		boolean searchingElse = false;
+        String[] includeKeywords = getIncludeKeywords();
+        String[] excludeKeywords = getExcludeKeywords();
+
+		System.out.println(includeKeywords);
+		System.out.println(excludeKeywords);
+		
+		qry.append("from");
+		
+		if (searchAuctionTitle | searchAuctionDescription | searchOwner)
+		{
+			qry.append(" Auction a");
+		}
+		
+		qry.append(" where");
+
+		if (searchAuctionTitle)
+		{
+			boolean first = true;
+			for (String includeKeyword : includeKeywords)
+			{
+				if (first)
+				{
+					qry.append(" upper(a.title) like upper('%" + includeKeyword + "%')");
+					first = false;
+				} else
+				{
+					qry.append(" and upper(a.title) like upper('%" + includeKeyword + "%')");
+				}
+
+			}
+
+			for (String excludeKeyword : excludeKeywords)
+			{
+				qry.append(" and upper(a.title) not like upper('%" + excludeKeyword + "%')");
+
+			}
+			searchingElse = true;
+		}
+		
+		if (searchAuctionDescription)
+		{
+			if (searchingElse)
+			{
+				qry.append(" and");
+			}
+			boolean first = true;
+			for (String includeKeyword : includeKeywords)
+			{
+				if (first)
+				{
+					qry.append(" upper(a.description) like upper('%" + includeKeyword + "%')");
+					first = false;
+				} else
+				{
+					qry.append(" and upper(a.description) like upper('%" + includeKeyword + "%')");
+				}
+
+			}
+
+			for (String excludeKeyword : excludeKeywords)
+			{
+				qry.append(" and upper(a.description) not like upper('%" + excludeKeyword + "%')");
+
+			}
+			searchingElse = true;
+		}
+
+		if (priceMin > 0)
+		{
+			qry.append(" and a.startingprice <= " + priceMin);
+		}
+
+		if (searchCategory)
+		{
+			qry.append(" and a.category = " + includeCategory);
+		}
+		
+		if (searchOwner & user != null)
+		{
+			if (searchingElse)
+			{
+				qry.append(" and");
+			}
+			qry.append(" a.owner = " + user.getUserId());
+		}
+		
+		System.out.println(qry.toString());
+		
+		List results = entityManager.createQuery(qry.toString())
+			.setMaxResults(pageSize) //+1?
+			.setFirstResult( page * pageSize )
+			.getResultList();
+
+		nextPageAvailable = results.size() > pageSize;
+		if (nextPageAvailable)
+		{
+			entities = new ArrayList(results.subList(0, pageSize));
+		} else {
+			entities = results;
+		}
+	}
+
+	public void find()
+	{
+		page = 0;
+		queryEntities();
+	}
+	
+	public void auctionsOfUser(User user)
+	{
+		this.user = user;
+		this.searchOwner = true;
+		page = 0;
+		queryEntities();
+	}
+
+	public List auctionsOfUser(String userName)
+	{
+		return null;  //To change body of implemented methods use File | Settings | File Templates.
+	}
+
+    public String[] getIncludeKeywords() {
+        String regex = "[,;|\\s]";
+        return includeTerm.split(regex);
+    }
+
+    public String[] getExcludeKeywords() {
+        String regex = "[,;|\\s]";
+        return excludeTerm.split(regex);
+    }
+	
+	@Factory(value = "includePattern", scope = ScopeType.EVENT)
+	public String getSearchIncludePattern()
+	{
+		return includeTerm == null ? "%" : '%' + includeTerm.replace('*', '%') + '%';
+	}
+	
+	@Factory(value = "excludePattern", scope = ScopeType.EVENT)
+	public String getSearchExcludePattern()
+	{
+		return excludeTerm == null ? "%" : '%' + excludeTerm.replace('*', '%') + '%';
+	}
+
+	public void nextPage()
+	{
+		page++;
+		queryEntities();
+	}
 
 	public String getIncludeTerm()
 	{
-		return includeTerm;  
+		return includeTerm;
 	}
 
 	public void setIncludeTerm(String term)
@@ -100,6 +260,36 @@ public class AdvancedSearchBean implements AdvancedSearch
 		this.searchUser = searchUser;
 	}
 
+	public int getPriceMin()
+	{
+		return priceMin;
+	}
+
+	public void setPriceMin(int priceMin)
+	{
+		this.priceMin = priceMin;
+	}
+
+	public int getPriceMax()
+	{
+		return priceMax;
+	}
+
+	public void setPriceMax(int priceMax)
+	{
+		this.priceMax = priceMax;
+	}
+
+	public Category getIncludeCategory()
+	{
+		return includeCategory;
+	}
+
+	public void setIncludeCategory(Category includeCategory)
+	{
+		this.includeCategory = includeCategory;
+	}
+
 	public int getPageSize()
 	{
 		return pageSize;
@@ -108,101 +298,6 @@ public class AdvancedSearchBean implements AdvancedSearch
 	public void setPageSize(int pageSize)
 	{
 		this.pageSize = pageSize;
-	}
-	
-	private void queryEntities()
-	{
-
-		StringBuilder qry = new StringBuilder();
-		boolean searchingElse = false;
-		
-		qry.append("from");
-		
-		if (searchAuctionTitle | searchAuctionDescription | searchOwner)
-		{
-			qry.append(" Auction a");
-		}
-		
-		qry.append(" where");
-		
-		if (searchAuctionTitle)
-		{
-			qry.append(" upper(a.title) like upper(#{includePattern})");
-			qry.append(" and upper(a.title) not like upper(#{excludePattern})");
-			searchingElse = true;
-		}
-		
-		if (searchAuctionDescription)
-		{
-			if (searchingElse)
-			{
-				qry.append(" and");
-			}
-			qry.append(" upper(a.description) like upper(#includePattern)");
-			qry.append(" and upper(a.description) not like upper(#{excludePattern})");
-			searchingElse = true;
-		}
-		
-		if (searchOwner & user != null)
-		{
-			if (searchingElse)
-			{
-				qry.append(" and");
-			}
-			qry.append(" a.owner = " + user.getUserId());
-		}
-		
-		System.out.println(qry.toString());
-		
-		List results = entityManager.createQuery(qry.toString())
-			.setMaxResults(pageSize) //+1?
-			.setFirstResult( page * pageSize )
-			.getResultList();
-
-		nextPageAvailable = results.size() > pageSize;
-		if (nextPageAvailable)
-		{
-			entities = new ArrayList(results.subList(0, pageSize));
-		} else {
-			entities = results;
-		}
-	}
-
-	public void find()
-	{
-		page = 0;
-		queryEntities();
-	}
-	
-	public void auctionsOfUser(User user)
-	{
-		this.user = user;
-		this.searchOwner = true;
-		page = 0;
-		queryEntities();
-	}
-
-	public List auctionsOfUser(String userName)
-	{
-		return null;  //To change body of implemented methods use File | Settings | File Templates.
-	}
-	
-	@Factory(value = "includePattern", scope = ScopeType.EVENT)
-	public String getSearchIncludePattern()
-	{
-		return includeTerm == null ? "%" : '%' + includeTerm.replace('*', '%') + '%';
-	}
-	
-	@Factory(value = "excludePattern", scope = ScopeType.EVENT)
-	public String getSearchExcludePattern()
-	{
-		return excludeTerm == null ? "%" : '%' + excludeTerm.replace('*', '%') + '%';
-	}
-
-	public void nextPage()
-	{
-		page++;
-		queryEntities();
 	}
 
 	public boolean isNextPageAvailable()

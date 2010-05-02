@@ -1,5 +1,6 @@
 package be.vub.salesmen.session;
 
+import be.vub.salesmen.entity.Category;
 import be.vub.salesmen.entity.User;
 
 import javax.ejb.Local;
@@ -30,6 +31,14 @@ public interface AdvancedSearch {
 	public int getPageSize();
 
 	public void setPageSize(int pageSize);
+
+	public Category getIncludeCategory();
+
+	public void setIncludeCategory(Category includeCategory);
+
+	public int getPriceMin();
+
+	public void setPriceMin(int priceMin);
 
 	public void find();
 
