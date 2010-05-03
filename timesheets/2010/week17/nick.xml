@@ -1,0 +1,25 @@
+<?xml version='1.0'?>
+<timesheet xmlns="http://purl.org/net/timetrack">
+	
+	<item duration="PT20M">
+	  <desc>Checking and publishing timesheets of week16.</desc>
+	  <refs>
+		<ref>http://code.google.com/p/salesmen/source/detail?r=1316</ref>
+		<ref>http://code.google.com/p/salesmen/source/detail?r=1317</ref>
+		<ref>http://code.google.com/p/salesmen/source/detail?r=1318</ref>
+		<ref>http://code.google.com/p/salesmen/source/detail?r=1320</ref>
+		<ref>http://code.google.com/p/salesmen/source/detail?r=1321</ref>
+	  </refs>
+	</item>
+	
+   <item duration="1H">
+    <desc>Workshop 28/04 - 15h-16h.</desc>
+    <refs>
+    </refs>
+  </item>
+
+  <item duration="PT15M">
+    <desc>Administration and Communication.</desc>
+    <refs></refs>
+  </item>
+</timesheet>
