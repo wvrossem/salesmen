@@ -61,9 +61,7 @@
 		<u:style name="font-size" value="11px"/>
 	</u:selector>
 	<u:selector name=".rich-table-subheadercell">
-		<u:style name="background-image">
-			<f:resource f:key="org.richfaces.renderkit.images.TabGradientB"/>
-		</u:style>
+		<u:style name="background" value="#ffa412"/>
 	</u:selector>
 	<u:selector name=".rich-toolbar a:link, .rich-toolbar a:visited, .rich-toolbar a:active, .rich-toolbar a:hover">
 		<u:style name="color" skin="headerTextColor"/>

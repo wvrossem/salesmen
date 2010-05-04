@@ -5,6 +5,27 @@ html {
 body {
 	font-size: 12px;
 	margin: 0px;
+	color:#000000;
+}
+
+h1#header {
+	background: transparent url('../img/header.png') no-repeat top left;
+	height:200px;
+	padding:0px;
+	margin:0px;
+}
+
+h1#header span
+{
+	display:none;
+}
+
+.menuBar, .dr-toolbar-ext,.rich-toolbar {
+	background:none;
+	background-color: #ffa412;
+}
+.rich-separator {
+	background-color:#f00;
 }
 
 a img {
@@ -44,9 +65,13 @@ select {
 }
 
 .footer {
+	display:none;
 	text-align: center;
 	font-size: 11px;
 	margin-bottom: 10px;
+	background:none;
+	background-color:#333333;
+	color:#FFF;
 }
 
 .rich-table {
@@ -55,6 +80,7 @@ select {
 
 .body {
 	padding: 30px;
+	width: 796px;
 }
 .message {
 	padding: 5px;
