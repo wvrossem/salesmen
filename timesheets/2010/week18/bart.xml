@@ -12,10 +12,30 @@
 		</refs>
 	</item>
 	
-	<item duration="PT45M">
-		<desc>Webdesign - first changes to webdesign</desc>
+	<item duration="PT3H">
+		<desc>Webdesign - webdesign</desc>
 		<refs>
 			<ref>http://code.google.com/p/salesmen/source/detail?r=1339</ref>
+			<ref>http://code.google.com/p/salesmen/source/detail?r=1341</ref>
+			<ref>http://code.google.com/p/salesmen/source/detail?r=1342</ref>
+			<ref>http://code.google.com/p/salesmen/source/detail?r=1345</ref>
+		</refs>
+	</item>
+	
+	<item duration="PT30M">
+		<desc>Auction: expanded language support + finished previewAuction + altered layout</desc>
+		<refs>
+			<ref>http://code.google.com/p/salesmen/source/detail?r=1344</ref>
+			<ref>http://code.google.com/p/salesmen/source/detail?r=1345</ref>
+			<ref>http://code.google.com/p/salesmen/source/detail?r=1346</ref>
+		</refs>
+	</item>
+	
+	<item duration="PT15M">
+		<desc>Tracking bugs/Creating issues</desc>
+		<refs>
+			<ref>http://code.google.com/p/salesmen/issues/detail?id=43</ref>
+			<ref>http://code.google.com/p/salesmen/issues/detail?id=44</ref>
 		</refs>
 	</item>
 	
