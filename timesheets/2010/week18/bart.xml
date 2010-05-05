@@ -22,9 +22,10 @@
 		</refs>
 	</item>
 	
-	<item duration="PT30M">
+	<item duration="PT40M">
 		<desc>Auction: expanded language support + finished previewAuction + altered layout</desc>
 		<refs>
+			<ref>http://code.google.com/p/salesmen/source/detail?r=1343</ref>
 			<ref>http://code.google.com/p/salesmen/source/detail?r=1344</ref>
 			<ref>http://code.google.com/p/salesmen/source/detail?r=1345</ref>
 			<ref>http://code.google.com/p/salesmen/source/detail?r=1346</ref>
