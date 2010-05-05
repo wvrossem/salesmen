@@ -17,12 +17,13 @@ contentType="text/html">
 	<ui:insert name="head"/>
 </head>
 <body>
+<div ID="main_container">
 	<h1 ID="header"><span>Salesmen</span></h1>
 	<ui:include src="menu.xhtml">
 		<ui:param name="projectName" value="salesmen"/>
 	</ui:include>
 	<ui:include src="userDashboard.xhtml"/>
-	<div class="body">
+	<div id="content">
 		<h:messages id="messages" globalOnly="true" styleClass="message"
 			errorClass="errormsg" infoClass="infomsg" warnClass="warnmsg"
 			rendered="#{showGlobalMessages != 'false'}"/>
@@ -44,6 +45,7 @@ contentType="text/html">
 		</p>
 		</s:fragment>
 	</div>
+</div>
 </body>
 </html>
 </f:view>

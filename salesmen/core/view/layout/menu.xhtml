@@ -8,10 +8,10 @@
 	
 	styleClass="menuBar">
 	<rich:toolBarGroup location="left">
-		<f:facet name="itemSeparator"> 
-			<rich:separator width="2" height="14" /> 
+		<f:facet name="itemSeparator">
+			<rich:separator width="2" height="14" />
 		</f:facet>
-		
+
 		<s:link id="menuHomeId" view="/home.xhtml" value="Home" propagation="none"/>
 		<s:link view="/userRoleList.xhtml" value="#{messages['salesmen.UserRole.List']}" propagation="none"/>
 		<s:link view="/basicSearch.xhtml" value="#{messages['salesmen.BasicSearch.BasicSearch']}" propagation="none"/>
@@ -21,10 +21,10 @@
 	</rich:toolBarGroup>
 
 	<rich:toolBarGroup location="right">
-		<f:facet name="itemSeparator"> 
-			<rich:separator width="2" height="14" /> 
+		<f:facet name="itemSeparator">
+			<rich:separator width="2" height="14" />
 		</f:facet>
-		
+
 		<s:link id="menuSignUpId" view="/register.xhtml" value="#{messages['salesmen.General.Signup']}" rendered="#{not identity.loggedIn}" propagation="none"/>
 		<h:outputText id="menuWelcomeId" value="#{messages['salesmen.General.LoggedIn']}" rendered="#{identity.loggedIn}"/>
 		<s:link propagation="none"

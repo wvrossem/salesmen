@@ -8,16 +8,16 @@
 	rendered="#{identity.loggedIn}">
 
 	<rich:toolBarGroup>
-		<h:outputText value="#{messages['salesmen.UserDashboard.UserDashboard']}:"/>
-	</rich:toolBarGroup>
-	<s:link view="/userProfile.xhtml" value="#{messages['salesmen.UserDashboard.Profile']}" propagation="none">
-		<f:param name="userId"
-				value="#{authenticatedUser.user.userId}"/>
-	</s:link>
-	<s:link view="/userAccount.xhtml" value="#{messages['salesmen.UserDashboard.Account']}" propagation="none">
-		<f:param name="userAccountId"
-				value="#{authenticatedUser.accountId}"/>
-	</s:link>
-	<s:link view="/myAuctions.xhtml" value="#{messages['salesmen.UserDashboard.MyAuctions']}" propagation="none"/>
+        <f:facet name="itemSeparator">
+         <rich:separator width="2" height="14" />
+        </f:facet>
 
+        <s:link view="/userProfile.xhtml" value="#{messages['salesmen.UserDashboard.Profile']}" propagation="none">
+            <f:param name="userId" value="#{authenticatedUser.user.userId}"/>
+        </s:link>
+        <s:link view="/userAccount.xhtml" value="#{messages['salesmen.UserDashboard.Account']}" propagation="none">
+            <f:param name="userAccountId" value="#{authenticatedUser.accountId}"/>
+        </s:link>
+        <s:link view="/myAuctions.xhtml" value="#{messages['salesmen.UserDashboard.MyAuctions']}" propagation="none"/>
+    </rich:toolBarGroup>
 </rich:toolBar>
