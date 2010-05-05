@@ -1,12 +1,29 @@
 html {
+    margin:0px;
+    padding: 0px;
+    
 	overflow-y: scroll;
+    height:100%;
+    width:100%;
+
 }
 
 body {
+    background-color:#FFFFFF;
+    background-image: url(../img/body_background.gif);
+
 	font-size: 12px;
 	margin: 0px;
 	color:#000000;
+    height:auto;
+    min-width: 1000px;
+
 }
+
+* html #content {
+	height: auto;
+}
+
 
 h1#header {
 	background: transparent url('../img/header.png') no-repeat top left;
@@ -20,12 +37,33 @@ h1#header span
 	display:none;
 }
 
+DIV#main_container {
+	width:1050px;
+	margin: 0px auto 0px auto;
+	border:0px;
+	background:#ffffff;
+	height:100%;
+	min-height:900px;
+	margin-top:5px;
+	border: 1px solid #000;
+}
+
+div#content {
+	height: 100%;
+	margin:10px;
+	padding:10px;
+	width:1010px;
+}
+
+
+
 .menuBar, .dr-toolbar-ext,.rich-toolbar {
 	background:none;
 	background-color: #ffa412;
 }
-.rich-separator {
-	background-color:#f00;
+.rich-toolbar-separator,.rich-separator {
+    width:2px;
+    height:14px;
 }
 
 a img {
@@ -65,6 +103,16 @@ select {
 }
 
 .footer {
+    width:1050px;
+    margin: -2px auto 0px auto;
+    height:40px;
+    background:none;
+    background-color:#333333;
+    color:#FFFFFF;
+    text-align:center;
+    font-size: 11px;
+    
+    /*
 	display:none;
 	text-align: center;
 	font-size: 11px;
@@ -72,16 +120,17 @@ select {
 	background:none;
 	background-color:#333333;
 	color:#FFF;
+	*/
 }
 
 .rich-table {
 	width: 100%;
 }
-
+ /*
 .body {
 	padding: 30px;
 	width: 796px;
-}
+} */
 .message {
 	padding: 5px;
 	list-style: none;
@@ -237,6 +286,7 @@ border: 0;
 
 table.radio td {
 padding: 0 2px;
+color: #0f0;
 }
 
 table.radio input[type=radio] {

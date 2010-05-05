@@ -21,17 +21,14 @@
 		<u:style name="color" skin="controlTextColor"/>
 		<u:style name="background-position" value="left top"/>
 		<u:style name="background-repeat" value="repeat-x"/>
-		<u:style name="background-image">
-			<f:resource f:key="org.richfaces.renderkit.html.images.SliderFieldGradient"/>
-		</u:style>
+		<u:style name="background-color" value="#ccc"/>
+		<u:style name="border-color" value="#000"/>
 		<u:style name="border" value="1px solid"/>
-		<u:style name="border-color" skin="tableBorderColor" />
 	</u:selector>
 	<u:selector name="select">
 		<u:style name="background-color" value="transparent"/>
-		<u:style name="background-image">
-			<f:resource f:key="org.richfaces.renderkit.html.images.SliderFieldGradient"/>
-		</u:style>
+		<u:style name="background-color" value="#ccc"/>
+		<u:style name="border-color" value="#000"/>
 	</u:selector>
 	<u:selector name="option">
 		<u:style name="background-color" skin="generalBackgroundColor"/>
@@ -44,11 +41,9 @@
 	</u:selector>
 	<u:selector name="input[type=submit], input[type=button]">
 		<u:style name="padding" value="1px 4px"/>
-		<u:style name="background-image">
-			<f:resource f:key="org.richfaces.renderkit.html.GradientA"/>
-		</u:style>
 		<u:style name="border" value="1px solid"/>
-		<u:style name="border-color" skin="headerBackgroundColor"/>
+		<u:style name="background-color" value="#ccc"/>
+		<u:style name="border-color" value="#000"/>
 		<u:style name="color" skin="headerTextColor"/>
 		<u:style name="font-weight" value="bold"/>
 	</u:selector>
