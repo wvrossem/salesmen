@@ -54,8 +54,15 @@ div#content {
 	padding:10px;
 	width:1010px;
 }
-
-
+.rich-panel {
+    background:none !important;
+    border: 1px #ccc solid !important; 
+}
+.rich-panel-header {
+    background:none !important;
+    border: 1px #ccc solid;
+    background-color:#ccc !important;
+}
 
 .menuBar, .dr-toolbar-ext,.rich-toolbar {
 	background:none;
@@ -126,11 +133,12 @@ select {
 .rich-table {
 	width: 100%;
 }
- /*
+
 .body {
-	padding: 30px;
-	width: 796px;
-} */
+	padding: 10px;
+    border: 1px #ccc solid;
+}
+
 .message {
 	padding: 5px;
 	list-style: none;
