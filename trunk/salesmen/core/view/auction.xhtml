@@ -11,23 +11,49 @@
     <ui:define name="body">
         <rich:panel id="bidPanel">
             <f:facet name="header">Auction</f:facet>
-            <h:outputText value="Auction: #{viewAuction.auction.title}"/><br/>
-            <h:outputText value="Desciption: #{viewAuction.auction.description}"/><br/>
-            <h:outputText value="Starting price: #{viewAuction.auction.startingPrice}"/><br/>
-            <h:outputText value="Auction ends: #{viewAuction.auction.endDate}"/><br/>
-            <h:outputText id="highestBid"
-                    value="Highest bid: #{viewAuction.highestBid.amount} by #{viewAuction.highestBid.owner.username}"
-                    rendered="#{viewAuction.highestBid.amount!=0}"
-                    /><br/>
+            <fieldset class="auction">
+                <legend>#{messages['salesmen.Auction.create.step3.title']}</legend>
+                <h:outputFormat value="#{viewAuction.auction.title}"/>
+            </fieldset>
 
-            <ui:repeat value="#{viewAuction.images}" var="img">
-                <s:graphicImage value="#{img.data}">
-                    <s:transformImageSize width="200" maintainRatio="true"/>
-                </s:graphicImage>
-            </ui:repeat>
+            <fieldset class="auction">
+                <legend>#{messages['salesmen.Auction.create.step3.desc.long']}</legend>
+                <h:outputFormat value="#{viewAuction.auction.description}" style="white-space: pre;"/>
+            </fieldset>
+
+            <fieldset class="auction">
+                <legend>#{messages['salesmen.Auction.create.step3.startingPrice']}</legend>
+                <h:outputFormat value="#{viewAuction.auction.startingPrice}"/>
+            </fieldset>
+
+            <fieldset class="auction">
+                <legend>#{messages['salesmen.Auction.create.step3.endDate']}</legend>
+                <h:outputFormat value="#{viewAuction.auction.endDate}"/>
+            </fieldset>
+
+
+            <fieldset class="auction">
+                <legend>#{messages['salesmen.Auction.highestBid']}</legend>
+                <h:outputText id="highestBid1"
+                    value="#{viewAuction.highestBid.amount} EUR #{messages['salesmen.General.by']} #{viewAuction.highestBid.owner.username}"
+                    rendered="#{viewAuction.highestBid.amount!=0}"/>
+                <h:outputText id="highestBid2"
+                    value="Highest bid: no bids yet"
+                    rendered="#{viewAuction.highestBid.amount==0}"/>
+            </fieldset>
+
+            <fieldset class="auction">
+                <legend>#{messages['salesmen.Auction.pictures']}</legend>
+                <ui:repeat value="#{viewAuction.images}" var="img">
+                    <s:graphicImage value="#{img.data}">
+                        <s:transformImageSize width="200" maintainRatio="true"/>
+                    </s:graphicImage>
+                </ui:repeat>
+            </fieldset>
 
             <h:form id="bidForm">
-			<fieldset>
+			<fieldset class="auction">
+            <legend>#{messages['salesmen.Auction.bid']}</legend>
             <a:region id="bidRegion">
                 <h:inputText id="bidAmount" value="#{viewAuction.bidAmount}" style="width: 65px;"/>
                 <a:commandButton id="bidButton"
@@ -56,20 +82,20 @@
 
                 <a:outputPanel id="bidHistory">
                     <h:outputText id="NoBidsFoundMessage"
-                        value="No bids placed yet"
+                        value="#{messages['salesmen.Auction.noBids']}"
                         rendered="#{(viewAuction.bids != null and viewAuction.bids.size==0) or viewAuction.bids==null}"/>
                     <h:dataTable id="bids" value="#{viewAuction.bids}" var="b"
                         rendered="#{viewAuction.bids != null and viewAuction.bids.size!=0}">
                     <h:column id="ScreenNameColumn">
-                        <f:facet name="header"><h:outputText value="User"/></f:facet>
+                        <f:facet name="header"><h:outputText value="#{messages['salesmen.Auction.bids.user']}"/></f:facet>
                         #{b.owner.username}
                     </h:column>
                     <h:column id="AmountColumn">
-                        <f:facet name="header"><h:outputText value="Amount"/></f:facet>
+                        <f:facet name="header"><h:outputText value="#{messages['salesmen.Auction.bids.amount']}"/></f:facet>
                         #{b.amount}
                     </h:column>
                     <h:column id="DateColumn">
-                        <f:facet name="header"><h:outputText value="Date"/></f:facet>
+                        <f:facet name="header"><h:outputText value="#{messages['salesmen.Auction.bids.time']}"/></f:facet>
                         #{b.date}
                     </h:column>
                     </h:dataTable>
@@ -79,9 +105,10 @@
             </h:form>
             
             <h:form id="commentForm">
-			<fieldset>
+			<fieldset class="auction">
+            <legend>#{messages['salesmen.Auction.leaveMessage']}</legend>
             <a:region id="commentRegion">
-				Leave a message or comment below:
+
 				<br/>
                 <h:inputTextarea id="comment" value="#{viewAuction.commentText}">
                 </h:inputTextarea>
@@ -94,7 +121,7 @@
                 <br/>
                 <a:outputPanel id="commentHistory">
                     <h:outputText id="NoCommentsMessage"
-                        value="Not yet commented"
+                        value="#{messages['salesmen.Auction.noComments']}"
                         rendered="#{(viewAuction.comments != null and viewAuction.comments.size == 0) or viewAuction.comments == null}"/>
                     <h:dataTable id="comments"
                     	value="#{viewAuction.comments}" var="c"

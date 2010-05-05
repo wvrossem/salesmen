@@ -10,23 +10,45 @@
 	
 	
 <ui:define name="body"> 
-	This page displays a preview of auction...
-
 	<h:form id="auctionForm">
 
 		<rich:panel>
-			<f:facet name="header">auction</f:facet>
+            <f:facet name="header"><h:outputText value="#{messages['salesmen.Auction.create.step3']}"/></f:facet>
+            <fieldset class="auction">
+                <legend>#{messages['salesmen.Auction.create.step3.title']}</legend>
+                <h:outputFormat value="#{manageAuction.auction.title}"/>
+            </fieldset>
 
-				<s:validateAll>
+            <fieldset class="auction">
+                <legend>#{messages['salesmen.Auction.create.step3.desc.long']}</legend>
+                <h:outputFormat value="#{manageAuction.auction.description}" style="white-space: pre;"/>
+            </fieldset>
 
-				</s:validateAll>
+            <fieldset class="auction">
+                <legend>#{messages['salesmen.Auction.create.step3.startingPrice']}</legend>
+                <h:outputFormat value="#{manageAuction.auction.startingPrice}"/>
+            </fieldset>
+
+            <fieldset class="auction">
+                <legend>#{messages['salesmen.Auction.create.step3.endDate']}</legend>
+                <h:outputFormat value="#{manageAuction.auction.endDate}"/>
+            </fieldset>
+
 
 			<div style="clear:both"/>
+            <fieldset class="auction">
+                <legend>#{messages['salesmen.Auction.create.step3.pictures']}</legend>
+                <ui:repeat value="#{manageAuction.images}" var="img">
+                    <s:graphicImage value="#{img.data}">
+                    <s:transformImageSize width="200" maintainRatio="true"/>
+                    </s:graphicImage>
+                </ui:repeat>
+            </fieldset>
 		</rich:panel>
 
 		<div class="actionButtons">
-			<h:commandButton id="previous" value="Previous" action="previous"/>
-			<h:commandButton id="confirm" value="Confirm" action="#{manageAuction.confirm}"/>
+			<h:commandButton id="previous" value="#{messages['salesmen.General.Previous']}" action="previous"/>
+			<h:commandButton id="confirm" value="#{messages['salesmen.General.Confirm']}" action="#{manageAuction.confirm}"/>
 		</div>
 
 	</h:form>

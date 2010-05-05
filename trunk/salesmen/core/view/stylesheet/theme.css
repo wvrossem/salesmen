@@ -48,6 +48,10 @@ DIV#main_container {
 	border: 1px solid #000;
 }
 
+fieldset.auction{
+    width:400px;
+    margin-left:20px;    
+}
 div#content {
 	height: 100%;
 	margin:10px;
