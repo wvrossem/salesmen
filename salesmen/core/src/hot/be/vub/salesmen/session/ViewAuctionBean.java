@@ -113,7 +113,6 @@ public class ViewAuctionBean implements ViewAuction   , Serializable
 	{
         if(this.bidAmount==0)
         {
-            System.out.println("viewAuction.bid(): amount is zero, ignoring bid.");
             facesMessages.addToControl("bidRegion", FacesMessage.SEVERITY_ERROR, "Bid amount can't be zero");
             return;
         }
@@ -124,7 +123,6 @@ public class ViewAuctionBean implements ViewAuction   , Serializable
             //check if amount is high enough
             if(highestBid.getAmount()>=this.bidAmount || this.auction.getStartingPrice()>this.bidAmount)
             {
-                 System.out.println("viewAuction.bid(): Bid inadequate");
                  facesMessages.addToControl("bidRegion", FacesMessage.SEVERITY_ERROR, "Bid amount too low");
             }
             else

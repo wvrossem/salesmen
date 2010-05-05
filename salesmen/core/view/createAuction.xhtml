@@ -13,9 +13,10 @@
 
 	<h:form id="auctionForm">
 		<rich:panel>
+            <f:facet name="header"><h:outputText value="#{messages['salesmen.Auction.create.step1']}"/></f:facet>
 			<s:validateAll>
                <h:panelGrid columns="3" rowClasses="prop" columnClasses="description,value,message">
-                    <h:outputLabel for="title">Enter a short description of the item you wish to sell</h:outputLabel>
+                    <h:outputLabel for="title">#{messages['salesmen.Auction.create.description.short']}</h:outputLabel>
                     <a:region id="titleRegion">
                         <h:inputText id="title" required="true" value="#{manageAuction.auction.title}">
                         </h:inputText>
@@ -34,7 +35,7 @@
                     </a:outputPanel>
 
 
-                   <h:outputLabel for="price">Please enter the starting price for your auction (EUR)</h:outputLabel>
+                   <h:outputLabel for="price">#{messages['salesmen.Auction.create.startingPrice']}</h:outputLabel>
                     <a:region id="priceRegion">
                         <h:inputText id="price" value="#{manageAuction.auction.startingPrice}" required="true">
                         <f:convertNumber minFractionDigits="2" maxFractionDigits="2" minIntegerDigits="1"/>
@@ -59,7 +60,7 @@
                     </a:outputPanel>
 
 
-					<h:outputLabel for="description">Please enter a description for the item you are trying to sell.</h:outputLabel>
+					<h:outputLabel for="description">#{messages['salesmen.Auction.create.description.long']}</h:outputLabel>
                     <a:region id="descriptionRegion">
 					    <h:inputTextarea id="description" value="#{manageAuction.auction.description}" styleClass="description"/>
                     </a:region>
@@ -94,7 +95,7 @@
                         </rich:message>
                     </a:outputPanel>
 
-                    <h:outputLabel for="category">Please select a category for the item</h:outputLabel>
+                    <h:outputLabel for="category">#{messages['salesmen.auction.create.selectCategory']}</h:outputLabel>
                     <a:region id="categoryRegion">
                         <rich:tree id="category" value="#{basicSearch.categoryTree}" var="cat" switchType="client">
                             <rich:treeNode>
@@ -121,7 +122,7 @@
 			</s:validateAll>
 
             <div class="actionButtons">
-                <h:commandButton id="submit" value="Add auction" action="#{manageAuction.checkInput}"/>
+                <h:commandButton id="submit" value="#{messages['salesmen.General.Next']}" action="#{manageAuction.checkInput}"/>
             </div>
         </rich:panel>
     </h:form>

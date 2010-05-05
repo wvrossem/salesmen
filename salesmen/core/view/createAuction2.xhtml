@@ -13,6 +13,7 @@
 
 	<h:form enctype="multipart/form-data">
         <rich:panel>
+            <f:facet name="header"><h:outputText value="#{messages['salesmen.Auction.create.step2']}"/></f:facet>
             <h:panelGrid columns="3" rowClasses="prop" columnClasses="description,value,message">
                 <h:outputLabel for="image">Select an image to upload</h:outputLabel>
                 <a:region id="imageRegion">
@@ -34,8 +35,8 @@
             </h:panelGrid>
 
             <div class="actionButtons">
-                <h:commandButton  id="previous" value="Previous" action="previous"/>
-                <h:commandButton  id="next" value="Next" action="#{manageAuction.save(authenticatedUser)}"/>
+                <h:commandButton  id="previous" value="#{messages['salesmen.General.Previous']}" action="previous"/>
+                <h:commandButton  id="next" value="#{messages['salesmen.General.Next']}" action="#{manageAuction.save(authenticatedUser)}"/>
             </div>
         </rich:panel>
     </h:form>
