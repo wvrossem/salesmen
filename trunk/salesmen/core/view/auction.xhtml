@@ -38,7 +38,7 @@
                     value="#{viewAuction.highestBid.amount} EUR #{messages['salesmen.General.by']} #{viewAuction.highestBid.owner.username}"
                     rendered="#{viewAuction.highestBid.amount!=0}"/>
                 <h:outputText id="highestBid2"
-                    value="Highest bid: no bids yet"
+                    value="#{messages['salesmen.Auction.noBids']}"
                     rendered="#{viewAuction.highestBid.amount==0}"/>
             </fieldset>
 
