@@ -40,7 +40,14 @@
 		</refs>
 	</item>
 	
-	<item duration="PT10M">
+	<item duration="PT50M">
+		<desc>SDD v0.3.3</desc>
+		<refs>
+			<ref>http://code.google.com/p/salesmen/source/detail?r=1349</ref>
+		</refs>
+	</item>
+	
+	<item duration="PT15M">
 		<desc>Administration and Communication.</desc>
 	</item>
 			
