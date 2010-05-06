@@ -27,7 +27,13 @@
     </packages>
 
     <releases rdf:parseType="Collection">
-<Release rdf:about="http://wilma.vub.ac.be/~se2_0910/docs/srs/archive/v0_3/">
+	    <Release rdf:about="http://wilma.vub.ac.be/~se2_0910/docs/srs/archive/v0_4/">
+  <package rdf:resource="http://wilma.vub.ac.be/~se2_0910/docs/srs/"/>
+  <revision>0.4</revision>
+  <created>2010-05-06</created>
+</Release>
+
+	    <Release rdf:about="http://wilma.vub.ac.be/~se2_0910/docs/srs/archive/v0_3/">
   <package rdf:resource="http://wilma.vub.ac.be/~se2_0910/docs/srs/"/>
   <revision>0.3</revision>
   <created>2009-12-14</created>
@@ -97,6 +103,36 @@
   <link>http://wilma.vub.ac.be/~se2_0910/docs/srs/archive/v0_3/srs-v0_3-src.zip</link>
   <format>application/zip</format>
 </File>
+
+<!-- *********************************************************************
+     SRS v0.4
+     ********************************************************************* -->
+<File rdf:about="http://wilma.vub.ac.be/~se2_0910/docs/srs/archive/v0_4/srs-v0_4.pdf">
+  <release rdf:resource="http://wilma.vub.ac.be/~se2_0910/docs/srs/archive/v0_4/"/>
+  <basename>srs-v0_4</basename>
+  <extension>.pdf</extension>
+  <language>en</language>
+  <size rdf:parseType="Resource">
+    <unit rdf:resource="http://purl.org/urfm/Kilobyte"/>
+    <rdf:value>315</rdf:value>
+  </size> 
+  <link>http://wilma.vub.ac.be/~se2_0910/docs/srs/archive/v0_4/srs-v0_4.pdf</link>
+  <format>application/pdf</format>
+</File>
+
+<File rdf:about="http://wilma.vub.ac.be/~se2_0910/docs/srs/archive/v0_4/srs-v0_4-src.zip">
+  <release rdf:resource="http://wilma.vub.ac.be/~se2_0910/docs/srs/archive/v0_4/"/>
+  <basename>srs-v0_4-src</basename>
+  <extension>.zip</extension>
+  <language>en</language>
+  <size rdf:parseType="Resource">
+    <unit rdf:resource="http://purl.org/urfm/Kilobyte"/>
+    <rdf:value>80</rdf:value>
+  </size> 
+  <link>http://wilma.vub.ac.be/~se2_0910/docs/srs/archive/v0_4/srs-v0_4-src.zip</link>
+  <format>application/zip</format>
+</File>
+
 
     </files>
   </Channel>
