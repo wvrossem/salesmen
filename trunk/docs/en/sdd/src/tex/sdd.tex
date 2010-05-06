@@ -55,7 +55,7 @@ Three-tier architecture has the following three tiers:
 \item \textbf{Presentation tier}
 This is the topmost level of the application. The presentation tier displays information related to such services as browsing merchandise, purchasing, and shopping cart contents. It communicates with other tiers by outputting results to the browser/client tier and all other tiers in the network.
 \item \textbf{Application tier (Business Logic/Logic Tier)}
-The logic tier is pulled out from the presentation tier and, as its own layer, it controls an application\'s functionality by performing detailed processing.
+The logic tier is pulled out from the presentation tier and, as its own layer, it controls an application´s functionality by performing detailed processing.
 \item \textbf{Data tier}
 This tier consists of Database Servers. Here information is stored and retrieved. This tier keeps data neutral and independent from application servers or business logic. Giving data its own tier also improves scalability and performance. 
 \end{itemize}
@@ -65,7 +65,7 @@ Benefits of using this architectural style include increased performance, flexib
 \textbf{MVC}
 At first glance, the three tiers may seem similar to the MVC (Model View Controller) concept. However, topologically they are different. A fundamental rule in a three-tier architecture is the client tier never communicates directly with the data tier; in a three-tier model all communication must pass through the middleware tier. Conceptually the three-tier architecture is linear. However, the MVC architecture is triangular: the View sends updates to the Controller, the Controller updates the Model, and the View gets updated directly from the Model.
 
-From a historical perspective the three-tier architecture concept emerged in the 1990\'s from observations of distributed systems (e.g., web applications) where the client, middleware and data tiers ran on physically separate platforms. Whereas MVC comes from the previous decade and is based on observations of applications that ran on a single graphical workstation; MVC was applied to distributed applications much later in its history.
+From a historical perspective the three-tier architecture concept emerged in the 1990´s from observations of distributed systems (e.g., web applications) where the client, middleware and data tiers ran on physically separate platforms. Whereas MVC comes from the previous decade and is based on observations of applications that ran on a single graphical workstation; MVC was applied to distributed applications much later in its history.
 
 
 \section{Survey of Technologies Used}
@@ -89,7 +89,7 @@ As part of the JBoss software, the Apache Tomcat servlet container will allow us
 JBoss Seam allows us to implement the required Java Beans and Seam Entities in a fast and easy way, ensuring security and reliability.
 
 \paragraph{Data Layer}
-Two database platforms were considered: MySQL and PostgresSQL. After thourough investigation, it was decided to go with PostgreSQL. As documented in the Software Configuration Management Plan (SCMP, \cite{SCMP}), a thorough comparison was made between these two RDBM systems.\\
+Two database platforms were considered: MySQL and PostgresSQL. After thorough investigation, it was decided to go with PostgreSQL. As documented in the Software Configuration Management Plan (SCMP, \cite{SCMP}), a thorough comparison was made between these two RDBM systems.\\
 However, as one will discover by reading this document, this decision became less important as Seam provides a vast amount of database-related annotations, allowing to move away from a RDBMS-specific implementation. As a framework, Seam creates the described database and will also handle all select, update, insert and delete operations. With the help of these annotations, (primary) keys, default values, allowed values, relationships between tables, and more, can be obtained in a declarative manner. A more complete description of these annotations and their use can be found in section \ref{sec_annotations}\\
 Although Seam omits the need for basic select, insert and update SQL statements, it remains possible to communicate directly with the database by means of the Hibernate Query Language, HQL, which is also extended by Seam to support Seam\'s components and reflective evaluation.
 
@@ -137,7 +137,7 @@ Prototypes of the web-interface can be found in Appendix C.
 
 \chapter{Technical Design \label{Technical Design}}
 \section{Presentation layer}
-The presentation merely consists of static XHTML files that contain calls to Seam Components to obtain dynamicly changing information. These XHTML files will use CSS to separate the static information from the actual presentation of the website. Seam uses AJAX technology, provided by RichFaces, to offer the user with a friendly and smooth interface. As discussed before, Seam Components allow easy access of information stored in JAVA objects.\\
+The presentation merely consists of static XHTML files that contain calls to Seam Components to obtain dynamically changing information. These XHTML files will use CSS to separate the static information from the actual presentation of the website. Seam uses AJAX technology, provided by RichFaces, to offer the user with a friendly and smooth interface. As discussed before, Seam Components allow easy access of information stored in JAVA objects.\\
 Another feature of the Seam framework is built-in support of so-called language files, providing the developers an easy way to implement multiple languages.\\
 
 This facilitates the following goals:
@@ -177,7 +177,7 @@ For a complete list of these requirements, the reader is kindly referred to the 
 \chapter{User Interface Design \label{UI Design}}
 \section{Web pages tree}
 \subsection{Overview}
-The User Interface files will be stored in the \'/view\' folder. Although most services will be accessible or usable within 1 page, some, usually larger, services, such as \'creating an auction\', are divided over several view-files. This is done for several reasons:
+The User Interface files will be stored in the \textit{view} folder. Although most services will be accessible or usable within 1 page, some, usually larger, services, such as \textit{creating an auction}, are divided over several view-files. This is done for several reasons:
 \begin{itemize}
 \item Users of the system will not be overwhelmed by bombastic web-forms, possibly scaring them away from the site.
 \item The website can be considered more user-friendly, as a user will need to scroll fewer times down a web-page.
@@ -186,7 +186,42 @@ The User Interface files will be stored in the \'/view\' folder. Although most s
 
 \subsection{Page Description}
 The following table provides an overview of the available view files and their purpose.
-(TODO)
+\begin{tabular}{Pagename Description}
+home.xhtml 						& The homepage. \\ 
+auction.xhtml 					& Displays an auction. \\ 
+auctionList.xhtml 				& A list of auctions. \\ 
+register.xhtml 					& First page of the register process. \\ 
+register2.xhtml					& Second page of the register process. \\ 
+register3.xhtml 				& Third page of the register process. \\ 
+basicSearch.xhtml 				& The interface for the basic search. \\ 
+advancedSearch.xhtml 			& The interface for the advanced search. \\ 
+userAccountManagement.xhtml		& Interface for users to change their account settings. \\ 
+myAuctions.xhtml 				& Displays the auctions owned by \textit{this} user \\ 
+createAuction.xhtml 			& First page (step 1) of the auction-creation process. \\ 
+createAuction2.xhtml 			& Second page (step 2) of the auction-creation process. \\ 
+previewAuction.xhtml 			& During the auction-creation process, this page displays a preview of the new auction (step 3). \\ 
+userProfile.xhtml				& Displays user profile information. \\ 
+userProfileManagement.xhtml		& Allows for updating account information. \\ 
+login.xhtml 					& Login form. \\ 
+forgotpassword.xhtml 			& Page where a user can request a password reset. \\ 
+error.xhtml 					& General error page. \\ 
+activateAccount.xhtml 			& Displays a message informing account activation succeeded or failed. \\ 
+confirmAccountEmail.xhtml 		& Body of the account activation/confirmation email. \\ 
+accountBanned.xhtml 			& Displays a message to inform the used account was banned. \\ 
+activateAccountEmail.xhtml 		& The (xhtml) body of the account activation mail. \\ 
+passwordEmail.xhtml 			& Body of the new password (after reset) email. \\
+requestPaymentEmail.xhtml 		& Body of the email requesting payment (after an auction finished). \\ 
+\end{tabular}
+
+Note that the view of our project also contains the following folders.
+\begin{tabular}{Foldername Description}
+layout 							& Contains several pieces of the website that are included on (almost) every page. \\ 
+img 							& Contains the images used throughout the website (NOT the auction-pictures). \\ 
+stylesheet 						& Contains several (X)CSS-files. \\
+\end{tabular}
+
+Moreover, thanks to Seam, the view can be controlled (as in: how can one page lead to another, etc) using special but relatively simple xml files.
+The decision as the where and how to use these files are left to the discretion of the programmers.
 
 
 \section{User Interface}
