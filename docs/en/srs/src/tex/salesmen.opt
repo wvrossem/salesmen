@@ -19,6 +19,9 @@
 \vhEntry{v0.2.2}{14-12-2009}{W. Van Rossem}{Expanded some of the use cases}
 \vhEntry{v0.3.0}{14-12-2009}{W. Van Rossem}{Updated after quality assurance}
 \vhEntry{v0.3.1}{21-12-2009}{P. Provinciael}{Made the document consistent with the other documents}
+\vhEntry{v0.3.2}{16-04-2010}{W. Van Rossem}{Added progress of requirements after phase 1 to the summary table}
+\vhEntry{v0.3.2}{18-04-2010}{W. Van Rossem}{Some minor changes to requirements 3,7,11,15,40,41. New requirement 59}
+\vhEntry{v0.4.0}{06-05-2010}{W. Van Rossem}{New version of document after quality assurance}
 \end{versionhistory}
 }
-\setrevisioncurr{21-12-2009}
+\setrevisioncurr{06-05-2010}
