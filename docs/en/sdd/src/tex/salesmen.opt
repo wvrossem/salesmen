@@ -18,9 +18,9 @@
 \vhEntry{v0.1.2}{29-11-2009}{B. Maes}{Added Appendix B, initial QA check}
 \vhEntry{v0.1.3}{14-12-2009}{B. Maes}{JBoss Seam Integration}
 \vhEntry{v0.2}{21-12-2009}{P. Provinciael}{Made the document consistent with the other documents}
-\vhEntry{v0.3.1}{06-04-2010}{B. Maes}{Update document before second iteration}
-\vhEntry{v0.3.2}{11-04-2010}{B. Maes}{Reread document, made some final changes}
-\vhEntry{v0.3.3}{06-05-2010}{B. Maes}{Added page descriptions (view), fixed various type- and spellingerrors.}
+\vhEntry{v0.2.1}{06-04-2010}{B. Maes}{Update document before second iteration}
+\vhEntry{v0.2.2}{11-04-2010}{B. Maes}{Reread document, made some final changes}
+\vhEntry{v0.3.0}{06-05-2010}{B. Maes}{Added page descriptions (view), fixed various type- and spellingerrors.}
 \end{versionhistory}
 }
-\setrevisioncurr{11-04-2010}
+\setrevisioncurr{06-05-2010}
