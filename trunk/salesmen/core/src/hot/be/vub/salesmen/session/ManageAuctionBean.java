@@ -7,6 +7,7 @@ import be.vub.salesmen.entity.UserAccount;
 import org.jboss.seam.annotations.*;
 import org.jboss.seam.faces.FacesMessages;
 import org.jboss.seam.international.StatusMessages;
+import org.jboss.seam.async.QuartzTriggerHandle;
 import org.richfaces.component.UITree;
 import org.richfaces.component.html.HtmlTree;
 import org.richfaces.event.NodeSelectedEvent;
@@ -47,6 +48,7 @@ public class ManageAuctionBean implements ManageAuction, Serializable
 	@In EntityManager entityManager;
     @In FacesMessages facesMessages;
 	@In StatusMessages statusMessages;
+	@In AuctionProcessor processor;
 
     public ManageAuctionBean()
     {
@@ -134,13 +136,14 @@ public class ManageAuctionBean implements ManageAuction, Serializable
         return true;
 	}
 
-	public void save(UserAccount user)
-	{
+	public void saveAndSchedule(UserAccount user)
+    {
 		this.auction.setOwner(user);
-
-		//this.auction.setStatus(Auction.AuctionStatus.UNLISTED);
-		//entityManager.persist(this.auction);
-	}
+        
+        QuartzTriggerHandle handle =
+			processor.scheduleAuction(auction.getEndDate(), null, auction.getEndDate(), auction);        
+        auction.setQuartzTriggerHandle(handle);
+    }
 
 	@End
 	public void confirm()
