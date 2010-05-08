@@ -2,7 +2,6 @@ package be.vub.salesmen.session;
 
 import be.vub.salesmen.entity.UserAccount;
 import be.vub.salesmen.entity.Category;
-import org.richfaces.event.NodeSelectedEvent;
 
 import javax.ejb.Local;
 
@@ -12,7 +11,7 @@ public interface ManageAuction
 	public void createAuction();
 	public boolean checkInput();
 	public void confirm();
-	public void save(UserAccount user);
+	public void saveAndSchedule(UserAccount user);
     public boolean verifyPrice();
     public boolean verifyEndDate();
 
