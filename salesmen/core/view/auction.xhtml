@@ -60,7 +60,7 @@
                                  value="Bid!"
                                  action="#{viewAuction.bid(authenticatedUser)}"
                                  reRender="bidPanel"
-                                 rendered="#{identity.loggedIn}"/>
+                                 rendered="#{identity.loggedIn and viewauction.auction.status != Auction.FINISHED}"/>
                 <rich:message for="bidRegion">
                     <f:facet name="errorMarker">
                         <h:graphicImage url="/img/msgerror.png"/>
@@ -117,7 +117,7 @@
                                  value="Send!"
                                  action="#{viewAuction.addComment(authenticatedUser)}"
                                  reRender="bidPanel"
-                                 rendered="#{identity.loggedIn}"/>
+                                 rendered="#{identity.loggedIn and viewauction.auction.status != Auction.FINISHED}"/>
                 <br/>
                 <a:outputPanel id="commentHistory">
                     <h:outputText id="NoCommentsMessage"
