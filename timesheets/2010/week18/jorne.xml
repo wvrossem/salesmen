@@ -8,7 +8,16 @@
 		</refs>
 	</item>
 	
-	<item duration="PT0H5M">
+	<item duration="PT2H30M">
+		<desc>Researched ways to generate clean urls with Seam.</desc>
+		<refs>
+			<ref>http://java.dzone.com/tips/clean-urls-seam-urlrewritefilt</ref>
+			<ref>http://seamframework.org/Documentation/RemovingJSESSIONIDFromYourURLsAndFixingScache</ref>
+			<ref>http://seamframework.org/Community/RemovingIndexseamFromTheUrl</ref>
+		</refs>
+	</item>
+	
+	<item duration="PT0H15M">
 		<desc>Administration and Communication.</desc>
 	</item>
 </timesheet>
