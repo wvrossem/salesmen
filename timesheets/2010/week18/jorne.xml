@@ -1,0 +1,14 @@
+<?xml version='1.0'?>
+<timesheet xmlns="http://purl.org/net/timetrack">
+	<item duration="PT2H30M">
+		<desc>Finished and tested auction scheduler.</desc>
+		<refs>
+			<ref>http://code.google.com/p/salesmen/source/detail?r=1360</ref>
+			<ref>http://code.google.com/p/salesmen/source/detail?r=1361</ref>
+		</refs>
+	</item>
+	
+	<item duration="PT0H5M">
+		<desc>Administration and Communication.</desc>
+	</item>
+</timesheet>
