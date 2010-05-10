@@ -1,0 +1,27 @@
+<?xml version='1.0'?>
+<timesheet xmlns="http://purl.org/net/timetrack">
+	
+	<item duration="PT15M">
+		<desc>Correcting and publishing timesheets of week 17.</desc>
+		<refs>
+			<ref>http://code.google.com/p/salesmen/source/detail?r=1333</ref>
+			<ref>http://code.google.com/p/salesmen/source/detail?r=1334</ref>
+			<ref>http://code.google.com/p/salesmen/source/detail?r=1335</ref>
+			<ref>http://code.google.com/p/salesmen/source/detail?r=1336</ref>
+			<ref>http://code.google.com/p/salesmen/source/detail?r=1366</ref>
+		</refs>
+	</item>
+	
+	<item duration="PT30M">
+		<desc>Wrote highlights report of April.</desc>
+		<refs>
+			<ref>http://code.google.com/p/salesmen/source/detail?r=1353</ref>
+			<ref>http://code.google.com/p/salesmen/source/detail?r=1352</ref>
+		</refs>
+	</item>
+	
+	<item duration="PT15M">
+		<desc>Administration and Communication.</desc>
+	</item>
+	
+</timesheet>
