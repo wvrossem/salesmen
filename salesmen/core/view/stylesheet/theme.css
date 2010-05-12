@@ -17,6 +17,7 @@ body {
 	color:#000000;
     height:auto;
     min-width: 1000px;
+	min-height:900px;
 
 }
 
@@ -52,6 +53,21 @@ fieldset.auction{
     width:400px;
     margin-left:20px;    
 }
+
+fieldset.auction img{
+    margin:2px;
+}
+
+#bidPanel {
+	width:500px;
+	margin-left:220px;
+}
+
+#adPanel {
+	width:180px;
+	float:left;
+}
+
 div#content {
 	height: 100%;
 	margin:10px;
