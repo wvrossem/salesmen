@@ -39,7 +39,7 @@ h1#header span
 }
 
 DIV#main_container {
-	width:1050px;
+	width:850px;
 	margin: 0px auto 0px auto;
 	border:0px;
 	background:#ffffff;
@@ -130,7 +130,7 @@ select {
 }
 
 .footer {
-    width:1050px;
+    width:850px;
     margin: -2px auto 0px auto;
     height:40px;
     background:none;
