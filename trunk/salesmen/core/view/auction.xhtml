@@ -75,7 +75,7 @@
                                  value="Bid!"
                                  action="#{viewAuction.bid(authenticatedUser)}"
                                  reRender="bidPanel"
-                                 rendered="#{identity.loggedIn and viewauction.auction.status != Auction.FINISHED}"/>
+                                 rendered="#{identity.loggedIn and viewauction.auction.status == Auction.AuctionStatus.LISTED}"/>
                 <rich:message for="bidRegion">
                     <f:facet name="errorMarker">
                         <h:graphicImage url="/img/msgerror.png"/>
