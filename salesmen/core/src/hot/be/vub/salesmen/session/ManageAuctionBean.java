@@ -153,24 +153,6 @@ public class ManageAuctionBean implements ManageAuction, Serializable
 		this.auction.setStatus(Auction.AuctionStatus.LISTED);
 
 
-        /*
-        (BART: keep for a while)
-
-        //if no images were uploaded, add the default salesmen image (this.contentType=contentType;)
-        if(images.size()==0)
-        {
-            //TODO: load default image
-            try
-            {
-                AuctionImage defaultImage=new AuctionImage("salesmen_default_auction_image.png","image/png");
-            }
-            catch (IOException e)
-            {
-                System.out.println("ERROR: defaultImage failed");
-            }
-        }
-        */
-
         //save the auction (id gets filled in, perform before persisting images!)
         entityManager.persist(this.auction);
 

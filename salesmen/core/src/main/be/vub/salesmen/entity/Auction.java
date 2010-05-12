@@ -41,7 +41,6 @@ public class Auction implements Serializable
 	private String description;
     private Date startDate=new Date();
 	private Date endDate=new Date();
-
 	private double startingPrice;
 	private AuctionStatus status=AuctionStatus.UNLISTED;
 	
@@ -126,25 +125,7 @@ public class Auction implements Serializable
 	{
 		this.description = description;
 	}
-/*
-	@NotNull
-	public Date getEndDate() {
-		return endDate;
-	}
 
-	public void setEndDate(Date endDate) {
-		this.endDate = endDate;
-	}
-
-	//@NotNull
-	public Bid getHighBid() {
-		return highBid;
-	}
-
-	public void setHighBid(Bid highBid) {
-		this.highBid = highBid;
-	}
-*/
 	@NotNull
 	//@Pattern(regex="^[0-9]*\.?[0-9]+$",
 	//		 message="Illegal amount")
@@ -194,4 +175,5 @@ public class Auction implements Serializable
     public void setQuartzTriggerHandle(QuartzTriggerHandle quartzTriggerHandle) {
         this.quartzTriggerHandle = quartzTriggerHandle;
     }
+	
 }

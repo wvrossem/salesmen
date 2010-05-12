@@ -77,7 +77,6 @@ public class ViewAuctionBean implements ViewAuction   , Serializable
     private void updateImages()
     {
         BasicSearchBean search = new BasicSearchBean();
-        //TODO: (Bart) do not use fixed value
         images=search.findImages(this.auction,5,this.entityManager);
     }
 
@@ -86,7 +85,6 @@ public class ViewAuctionBean implements ViewAuction   , Serializable
         if(this.auction!=null && this.auction.getId()!=null)
         {
             BasicSearchBean search = new BasicSearchBean();
-            //TODO: (Bart) do not use fixed value
             bids=search.findBids(this.auction,5,this.entityManager);
 
 
@@ -116,7 +114,7 @@ public class ViewAuctionBean implements ViewAuction   , Serializable
             facesMessages.addToControl("bidRegion", FacesMessage.SEVERITY_ERROR, "Bid amount can't be zero");
             return;
         }
-		if(this.auction!=null && owner!=null)
+		if(this.auction!=null && owner!=null && this.auction.getStatus()==Auction.AuctionStatus.LISTED)
 		{
             //reload bids
             this.updateBids();
@@ -237,4 +235,5 @@ public class ViewAuctionBean implements ViewAuction   , Serializable
     {
         return images;
     }
+
 }
