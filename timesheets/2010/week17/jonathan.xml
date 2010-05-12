@@ -1,0 +1,16 @@
+<?xml version='1.0'?>
+<timesheet xmlns="http://purl.org/net/timetrack">
+	
+
+	
+	<item duration="PT1H">
+		<desc>Workshop 28/04 13h-14h: auctionList.xhtml and searching information about datatables in Seam.</desc>
+		<refs></refs>
+	</item>
+	
+		<item duration="PT10M">
+		<desc>Administration and Communication.</desc>
+		<refs></refs>
+	</item>
+</timesheet>
+
