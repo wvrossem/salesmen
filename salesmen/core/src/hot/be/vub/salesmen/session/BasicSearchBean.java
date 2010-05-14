@@ -49,10 +49,10 @@ public class BasicSearchBean implements BasicSearch
 			queryEntities();
 			if (entities.size() != 0 && searchTerm.length() >= 3)
 			{
-				String q = "FROM SearchTerm s WHERE s.term = #{searchTerm}";
+				String q = "FROM SearchTerm s WHERE s.term = '" + searchTerm + "'";
 				System.out.println(q);
 				List entLst = entityManager.createQuery(q).getResultList();         
-
+				System.out.println(entLst);
 				if (entLst.isEmpty())
 				{
 					SearchTerm savedTerm = new SearchTerm();
