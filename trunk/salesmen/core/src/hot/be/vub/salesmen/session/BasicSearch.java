@@ -47,7 +47,9 @@ public interface BasicSearch {
 
 	public void destroy();
 
-  public UserAccount findUserAccount(String userName);
+	public UserAccount findUserAccount(String userName);
+	
+	public Object findAuction(Long auctionId, EntityManager em);
     
 
 }
