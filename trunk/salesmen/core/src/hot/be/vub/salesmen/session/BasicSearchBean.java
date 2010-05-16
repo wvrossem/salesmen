@@ -18,6 +18,7 @@ import java.util.concurrent.atomic.AtomicReference;
 
 @Stateful
 @Name("basicSearch")
+@Scope(ScopeType.SESSION)
 @Synchronized(timeout = 1000000000)
 @AutoCreate
 public class BasicSearchBean implements BasicSearch
