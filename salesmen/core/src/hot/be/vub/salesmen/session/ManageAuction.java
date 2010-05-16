@@ -11,7 +11,7 @@ public interface ManageAuction
 	public void createAuction();
 	public boolean checkInput();
 	public void confirm();
-	public void saveAndSchedule(UserAccount user);
+	public void save(UserAccount user);
     public boolean verifyPrice();
     public boolean verifyEndDate();
 
