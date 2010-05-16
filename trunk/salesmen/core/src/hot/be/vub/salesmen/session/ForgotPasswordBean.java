@@ -27,10 +27,10 @@ public class ForgotPasswordBean implements ForgotPassword, Serializable
 {
 	private static final long serialVersionUID = -5946808103467846879L;
 
-	public String username;
+	private String username;
 	private UserAccount foundUserAccount;
 	private String foundEmail;
-	public String password;
+	private String password;
 	
 	@In EntityManager entityManager;
 
@@ -50,11 +50,12 @@ public class ForgotPasswordBean implements ForgotPassword, Serializable
 	//Find the UserAccount corresponding to the username
 	this.foundUserAccount=basicSearch.findUserAccount(username);
 	  
-		if ( this.foundUserAccount==null){
+		if (this.foundUserAccount==null)
+		{
 			facesMessages.addToControlFromResourceBundle("MailSent", FacesMessage.SEVERITY_ERROR, "salesmen.ForgotPassword.UsernameNotFoundLong");			
-
 		}
-		else{
+		else
+		{
 			//Get Email from User
 		    this.foundEmail=foundUserAccount.getUser().getEmail();
 			//Generate Random Password (length 8)
@@ -82,7 +83,8 @@ public class ForgotPasswordBean implements ForgotPassword, Serializable
 		{
 		  facesMessages.addToControlFromResourceBundle("username", FacesMessage.SEVERITY_INFO, "salesmen.ForgotPassword.UsernameFound");
 		}
-		else{
+		else
+		{
 		  facesMessages.addToControlFromResourceBundle("username", FacesMessage.SEVERITY_ERROR, "salesmen.ForgotPassword.UsernameNotFound");
 		}
 	}
@@ -90,27 +92,30 @@ public class ForgotPasswordBean implements ForgotPassword, Serializable
    public static String generatePassword(int n)
    {
 
-    char[] pw = new char[n];
-    int c  = 'A';
-    int  r1 = 0;
-    for (int i=0; i < n; i++)
-    {
-      r1 = (int)(Math.random() * 3);
-      switch(r1) {
-        case 0: c = '0' +  (int)(Math.random() * 10); break;
-        case 1: c = 'a' +  (int)(Math.random() * 26); break;
-        case 2: c = 'A' +  (int)(Math.random() * 26); break;
-      }
-      pw[i] = (char)c;
-    }
-    return new String(pw);
+		char[] pw = new char[n];
+		int c  = 'A';
+		int  r1 = 0;
+		for (int i=0; i < n; i++)
+		{
+		  r1 = (int)(Math.random() * 3);
+		  switch(r1)
+		  {
+			case 0: c = '0' +  (int)(Math.random() * 10); break;
+			case 1: c = 'a' +  (int)(Math.random() * 26); break;
+			case 2: c = 'A' +  (int)(Math.random() * 26); break;
+		  }
+		  pw[i] = (char)c;
+		}
+		return new String(pw);
 	}
 	
 
    
 
 	@Destroy @Remove
-	public void destroy() {}
+	public void destroy() 
+	{
+	}
 	
 	
     public String getUsername()
@@ -121,6 +126,15 @@ public class ForgotPasswordBean implements ForgotPassword, Serializable
 	public void setUsername(String username)
 	{
 		this.username = username;
+	}
+	 public String getPassword()
+	{
+		return password;
+	}
+	
+	public void setPassword(String password)
+	{
+		this.password = password;
 	}
 	
 }
