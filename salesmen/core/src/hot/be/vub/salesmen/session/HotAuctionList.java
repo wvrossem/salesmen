@@ -11,6 +11,6 @@ public class HotAuctionList extends EntityQuery<Auction>
 
 	public HotAuctionList()
 	{
-		setEjbql("select a from Auction a where a.hotAuction=TRUE");
+		setEjbql("select a from Auction a where a.hotAuction=TRUE AND a.status=1");
 	}
 }
