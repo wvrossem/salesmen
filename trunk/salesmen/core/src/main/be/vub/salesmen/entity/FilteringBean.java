@@ -14,11 +14,14 @@ import org.jboss.seam.annotations.web.RequestParameter;
 import org.jboss.seam.faces.FacesMessages;
 
 
+
 import javax.faces.application.FacesMessage;
 import javax.persistence.EntityManager;
 import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Calendar;
+import java.util.Date;
 
 
 
@@ -32,7 +35,13 @@ public class FilteringBean
 	private Auction auction;
 	private double highestBidAmount;
 	@In EntityManager entityManager;
-	private byte[] imageData;	
+	private byte[] imageData;
+	private Date currentTime;
+	private int timeDifference;
+	private int timeRemainingDays;
+	private int timeRemainingHours;
+	private int timeRemainingMinutes;
+	
 	
 	public FilteringBean()
 	{
@@ -97,11 +106,39 @@ public class FilteringBean
 		}
 	}
 	
+	public int getTimeDifference(Auction currentAuction)
+	{
+		Calendar cal = Calendar.getInstance();
+        this.currentTime = cal.getTime();//current date & time
+		this.timeDifference = (currentAuction.getEndDate().getMinutes()+ currentAuction.getEndDate().getHours()*60+currentAuction.getEndDate().getDay()*60*24+currentAuction.getEndDate().getMonth()*60*24*31) - (currentTime.getMinutes()+ currentTime.getHours()*60+currentTime.getDay()*60*24+currentTime.getMonth()*60*24*31);
+		return timeDifference;
+	}
+	
+ 	public int getTimeRemainingDays(Auction currentAuction)
+	{
+		this.timeRemainingDays=getTimeDifference(currentAuction)/(24*60);
+		return timeRemainingDays;
+	}
+	public int getTimeRemainingHours(Auction currentAuction)
+	{
+		this.timeRemainingHours=(getTimeDifference(currentAuction)-getTimeRemainingDays(currentAuction)*24*60)/60;
+		return timeRemainingHours;
+	}
+	public int getTimeRemainingMinutes(Auction currentAuction)
+	{
+		this.timeRemainingMinutes=(getTimeDifference(currentAuction)-getTimeRemainingDays(currentAuction)*24*60-getTimeRemainingHours(currentAuction)*60);
+		return timeRemainingMinutes;
+	} 
 
 	
 	public double getHighestBidAmount()
 	{
 		return highestBidAmount;
+	}
+	
+	public double getTimeDifference()
+	{
+		return timeDifference;
 	}
 	
 	public byte[] getImageData()
