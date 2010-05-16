@@ -1,26 +1,72 @@
-<h:dataTable
-	xmlns="http://www.w3.org/1999/xhtml"
-	xmlns:ui="http://java.sun.com/jsf/facelets"
-	xmlns:h="http://java.sun.com/jsf/html"
-	xmlns:f="http://java.sun.com/jsf/core"
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:ui="http://java.sun.com/jsf/facelets"
+    xmlns:h="http://java.sun.com/jsf/html"
+    xmlns:f="http://java.sun.com/jsf/core"
+    xmlns:a4j="http://richfaces.org/a4j"
 	xmlns:s="http://jboss.com/products/seam/taglib"
-	xmlns:rich="http://richfaces.org/rich"
-	id="auctions" value="#{entities}" var="a">
-	<h:column id="TitleColumn">
-		<f:facet name="header"><h:outputText value="#{messages['salesmen.Auction.Title']}"/></f:facet>
-			<s:link id="auctionLink"
-				propagation="none"
-				  value="#{a.title}"
-			   view="/auction.xhtml">
-				<f:param name="auctionId" value="#{a.id}"/>
-			</s:link>
-	</h:column>
-	<h:column id="DescriptionColumn">
-		<f:facet id="DescriptionFacet" name="header"><h:outputText value="#{messages['salesmen.Auction.Description']}"/></f:facet>
-		#{a.description}
-	</h:column>
-	<h:column id="StartPriceColumn">
-		<f:facet id="StartPriceFacet" name="header"><h:outputText value="#{messages['salesmen.Auction.StartPrice']}"/></f:facet>
-		#{a.startingPrice}
-	</h:column>
-</h:dataTable>
+    xmlns:rich="http://richfaces.org/rich"
+	xmlns:fn="http://java.sun.com/jsp/jstl/functions">
+
+    <h:form id="form1">	
+		<rich:spacer height="15" />		
+            <rich:extendedDataTable
+                value="#{entities}" var="auct" id="auctions"
+                width="780px" height="600px"
+                sortMode="#{single}"
+                selectionMode="#{single}">
+
+ 				<rich:column sortable="false" label="#{messages['salesmen.Auction.pictures']}" id="col_1">
+                    <f:facet name="header">
+                        <h:outputText value="#{messages['salesmen.Auction.pictures']}" id="picture"/>
+                    </f:facet>
+					<s:graphicImage value="#{filteringBean.getFirstImage(auct)}" rendered="#{filteringBean.getFirstImage(auct) ne null}">
+                        <s:transformImageSize height="60" maintainRatio="true"/>
+                    </s:graphicImage>
+                </rich:column>
+				 
+                <rich:column sortable="true" sortBy="#{auct.title}" id="col_2"
+                    label="#{messages['salesmen.Auction.Title']}">
+                    <f:facet name="header">
+                        <h:outputText value="#{messages['salesmen.Auction.Title']}" id="title_name"/>
+                    </f:facet>
+					<s:link id="auctionLinkonTitle"
+						propagation="none"
+						value="#{auct.title}"
+					    view="/auction.xhtml">
+						<f:param name="auctionId" value="#{auct.id}"/>
+					</s:link>
+                </rich:column> 
+						
+                <rich:column sortable="true"  sortBy="#{auct.startingPrice}" id="col_3"
+                    label="#{messages['salesmen.Auction.StartPrice']}">
+                    <f:facet name="header">
+                        <h:outputText value="#{messages['salesmen.Auction.StartPrice']}" id="startingprice_name"/>
+                    </f:facet>
+                    <h:outputText value="#{auct.startingPrice}" id="auct_startingPrice"/>
+                </rich:column>
+					
+ 				<rich:column sortable="true" sortBy="#{filteringBean.getHighestBidAmount(auct)}" id="col_4"
+                    label="#{messages['salesmen.Auction.highestBid']}">
+                    <f:facet name="header">
+                        <h:outputText value="#{messages['salesmen.Auction.highestBid']}" id="highestbid_name"/>
+                    </f:facet>
+					<h:outputText value="#{filteringBean.getHighestBidAmount(auct)}" id="auct_highestBid"/>				
+                </rich:column> 
+				
+                 <rich:column sortable="false" 				
+				label="#{messages['salesmen.Auction.Description']}" id="col_5" width="300">
+                    <f:facet name="header">
+                        <h:outputText value="#{messages['salesmen.Auction.Description']}" id="description_name"/>
+					</f:facet>
+					<h:outputText value="#{auct.description}" id="auct_description"/>
+				</rich:column> 
+			
+				<f:facet name="footer">
+                <rich:datascroller id="ds2" renderIfSinglePage="true"></rich:datascroller>
+				</f:facet>
+            </rich:extendedDataTable>
+			<rich:spacer height="15" />
+    </h:form>
+</ui:composition>
+			
+			
