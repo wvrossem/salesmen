@@ -132,7 +132,7 @@
                                  value="Send!"
                                  action="#{viewAuction.addComment(authenticatedUser)}"
                                  reRender="bidPanel"
-                                 rendered="#{identity.loggedIn and viewauction.auction.status != Auction.FINISHED}"/>
+                                 rendered="#{identity.loggedIn and viewauction.auction.status == Auction.AuctionStatus.LISTED}"/>
                 <br/>
                 <a:outputPanel id="commentHistory">
                     <h:outputText id="NoCommentsMessage"

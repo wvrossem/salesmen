@@ -36,7 +36,7 @@
 
             <div class="actionButtons">
                 <h:commandButton  id="previous" value="#{messages['salesmen.General.Previous']}" action="previous"/>
-                <h:commandButton  id="next" value="#{messages['salesmen.General.Next']}" action="#{manageAuction.saveAndSchedule(authenticatedUser)}"/>
+                <h:commandButton  id="next" value="#{messages['salesmen.General.Next']}" action="#{manageAuction.save(authenticatedUser)}"/>
             </div>
         </rich:panel>
     </h:form>
