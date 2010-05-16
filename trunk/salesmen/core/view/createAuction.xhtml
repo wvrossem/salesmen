@@ -78,7 +78,7 @@
                     </a:outputPanel>
 
 
-                    <h:outputLabel for="endDate">#{messages['salesmen.auction.create.endDate']}</h:outputLabel>
+                    <h:outputLabel for="endDate">#{messages['salesmen.Auction.create.endDate']}</h:outputLabel>
                     <a:region id="endDateRegion">
                         <rich:calendar id="endDate" value="#{manageAuction.auctionEndDate}" required="true" datePattern="dd/MM/yyyy HH:mm" buttonIcon="img/dtpick.gif" />
                     </a:region>
@@ -94,6 +94,13 @@
                             </f:facet>
                         </rich:message>
                     </a:outputPanel>
+
+
+                    <h:outputLabel for="hotAuction">#{messages['salesmen.auction.create.hotAuction']}</h:outputLabel>
+                    <a:region id="hotAuctionRegion">
+                        <h:selectBooleanCheckbox title="hotAuction" value="#{manageAuction.auction.hotAuction}" ></h:selectBooleanCheckbox>
+                    </a:region>
+                   <a:outputPanel id="hotAuction" />
 
                     <h:outputLabel for="category">#{messages['salesmen.auction.create.selectCategory']}</h:outputLabel>
                     <a:region id="categoryRegion">

@@ -39,10 +39,11 @@ public class Auction implements Serializable
 	private Category category;
 	private String title;
 	private String description;
-    private Date startDate=new Date();
+  private Date startDate=new Date();
 	private Date endDate=new Date();
 	private double startingPrice;
 	private AuctionStatus status=AuctionStatus.UNLISTED;
+  private boolean hotAuction=false;
 	
 	@Lob
     private QuartzTriggerHandle quartzTriggerHandle;
@@ -166,9 +167,17 @@ public class Auction implements Serializable
 
     public void setStartDate(Date startDate)
     {
-        this.startDate = startDate;
+      this.startDate = startDate;
     }
-	
+
+    public boolean isHotAuction() {
+      return hotAuction;
+    }
+
+    public void setHotAuction(boolean hotAuction) {
+      this.hotAuction = hotAuction;
+    }
+
 	public QuartzTriggerHandle getQuartzTriggerHandle() {
         return quartzTriggerHandle;
     }

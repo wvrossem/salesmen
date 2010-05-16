@@ -6,6 +6,7 @@
 	xmlns:f="http://java.sun.com/jsf/core"
 	xmlns:h="http://java.sun.com/jsf/html"
 	xmlns:rich="http://richfaces.org/rich"
+    xmlns:a4j="http://richfaces.org/a4j"
 	template="layout/template.xhtml">
 
 <ui:define name="body">
@@ -21,6 +22,27 @@
 	</h:form>
 	<br/>
 	<h1><h:outputText value="#{messages['salesmen.Home.Hello']}"/></h1>
+    <br/>
+
+    <h:form>
+        <rich:dataTable id="hotAuctionList" var="a"
+                        value="#{hotAuctionList.resultList}"
+                rows="1">
+            <h:column>
+                <f:facet name="title">Title</f:facet>
+                #{a.title}
+            </h:column>
+            <h:column>
+                <f:facet name="description">Description</f:facet>
+                #{a.description}
+            </h:column>
+
+        </rich:dataTable>
+        <rich:datascroller align="center" for="hotAuctionList" maxPages="10"
+                           page="#{dataScrollerBean.scrollerPage}" />
+    </h:form>
+
+
 
 </ui:define>
 </ui:composition>
