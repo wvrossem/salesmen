@@ -8,6 +8,9 @@ import org.jboss.seam.annotations.*;
 import org.jboss.seam.faces.FacesMessages;
 import org.jboss.seam.international.StatusMessages;
 import org.jboss.seam.async.QuartzTriggerHandle;
+import org.jboss.seam.annotations.web.RequestParameter;
+import org.jboss.seam.framework.EntityHome;
+import org.jboss.seam.log.Log;
 import org.richfaces.component.UITree;
 import org.richfaces.component.html.HtmlTree;
 import org.richfaces.event.NodeSelectedEvent;
@@ -49,6 +52,7 @@ public class ManageAuctionBean implements ManageAuction, Serializable
     @In FacesMessages facesMessages;
 	@In StatusMessages statusMessages;
 	@In AuctionProcessor processor;
+	@In BasicSearch basicSearch;
 
     public ManageAuctionBean()
     {
@@ -136,13 +140,9 @@ public class ManageAuctionBean implements ManageAuction, Serializable
         return true;
 	}
 
-	public void saveAndSchedule(UserAccount user)
+	public void save(UserAccount user)
     {
 		this.auction.setOwner(user);
-        
-        QuartzTriggerHandle handle =
-			processor.scheduleAuction(auction.getEndDate(), null, auction.getEndDate(), auction);        
-        auction.setQuartzTriggerHandle(handle);
     }
 
 	@End
@@ -162,6 +162,11 @@ public class ManageAuctionBean implements ManageAuction, Serializable
             img.setAuction(this.auction);
             entityManager.persist(img);
         }
+		
+		QuartzTriggerHandle handle =
+			processor.scheduleAuction(auctionEndDate, null, auctionEndDate, this.auction);//(Auction) basicSearch.findAuction(this.auction.getId(), entityManager));
+        auction.setQuartzTriggerHandle(handle);
+		
         //cleanup
         this.auctionId=this.auction.getId();
         this.auction=null;
