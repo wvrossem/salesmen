@@ -42,6 +42,7 @@
 	<property name="seam.excel.lib"    value="yes"/>
 	<property name="seam.debug.lib" value="yes" />
 	<property name="facelets.lib" value="yes" />
+	<property name="quartz.lib"     value="yes"/>
 
 	<!--Properties for validating configuration files -->
 	<property name="validate.resources.dir" value="${basedir}/exploded-archives"/>
