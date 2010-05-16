@@ -1,0 +1,35 @@
+<!DOCTYPE composition PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:s="http://jboss.com/products/seam/taglib"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:rich="http://richfaces.org/rich"
+	template="layout/template.xhtml"
+	xmlns:a="http://richfaces.org/a4j">
+
+<ui:define name="body">
+
+	<rich:panel>
+		<f:facet name="header">#{messages['salesmen.UserDashboard.ActiveAuctions']}</f:facet>
+
+		<a:outputPanel id="searchResults">
+			<div class="section">
+				<h:outputText id="NoEntitiesFoundMessage"
+						   value="#{messages['salesmen.Search.NoEntitiesFound']}"
+						rendered="#{entities != null and entities.rowCount==0}"/>
+				<s:div rendered="#{entities.rowCount>0}">
+					<ui:include src="/auctionList.xhtml"/>
+				</s:div>
+				<s:link id="MoreResultsLink" value="#{messages['salesmen.Search.NextPage']}"
+						action="#{advancedSearch.nextPage}"
+						rendered="#{advancedSearch.nextPageAvailable}"/>   
+			</div>
+		</a:outputPanel>
+
+	</rich:panel>
+
+</ui:define>
+
+</ui:composition>

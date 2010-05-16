@@ -1,0 +1,3 @@
+<page login-required="true">
+	<action execute="#{advancedSearch.auctionsWithBidsByUser(authenticatedUser.user)}"/>
+</page>
