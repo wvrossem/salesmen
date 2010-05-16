@@ -9,6 +9,10 @@
 
 <rich:toolBar>
 
+	<f:facet name="itemSeparator">
+			<rich:separator width="2" height="14" />
+	</f:facet>
+
 	<rich:dropDownMenu>
 		<f:facet name="label"> 
 			<h:panelGroup>
@@ -16,12 +20,12 @@
 			</h:panelGroup>
 		</f:facet>
 		<rich:menuItem submitMode="none">
-			<s:link view="/userProfile.xhtml" value="#{messages['salesmen.UserDashboard.Profile']}" propagation="none">
+			<s:link view="/userProfile.xhtml" value="#{messages['salesmen.UserDashboard.MyProfile']}" propagation="none">
 				<f:param name="userId" value="#{authenticatedUser.user.userId}"/>
 			</s:link>
 		</rich:menuItem>
 		<rich:menuItem submitMode="none">
-			<s:link view="/userAccount.xhtml" value="#{messages['salesmen.UserDashboard.Account']}" propagation="none">
+			<s:link view="/userAccount.xhtml" value="#{messages['salesmen.UserDashboard.AccountInformation']}" propagation="none">
 				<f:param name="userAccountId" value="#{authenticatedUser.accountId}"/>
 			</s:link>
 		</rich:menuItem>
@@ -33,16 +37,13 @@
 			</h:panelGroup>
 		</f:facet>
 		<rich:menuItem submitMode="none">
-			<s:link view="/placedAuctions.xhtml" value="#{messages['salesmen.UserDashboard.PlacedAuctions']}" propagation="none"/>
+			<s:link view="/myAuctions.xhtml" value="#{messages['salesmen.UserDashboard.MyAuctions']}" propagation="none"/>
 		</rich:menuItem>
 		<rich:menuItem submitMode="none">
 			<s:link view="/activeAuctions.xhtml" value="#{messages['salesmen.UserDashboard.ActiveAuctions']}" propagation="none"/>
 		</rich:menuItem>
 		<rich:menuItem submitMode="none">
-			<s:link view="/myAuctions.xhtml" value="#{messages['salesmen.UserDashboard.MyAuctions']}" propagation="none"/>
-		</rich:menuItem>
-		<rich:menuItem submitMode="none">
-			<s:link view="/WonAuctions.xhtml" value="#{messages['salesmen.UserDashboard.WonAuctions']}" propagation="none"/>
+			<s:link view="/wonAuctions.xhtml" value="#{messages['salesmen.UserDashboard.WonAuctions']}" propagation="none"/>
 		</rich:menuItem>
 	</rich:dropDownMenu>
 	<rich:dropDownMenu>
@@ -55,7 +56,7 @@
 			<s:link view="/myTransactions.xhtml" value="#{messages['salesmen.UserDashboard.MyTransactions']}" propagation="none"/>
 		</rich:menuItem>
 		<rich:menuItem submitMode="none">
-			<s:link view="/WonAuctions.xhtml" value="#{messages['salesmen.UserDashboard.WonAuctions']}" propagation="none"/>
+			<s:link view="/wonTransactions.xhtml" value="#{messages['salesmen.UserDashboard.WonTransactions']}" propagation="none"/>
 		</rich:menuItem>
 	</rich:dropDownMenu>
 	<rich:dropDownMenu rendered="#{identity.hasRole('admin')}">
@@ -65,7 +66,7 @@
 			</h:panelGroup>
 		</f:facet>
 		<rich:menuItem submitMode="none">
-			<s:link view="/modifyFees.xhtml" value="#{messages['salesmen.UserDashboard.ModifyFees']}" propagation="none"/>
+			<s:link view="/modifyFees.xhtml" value="#{messages['salesmen.Admin.ModifyFees']}" propagation="none"/>
 		</rich:menuItem>
 	</rich:dropDownMenu>
 
