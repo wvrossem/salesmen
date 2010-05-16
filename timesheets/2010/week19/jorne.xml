@@ -1,0 +1,23 @@
+<?xml version='1.0'?>
+<timesheet xmlns="http://purl.org/net/timetrack">
+	<item duration="PT4H15M">
+		<desc>Workshop and meeting on last conference</desc>
+		<refs>
+			<ref>http://wilma.vub.ac.be/~se2_0910/docs/minutes/2010/05/12/minutes-20100512.pdf</ref>
+		</refs>
+	</item>
+	
+	<item duration="PT5H0M">
+		<desc>Re-implemented auction scheduler.</desc>
+		<refs>
+			<ref>http://code.google.com/p/salesmen/source/detail?r=1389</ref>
+			<ref>http://code.google.com/p/salesmen/source/detail?r=1390</ref>
+			<ref>http://code.google.com/p/salesmen/source/detail?r=1391</ref>
+			<ref>http://code.google.com/p/salesmen/source/detail?r=1392</ref>
+		</refs>
+	</item>
+	
+	<item duration="PT0H15M">
+		<desc>Administration and Communication.</desc>
+	</item>
+</timesheet>
