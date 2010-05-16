@@ -43,10 +43,10 @@ insert into Category (name,parent_id,version) values ('Tools & Auto',1, 0);
   insert into Category (name,parent_id,version) values ('Power & Hand Tools', 14, 0);
 
 
-insert into auction (title,description,startingprice,status, category_id, version, user_id,startDate,endDate) values ('Botten','Zwarte met strikjes',51.6,1,2,0,3,now(),now());
-insert into auction (title,description,startingprice,status, category_id, version, user_id,startDate,endDate) values ('Auto','Blauw',36.51,1,4,0,2,now(),now());
-insert into auction (title,description,startingprice,status, category_id, version, user_id,startDate,endDate) values ('PC','Kapot enzo',5.1,1,6,0,1,now(),now());
-insert into auction (title,description,startingprice,status, category_id, version, user_id,startDate,endDate) values ('Mijn moeder','...',1.88,1,7,0,2,now(),now());
+insert into auction (title,description,startingprice,status, category_id, version, user_id,startDate,endDate,hotAuction) values ('Botten','Zwarte met strikjes',51.6,1,2,0,3,now(),now(), false);
+insert into auction (title,description,startingprice,status, category_id, version, user_id,startDate,endDate,hotAuction) values ('Auto','Blauw',36.51,1,4,0,2,now(),now(), true);
+insert into auction (title,description,startingprice,status, category_id, version, user_id,startDate,endDate,hotAuction) values ('PC','Kapot enzo',5.1,1,6,0,1,now(),now(), true);
+insert into auction (title,description,startingprice,status, category_id, version, user_id,startDate,endDate,hotAuction) values ('Mijn moeder','...',1.88,1,7,0,2,now(),now(), true);
 
 insert into transaction (id,buyeraccount_id,selleraccount_id,auction_id,version,payed,shipped,rating) values (1,1,2,1,0,false,false,0);
 insert into transaction (id,buyeraccount_id,selleraccount_id,auction_id,version,payed,shipped,rating) values (2,2,1,2,0,false,false,0);
