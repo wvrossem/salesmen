@@ -1,4 +1,4 @@
-<rich:toolBar
+<h:form
 	xmlns="http://www.w3.org/1999/xhtml"
 	xmlns:ui="http://java.sun.com/jsf/facelets"
 	xmlns:h="http://java.sun.com/jsf/html"
@@ -7,17 +7,67 @@
 	xmlns:rich="http://richfaces.org/rich"
 	rendered="#{identity.loggedIn}">
 
-	<rich:toolBarGroup>
-        <f:facet name="itemSeparator">
-         <rich:separator width="2" height="14" />
-        </f:facet>
+<rich:toolBar>
 
-        <s:link view="/userProfile.xhtml" value="#{messages['salesmen.UserDashboard.Profile']}" propagation="none">
-            <f:param name="userId" value="#{authenticatedUser.user.userId}"/>
-        </s:link>
-        <s:link view="/userAccount.xhtml" value="#{messages['salesmen.UserDashboard.Account']}" propagation="none">
-            <f:param name="userAccountId" value="#{authenticatedUser.accountId}"/>
-        </s:link>
-        <s:link view="/myAuctions.xhtml" value="#{messages['salesmen.UserDashboard.MyAuctions']}" propagation="none"/>
-    </rich:toolBarGroup>
+	<rich:dropDownMenu>
+		<f:facet name="label"> 
+			<h:panelGroup>
+				<h:outputText value="#{messages['salesmen.UserDashboard.Profile']}"/>
+			</h:panelGroup>
+		</f:facet>
+		<rich:menuItem submitMode="none">
+			<s:link view="/userProfile.xhtml" value="#{messages['salesmen.UserDashboard.Profile']}" propagation="none">
+				<f:param name="userId" value="#{authenticatedUser.user.userId}"/>
+			</s:link>
+		</rich:menuItem>
+		<rich:menuItem submitMode="none">
+			<s:link view="/userAccount.xhtml" value="#{messages['salesmen.UserDashboard.Account']}" propagation="none">
+				<f:param name="userAccountId" value="#{authenticatedUser.accountId}"/>
+			</s:link>
+		</rich:menuItem>
+	</rich:dropDownMenu>
+	<rich:dropDownMenu>
+		<f:facet name="label"> 
+			<h:panelGroup>
+				<h:outputText value="#{messages['salesmen.UserDashboard.Auctions']}"/>
+			</h:panelGroup>
+		</f:facet>
+		<rich:menuItem submitMode="none">
+			<s:link view="/placedAuctions.xhtml" value="#{messages['salesmen.UserDashboard.PlacedAuctions']}" propagation="none"/>
+		</rich:menuItem>
+		<rich:menuItem submitMode="none">
+			<s:link view="/activeAuctions.xhtml" value="#{messages['salesmen.UserDashboard.ActiveAuctions']}" propagation="none"/>
+		</rich:menuItem>
+		<rich:menuItem submitMode="none">
+			<s:link view="/myAuctions.xhtml" value="#{messages['salesmen.UserDashboard.MyAuctions']}" propagation="none"/>
+		</rich:menuItem>
+		<rich:menuItem submitMode="none">
+			<s:link view="/WonAuctions.xhtml" value="#{messages['salesmen.UserDashboard.WonAuctions']}" propagation="none"/>
+		</rich:menuItem>
+	</rich:dropDownMenu>
+	<rich:dropDownMenu>
+		<f:facet name="label"> 
+			<h:panelGroup>
+				<h:outputText value="#{messages['salesmen.UserDashboard.Transactions']}"/>
+			</h:panelGroup>
+		</f:facet>
+		<rich:menuItem submitMode="none">
+			<s:link view="/myTransactions.xhtml" value="#{messages['salesmen.UserDashboard.MyTransactions']}" propagation="none"/>
+		</rich:menuItem>
+		<rich:menuItem submitMode="none">
+			<s:link view="/WonAuctions.xhtml" value="#{messages['salesmen.UserDashboard.WonAuctions']}" propagation="none"/>
+		</rich:menuItem>
+	</rich:dropDownMenu>
+	<rich:dropDownMenu rendered="#{identity.hasRole('admin')}">
+		<f:facet name="label"> 
+			<h:panelGroup>
+				<h:outputText value="#{messages['salesmen.UserDashboard.AdminActions']}"/>
+			</h:panelGroup>
+		</f:facet>
+		<rich:menuItem submitMode="none">
+			<s:link view="/modifyFees.xhtml" value="#{messages['salesmen.UserDashboard.ModifyFees']}" propagation="none"/>
+		</rich:menuItem>
+	</rich:dropDownMenu>
+
 </rich:toolBar>
+</h:form>
