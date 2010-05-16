@@ -1,4 +1,4 @@
-package be.vub.salesmen.session;
+package be.vub.salesmen.entity;
 
 import org.jboss.seam.annotations.*;
 import be.vub.salesmen.session.BasicSearchBean;
