@@ -18,8 +18,8 @@ import java.util.concurrent.atomic.AtomicReference;
 
 @Stateful
 @Name("basicSearch")
-@Scope(ScopeType.SESSION)
 @Synchronized(timeout = 1000000000)
+@Scope(ScopeType.SESSION)
 @AutoCreate
 public class BasicSearchBean implements BasicSearch
 {
@@ -27,13 +27,14 @@ public class BasicSearchBean implements BasicSearch
 	private EntityManager entityManager;
 
 	private String searchTerm;
-	private String entityType;
-
-	private int pageSize = 2;
-	private int page;
+	private String entityType = "Auction";
 
 	private boolean nextPageAvailable;
 
+	@DataModel
+	private List<Auction> auctions;
+	@DataModel
+	private List<User> users;
 	@DataModel
 	private List entities;
 	private TreeNodeImpl<Category> categoryTree = null;
@@ -45,7 +46,6 @@ public class BasicSearchBean implements BasicSearch
 	{
 		try
 		{
-			page = 0;
 			queryEntities();
 			if (entities.size() != 0 && searchTerm.length() >= 3)
 			{
@@ -72,51 +72,27 @@ public class BasicSearchBean implements BasicSearch
 		String qry = "from SearchTerm s where s.term like #{termPattern}";
 		return entityManager.createQuery(qry).setMaxResults(10).getResultList();
 	}
-
-	public void nextPage()
-	{
-		page++;
-		queryEntities();
-	}
-
+	
 	private void queryEntities()
 	{
 		try
 		{
-			StringBuilder qry = new StringBuilder();
+			StringBuilder auctionQry = new StringBuilder();
+			StringBuilder userQry = new StringBuilder();
 
-			if (entityType.equals("Auction"))
-			{
-				qry.append("from Auction e");
-				qry.append(" WHERE UPPER(e.title) LIKE UPPER(#{pattern})");
-				qry.append(" AND e.status = " + Auction.AuctionStatus.LISTED.ordinal());
-			} else if (entityType.equals("User"))
-			{
-				qry.append("from User e");
-				qry.append(" WHERE UPPER(e.screenName) LIKE UPPER(#{pattern})");
-				qry.append(" or UPPER(e.firstName) LIKE UPPER(#{pattern})");
-				qry.append(" or UPPER(e.lastName) LIKE UPPER(#{pattern})");
-			} else if (entityType.equals("Tag"))
-			{
-				qry.append("from Tag e");
-			} else if (entityType.equals("UserAccount"))
-			{
-				qry.append("from UserAccount e");
-			}
+			auctionQry.append("from Auction e");
+			auctionQry.append(" WHERE UPPER(e.title) LIKE UPPER(#{pattern})");
+			auctionQry.append(" AND e.status = " + Auction.AuctionStatus.LISTED.ordinal());
 
-			List results = entityManager.createQuery(qry.toString())
-					.setMaxResults(pageSize) //+1?
-					.setFirstResult(page * pageSize)
-					.getResultList();
+			userQry.append("from User e");
+			userQry.append(" WHERE UPPER(e.screenName) LIKE UPPER(#{pattern})");
+			userQry.append(" or UPPER(e.firstName) LIKE UPPER(#{pattern})");
+			userQry.append(" or UPPER(e.lastName) LIKE UPPER(#{pattern})");
 
-			nextPageAvailable = results.size() > pageSize;
-			if (nextPageAvailable)
-			{
-				entities = new ArrayList<Object>(results.subList(0, pageSize));
-			} else
-			{
-				entities = results;
-			}
+			auctions = entityManager.createQuery(auctionQry.toString()).getResultList();
+					
+			users = entityManager.createQuery(userQry.toString()).getResultList();
+
 		} catch (Exception e)
 		{
 			System.out.println(e);
@@ -309,16 +285,6 @@ public class BasicSearchBean implements BasicSearch
 		return entityType.equals("Auction");
 	}
 
-	public int getPageSize()
-	{
-		return pageSize;
-	}
-
-	public void setPageSize(int pageSize)
-	{
-		this.pageSize = pageSize;
-	}
-
 	@Factory(value = "pattern", scope = ScopeType.EVENT)
 	public String getSearchPattern()
 	{
@@ -328,7 +294,7 @@ public class BasicSearchBean implements BasicSearch
 	@Factory(value = "termPattern", scope = ScopeType.EVENT)
 	public String getSearchTermPattern()
 	{
-		return searchTerm == null ? "" : searchTerm.replace('*', '%') + '%';
+		return searchTerm == null ? "" : '%' + searchTerm.replace('*', '%') + '%';
 	}
 
 	public String getSearchTerm()
@@ -349,6 +315,16 @@ public class BasicSearchBean implements BasicSearch
 	public void setEntityType(String entityType)
 	{
 		this.entityType = entityType;
+	}
+
+	public void setEntityTypeUser()
+	{
+		entityType = "User";
+	}
+
+	public void setEntityTypeAuction()
+	{
+		entityType = "Auction";
 	}
 
 	public TreeNodeImpl<Category> getCategoryTree()

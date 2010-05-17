@@ -7,11 +7,11 @@
     xmlns:rich="http://richfaces.org/rich"
 	xmlns:fn="http://java.sun.com/jsp/jstl/functions">
 
-    <h:form id="form1">	
-		<rich:spacer height="15" />		
+    <h:form id="form1">
+
             <rich:extendedDataTable
-                value="#{entities}" var="auct" id="auctions"
-                width="780px" height="600px"
+                value="#{auctions}" var="auct" id="auctions"
+                width="685px" height="300px"
                 sortMode="#{single}"
                 selectionMode="#{single}">
 
@@ -74,7 +74,7 @@
                 <rich:datascroller id="ds2" renderIfSinglePage="true"></rich:datascroller>
 				</f:facet>
             </rich:extendedDataTable>
-			<rich:spacer height="15" />
+			
     </h:form>
 </ui:composition>
 			

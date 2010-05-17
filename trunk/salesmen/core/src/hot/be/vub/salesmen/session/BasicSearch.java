@@ -12,10 +12,6 @@ import java.util.List;
 
 @Local
 public interface BasicSearch {
-	
-	public int getPageSize();
-
-	public void setPageSize(int pageSize);
 
 	public String getSearchTerm();
 
@@ -27,6 +23,10 @@ public interface BasicSearch {
 		
 	public void setEntityType(String entityType);
 
+	public void setEntityTypeUser();
+
+	public void setEntityTypeAuction();
+
 	public TreeNodeImpl<Category> getCategoryTree();
 	
 	public void find();
@@ -37,10 +37,6 @@ public interface BasicSearch {
 
 	public List suggest(Object begin);
 
-	public void nextPage();
-
-	public boolean isNextPageAvailable();
-
 	public boolean entityTypeUser();
 
 	public boolean entityTypeAuction();
@@ -50,6 +46,5 @@ public interface BasicSearch {
 	public UserAccount findUserAccount(String userName);
 	
 	public Object findAuction(Long auctionId, EntityManager em);
-    
 
 }
