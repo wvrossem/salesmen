@@ -1,9 +1,10 @@
 <?xml version='1.0'?>
 <timesheet xmlns="http://purl.org/net/timetrack">
+	
 	<item duration="PT4H15M">
-		<desc>Workshop and meeting on last conference</desc>
+		<desc>Workshop 12/05</desc>
 		<refs>
-			<ref>http://wilma.vub.ac.be/~se2_0910/docs/minutes/2010/05/12/minutes-20100512.pdf</ref>
+			<ref></ref>
 		</refs>
 	</item>
 	
