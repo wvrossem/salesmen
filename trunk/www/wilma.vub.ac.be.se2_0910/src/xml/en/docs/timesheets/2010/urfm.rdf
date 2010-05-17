@@ -28,6 +28,12 @@
 
     <releases rdf:parseType="Collection">
 <Release
+    rdf:about="http://wilma.vub.ac.be/~se2_0910/docs/timesheets/2010/week19/">
+  <package rdf:resource="http://wilma.vub.ac.be/~se2_0910/docs/timesheets/"/>
+  <revision>week19-2010</revision>
+  <created>2010-05-17</created>
+</Release>     
+<Release
     rdf:about="http://wilma.vub.ac.be/~se2_0910/docs/timesheets/2010/week18/">
   <package rdf:resource="http://wilma.vub.ac.be/~se2_0910/docs/timesheets/"/>
   <revision>week18-2010</revision>
@@ -114,6 +120,36 @@
     </releases>
     
     <files rdf:parseType="Collection">
+    
+     <!-- **************************************************************
+     Week19-2010
+     ************************************************************** -->
+     
+ <File rdf:about="http://wilma.vub.ac.be/~se2_0910/docs/timesheets/2010/week19/timesheet-week19-2010.xml">
+  <release rdf:resource="http://wilma.vub.ac.be/~se2_0910/docs/timesheets/2010/week19/"/>
+  <basename>timesheet-week19-2010</basename>
+  <extension>.xml</extension>
+  <language>en</language>
+  <size rdf:parseType="Resource">
+    <unit rdf:resource="http://purl.org/urfm/Kilobyte"/>
+    <rdf:value>8</rdf:value>
+  </size>
+  <link>http://wilma.vub.ac.be/~se2_0910/docs/timesheets/2010/week19/timesheet-week19-2010.xml</link>
+  <format>application/xml</format>
+ </File>
+
+<File rdf:about="http://wilma.vub.ac.be/~se2_0910/docs/timesheets/2010/week19/timesheet-week19-2010.html">
+  <release rdf:resource="http://wilma.vub.ac.be/~se2_0910/docs/timesheets/2010/week19/"/>
+  <basename>timesheet-week19-2010</basename>
+  <extension>.html</extension>
+  <language>en</language>
+  <size rdf:parseType="Resource">
+    <unit rdf:resource="http://purl.org/urfm/Kilobyte"/>
+    <rdf:value>20</rdf:value>
+  </size>
+  <link>http://wilma.vub.ac.be/~se2_0910/docs/timesheets/2010/week19/timesheet-week19-2010.html</link>
+  <format>text/html</format>
+</File>   
     
      <!-- **************************************************************
      Week18-2010
