@@ -1,0 +1,30 @@
+<?xml version='1.0'?>
+<timesheet xmlns="http://purl.org/net/timetrack">
+	
+	<item duration="PT3H0M">
+		<desc>Implementing Various User Dashboard details.</desc>
+		<refs>
+			<ref>http://code.google.com/p/salesmen/source/detail?r=1382</ref>
+			<ref>http://code.google.com/p/salesmen/source/detail?r=1381</ref>
+			<ref>http://code.google.com/p/salesmen/source/detail?r=1380</ref>
+		</refs>
+	</item>
+	
+	<item duration="PT10M">
+		<desc>Preparing for Conference.</desc>
+		<refs>
+			<ref>Reference not available yet.</ref>
+		</refs>
+	</item>
+	
+	<item duration="PT1H0M">
+		<desc>Workshop on Wednesday 12/05.</desc>
+		<refs>
+		</refs>
+	</item>
+	
+	<item duration="PT30M">
+		<desc>Administration and Communication.</desc>
+	</item>
+	
+</timesheet>
