@@ -1,0 +1,40 @@
+<?xml version='1.0'?>
+<timesheet xmlns="http://purl.org/net/timetrack">
+	
+	<item duration="PT15M">
+		<desc>Correcting and publishing timesheets of week 18.</desc>
+		<refs>
+			<ref>http://code.google.com/p/salesmen/source/detail?r=1333</ref>
+			<ref>http://code.google.com/p/salesmen/source/detail?r=1334</ref>
+			<ref>http://code.google.com/p/salesmen/source/detail?r=1335</ref>
+			<ref>http://code.google.com/p/salesmen/source/detail?r=1336</ref>
+			<ref>http://code.google.com/p/salesmen/source/detail?r=1366</ref>
+		</refs>
+	</item>
+	
+	<item duration="PT3H30M">
+		<desc>Implementing Hot Auctions.</desc>
+		<refs>
+			<ref>http://www.codeweblog.com/jsf-%C2%B7-richfaces-page-of-a-strategy/</ref>
+			<ref>http://liferay.exadel.com/web/guest/</ref>
+			<ref>http://code.google.com/p/salesmen/source/detail?r=1387</ref>
+			<ref>http://code.google.com/p/salesmen/source/detail?r=1388</ref>
+		</refs>
+	</item>
+	
+	<item duration="PT20M">
+		<desc>Conference preparation.</desc>
+		<refs></refs>
+	</item>
+	
+	<item duration="PT1H30M">
+		<desc>Workshop on Wednesday 12/05.</desc>
+		<refs>
+		</refs>
+	</item>
+	
+	<item duration="PT15M">
+		<desc>Administration and Communication.</desc>
+	</item>
+	
+</timesheet>
