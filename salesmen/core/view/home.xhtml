@@ -6,7 +6,8 @@
 	xmlns:f="http://java.sun.com/jsf/core"
 	xmlns:h="http://java.sun.com/jsf/html"
 	xmlns:rich="http://richfaces.org/rich"
-    xmlns:a4j="http://richfaces.org/a4j"
+	xmlns:a="http://richfaces.org/a4j"
+	xmlns:a4j="http://richfaces.org/a4j"
 	template="layout/template.xhtml">
 
 <ui:define name="body">
@@ -22,6 +23,31 @@
 	</h:form>
 	<br/>
 	<h1><h:outputText value="#{messages['salesmen.Home.Hello']}"/></h1>
+	
+	<h:form id="searchCriteria">
+		<fieldset>
+			<h:inputText id="searchTerm"
+						value="#{basicSearch.searchTerm}" style="width: 165px;">
+			</h:inputText>
+			<a:region renderRegionOnly="true">
+				<rich:suggestionbox id="searchTermSuggestionBox" for="searchTerm"
+					  suggestionAction="#{basicSearch.suggest}" var="result"
+		               width="165" height="100">
+					<h:column>
+						<h:outputText value="#{result.term}" style="font: menu;"/>                          
+					</h:column>
+				</rich:suggestionbox>
+			</a:region>
+			<a:commandButton id="findEntities" value="#{messages['salesmen.BasicSearch.Find']}"
+							action="#{basicSearch.find}" />
+			&#160;
+			<a:status id="status">
+				<f:facet id="StartStatus" name="start">
+					<h:graphicImage id="SpinnerGif" value="/img/ajax-loader.gif"/>
+				</f:facet>
+			</a:status>
+		</fieldset>
+	</h:form>
     <br/>
 
     <h:form >
