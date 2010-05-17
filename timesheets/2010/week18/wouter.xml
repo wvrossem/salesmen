@@ -1,0 +1,20 @@
+<?xml version='1.0'?>
+<timesheet xmlns="http://purl.org/net/timetrack">
+	
+	<item duration="PT1H">
+		<desc>Publish latest verions of SDD and SRS documents and highlights of April.</desc>
+		<refs>
+			<ref>http://code.google.com/p/salesmen/source/detail?r=1350</ref>
+			<ref>http://code.google.com/p/salesmen/source/detail?r=1354</ref>
+			<ref>http://code.google.com/p/salesmen/source/detail?r=1355</ref>
+			<ref>http://code.google.com/p/salesmen/source/detail?r=1356</ref>
+			<ref>http://code.google.com/p/salesmen/source/detail?r=1357</ref>
+			<ref>http://code.google.com/p/salesmen/source/detail?r=1358</ref>
+		</refs>
+	</item>
+	
+	<item duration="PT15M">
+		<desc>Administration and Communication.</desc>
+	</item>
+	
+</timesheet>
