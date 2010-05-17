@@ -1,0 +1,40 @@
+<?xml version='1.0'?>
+<timesheet xmlns="http://purl.org/net/timetrack">
+	
+	<item duration="PT3H">
+		<desc>Workshop on Wednesday 12/05.</desc>
+		<refs>
+			<ref>http://code.google.com/p/salesmen/source/detail?r=1378</ref>
+		</refs>
+	</item>
+	
+	<item duration="PT2H">
+		<desc>Coding session on Wednesday 12/05. Worked on displaying auctions of certain category.</desc>
+		<refs>
+		</refs>
+	</item>
+	
+	<item duration="PT3H">
+		<desc>Worked on comlete revision of the basic search (added search on home page etc)</desc>
+		<refs>
+		</refs>
+	</item>
+	
+	<item duration="PT1H">
+		<desc>Some research on many to many relationships in seam for bids, tags, etc + incomplete implementation</desc>
+		<refs>
+			<ref>http://maniezhilan.blogspot.com/2008/11/seam-framework-manytomany-relationship.html</ref>
+		</refs>
+	</item>
+	
+	<item duration="PT1H">
+		<desc>Tried to create one big search and let basic search make use of this</desc>
+		<refs>
+		</refs>
+	</item>
+	
+	<item duration="PT30M">
+		<desc>Administration and Communication.</desc>
+	</item>
+	
+</timesheet>
