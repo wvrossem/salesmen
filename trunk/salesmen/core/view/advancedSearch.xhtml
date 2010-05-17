@@ -11,85 +11,81 @@
 <ui:define name="body">
 
 	<rich:panel>
-		<f:facet name="header">advancedSearch</f:facet>
+		<f:facet name="header"><h:outputText value="#{messages['salesmen.AdvancedSearch.AdvancedSearch']}"/></f:facet>
 
 		<div class="section">
-			<!--<span class="errors">
-					<h:messages id="messages" globalOnly="true" />
-				</span>-->
+			<span class="errors">
+					<h:messages id="asmessages" globalOnly="true" />
+			</span>
 
-			<h1>Search Entities</h1>
+			<h1><h:outputText value="#{messages['salesmen.AdvancedSearch.AdvancedSearch']}"/></h1>
 
 			<h:form id="advancedSearchCriteria">
-				<fieldset>
-					Include
-					<h:inputText id="includeTerm"
-								value="#{advancedSearch.includeTerm}" style="width: 165px;">
-					</h:inputText>
-					Exclude
-					<h:inputText id="excludeTerm"
-								value="#{advancedSearch.excludeTerm}" style="width: 165px;">
-					</h:inputText>
-					&#160;
-					<a:commandButton id="findEntities" value="Find"
-									action="#{advancedSearch.find}" reRender="searchResults" />
-					&#160;
-					<br/>
-					<h:outputLabel id="MaximumResultsLabel" for="pageSize">Maximum results:</h:outputLabel>
-					&#160;
-					<h:selectOneMenu id="pageSize" value="#{advancedSearch.pageSize}">
-						<f:selectItem id="PageSize10" itemLabel="10" itemValue="10"/>
-						<f:selectItem id="PageSize20" itemLabel="20" itemValue="20"/>
-						<f:selectItem id="PageSize50" itemLabel="50" itemValue="50"/>
-					</h:selectOneMenu>
-					<br/>
-					User
-					<h:selectBooleanCheckbox value="#{advancedSearch.searchUser}"
-											label="User"/>
-					Description
-					<h:selectBooleanCheckbox value="#{advancedSearch.searchAuctionDescription}"
-											label="Desciption"/>
-					Title
-					<h:selectBooleanCheckbox value="#{advancedSearch.searchAuctionTitle}"
-											label="Title"/>
-                    <h:selectOneMenu value="#{advancedSearch.includeCategory}" required="true">
-                        <s:selectItems value="#{categoryList.resultList}" var="category"
-                                       label="#{category.name}" noSelectionLabel="Please Select..."/>
-                        <s:convertEntity />
-                    </h:selectOneMenu>
+			
+			<fieldset>
+                <legend>#{messages['salesmen.AdvancedSearch.keywords']}</legend>
+                <h:outputText value="#{messages['salesmen.AdvancedSearch.includeKeywords']}"/>
+                <br/>
+                <h:inputText id="includeTerm"
+							 value="#{advancedSearch.includeTerm}" style="width: 300px;">
+				</h:inputText>
+				<br/>
+				<h:outputText value="#{messages['salesmen.AdvancedSearch.excludeKeywords']}"/>
+				<br/>
+				<h:inputText id="excludeTerm"
+							 value="#{advancedSearch.excludeTerm}" style="width: 300px;">
+				</h:inputText>
+				<br/>
+            </fieldset>
+            
+            <fieldset>
+                <legend>#{messages['salesmen.AdvancedSearch.auctionOptions']}</legend>
+                <h:selectBooleanCheckbox value="#{advancedSearch.searchAuctionTitle}"
+										 label="Title"/>
+				&#160; 						 
+                <h:outputText value="#{messages['salesmen.AdvancedSearch.includeTitle']}"/>
+                                
+                <br/>
+                <h:selectBooleanCheckbox value="#{advancedSearch.searchAuctionDescription}"
+										 label="Desciption"/>
+				&#160;
+                <h:outputText value="#{messages['salesmen.AdvancedSearch.includeDescription']}"/>           
+				<br/>
+				<h:selectBooleanCheckbox value="#{advancedSearch.searchFinished}"
+										 label="Finished"/>
+				&#160;
+				<h:outputText value="#{messages['salesmen.AdvancedSearch.includeFinished']}"/>
+            </fieldset>
+                        
+            <fieldset>
+                <legend>#{messages['salesmen.AdvancedSearch.priceOptions']}</legend>
+            </fieldset>
+            
+            <fieldset>
+                <legend>#{messages['salesmen.AdvancedSearch.userOptions']}</legend>
+                <h:outputText value="#{messages['salesmen.AdvancedSearch.includeUser']}"/>
+                <br/>
+                <h:inputText id="includeUser"
+							 value="#{advancedSearch.includeUser}" style="width: 300px;">
+				</h:inputText>
+            </fieldset>
+            
+            
+            <fieldset>
+                <legend>#{messages['salesmen.AdvancedSearch.includeCategory']}</legend>
+                <h:selectOneMenu value="#{advancedSearch.includeCategory}" required="true">
+                    <s:selectItems value="#{categoryList.resultList}" var="category"
+                                   label="#{category.name}" noSelectionLabel="Please Select..."/>
+                    <s:convertEntity />
+                </h:selectOneMenu>
+            </fieldset>
 
-				</fieldset>
+            <br/>
+            <a:commandButton id="findEntities" value="Find"
+                            action="#{advancedSearch.queryAuctions}" />
+                
 			</h:form>
 		</div>
-
-		<a:outputPanel id="searchResults">
-			<div class="section">
-				<h:outputText id="NoEntitiesFoundMessage"
-							value="No Entities Found"
-							rendered="#{entities != null and entities.rowCount==0}"/>
-				<h:dataTable id="auctions" value="#{entities}" var="a"
-							rendered="#{entities.rowCount>0}">
-					<h:column id="TitleColumn">
-						<f:facet id="TitleFacet" name="header"><h:outputText value="#{messages['salesmen.Auction.Title']}"/></f:facet>
-						<s:link id="auctionLink"
-							 value="#{a.title}"
-							propagation="none"
-							  view="/auction.xhtml">
-							<f:param name="auctionId"
-								value="#{a.id}"/>
-						</s:link>
-					</h:column>
-					<h:column id="DescriptionColumn">
-						<f:facet id="DescriptionFacet" name="header"><h:outputText value="#{messages['salesmen.Auction.Description']}"/></f:facet>
-						#{a.description}
-					</h:column>
-					<h:column id="StartPriceColumn">
-						<f:facet id="StartPriceFacet" name="header"><h:outputText value="#{messages['salesmen.Auction.StartPrice']}"/></f:facet>
-						#{a.startingPrice}
-					</h:column>
-				</h:dataTable>
-			</div>
-		</a:outputPanel>
 
 	</rich:panel>
 
