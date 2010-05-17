@@ -28,23 +28,33 @@ public interface AdvancedSearch {
 
 	public void setSearchUser(boolean searchUser);
 
-	public int getPageSize();
-
-	public void setPageSize(int pageSize);
-
 	public Category getIncludeCategory();
 
 	public void setIncludeCategory(Category includeCategory);
+	
+	public boolean getSearchFinished();
+	
+	public void setSearchFinished(boolean searchFinished);
 
 	public int getPriceMin();
 
 	public void setPriceMin(int priceMin);
 
-	public void find();
+	public void queryAuctions();
 
-	public void nextPage();
+	public void queryUsers();
 
-	public boolean isNextPageAvailable();
+	public void queryAuctionsAndUsers();
+
+	public boolean entityTypeAuction();
+
+	public boolean entityTypeUser();
+	
+	public void processTreeNodeImplSelection(Category cat);
+
+	public String getIncludeUser();
+
+	public void setIncludeUser(String includeUser);
 
 	public void auctionsOfUser(User user);
 
