@@ -15,9 +15,9 @@
                 sortMode="#{single}"
                 selectionMode="#{single}">
 
- 				<rich:column sortable="false" label="#{messages['salesmen.Auction.pictures']}" id="col_1">
+ 				<rich:column sortable="false" label="#{messages['salesmen.Auction.picture']}" id="col_1">
                     <f:facet name="header">
-                        <h:outputText value="#{messages['salesmen.Auction.pictures']}" id="picture"/>
+                        <h:outputText value="#{messages['salesmen.Auction.picture']}" id="picture"/>
                     </f:facet>
 					<s:graphicImage value="#{filteringBean.getFirstImage(auct)}" rendered="#{filteringBean.getFirstImage(auct) ne null}">
                         <s:transformImageSize height="60" maintainRatio="true"/>
@@ -53,8 +53,17 @@
 					<h:outputText value="#{filteringBean.getHighestBidAmount(auct)}" id="auct_highestBid"/>				
                 </rich:column> 
 				
+				<rich:column sortable="true" sortBy="#{filteringBean.getTimeDifference(auct)}"			
+				label="#{messages['salesmen.Auction.timeRemaining']}" id="col_5">
+                    <f:facet name="header">
+                        <h:outputText value="#{messages['salesmen.Auction.timeRemaining']}" id="timeRemaining_name"/>
+					</f:facet>
+					<h:outputText value="#{filteringBean.getTimeRemainingDays(auct)} #{messages['salesmen.Auction.days']} #{filteringBean.getTimeRemainingHours(auct)} #{messages['salesmen.Auction.hours']} #{filteringBean.getTimeRemainingMinutes(auct)} #{messages['salesmen.Auction.minutes']}" id="auct_remainingTime"/>
+				</rich:column>
+				
+				
                  <rich:column sortable="false" 				
-				label="#{messages['salesmen.Auction.Description']}" id="col_5" width="300">
+				label="#{messages['salesmen.Auction.Description']}" id="col_6" width="300">
                     <f:facet name="header">
                         <h:outputText value="#{messages['salesmen.Auction.Description']}" id="description_name"/>
 					</f:facet>
