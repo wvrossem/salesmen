@@ -306,6 +306,16 @@ public class AdvancedSearchBean implements AdvancedSearch
 		return entityType.equals("User");
 	}
 
+	public void setEnityTypeAuction()
+	{
+		entityType = "Auction";
+	}
+
+	public void setEntityTypeUser()
+	{
+		entityType = "User";
+	}
+
 	public void auctionsOfUser(User user)
 	{
 		this.user = user;
