@@ -53,12 +53,14 @@ public class ViewAuctionBean implements ViewAuction   , Serializable
 	@In
     EntityManager entityManager;
 
+	@In
+	Search search;
+
 	@Begin(join=true)
 	public void start()
 	{
 		if(this.auction==null)
 		{
-			BasicSearchBean search = new BasicSearchBean();
 			if(this.auctionId==null)//page.xml should prevent auctionId from being null, this is just a fail-safe
 			{
 				this.auctionId=1L;
@@ -76,7 +78,6 @@ public class ViewAuctionBean implements ViewAuction   , Serializable
     //loads the auction images
     private void updateImages()
     {
-        BasicSearchBean search = new BasicSearchBean();
         images=search.findImages(this.auction,5,this.entityManager);
     }
 
@@ -84,7 +85,6 @@ public class ViewAuctionBean implements ViewAuction   , Serializable
     {
         if(this.auction!=null && this.auction.getId()!=null)
         {
-            BasicSearchBean search = new BasicSearchBean();
             bids=search.findBids(this.auction,5,this.entityManager);
 
 
@@ -141,7 +141,6 @@ public class ViewAuctionBean implements ViewAuction   , Serializable
     {
         if(this.auction!=null && this.auction.getId()!=null)
         {
-            BasicSearchBean search = new BasicSearchBean();
             comments = search.findComments(this.auction,this.entityManager);
         }
     }

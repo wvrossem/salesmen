@@ -18,8 +18,8 @@ public class EmailService implements Serializable
 {
 	private static final long serialVersionUID = -8132989898020136666L;
 
-  //Private Attributes
-  private UserAccount account;
+	//Private Attributes
+	private UserAccount account;
 	private String password;
 	private Transaction transaction;
 
@@ -27,7 +27,7 @@ public class EmailService implements Serializable
 	private Log log;
 
 	//@in annotations
-	@In(create=true)
+	@In(create = true)
 	private Renderer renderer;
 	;
 
@@ -45,10 +45,10 @@ public class EmailService implements Serializable
 		}
 	}
 
-  @Asynchronous
-  public void sendPassword(UserAccount account, String password)
+	@Asynchronous
+	public void sendPassword(UserAccount account, String password)
 	{
-    this.account = account;
+		this.account = account;
 		setPassword(password);
 		try
 		{
@@ -60,7 +60,7 @@ public class EmailService implements Serializable
 		}
 	}
 
-  @Asynchronous
+	@Asynchronous
 	public void sendActivateAccountEmail(UserAccount account)
 	{
 		this.account = account;
@@ -90,13 +90,15 @@ public class EmailService implements Serializable
 	}
 
 	//Public Attribute getters/setters
-  public UserAccount getAccount() {
-    return account;
-  }
+	public UserAccount getAccount()
+	{
+		return account;
+	}
 
-  public void setAccount(UserAccount account) {
-    this.account = account;
-  }
+	public void setAccount(UserAccount account)
+	{
+		this.account = account;
+	}
 
 	public String getPassword()
 	{

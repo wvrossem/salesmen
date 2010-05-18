@@ -30,6 +30,9 @@ public class ManageTransaction implements Serializable
 	@In
 	EntityManager entityManager;
 
+	@In
+	Search search;
+
 	public void requestPayment()
 	{
 		emailService.sendRequestPaymentEmail(transaction);
@@ -47,7 +50,6 @@ public class ManageTransaction implements Serializable
 
 	private void updateComments()
 	{
-		BasicSearchBean search = new BasicSearchBean();
 		comments = search.findComments(transaction.getAuction(), this.entityManager);
 	}
 

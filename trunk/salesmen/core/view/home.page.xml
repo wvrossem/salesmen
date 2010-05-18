@@ -1,5 +1,5 @@
 <page>
-    <navigation from-action="#{basicSearch.find}">
+    <navigation from-action="#{search.queryAuctionsAndUsers}">
 		<redirect view-id="/basicSearch.xhtml"/>
 	</navigation>
 </page>
