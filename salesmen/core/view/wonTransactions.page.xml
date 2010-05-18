@@ -1,0 +1,3 @@
+<page login-required="true">
+	<action execute="#{basicSearch.findTransactionsWithUserBuyer(authenticatedUser)}"/>
+</page>

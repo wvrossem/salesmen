@@ -36,6 +36,10 @@ public interface BasicSearch {
 	public void findAuctionsOfUser(UserAccount userAccount);
 	
 	public void findAuctionsWithBidsByUser(UserAccount userAccount);
+	
+	public void findTransactionsWithUserSeller(UserAccount userAccount);
+	
+	public void findTransactionsWithUserBuyer(UserAccount userAccount);
 
 	public void createCategoryTree();
 
