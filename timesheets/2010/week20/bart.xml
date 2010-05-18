@@ -1,0 +1,19 @@
+<?xml version='1.0'?>
+<timesheet xmlns="http://purl.org/net/timetrack">
+	
+	
+	<item duration="PT1H">
+		<desc>Updates webdesign</desc>
+		<refs>
+			<ref>http://code.google.com/p/salesmen/source/detail?r=1418</ref>
+			<ref>http://code.google.com/p/salesmen/source/detail?r=1419</ref>
+			<ref>http://code.google.com/p/salesmen/source/detail?r=1422</ref>
+		</refs>
+	</item>
+	
+		
+	<item duration="PT25M">
+		<desc>Administration and Communication.</desc>
+	</item>
+			
+</timesheet>
