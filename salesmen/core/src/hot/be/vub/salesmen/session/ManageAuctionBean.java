@@ -52,7 +52,7 @@ public class ManageAuctionBean implements ManageAuction, Serializable
     @In FacesMessages facesMessages;
 	@In StatusMessages statusMessages;
 	@In AuctionProcessor processor;
-	@In BasicSearch basicSearch;
+	@In Search search;
 
     public ManageAuctionBean()
     {

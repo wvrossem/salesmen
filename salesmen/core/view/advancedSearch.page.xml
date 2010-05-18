@@ -1,6 +1,6 @@
 <page>
 
-	<navigation from-action="#{advancedSearch.queryAuctions}">
+	<navigation from-action="#{search.queryAuctions}">
 			<redirect view-id="/advancedSearchResults.xhtml"/>
 	</navigation>
 

@@ -27,31 +27,31 @@
                 <h:outputText value="#{messages['salesmen.AdvancedSearch.includeKeywords']}"/>
                 <br/>
                 <h:inputText id="includeTerm"
-							 value="#{advancedSearch.includeTerm}" style="width: 300px;">
+							 value="#{search.includeTerm}" style="width: 300px;">
 				</h:inputText>
 				<br/>
 				<h:outputText value="#{messages['salesmen.AdvancedSearch.excludeKeywords']}"/>
 				<br/>
 				<h:inputText id="excludeTerm"
-							 value="#{advancedSearch.excludeTerm}" style="width: 300px;">
+							 value="#{search.excludeTerm}" style="width: 300px;">
 				</h:inputText>
 				<br/>
             </fieldset>
             
             <fieldset>
                 <legend>#{messages['salesmen.AdvancedSearch.auctionOptions']}</legend>
-                <h:selectBooleanCheckbox value="#{advancedSearch.searchAuctionTitle}"
+                <h:selectBooleanCheckbox value="#{search.searchAuctionTitle}"
 										 label="Title"/>
 				&#160; 						 
                 <h:outputText value="#{messages['salesmen.AdvancedSearch.includeTitle']}"/>
                                 
                 <br/>
-                <h:selectBooleanCheckbox value="#{advancedSearch.searchAuctionDescription}"
+                <h:selectBooleanCheckbox value="#{search.searchAuctionDescription}"
 										 label="Desciption"/>
 				&#160;
                 <h:outputText value="#{messages['salesmen.AdvancedSearch.includeDescription']}"/>           
 				<br/>
-				<h:selectBooleanCheckbox value="#{advancedSearch.searchFinished}"
+				<h:selectBooleanCheckbox value="#{search.searchFinished}"
 										 label="Finished"/>
 				&#160;
 				<h:outputText value="#{messages['salesmen.AdvancedSearch.includeFinished']}"/>
@@ -66,14 +66,14 @@
                 <h:outputText value="#{messages['salesmen.AdvancedSearch.includeUser']}"/>
                 <br/>
                 <h:inputText id="includeUser"
-							 value="#{advancedSearch.includeUser}" style="width: 300px;">
+							 value="#{search.includeUser}" style="width: 300px;">
 				</h:inputText>
             </fieldset>
             
             
             <fieldset>
                 <legend>#{messages['salesmen.AdvancedSearch.includeCategory']}</legend>
-                <h:selectOneMenu value="#{advancedSearch.includeCategory}" required="true">
+                <h:selectOneMenu value="#{search.includeCategory}" required="true">
                     <s:selectItems value="#{categoryList.resultList}" var="category"
                                    label="#{category.name}" noSelectionLabel="Please Select..."/>
                     <s:convertEntity />
@@ -82,7 +82,7 @@
 
             <br/>
             <a:commandButton id="findEntities" value="Find"
-                            action="#{advancedSearch.queryAuctions}" />
+                            action="#{search.queryAuctions}" />
                 
 			</h:form>
 		</div>

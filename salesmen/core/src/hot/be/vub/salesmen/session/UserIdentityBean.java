@@ -19,14 +19,14 @@ public class UserIdentityBean implements UserIdentity, Serializable {
 
   @In EntityManager entityManager;
   @In Identity identity;
-  @In BasicSearch basicSearch;
+  @In Search search;
   @In Credentials credentials;
 
   private loginState loginResult;
 
   public void login()
   {
-    UserAccount result  = basicSearch.findUserAccount(credentials.getUsername());
+    UserAccount result  = search.findUserAccount(credentials.getUsername());
     identity.login();
     if(identity.isLoggedIn())
     {

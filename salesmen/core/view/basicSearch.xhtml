@@ -22,9 +22,9 @@
 			<h:form id="searchCriteria">
 				<fieldset>
 					<h:inputText id="searchTerm"
-								value="#{basicSearch.searchTerm}" style="width: 250px;">
+								value="#{search.includeTerm}" style="width: 250px;">
 						<a:support id="onkeyup" event="onkeyup"
-								actionListener="#{basicSearch.find}" reRender="results"/>
+								actionListener="#{search.queryAuctionsAndUsers}" reRender="results"/>
 					</h:inputText>
 					<!--<h:selectOneMenu id="entityType" value="#{basicSearch.entityType}">
 						<f:selectItem id="Auction" itemLabel="#{messages['salesmen.General.Auction']}" itemValue="Auction"/>
@@ -32,7 +32,7 @@
 					</h:selectOneMenu>-->
 					&#160;
 					<a:commandButton id="findEntities" value="#{messages['salesmen.BasicSearch.Find']}"
-									action="#{basicSearch.find}" reRender="results"/>
+									action="#{search.queryAuctionsAnsUsers}" reRender="results"/>
 					&#160;
 					<a:status id="status">
 						<f:facet id="StartStatus" name="start">
@@ -49,20 +49,21 @@
         <a:outputPanel id="results">
             <fieldset id="typeLinks" style="display:inline-block;vertical-align:top;height:285px;width:60px">
                 <legend>#{messages['salesmen.BasicSearch.types']}</legend>
-                <strong><s:link id="auctionsLink" action="#{basicSearch.setEntityTypeAuction}"
+                <strong><s:link id="auctionsLink" action="#{search.setEntityTypeAuction}"
                                value="#{messages['salesmen.General.Auction'].concat(' (').concat(auctions.rowCount).concat(')')}">
                 </s:link></strong>
                 <br/>
-                <strong><s:link id="usersLink" action="#{basicSearch.setEntityTypeUser}"
+                <strong><s:link id="usersLink" action="#{search.setEntityTypeUser}"
                                value="#{messages['salesmen.General.User'].concat(' (').concat(users.rowCount).concat(')')}">
                 </s:link></strong>
                 <br/>
             </fieldset>
+            
 
 
             <a:outputPanel id="searchResults" style="display:inline-block;">
                 <div class="section">
-                    <s:div rendered="#{basicSearch.entityTypeUser()}">
+                    <s:div rendered="#{search.entityTypeUser()}">
                         <h:outputText id="NoUsersFoundMessage"
                                    value="No Users Found"
                                 rendered="#{users != null and users.rowCount==0}"/>
@@ -88,7 +89,7 @@
                             </h:column>
                         </h:dataTable>
                     </s:div>
-                    <s:div rendered="#{basicSearch.entityTypeAuction()}">
+                    <s:div rendered="#{search.entityTypeAuction()}">
                         <h:outputText id="NoAuctionsFoundMessage"
                                        value="No Auctions Found"
                                     rendered="#{auctions != null and auctions.rowCount==0}"/>

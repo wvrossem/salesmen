@@ -27,11 +27,11 @@
 	<h:form id="searchCriteria">
 		<fieldset>
 			<h:inputText id="searchTerm"
-						value="#{basicSearch.searchTerm}" style="width: 165px;">
+						value="#{search.includeTerm}" style="width: 165px;">
 			</h:inputText>
 			<a:region renderRegionOnly="true">
 				<rich:suggestionbox id="searchTermSuggestionBox" for="searchTerm"
-					  suggestionAction="#{basicSearch.suggest}" var="result"
+					  suggestionAction="#{search.suggest}" var="result"
 		               width="165" height="100">
 					<h:column>
 						<h:outputText value="#{result.term}" style="font: menu;"/>                          
@@ -39,7 +39,7 @@
 				</rich:suggestionbox>
 			</a:region>
 			<a:commandButton id="findEntities" value="#{messages['salesmen.BasicSearch.Find']}"
-							action="#{basicSearch.find}" />
+							action="#{search.queryAuctionsAndUsers}" />
 			&#160;
 			<a:status id="status">
 				<f:facet id="StartStatus" name="start">

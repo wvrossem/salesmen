@@ -13,7 +13,6 @@ import org.jboss.seam.async.QuartzTriggerHandle;
 import org.jboss.seam.log.Log;
 
 import be.vub.salesmen.entity.Auction;
-import be.vub.salesmen.session.BasicSearchBean;
 
 @Name("processor")
 @AutoCreate
@@ -22,7 +21,7 @@ public class AuctionProcessor {
     @In 
     EntityManager entityManager;
     
-    @In BasicSearch basicSearch;
+    @In Search basicSearch;
 
     @Logger Log log;
 

@@ -104,7 +104,7 @@
 
                     <h:outputLabel for="category">#{messages['salesmen.auction.create.selectCategory']}</h:outputLabel>
                     <a:region id="categoryRegion">
-                        <rich:tree id="category" value="#{basicSearch.categoryTree}" var="cat" switchType="client">
+                        <rich:tree id="category" value="#{search.categoryTree}" var="cat" switchType="client">
                             <rich:treeNode>
                                 <h:outputText value="#{cat.name}"/>
 										  <a:support action="#{manageAuction.processTreeNodeImplSelection(cat)}"
