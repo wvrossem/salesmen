@@ -49,17 +49,13 @@
         <a:outputPanel id="results">
             <fieldset id="typeLinks" style="display:inline-block;vertical-align:top;height:285px;width:60px">
                 <legend>#{messages['salesmen.BasicSearch.types']}</legend>
-                <strong><a:commandLink id="auctionsLink" action="#{basicSearch.setEntityTypeAuction}"
-                               value="#{messages['salesmen.General.Auction'].concat(' (').concat(auctions.rowCount).concat(')')}"
-                               ajaxSingle="true"
-                               reRender="searchResults">
-                </a:commandLink></strong>
+                <strong><s:link id="auctionsLink" action="#{basicSearch.setEntityTypeAuction}"
+                               value="#{messages['salesmen.General.Auction'].concat(' (').concat(auctions.rowCount).concat(')')}">
+                </s:link></strong>
                 <br/>
-                <strong><a:commandLink id="usersLink" action="#{basicSearch.setEntityTypeUser}"
-                               value="#{messages['salesmen.General.User'].concat(' (').concat(users.rowCount).concat(')')}"
-                               ajaxSingle="true"
-                               reRender="searchResults">
-                </a:commandLink></strong>
+                <strong><s:link id="usersLink" action="#{basicSearch.setEntityTypeUser}"
+                               value="#{messages['salesmen.General.User'].concat(' (').concat(users.rowCount).concat(')')}">
+                </s:link></strong>
                 <br/>
             </fieldset>
 

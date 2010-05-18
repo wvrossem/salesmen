@@ -49,6 +49,10 @@ public interface AdvancedSearch {
 	public boolean entityTypeAuction();
 
 	public boolean entityTypeUser();
+
+	public void setEnityTypeAuction();
+
+	public void setEntityTypeUser();
 	
 	public void processTreeNodeImplSelection(Category cat);
 
