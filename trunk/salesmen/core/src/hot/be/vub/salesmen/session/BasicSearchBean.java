@@ -36,6 +36,8 @@ public class BasicSearchBean implements BasicSearch
 	@DataModel
 	private List<User> users;
 	@DataModel
+	private List<Transaction> transactions;
+	@DataModel
 	private List entities;
 	private TreeNodeImpl<Category> categoryTree = null;
 
@@ -164,8 +166,18 @@ public class BasicSearchBean implements BasicSearch
 	{
 		String qry = "SELECT DISTINCT a FROM Auction a, Bid b WHERE b.owner = " + userAccount.getAccountId() + " and b.auction = a.id";
 		auctions = entityManager.createQuery(qry).getResultList();
-		System.out.println(qry);
-		System.out.println(auctions);
+	}
+	
+	public void findTransactionsWithUserSeller(UserAccount userAccount)
+	{
+		String qry = "SELECT DISTINCT t FROM Transaction t WHERE t.seller = " + userAccount.getAccountId();
+		transactions = entityManager.createQuery(qry).getResultList();
+	}
+	
+	public void findTransactionsWithUserBuyer(UserAccount userAccount)
+	{
+		String qry = "SELECT DISTINCT t FROM Transaction t WHERE t.buyer = " + userAccount.getAccountId();
+		transactions = entityManager.createQuery(qry).getResultList();
 	}
 
 	public UserAccount findUserAccount(String userName)

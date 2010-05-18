@@ -1,51 +1,53 @@
-<!DOCTYPE composition PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <ui:composition xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:ui="http://java.sun.com/jsf/facelets"
+    xmlns:h="http://java.sun.com/jsf/html"
+    xmlns:f="http://java.sun.com/jsf/core"
+    xmlns:a4j="http://richfaces.org/a4j"
 	xmlns:s="http://jboss.com/products/seam/taglib"
-	xmlns:ui="http://java.sun.com/jsf/facelets"
-	xmlns:f="http://java.sun.com/jsf/core"
-	xmlns:h="http://java.sun.com/jsf/html"
-	xmlns:rich="http://richfaces.org/rich"
-	template="layout/template.xhtml">
+    xmlns:rich="http://richfaces.org/rich"
+	xmlns:fn="http://java.sun.com/jsp/jstl/functions">
 
-<ui:define name="body">
+    <h:form id="form1">
 
-	<rich:panel>
-		<f:facet name="header">List of transactions</f:facet>
-
-		<div class="results">
-
-			<h:outputText value="No transaction exists"
-					rendered="#{empty transactionList.resultList}"/>
-
-			<h:dataTable id="transactionList" var="transaction"
-					value="#{transactionList.resultList}"
-				rendered="#{not empty transactionList.resultList}">
-				<h:column>
-					<f:facet name="header">Id</f:facet>
-					#{transaction.id}
-				</h:column>
-				<h:column>
-					<f:facet name="header">Name</f:facet>
-					<s:link id="transaction"
-						value="#{transaction.name}"
-				propagation="none"
-						view="/transaction.xhtml">
-						<f:param name="transactionId"
-								value="#{transaction.id}"/>
+            <rich:extendedDataTable
+                value="#{transactions}" var="trans" id="transactions"
+                width="685px" height="300px"
+                sortMode="#{single}"
+                selectionMode="#{single}">
+				
+				<rich:column sortable="true" sortBy="#{trans.title}" id="col_1"
+                    label="#{messages['salesmen.Transaction.Title']}">
+                    <f:facet name="header">
+                        <h:outputText value="#{messages['salesmen.Transaction.Title']}" id="title_name"/>
+                    </f:facet>
+					<s:link id="auctionLinkonTitle"
+						propagation="none"
+						value="#{trans.auction.getTitle()}"
+					    view="/transaction.xhtml">
+						<f:param name="auctionId" value="#{trans.id}"/>
 					</s:link>
-				</h:column>
-			</h:dataTable>
-
-		</div>
-
-	</rich:panel>
-
-	<div class="actionButtons">
-		<s:button id="done"
-			value="Create transaction"
-				view="/transaction.xhtml"/>
-	</div>
-
-</ui:define>
+                </rich:column>
+				
+				<rich:column sortable="true"  sortBy="#{trans.seller.user.screenName}" id="col_2"
+                    label="#{messages['salesmen.Transaction.Seller']}">
+                    <f:facet name="header">
+                        <h:outputText value="#{messages['salesmen.Transaction.Seller']}" id="seller_name"/>
+                    </f:facet>
+                    <h:outputText value="#{trans.seller.user.screenName}" id="trans_seller"/>
+                </rich:column>
+				
+				<rich:column sortable="true"  sortBy="#{trans.buyer.user.screenName}" id="col_3"
+                    label="#{messages['salesmen.Transaction.Buyer']}">
+                    <f:facet name="header">
+                        <h:outputText value="#{messages['salesmen.Transaction.Buyer']}" id="buer_name"/>
+                    </f:facet>
+                    <h:outputText value="#{trans.buyer.user.screenName}" id="trans_buyer"/>
+                </rich:column>
+			
+				<f:facet name="footer">
+                <rich:datascroller id="ds2" renderIfSinglePage="true"></rich:datascroller>
+				</f:facet>
+            </rich:extendedDataTable>
+			
+    </h:form>
 </ui:composition>
