@@ -2,6 +2,7 @@ package be.vub.salesmen.session;
 
 import be.vub.salesmen.entity.Transaction;
 import be.vub.salesmen.entity.UserAccount;
+import be.vub.salesmen.entity.Auction;
 import org.jboss.seam.annotations.AutoCreate;
 import org.jboss.seam.annotations.In;
 import org.jboss.seam.annotations.Logger;
@@ -20,6 +21,7 @@ public class EmailService implements Serializable
 
 	//Private Attributes
 	private UserAccount account;
+	private Auction auction;
 	private String password;
 	private Transaction transaction;
 
@@ -27,9 +29,8 @@ public class EmailService implements Serializable
 	private Log log;
 
 	//@in annotations
-	@In(create = true)
+	@In(create=true)
 	private Renderer renderer;
-	;
 
 	@Asynchronous
 	public void sendConfirmAccountEmail(UserAccount account)
@@ -45,10 +46,10 @@ public class EmailService implements Serializable
 		}
 	}
 
-	@Asynchronous
-	public void sendPassword(UserAccount account, String password)
+  @Asynchronous
+  public void sendPassword(UserAccount account, String password)
 	{
-		this.account = account;
+    this.account = account;
 		setPassword(password);
 		try
 		{
@@ -60,7 +61,7 @@ public class EmailService implements Serializable
 		}
 	}
 
-	@Asynchronous
+  @Asynchronous
 	public void sendActivateAccountEmail(UserAccount account)
 	{
 		this.account = account;
@@ -88,16 +89,36 @@ public class EmailService implements Serializable
 			log.error("Error sending mail", e);
 		}
 	}
+	
+	@Asynchronous
+	public void sendFinishedAuctionEmail(Auction auction)
+	{
+		this.auction = auction;
+		try
+		{
+			renderer.render("/finishedAuctionEmail.xhtml");
+		}
+		catch (Exception e)
+		{
+			log.error("Error sending mail", e);
+		}
+	}
 
 	//Public Attribute getters/setters
-	public UserAccount getAccount()
-	{
+	public UserAccount getAccount() {
 		return account;
 	}
 
-	public void setAccount(UserAccount account)
-	{
+	public void setAccount(UserAccount account) {
 		this.account = account;
+	}
+	
+	public Auction getAuction() {
+		return auction;
+	}
+	
+	public void setAuction(Auction auction) {
+		this.auction = auction;
 	}
 
 	public String getPassword()
