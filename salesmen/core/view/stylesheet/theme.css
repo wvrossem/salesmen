@@ -271,7 +271,14 @@ img.errors {
 	text-decoration: underline;
 }
 
-.rich-toolbar-item .rich-menu-item a:hover {
+.rich-menu-item {
+	text-decoration:none;
+	background-color:#ffe38c;
+}
+.dr-label-text-decor {
+	background-color:#ffe38c;
+}
+.rich-toolbar-item .rich-menu-item:hover a:hover {
 	text-decoration: none;
 }
 
@@ -343,4 +350,36 @@ textarea.description
 {
     width:300px;
     height:200px;
+}
+
+table.rich-dtascroller-table {
+	border: 1px solid #555;
+	background-color: #ddd;
+}
+
+td.rich-datascr-button {
+	border: 1px solid #555;
+	background-color: #eee;
+}
+
+td.rich-datascr-act {
+	border-top: 2px solid #000;
+	background-color: #fff;
+	color:#000;
+}
+td.rich-datascr-button-dsbld {
+	color: #ccc;
+}
+td.rich-datascr-inact {
+	border-top: 2px solid #ccc;
+	background-color: #fff;
+	color: #ccc;
+}
+
+.extdt-menucell {
+	background-color:#f0f;
+}
+
+.rich-extdt-subheadercell {
+	background-color:#ffe38c;
 }
