@@ -32,6 +32,10 @@ public interface BasicSearch {
 	public void find();
 	
 	public Object findUser(String screenName);
+	
+	public void findAuctionsOfUser(UserAccount userAccount);
+	
+	public void findAuctionsWithBidsByUser(UserAccount userAccount);
 
 	public void createCategoryTree();
 

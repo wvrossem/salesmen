@@ -16,15 +16,12 @@
 
 		<a:outputPanel id="searchResults">
 			<div class="section">
-				<h:outputText id="NoEntitiesFoundMessage"
-						   value="#{messages['salesmen.Search.NoEntitiesFound']}"
-						rendered="#{entities != null and entities.rowCount==0}"/>
-				<s:div rendered="#{entities.rowCount>0}">
+				<h:outputText id="NoAuctionsFoundMessage"
+									   value="No Auctions Found"
+									rendered="#{auctions != null and auctions.rowCount==0}"/>
+				<s:div rendered="#{auctions.rowCount>0}">
 					<ui:include src="/auctionList.xhtml"/>
 				</s:div>
-				<s:link id="MoreResultsLink" value="#{messages['salesmen.Search.NextPage']}"
-						action="#{advancedSearch.nextPage}"
-						rendered="#{advancedSearch.nextPageAvailable}"/>   
 			</div>
 		</a:outputPanel>
 

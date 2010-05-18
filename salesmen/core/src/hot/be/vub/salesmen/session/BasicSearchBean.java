@@ -153,6 +153,20 @@ public class BasicSearchBean implements BasicSearch
 		}
 		return null;
 	}
+	
+	public void findAuctionsOfUser(UserAccount userAccount)
+	{
+		String qry = "FROM Auction a WHERE a.owner = " + userAccount.getAccountId();
+		auctions = entityManager.createQuery(qry).getResultList();
+	}
+	
+	public void findAuctionsWithBidsByUser(UserAccount userAccount)
+	{
+		String qry = "SELECT DISTINCT a FROM Auction a, Bid b WHERE b.owner = " + userAccount.getAccountId() + " and b.auction = a.id";
+		auctions = entityManager.createQuery(qry).getResultList();
+		System.out.println(qry);
+		System.out.println(auctions);
+	}
 
 	public UserAccount findUserAccount(String userName)
 	{
