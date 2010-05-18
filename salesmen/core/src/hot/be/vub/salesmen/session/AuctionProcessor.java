@@ -13,15 +13,13 @@ import org.jboss.seam.async.QuartzTriggerHandle;
 import org.jboss.seam.log.Log;
 
 import be.vub.salesmen.entity.Auction;
+import be.vub.salesmen.session.BasicSearchBean;
 
 @Name("processor")
 @AutoCreate
 public class AuctionProcessor {
     
-    @In 
-    EntityManager entityManager;
-    
-    @In Search basicSearch;
+    @In EntityManager entityManager;
 
     @Logger Log log;
 
@@ -30,8 +28,9 @@ public class AuctionProcessor {
     public QuartzTriggerHandle scheduleAuction(@Expiration Date when,
         @IntervalDuration Long interval, @FinalExpiration Date stoptime, Auction auction) 
     {
-        auction = entityManager.merge(auction);	
+        auction = entityManager.merge(auction);
 		log.info("An auction's deadline has passed.");
+		//new EmailService().sendFinishedAuctionEmail(auction);
 		
         if (auction.getStatus() == Auction.AuctionStatus.LISTED)
         {
