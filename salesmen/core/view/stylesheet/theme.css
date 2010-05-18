@@ -275,11 +275,18 @@ img.errors {
 	text-decoration:none;
 	background-color:#ffe38c;
 }
-.dr-label-text-decor {
+.rich-menu-list-bg{
 	background-color:#ffe38c;
 }
 .rich-toolbar-item .rich-menu-item:hover a:hover {
 	text-decoration: none;
+	background-color:#ffe38c;
+}
+.dr-menu-label{
+	background-color:#ffa412;
+}
+.dr-menu-label:hover{
+	background-color:#ffe38c;
 }
 
 .rich-datalist {
