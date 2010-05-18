@@ -286,9 +286,13 @@ img.errors {
 	background-color:#ffa412;
 }
 .dr-menu-label:hover{
+	border: 1px dashed #555;
 	background-color:#ffe38c;
 }
-
+.rich-menu-list-border{
+	border:1px dashed #555;
+	background-color:#ffe38c;
+}
 .rich-datalist {
 	list-style: square;
 	margin: 6px 0 1px 0;
