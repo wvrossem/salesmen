@@ -20,7 +20,7 @@
 
 		<item duration="PT1H">
 		<desc>Learning methods to filter and sort data with dataFilterSlider + Learning filterBy:Method, filterBy:Expression + how to make expressions with fn-tag</desc>
-		<refs>http://livedemo.exadel.com/richfaces-demo/richfaces/filteringFeature.jsf?c=filtering&tab=usage</refs>
+		<refs>http://livedemo.exadel.com/richfaces-demo/richfaces/filteringFeature.jsf?c=filtering&amp;tab=usage</refs>
 		<refs>http://www.hscripts.com/tutorials/jsp/jstltags/function-tag.php</refs>
 		<refs></refs>
 		<refs></refs>
@@ -45,11 +45,11 @@
 		<refs>http://docs.jboss.org/richfaces/latest_3_3_X/en/devguide/html/rich_dataTable.html</refs>
 		<refs></refs>
 		<refs>http://docs.jboss.org/richfaces/latest_3_3_X/en/devguide/html/rich_extendedDataTable.html</refs>
-		<refs>http://livedemo.exadel.com/richfaces-demo/richfaces/extendedDataTable.jsf?c=extendedDataTable&tab=usage</refs>
-		<refs>http://livedemo.exadel.com/richfaces-demo/richfaces/extendedDataTable.jsf?tab=info&cid=437992</refs>
+		<refs>http://livedemo.exadel.com/richfaces-demo/richfaces/extendedDataTable.jsf?c=extendedDataTable&amp;tab=usage</refs>
+		<refs>http://livedemo.exadel.com/richfaces-demo/richfaces/extendedDataTable.jsf?tab=info&amp;cid=437992</refs>
 		<refs>http://www.jboss.org/file-access/default/members/jbossrichfaces/freezone/docs/development/userguide/en/html/rich_dataFilterSlider.html</refs>
-		<refs>http://livedemo.exadel.com/richfaces-demo/richfaces/dataFilterSlider.jsf?c=dataFilterSlider&tab=usage</refs>
-		<refs>http://livedemo.exadel.com/richfaces-demo/richfaces/dataTableScroller.jsf?c=dataTableScroller&tab=usage</refs>
+		<refs>http://livedemo.exadel.com/richfaces-demo/richfaces/dataFilterSlider.jsf?c=dataFilterSlider&amp;tab=usage</refs>
+		<refs>http://livedemo.exadel.com/richfaces-demo/richfaces/dataTableScroller.jsf?c=dataTableScroller&amp;tab=usage</refs>
 		<refs></refs>
 		</item>
 		
