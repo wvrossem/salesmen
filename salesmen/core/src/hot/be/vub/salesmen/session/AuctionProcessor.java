@@ -13,7 +13,7 @@ import org.jboss.seam.async.QuartzTriggerHandle;
 import org.jboss.seam.log.Log;
 
 import be.vub.salesmen.entity.Auction;
-import be.vub.salesmen.session.BasicSearchBean;
+import be.vub.salesmen.session.SearchBean;
 
 @Name("processor")
 @AutoCreate
