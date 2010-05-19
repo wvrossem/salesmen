@@ -54,6 +54,7 @@ public class ManageTransaction implements Serializable
 		{
 			System.out.println("Setting transaction to payed");
 			transaction.setPayed(true);
+			emailService.sendTransactionPayedEmail(transaction);
 		}
 	}
 
@@ -63,6 +64,7 @@ public class ManageTransaction implements Serializable
 		{
 			System.out.println("Setting transaction to shipped");
 			transaction.setShipped(true);
+			emailService.sendTransactionShippedEmail(transaction);
 		}
 	}
 
