@@ -42,6 +42,13 @@ public class UserComment implements Serializable
 		this.user = user;
 		date = java.util.Calendar.getInstance().getTime();
 	}
+
+	public UserComment(UserAccount user, Transaction transaction, String content) {
+		this.content = content;
+		this.transaction = transaction;
+		this.user = user;
+		date = java.util.Calendar.getInstance().getTime();
+	}
 	
 	// Public attribute getters/setters with annotations
 	@Id @GeneratedValue
@@ -101,8 +108,7 @@ public class UserComment implements Serializable
 	{
 		this.user = user;
 	}
-	
-	@NotNull
+
 	@ManyToOne
 	@JoinColumn(name = "AUCTION_ID")
 	public Auction getAuction()
