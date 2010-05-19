@@ -44,15 +44,14 @@ insert into Category (name,parent_id,version) values ('Tools & Auto',1, 0);
 
 
 insert into auction (title,description,startingprice,status, category_id, version, user_id,startDate,endDate,hotAuction) values ('Botten','Zwarte met strikjes',51.6,1,2,0,3,now(),now(), false);
-insert into auction (title,description,startingprice,status, category_id, version, user_id,startDate,endDate,hotAuction) values ('Auto','Blauw',36.51,1,4,0,2,now(),now(), true);
-insert into auction (title,description,startingprice,status, category_id, version, user_id,startDate,endDate,hotAuction) values ('PC','Kapot enzo',5.1,1,6,0,1,now(),now(), true);
-insert into auction (title,description,startingprice,status, category_id, version, user_id,startDate,endDate,hotAuction) values ('Mijn moeder','...',1.88,1,7,0,2,now(),now(), true);
+insert into auction (title,description,startingprice,status, category_id, version, user_id,startDate,endDate,hotAuction) values ('Auto','Blauw',36.51,1,4,0,2,now(),now(), false);
+insert into auction (title,description,startingprice,status, category_id, version, user_id,startDate,endDate,hotAuction) values ('PC','Kapot enzo',5.1,1,6,0,1,now(),now(), false);
+insert into auction (title,description,startingprice,status, category_id, version, user_id,startDate,endDate,hotAuction) values ('Mijn moeder','...',1.88,1,7,0,2,now(),now(), false);
 insert into auction (title,description,startingprice,status, category_id, version, user_id,startDate,endDate,hotAuction) values ('Gotterdammerung','...',10.2,1,8,0,2,now(),now(), false);
 insert into auction (title,description,startingprice,status, category_id, version, user_id,startDate,endDate,hotAuction) values ('Organon','By Aristotle',10.2,1,10,0,2,now(),now(), true);
 insert into auction (title,description,startingprice,status, category_id, version, user_id,startDate,endDate,hotAuction) values ('Principia Mathematica','By Isaac Newton',10.2,1,2,0,2,now(),now(), false);
 insert into auction (title,description,startingprice,status, category_id, version, user_id,startDate,endDate,hotAuction) values ('Discourse on the Method','By Rene Descartes',10.2,1,5,0,2,now(),now(), false);
-insert into auction (title,description,startingprice,status, category_id, version, user_id,startDate,endDate,hotAuction) values ('The Republic','By Plato',10.2,1,2,0,2,now(),now(), false);
-
+insert into auction (title,description,startingprice,status, category_id, version, user_id,startDate,endDate,hotAuction) values ('The Republic','By Plato',10.2,1,2,0,2,now(),now(), true);
 insert into auction (title,description,startingprice,status, category_id, version, user_id,startDate,endDate,hotAuction) values ('A set of postulates for the foundation of logic','Alonzo Church',10.2,1,11,0,2,now(),now(), true);
 insert into auction (title,description,startingprice,status, category_id, version, user_id,startDate,endDate,hotAuction) values ('Recursive Functions of Symbolic Expressions and Their Computation','By John McCarthy',10.2,1,13,0,2,now(),now(), false);
 insert into auction (title,description,startingprice,status, category_id, version, user_id,startDate,endDate,hotAuction) values ('On Computable Numbers, with an Application to the Entscheidungsproblem','By Alan Turing',10.2,1,6,0,2,now(),now(), false);
@@ -65,10 +64,6 @@ insert into auction (title,description,startingprice,status, category_id, versio
 insert into auction (title,description,startingprice,status, category_id, version, user_id,startDate,endDate,hotAuction) values ('Introductio in analysin infinitorum','By Leonhard Euler',10.2,1,10,0,2,now(),now(), false);
 insert into auction (title,description,startingprice,status, category_id, version, user_id,startDate,endDate,hotAuction) values ('On the Constitution of Atoms and Molecules, Part I','By Niels Bohr',10.2,1,9,0,2,now(),now(), false);
 insert into auction (title,description,startingprice,status, category_id, version, user_id,startDate,endDate,hotAuction) values ('Botten','Zwarte met strikjes',51.6,1,2,0,3,now(),now(), false);
-insert into auction (title,description,startingprice,status, category_id, version, user_id,startDate,endDate,hotAuction) values ('Auto','Blauw',36.51,1,4,0,2,now(),now(), false);
-insert into auction (title,description,startingprice,status, category_id, version, user_id,startDate,endDate,hotAuction) values ('PC','Kapot enzo',5.1,1,6,0,1,now(),now(), false);
-insert into auction (title,description,startingprice,status, category_id, version, user_id,startDate,endDate,hotAuction) values ('Mijn moeder','...',1.88,1,7,0,2,now(),now(), false);
-insert into auction (title,description,startingprice,status, category_id, version, user_id,startDate,endDate,hotAuction) values ('Young Woman on a Sofa','...',10.2,1,7,0,2,now(),now(), false);
 insert into auction (title,description,startingprice,status, category_id, version, user_id,startDate,endDate,hotAuction) values ('Unconscious Landscape (1967-1968)','Bronze. 12 x 22 x 24 inches.',10.2,1,13,0,2,now(),now(), false);
 insert into auction (title,description,startingprice,status, category_id, version, user_id,startDate,endDate,hotAuction) values ('The Blind Leading the Blind (1947-1949)','Bronze, dark patina. 69.25 x 69 x 23 inches.',10.2,1,12,0,2,now(),now(), false);
 insert into auction (title,description,startingprice,status, category_id, version, user_id,startDate,endDate,hotAuction) values ('Dejeuner sur l\'herbe','Painting  by Edouard Manet.',10.2,1,11, 0,2,now(),now(), false);
@@ -76,6 +71,10 @@ insert into auction (title,description,startingprice,status, category_id, versio
 insert into auction (title,description,startingprice,status, category_id, version, user_id,startDate,endDate,hotAuction) values ('Vers la flamme','Piano piece by Alexander Scriabin.',10.2,1,9,0,2,now(),now(), false);
 insert into auction (title,description,startingprice,status, category_id, version, user_id,startDate,endDate,hotAuction) values ('The Principles of Mathematics','By Bertrand Russel',10.2,1,6,0,2,now(),now(), true);
 insert into auction (title,description,startingprice,status, category_id, version, user_id,startDate,endDate,hotAuction) values ('On Certainty','Ludwig Wittgenstein',10.2,1,7,0,2,now(),now(), false);
+insert into auction (title,description,startingprice,status, category_id, version, user_id,startDate,endDate,hotAuction) values ('A mathematical theory of communication','By C.E. Shannon',13.2,1,15,0,2,now(),now(), false);
+insert into auction (title,description,startingprice,status, category_id, version, user_id,startDate,endDate,hotAuction) values ('A method for the construction of minimum redundancy codes', 'By David A. Huffman',11.5,1,14,0,2,now(),now(), false);
+insert into auction (title,description,startingprice,status, category_id, version, user_id,startDate,endDate,hotAuction) values ('Guarded Commands, Nondeterminacy and Formal Derivation of Programs','By Edsger W. Dijkstra',11.5,1,14,0,2,now(),now(), false);
+insert into auction (title,description,startingprice,status, category_id, version, user_id,startDate,endDate,hotAuction) values ('A letter from Gödel to von Neumann','By Kurt Gödel',5.2,1,6,0,2,now(),now(), true);
 
 
 

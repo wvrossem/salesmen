@@ -1,0 +1,38 @@
+<s:div id="auctionListByCategory"
+       xmlns="http://www.w3.org/1999/xhtml"
+       xmlns:s="http://jboss.com/products/seam/taglib"
+       xmlns:ui="http://java.sun.com/jsf/facelets"
+       xmlns:f="http://java.sun.com/jsf/core"
+       xmlns:h="http://java.sun.com/jsf/html"
+       xmlns:rich="http://richfaces.org/rich"
+       xmlns:a="http://richfaces.org/a4j"
+       style="margin-top: 2em; border: 1px dotted #ccc; padding: 1em;">
+  <table width="100%">
+    <tr>
+      <td style="vertical-align: top; width: 25%;">
+        <h:form>
+          <a:region id="auctionListByCategoryCategoryRegion">
+            <rich:tree id="auctionListByCategoryCategory" value="#{search.categoryTree}" var="cat"
+                       ajaxSubmitSelection="true" nodeSelectListener="#{search.processTreeNodeImplSelection(cat)}">
+              <rich:treeNode>
+                <a:support event="onclick" reRender="auctionListByCategorySearchResults"/>
+                <h:outputText value="#{cat.name}"/>
+              </rich:treeNode>
+            </rich:tree>
+          </a:region>
+        </h:form>
+
+      </td>
+      <td style="width: 75%">
+        <a:outputPanel id="auctionListByCategorySearchResults">
+          <h:outputText id="auctionListByCategoryNoAuctionsFoundMessage"
+                        value="No Auctions Found"
+                        rendered="#{auctions != null and auctions.rowCount==0}"/>
+          <s:div rendered="#{auctions.rowCount > 0}">
+            <ui:include src="/auctionList.xhtml"/>
+          </s:div>
+        </a:outputPanel>
+      </td>
+    </tr>
+  </table>
+  </s:div>
