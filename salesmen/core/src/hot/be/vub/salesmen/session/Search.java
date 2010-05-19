@@ -108,13 +108,20 @@ public interface Search
 
 	public void setPriceMin(int priceMin);
 
+	public int getPriceMax();
+
+	public void setPriceMax(int priceMin);
+
 	public String getIncludeUser();
 
 	public void setIncludeUser(String includeUser);
+
+	public User findUser(Long userId);
 
 	/*
 		OTHER METHODS
 	 */
 	public void destroy();
+
 }
 

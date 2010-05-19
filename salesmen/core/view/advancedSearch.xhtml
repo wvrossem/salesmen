@@ -59,6 +59,15 @@
                         
             <fieldset>
                 <legend>#{messages['salesmen.AdvancedSearch.priceOptions']}</legend>
+                <h:outputText value="#{messages['salesmen.AdvancedSearch.priceMax']}"/>
+                <br/>
+                <h:inputText id="priceMax"
+							 value="#{search.priceMax}" style="width: 300px;" />
+                <br/>
+                <h:outputText value="#{messages['salesmen.AdvancedSearch.priceMin']}"/>
+                <br/>
+                <h:inputText id="priceMin"
+							 value="#{search.priceMin}" style="width: 300px;" />
             </fieldset>
             
             <fieldset>

@@ -1,6 +1,7 @@
 package be.vub.salesmen.session;
 
 import be.vub.salesmen.entity.*;
+import org.hibernate.validator.Pattern;
 import org.jboss.seam.ScopeType;
 import org.jboss.seam.annotations.*;
 import org.jboss.seam.annotations.datamodel.DataModel;
@@ -38,7 +39,7 @@ public class SearchBean implements Search
 	boolean searchCategory;
 	boolean searchFinished;
 
-	String category = "";
+	String category = null;
 	String tags;
 
 	User user = null;
@@ -48,12 +49,10 @@ public class SearchBean implements Search
 	int minNrOfBids = 0;
 	int maxNrOfBids = 0;
 
-	Category includeCategory;
+	Category includeCategory = null;
 
 	private String auctionsQry;
 	private String usersQry;
-
-	private boolean nextPageAvailable;
 
 	@DataModel
 	private List entities;
@@ -68,6 +67,7 @@ public class SearchBean implements Search
 	private boolean searchUserFirstName = true;
 	private boolean searchUserLasttName = true;
 	private String entityType = "Auction";
+	private boolean useAdvancedFilter = true;
 
 	private void createAuctionsQuery()
 	{
@@ -76,7 +76,7 @@ public class SearchBean implements Search
         String[] includeKeywords = getIncludeKeywords();
         String[] excludeKeywords = getExcludeKeywords();
 
-		qry.append("from");
+		qry.append("select distinct a from");
 
 		if (searchAuctionTitle | searchAuctionDescription | searchOwner)
 		{
@@ -167,10 +167,104 @@ public class SearchBean implements Search
 		auctionsQry = qry.toString();
 
 		System.out.println("Auction query: " + auctionsQry);
+	}
 
-		if (includeUser != null)
+	public void filterAuctions()
+	{
+		List<Auction> filteredResults = new ArrayList<Auction>();
+		FilteringBean filter = new FilteringBean();
+		boolean filterElse = false;
+		if (includeCategory != null)
 		{
-			List filteredResults = new ArrayList();
+			filterElse = true;
+			for (Auction a : auctions)
+			{
+				if (a.getCategory().getId() == includeCategory.getId())
+				{
+					filteredResults.add(a);
+				}
+			}
+		}
+		if (priceMax != 0)
+		{
+			if (filterElse)
+			{
+				List<Auction> filteredElseResults = new ArrayList<Auction>();
+				for (Auction a : filteredResults)
+				{
+					if (filter.getHighestBidAmount(a) <= priceMax)
+					{
+						filteredElseResults.add(a);
+					}
+				}
+				filteredResults = filteredElseResults;
+			} else
+			{
+				filterElse = true;
+				for (Auction a : auctions)
+				{
+					if (filter.getHighestBidAmount(a) <= priceMax)
+					{
+						filteredResults.add(a);
+					}
+				}
+			}
+		}
+		if (priceMin != 0)
+		{
+			if (filterElse)
+			{
+				List<Auction> filteredElseResults = new ArrayList<Auction>();
+				for (Auction a : filteredResults)
+				{
+					if (filter.getHighestBidAmount(a) >= priceMin)
+					{
+						filteredElseResults.add(a);
+					}
+				}
+				filteredResults = filteredElseResults;
+			} else
+			{
+				filterElse = true;
+				for (Auction a : auctions)
+				{
+					if (filter.getHighestBidAmount(a) >= priceMin)
+					{
+						filteredResults.add(a);
+					}
+				}
+			}
+		}
+
+		if (includeUser.isEmpty())
+		{
+			if (filterElse)
+			{
+				List<Auction> filteredElseResults = new ArrayList<Auction>();
+				for (Auction a : filteredResults)
+				{
+					if (a.getOwner().getUser().getScreenName().equals(includeUser))
+					{
+						filteredElseResults.add(a);
+					}
+				}
+				filteredResults = filteredElseResults;
+			} else
+			{
+				filterElse = true;
+				for (Auction a : auctions)
+				{
+					if (a.getOwner().getUser().getScreenName().equals(includeUser))
+					{
+						filteredResults.add(a);
+					}
+				}
+			}
+		}
+
+		if (filterElse)
+		{
+			auctions = filteredResults;
 		}
 	}
 
@@ -180,6 +274,10 @@ public class SearchBean implements Search
 		{
 			createAuctionsQuery();
 			auctions =  entityManager.createQuery(auctionsQry).getResultList();
+			if(useAdvancedFilter)
+			{
+				filterAuctions();
+			}
 		} catch (Exception ex)
 		{
 			System.out.println(ex);
@@ -294,8 +392,10 @@ public class SearchBean implements Search
 
 	public void queryAuctionsAndUsers()
 	{
+		useAdvancedFilter = false;
 		queryAuctions();
 		queryUsers();
+		useAdvancedFilter = true;
 
 		if ((!auctions.isEmpty() || !users.isEmpty()) && includeTerm.length() > 3)
 		{
@@ -529,6 +629,27 @@ public class SearchBean implements Search
 		}
 	}
 
+	public User findUser(Long userId)
+	{
+		 try
+		{
+			String qry = "FROM User u WHERE u.userId = #{userId}";
+			users = entityManager.createQuery(qry).getResultList();
+			if (users.size() == 1)
+			{
+				return users.get(0);
+			} else
+			{
+				return null;
+			}
+		}
+		catch (NullPointerException e)
+		{
+			System.out.println("findAuction ERROR: searching for ID=" + userId);
+			return null;
+		}
+	}
+
 	public List<Bid> findBids(Auction auction, int limit, EntityManager em)
 	{
 		List<Bid> bids = null;
@@ -664,6 +785,8 @@ public class SearchBean implements Search
 		this.searchUser = searchUser;
 	}
 
+	@Pattern(regex="[0-9]+",
+			 message="Minimum price may only contain numbers")
 	public int getPriceMin()
 	{
 		return priceMin;
@@ -674,6 +797,8 @@ public class SearchBean implements Search
 		this.priceMin = priceMin;
 	}
 
+	@Pattern(regex="[0-9]+",
+			 message="Minimum price may only contain numbers")
 	public int getPriceMax()
 	{
 		return priceMax;
