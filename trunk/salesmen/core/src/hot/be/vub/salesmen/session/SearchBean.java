@@ -416,7 +416,6 @@ public class SearchBean implements Search
 
 	public void processTreeNodeImplSelection(Category cat) {
 		includeCategory = cat;
-		System.out.println("Category selected");
 		auctionsOfCategory(cat);
     }
 
