@@ -296,11 +296,25 @@ public class SearchBean implements Search
 	{
 		queryAuctions();
 		queryUsers();
+
+		if ((!auctions.isEmpty() || !users.isEmpty()) && includeTerm.length() > 3)
+		{
+			String q = "FROM SearchTerm s WHERE s.term = '" + includeTerm + "'";
+			System.out.println(q);
+			List entLst = entityManager.createQuery(q).getResultList();
+			System.out.println(entLst);
+			if (entLst.isEmpty())
+			{
+					SearchTerm savedTerm = new SearchTerm();
+					savedTerm.setTerm(includeTerm.toLowerCase());
+					entityManager.persist(savedTerm);
+			}
+		}
 	}
 
 	public List suggest(Object begin)
 	{
-		String qry = "from SearchTerm s where s.term like #{termPattern}";
+		String qry = "from SearchTerm s where s.term like '" + (String)begin + "%'";
 		return entityManager.createQuery(qry).setMaxResults(10).getResultList();
 	}
 
@@ -496,6 +510,27 @@ public class SearchBean implements Search
 		return null;
 	}
 
+	public Transaction findTransaction(Long transactionId)
+	{
+		try
+		{
+			String qry = "FROM Transaction t WHERE t.id = #{transactionId}";
+			transactions = entityManager.createQuery(qry).getResultList();
+			if (transactions.size() == 1)
+			{
+				return transactions.get(0);
+			} else
+			{
+				return null;
+			}
+		}
+		catch (NullPointerException e)
+		{
+			System.out.println("findAuction ERROR: searching for ID=" + transactionId);
+			return null;
+		}
+	}
+
 	public List<Bid> findBids(Auction auction, int limit, EntityManager em)
 	{
 		List<Bid> bids = null;
@@ -518,6 +553,17 @@ public class SearchBean implements Search
 		{
 			String qry = "FROM UserComment c WHERE c.auction.id = '" + auction.getId() + "' ORDER BY c.date DESC";
 			comments = (List<UserComment>) em.createQuery(qry).getResultList();
+		}
+		return comments;
+	}
+
+	public List<UserComment> findComments(Transaction transaction)
+	{
+		List<UserComment> comments = null;
+		if (transaction.getId() != null)
+		{
+			String qry = "FROM UserComment c WHERE c.transaction.id = '" + transaction.getId() + "' ORDER BY c.date DESC";
+			comments = entityManager.createQuery(qry).getResultList();
 		}
 		return comments;
 	}
@@ -567,7 +613,7 @@ public class SearchBean implements Search
 	@Factory(value = "termPattern", scope = ScopeType.EVENT)
 	public String getSearchTermPattern()
 	{
-		return includeTerm == null ? "" : '%' + includeTerm.replace('*', '%') + '%';
+		return includeTerm == null ? "" : includeTerm + '%';
 	}
 
 	public String getIncludeTerm()
