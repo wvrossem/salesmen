@@ -407,3 +407,16 @@ td.rich-datascr-inact {
 .rich-extdt-subheadercell {
 	background-color:#ffe38c;
 }
+
+.rich-tab-active {
+	background:none;
+	background-color:#555;
+	color:#fff;
+}
+
+
+.rich-tab-inactive {
+	background:none;
+	background-color:#ddd;
+	color:#000;
+}
