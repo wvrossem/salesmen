@@ -11,9 +11,10 @@
 
     <rich:extendedDataTable
             value="#{auctions}" var="auct" id="auctions"
-            width="100%" height="300px"
+            width="100%" height="450px"
             sortMode="#{single}"
-            selectionMode="#{single}">
+            selectionMode="#{single}"
+			rows="15">
 
       <rich:column width="10%" sortable="false" label="#{messages['salesmen.Auction.picture']}" id="col_1">
         <f:facet name="header">
