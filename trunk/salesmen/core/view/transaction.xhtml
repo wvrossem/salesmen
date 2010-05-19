@@ -38,7 +38,7 @@
                 <s:link id="sellerLink"
                         value="#{manageTransaction.transaction.seller.user.screenName}"
                         propagation="none"
-                        view="/user.xhtml">
+                        view="/userProfile.xhtml">
                     <f:param name="userId"
                         value="#{manageTransaction.transaction.seller.user.userId}"/>
                 </s:link>
@@ -49,7 +49,7 @@
                 <s:link id="buyerLink"
                         value="#{manageTransaction.transaction.buyer.user.screenName}"
                         propagation="none"
-                        view="/user.xhtml">
+                        view="/userProfile.xhtml">
                     <f:param name="userId"
                         value="#{manageTransaction.transaction.buyer.user.userId}"/>
                 </s:link>

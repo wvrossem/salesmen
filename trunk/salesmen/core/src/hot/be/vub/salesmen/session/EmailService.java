@@ -89,6 +89,36 @@ public class EmailService implements Serializable
 			log.error("Error sending mail", e);
 		}
 	}
+
+	@Asynchronous
+	public void sendTransactionPayedEmail(Transaction transaction)
+	{
+		this.transaction = transaction;
+		this.account = transaction.getSeller();
+		try
+		{
+			renderer.render("/transactionPayedEmail.xhtml");
+		}
+		catch (Exception e)
+		{
+			log.error("Error sending mail", e);
+		}
+	}
+
+	@Asynchronous
+	public void sendTransactionShippedEmail(Transaction transaction)
+	{
+		this.transaction = transaction;
+		this.account = transaction.getBuyer();
+		try
+		{
+			renderer.render("/transactionShippedEmail.xhtml");
+		}
+		catch (Exception e)
+		{
+			log.error("Error sending mail", e);
+		}
+	}
 	
 	@Asynchronous
 	public void sendFinishedAuctionEmail(Auction auction)
@@ -140,4 +170,6 @@ public class EmailService implements Serializable
 	{
 		this.transaction = transaction;
 	}
+
+
 }
