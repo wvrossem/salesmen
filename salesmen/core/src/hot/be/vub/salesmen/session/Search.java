@@ -59,6 +59,8 @@ public interface Search
 
 	public void findTransactionsWithUserBuyer(UserAccount userAccount);
 
+	public Transaction findTransaction(Long transactionId);
+
 	public UserAccount findUserAccount(String userName);
 
 	public Object findAuction(Long auctionId, EntityManager em);
@@ -66,6 +68,8 @@ public interface Search
 	public List<Bid> findBids(Auction auction, int limit, EntityManager em);
 
 	public List<UserComment> findComments(Auction auction, EntityManager em);
+
+	public List<UserComment> findComments(Transaction transaction);
 
 	public List<AuctionImage> findImages(Auction auction, int limit, EntityManager em);
 

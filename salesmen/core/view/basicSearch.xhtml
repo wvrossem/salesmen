@@ -23,16 +23,19 @@
 				<fieldset>
 					<h:inputText id="searchTerm"
 								value="#{search.includeTerm}" style="width: 250px;">
-						<a:support id="onkeyup" event="onkeyup"
-								actionListener="#{search.queryAuctionsAndUsers}" reRender="results"/>
 					</h:inputText>
-					<!--<h:selectOneMenu id="entityType" value="#{basicSearch.entityType}">
-						<f:selectItem id="Auction" itemLabel="#{messages['salesmen.General.Auction']}" itemValue="Auction"/>
-						<f:selectItem id="User" itemLabel="#{messages['salesmen.General.User']}" itemValue="User"/>
-					</h:selectOneMenu>-->
+                    <a:region renderRegionOnly="true">
+                        <rich:suggestionbox id="searchTermSuggestionBox" for="searchTerm"
+                              suggestionAction="#{search.suggest}" var="result"
+                               width="165" height="100">
+                            <h:column>
+                                <h:outputText value="#{result.term}" style="font: menu;"/>
+                            </h:column>
+                        </rich:suggestionbox>
+                    </a:region>
 					&#160;
 					<a:commandButton id="findEntities" value="#{messages['salesmen.BasicSearch.Find']}"
-									action="#{search.queryAuctionsAnsUsers}" reRender="results"/>
+									action="#{search.queryAuctionsAndUsers}" reRender="results"/>
 					&#160;
 					<a:status id="status">
 						<f:facet id="StartStatus" name="start">
@@ -47,58 +50,26 @@
 		<br/>
 
         <a:outputPanel id="results">
-            <fieldset id="typeLinks" style="display:inline-block;vertical-align:top;height:285px;width:60px">
-                <legend>#{messages['salesmen.BasicSearch.types']}</legend>
-                <strong><s:link id="auctionsLink" action="#{search.setEntityTypeAuction}"
-                               value="#{messages['salesmen.General.Auction'].concat(' (').concat(auctions.rowCount).concat(')')}">
-                </s:link></strong>
-                <br/>
-                <strong><s:link id="usersLink" action="#{search.setEntityTypeUser}"
-                               value="#{messages['salesmen.General.User'].concat(' (').concat(users.rowCount).concat(')')}">
-                </s:link></strong>
-                <br/>
-            </fieldset>
             
-
-
-            <a:outputPanel id="searchResults" style="display:inline-block;">
-                <div class="section">
-                    <s:div rendered="#{search.entityTypeUser()}">
-                        <h:outputText id="NoUsersFoundMessage"
-                                   value="No Users Found"
-                                rendered="#{users != null and users.rowCount==0}"/>
-                        <h:dataTable id="users" value="#{users}" var="u"
-                                    rendered="#{users.rowCount>0}">
-                            <h:column id="ScreenNameColumn">
-                                <f:facet id="ScreenNameFacet" name="header"><h:outputText value="#{messages['salesmen.User.ScreenName']}"/></f:facet>
-                                <s:link id="userLink"
-                                     value="#{u.screenName}"
-                               propagation="none"
-                                      view="/user.xhtml">
-                                    <f:param name="userId"
-                                        value="#{u.userId}"/>
-                                </s:link>
-                            </h:column>
-                            <h:column id="FirstNameColumn">
-                                <f:facet id="FirstNameFacet" name="header"><h:outputText value="#{messages['salesmen.User.FirstName']}"/></f:facet>
-                                #{u.firstName}
-                            </h:column>
-                            <h:column id="LastNameColumn">
-                                <f:facet id="LastNameFacet" name="header"><h:outputText value="#{messages['salesmen.User.LastName']}"/></f:facet>
-                                #{u.lastName}
-                            </h:column>
-                        </h:dataTable>
-                    </s:div>
-                    <s:div rendered="#{search.entityTypeAuction()}">
-                        <h:outputText id="NoAuctionsFoundMessage"
+            <rich:tabPanel switchType="client">
+                <rich:tab label="#{messages['salesmen.General.Auction'].concat(' (').concat(auctions.rowCount).concat(')')}">                
+                    <h:outputText id="NoAuctionsFoundMessage1"
                                        value="No Auctions Found"
                                     rendered="#{auctions != null and auctions.rowCount==0}"/>
                         <s:div rendered="#{auctions.rowCount>0}">
                             <ui:include src="/auctionList.xhtml"/>
                         </s:div>
-                    </s:div>
-                </div>
-            </a:outputPanel>
+                </rich:tab>
+                <rich:tab label="#{messages['salesmen.General.User'].concat(' (').concat(users.rowCount).concat(')')}">
+                     <h:outputText id="NoUsersFoundMessage1"
+                                   value="No Users Found"
+                                rendered="#{users != null and users.rowCount==0}"/>
+                        <s:div rendered="#{users.rowCount>0}">
+                            <ui:include src="/userList.xhtml"/>
+                        </s:div>
+                </rich:tab>
+            </rich:tabPanel>
+
         </a:outputPanel>
 
 

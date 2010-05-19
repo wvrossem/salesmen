@@ -1,0 +1,53 @@
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:ui="http://java.sun.com/jsf/facelets"
+    xmlns:h="http://java.sun.com/jsf/html"
+    xmlns:f="http://java.sun.com/jsf/core"
+    xmlns:a4j="http://richfaces.org/a4j"
+	xmlns:s="http://jboss.com/products/seam/taglib"
+    xmlns:rich="http://richfaces.org/rich"
+	xmlns:fn="http://java.sun.com/jsp/jstl/functions">
+
+    <h:form id="user_form">
+
+            <rich:extendedDataTable
+                value="#{users}" var="user" id="users"
+                width="750px" height="300px"
+                sortMode="#{single}"
+                selectionMode="#{single}">
+
+				<rich:column sortable="true" sortBy="#{user.screenName}" id="user_col_1"
+                    label="#{messages['salesmen.User.ScreenName']}">
+                    <f:facet name="header">
+                        <h:outputText value="#{messages['salesmen.User.ScreenName']}" id="screen_name"/>
+                    </f:facet>
+					<s:link id="userLinkonScreenName"
+						propagation="none"
+						value="#{user.screenName}"
+					    view="/user.xhtml">
+						<f:param name="userId" value="#{user.userId}"/>
+					</s:link>
+                </rich:column>
+
+				<rich:column sortable="true"  sortBy="#{user.firstName}" id="user_col_2"
+                    label="#{messages['salesmen.User.FirstName']}">
+                    <f:facet name="header">
+                        <h:outputText value="#{messages['salesmen.User.FirstName']}" id="first_name"/>
+                    </f:facet>
+                    <h:outputText value="#{user.firstName}" id="user_firstName"/>
+                </rich:column>
+
+				<rich:column sortable="true"  sortBy="#{user.lastName}" id="user_col_3"
+                    label="#{messages['salesmen.User.LastName']}">
+                    <f:facet name="header">
+                        <h:outputText value="#{messages['salesmen.User.LastName']}" id="last_name"/>
+                    </f:facet>
+                    <h:outputText value="#{user.lastName}" id="user_lastName"/>
+                </rich:column>
+
+				<f:facet name="footer">
+                <rich:datascroller id="ds2" renderIfSinglePage="true"></rich:datascroller>
+				</f:facet>
+            </rich:extendedDataTable>
+
+    </h:form>
+</ui:composition>
