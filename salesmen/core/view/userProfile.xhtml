@@ -34,8 +34,8 @@
 	</rich:panel>
 
 	<div class="actionButtons">
-		<s:button id="update"
-			value="#{messages['salesmen.Action.Update']}"
+		<s:button id="editbutton"
+			value="#{messages['salesmen.Action.Edit']}"
 				view="/userProfileManagement.xhtml"
 				rendered="#{identity.hasRole('admin') or authenticatedUser.getUser().getUserId().equals(userHome.instance.getUserId())}"/>
 	</div>
