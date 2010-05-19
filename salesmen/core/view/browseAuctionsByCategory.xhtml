@@ -15,6 +15,7 @@
         <rich:tree id="category" value="#{search.categoryTree}" var="cat"
                    ajaxSubmitSelection="true" nodeSelectListener="#{search.processTreeNodeImplSelection(cat)}">
           <rich:treeNode>
+            <a:support event="onclick" reRender="searchResults"/>
             <h:outputText value="#{cat.name}"/>
           </rich:treeNode>
         </rich:tree>
