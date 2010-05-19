@@ -105,7 +105,7 @@ public class Auction implements Serializable
 	}
 
 	@NotNull
-	@Length(min=5, max=32)
+	@Length(min=8, max=128)
 	public String getTitle()
 	{
 		return title;
