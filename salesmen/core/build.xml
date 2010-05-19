@@ -4,6 +4,9 @@
 	<!-- Give user a chance to override without editing this file or typing -D -->
 	<property file="${basedir}/build.properties"/>
 
+  <!-- Import remote deployment targets -->
+  <import file="${basedir}/misc/remote.xml"/>
+
 	<property name="profile" value="dev"/>
 	<property file="build-${profile}.properties"/>
 
