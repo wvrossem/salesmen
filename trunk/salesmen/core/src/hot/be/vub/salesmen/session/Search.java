@@ -45,7 +45,9 @@ public interface Search
 
 	public void auctionsOfUser(User user);
 
-	public List auctionsOfUser(String userName);
+  public List auctionsOfUser(String userName);
+
+  public List auctionsOfCategory(Category cat);
 
 	public Object findUser(String screenName);
 
