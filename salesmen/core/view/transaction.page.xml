@@ -1,2 +1,4 @@
-<page view-id="/transaction.xhtml">
+<page view-id="/transaction.xhtml" login-required="true">
+	<param name="transactionId" value="#{manageTransaction.transactionId}" required="true"/>
+	<action execute="#{manageTransaction.start()}"/>
 </page>

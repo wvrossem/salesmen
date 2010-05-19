@@ -11,7 +11,7 @@
 
             <rich:extendedDataTable
                 value="#{transactions}" var="trans" id="transactions"
-                width="685px" height="300px"
+                width="750px" height="300px"
                 sortMode="#{single}"
                 selectionMode="#{single}">
 				
@@ -20,11 +20,11 @@
                     <f:facet name="header">
                         <h:outputText value="#{messages['salesmen.Transaction.Title']}" id="title_name"/>
                     </f:facet>
-					<s:link id="auctionLinkonTitle"
+					<s:link id="transactionLinkonTitle"
 						propagation="none"
 						value="#{trans.auction.getTitle()}"
 					    view="/transaction.xhtml">
-						<f:param name="auctionId" value="#{trans.id}"/>
+						<f:param name="transactionId" value="#{trans.id}"/>
 					</s:link>
                 </rich:column>
 				

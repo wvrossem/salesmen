@@ -13,41 +13,74 @@
         <rich:panel>
             <f:facet name="header">Transaction</f:facet>
 
-            <h:outputText value="Seller: #{transaction.seller.username}"/><br/>
-
-            <h:outputText value="Buyer: #{transaction.buyer.username}"/><br/>
-
-            <h:outputText value="Payed?: #{transaction.payed}"/><br/>
-
-            <h:outputText value="Shipped?: #{transaction.shipped}"/><br/>
-
-            <h:column id="TitleColumn">
-                <f:facet name="header"><h:outputText value="#{messages['salesmen.Auction.Title']}"/></f:facet>
+            <fieldset>
+                <legend>#{messages['salesmen.Transaction.Auction']}</legend>
                 <s:link id="auctionLink"
                         propagation="none"
-                        value="#{transaction.auction.title}"
+                        value="#{manageTransaction.transaction.auction.title}"
                         view="/auction.xhtml">
-                    <f:param name="auctionId" value="#{transaction.auction.id}"/>
+                    <f:param name="auctionId" value="#{manageTransaction.transaction.auction.id}"/>
                 </s:link>
-            </h:column>
+            </fieldset>
+
+            <fieldset>
+                <legend>#{messages['salesmen.Transaction.Price']}</legend>
+                <h:outputText value="#{filtering.getHighestBidAmount(manageTransaction.transaction.auction)}" />
+            </fieldset>
+
+            <fieldset>
+                <legend>#{messages['salesmen.Transaction.EndDate']}</legend>
+                <h:outputText value="#{manageTransaction.transaction.auction.endDate}" />
+            </fieldset>
+
+            <fieldset>
+                <legend>#{messages['salesmen.Transaction.Seller']}</legend>
+                <s:link id="sellerLink"
+                        value="#{manageTransaction.transaction.seller.user.screenName}"
+                        propagation="none"
+                        view="/user.xhtml">
+                    <f:param name="userId"
+                        value="#{manageTransaction.transaction.seller.user.userId}"/>
+                </s:link>
+            </fieldset>
+
+            <fieldset>
+                <legend>#{messages['salesmen.Transaction.Buyer']}</legend>
+                <s:link id="buyerLink"
+                        value="#{manageTransaction.transaction.buyer.user.screenName}"
+                        propagation="none"
+                        view="/user.xhtml">
+                    <f:param name="userId"
+                        value="#{manageTransaction.transaction.buyer.user.userId}"/>
+                </s:link>
+            </fieldset>
+
+            <fieldset>
+                <legend>#{messages['salesmen.Transaction.Payed']}</legend>
+                <h:graphicImage value="/img/true.png" rendered="#{manageTransaction.transaction.payed}"/>
+                <h:graphicImage value="/img/false.png" rendered="#{not manageTransaction.transaction.payed}"/>
+                &nbsp;
+                <s: value="#{messages['salesmen.Transaction.MarkPayed']}" action="#{manageTransaction.setPayed}"
+                          rendered="#{manageTransaction.transaction.buyer.accountId == authenticatedUser.accountId}"/>
+            </fieldset>
+
+            <fieldset>
+                <legend>#{messages['salesmen.Transaction.Shipped']}</legend>
+                <h:graphicImage value="/img/true.png" rendered="#{manageTransaction.transaction.shipped}"/>
+                <h:graphicImage value="/img/false.png" rendered="#{not manageTransaction.transaction.shipped}"/>
+                &nbsp;
+                <a:htmlCommandLink value="#{messages['salesmen.Transaction.MarkPayed']}" action="#{manageTransaction.setShipped}"
+                          rendered="#{manageTransaction.transaction.seller.accountId == authenticatedUser.accountId}"/>
+            </fieldset>
 
             <h:form id="commentForm">
                 <fieldset>
                     <a:region id="commentRegion">
-                        Leave a message or comment below:
-                        <br/>
-                        <h:inputTextarea id="comment" value="#{manageTransaction.commentText}">
-                        </h:inputTextarea>
-                        <br/>
-                        <a:commandButton id="commentButton"
-                                         value="Send!"
-                                         action="#{manageTransaction.addComment(authenticatedUser)}"
-                                         rendered="true"/>
-                        <br/>
                         <a:outputPanel id="commentHistory">
                             <h:outputText id="NoCommentsMessage"
-                                          value="Not yet commented"
-                                          rendered="#{(manageTransaction.comments != null and manageTransaction.comments.size == 0) or manageTransaction.comments == null}"/>
+                                          value="No comments yet"
+                                          rendered="#{manageTransaction.comments == null or manageTransaction.comments.size == 0}"/>
+                            <br/>
                             <h:dataTable id="comments"
                                          value="#{manageTransaction.comments}" var="c"
                                          rendered="#{manageTransaction.comments != null and manageTransaction.comments.size != 0}">
@@ -65,6 +98,16 @@
                                 </h:column>
                             </h:dataTable>
                         </a:outputPanel>
+                        Leave a message or comment:
+                        <br/>
+                        <h:inputText id="comment" value="#{manageTransaction.commentText}">
+                        </h:inputText>
+                        <br/>
+                        <s:button id="commentButton"
+                                         value="Send!"
+                                         action="#{manageTransaction.addComment(authenticatedUser)}"
+                                         rendered="true"/>
+                        <br/>
                     </a:region>
                 </fieldset>
             </h:form>

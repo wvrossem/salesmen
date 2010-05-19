@@ -1,12 +1,15 @@
 package be.vub.salesmen.session;
 
+import be.vub.salesmen.entity.Auction;
 import be.vub.salesmen.entity.Transaction;
 import be.vub.salesmen.entity.UserAccount;
 import be.vub.salesmen.entity.UserComment;
+import org.jboss.seam.annotations.Begin;
 import org.jboss.seam.annotations.In;
 import org.jboss.seam.annotations.Name;
 import org.jboss.seam.annotations.Scope;
 import org.jboss.seam.annotations.datamodel.DataModel;
+import org.jboss.seam.annotations.web.RequestParameter;
 
 import javax.persistence.EntityManager;
 import java.io.Serializable;
@@ -32,6 +35,36 @@ public class ManageTransaction implements Serializable
 
 	@In
 	Search search;
+	
+	@RequestParameter
+    Long transactionId;
+
+
+	@Begin(join = true)
+	public void start()
+	{
+		System.out.println("Starting manage transaction");
+		transaction = search.findTransaction(transactionId);
+		System.out.println("Found transaction: " + transaction.getId());
+	}
+
+	public void setPayed()
+	{
+		if(transaction!=null && transaction.getId()!=null)
+		{
+			System.out.println("Setting transaction to payed");
+			transaction.setPayed(true);
+		}
+	}
+
+	public void setShipped()
+	{
+		if(transaction!=null && transaction.getId()!=null)
+		{
+			System.out.println("Setting transaction to shipped");
+			transaction.setShipped(true);
+		}
+	}
 
 	public void requestPayment()
 	{
@@ -50,7 +83,10 @@ public class ManageTransaction implements Serializable
 
 	private void updateComments()
 	{
-		comments = search.findComments(transaction.getAuction(), this.entityManager);
+		if(transaction!=null && transaction.getId()!=null)
+		{
+			comments = search.findComments(transaction);
+		}
 	}
 
 	/*
@@ -58,10 +94,12 @@ public class ManageTransaction implements Serializable
 	*/
 	public void addComment(UserAccount user)
 	{
-		updateComments();
-		UserComment userComment = new UserComment(user, transaction.getAuction(), commentText);
-		this.entityManager.persist(userComment);
-		updateComments();
+		if(transaction!=null && transaction.getId()!=null)
+		{
+			UserComment userComment = new UserComment(user, transaction, commentText);
+			this.entityManager.persist(userComment);
+			updateComments();
+		}		
 	}
 
 	public String getCommentText()
@@ -82,6 +120,16 @@ public class ManageTransaction implements Serializable
 	public void setComments(List<UserComment> comments)
 	{
 		this.comments = comments;
+	}
+
+	public Long getTransactionId()
+	{
+		return transactionId;
+	}
+
+	public void setTransactionId(Long transactionId)
+	{
+		this.transactionId = transactionId;
 	}
 
 
