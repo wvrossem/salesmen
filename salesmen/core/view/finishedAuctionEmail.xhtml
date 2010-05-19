@@ -9,7 +9,7 @@
 	<m:subject>#{messages['salesmen.AuctionFinished.Subject']}</m:subject>
 
 	<m:body>
-		<p>#{messages['salesmen.Email.Hello']} #{emailService.auction.owner.user.screenName},</p>
+		<p>#{messages['salesmen.Email.Hello']} #{emailService.auction.owner.user.firstName},</p>
 		<p>#{messages['salesmen.AuctionFinished.Message']}</p>
 		<p>#{emailService.auction.title}</p>
 		<p>#{messages['salesmen.Email.Bye']}</p>
