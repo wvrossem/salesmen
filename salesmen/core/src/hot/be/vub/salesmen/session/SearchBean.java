@@ -403,23 +403,18 @@ public class SearchBean implements Search
 	public void processTreeNodeImplSelection(Category cat) {
 		includeCategory = cat;
 		System.out.println("Category selected");
-		auctionsOfCategory();
+		auctionsOfCategory(cat);
     }
 
 
 	/*
 		SEPARATE SEARCH METHODS
 	 */
-	public List auctionsOfCategory()
+	public List auctionsOfCategory(Category cat)
 	{
-		String qry = "FROM Auction a WHERE a.category.name = '" + includeCategory.getName() + "'";
-		List<Category> children = getChildrenOfCategory(includeCategory);
-		for (Category cat : children)
-		{
-			qry += " OR a.category.name = '" + cat.getName() + "'";
-		}
-		entities = entityManager.createQuery(qry).getResultList();
-		return entities;
+		String qry = "FROM Auction a WHERE a.category.name = '" + cat.getName() + "'";
+		auctions = entityManager.createQuery(qry).getResultList();
+		return auctions;
 	}
 
 	public User findUser(String screenName)
