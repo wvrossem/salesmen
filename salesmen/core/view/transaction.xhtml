@@ -60,7 +60,7 @@
                 <h:graphicImage value="/img/true.png" rendered="#{manageTransaction.transaction.payed}"/>
                 <h:graphicImage value="/img/false.png" rendered="#{not manageTransaction.transaction.payed}"/>
                 &nbsp;
-                <s: value="#{messages['salesmen.Transaction.MarkPayed']}" action="#{manageTransaction.setPayed}"
+                <s:link value="#{messages['salesmen.Transaction.MarkPayed']}" action="#{manageTransaction.setPayed}"
                           rendered="#{manageTransaction.transaction.buyer.accountId == authenticatedUser.accountId}"/>
             </fieldset>
 
@@ -69,7 +69,7 @@
                 <h:graphicImage value="/img/true.png" rendered="#{manageTransaction.transaction.shipped}"/>
                 <h:graphicImage value="/img/false.png" rendered="#{not manageTransaction.transaction.shipped}"/>
                 &nbsp;
-                <a:htmlCommandLink value="#{messages['salesmen.Transaction.MarkPayed']}" action="#{manageTransaction.setShipped}"
+                <s:link value="#{messages['salesmen.Transaction.MarkPayed']}" action="#{manageTransaction.setShipped}"
                           rendered="#{manageTransaction.transaction.seller.accountId == authenticatedUser.accountId}"/>
             </fieldset>
 
