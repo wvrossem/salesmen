@@ -88,8 +88,12 @@ div#content {
 	background:none;
 	background-color: #ffa412;
 }
+.rich-toolbar{
+    border: 1px dashed #555;   
+
+}
 .rich-toolbar-separator,.rich-separator {
-    width:2px;
+    width:1px;
     height:14px;
 }
 
@@ -298,7 +302,16 @@ img.errors {
 	margin: 6px 0 1px 0;
 	padding-left: 18px;
 }
+.rich\x2Dmenu\x2Dgroup {
+	background-color:#ffe38c;    
 
+}
+
+#language_selector {
+	float:right;
+	margin-right:20px;
+	margin-top:10px;
+}
 .rich-list-item {
 	padding-bottom: 4px;
 }
