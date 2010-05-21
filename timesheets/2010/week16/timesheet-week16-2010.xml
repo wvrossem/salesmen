@@ -1,73 +1,49 @@
 <?xml version="1.0"?>
-<timesheets xmlns="http://purl.org/net/timetrack" xmlns:xi="http://www.w3.org/2001/XInclude" from="2010-04-12" to="2010-04-18" xml:id="week15-2010">
-  <title>VUB - SE2 Timesheets for the 15th Week of 2010</title>
-  <published>2010-04-19</published>
-  <updated>2010-04-19</updated>
+<timesheets xmlns="http://purl.org/net/timetrack" xmlns:xi="http://www.w3.org/2001/XInclude" from="2010-04-19" to="2010-04-25" xml:id="week16-2010">
+  <title>VUB - SE2 Timesheets for the 16th Week of 2010</title>
+  <published>2010-04-26</published>
+  <updated>2010-04-26</updated>
   <person>
     <name>Nick De Cooman</name>
     <timesheet xmlns="http://purl.org/net/timetrack">
 	
-	<item duration="PT20M">
-	  <desc>Checking and publishing timesheets of week14.</desc>
+	<item duration="PT30M">
+	  <desc>Checking and publishing timesheets of week15.</desc>
 	  <refs>
-		  <ref>http://code.google.com/p/salesmen/source/detail?r=1244</ref>
-		  <ref>http://code.google.com/p/salesmen/source/detail?r=1245</ref>
-		<ref>http://code.google.com/p/salesmen/source/detail?r=1246</ref>
-		<ref>http://code.google.com/p/salesmen/source/detail?r=1247</ref>
-		<ref>http://code.google.com/p/salesmen/source/detail?r=1248</ref>
-		<ref>http://code.google.com/p/salesmen/source/detail?r=1250</ref>
-		<ref>http://code.google.com/p/salesmen/source/detail?r=1251</ref>
-		<ref>http://code.google.com/p/salesmen/source/detail?r=1252</ref>
+		<ref>http://groups.google.com/group/salesmen/browse_thread/thread/c5ac0db785557d7c?hl=en</ref>
+		  <ref>http://code.google.com/p/salesmen/source/detail?r=1275</ref>
+		<ref>http://code.google.com/p/salesmen/source/detail?r=1277</ref>
+		<ref>http://code.google.com/p/salesmen/source/detail?r=1278</ref>
+		<ref>http://code.google.com/p/salesmen/source/detail?r=1279</ref>
 	  </refs>
 	</item>
-
-	<item duration="PT1H45M">
-    <desc>Updated section 1 and 2 of SPMP.</desc>
+	
+   <item duration="PT15M">
+    <desc>Preparing meeting 19/04.</desc>
     <refs>
-		<ref>http://code.google.com/p/salesmen/source/detail?r=1262</ref>
+		<ref>http://code.google.com/p/salesmen/source/detail?r=1258</ref>
+		<ref>http://code.google.com/p/salesmen/source/detail?r=1282</ref>
     </refs>
   </item>
 
-	<item duration="PT45M">
-    <desc>Updated section 3 of SPMP.</desc>
+	<item duration="PT1H">
+		<desc>Meeting on Monday 2010/04/19.</desc>
+		<refs>
+			<ref>http://wilma.vub.ac.be/~se2_0910/docs/minutes/2010/04/19/minutes-20100419.pdf</ref>
+		</refs>
+	</item>
+
+	<item duration="PT2H30M">
+    <desc>Implemented limited login attempts.</desc>
     <refs>
-		<ref>http://code.google.com/p/salesmen/source/detail?r=1263</ref>
+		<ref>http://code.google.com/p/salesmen/source/detail?r=1288</ref>
+		<ref>http://code.google.com/p/salesmen/source/detail?r=1289</ref>
+		<ref>http://code.google.com/p/salesmen/source/detail?r=1290</ref>
+		<ref>http://nusairat.blogspot.com/2008/06/authentication-with-seam.html</ref>
     </refs>
   </item>
 
-	<item duration="PT15M">
-    <desc>Updated section 4 of SPMP.</desc>
-    <refs>
-		<ref>http://code.google.com/p/salesmen/source/detail?r=1264</ref>
-    </refs>
-  </item>
-
-	<item duration="PT40M">
-    <desc>Tried to support autologin functionality. Did not work and appeared to have several disadvantages, therefore abandoned.</desc>
-    <refs>
-		<ref>http://docs.jboss.org/seam/2.1.0.SP1/reference/en-US/html/security.html#d0e8531</ref>
-		<ref>http://stackoverflow.com/questions/1540007/seam-auto-login-using-credentials</ref>
-		<ref>http://seamframework.org/Community/HowToUseTokenbasedRemembermeAuthentication</ref>
-    </refs>
-  </item>
-
-	<item duration="PT2H15M">
-    <desc>Added statistics section to SPMP.</desc>
-    <refs>
-		<ref>http://code.google.com/p/salesmen/source/detail?r=1266</ref>
-    </refs>
-  </item>
-
-	<item duration="PT30M">
-    <desc>Updated section 5 of SPMP.</desc>
-    <refs>
-		<ref>http://code.google.com/p/salesmen/source/detail?r=1267</ref>
-		<ref>http://code.google.com/p/salesmen/source/detail?r=1268</ref>
-    </refs>
-  </item>
-
-
-  <item duration="PT15M">
+  <item duration="PT20M">
     <desc>Administration and Communication.</desc>
     <refs/>
   </item>
@@ -77,7 +53,7 @@
     <name>Jonathan Jeurissen</name>
     <timesheet xmlns="http://purl.org/net/timetrack">
 	
-	<item duration="PT5M">
+		<item duration="PT5M">
 		<desc>Administration and Communication.</desc>
 		<refs/>
 	</item>
@@ -85,32 +61,67 @@
   </person>
   <person>
     <name>Sina Khakbaz Heshmati</name>
-    
-	<timesheet xmlns="http://purl.org/net/timetrack" xml:base="../default/timesheet.xml">
-  <item duration="PT0M">
-    <desc>
-      This is a fallback timesheet, meaning that the
-      developer has not submitted their timesheet yet.
-      Please check back later to see this developer's 
-      timesheet.
-    </desc>
+    <timesheet xmlns="http://purl.org/net/timetrack">
+	
+	<item duration="PT1H">
+		<desc>Meeting on Monday 2010/04/19.</desc>
+		<refs>
+			<ref>http://wilma.vub.ac.be/~se2_0910/docs/minutes/2010/04/19/minutes-20100419.pdf</ref>
+		</refs>
+	</item>
+	
+  <item duration="PT15M">
+    <desc>Administration and Communication.</desc>
   </item>
 </timesheet>
-      
   </person>
   <person>
     <name>Jorne Laton</name>
     <timesheet xmlns="http://purl.org/net/timetrack">
-
-	<item duration="PT4H">
-		<desc>SCMP: Added IntelliJ to IDEs section, e-mail configuration and daemonizing to JBoss section,
-			expanded Trunk section and performed some other little changes.</desc>
+	<item duration="PT1H">
+		<desc>Meeting on Monday 2010/04/19.</desc>
 		<refs>
-			<ref>http://code.google.com/p/salesmen/source/detail?r=1260</ref>
+			<ref>http://wilma.vub.ac.be/~se2_0910/docs/minutes/2010/04/19/minutes-20100419.pdf</ref>
+		</refs>
+	</item>
+
+	<item duration="PT30M">
+		<desc>Made some additional changes to SCMP, suggested by QA.</desc>
+		<refs>
+			<ref>http://code.google.com/p/salesmen/source/detail?r=1287</ref>
+			<ref>http://code.google.com/p/salesmen/source/detail?r=1291</ref>
 		</refs>
 	</item>
 	
-	<item duration="PT0H20M">
+	<item duration="PT4H">
+		<desc>Re-implemented and finished auction commenting.</desc>
+		<refs>
+			<ref>http://code.google.com/p/salesmen/source/detail?r=1292</ref>
+			<ref>http://code.google.com/p/salesmen/source/detail?r=1293</ref>
+			<ref>http://code.google.com/p/salesmen/source/detail?r=1294</ref>
+			<ref>http://code.google.com/p/salesmen/source/detail?r=1295</ref>
+			<ref>http://code.google.com/p/salesmen/source/detail?r=1296</ref>
+		</refs>
+	</item>
+	
+	<item duration="PT1H">
+		<desc>Studied Seam Asynchronicity, Quartz in particular.</desc>
+		<refs>
+			<ref>http://docs.jboss.org/seam/2.1.2/reference/en-US/html/jms.html</ref>
+			<ref>http://www.digitalsanctuary.com/tech-blog/java/jboss/seam/quartz-scheduling-and-seam-part-1.html</ref>
+		</refs>
+	</item>
+	
+	<item duration="PT2H30M">
+		<desc>Configured Quartz and tested for errors. No errors received yet.</desc>
+		<refs>
+			<ref>http://code.google.com/p/salesmen/source/detail?r=1309</ref>
+			<ref>http://code.google.com/p/salesmen/source/detail?r=1310</ref>
+			<ref>http://code.google.com/p/salesmen/source/detail?r=1311</ref>
+		</refs>
+	</item>
+	
+	<item duration="PT0H15M">
 		<desc>Administration and Communication.</desc>
 	</item>
 </timesheet>
@@ -118,92 +129,173 @@
   <person>
     <name>Bart Maes</name>
     <timesheet xmlns="http://purl.org/net/timetrack">
-
-	<item duration="PT1H30M">
-		<desc>SDD - reread SDD to find small errors and mistakes</desc>
-		<refs>
-			<ref>http://code.google.com/p/salesmen/source/detail?r=1237</ref>
-		</refs>
-	</item>
-	
-	<item duration="PT50M">
-		<desc>Attempting to get JBoss running again, after it failed for some reason</desc>
-		<refs>
-			<ref>http://groups.google.com/group/salesmen/browse_thread/thread/cd10231d096ea57b?hl=en</ref>
-		</refs>
-	</item>
 	
 	<item duration="PT1H">
-		<desc>Testing various aspects of the website, tracking (and reporting) bugs</desc>
+		<desc>Meeting on Monday 2010/04/19.</desc>
 		<refs>
-			<ref>http://code.google.com/p/salesmen/issues/detail?id=42</ref>
-		</refs>
-	</item>
-	
-	
-	
-		
-	<item duration="PT15M">
-		<desc>Administration and Communication.</desc>
-		<refs>
+			<ref>http://wilma.vub.ac.be/~se2_0910/docs/minutes/2010/04/19/minutes-20100419.pdf</ref>
 		</refs>
 	</item>
 		
-</timesheet>
-  </person>
-  <person>
-    <name>Patrick Provinciael</name>
-    
-	<timesheet xmlns="http://purl.org/net/timetrack" xml:base="../default/timesheet.xml">
-  <item duration="PT0M">
-    <desc>
-      This is a fallback timesheet, meaning that the
-      developer has not submitted their timesheet yet.
-      Please check back later to see this developer's 
-      timesheet.
-    </desc>
-  </item>
-</timesheet>
-      
-  </person>
-  <person>
-    <name>Wouter Van Rossem</name>
-    <timesheet xmlns="http://purl.org/net/timetrack">
-
-	<item duration="PT50M">
-		<desc>Reread SRS and made some minor changes</desc>
+	<item duration="PT5H0M">
+		<desc>Auction implementation</desc>
 		<refs>
-			<ref>http://code.google.com/p/salesmen/source/detail?r=1237</ref>
+			<ref>http://code.google.com/p/salesmen/source/detail?r=1190</ref>
+			<ref>http://code.google.com/p/salesmen/source/detail?r=1193</ref>
+			<ref>http://code.google.com/p/salesmen/source/detail?r=1194</ref>
+			<ref>http://code.google.com/p/salesmen/source/detail?r=1195</ref>
+			<ref>http://code.google.com/p/salesmen/source/detail?r=1196</ref>
+			<ref>http://code.google.com/p/salesmen/source/detail?r=1197</ref>
+			<ref>http://code.google.com/p/salesmen/source/detail?r=1198</ref>
+			<ref>http://code.google.com/p/salesmen/source/detail?r=1199</ref>
+			<ref>http://code.google.com/p/salesmen/source/detail?r=1200</ref>
+			<ref>http://code.google.com/p/salesmen/source/detail?r=1201</ref>
+		</refs>
+	</item>
+	
+	<item duration="PT25M">
+		<desc>Read up on the Java compiler (etc) cfr discussion</desc>
+		<refs>
+			<ref>http://groups.google.com/group/salesmen/browse_thread/thread/b5d8eee138636964?hl=en</ref>
+			<ref>http://en.wikipedia.org/wiki/Java_compiler</ref>
+			<ref>http://en.wikipedia.org/wiki/Java_bytecode</ref>
+			<ref>http://en.wikipedia.org/wiki/Java_virtual_machine</ref>
 		</refs>
 	</item>
 	
 	<item duration="PT30M">
-		<desc>Added the progress of the requirements to the summary table of the SRS</desc>
+		<desc>Administration and Communication.</desc>
 		<refs>
-			<ref>http://code.google.com/p/salesmen/source/detail?r=1265</ref>
+			<ref>http://groups.google.com/group/salesmen/browse_thread/thread/336357d6aaaad8b4?hl=en</ref>
+			<ref>http://groups.google.com/group/salesmen/browse_thread/thread/b5d8eee138636964?hl=en</ref>
+			<ref>http://groups.google.com/group/salesmen/browse_thread/thread/1e4b214e5f158e9b?hl=en</ref>
+			<ref>http://groups.google.com/group/salesmen/browse_thread/thread/38c7e20be012c2f8?hl=en</ref>
+
+<ref>http://groups.google.com/group/salesmen/browse_thread/thread/dcb26a1a7ca1769?hl=en</ref>
 		</refs>
 	</item>
-	
-	<item duration="PT35M">
-		<desc>Made the searchTerms for the suggestion box of basic search unique</desc>
-		<refs>
-			<ref>http://code.google.com/p/salesmen/source/detail?r=1272</ref>
-		</refs>
-	</item>
+			
+</timesheet>
+  </person>
+  <person>
+    <name>Patrick Provinciael</name>
+    <timesheet xmlns="http://purl.org/net/timetrack">
 	
 	<item duration="PT1H">
-		<desc>Started working on transactions</desc>
+		<desc>Meeting on Monday 2010/04/19.</desc>
 		<refs>
-			<ref>http://code.google.com/p/salesmen/source/detail?r=1273</ref>
+			<ref>http://wilma.vub.ac.be/~se2_0910/docs/minutes/2010/04/19/minutes-20100419.pdf</ref>
 		</refs>
 	</item>
 	
-	<item duration="PT15M">
+	<item duration="PT10M">
+		<desc>QA of Meeting on Monday 2010/04/19.</desc>
+		<refs>
+			<ref>http://wilma.vub.ac.be/~se2_0910/docs/minutes/2010/04/19/minutes-20100419.pdf</ref>
+			<ref>http://groups.google.com/group/salesmen/browse_thread/thread/c668ff9a41704df7</ref>
+		</refs>
+	</item>
+	
+	<item duration="PT1H0M">
+		<desc>QA of SPMP v0_4</desc>
+		<refs>
+			<ref>http://wilma.vub.ac.be/~se2_0910/docs/spmp/index.html</ref>
+			<ref>http://groups.google.com/group/salesmen/browse_thread/thread/22e3a2134e8f1f59</ref>
+		</refs>
+	</item>
+	
+	<item duration="PT2H0M">
+		<desc>QA of SCMP v0_3</desc>
+		<refs>
+			<ref>http://wilma.vub.ac.be/~se2_0910/docs/scmp/index.html</ref>
+			<ref>http://groups.google.com/group/salesmen/browse_thread/thread/24f16e68fd76a096</ref>
+		</refs>
+	</item>
+	
+	<item duration="PT1H45M">
+		<desc>QA of SDD v0_4</desc>
+		<refs>
+			<ref>Not yet uploaded to Website</ref>
+			<ref>http://groups.google.com/group/salesmen/browse_thread/thread/4778165497a50b0d</ref>
+		</refs>
+	</item>
+		
+	<item duration="PT5H0M">
+		<desc>Codefix for categories (includes looking at and trying to see what old code did).</desc>
+		<refs>
+			<ref>http://code.google.com/p/salesmen/source/detail?r=1299</ref>
+			<ref>http://code.google.com/p/salesmen/source/detail?r=1302</ref>
+			
+		</refs>
+	</item>
+	
+	<item duration="PT30M">
 		<desc>Administration and Communication.</desc>
 		<refs>
 		</refs>
 	</item>
-		
+			
+</timesheet>
+  </person>
+  <person>
+    <name>Wouter Van Rossem</name>
+    <timesheet xmlns="http://purl.org/net/timetrack">
+	<item duration="PT1H">
+		<desc>Meeting on Monday 2010/04/19.</desc>
+		<refs>
+			<ref>http://wilma.vub.ac.be/~se2_0910/docs/minutes/2010/04/19/minutes-20100419.pdf</ref>
+		</refs>
+	</item>
+	
+	<item duration="PT45M">
+		<desc>Publish latest versions of scmp, sqap and std documents on the website</desc>
+		<refs>
+			<ref>http://code.google.com/p/salesmen/source/detail?r=1308</ref>
+			<ref>http://code.google.com/p/salesmen/source/detail?r=1307</ref>
+			<ref>http://code.google.com/p/salesmen/source/detail?r=1306</ref>
+			<ref>http://code.google.com/p/salesmen/source/detail?r=1305</ref>
+			<ref>http://code.google.com/p/salesmen/source/detail?r=1304</ref>
+		</refs>
+	</item>
+	
+	<item duration="PT35M">
+		<desc>Write minutes of the meeting of 19/04</desc>
+		<refs>
+			<ref>http://code.google.com/p/salesmen/source/detail?r=1298</ref>
+		</refs>
+	</item>
+	
+	<item duration="PT20M">
+		<desc>Update and publish minutes of 19/04</desc>
+		<refs>
+			<ref>http://code.google.com/p/salesmen/source/detail?r=1301</ref>
+			<ref>http://code.google.com/p/salesmen/source/detail?r=1300</ref>
+		</refs>
+	</item>
+	
+	<item duration="PT15M">
+		<desc>Published version 0.4 of the spmp document on the website</desc>
+		<refs>
+			<ref>http://code.google.com/p/salesmen/source/detail?r=1286</ref>
+			<ref>http://code.google.com/p/salesmen/source/detail?r=1285</ref>
+			<ref>http://code.google.com/p/salesmen/source/detail?r=1284</ref>
+		</refs>
+	</item>
+	
+	<item duration="PT30M">
+		<desc>Tried to fix problem in basic search (error with duplicate searchTerms)</desc>
+		<refs>
+			<ref>http://groups.google.com/group/salesmen/browse_thread/thread/38c7e20be012c2f8</ref>
+		</refs>
+	</item>
+	
+	<item duration="PT1H">
+		<desc>Some work on transactions (views and sql import)</desc>
+	</item>
+	
+	<item duration="PT20M">
+		<desc>Administration and Communication.</desc>
+	</item>
 </timesheet>
   </person>
 </timesheets>

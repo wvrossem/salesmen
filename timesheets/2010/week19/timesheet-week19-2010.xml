@@ -1,116 +1,208 @@
 <?xml version="1.0"?>
-<timesheets xmlns="http://purl.org/net/timetrack" xmlns:xi="http://www.w3.org/2001/XInclude" from="2010-04-12" to="2010-04-18" xml:id="week15-2010">
-  <title>VUB - SE2 Timesheets for the 15th Week of 2010</title>
-  <published>2010-04-19</published>
-  <updated>2010-04-19</updated>
+<timesheets xmlns="http://purl.org/net/timetrack" xmlns:xi="http://www.w3.org/2001/XInclude" from="2010-05-10" to="2010-05-16" xml:id="week19-2010">
+  <title>VUB - SE2 Timesheets for the 19th Week of 2010</title>
+  <published>2010-05-17</published>
+  <updated>2010-05-17</updated>
   <person>
     <name>Nick De Cooman</name>
     <timesheet xmlns="http://purl.org/net/timetrack">
 	
-	<item duration="PT20M">
-	  <desc>Checking and publishing timesheets of week14.</desc>
-	  <refs>
-		  <ref>http://code.google.com/p/salesmen/source/detail?r=1244</ref>
-		  <ref>http://code.google.com/p/salesmen/source/detail?r=1245</ref>
-		<ref>http://code.google.com/p/salesmen/source/detail?r=1246</ref>
-		<ref>http://code.google.com/p/salesmen/source/detail?r=1247</ref>
-		<ref>http://code.google.com/p/salesmen/source/detail?r=1248</ref>
-		<ref>http://code.google.com/p/salesmen/source/detail?r=1250</ref>
-		<ref>http://code.google.com/p/salesmen/source/detail?r=1251</ref>
-		<ref>http://code.google.com/p/salesmen/source/detail?r=1252</ref>
-	  </refs>
-	</item>
-
-	<item duration="PT1H45M">
-    <desc>Updated section 1 and 2 of SPMP.</desc>
-    <refs>
-		<ref>http://code.google.com/p/salesmen/source/detail?r=1262</ref>
-    </refs>
-  </item>
-
-	<item duration="PT45M">
-    <desc>Updated section 3 of SPMP.</desc>
-    <refs>
-		<ref>http://code.google.com/p/salesmen/source/detail?r=1263</ref>
-    </refs>
-  </item>
-
 	<item duration="PT15M">
-    <desc>Updated section 4 of SPMP.</desc>
-    <refs>
-		<ref>http://code.google.com/p/salesmen/source/detail?r=1264</ref>
-    </refs>
-  </item>
-
-	<item duration="PT40M">
-    <desc>Tried to support autologin functionality. Did not work and appeared to have several disadvantages, therefore abandoned.</desc>
-    <refs>
-		<ref>http://docs.jboss.org/seam/2.1.0.SP1/reference/en-US/html/security.html#d0e8531</ref>
-		<ref>http://stackoverflow.com/questions/1540007/seam-auto-login-using-credentials</ref>
-		<ref>http://seamframework.org/Community/HowToUseTokenbasedRemembermeAuthentication</ref>
-    </refs>
-  </item>
-
-	<item duration="PT2H15M">
-    <desc>Added statistics section to SPMP.</desc>
-    <refs>
-		<ref>http://code.google.com/p/salesmen/source/detail?r=1266</ref>
-    </refs>
-  </item>
-
-	<item duration="PT30M">
-    <desc>Updated section 5 of SPMP.</desc>
-    <refs>
-		<ref>http://code.google.com/p/salesmen/source/detail?r=1267</ref>
-		<ref>http://code.google.com/p/salesmen/source/detail?r=1268</ref>
-    </refs>
-  </item>
-
-
-  <item duration="PT15M">
-    <desc>Administration and Communication.</desc>
-    <refs/>
-  </item>
+		<desc>Correcting and publishing timesheets of week 18.</desc>
+		<refs>
+			<ref>http://code.google.com/p/salesmen/source/detail?r=1333</ref>
+			<ref>http://code.google.com/p/salesmen/source/detail?r=1334</ref>
+			<ref>http://code.google.com/p/salesmen/source/detail?r=1335</ref>
+			<ref>http://code.google.com/p/salesmen/source/detail?r=1336</ref>
+			<ref>http://code.google.com/p/salesmen/source/detail?r=1366</ref>
+		</refs>
+	</item>
+	
+	<item duration="PT3H30M">
+		<desc>Implementing Hot Auctions.</desc>
+		<refs>
+			<ref>http://www.codeweblog.com/jsf-%C2%B7-richfaces-page-of-a-strategy/</ref>
+			<ref>http://liferay.exadel.com/web/guest/</ref>
+			<ref>http://code.google.com/p/salesmen/source/detail?r=1387</ref>
+			<ref>http://code.google.com/p/salesmen/source/detail?r=1388</ref>
+		</refs>
+	</item>
+	
+	<item duration="PT20M">
+		<desc>Conference preparation.</desc>
+		<refs/>
+	</item>
+	
+	<item duration="PT1H30M">
+		<desc>Workshop on Wednesday 12/05.</desc>
+		<refs>
+		</refs>
+	</item>
+	
+	<item duration="PT15M">
+		<desc>Administration and Communication.</desc>
+	</item>
+	
 </timesheet>
   </person>
   <person>
     <name>Jonathan Jeurissen</name>
     <timesheet xmlns="http://purl.org/net/timetrack">
 	
-	<item duration="PT5M">
+		<item duration="PT3H">
+		<desc>Workshop 12/05: 9h-12h</desc>
+		<ref/>
+		</item>
+		
+		<item duration="PT20M">
+		<desc>Changing the variables from ForgotPassword to private + cleaning unused code + testing</desc>
+		<refs>
+			<ref>http://code.google.com/p/salesmen/source/detail?r=1383</ref>
+		</refs>
+		</item>
+		
+		<item duration="PT2H">
+		<desc>Implementing the field highest bid in auctionList.xhtml</desc>
+		<refs>
+		<ref>http://groups.google.com/group/salesmen/browse_thread/thread/7d40c4a205d33e2d</ref>
+		<ref>http://code.google.com/p/salesmen/source/detail?r=1386</ref>
+		</refs>
+		</item>
+		
+
+		<item duration="PT1H">
+		<desc>Learning methods to filter and sort data with dataFilterSlider + Learning filterBy:Method, filterBy:Expression + how to make expressions with fn-tag</desc>
+		<refs>
+		<ref>http://livedemo.exadel.com/richfaces-demo/richfaces/filteringFeature.jsf?c=filtering&amp;tab=usage</ref>
+		<ref>http://www.hscripts.com/tutorials/jsp/jstltags/function-tag.php</ref>
+		</refs>
+		</item>
+		
+		
+		<item duration="PT1H15">
+		<desc>Trying to add a slider for the starting price in auctionList.xhtml, added succesfully, but did NOT filter the data</desc>
+		<refs/>
+		</item>
+		
+		<item duration="PT1H40M">
+		<desc>Implementing external filtering methods for auctionList.xhtml to be used by filterby:Method, but this did not work, code available</desc>
+		<refs/>
+		</item>
+		
+		<item duration="PT2H15">
+		<desc>Learning about Richfaces components: dataTable,extendedDataTable, dataFilterSlider, dataSroller</desc>
+		<refs>
+		<ref>http://www.jsftoolbox.com/documentation/help/12-TagReference/html/h_dataTable.html</ref>
+		<ref>http://docs.jboss.org/richfaces/latest_3_3_X/en/devguide/html/rich_dataTable.html</ref>
+		<ref>http://docs.jboss.org/richfaces/latest_3_3_X/en/devguide/html/rich_extendedDataTable.html</ref>
+		<ref>http://livedemo.exadel.com/richfaces-demo/richfaces/extendedDataTable.jsf?c=extendedDataTable&amp;tab=usage</ref>
+		<ref>http://livedemo.exadel.com/richfaces-demo/richfaces/extendedDataTable.jsf?tab=info&amp;cid=437992</ref>
+		<ref>http://www.jboss.org/file-access/default/members/jbossrichfaces/freezone/docs/development/userguide/en/html/rich_dataFilterSlider.html</ref>
+		<ref>http://livedemo.exadel.com/richfaces-demo/richfaces/dataFilterSlider.jsf?c=dataFilterSlider&amp;tab=usage</ref>
+		<ref>http://livedemo.exadel.com/richfaces-demo/richfaces/dataTableScroller.jsf?c=dataTableScroller&amp;tab=usage</ref>
+		</refs>
+		</item>
+		
+		<item duration="PT20M">
+		<desc>Implementing dataScroller + spacer</desc>
+		<refs/>
+		</item>
+		
+		<item duration="PT2H45">
+		<desc>Implementing the display of an image of an auction in auctionList + making the filter for it in FilteringBean + testing</desc>
+		<refs>
+		<ref>http://code.google.com/p/salesmen/source/detail?r=1384</ref>
+		</refs>
+		</item>
+		
+		<item duration="PT40M">
+		<desc>Trying to solve the bug of BasicSearchBean (Issue 43) because sorting stopped working because of the scope of BasicSearchBean</desc>
+		<refs>
+		<ref>http://groups.google.com/group/salesmen/browse_thread/thread/e92889e34aeb4350</ref>
+		<ref>http://code.google.com/p/salesmen/source/detail?r=1385</ref>
+		</refs>
+
+		</item>
+		
+		<item duration="PT1H15">
+		<desc>Testing+reporting for bugs and stability of the search function and adding new auctions </desc>
+		<refs>
+		<ref>http://groups.google.com/group/salesmen/browse_thread/thread/dcc10305c5087964</ref>
+		<ref>http://groups.google.com/group/salesmen/browse_thread/thread/98020b327f2dae47</ref>
+		<ref>http://groups.google.com/group/salesmen/browse_thread/thread/f08f676222d6e9c7</ref>
+		<ref>http://groups.google.com/group/salesmen/browse_thread/thread/f08f676222d6e9c7</ref>
+		<ref>http://groups.google.com/group/salesmen/browse_thread/thread/6b1a338350f55ca4</ref>
+		</refs>
+		</item>
+		
+		<item duration="PT20M">
+		<desc>Learning about JSF controls,e.g. graphicImage</desc>
+		<refs>
+		<ref>http://docs.jboss.org/seam/2.0.0.B1/reference/en/html/controls.html</ref>
+		</refs>
+		
+		</item>
+		
+		<item duration="PT20M">
+		<desc>Learning about the Java Date class</desc>
+		<refs>
+		<ref>http://java.sun.com/j2se/1.4.2/docs/api/java/util/Date.html</ref>
+		</refs>
+		</item>
+		
+		<item duration="PT1H30">
+		<desc>Implementing the remaining time of an auction + making it sortable + making the filter for it in FilteringBean</desc>
+		<refs>
+		<ref>http://code.google.com/p/salesmen/source/detail?r=1398</ref>
+		<ref>http://code.google.com/p/salesmen/source/detail?r=1396</ref>
+		</refs>
+		</item>
+		
+		<item duration="PT40M">
+		<desc>Writing + Correcting Minutes 21</desc>
+		<refs/>
+		</item>
+		
+		<item duration="PT45M">
 		<desc>Administration and Communication.</desc>
 		<refs/>
-	</item>
+		</item>
+		
 </timesheet>
   </person>
   <person>
     <name>Sina Khakbaz Heshmati</name>
-    
-	<timesheet xmlns="http://purl.org/net/timetrack" xml:base="../default/timesheet.xml">
-  <item duration="PT0M">
-    <desc>
-      This is a fallback timesheet, meaning that the
-      developer has not submitted their timesheet yet.
-      Please check back later to see this developer's 
-      timesheet.
-    </desc>
+    <timesheet xmlns="http://purl.org/net/timetrack">
+  <item duration="PT1H">
+    <desc>Catching up with development.</desc>
+  </item>
+  <item duration="PT15M">
+    <desc>Administration and Communication.</desc>
   </item>
 </timesheet>
-      
   </person>
   <person>
     <name>Jorne Laton</name>
     <timesheet xmlns="http://purl.org/net/timetrack">
-
-	<item duration="PT4H">
-		<desc>SCMP: Added IntelliJ to IDEs section, e-mail configuration and daemonizing to JBoss section,
-			expanded Trunk section and performed some other little changes.</desc>
+	
+	<item duration="PT4H15M">
+		<desc>Workshop 12/05</desc>
 		<refs>
-			<ref>http://code.google.com/p/salesmen/source/detail?r=1260</ref>
+			<ref/>
 		</refs>
 	</item>
 	
-	<item duration="PT0H20M">
+	<item duration="PT5H0M">
+		<desc>Re-implemented auction scheduler.</desc>
+		<refs>
+			<ref>http://code.google.com/p/salesmen/source/detail?r=1389</ref>
+			<ref>http://code.google.com/p/salesmen/source/detail?r=1390</ref>
+			<ref>http://code.google.com/p/salesmen/source/detail?r=1391</ref>
+			<ref>http://code.google.com/p/salesmen/source/detail?r=1392</ref>
+		</refs>
+	</item>
+	
+	<item duration="PT0H15M">
 		<desc>Administration and Communication.</desc>
 	</item>
 </timesheet>
@@ -118,92 +210,98 @@
   <person>
     <name>Bart Maes</name>
     <timesheet xmlns="http://purl.org/net/timetrack">
-
-	<item duration="PT1H30M">
-		<desc>SDD - reread SDD to find small errors and mistakes</desc>
+	
+	
+	<item duration="PT4H">
+		<desc>Workshop 12/05/2010: 09h00 -&gt; 13h00</desc>
 		<refs>
-			<ref>http://code.google.com/p/salesmen/source/detail?r=1237</ref>
+			<ref>http://code.google.com/p/salesmen/source/detail?r=1373</ref>
+			<ref>http://code.google.com/p/salesmen/source/detail?r=1374</ref>
+			<ref>http://code.google.com/p/salesmen/source/detail?r=1375</ref>
+			<ref>http://code.google.com/p/salesmen/source/detail?r=1376</ref>
+			<ref>http://code.google.com/p/salesmen/source/detail?r=1377</ref>
 		</refs>
 	</item>
-	
-	<item duration="PT50M">
-		<desc>Attempting to get JBoss running again, after it failed for some reason</desc>
-		<refs>
-			<ref>http://groups.google.com/group/salesmen/browse_thread/thread/cd10231d096ea57b?hl=en</ref>
-		</refs>
-	</item>
-	
-	<item duration="PT1H">
-		<desc>Testing various aspects of the website, tracking (and reporting) bugs</desc>
-		<refs>
-			<ref>http://code.google.com/p/salesmen/issues/detail?id=42</ref>
-		</refs>
-	</item>
-	
-	
 	
 		
 	<item duration="PT15M">
 		<desc>Administration and Communication.</desc>
-		<refs>
-		</refs>
 	</item>
-		
+			
 </timesheet>
   </person>
   <person>
     <name>Patrick Provinciael</name>
-    
-	<timesheet xmlns="http://purl.org/net/timetrack" xml:base="../default/timesheet.xml">
-  <item duration="PT0M">
-    <desc>
-      This is a fallback timesheet, meaning that the
-      developer has not submitted their timesheet yet.
-      Please check back later to see this developer's 
-      timesheet.
-    </desc>
-  </item>
-</timesheet>
-      
-  </person>
-  <person>
-    <name>Wouter Van Rossem</name>
     <timesheet xmlns="http://purl.org/net/timetrack">
-
-	<item duration="PT50M">
-		<desc>Reread SRS and made some minor changes</desc>
+	
+	<item duration="PT3H0M">
+		<desc>Implementing Various User Dashboard details.</desc>
 		<refs>
-			<ref>http://code.google.com/p/salesmen/source/detail?r=1237</ref>
+			<ref>http://code.google.com/p/salesmen/source/detail?r=1382</ref>
+			<ref>http://code.google.com/p/salesmen/source/detail?r=1381</ref>
+			<ref>http://code.google.com/p/salesmen/source/detail?r=1380</ref>
+		</refs>
+	</item>
+	
+	<item duration="PT10M">
+		<desc>Preparing for Conference.</desc>
+		<refs>
+			<ref>Reference not available yet.</ref>
+		</refs>
+	</item>
+	
+	<item duration="PT1H0M">
+		<desc>Workshop on Wednesday 12/05.</desc>
+		<refs>
 		</refs>
 	</item>
 	
 	<item duration="PT30M">
-		<desc>Added the progress of the requirements to the summary table of the SRS</desc>
+		<desc>Administration and Communication.</desc>
+	</item>
+	
+</timesheet>
+  </person>
+  <person>
+    <name>Wouter Van Rossem</name>
+    <timesheet xmlns="http://purl.org/net/timetrack">
+	
+	<item duration="PT3H">
+		<desc>Workshop on Wednesday 12/05.</desc>
 		<refs>
-			<ref>http://code.google.com/p/salesmen/source/detail?r=1265</ref>
+			<ref>http://code.google.com/p/salesmen/source/detail?r=1378</ref>
 		</refs>
 	</item>
 	
-	<item duration="PT35M">
-		<desc>Made the searchTerms for the suggestion box of basic search unique</desc>
+	<item duration="PT2H">
+		<desc>Coding session on Wednesday 12/05. Worked on displaying auctions of certain category.</desc>
 		<refs>
-			<ref>http://code.google.com/p/salesmen/source/detail?r=1272</ref>
+		</refs>
+	</item>
+	
+	<item duration="PT3H">
+		<desc>Worked on comlete revision of the basic search (added search on home page etc)</desc>
+		<refs>
 		</refs>
 	</item>
 	
 	<item duration="PT1H">
-		<desc>Started working on transactions</desc>
+		<desc>Some research on many to many relationships in seam for bids, tags, etc + incomplete implementation</desc>
 		<refs>
-			<ref>http://code.google.com/p/salesmen/source/detail?r=1273</ref>
+			<ref>http://maniezhilan.blogspot.com/2008/11/seam-framework-manytomany-relationship.html</ref>
 		</refs>
 	</item>
 	
-	<item duration="PT15M">
-		<desc>Administration and Communication.</desc>
+	<item duration="PT1H">
+		<desc>Tried to create one big search and let basic search make use of this</desc>
 		<refs>
 		</refs>
 	</item>
-		
+	
+	<item duration="PT30M">
+		<desc>Administration and Communication.</desc>
+	</item>
+	
 </timesheet>
   </person>
 </timesheets>

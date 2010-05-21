@@ -71,18 +71,11 @@
   </person>
   <person>
     <name>Sina Khakbaz Heshmati</name>
-    
-	<timesheet xmlns="http://purl.org/net/timetrack" xml:base="../default/timesheet.xml">
-  <item duration="PT0M">
-    <desc>
-      This is a fallback timesheet, meaning that the
-      developer has not submitted their timesheet yet.
-      Please check back later to see this developer's 
-      timesheet.
-    </desc>
+    <timesheet xmlns="http://purl.org/net/timetrack">
+  <item duration="PT15M">
+    <desc>Administration and Communication.</desc>
   </item>
 </timesheet>
-      
   </person>
   <person>
     <name>Jorne Laton</name>

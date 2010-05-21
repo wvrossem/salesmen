@@ -1,71 +1,28 @@
 <?xml version="1.0"?>
-<timesheets xmlns="http://purl.org/net/timetrack" xmlns:xi="http://www.w3.org/2001/XInclude" from="2010-04-12" to="2010-04-18" xml:id="week15-2010">
-  <title>VUB - SE2 Timesheets for the 15th Week of 2010</title>
-  <published>2010-04-19</published>
-  <updated>2010-04-19</updated>
+<timesheets xmlns="http://purl.org/net/timetrack" xmlns:xi="http://www.w3.org/2001/XInclude" from="2010-04-26" to="2010-05-02" xml:id="week17-2010">
+  <title>VUB - SE2 Timesheets for the 17th Week of 2010</title>
+  <published>2010-05-03</published>
+  <updated>2010-05-03</updated>
   <person>
     <name>Nick De Cooman</name>
     <timesheet xmlns="http://purl.org/net/timetrack">
 	
 	<item duration="PT20M">
-	  <desc>Checking and publishing timesheets of week14.</desc>
+	  <desc>Checking and publishing timesheets of week16.</desc>
 	  <refs>
-		  <ref>http://code.google.com/p/salesmen/source/detail?r=1244</ref>
-		  <ref>http://code.google.com/p/salesmen/source/detail?r=1245</ref>
-		<ref>http://code.google.com/p/salesmen/source/detail?r=1246</ref>
-		<ref>http://code.google.com/p/salesmen/source/detail?r=1247</ref>
-		<ref>http://code.google.com/p/salesmen/source/detail?r=1248</ref>
-		<ref>http://code.google.com/p/salesmen/source/detail?r=1250</ref>
-		<ref>http://code.google.com/p/salesmen/source/detail?r=1251</ref>
-		<ref>http://code.google.com/p/salesmen/source/detail?r=1252</ref>
+		<ref>http://code.google.com/p/salesmen/source/detail?r=1316</ref>
+		<ref>http://code.google.com/p/salesmen/source/detail?r=1317</ref>
+		<ref>http://code.google.com/p/salesmen/source/detail?r=1318</ref>
+		<ref>http://code.google.com/p/salesmen/source/detail?r=1320</ref>
+		<ref>http://code.google.com/p/salesmen/source/detail?r=1321</ref>
 	  </refs>
 	</item>
-
-	<item duration="PT1H45M">
-    <desc>Updated section 1 and 2 of SPMP.</desc>
+	
+   <item duration="PT1H">
+    <desc>Workshop 28/04 - 15h-16h.</desc>
     <refs>
-		<ref>http://code.google.com/p/salesmen/source/detail?r=1262</ref>
     </refs>
   </item>
-
-	<item duration="PT45M">
-    <desc>Updated section 3 of SPMP.</desc>
-    <refs>
-		<ref>http://code.google.com/p/salesmen/source/detail?r=1263</ref>
-    </refs>
-  </item>
-
-	<item duration="PT15M">
-    <desc>Updated section 4 of SPMP.</desc>
-    <refs>
-		<ref>http://code.google.com/p/salesmen/source/detail?r=1264</ref>
-    </refs>
-  </item>
-
-	<item duration="PT40M">
-    <desc>Tried to support autologin functionality. Did not work and appeared to have several disadvantages, therefore abandoned.</desc>
-    <refs>
-		<ref>http://docs.jboss.org/seam/2.1.0.SP1/reference/en-US/html/security.html#d0e8531</ref>
-		<ref>http://stackoverflow.com/questions/1540007/seam-auto-login-using-credentials</ref>
-		<ref>http://seamframework.org/Community/HowToUseTokenbasedRemembermeAuthentication</ref>
-    </refs>
-  </item>
-
-	<item duration="PT2H15M">
-    <desc>Added statistics section to SPMP.</desc>
-    <refs>
-		<ref>http://code.google.com/p/salesmen/source/detail?r=1266</ref>
-    </refs>
-  </item>
-
-	<item duration="PT30M">
-    <desc>Updated section 5 of SPMP.</desc>
-    <refs>
-		<ref>http://code.google.com/p/salesmen/source/detail?r=1267</ref>
-		<ref>http://code.google.com/p/salesmen/source/detail?r=1268</ref>
-    </refs>
-  </item>
-
 
   <item duration="PT15M">
     <desc>Administration and Communication.</desc>
@@ -77,7 +34,14 @@
     <name>Jonathan Jeurissen</name>
     <timesheet xmlns="http://purl.org/net/timetrack">
 	
-	<item duration="PT5M">
+
+	
+	<item duration="PT1H">
+		<desc>Workshop 28/04 13h-14h: auctionList.xhtml and searching information about datatables in Seam.</desc>
+		<refs/>
+	</item>
+	
+		<item duration="PT10M">
 		<desc>Administration and Communication.</desc>
 		<refs/>
 	</item>
@@ -85,32 +49,36 @@
   </person>
   <person>
     <name>Sina Khakbaz Heshmati</name>
-    
-	<timesheet xmlns="http://purl.org/net/timetrack" xml:base="../default/timesheet.xml">
-  <item duration="PT0M">
-    <desc>
-      This is a fallback timesheet, meaning that the
-      developer has not submitted their timesheet yet.
-      Please check back later to see this developer's 
-      timesheet.
-    </desc>
+    <timesheet xmlns="http://purl.org/net/timetrack">
+  <item duration="PT1H">
+    <desc>Workshop on Wednesday, 28 April from 2pm.</desc>
+  </item>
+  <item duration="PT15M">
+    <desc>Administration and Communication.</desc>
   </item>
 </timesheet>
-      
   </person>
   <person>
     <name>Jorne Laton</name>
     <timesheet xmlns="http://purl.org/net/timetrack">
-
-	<item duration="PT4H">
-		<desc>SCMP: Added IntelliJ to IDEs section, e-mail configuration and daemonizing to JBoss section,
-			expanded Trunk section and performed some other little changes.</desc>
+	<item duration="PT2H0M">
+		<desc>Looked up how to implement a Quartz scheduler.</desc>
 		<refs>
-			<ref>http://code.google.com/p/salesmen/source/detail?r=1260</ref>
+			<ref>http://seamframework.org/Community/QuartzQuestionIntervalCronMethodDoesntRun</ref>
+			<ref>http://www.theserverside.com/news/1364119/JBoss-Seam-A-Deep-Integration-Framework</ref>
+			<ref>http://www.quartz-scheduler.org/docs/quick_start_guide.html</ref>
 		</refs>
 	</item>
 	
-	<item duration="PT0H20M">
+	<item duration="PT4H0M">
+		<desc>Implemented auction scheduler, but had no time left to test. Made sure build is not broken.</desc>
+		<refs>
+			<ref>http://code.google.com/p/salesmen/source/detail?r=1325</ref>
+			<ref>http://code.google.com/p/salesmen/source/detail?r=1326</ref>
+		</refs>
+	</item>
+	
+	<item duration="PT0H10M">
 		<desc>Administration and Communication.</desc>
 	</item>
 </timesheet>
@@ -118,92 +86,66 @@
   <person>
     <name>Bart Maes</name>
     <timesheet xmlns="http://purl.org/net/timetrack">
-
-	<item duration="PT1H30M">
-		<desc>SDD - reread SDD to find small errors and mistakes</desc>
-		<refs>
-			<ref>http://code.google.com/p/salesmen/source/detail?r=1237</ref>
-		</refs>
-	</item>
-	
-	<item duration="PT50M">
-		<desc>Attempting to get JBoss running again, after it failed for some reason</desc>
-		<refs>
-			<ref>http://groups.google.com/group/salesmen/browse_thread/thread/cd10231d096ea57b?hl=en</ref>
-		</refs>
-	</item>
-	
-	<item duration="PT1H">
-		<desc>Testing various aspects of the website, tracking (and reporting) bugs</desc>
-		<refs>
-			<ref>http://code.google.com/p/salesmen/issues/detail?id=42</ref>
-		</refs>
-	</item>
 	
 	
-	
-		
-	<item duration="PT15M">
+	<item duration="PT10M">
 		<desc>Administration and Communication.</desc>
-		<refs>
-		</refs>
 	</item>
-		
+			
 </timesheet>
   </person>
   <person>
     <name>Patrick Provinciael</name>
-    
-	<timesheet xmlns="http://purl.org/net/timetrack" xml:base="../default/timesheet.xml">
-  <item duration="PT0M">
-    <desc>
-      This is a fallback timesheet, meaning that the
-      developer has not submitted their timesheet yet.
-      Please check back later to see this developer's 
-      timesheet.
-    </desc>
-  </item>
+    <timesheet xmlns="http://purl.org/net/timetrack">
+	<item duration="PT2H00M">
+		<desc>Workshop 28/4: 14h00-16h00</desc>
+	</item>
+	
+	<item duration="PT0H15M">
+		<desc>Small Error fix in Advanced Search</desc>
+		<refs>
+			<ref>http://code.google.com/p/salesmen/source/detail?r=1324</ref>
+		</refs>
+	</item>
+	
+	<item duration="PT10M">
+		<desc>Administration and Communication.</desc>
+	</item>
 </timesheet>
-      
   </person>
   <person>
     <name>Wouter Van Rossem</name>
     <timesheet xmlns="http://purl.org/net/timetrack">
-
-	<item duration="PT50M">
-		<desc>Reread SRS and made some minor changes</desc>
-		<refs>
-			<ref>http://code.google.com/p/salesmen/source/detail?r=1237</ref>
-		</refs>
+	<item duration="PT2H30M">
+		<desc>Workshop 28/4: 14h00-16h30</desc>
 	</item>
 	
-	<item duration="PT30M">
-		<desc>Added the progress of the requirements to the summary table of the SRS</desc>
+	<item duration="PT3H">
+		<desc>Updated the advanced search</desc>
 		<refs>
-			<ref>http://code.google.com/p/salesmen/source/detail?r=1265</ref>
+			<ref>http://code.google.com/p/salesmen/source/detail?r=1328</ref>
+			<ref>Java all-in-one desk reference for Dummies, Doug Lowe (regular expressions and splitting string)</ref>
+			<ref>http://shrubbery.mynetgear.net/wiki/Select_lists_with_Seam</ref>
 		</refs>
 	</item>
 	
 	<item duration="PT35M">
-		<desc>Made the searchTerms for the suggestion box of basic search unique</desc>
+		<desc>Find solutions for bugs mistakes in basic search, one fixed</desc>
 		<refs>
-			<ref>http://code.google.com/p/salesmen/source/detail?r=1272</ref>
+			<ref>http://code.google.com/p/salesmen/source/detail?r=1329</ref>
 		</refs>
 	</item>
 	
 	<item duration="PT1H">
-		<desc>Started working on transactions</desc>
+		<desc>Worked some more on transactions</desc>
 		<refs>
-			<ref>http://code.google.com/p/salesmen/source/detail?r=1273</ref>
+			<ref>http://code.google.com/p/salesmen/source/detail?r=1330</ref>
 		</refs>
 	</item>
 	
-	<item duration="PT15M">
+	<item duration="PT10M">
 		<desc>Administration and Communication.</desc>
-		<refs>
-		</refs>
 	</item>
-		
 </timesheet>
   </person>
 </timesheets>
