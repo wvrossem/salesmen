@@ -2,7 +2,7 @@
 <timesheet xmlns="http://purl.org/net/timetrack">
 	
 	<item duration="PT3H0M">
-		<desc>Implemented finished auction e-mail scheduler, still an error.</desc>
+		<desc>Implemented Finished Auction E-mail Scheduler, still an error.</desc>
 		<refs>
 			<ref>http://code.google.com/p/salesmen/source/detail?r=1427</ref>
 			<ref>http://code.google.com/p/salesmen/source/detail?r=1428</ref>
@@ -10,7 +10,29 @@
 		</refs>
 	</item>
 	
-	<item duration="PT0H15M">
+	<item duration="PT1H30M">
+		<desc>Solved error in Finished Auction E-mail Scheduler.</desc>
+		<refs>
+			<ref>http://code.google.com/p/salesmen/source/detail?r=14??</ref>
+			<ref>http://code.google.com/p/salesmen/source/detail?r=14??</ref>
+		</refs>
+	</item>
+	
+	<item duration="PT1H30M">
+		<desc>Prepared and tested demo for Conference 3.</desc>
+		<refs>
+			<ref></ref>
+		</refs>
+	</item>
+	
+	<item duration="PT1H45M">
+		<desc>Conference 3</desc>
+		<refs>
+			<ref></ref>
+		</refs>
+	</item>
+	
+	<item duration="PT0H20M">
 		<desc>Administration and Communication.</desc>
 	</item>
 </timesheet>
