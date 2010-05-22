@@ -10,7 +10,22 @@
 			<ref>http://code.google.com/p/salesmen/source/detail?r=1422</ref>
 		</refs>
 	</item>
+
+	<item duration="PT1H">
+		<desc>Final updates webdesign before conference (10h-11h)</desc>
+		<refs>
+			<ref>http://code.google.com/p/salesmen/source/detail?r=1446</ref>
+			<ref>http://code.google.com/p/salesmen/source/detail?r=1447</ref>
+			</refs>
+	</item>
+			
+	<item duration="PT2H">
+		<desc>Conference Rehearsal on 19/05/10 11h-13h</desc>
+	</item>
 	
+	<item duration="PT2H">
+		<desc>Conference 3 on 19/05/10 13h-15h</desc>
+	</item>
 		
 	<item duration="PT25M">
 		<desc>Administration and Communication.</desc>
