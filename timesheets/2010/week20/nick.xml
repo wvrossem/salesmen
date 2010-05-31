@@ -1,0 +1,54 @@
+<?xml version='1.0'?>
+<timesheet xmlns="http://purl.org/net/timetrack">
+	
+	<item duration="PT15M">
+		<desc>Correcting and publishing timesheets of week 19.</desc>
+		<refs>
+			<ref>http://code.google.com/p/salesmen/source/detail?r=1420</ref>
+			<ref>http://code.google.com/p/salesmen/source/detail?r=1421</ref>
+			<ref>http://code.google.com/p/salesmen/source/detail?r=1399</ref>
+			<ref>http://code.google.com/p/salesmen/source/detail?r=1401</ref>
+			<ref>http://code.google.com/p/salesmen/source/detail?r=1402</ref>
+			<ref>http://code.google.com/p/salesmen/source/detail?r=1403</ref>
+			<ref>http://code.google.com/p/salesmen/source/detail?r=1404</ref>
+		</refs>
+	</item>
+	
+	<item duration="PT25M">
+		<desc>Updating timesheet statistics.</desc>
+		<refs>
+			<ref>http://groups.google.com/group/salesmen/browse_thread/thread/da027cc95bee2b87</ref>
+		</refs>
+	</item>
+	
+	<item duration="PT1H">
+		<desc>Preparing conference slides.</desc>
+		<refs></refs>
+	</item>
+	
+	<item duration="PT30M">
+		<desc>Rehearsing conference presentation about project management.</desc>
+		<refs></refs>
+	</item>
+	
+	<item duration="PT45M">
+		<desc>Preparing conference presentation about reflection with Sina.</desc>
+		<refs></refs>
+	</item>
+	
+	<item duration="PT2H">
+		<desc>Conference rehearsal on 19/05/10 11h-13h</desc>
+		<refs></refs>
+	</item>
+	
+	<item duration="PT2H">
+		<desc>Conference 3 on 19/05/10 13h-15h</desc>
+		<refs></refs>
+	</item>
+	
+
+	<item duration="PT20M">
+		<desc>Administration and Communication.</desc>
+	</item>
+	
+</timesheet>
