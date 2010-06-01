@@ -1,0 +1,38 @@
+<?xml version='1.0'?>
+<timesheet xmlns="http://purl.org/net/timetrack">
+
+  <item duration="PT10H">
+    <desc>
+      Catching up with development and coding the category-based 
+      auction browser.
+    </desc>
+    <refs>
+      <ref>http://code.google.com/p/salesmen/source/detail?r=1445</ref>
+      <ref>http://code.google.com/p/salesmen/source/detail?r=1443</ref>
+      <ref>http://code.google.com/p/salesmen/source/detail?r=1442</ref>
+      <ref>http://code.google.com/p/salesmen/source/detail?r=1439</ref>
+      <ref>http://code.google.com/p/salesmen/source/detail?r=1436</ref>
+      <ref>http://code.google.com/p/salesmen/source/detail?r=1435</ref>
+      <ref>http://code.google.com/p/salesmen/source/detail?r=1434</ref>
+      <ref>http://code.google.com/p/salesmen/source/detail?r=1433</ref>
+      <ref>http://code.google.com/p/salesmen/source/detail?r=1432</ref>
+      <ref>http://code.google.com/p/salesmen/source/detail?r=1431</ref>
+    </refs>
+  </item>
+  
+  <item duration="PT3H">
+    <desc>
+      Rehearsal session for conference three on May, 19 2010 
+      from 10am.
+    </desc>
+  </item>
+  
+  <item duration="PT2H">
+    <desc>Conference 3 on May, 19 2010 from 1pm.</desc>
+  </item>
+  
+  <item duration="PT30M">
+    <desc>Administration and Communication.</desc>
+  </item>
+	
+</timesheet>
