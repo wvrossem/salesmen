@@ -2,18 +2,23 @@
 <timesheet xmlns="http://purl.org/net/timetrack">
 		<item duration="PT15M">
 		<desc>Updating the messages for language support for Transaction and Advanced Search</desc>
-		<refs>http://code.google.com/p/salesmen/source/detail?r=1450</refs>
-		<refs>http://code.google.com/p/salesmen/source/detail?r=1452</refs>
+		<refs>
+		<ref>http://code.google.com/p/salesmen/source/detail?r=1450</ref>
+		<ref>http://code.google.com/p/salesmen/source/detail?r=1452</ref>
+			</refs>
 		</item>
 		
 		<item duration="PT15M">
 		<desc>Updating auctionList to display several pages instead of 1 big list</desc>
-		<refs>http://code.google.com/p/salesmen/source/detail?r=1455</refs>
+		<refs>
+			<ref>http://code.google.com/p/salesmen/source/detail?r=1455</ref>
+			</refs>
 		</item>
 		
 		<item duration="PT10M">
 		<desc>Updating import-dev.sql to have a decent database for the conference</desc>
-		<refs>http://code.google.com/p/salesmen/source/detail?r=1454</refs>
+		<refs>
+			<ref>http://code.google.com/p/salesmen/source/detail?r=1454</ref></refs>
 		</item>
 		
 		<item duration="PT1H">
