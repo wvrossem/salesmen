@@ -20,16 +20,20 @@
     </refs>
   </item>
   
-  <item duration="PT3H">
-    <desc>
-      Rehearsal session for conference three on May, 19 2010 
-      from 10am.
-    </desc>
-  </item>
+	<item duration="PT45M">
+		<desc>Preparing conference presentation about reflection with Nick.</desc>
+		<refs></refs>
+	</item>
+	
+	<item duration="PT2H">
+		<desc>Conference rehearsal on 19/05/10 11h-13h</desc>
+		<refs></refs>
+	</item>
   
-  <item duration="PT2H">
-    <desc>Conference 3 on May, 19 2010 from 1pm.</desc>
-  </item>
+  	<item duration="PT2H">
+		<desc>Conference 3 on 19/05/10 13h-15h</desc>
+		<refs></refs>
+	</item>
   
   <item duration="PT30M">
     <desc>Administration and Communication.</desc>
