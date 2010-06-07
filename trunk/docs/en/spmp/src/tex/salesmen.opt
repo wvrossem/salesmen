@@ -25,6 +25,7 @@
 \vhEntry{v0.3.2}{21-12-2009}{P. Provinciael}{Made the document consistent with the other documents}
 \vhEntry{v0.4.0}{15-04-2010}{N. De Cooman}{Revision after iteration I}
 \vhEntry{v0.4.1}{20-04-2010}{N. De Cooman}{Revision after quality control}
+\vhEntry{v0.5.0}{05-06-2010}{N. De Cooman}{Final revision after iteration 2}
 \end{versionhistory}
 }
 \setrevisioncurr{\today}
