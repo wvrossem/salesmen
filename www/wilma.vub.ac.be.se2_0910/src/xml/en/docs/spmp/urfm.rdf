@@ -27,6 +27,11 @@
     </packages>
 
     <releases rdf:parseType="Collection">
+<Release rdf:about="http://wilma.vub.ac.be/~se2_0910/docs/spmp/archive/v0_5/">
+  <package rdf:resource="http://wilma.vub.ac.be/~se2_0910/docs/spmp/"/>
+  <revision>0.5</revision>
+  <created>2010-06-09</created>
+</Release>
 <Release rdf:about="http://wilma.vub.ac.be/~se2_0910/docs/spmp/archive/v0_4/">
   <package rdf:resource="http://wilma.vub.ac.be/~se2_0910/docs/spmp/"/>
   <revision>0.4</revision>
@@ -166,6 +171,36 @@
   <link>http://wilma.vub.ac.be/~se2_0910/docs/spmp/archive/v0_4/spmp-v0_4-src.zip</link>
   <format>application/zip</format>
 </File>
+
+<!-- **************************************************************
+     SPMP v0.5 
+     ************************************************************** -->
+<File rdf:about="http://wilma.vub.ac.be/~se2_0910/docs/spmp/archive/v0_5/spmp-v0_5.pdf">
+  <release rdf:resource="http://wilma.vub.ac.be/~se2_0910/docs/spmp/archive/v0_5/"/>
+  <basename>spmp-v0_5</basename>
+  <extension>.pdf</extension>
+  <language>en</language>
+  <size rdf:parseType="Resource">
+    <unit rdf:resource="http://purl.org/urfm/Kilobyte"/>
+    <rdf:value>300</rdf:value>
+  </size> 
+  <link>http://wilma.vub.ac.be/~se2_0910/docs/spmp/archive/v0_5/spmp-v0_5.pdf</link>
+  <format>application/pdf</format>
+</File>
+
+<File rdf:about="http://wilma.vub.ac.be/~se2_0910/docs/spmp/archive/v0_5/spmp-v0_5-src.zip">
+  <release rdf:resource="http://wilma.vub.ac.be/~se2_0910/docs/spmp/archive/v0_5/"/>
+  <basename>spmp-v0_5-src</basename>
+  <extension>.zip</extension>
+  <language>en</language>
+  <size rdf:parseType="Resource">
+    <unit rdf:resource="http://purl.org/urfm/Kilobyte"/>
+    <rdf:value>180</rdf:value>
+  </size> 
+  <link>http://wilma.vub.ac.be/~se2_0910/docs/spmp/archive/v0_5/spmp-v0_5-src.zip</link>
+  <format>application/zip</format>
+</File>
+
 
     </files>
   </Channel>
